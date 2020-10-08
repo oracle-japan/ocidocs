@@ -22,8 +22,8 @@ title: OCI活用資料集
 tagline: Oracle Cloud Infrastructure を使い倒すための資料リンク集
 email: masataka.marukawa@oracle.com
 description: Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメントリンク集です。サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。
-baseurl: "/ocidocs" # the subpath of your site, e.g. /blog
-url: "https://oracle-japan.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+#baseurl: "/ocidocs" # the subpath of your site, e.g. /blog
+#url: "https://oracle-japan.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter:
   username: mmarukaw
   card: summary
@@ -31,7 +31,6 @@ github_username:  mmarukaw
 
 # Build settings
 theme: minima
-#remote_theme: kitian616/jekyll-text-theme 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
