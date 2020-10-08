@@ -5,6 +5,8 @@ on:
     branches:
       - master
 
+publish_branch: gh-pages
+
 jobs:
   github-pages:
     runs-on: ubuntu-18.04
