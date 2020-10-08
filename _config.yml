@@ -30,8 +30,8 @@ twitter:
 github_username:  mmarukaw
 
 # Build settings
-theme: minima
-remote_theme: justext/jekyll-text-theme
+#theme: minima
+remote_theme: kitian616/jekyll-text-theme 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
