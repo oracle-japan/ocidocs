@@ -29,7 +29,8 @@ twitter:
 github_username:  oracle-japan
 
 # Build settings
-theme: minima
+# theme: minima
+theme: "minimal-mistakes-jekyll"
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
