@@ -31,7 +31,7 @@ github_username:  mmarukaw
 
 # Build settings
 theme: minima
-#remote_theme: aterenin/minima-reboot
+remote_theme: justext/jekyll-text-theme
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
