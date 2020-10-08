@@ -2,13 +2,10 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
-#layout: default
 title: チュートリアル - Oracle Cloud Infrastructure を使ってみよう
 description: Oracle Cloud Infrastrucute (OCI) を使っていこうという方のためのチュートリアル集です。初心者の方でも進められるように、画面ショットを交えながら OCI について学習できるようになっています。
 lang: ja_JP
 ---
-# チュートリアル : Oracle Cloud Infrastructure を使ってみよう
-
 このドキュメントは Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのチュートリアル集です。各項ごとに画面ショットなどを交えながらステップ・バイ・ステップで作業を進めて、OCIの機能についてひととおり学習することができるようになっています。 [OCI活用資料集](https://community.oracle.com/tech/welcome/discussion/4474318/oracle-cloud-infrastructure-%E6%B4%BB%E7%94%A8%E8%B3%87%E6%96%99%E9%9B%86) とあわせてご活用ください。
 
 また、このページのチュートリアルのうち、初級編を元にしたウェビナーのハンズオンも定期開催しています。最新の予定は [こちら](https://go.oracle.com/LP=93447?elqCampaignId=248187#xd_co_f=OTIyMTZlYzQtNGMxMi00YzY2LTg1ZTQtNTVkMGJkOTUwMGY0~) のウェビナー案内ページ をご確認ください。(集合形式でのハンズオン・セミナーは、感染症予防のためしばらくお休み予定です)
