@@ -28,7 +28,7 @@ description: >-  # this means to ignore newlines until "baseurl:"
 twitter_username: Oracle_Japan
 github_username: oracle-japan
 minimal_mistakes_skin: "contrast"
-site.locale: "ja-JP"
+locale: "ja-JP"
 search: true
 
 # Build settings
