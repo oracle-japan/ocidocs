@@ -1,11 +1,13 @@
 ---
-layout: single
 title: OCI活用資料集
 description: Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのリンク集です。技術資料については定期的にアップデートしていますので、最新のものをご利用ください。
 lang: ja_JP
+permalink: /
+type: pages
+layout: single
+author_profile: false
 toc: true
 toc_label: "目次"
-#toc_icon: "cog"
 ---
 Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのリンク集です。技術資料については定期的にアップデートしていますので、最新のものをご利用ください。  
 また、実際にOCIを触って学習したい! という方には [Oracle Cloud Infrastructure チュートリアル](https://oracle-japan.github.io/ocitutorials) も合わせてご活用ください。

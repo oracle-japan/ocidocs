@@ -1,0 +1,14 @@
+---
+title: "[Slide]Oracle Cloud Infrastructure 概要"
+last_modified_at: 2020-10-09T16:20:02-05:00
+categories:
+  - サービス別資料/サービス全般
+tags:
+  - スライド
+---
+
+OCIに初めて触れる人のために、OCI全般の特長や、アーキテクチャについて解説しています。  
+
+スライド(更新日:2020/10/8)
+<div style="max-width:640px">
+<script async class="speakerdeck-embed" data-id="63c6514d88204918bc3e572bd3183589" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></scipt></div>
