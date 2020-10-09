@@ -1,148 +1,210 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
-title: チュートリアル - Oracle Cloud Infrastructure を使ってみよう
-description: Oracle Cloud Infrastrucute (OCI) を使っていこうという方のためのチュートリアル集です。初心者の方でも進められるように、画面ショットを交えながら OCI について学習できるようになっています。
+layout: single
+title: OCI活用資料集
+description: Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのリンク集です。技術資料については定期的にアップデートしていますので、最新のものをご利用ください。
 lang: ja_JP
+toc: true
+toc_label: "目次"
+#toc_icon: "cog"
 ---
-このドキュメントは Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのチュートリアル集です。各項ごとに画面ショットなどを交えながらステップ・バイ・ステップで作業を進めて、OCIの機能についてひととおり学習することができるようになっています。 [OCI活用資料集](https://community.oracle.com/tech/welcome/discussion/4474318/oracle-cloud-infrastructure-%E6%B4%BB%E7%94%A8%E8%B3%87%E6%96%99%E9%9B%86) とあわせてご活用ください。
-
-また、このページのチュートリアルのうち、初級編を元にしたウェビナーのハンズオンも定期開催しています。最新の予定は [こちら](https://go.oracle.com/LP=93447?elqCampaignId=248187#xd_co_f=OTIyMTZlYzQtNGMxMi00YzY2LTg1ZTQtNTVkMGJkOTUwMGY0~) のウェビナー案内ページ をご確認ください。(集合形式でのハンズオン・セミナーは、感染症予防のためしばらくお休み予定です)
-
-## 準備 - Oracle Cloud の無料トライアルを申し込む
-- **[Oracle Cloud 無料トライアルを申し込む](https://cloud.oracle.com/ja_JP/tryit)**  
-Oracle Cloud のほとんどのサービスが利用できるトライアル環境を取得することができます。このチュートリアルの内容を試すのに必要になりますので、まずは取得してみましょう。  
-*※認証のためにSMSが受け取れる電話とクレジット・カードが必要です(希望しない限り課金はされませんのでご安心を!!)*
-
-  - [Oracle Cloud 無料トライアル サインアップガイド](https://faq.oracle.co.jp/app/answers/detail/a_id/6492)  
-  - [Oracle Cloud 無料トライアルに関するよくある質問(FAQ)](https://faq.oracle.co.jp/app/answers/detail/a_id/6492)  
+Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのリンク集です。技術資料については定期的にアップデートしていますので、最新のものをご利用ください。  
+また、実際にOCIを触って学習したい! という方には [Oracle Cloud Infrastructure チュートリアル](https://oracle-japan.github.io/ocitutorials) もありますので、ご活用ください。
 
 
-## チュートリアル初級編 - Oracle Cloud Infrastructure を使ってみよう
-- **[OCIコンソールにアクセスして基本を理解する - Oracle Cloud Infrastructureを使ってみよう(その1)](https://community.oracle.com/tech/welcome/discussion/4474261/)**  
-まずはコンソールにアクセスしてみましょう。そしてリージョン、アベイラビリティ・ドメイン、コンパートメント、ポリシー(ACL)、サービス・リミットなどのOCIの基本的なコンセプトについて学びます。
+# 1. OCI 新機能・新リリース情報
+- **[Blog : OCI新機能ハイライト](https://blogs.oracle.com/oracle4engineer/oci%e6%96%b0%e6%a9%9f%e8%83%bd%e3%83%8f%e3%82%a4%e3%83%a9%e3%82%a4%e3%83%88){:target="_blank"}**  
+新機能・新リリースについてのまとめ情報を隔週でOracle Cloud 公式ブログにアップしています
 
-- **[クラウドに仮想ネットワーク(VCN)を作る - Oracle Cloud Infrastructureを使ってみよう(その2)](https://community.oracle.com/tech/welcome/discussion/4474255/)**  
-クラウドの最初の一歩は、クラウド上に皆さん専用のネットワーク(VCN)を作るところから始まります。難しい作業は必要ありません。まずはやってみましょう!!
-
-- **[インスタンスを作成する - Oracle Cloud Infrastructureを使ってみよう(その3)](https://community.oracle.com/tech/welcome/discussion/4474256/)**  
-ネットワークができたら、いよいよインスタンスを立ち上げましょう。OCIなら仮想マシンもベアメタルサーバーも同じように簡単に作成できます。
-
-- **[ブロック・ボリュームをインスタンスにアタッチする - Oracle Cloud Infrastructureを使ってみよう(その4)](https://community.oracle.com/tech/welcome/discussion/4474259/)**  
-ストレージ容量が足りない? そんなときは、ブロック・ボリュームをネットワーク越しにインスタンスにアタッチできます。
-
-- **[インスタンスのライフサイクルを管理する - Oracle Cloud Infrastructureを使ってみよう(その5)](https://community.oracle.com/tech/welcome/discussion/4474283/)**  
-作ったインスタンスを必要なときに止めたり、削除したり、また再作成したりと、いつでも簡単にできてしまうところがクラウドのいいところです。実際にどのような動きになるのか試してみましょう。
-
-- **[ファイルストレージサービス(FSS)で共有ネットワークボリュームを利用する - Oracle Cloud Infrastructureを使ってみよう(その6)](https://community.oracle.com/tech/welcome/discussion/4474296/)**  
-ファイルストレージサービス(FSS)を利用すると、複数のインスタンスから同時にネットワーク越しに利用できる共有ディスクを簡単に作成することができます。
-
-- **[オブジェクト・ストレージを使う - Oracle Cloud Infrastructureを使ってみよう(その7)](https://community.oracle.com/tech/welcome/discussion/4474260/)**  
-オブジェクト・ストレージを使うと、とても堅牢なデータストアを信じられないくらい安価に利用できます。まずは簡単な使い方を学びましょう。
-
-- **[クラウドでOracle Databaseを使う - Oracle Cloud Infrastructureを使ってみよう(その8)](https://community.oracle.com/tech/welcome/discussion/4474262/)**  
-Oracleのクラウドで使いたいものと言ったら、そう! Oracle Database!! OCIでは仮想マシン、ベアメタルサーバーからExadataまで、様々なOracle Databaseを簡単に使うことができます。まずはインスタンスを作ってみましょう。
-
-- **[クラウドでOracle Exadata を使う - Exadata Cloud Service (ExaCS)](https://community.oracle.com/docs/DOC-1038411)**  
-OracleのクラウドならOracle Databaseを高速に動かすことができる基盤のOracle Exadata も使えます。インスタンスの作り方から、様々な使い方を学んでいただける内容になっています。
-
-- **[Autonomous Database ハンズオンラボ（ADB HOL）](https://community.oracle.com/tech/welcome/discussion/4474304/autonomous-database-%E3%83%8F%E3%83%B3%E3%82%BA%E3%82%AA%E3%83%B3%E3%83%A9%E3%83%9C-adb-hol#latest)**  
-Autonomous Database は、最新のAI技術によって自律的に運用される、クラウド上のマネージドなデータベースサービスです。こちらのハンズオンラボでは、Autonomous Databaseに初めて触る方向けに、使い方や特徴を学んでいただける内容になっています。
-
-- **[Oracle Container Engine for Kubernetes(OKE) ハンズオン（ビギナー向け）](https://oracle-japan.github.io/paasdocs/documents/containers/handson/k8s-walkthrough/)**  
-Oracle Container Engine for Kubernetes(OKE)は、Oracle Cloud Infrastructure(OCI)上で提供されるマネージドKubernetsサービスです。こちらのハンズオンでは、Kubernetes自体の特徴や使い方を含めて、OKEを触って頂けるコンテンツになっています。
-
-- **[Oracle Functions ハンズオン（ビギナー向け）](https://oracle-japan.github.io/paasdocs/documents/faas/)**  
-Oracle Functionsは、Oracle Cloud Infrastructure(OCI)上で提供されるマネージドFaaS(Function as a Service)サービスです。こちらのハンズオンでは、Oracle Functionsを動かしながら、FaaSおよびOracle Functionsの特徴や使い方を学んでいただけるコンテンツになっています。まずはリンク先のビギナー向けチュートリアルからはじめてみてください。
-
-- **[Oracle Cloud Infrastructure API Gateway ハンズオン（ビギナー向け）](https://oracle-japan.github.io/paasdocs/documents/api-management/handson/getting-started/)**  
-Oracle Cloud Infrastructure API Gateway(OCI API Gateway)は、Oracle Cloud Infrastructure(OCI)上で提供されるマネージドAPI Gatewayサービスです。こちらのハンズオンでは、OCI API Gatewayを利用して簡単にAPIを集約/公開する方法を学んでいただけるコンテンツになっています。
+- **OCI IaaS 新機能アップデート (2020/3～2020/5)**  
+主にIaaSに関するアップデートを1機能1スライドでまとめた資料です
+    - [2020年3月〜2020年5月分](https://speakerdeck.com/ocise/5){:target="_blank"} (更新日:2020/6/1)
+    - [2019年12月～2020年2月分](https://speakerdeck.com/oracle4engineer/2){:target="_blank"} (更新日:2020/3/9)
+    - [2019年9月～2019年11月分](https://speakerdeck.com/oracle4engineer/11){:target="_blank"} (更新日:2020/3/9)
 
 
+# 2. OCI サービス別の資料
+## サービス全般
+- **Oracle Cloud Infrastructure 概要**  
+OCIに初めて触れる人のために、OCI全般の特長や、アーキテクチャについて解説しています。  
+[スライド](https://speakerdeck.com/ocise/ocigai-yao){:target="_blank"} (更新日:2020/10/8)  |  [セミナー録画](https://videohub.oracle.com/media/0_tv67h3hw?ed=1030){:target="_blank"} (収録日:2020/4/21)
 
-## チュートリアル中級編 - Oracle Cloud Infrastructure アドバンスド
-- **[モニタリング機能でリソースを監視する - Oracle Cloud Infrastructureアドバンスド](https://community.oracle.com/tech/welcome/discussion/4474301/%E3%83%A2%E3%83%8B%E3%82%BF%E3%83%AA%E3%83%B3%E3%82%B0%E6%A9%9F%E8%83%BD%E3%81%A7%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%92%E7%9B%A3%E8%A6%96%E3%81%99%E3%82%8B-oracle-cloud-infrastructure%E3%82%A2%E3%83%89%E3%83%90%E3%83%B3%E3%82%B9%E3%83%89)**  
-モニタリング機能を使うことで、OCI上の各種リソースの性能や状態の監視、また、カスタムのメトリック監視を行うことが可能です。アラームを設定すれば、メトリックがしきい値に達した場合に管理者に通知することもできます。
+- **OCI サービス基本情報 (Service Essentials)**  
+ログインに始まり、言語の変更、サービス制限、OCID、検索など、主にOCIコンソールの基本的情報について解説しています。  
+[スライド](https://speakerdeck.com/ocise/ociji-ben-qing-bao-service-essentials){:target="_blank"} (更新日:2020/5/21)  |  [セミナー録画](https://videohub.oracle.com/media/0_tv67h3hw?st=1090){:target="_blank"} (収録日:2020/4/21)
 
-- **[ロードバランサーでWebサーバーを負荷分散する - Oracle Cloud Infrastructureアドバンスド](https://community.oracle.com/tech/welcome/discussion/4474257/%E3%83%AD%E3%83%BC%E3%83%89%E3%83%90%E3%83%A9%E3%83%B3%E3%82%B5%E3%83%BC%E3%81%A7web%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%82%92%E8%B2%A0%E8%8D%B7%E5%88%86%E6%95%A3%E3%81%99%E3%82%8B-oracle-cloud-infrastructure%E3%82%A2%E3%83%89%E3%83%90%E3%83%B3%E3%82%B9%E3%83%89)**  
-OCIのロードバランサーを使うと、冗長化したWebサーバーに対して負荷分散を簡単に構成できるようになります。しかもマネージドサービスなので管理は簡単。
-
-- **[インスタンスのオートスケーリングを設定する - Oracle Cloud Infrastructureアドバンスド](https://community.oracle.com/tech/welcome/discussion/4474297/%E3%82%A4%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%B3%E3%82%B9%E3%81%AE%E3%82%AA%E3%83%BC%E3%83%88%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%B0%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B-oracle-cloud-infrastructure%E3%82%A2%E3%83%89%E3%83%90%E3%83%B3%E3%82%B9%E3%83%89)**  
-アプリケーションの負荷に応じて自動的にコンピュート・リソースの増減ができれば、必要な時に必要な分だけのリソースを確保し、コストの最適化にもつながります。オートスケーリング設定を行って、負荷に応じてインスタンス数を増減させてみましょう。
-
-- **[ブロック・ボリュームをバックアップする - Oracle Cloud Infrastructureアドバンスド](https://community.oracle.com/tech/welcome/discussion/4474358/%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF-%E3%83%9C%E3%83%AA%E3%83%A5%E3%83%BC%E3%83%A0%E3%82%92%E3%83%90%E3%83%83%E3%82%AF%E3%82%A2%E3%83%83%E3%83%97%E3%81%99%E3%82%8B-oracle-cloud-infrastructure%E3%82%A2%E3%83%89%E3%83%90%E3%83%B3%E3%82%B9%E3%83%89)**  
-運用管理を行う上で、データのバックアップは重要です。データの保護要件や可用性要件に応じて適切な手法でバックアップを取得し、安全に運用を行いましょう。
-
-- **[DNSサービスを使う - Oracle Cloud Infrastructureアドバンスド](https://community.oracle.com/tech/welcome/discussion/4474264/dns%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%82%92%E4%BD%BF%E3%81%86-oracle-cloud-infrastructure%E3%82%A2%E3%83%89%E3%83%90%E3%83%B3%E3%82%B9%E3%83%89)**  
-クラウド上でインターネット向けにサービスを構築したいのであれば、OCIのDNSサービスを使わない手はありません。Dyn.comにホストされた堅牢な権威DNSネットワークが、従量制で簡単に利用できます。マネージドサービスなのでDDoS対策もバッチリ。さあやってみましょう。
-
-- **[Email Deliveryを利用した外部へのメール送信(その1　配信環境構築編) - Oracle Cloud Infrastructureアドバンスド](https://community.oracle.com/tech/welcome/discussion/4474289/email-delivery%E3%82%92%E5%88%A9%E7%94%A8%E3%81%97%E3%81%9F%E5%A4%96%E9%83%A8%E3%81%B8%E3%81%AE%E3%83%A1%E3%83%BC%E3%83%AB%E9%80%81%E4%BF%A1-%E3%81%9D%E3%81%AE1-%E9%85%8D%E4%BF%A1%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89%E7%B7%A8-oracle-cloud-infrastructure%E3%82%A2%E3%83%89%E3%83%90%E3%83%B3%E3%82%B9%E3%83%89)**  
-クラウドから外部にメールを送りたい場合にはEmailサービスを使ってみましょう。OCIのEmailサービスを使うと、ちょっとした通知の送信から大規模なマーケティング・キャンペーンまで、本格的なメール・マネジメントを手軽に構築できます。
-
-- **[GPUインスタンスでディープラーニング - Oracle Cloud Infrastructureアドバンスド](https://community.oracle.com/tech/welcome/discussion/4474290/gpu%E3%82%A4%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%B3%E3%82%B9%E3%81%A7%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97%E3%83%A9%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0-oracle-cloud-infrastructure%E3%82%A2%E3%83%89%E3%83%90%E3%83%B3%E3%82%B9%E3%83%89)**  
-クラウドを利用すると、最新のGPUで簡単にディープラーニングのトレーニング環境を構築することができます。OCIの事前セットアップ済イメージを使って環境を構築し、PyTorch や Tensorflow などの人気のフレームワークを動かしてみましょう。
-
-- **[シリアル・コンソールでsshできないインスタンスのトラブルシュートをする - Oracle Cloud Infrastructureアドバンスド](https://community.oracle.com/tech/welcome/discussion/4474277/%E3%82%B7%E3%83%AA%E3%82%A2%E3%83%AB-%E3%82%B3%E3%83%B3%E3%82%BD%E3%83%BC%E3%83%AB%E3%81%A7ssh%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E3%82%A4%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%B3%E3%82%B9%E3%81%AE%E3%83%88%E3%83%A9%E3%83%96%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%88%E3%82%92%E3%81%99%E3%82%8B-oracle-cloud-infrastructure%E3%82%A2%E3%83%89%E3%83%90%E3%83%B3%E3%82%B9%E3%83%89)**  
-インスタンスにアクセスできない!? まずは落ち着いて、シリアル・コンソールに接続してみましょう。何かトラブル解決のヒントが見つかるかもしれません。
-
-- **[インスタンスにセカンダリIPを付与する - Oracle Cloud Infrastructureアドバンスド](https://community.oracle.com/tech/welcome/discussion/4474282/%E3%82%A4%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%B3%E3%82%B9%E3%81%AB%E3%82%BB%E3%82%AB%E3%83%B3%E3%83%80%E3%83%AAip%E3%82%92%E4%BB%98%E4%B8%8E%E3%81%99%E3%82%8B-oracle-cloud-infrastructure%E3%82%A2%E3%83%89%E3%83%90%E3%83%B3%E3%82%B9%E3%83%89)**  
-OCIのインスタンスには、プライベートのIPアドレスをいくつも付与することができます。使いみちはさまざま。例えばセカンダリIPを付け替えてインスタンスのフェイルオーバーを実現することも。ただちょっと使い方にはポイントが必要ですので、そのやり方を学びましょう。
-
-- **[コマンドライン(CLI)でOCIを操作する - Oracle Cloud Infrastructureアドバンスド](https://community.oracle.com/tech/welcome/discussion/4474263/%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3-cli-%E3%81%A7oci%E3%82%92%E6%93%8D%E4%BD%9C%E3%81%99%E3%82%8B-oracle-cloud-infrastructure%E3%82%A2%E3%83%89%E3%83%90%E3%83%B3%E3%82%B9%E3%83%89)**  
-クラウドの管理を簡単にしたいなら、コマンドラインツールのOCICLIを試してみましょう。APIを直接コールするよりもずっと簡単に、スクリプトを使ってクラウドのコンポーネントを操作できます。
-
-- **[TerraformでOCIの構築を自動化する - Oracle Cloud Infrastructureアドバンスド](https://community.oracle.com/tech/welcome/discussion/4474281/terraform%E3%81%A7oci%E3%81%AE%E6%A7%8B%E7%AF%89%E3%82%92%E8%87%AA%E5%8B%95%E5%8C%96%E3%81%99%E3%82%8B-oracle-cloud-infrastructure%E3%82%A2%E3%83%89%E3%83%90%E3%83%B3%E3%82%B9%E3%83%89)**  
-大規模なクラウド環境の構築を自動化するツールがほしい!! そんなときはTerraformを試してみるといいかもしれません。Terraform と Terraform Provider for OCI を使うと、設定ファイルを作るだけで大規模なクラウド環境を簡単に管理できるようになります。
-
-- **[OCI Valut (OCI Key Management) でBYOKをする](https://qiita.com/western24/items/06271c09a17e566661e8)**  
-Oracle Cloud Infrastructureには、OCI Valut (旧称 OCI Key Management) という暗号化マスター鍵を仮想化したHSMで管理する機能があり、ユーザーが管理する暗号鍵でブロック・ボリュームやオブジェクト・ストレージなどのデータを暗号化をできるようになっています。OCI Vaultを使って、ユーザーが作成した鍵をクラウドに持ち込むBYOK(Bring Your Own Key)を試してみましょう。
-
-- **[Web Application Firewall(WAF)を使ってWebサーバを保護する - Oracle Cloud Infrastructureアドバンスド](https://community.oracle.com/tech/welcome/discussion/4474298/web-application-firewall-waf-%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6web%E3%82%B5%E3%83%BC%E3%83%90%E3%82%92%E4%BF%9D%E8%AD%B7%E3%81%99%E3%82%8B-oracle-cloud-infrastructure%E3%82%A2%E3%83%89%E3%83%90%E3%83%B3%E3%82%B9%E3%83%89)**  
-Webサイトの脆弱性対策に苦労していませんか？そんな時はチューニング不要なOCI WAFを使って簡単にWebサーバーを保護しましょう。OCI WAFは保護ルールの適用、ボットトラフィックの制御、ログ参照など簡単にGUIから行うことができます。
-
-- **[Oracle CASBを使ってクラウドのセキュリティ・リスクを検知する - Oracle Cloud Infrastructureアドバンスド](https://community.oracle.com/tech/welcome/discussion/4474285/oracle-casb%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89%E3%81%AE%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3-%E3%83%AA%E3%82%B9%E3%82%AF%E3%82%92%E6%A4%9C%E7%9F%A5%E3%81%99%E3%82%8B-oracle-cloud-infrastructure%E3%82%A2%E3%83%89%E3%83%90%E3%83%B3%E3%82%B9%E3%83%89)**  
-せっかくクラウドを導入したのだから、セルフサービスで色々な人に使ってもらいたい。でも勝手に使われるとセキュリティが心配・・・。そんなときはCASB(キャスビー)が役に立つかもしれません。Oracle CASBを使うと、ユーザーが危険な使い方をしていたらアラートを受け取るなんてことが簡単に実現できるようになります。
-
-- **[Oracle Management Cloud チュートリアルまとめ](https://qiita.com/western24/items/1e44bfcaa77f3251a263)**  
-Oracle Management Cloud (OMC) は、機械学習と大規模データ技術を活用した次世代の統合モニタリング、管理、アナリティクス・クラウド・サービスです。このまとめページでは、OMCの構築に始まり、各種リソース(OS、ログ、Javaアプリ、OCIのインフラ、Oracle Databaseなど)を監視、管理する方法についての設定方法や使い方について説明しています。
-
-- **[Oracle Data Safe チュートリアルまとめ](https://qiita.com/western24/items/4824e4b3799b824197c6)**  
-Oracle Data Safeは、Oracle CloudのDatabase Serviceをよりセキュアに使うための付加的なサービスで、機密データの発見、(データ・マスキング、アクティビティ監査、セキュリティ構成の評価、ユーザーのリスク評価などを、GUIツールから簡単に実施できます。このまとめページでは、Data Safeを有効化から、各種の使い方について説明しています。
-
-- **[Oracle Container Engine for Kubernetes(OKE) ハンズオン（ミドル向け）](https://oracle-japan.github.io/paasdocs/documents/microservices/tutorials/WorkshopGuide000InstallSoftware/)**  
-OKEを使ってサンプルアプリケーションのデプロイおよびCI/CDを体験していただけるコンテンツです。OKEだけではなく、チーム開発型プラットフォームであるOracle Cloud PaaSのDeveloper Cloud Serviceや運用が全て自動化された自律型データベースであるAutonomous Databaseも利用する豊富なコンテンツになっています。
-
-- **[Oracle Functionsハンズオン（ミドル向け）](https://oracle-japan.github.io/paasdocs/documents/faas/)**  
-Oracle FunctionsとOracle Cloud Infrastructure(OCI)上の様々なサービスを組み合わせたハンズオンコンテンツです。Oracle Functionsを利用してコンピュートインスタンスのシェイプを変更したり、NoSQL Database Cloud Serviceと連携したりとFaaSならではのハンズオンを体験して頂けるコンテンツになっています。リンク先のミドル向けチュートリアルからはじめてみてください。
-
-- **[Oracle Content and Experiece チュートリアル](https://community.oracle.com/tech/welcome/discussion/4474330/oracle-content-and-experiece-%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB)**  
-Oracle Content and Experience (OCE)は、API ファーストなアーキテクチャで、マルチチャネルでのコンテンツ配信を実現するインテリジェントなコンテンツ管理プラットフォームです。この文書では、OCEが提供するファイル共有、アセット管理、Webサイト管理などさまざまな機能の説明や使い方をステップ・バイ・ステップで紹介します。利用する機能にあわせてリンク先の各文書をご利用ください。
-
-- **[Oracle Integration チュートリアル](https://community.oracle.com/docs/DOC-1037469)**  
-Oracle Integration(OIC)は、アプリケーションの統合、プロセスの自動化およびビジュアル・アプリケーションの作成を可能にする完全に管理されたサービスです。この文書では、OIC が提供するプロセス機能（ワークフローの作成・テスト・公開）など、さまざまな機能の説明や使い方が、各文書ごとにステップ・バイ・ステップで紹介されています。利用する機能にあわせて、リンク先の各文書をご利用ください。
+- **OCI サービス・ラインナップ**  
+OCIのリリース済のサービスに関して、1サービス毎に1スライドのスタイルで解説しています。  
+[スライド](https://speakerdeck.com/ocise/ociji-shu-zi-liao-sabisurainnatupu){:target="_blank"} (更新日:2020/4/23)  |  [セミナー録画](https://videohub.oracle.com/media/0_pg9rmbj9){:target="_blank"} (収録日:2020/4/23)
 
 
+## コンピュート
+- **コンピュート・サービス 概要 (Compute Level 100)**  
+インスタンスの種類、イメージの操作、ブート・ボリューム、インスタンス・プールを利用した自動スケーリング、インスタンス・メタデータについて解説しています。  
+[スライド](https://speakerdeck.com/ocise/ociji-shu-zi-liao-konpiyutosabisu-gai-yao){:target="_blank"} (更新日:2020/7/3)  |  セミナー録画 [その1](https://videohub.oracle.com/media/0_hjvuhmyy) [その2](https://videohub.oracle.com/media/0_jw29se6u?st=1712){:target="_blank"} (収録日:2020/4/21)
 
-## チュートリアル実践編
-- **[Oracle アーキテクチャ・センター](https://docs.oracle.com/ja/solutions/){:target="_blank"}**   
-さまざまなシナリオ毎に、Oracle Cloud Infrastructureでの実装方法について解説したガイド集です。現時点で約200ほどのシナリオが掲載されています。  
-シナリオの例
-  - **[仮想マシンDBシステムへのオンプレミスOracle Databaseデプロイメントの移行](https://docs.oracle.com/ja/solutions/migrate-to-vmdb/index.html)**
-  - **[イベントトリガー・サーバー・レス・アプリケーションのデプロイ](https://docs.oracle.com/ja/solutions/event-triggered-serverless-app/index.html#GUID-9D5876DC-13C2-4770-AFF9-EC7330D94AD0)**  
-  - **[ElasticsearchおよびKibanaのデプロイ](https://docs.oracle.com/ja/solutions/deploy-elk/index.html#GUID-B8EE86D2-5830-4B79-B679-6E9B624E0CF0)**
+- **コンピュート・サービス 詳細 (Compute Level 200)**  
+カスタム・イメージの応用、仮想マシンイメージの持ち込み(BYOI)、ハイパーバイザーの利用、メトリックと自動スケーリング、コンソール接続、などについて解説しています。  
+[スライド](https://speakerdeck.com/ocise/ociji-shu-zi-liao-konpiyutosabisu-xiang-xi){:target="_blank"} (更新日:2020/6/10)
 
-``Tips : アーキテクチャ・センター内での検索がうまくヒットしないという不具合があるようですので、検索機能は利用せず、下にスクロールして閲覧するのが良いようです。左側のチェックボックスを使った絞り込みはうまく機能します。``
-
-- **[Oracle Quick Start](https://github.com/oracle-quickstart)**  
-Oracle Cloud Infrastructure上で、様々なオープンソース・ソフトウェア、オラクル製品、サードパーティ製品を簡単にデプロイするためのスクリプトやガイドを集めたGitHubリポジトリです。使ってみたいソフトウェアがあればぜひ覗いてみてください。上の アーキテクチャ・センター とも連動しています。
-
+- **OCI 自動スケーリング機能 (Auto Scaling) を使ってみよう**  
+自動スケーリング機能 (Auto Scaling) の解説資料です。2019年8月27日のOCIスキルアップセミナーで使用しました。自動スケーリング機能と、それを支えるコンポーネント(インスタンス構成、インスタンス・プール、自動スケーリング構成)を実際に触って動作を理解します。  
+[スライド](https://speakerdeck.com/mmarukaw/oci-zi-dong-sukeringuji-neng-woshi-tutemiyou){:target="_blank"} (更新日:2019/9/4)
 
 
-## その他のお役立ち情報
-- **[オラクルエンジニア通信](https://blogs.oracle.com/oracle4engineer/)**  
-Oracle Cloud の新しいサービスのリリース情報などや技術情報を定期的に発信しているブログです
+## ストレージ
+- **ブロック・ボリューム 概要 (Block Volume Level 100)**  
+インスタンスにアタッチしてブロック・デバイスとして利用することができる、OCIブロック・ボリューム・サービスの基本的な内容について解説しています。また、DenseIO シェイプに内蔵される高速なローカルNVMeディスクについても説明しています。  
+[スライド](https://speakerdeck.com/ocise/ociji-shu-zi-liao-burotukuboriyumu-gai-yao){:target="_blank"} (更新日:2020/4/21)  |  [セミナー録画 28:15まで](https://videohub.oracle.com/media/0_jw29se6u?ed=1695){:target="_blank"} (収録日:2020/4/21)
 
-- **[Oracle Cloud Infrastructure マニュアル](https://docs.cloud.oracle.com/ja-jp/iaas/Content/home.htm)**  
-マニュアルの日本語訳です。翻訳まで少しタイムラグがあるので、最新情報は右上の地球アイコンから英語版に切り替えて確認してください。
+- **オブジェクト・ストレージ 概要 (Object Storage Level 100)**  
+安価で耐久性の高いストレージ・サービスであるオブジェクト・ストレージについて解説しています。サービスのユースケースや、機能、VCN内からのプライベート・アクセスの方法などについてカバーしています。  
+[スライド ](https://speakerdeck.com/ocise/ociji-shu-zi-liao-obuziekutosutorezi-gai-yao){:target="_blank"} (更新日:2020/4/22)  |  [セミナー録画](https://videohub.oracle.com/media/0_mtxzmt85){:target="_blank"} (収録日:2020/4/22)
 
+- **ファイル・ストレージ 概要 (File Storage Service Level 100)**  
+VCN内にエンド・ポイントを持つマネージドNFSサービスである、OCIファイル・ストレージについて解説しています。ユースケースの他、サービスを構成する基本的なコンポーネントと役割、インスタンスからのアクセス、セキュリティ、スナップショット機能についてカバーしています。  
+[スライド](https://speakerdeck.com/ocise/ociji-shu-zi-liao-huairusutorezi-gai-yao){:target="_blank"} (更新日:2020/4/22)  |  [セミナー録画](https://videohub.oracle.com/media/0_buai9zyz){:target="_blank"} (収録日:2020/4/22)
+
+- **ストレージ 詳細 (Storage Level 200)**  
+OCIのストレージサービス全般について応用的なトピックを扱った資料です。DenseIOインスタンスに内蔵されるローカルNVMe、ブロック・ボリューム、ファイル・ストレージそれぞれの性能、ボリューム・グループなどについて解説しています。  
+[スライド](https://speakerdeck.com/ocise/ociji-shu-zi-liao-sutorezixiang-xi){:target="_blank"} (更新日:2020/6/12)
+
+
+## ネットワーク
+- **仮想クラウド・ネットワーク(VCN) 概要 (Virtual Cloud Network Level 100)**  
+仮想クラウド・ネットワークと、その構成コンポーネント (サブネット、仮想NIC、ゲートウェイ、ルート表、セキュリティ・リスト) と、ネットワークの結合(ピアリング)に関して解説しています。  
+[スライド](https://speakerdeck.com/ocise/ociji-shu-zi-liao-virtual-cloud-network-vcn-gai-yao){:target="_blank"} (更新日:2020/5/26)  |  [セミナー録画](https://videohub.oracle.com/media/0_5ti7elke){:target="_blank"} (収録日:2020/4/21)
+
+- **仮想クラウド・ネットワーク(VCN) 詳細 (Virtual Cloud Network Level 200)**  
+VCNピアリングの詳細、トランジット・ルーティング、ハイブリッドDNS構成、Oracle Services Networkへの接続、アプライアンス型仮想ファイアウォールの利用など、VCNを利用するにあたり少し複雑なケースについて解説しています。  
+[スライド](https://speakerdeck.com/ocise/ociji-shu-zi-liao-jia-xiang-kuraudonetutowaku-vcn-xiang-xi){:target="_blank"} (更新日:2020/7/15)
+
+- **ロード・バランサー 概要 (Load Balancer Level 100)**  
+VCN内に構成することで、様々なサービスの冗長性やスケーリングをサポートする OCI ロード・バランサー・サービスについて、その機能概要、構成コンポーネントの内容、OCIコンソールを利用した構成方法などについて解説しています。  
+[スライド](https://speakerdeck.com/ocise/ociji-shu-zi-liao-rodobaransa-gai-yao){:target="_blank"} (更新日:2020/5/21)  |  [セミナー録画](https://videohub.oracle.com/media/0_pgchkk4i){:target="_blank"} (収録日:2020/4/22)
+
+- **ロード・バランサー 詳細 (Load Balancer Level 200)**  
+セッション永続性、仮想ホストによるルーティング、URIパス・ベース・ルーティング、SSLの利用とSSLターミネーションの設定、ロードバランサー で取得できるメトリックなどについて解説しています。  
+[スライド](https://speakerdeck.com/ocise/ociji-shu-zi-liao-rodobaransa-xiang-xi) (更新日:2020/5/21)
+
+- **外部接続 概要 (Connectivity Level 100)**  
+OCIのリージョンや、VCNまでのネットワーク接続の形態や、IPsecを利用したVPN接続、専用線や閉域網を経由する FastConnect 接続について、概要を解説しています。  
+[スライド](https://speakerdeck.com/ocise/ociji-shu-zi-liao-wai-bu-jie-sok-gai-yao){:target="_blank"} (更新日:2020/4/22)  |  [セミナー録画](https://videohub.oracle.com/media/0_y7rvlsco){:target="_blank"} (収録日:2020/4/22)
+
+
+## データベース
+- **Database Cloud Service 技術詳細資料**  
+Oracle Database を簡単に作成し利用することができる、Database Cloud Service (DBCS) についての解説資料です。DBCSは OSのRoot権限を持ち、オンプレミスのデータベース環境をスムーズにクラウドに移行することができるサービスです。仮想マシン、ベアメタル、Exadataの3つのコンフィグレーションから選択し、Oracleを従量制サブスクリプションまたはBYOL(ライセンス持ち込み)で利用できます。  
+[スライド](https://speakerdeck.com/oracle4engineer/bm-ji-shu-xiang-xi){:target="_blank"} (更新日:2020/4/6)  |  [セミナー録画](https://videohub.oracle.com/media/0_lyh6t8ka){:target="_blank"} (収録日:2020/4/22)
+
+- **Exadata Cloud Service 技術詳細資料**
+Oracle Exadataをクラウド上でも利用できる、Exadata Cloud Service (ExaCS) についての技術詳細です。Oracle Databaseを高速に、高可用性・高セキュリティな環境で動かすために最適化されたExadataを使たクラウド環境が、どのような構成になっていてどういった特徴があるのかなどを解説しています。  
+[スライド](https://speakerdeck.com/oracle4engineer/exadata-cloud-service-sabisuji-shu-xiang-xi){:target="_blank"} (更新日:2020/6/2) 
+
+- **Autonomous Database 技術詳細資料**  
+Oracle Databaseを利用したフルマネージド・データベース・サービスである、Autonomous Databaseについての概要解説資料です。高度な自動化技術が搭載された、世界初の自律型データベースの特徴や、利用方法などについてカバーしています。  
+[スライド](https://speakerdeck.com/oracle4engineer/autonomous-database-cloud-ji-shu-xiang-xi){:target="_blank"} (更新日:2020/5/1)  |  [セミナー録画](https://videohub.oracle.com/media/0_yp4p3xzi){:target="_blank"} (収録日:2020/4/22)
+
+
+## エッジ・サービス
+- **DNS 概要 (DNS Level 100)**  
+インターネット上の名前解決を提供する権威DNSサービスであるOCI DNSサービスについて、サービスの概要、特長、利用方法、ユースケースなどについて解説しています。  
+[スライド](https://speakerdeck.com/ocise/dnsgai-yao){:target="_blank"} (更新日:2020/7/3)
+
+- **ヘルスチェック & トラフィック管理 概要 (Health Check & Traffic Management Level 100)**  
+OCIのエッジ・サービスを構成するサービスで、インターネットに面したアプリケーションを外部からアクティブに監視したり(ヘルスチェック)、バックエンドのサービスの稼動状態やクライアントのプロファイルに応じてグローバルにトラフィックの振り分けを行うGTM機能を提供(トラフィック管理)します。  
+[スライド](https://speakerdeck.com/ocise/herusutietuku-and-torahuitukuguan-li-gai-yao){:target="_blank"} (更新日:2020/7/3)
+
+
+## セキュリティ
+- **OCI Key Managementの概要と使い方**  
+OCI Key Managementの紹介資料です。BYOKの手順を含めています。  
+[スライド](https://speakerdeck.com/oracle4engineer/oci-key-managementfalsegai-yao-toshi-ifang){:target="_blank"} (更新日:2020/7/14)
+
+
+## ガバナンスと管理
+- **IDおよびアクセス管理 概要 (Identity and Access Management Level 100)**  
+OCIの認証、認可、ID管理などを司るコア・コンポーネントである OCI IAM (Identity and Access Management) についての解説資料です。認証とID管理、認可およびポリシー、コンパートメントとその管理、IDフェデレーション(IDCSとの連携)、タグ付け(Tagging) のトピックをカバーしています。  
+[スライド](https://speakerdeck.com/ocise/ociji-shu-zi-liao-idoyobiakusesuguan-li-iam-gai-yao){:target="_blank"} (更新日:2020/5/21)  |  [セミナー録画](https://videohub.oracle.com/media/0_6756xont){:target="_blank"} (収録日:2020/4/23)
+
+
+## 開発ツール
+- **OCI CLIを使い倒す**  
+Oracle Cloud Infrastructure (OCI) の CLI (Command Line Interface) の解説資料です。2019年9月27日のOCIスキルアップセミナーで使用しました。CLIのセットアップから始まり、よくあるコンポーネント(VCN関連、インスタンス、ブロック・ボリュームなど)の作成、シェルスクリプトからの呼び出し、OCI CLIのクセとTipsなどについて解説しています。  
+[スライド](https://speakerdeck.com/mmarukaw/oci-cli-woshi-idao-su){:target="_blank"} (更新日:2019/9/27)
+
+
+# 3. ソリューション別の資料
+## HA、DR、高可用性システム
+- **Oracle Cloudで考える高可用性アーキテクチャー**  
+2019/11/30に実施した、OCHaCafe Premium 第1回のプレゼンテーション資料です。高可用性システムの構築をサポートするOracle Cloudの様々な機能のご紹介から、障害に強いアーキテクチャ設計の考え方などをお届け致します。  
+[スライド](https://speakerdeck.com/mmarukaw/oracleclouddekao-erugao-ke-yong-xing-akitekutiya){:target="_blank"} (更新日:2019/11/30)
+
+
+## 認証・認可・セキュリティ
+- **OCIの認証・認可機能の総まとめ**  
+2019/11/20に実施した、同名セミナーの資料です。  
+OCIを使い始めた人が誰でも引っかかる、OCI IAM と Oracle Identity Cloud Service (IDCS) の、深くてフクザツな関係を紐解きます。IAM機能のおさらいから手始めに、IDCSを使った場合にできることや、2つの認証/認可のツールの使い分け、より高度な要件(多要素認証、外部認証、IPホワイトリスティング)を行う際の方法などについて、ディープに語ります。  
+[スライド](https://speakerdeck.com/mmarukaw/ocifalseren-zheng-ren-ke-ji-neng-falsezong-matome){:target="_blank"} (更新日:2019/11/20)
+
+
+## 運用・管理
+- **OCIの運用管理力を高めよう**  
+OCIの監視、障害通知、監査、ログ管理などのシステム面の運用から、予算や課金管理、コスト制御まで、OCIをどう効率的に運用管理していくかについて考えます。 2019年はMonitoring、Notification、Logging(LA)、Cost Management、Budgetなど、様々な管理系機能がリリースされました。ここで一度OCIが備える管理系の機能の全体像を俯瞰したうえで、これらの機能、あるいは外部の製品を組み合わせてどこまでできるかについてお話したいと思います。  
+[スライド](https://speakerdeck.com/mmarukaw/ocifalseyun-yong-guan-li-li-wogao-meyou){:target="_blank"} (更新日:2020/1/20)
+
+
+# 4. その他の資料
+- **Oracle OpenWorld 2019 フィードバック『OCI関連セッションまとめ』**  
+Oracle OpenWorld 2019 の Oracle Cloud Infrastructure (OCI) に関連するセッションのフィードバック資料です。キーノートセッションについても触れていますが、メインはP34以降の一般セッション(General Sessionn)の部分です。ダウンロードできる全67セッションの内容サマリー、資料へのリンクを、筆者による勝手な格付け評価(星一つ〜星三つ)と共に掲載しています。  
+[スライド](https://speakerdeck.com/mmarukaw/oracle-openworld-2019-huidobatuku-ociguan-lian-setusiyonmatome){:target="_blank"} (更新日:2019/10/30)
+
+
+# 5. 外部リンク
+## お客様事例
+- **[Oracle Cloud(PaaS/IaaS)：お客様活用事例](https://blogs.oracle.com/oracle4engineer/oracle-cloud-platformpaasiaas){:target="_blank"}**
+
+
+## 無償トライアル / Free Tier
+- **[Oracle Cloud 無償トライアル サインアップガイド](https://faq.oracle.co.jp/app/answers/detail/a_id/6492){:target="_blank"}**  
+ご自身で取得いただけるOCIの無償トライアル環境 (30日間有効な35000円分のクレジットつき、クレジットカードと携帯電話SMS認証が必要です)  
+
+- **[Oracle Cloud Free Tierに関するFAQ](https://www.oracle.com/jp/cloud/free/faq.html){:target="_blank"}**  
+OCIの一部のサービスを永久に無償で使い続けることができる Free Tier に関してのQA集
+
+
+## 価格・見積情報
+- **[Oracle Cloud Infrastructure 料金体系](https://www.slideshare.net/oracle4engineer/oracle-cloud-infrastructure-20205){:target="_blank"}**  
+Universal Credit、BYOL to PaaS などの、 OCIの料金体系や考え方について解説した資料です。
+
+- **[Universal Credit Pricing](https://www.oracle.com/cloud/ucpricing.html){:target="_blank"}**  
+OCIの価格表(定価)
+
+- **[Oracle Cloud Cost Estimator](https://www.oracle.com/cloud/cost-estimator.html){:target="_blank"}**  
+OCIの価格見積ツール、必要なサービスと数量、期間などを入力すると、月々のおよそのお支払い額がセルフサービスで見積もりできます。
+
+
+## サービス基本情報
+- **[Data Regions for Platform and Infrastructure Services](https://www.oracle.com/jp/cloud/data-regions.html#apac){:target="_blank"}**  
+OCIのリージョン一覧と、リージョンごとのサービス提供状況
+
+- **[ocistatus](https://ocistatus.oraclecloud.com/){:target="_blank"}**  
+OCIの現在のサービスの稼働状況と、過去のインシデント履歴、障害時の通知受信設定など
+
+- **[OCI対応済み各種アプリケーション](https://www.oracle.com/jp/cloud/infrastructure/solutions/isv-applications/){:target="_blank"}**  
+OCIへの対応が確認済みの、各種サードパーティ・アプリケーションの一覧と、サービス概要、カタログのダウンロード
+
+
+## SLAなどの契約ドキュメント
+- **[サービス・レベル・アグリーメント(SLA)](https://www.oracle.com/jp/cloud/iaas/sla.html){:target="_blank"}**
+
+## コンプライアンス
+- **[Oracle Cloudのコンプライアンス](https://www.oracle.com/jp/cloud/cloud-infrastructure-compliance/){:target="_blank"}**  
+OCIの外部機関による認証や、第三者機関による監査などへの対応状況
+
+
+## サポート
+- **[Oracle Cloud Support ご利用ガイド ユーザー登録・管理（PDF）](https://www.oracle.com/assets/cloud-1st-guide-user-2789085-ja.pdfhttp://){:target="_blank"}**
+
+- **[Oracle Cloud Support ご利用ガイド SR作成・管理（PDF）](https://www.oracle.com/assets/cloud-1stguide-sr-2765641-ja.pdf){:target="_blank"}**
+
+- **[Oracle Cloud サポートについてのFAQ](https://blogs.oracle.com/supportjp/cloud_support_faq){:target="_blank"}**
