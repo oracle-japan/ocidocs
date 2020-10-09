@@ -8,10 +8,10 @@ toc_label: "目次"
 #toc_icon: "cog"
 ---
 Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのリンク集です。技術資料については定期的にアップデートしていますので、最新のものをご利用ください。  
-また、実際にOCIを触って学習したい! という方には [Oracle Cloud Infrastructure チュートリアル](https://oracle-japan.github.io/ocitutorials) もありますので、ご活用ください。
+また、実際にOCIを触って学習したい! という方には [Oracle Cloud Infrastructure チュートリアル](https://oracle-japan.github.io/ocitutorials) も合わせてご活用ください。
 
 
-# 1. OCI 新機能・新リリース情報
+# 1. 新機能・新リリース情報
 - **[Blog : OCI新機能ハイライト](https://blogs.oracle.com/oracle4engineer/oci%e6%96%b0%e6%a9%9f%e8%83%bd%e3%83%8f%e3%82%a4%e3%83%a9%e3%82%a4%e3%83%88){:target="_blank"}**  
 新機能・新リリースについてのまとめ情報を隔週でOracle Cloud 公式ブログにアップしています
 
@@ -22,7 +22,7 @@ Oracle Cloud Infrastructure (OCI) を使っていこう! という人のため�
     - [2019年9月～2019年11月分](https://speakerdeck.com/oracle4engineer/11){:target="_blank"} (更新日:2020/3/9)
 
 
-# 2. OCI サービス別の資料
+# 2. サービス別の資料
 ## サービス全般
 - **Oracle Cloud Infrastructure 概要**  
 OCIに初めて触れる人のために、OCI全般の特長や、アーキテクチャについて解説しています。  
@@ -68,6 +68,9 @@ VCN内にエンド・ポイントを持つマネージドNFSサービスであ�
 OCIのストレージサービス全般について応用的なトピックを扱った資料です。DenseIOインスタンスに内蔵されるローカルNVMe、ブロック・ボリューム、ファイル・ストレージそれぞれの性能、ボリューム・グループなどについて解説しています。  
 [スライド](https://speakerdeck.com/ocise/ociji-shu-zi-liao-sutorezixiang-xi){:target="_blank"} (更新日:2020/6/12)
 
+- **データ転送サービスとストレージ・ゲートウェイ**  
+オンプレミスからのデータ移行等で利用可能な、データ転送サービス、ストレージ・ゲートウェイなどについて解説しています。  
+[スライド](https://speakerdeck.com/ocise/ociji-shu-zi-liao-detayi-xing-detazhuan-song-sabisutosutorezigetouei) (更新日:2020/10/7)
 
 ## ネットワーク
 - **仮想クラウド・ネットワーク(VCN) 概要 (Virtual Cloud Network Level 100)**  
@@ -126,6 +129,11 @@ OCI Key Managementの紹介資料です。BYOKの手順を含めています。
 OCIの認証、認可、ID管理などを司るコア・コンポーネントである OCI IAM (Identity and Access Management) についての解説資料です。認証とID管理、認可およびポリシー、コンパートメントとその管理、IDフェデレーション(IDCSとの連携)、タグ付け(Tagging) のトピックをカバーしています。  
 [スライド](https://speakerdeck.com/ocise/ociji-shu-zi-liao-idoyobiakusesuguan-li-iam-gai-yao){:target="_blank"} (更新日:2020/5/21)  |  [セミナー録画](https://videohub.oracle.com/media/0_6756xont){:target="_blank"} (収録日:2020/4/23)
 
+- **Oracle Cloud Infrastructure 課金にまつわるエトセトラ**  
+実際にクラウドを使っていると、思わぬところで課金されちゃったなんてこと、ありますよね。クラウドは使った分だけ後から課金されるので、どんなところに課金されるのか、どのくらいの課金額になるかを知るのはとても大切です。というわけでこの資料では、OCIの課金ポイントに関してエンジニア目線からわかりやすくまとめてお伝えしていきます。  
+[スライド](https://speakerdeck.com/mmarukaw/oci-ke-jin-nimatuwaruetosetora){:target="_blank"} (更新日:2020/9/17)  |  [セミナー録画](https://videohub.oracle.com/media/1_pruspmhf){:target="_blank"} (収録日:2020/9/17)
+
+
 
 ## 開発ツール
 - **OCI CLIを使い倒す**  
@@ -173,7 +181,7 @@ OCIの一部のサービスを永久に無償で使い続けることができ�
 
 
 ## 価格・見積情報
-- **[Oracle Cloud Infrastructure 料金体系](https://www.slideshare.net/oracle4engineer/oracle-cloud-infrastructure-20205){:target="_blank"}**  
+- **[Oracle Cloud Infrastructure 料金体系 (2020年8月版)](https://www.slideshare.net/oracle4engineer/oracle-cloud-infrastructure-20208-238180441){:target="_blank"}**  
 Universal Credit、BYOL to PaaS などの、 OCIの料金体系や考え方について解説した資料です。
 
 - **[Universal Credit Pricing](https://www.oracle.com/cloud/ucpricing.html){:target="_blank"}**  
