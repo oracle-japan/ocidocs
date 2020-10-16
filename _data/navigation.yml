@@ -1,11 +1,11 @@
 main:
   - title: "Posts"
     url: /posts/
-  - title: "Categories"
+  - title: "カテゴリー"
     url: /categories/
-  - title: "Tags"
+  - title: "タグ"
     url: /tags/
-  - title: "About"
+  - title: "このサイトについて"
     url: /about/
 
 docs:
