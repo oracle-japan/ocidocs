@@ -5,6 +5,8 @@ main:
     url: /categories/
   - title: "タグ"
     url: /tags/
+  - title: "ポートフォリオ"
+    url: /portofolio/
   - title: "このサイトについて"
     url: /about/
 

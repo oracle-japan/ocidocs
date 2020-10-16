@@ -35,7 +35,7 @@ search: true
 markdown: kramdown
 # remote_theme: mmistakes/minimal-mistakes
 theme: minimal-mistakes-jekyll
-breadcrumbs: true
+# breadcrumbs: true
 
 # Markdown Processing
 kramdown:
