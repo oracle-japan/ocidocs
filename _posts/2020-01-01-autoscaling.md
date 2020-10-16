@@ -13,6 +13,7 @@ tags:
 
 
 #### スライド (2019/9/4更新)  <!-- 更新日を最新に変更 -->
+
 <div style="max-width:768px">
 <script async class="speakerdeck-embed" data-id="3277a22d639b4857b185569a6181278c" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 </div>
