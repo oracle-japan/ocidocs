@@ -1,10 +1,12 @@
 ---
-title: "[Slide]Oracle Cloud Infrastructure サービス基本情報"
+title: "[スライド]Oracle Cloud Infrastructure サービス基本情報"
 last_modified_at: 2020-10-07T12:00:00-09:00
 categories:
-  - サービス別資料/サービス全般
+  - サービス別資料
+    - サービス全般
 tags:
   - スライド
+  - レベル:入門
 ---
 
 ログインに始まり、言語の変更、サービス制限、OCID、検索など、主にOCIコンソールの基本的情報について解説しています。  

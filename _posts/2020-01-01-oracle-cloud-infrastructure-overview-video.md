@@ -1,10 +1,12 @@
 ---
-title: "[Video]Oracle Cloud Infrastructure 概要"
+title: "[動画]Oracle Cloud Infrastructure 概要"
 last_modified_at: 2020-04-21T12:00:00-09:00
 categories:
-  - サービス別資料/サービス全般
+  - サービス別資料
+    - サービス全般
 tags:
   - 動画
+  - レベル:入門
 ---
 
 OCIに初めて触れる人のために、OCI全般の特長や、アーキテクチャについて解説しています。  

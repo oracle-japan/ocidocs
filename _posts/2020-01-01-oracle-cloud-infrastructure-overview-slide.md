@@ -1,10 +1,12 @@
 ---
-title: "[Slide]Oracle Cloud Infrastructure 概要"
+title: "[スライド]Oracle Cloud Infrastructure 概要"
 last_modified_at: 2020-10-09T12:00:00-09:00
 categories:
-  - サービス別資料/サービス全般
+  - サービス別資料
+    - サービス全般
 tags:
   - スライド
+  - レベル:入門
 ---
 
 OCIに初めて触れる人のために、OCI全般の特長や、アーキテクチャについて解説しています。  

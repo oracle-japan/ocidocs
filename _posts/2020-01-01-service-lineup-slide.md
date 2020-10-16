@@ -1,10 +1,12 @@
 ---
-title: "[Slide]Oracle Cloud Infrastructure サービス・ラインナップ"
+title: "[スライド]Oracle Cloud Infrastructure サービス・ラインナップ"
 last_modified_at: 2020-04-23T12:00:00-09:00
 categories:
-  - サービス別資料/サービス全般
+  - サービス別資料
+    - サービス全般
 tags:
   - スライド
+  - レベル:入門
 ---
 
 OCIのリリース済のサービスに関して、1サービス毎に1スライドのスタイルで解説しています。  
