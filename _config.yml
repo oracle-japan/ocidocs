@@ -37,6 +37,12 @@ markdown: kramdown
 theme: minimal-mistakes-jekyll
 breadcrumbs: true
 
+# Markdown Processing
+kramdown:
+  input : GFM
+  auro_ids : true
+
+
 # Outputting
 permalink: /:categories/:title/
 paginate: 5  # amount of posts to show
