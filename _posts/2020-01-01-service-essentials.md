@@ -1,5 +1,6 @@
 ---
 title: "Oracle Cloud Infrastructure サービス基本情報"
+author: mmarukaw
 last_modified_at: 2020-10-07T12:00:00-09:00  # スライド/動画を更新した場合はここを変更
 categories:
   - サービス別資料
