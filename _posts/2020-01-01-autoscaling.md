@@ -1,5 +1,5 @@
 ---
-title: "[スライド]自動スケーリング (Auto Scaling)を使ってみよう"
+title: "自動スケーリング (Auto Scaling) を使ってみよう"
 last_modified_at: 2019-09-04T12:00:00-09:00
 categories:
   - サービス別資料
