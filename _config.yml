@@ -124,6 +124,15 @@ defaults:
     values:
       layout: single
       author_profile: true
+  # _portofolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: fale
+      share: true
+
 
 category_archive:
   type: liquid
@@ -132,3 +141,7 @@ tag_archive:
   type: liquid
   path: /tags/
 
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
