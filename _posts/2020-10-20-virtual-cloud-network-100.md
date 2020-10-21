@@ -1,5 +1,6 @@
 ---
 title: "仮想クラウド・ネットワーク (VCN) 概要"
+excerpt: "仮想クラウド・ネットワークと、その構成コンポーネント、ネットワークの結合(ピアリング)に関して解説しています"
 categories:
   - Services
   - Networking

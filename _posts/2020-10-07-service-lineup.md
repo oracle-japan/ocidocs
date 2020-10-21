@@ -1,6 +1,6 @@
 ---
 title: "Oracle Cloud Infrastructure サービスラインナップ"
-last_modified_at: 2020-04-23T12:00:00-09:00
+excerpt: "OCIのリリース済のサービスに関して、1サービス毎に1スライドのスタイルで解説しています"
 categories:
   - Services
   - Overall

@@ -1,6 +1,6 @@
 ---
 title: "Oracle Cloud Infrastructure 概要"
-last_modified_at: 2020-10-09T12:00:00-09:00  # スライド/動画を更新した場合はここを変更
+excerpt: "OCIに初めて触れる人のために、OCI全般の特長や、アーキテクチャについて解説しています"
 categories:
   - Services
   - Overall

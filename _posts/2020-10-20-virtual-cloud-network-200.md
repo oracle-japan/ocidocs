@@ -1,5 +1,6 @@
 ---
 title: "仮想クラウド・ネットワーク (VCN) 詳細"
+excerpt: "VCNピアリングの詳細、トランジット・ルーティング、ハイブリッドDNS構成、Oracle Services Networkへの接続、アプライアンス型仮想ファイアウォールの利用など、VCNを利用するにあたり少し複雑なケースについて解説しています"
 categories:
   - Services
   - Networking

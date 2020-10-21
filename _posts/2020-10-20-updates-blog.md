@@ -1,6 +1,6 @@
 ---
 title: "Blog : Oracle Cloud Infrastructure 新機能ハイライト"
-last_modified_at: 2020-10-20T12:00:00-09:00  # スライド/動画を更新した場合はここを変更
+excerpt: "OCIの新機能・新リリースについてのまとめ情報を隔週で掲載しているOracle Cloud 公式ブログへの外部リンクです"
 categories:
   - Updates
 tags:
