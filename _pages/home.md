@@ -4,7 +4,7 @@ description: Oracle Cloud Infrastructure (OCI) を使っていこう! という�
 lang: ja_JP
 permalink: /
 type: pages
-layout: single
+layout: home
 author_profile: false
 toc: true
 toc_label: "目次"

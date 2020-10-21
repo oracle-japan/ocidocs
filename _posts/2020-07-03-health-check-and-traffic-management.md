@@ -5,8 +5,8 @@ categories:
   - Services
   - Edge Service
 tags:
-  - スライド
-  - 動画
+  - スライドあり
+  - 動画あり
   - レベル:応用(200)
 header:
   teaser: https://speakerd.s3.amazonaws.com/presentations/ad44958c474941c0a69dd6be27eda8dd/slide_0.jpg
@@ -15,7 +15,7 @@ header:
 OCIのエッジ・サービスを構成するサービスで、インターネットに面したアプリケーションを外部からアクティブに監視したり(ヘルスチェック)、バックエンドのサービスの稼動状態やクライアントのプロファイルに応じてグローバルにトラフィックの振り分けを行うGTM機能を提供(トラフィック管理)します。
 
 
-#### スライド (2020/7/3更新)  <!-- 更新日を最新に変更 -->
+#### スライド
 
 <div style="max-width:768px">
 

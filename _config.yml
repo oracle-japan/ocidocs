@@ -18,14 +18,18 @@ baseurl: "/ocidocs"
 url: "https://oracle-japan.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 title: Oracle Cloud Infrastructure 活用資料集
-tagline: Oracle Cloud Infrastructure を使い倒すための資料リンク集
+tagline: Oracle Cloud Infrastructure を使い倒すための資料集
 email:
 description: >-  # this means to ignore newlines until "baseurl:"
-  Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメントリンク集です。
+  Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。
+  新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。
   サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。
-twitter_username: Oracle_Japan
-github_username: oracle-japan
-
+repository: "oracle-japan/ocidocs"
+twitter_username: "Oracle_Japan"
+github_username: "oracle-japan"
+teaser: "/assets/images/rh01-cloud-home-pine-background.jpg"
+logo: "/assets/images/social-og-oracle-badge.jpg"
+masthead_title: "OCI活用資料集"
 
 # Build settings
 markdown: kramdown
@@ -112,9 +116,9 @@ defaults:
     values:
       layout: single
       author_profile: false
-      show_date: false
+      show_date: true
       read_time: false
-      comments: true
+      comments: false
       share: true
       related: true
       toc: true

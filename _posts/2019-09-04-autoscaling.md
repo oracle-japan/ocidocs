@@ -5,7 +5,7 @@ categories:
   - Services
   - Compute
 tags:
-  - スライド
+  - スライドあり
   - レベル:応用(200)
 header:
   teaser: https://speakerd.s3.amazonaws.com/presentations/3277a22d639b4857b185569a6181278c/slide_0.jpg
@@ -15,7 +15,7 @@ header:
 OCIの自動スケーリング機能と、それを支えるコンポーネント(インスタンス構成、インスタンス・プール、自動スケーリング構成)を実際に触って動作を理解します。  
 
 
-#### スライド (2019/9/4更新)  <!-- 更新日を最新に変更 -->
+#### スライド
 
 <div style="max-width:768px">
 

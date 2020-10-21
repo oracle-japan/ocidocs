@@ -5,7 +5,7 @@ categories:
   - Solutions
   - IAM
 tags:
-  - スライド
+  - スライドあり
   - レベル:応用(200)
 header:
   teaser: https://speakerd.s3.amazonaws.com/presentations/ac3060120271495cb8da562b79414c11/slide_0.jpg
@@ -16,7 +16,7 @@ OCIを使い始めた人が誰でも引っかかる、OCI IAM と Oracle Identit
 IAM機能のおさらいから手始めに、IDCSを使った場合にできることや、2つの認証/認可のツールの使い分け、より高度な要件(多要素認証、外部認証、IPホワイトリスティング)を行う際の方法などについて、ディープに語ります。
 
 
-#### スライド (2020/11/30更新)  <!-- 更新日を最新に変更 -->
+#### スライド
 
 <div style="max-width:768px">
 

@@ -5,7 +5,7 @@ categories:
   - Solutions
   - High Availability
 tags:
-  - スライド
+  - スライドあり
   - レベル:応用(200)
 header:
   teaser: https://speakerd.s3.amazonaws.com/presentations/557350f25c9a4a209d57dfaf69a72889/slide_0.jpg
@@ -15,7 +15,7 @@ header:
 高可用性システムの構築をサポートするOracle Cloudの様々な機能のご紹介から、障害に強いアーキテクチャ設計の考え方などをお届け致します。
 
 
-#### スライド (2020/11/30更新)  <!-- 更新日を最新に変更 -->
+#### スライド
 
 <div style="max-width:768px">
 
