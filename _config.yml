@@ -83,7 +83,7 @@ plugins:
 author:
   name   : "Oracle Japan Solution Engineers"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "日本オラクル株式会社で、OCIに関する技術情報の発信や、お客様のクラウド活用の技術支援をしています"
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
