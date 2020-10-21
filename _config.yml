@@ -14,12 +14,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-baseurl: "/ocidocs" # GitHub Pages用
-#baseurl: "" # ローカルテストページ用
+baseurl: "/ocidocs"
 url: "https://oracle-japan.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
-
-title: OCI活用資料集
+title: Oracle Cloud Infrastructure 活用資料集
 tagline: Oracle Cloud Infrastructure を使い倒すための資料リンク集
 email:
 description: >-  # this means to ignore newlines until "baseurl:"
@@ -27,15 +25,16 @@ description: >-  # this means to ignore newlines until "baseurl:"
   サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。
 twitter_username: Oracle_Japan
 github_username: oracle-japan
-minimal_mistakes_skin: "contrast"
-locale: "ja-JP"
-search: true
+
 
 # Build settings
 markdown: kramdown
 # remote_theme: mmistakes/minimal-mistakes
 theme: minimal-mistakes-jekyll
-# breadcrumbs: true
+minimal_mistakes_skin: "contrast"
+locale: ja-JP
+search: true
+#breadcrumbs: true
 
 # Markdown Processing
 kramdown:
@@ -89,9 +88,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+    #   url: "https://instagram.com/"
 
 footer:
   links:
@@ -112,27 +111,29 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
+      show_date: false
       read_time: false
       comments: true
       share: true
       related: true
-  # _pages
+      toc: true
+      toc_sticky: true
+      sidebar:
+        nav: "docs"
+      header:
+        overlay_image: /assets/images/rh01-cloud-home-pine-background.jpg
   - scope:
       path: "_pages"
       type: pages
     values:
       layout: single
-      author_profile: true
-  # _portofolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: fale
-      share: true
-
+      author_profile: false
+      author_profile: false
+      sidebar:
+        nav: "docs"
+      header:
+        overlay_image: /assets/images/rh01-cloud-home-pine-background.jpg
 
 category_archive:
   type: liquid
@@ -140,8 +141,3 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
-
-collections:
-  portfolio:
-    output: true
-    permalink: /:collection/:path/

@@ -2,5 +2,7 @@
 title: "タグ別の資料"
 permalink: /tags/
 layout: tags
-author_profile: true
+#entries_layout: grid
+#classes: wide
+author_profile: false
 ---

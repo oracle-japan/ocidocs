@@ -1,6 +1,7 @@
 ---
-title: "Posts by Category"
-layout: categories
+title: "カテゴリー別の資料"
 permalink: /categories/
-author_profile: true
+layout: categories
+#entries_layout: grid
+#classes: wide
 ---
