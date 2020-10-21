@@ -1,0 +1,665 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.20.2 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="ja" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Oracle Cloudで考える高可用性アーキテクチャー | Oracle Cloud Infrastructure 活用資料集</title>
+<meta name="description" content="高可用性システムの構築をサポートするOracle Cloudの様々な機能や、障害に強いアーキテクチャ設計の考え方などを紹介します">
+
+
+  <meta name="author" content="Oracle Japan Solution Engineers">
+  
+  <meta property="article:author" content="Oracle Japan Solution Engineers">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="Oracle Cloud Infrastructure 活用資料集">
+<meta property="og:title" content="Oracle Cloudで考える高可用性アーキテクチャー">
+<meta property="og:url" content="https://oracle-japan.github.io/ocidocs/solutions/high%20availability/high-availability/">
+
+
+  <meta property="og:description" content="高可用性システムの構築をサポートするOracle Cloudの様々な機能や、障害に強いアーキテクチャ設計の考え方などを紹介します">
+
+
+
+  <meta property="og:image" content="https://oracle-japan.github.io/ocidocs/assets/images/rh01-cloud-home-pine-background.jpg">
+
+
+
+
+
+  <meta property="article:published_time" content="2019-11-30T00:00:00+09:00">
+
+
+
+
+
+
+<link rel="canonical" href="https://oracle-japan.github.io/ocidocs/solutions/high%20availability/high-availability/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "https://oracle-japan.github.io/ocidocs/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/ocidocs/feed.xml" type="application/atom+xml" rel="alternate" title="Oracle Cloud Infrastructure 活用資料集 Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/ocidocs/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/ocidocs/"><img src="/ocidocs/assets/images/social-og-oracle-badge.jpg" alt=""></a>
+        
+        <a class="site-title" href="/ocidocs/">
+          OCI活用資料集
+          <span class="site-subtitle">Oracle Cloud Infrastructure を使い倒すための資料集</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/ocidocs/updates/">新機能</a>
+            </li><li class="masthead__menu-item">
+              <a href="/ocidocs/services/">サービス別</a>
+            </li><li class="masthead__menu-item">
+              <a href="/ocidocs/solutions/">ソリューション別</a>
+            </li><li class="masthead__menu-item">
+              <a href="/ocidocs/misc/">その他</a>
+            </li><li class="masthead__menu-item">
+              <a href="/ocidocs/links/">外部リンク</a>
+            </li><li class="masthead__menu-item">
+              <a href="/ocidocs/tags/">タグ</a>
+            </li><li class="masthead__menu-item">
+              <a href="/ocidocs/about/">このサイトについて</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">メニュー</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: url('/ocidocs/assets/images/rh01-cloud-home-pine-background.jpg');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          Oracle Cloudで考える高可用性アーキテクチャー
+
+        
+      </h1>
+      
+        <p class="page__lead">高可用性システムの構築をサポートするOracle Cloudの様々な機能や、障害に強いアーキテクチャ設計の考え方などを紹介します
+</p>
+      
+      
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2019-11-30T00:00:00+09:00">November 30, 2019</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+      
+      
+    </div>
+  
+  
+</div>
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">メニュー</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          <a href="/ocidocs/updates/"><span class="nav__sub-title">新機能</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          <a href="/ocidocs/services/"><span class="nav__sub-title">サービス別</span></a>
+        
+
+        
+        <ul>
+          
+            <li><a href="/ocidocs/services/overall/">サービス全般</a></li>
+          
+            <li><a href="/ocidocs/services/compute/">コンピュート</a></li>
+          
+            <li><a href="/ocidocs/services/storage/">ストレージ</a></li>
+          
+            <li><a href="/ocidocs/services/networking/">ネットワーク</a></li>
+          
+            <li><a href="/ocidocs/services/database/">データベース</a></li>
+          
+            <li><a href="/ocidocs/services/edge/">エッジ・サービス</a></li>
+          
+            <li><a href="/ocidocs/services/security/">セキュリティ</a></li>
+          
+            <li><a href="/ocidocs/services/governance-and-administration/">ガバナンスと管理</a></li>
+          
+            <li><a href="/ocidocs/services/devtools/">開発ツール</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <a href="/ocidocs/solutions/"><span class="nav__sub-title">ソリューション別</span></a>
+        
+
+        
+        <ul>
+          
+            <li><a href="/ocidocs/solutions/ha/">HA・DR・高可用性システム</a></li>
+          
+            <li><a href="/ocidocs/solutions/iam/">認証・認可・セキュリティ</a></li>
+          
+            <li><a href="/ocidocs/solutions/manageability/">運用・管理</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <a href="/ocidocs/misc/"><span class="nav__sub-title">その他</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          <a href="/ocidocs/links/"><span class="nav__sub-title">外部リンク</span></a>
+        
+
+        
+      </li>
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Oracle Cloudで考える高可用性アーキテクチャー">
+    <meta itemprop="description" content="高可用性システムの構築をサポートするOracle Cloudの様々な機能や、障害に強いアーキテクチャ設計の考え方などを紹介します">
+    <meta itemprop="datePublished" content="2019-11-30T00:00:00+09:00">
+    
+
+    <div class="page__inner-wrap">
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 目次</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#スライド">スライド</a></li>
+</ul>
+
+            </nav>
+          </aside>
+        
+        <p>2019/11/30に実施した、OCHaCafe Premium 第1回のプレゼンテーション資料です。<br />
+高可用性システムの構築をサポートするOracle Cloudの様々な機能のご紹介から、障害に強いアーキテクチャ設計の考え方などをお届け致します。</p>
+
+<h4 id="スライド">スライド</h4>
+
+<div style="max-width:768px">
+
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
+<script async="" class="speakerdeck-embed" data-id="557350f25c9a4a209d57dfaf69a72889" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
+
+</div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> タグ: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/ocidocs/tags/#%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%89%E3%81%82%E3%82%8A" class="page__taxonomy-item" rel="tag">スライドあり</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/ocidocs/tags/#%E3%83%AC%E3%83%99%E3%83%AB-%E5%BF%9C%E7%94%A8-200" class="page__taxonomy-item" rel="tag">レベル:応用(200)</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> カテゴリー: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/ocidocs/categories/#high-availability" class="page__taxonomy-item" rel="tag">High Availability</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/ocidocs/categories/#solutions" class="page__taxonomy-item" rel="tag">Solutions</a>
+    
+    </span>
+  </p>
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 更新日時:</strong> <time datetime="2019-11-30T00:00:00+09:00">November 30, 2019</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">共有</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Oracle+Cloud%E3%81%A7%E8%80%83%E3%81%88%E3%82%8B%E9%AB%98%E5%8F%AF%E7%94%A8%E6%80%A7%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%81%E3%83%A3%E3%83%BC%20https%3A%2F%2Foracle-japan.github.io%2Focidocs%2Fsolutions%2Fhigh%2520availability%2Fhigh-availability%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="共有 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Foracle-japan.github.io%2Focidocs%2Fsolutions%2Fhigh%2520availability%2Fhigh-availability%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="共有 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Foracle-japan.github.io%2Focidocs%2Fsolutions%2Fhigh%2520availability%2Fhigh-availability%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="共有 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/ocidocs/solutions/iam/iam-and-idcs/" class="pagination--pager" title="OCIの認証・認可機能の総まとめ
+">前へ</a>
+    
+    
+      <a href="/ocidocs/solutions/manageability/managing-oci/" class="pagination--pager" title="OCIの運用管理力を高めよう
+">次へ</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">関連記事</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://speakerd.s3.amazonaws.com/presentations/40dbaf0f88cf4f148e0d7ca0694a8030/slide_0.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ocidocs/services/networking/virtual-cloud-network-200/" rel="permalink">仮想クラウド・ネットワーク (VCN) 詳細
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2020-10-20T00:00:00+09:00">October 20, 2020</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">VCNピアリングの詳細、トランジット・ルーティング、ハイブリッドDNS構成、Oracle Services Networkへの接続、アプライアンス型仮想ファイアウォールの利用など、VCNを利用するにあたり少し複雑なケースについて解説しています
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://speakerd.s3.amazonaws.com/presentations/a3f5c9eb4fbb4fd49a20eaf26117024a/slide_0.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ocidocs/services/networking/virtual-cloud-network-100/" rel="permalink">仮想クラウド・ネットワーク (VCN) 概要
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2020-10-20T00:00:00+09:00">October 20, 2020</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">仮想クラウド・ネットワークと、その構成コンポーネント、ネットワークの結合(ピアリング)に関して解説しています
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="https://blogs.oracle.com/oracle4engineer/oci%e6%96%b0%e6%a9%9f%e8%83%bd%e3%83%8f%e3%82%a4%e3%83%a9%e3%82%a4%e3%83%88">Blog : Oracle Cloud Infrastructure 新機能ハイライト
+</a> <a href="/ocidocs/updates/updates-blog/" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+      
+    </h2>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">OCIの新機能・新リリースについてのまとめ情報を隔週で掲載しているOracle Cloud 公式ブログへの外部リンクです
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://speakerd.s3.amazonaws.com/presentations/cf71c90194e445c4812a671235389dff/slide_0.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ocidocs/services/compute/compute-100/" rel="permalink">コンピュート概要
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2020-10-20T00:00:00+09:00">October 20, 2020</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">インスタンスの種類、イメージの操作、ブート・ボリューム、インスタンス・プールを利用した自動スケーリング、インスタンス・メタデータについて解説しています
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="検索キーワードを入力してください..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>フォロー</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/#ocijp" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/oracle-japan" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+    
+
+    <li><a href="/ocidocs/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 Oracle Cloud Infrastructure 活用資料集. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/ocidocs/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/ocidocs/assets/js/lunr/lunr.min.js"></script>
+<script src="/ocidocs/assets/js/lunr/lunr-store.js"></script>
+<script src="/ocidocs/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+
+  </body>
+</html>
