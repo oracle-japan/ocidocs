@@ -17,9 +17,10 @@
 baseurl: "/ocidocs"
 url: "https://oracle-japan.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
-title: Oracle Cloud Infrastructure 活用資料集
+title: "Oracle Cloud Infrastructure 活用資料集"
 title_separator: "|"
-tagline: Oracle Cloud Infrastructure を使い倒すための資料集
+subtitle: "Oracle Cloud Infrastructure を使い倒すための資料集"
+tagline: "Oracle Cloud Infrastructure を使い倒すための資料集"
 email: masataka.marukawa@oracle.com
 description: >-  # this means to ignore newlines until "baseurl:"
   Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。
@@ -30,7 +31,7 @@ twitter_username: "Oracle_Japan"
 github_username: "oracle-japan"
 # teaser: "/assets/images/rh01-cloud-home-pine-background.jpg"
 logo: "/assets/images/social-og-oracle-badge.jpg"
-masthead_title: "Oracle Cloud Infrastructure 活用資料集"
+masthead_title: "OCI活用資料集"
 
 # Build settings
 markdown: kramdown
@@ -84,15 +85,12 @@ author:
   avatar : "/assets/images/bio-photo.jpg"
   bio    : "My awesome biography constrained to a sentence or two goes here."
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      url: "https://twitter.com/#ocijp"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+      url: "https://github.com/oracle-japan"
     # - label: "Instagram"
     #   icon: "fab fa-fw fa-instagram"
     #   url: "https://instagram.com/"
