@@ -6,7 +6,6 @@ categories:
   - Edge Service
 tags:
   - スライドあり
-  - 動画あり
   - レベル:応用(200)
 header:
   teaser: https://speakerd.s3.amazonaws.com/presentations/ad44958c474941c0a69dd6be27eda8dd/slide_0.jpg

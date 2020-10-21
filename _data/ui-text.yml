@@ -1146,7 +1146,7 @@ ja: &DEFAULT_JA
   powered_by                 :
   website_label              :
   email_label                :
-  recent_posts               : "最近の投稿"
+  recent_posts               : "最近アップデートされた資料"
   undefined_wpm              : "パラメータ words_per_minute が _config.yml で定義されていません"
   comment_form_info          : "メールアドレスが公開されることはありません。次の印のある項目は必ず入力してください:"
   comment_form_comment_label : "コメント"
