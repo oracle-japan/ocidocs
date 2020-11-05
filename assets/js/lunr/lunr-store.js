@@ -149,11 +149,23 @@ var store = [{
         "url": "https://oracle-japan.github.io/ocidocs/services/storage/block-volume-100/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/b80073aa58a141638ad5ba432009ba59/slide_0.jpg"
       },{
+        "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2020/6～2020/8",
+        "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介する資料です。2020年6月～2020年8月の3ヶ月分の新機能について記載しています。   スライド          ","categories": ["Updates"],
+        "tags": ["スライドあり"],
+        "url": "https://oracle-japan.github.io/ocidocs/updates/update-FY21Q1/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/1d040879389d496299dfa2beb002e9f9/slide_0.jpg"
+      },{
         "title": "OCI 課金にまつわるエトセトラ",
         "excerpt":"実際にクラウドを使っていると、思わぬところで課金されちゃったなんてこと、ありますよね。クラウドは使った分だけ後から課金されるので、どんなところに課金されるのか、どのくらいの課金額になるかを知るのはとても大切です。  というわけでこの資料では、OCIの課金ポイントに関してエンジニア目線からわかりやすくまとめてお伝えしていきます。   スライド          ","categories": ["Solutions","Manageability"],
         "tags": ["スライドあり","レベル:入門(100)"],
         "url": "https://oracle-japan.github.io/ocidocs/solutions/manageability/managing-oci-cost/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/d7bb02f732134b059e7568b1c6caecfc/slide_0.jpg"
+      },{
+        "title": "データ移行(データ転送サービスとストレージ・ゲートウェイ)",
+        "excerpt":"オンプレミスからのデータ移行等で利用可能な、データ転送サービス、ストレージ・ゲートウェイなどについて解説しています。   スライド          ","categories": ["Services","Storage"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/storage/data-transfer-and-storage-gateway/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/157e4694c8d04b11922b5f15cc88fcb4/slide_0.jpg"
       },{
         "title": "Oracle Cloud Infrastructure サービス基本情報",
         "excerpt":"ログインに始まり、言語の変更、サービス制限、OCID、検索など、主にOCIコンソールの基本的情報について解説しています。   スライド           動画      ","categories": ["Services","Overall"],
