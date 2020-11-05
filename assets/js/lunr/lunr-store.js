@@ -71,6 +71,12 @@ var store = [{
         "url": "https://oracle-japan.github.io/ocidocs/services/storage/object-storage-100/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/e01e15341d2e43adbf149afaf86f0719/slide_0.jpg"
       },{
+        "title": "Oracle Cloud Infrastructure サービスラインナップ",
+        "excerpt":"OCIのリリース済のサービスに関して、1サービス毎に1スライドのスタイルで解説しています。   スライド           動画      ","categories": ["Services","Overall"],
+        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/overall/service-lineup/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/df57e649bf8b4cf3a6035b324cc71ae4/slide_0.jpg"
+      },{
         "title": "Autonomous Database Cloud 技術詳細",
         "excerpt":"Oracle Databaseを利用したフルマネージド・データベース・サービスである、Autonomous Databaseについての概要解説資料です。  高度な自動化技術が搭載された、世界初の自律型データベースの特徴や、利用方法などについてカバーしています。   スライド           セミナー動画      ","categories": ["Services","Database"],
         "tags": ["スライドあり","動画あり","レベル:応用(200)"],
@@ -172,12 +178,6 @@ var store = [{
         "tags": ["スライドあり","動画あり","レベル:入門(100)"],
         "url": "https://oracle-japan.github.io/ocidocs/services/overall/service-essentials/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/dadec91d58b24202a8af17f075301fba/slide_0.jpg"
-      },{
-        "title": "Oracle Cloud Infrastructure サービスラインナップ",
-        "excerpt":"OCIのリリース済のサービスに関して、1サービス毎に1スライドのスタイルで解説しています。   スライド           動画      ","categories": ["Services","Overall"],
-        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
-        "url": "https://oracle-japan.github.io/ocidocs/services/overall/service-lineup/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/df57e649bf8b4cf3a6035b324cc71ae4/slide_0.jpg"
       },{
         "title": "Oracle Cloud Infrastructure 概要",
         "excerpt":"OCIに初めて触れる人のために、OCI全般の特長や、アーキテクチャについて解説しています。   スライド           動画      ","categories": ["Services","Overall"],
