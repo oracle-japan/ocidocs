@@ -207,5 +207,5 @@ var store = [{
         "excerpt":"Oracle Cloud 公式ブログ にて、OCIの新機能・新リリースについてのまとめ情報を隔週でアップしています  ","categories": ["Updates"],
         "tags": [],
         "url": "https://oracle-japan.github.io/ocidocs/updates/updates-blog/",
-        "teaser": null
+        "teaser": "https://cdn.app.compendium.com/uploads/user/e7c690e8-6ff9-102a-ac6d-e4aebca50425/36fb492f-3532-48e4-a057-f2b674a19de1/File/c8cb69320b87569be0b0b0ee2770172a/image_20201104163944879.png"
       }]
