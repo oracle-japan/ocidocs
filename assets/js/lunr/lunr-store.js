@@ -198,7 +198,7 @@ var store = [{
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/40dbaf0f88cf4f148e0d7ca0694a8030/slide_0.jpg"
       },{
         "title": "OCI ユーザー作成・権限管理手順",
-        "excerpt":"OCIの認証、認可、ID管理などを司るコア・コンポーネントである OCI IAM (Identity and Access Management) についての解説資料です。  認証とID管理、認可およびポリシー、コンパートメントとその管理、IDフェデレーション(IDCSとの連携)、タグ付け(Tagging) のトピックをカバーしています。   スライド          ","categories": ["Services","Governance and Administration"],
+        "excerpt":"OCIの認証、認可、ID管理などを司るコア・コンポーネントである OCI IAM (Identity and Access Management) についての解説資料です。  管理者が、新しくユーザーを作成し、グループ、ポリシーなどを設定して、適切に権限を設定する方法について、画面ショットを交えながら解説しています。   スライド          ","categories": ["Services","Governance and Administration"],
         "tags": ["スライドあり","レベル:入門(100)"],
         "url": "https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/managing-users/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/85242fdec3af4bc6b355d3580701a55f/slide_0.jpg"
