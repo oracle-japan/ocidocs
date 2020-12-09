@@ -113,12 +113,6 @@ var store = [{
         "url": "https://oracle-japan.github.io/ocidocs/services/database/exadata-200/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/93563fd1a83240e082d52b9b3c5b81f2/slide_0.jpg"
       },{
-        "title": "コンピュート詳細",
-        "excerpt":"OCI上で仮想マシンやベアメタル・サーバーを利用することができるコンピュート・サービスについての詳細資料です。  カスタム・イメージの応用、仮想マシンイメージの持ち込み(BYOI)、ハイパーバイザーの利用、メトリックと自動スケーリング、コンソール接続、などのコンピュート・サービスの応用的な使い方について解説しています。   スライド          ","categories": ["Services","Compute"],
-        "tags": ["スライドあり","レベル:応用(200)"],
-        "url": "https://oracle-japan.github.io/ocidocs/services/compute/compute-200/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/90e8e852d1c8443787f6f33e7e721177/slide_0.jpg"
-      },{
         "title": "ストレージ詳細",
         "excerpt":"OCIのストレージサービス全般について応用的なトピックを扱った資料です。DenseIOインスタンスに内蔵されるローカルNVMe、ブロック・ボリューム、ファイル・ストレージそれぞれの性能、ボリューム・グループなどについて解説しています。   スライド          ","categories": ["Services","Storage"],
         "tags": ["スライドあり","レベル:応用(200)"],
@@ -203,9 +197,27 @@ var store = [{
         "url": "https://oracle-japan.github.io/ocidocs/services/networking/virtual-cloud-network-200/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/40dbaf0f88cf4f148e0d7ca0694a8030/slide_0.jpg"
       },{
+        "title": "OCI ユーザー作成・権限管理手順",
+        "excerpt":"OCIの認証、認可、ID管理などを司るコア・コンポーネントである OCI IAM (Identity and Access Management) についての解説資料です。  認証とID管理、認可およびポリシー、コンパートメントとその管理、IDフェデレーション(IDCSとの連携)、タグ付け(Tagging) のトピックをカバーしています。   スライド          ","categories": ["Services","Governance and Administration"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/managing-users/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/85242fdec3af4bc6b355d3580701a55f/slide_0.jpg"
+      },{
+        "title": "コンピュート詳細",
+        "excerpt":"OCI上で仮想マシンやベアメタル・サーバーを利用することができるコンピュート・サービスについての詳細資料です。  カスタム・イメージの応用、仮想マシンイメージの持ち込み(BYOI)、ハイパーバイザーの利用、メトリックと自動スケーリング、コンソール接続、などのコンピュート・サービスの応用的な使い方について解説しています。   スライド          ","categories": ["Services","Compute"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/compute/compute-200/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/90e8e852d1c8443787f6f33e7e721177/slide_0.jpg"
+      },{
         "title": "Blog : Oracle Cloud Infrastructure 新機能ハイライト",
-        "excerpt":"Oracle Cloud 公式ブログ にて、OCIの新機能・新リリースについてのまとめ情報を隔週でアップしています  ","categories": ["Updates"],
+        "excerpt":" ","categories": ["Updates"],
         "tags": [],
         "url": "https://oracle-japan.github.io/ocidocs/updates/updates-blog/",
-        "teaser": "https://cdn.app.compendium.com/uploads/user/e7c690e8-6ff9-102a-ac6d-e4aebca50425/36fb492f-3532-48e4-a057-f2b674a19de1/File/c8cb69320b87569be0b0b0ee2770172a/image_20201104163944879.png"
+        "teaser": "https://cdn.app.compendium.com/uploads/user/e7c690e8-6ff9-102a-ac6d-e4aebca50425/36fb492f-3532-48e4-a057-f2b674a19de1/File/b5a9121425a0e376b622e07247bd054e/image_20201202094512173.png"
+      },{
+        "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2020/3～2020/5",
+        "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介する資料です。  本資料は2020年3月～2020年5月の3ヶ月分の新機能について記載しています。   スライド          ","categories": ["Updates"],
+        "tags": ["スライドあり"],
+        "url": "https://oracle-japan.github.io/ocidocs/updates/update-FY21Q2/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/80ce572018ad44db8222cec074ee5ac2/slide_0.jpg"
       }]
