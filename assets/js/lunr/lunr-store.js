@@ -113,12 +113,6 @@ var store = [{
         "url": "https://oracle-japan.github.io/ocidocs/services/database/exadata-200/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/93563fd1a83240e082d52b9b3c5b81f2/slide_0.jpg"
       },{
-        "title": "ストレージ詳細",
-        "excerpt":"OCIのストレージサービス全般について応用的なトピックを扱った資料です。DenseIOインスタンスに内蔵されるローカルNVMe、ブロック・ボリューム、ファイル・ストレージそれぞれの性能、ボリューム・グループなどについて解説しています。   スライド          ","categories": ["Services","Storage"],
-        "tags": ["スライドあり","レベル:応用(200)"],
-        "url": "https://oracle-japan.github.io/ocidocs/services/storage/storage-200/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/e1bcc74f03584d94af62da8983f3c8d5/slide_0.jpg"
-      },{
         "title": "DNS 概要",
         "excerpt":"インターネット上の名前解決を提供する権威DNSサービスであるOCI DNSサービスについて、サービスの概要、特長、利用方法、ユースケースなどについて解説しています。   スライド           セミナー動画 (12分53秒まで)      ","categories": ["Services","Edge Service"],
         "tags": ["スライドあり","動画あり","レベル:入門(100)"],
@@ -142,12 +136,6 @@ var store = [{
         "tags": ["スライドあり","レベル:入門(100)"],
         "url": "https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/monitoring/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/0afd8c1a326848a18ab99eba0c054148/slide_0.jpg"
-      },{
-        "title": "ブロックボリューム",
-        "excerpt":"インスタンスにアタッチしてブロック・デバイスとして利用することができる、OCIブロック・ボリューム・サービスの基本的な内容について解説しています。また、DenseIO シェイプに内蔵される高速なローカルNVMeディスクについても説明しています。   スライド           動画 ~28分15秒      ","categories": ["Services","Storage"],
-        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
-        "url": "https://oracle-japan.github.io/ocidocs/services/storage/block-volume-100/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/b80073aa58a141638ad5ba432009ba59/slide_0.jpg"
       },{
         "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2020/6～2020/8",
         "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介する資料です。2020年6月～2020年8月の3ヶ月分の新機能について記載しています。   スライド          ","categories": ["Updates"],
@@ -214,6 +202,18 @@ var store = [{
         "tags": [],
         "url": "https://oracle-japan.github.io/ocidocs/updates/updates-blog/",
         "teaser": "https://cdn.app.compendium.com/uploads/user/e7c690e8-6ff9-102a-ac6d-e4aebca50425/36fb492f-3532-48e4-a057-f2b674a19de1/File/b5a9121425a0e376b622e07247bd054e/image_20201202094512173.png"
+      },{
+        "title": "ブロックボリューム",
+        "excerpt":"インスタンスにアタッチしてブロック・デバイスとして利用することができる、OCIブロック・ボリューム・サービスの基本的な内容について解説しています。また、DenseIO シェイプに内蔵される高速なローカルNVMeディスクについても説明しています。   スライド           動画 ~28分15秒      ","categories": ["Services","Storage"],
+        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/storage/block-volume-100/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/b80073aa58a141638ad5ba432009ba59/slide_0.jpg"
+      },{
+        "title": "ストレージ詳細",
+        "excerpt":"OCIのストレージサービス全般について応用的なトピックを扱った資料です。DenseIOインスタンスに内蔵されるローカルNVMe、ブロック・ボリューム、ファイル・ストレージそれぞれの性能、ボリューム・グループなどについて解説しています。   スライド          ","categories": ["Services","Storage"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/storage/storage-200/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/e1bcc74f03584d94af62da8983f3c8d5/slide_0.jpg"
       },{
         "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2020/3～2020/5",
         "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介する資料です。  本資料は2020年3月～2020年5月の3ヶ月分の新機能について記載しています。   スライド          ","categories": ["Updates"],

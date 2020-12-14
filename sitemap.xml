@@ -77,10 +77,6 @@
 <lastmod>2020-06-02T00:00:00+09:00</lastmod>
 </url>
 <url>
-<loc>https://oracle-japan.github.io/ocidocs/services/storage/storage-200/</loc>
-<lastmod>2020-06-12T00:00:00+09:00</lastmod>
-</url>
-<url>
 <loc>https://oracle-japan.github.io/ocidocs/services/edge%20service/dns-100/</loc>
 <lastmod>2020-07-03T00:00:00+09:00</lastmod>
 </url>
@@ -95,10 +91,6 @@
 <url>
 <loc>https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/monitoring/</loc>
 <lastmod>2020-09-02T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>https://oracle-japan.github.io/ocidocs/services/storage/block-volume-100/</loc>
-<lastmod>2020-09-04T00:00:00+09:00</lastmod>
 </url>
 <url>
 <loc>https://oracle-japan.github.io/ocidocs/updates/update-FY21Q1/</loc>
@@ -143,6 +135,14 @@
 <url>
 <loc>https://oracle-japan.github.io/ocidocs/updates/updates-blog/</loc>
 <lastmod>2020-12-02T00:00:00+09:00</lastmod>
+</url>
+<url>
+<loc>https://oracle-japan.github.io/ocidocs/services/storage/block-volume-100/</loc>
+<lastmod>2020-12-08T00:00:00+09:00</lastmod>
+</url>
+<url>
+<loc>https://oracle-japan.github.io/ocidocs/services/storage/storage-200/</loc>
+<lastmod>2020-12-08T00:00:00+09:00</lastmod>
 </url>
 <url>
 <loc>https://oracle-japan.github.io/ocidocs/updates/update-FY21Q2/</loc>
