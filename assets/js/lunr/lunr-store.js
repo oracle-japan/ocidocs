@@ -71,12 +71,6 @@ var store = [{
         "url": "https://oracle-japan.github.io/ocidocs/services/storage/object-storage-100/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/e01e15341d2e43adbf149afaf86f0719/slide_0.jpg"
       },{
-        "title": "Oracle Cloud Infrastructure サービスラインナップ",
-        "excerpt":"OCIのリリース済のサービスに関して、1サービス毎に1スライドのスタイルで解説しています。   スライド           動画      ","categories": ["Services","Overall"],
-        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
-        "url": "https://oracle-japan.github.io/ocidocs/services/overall/service-lineup/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/df57e649bf8b4cf3a6035b324cc71ae4/slide_0.jpg"
-      },{
         "title": "Autonomous Database Cloud 技術詳細",
         "excerpt":"Oracle Databaseを利用したフルマネージド・データベース・サービスである、Autonomous Databaseについての概要解説資料です。  高度な自動化技術が搭載された、世界初の自律型データベースの特徴や、利用方法などについてカバーしています。   スライド           セミナー動画      ","categories": ["Services","Database"],
         "tags": ["スライドあり","動画あり","レベル:応用(200)"],
@@ -88,18 +82,6 @@ var store = [{
         "tags": ["スライドあり","レベル:入門(100)"],
         "url": "https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/iam-100/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/de3056b3ba2b4f61b47e48f0fe15d480/slide_0.jpg"
-      },{
-        "title": "ロード・バランサー 概要",
-        "excerpt":"バックエンドに配置した様々なサービスの冗長性やスケーリングをサポートする OCI ロード・バランサー・サービスについて、その機能概要、構成コンポーネントの内容、OCIコンソールを利用した構成方法などについて解説しています。   スライド           セミナー動画      ","categories": ["Services","Networking"],
-        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
-        "url": "https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-100/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/78914498b3c14b97a112f59283b754b7/slide_0.jpg"
-      },{
-        "title": "ロード・バランサー 詳細",
-        "excerpt":"様々なサービスの冗長性やスケーリングをサポートする OCI ロード・バランサー・サービスについて、応用的な利用方法について解説したドキュメントです。  セッション永続性、仮想ホストによるルーティング、URIパス・ベース・ルーティング、SSL通信方式とロード・バランサーでのSSLターミネーションの設定、ロード・バランサーが収集するメトリック、トラブル時の対応ガイドラインについて解説しています。   スライド          ","categories": ["Services","Networking"],
-        "tags": ["スライドあり","レベル:応用(200)"],
-        "url": "https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-200/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/9ca991733d2a4670bdd4e5ed5b5770c4/slide_0.jpg"
       },{
         "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2020/3～2020/5",
         "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介する資料です。  本資料は2020年3月～2020年5月の3ヶ月分の新機能について記載しています。   スライド          ","categories": ["Updates"],
@@ -203,7 +185,7 @@ var store = [{
         "url": "https://oracle-japan.github.io/ocidocs/updates/updates-blog/",
         "teaser": "https://cdn.app.compendium.com/uploads/user/e7c690e8-6ff9-102a-ac6d-e4aebca50425/36fb492f-3532-48e4-a057-f2b674a19de1/File/b5a9121425a0e376b622e07247bd054e/image_20201202094512173.png"
       },{
-        "title": "ブロックボリューム",
+        "title": "ブロックボリューム概要",
         "excerpt":"インスタンスにアタッチしてブロック・デバイスとして利用することができる、OCIブロック・ボリューム・サービスの基本的な内容について解説しています。また、DenseIO シェイプに内蔵される高速なローカルNVMeディスクについても説明しています。   スライド           動画 ~28分15秒      ","categories": ["Services","Storage"],
         "tags": ["スライドあり","動画あり","レベル:入門(100)"],
         "url": "https://oracle-japan.github.io/ocidocs/services/storage/block-volume-100/",
@@ -220,4 +202,22 @@ var store = [{
         "tags": ["スライドあり"],
         "url": "https://oracle-japan.github.io/ocidocs/updates/update-FY21Q2/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/80ce572018ad44db8222cec074ee5ac2/slide_0.jpg"
+      },{
+        "title": "Oracle Cloud Infrastructure サービスラインナップ",
+        "excerpt":"OCIのリリース済のサービスに関して、1サービス毎に1スライドのスタイルで解説しています。   スライド           動画      ","categories": ["Services","Overall"],
+        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/overall/service-lineup/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/df57e649bf8b4cf3a6035b324cc71ae4/slide_0.jpg"
+      },{
+        "title": "ロード・バランサー 概要",
+        "excerpt":"バックエンドに配置した様々なサービスの冗長性やスケーリングをサポートする OCI ロード・バランサー・サービスについて、その機能概要、構成コンポーネントの内容、OCIコンソールを利用した構成方法などについて解説しています。   スライド           セミナー動画      ","categories": ["Services","Networking"],
+        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-100/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/78914498b3c14b97a112f59283b754b7/slide_0.jpg"
+      },{
+        "title": "ロード・バランサー 詳細",
+        "excerpt":"様々なサービスの冗長性やスケーリングをサポートする OCI ロード・バランサー・サービスについて、応用的な利用方法について解説したドキュメントです。  セッション永続性、仮想ホストによるルーティング、URIパス・ベース・ルーティング、SSL通信方式とロード・バランサーでのSSLターミネーションの設定、ロード・バランサーが収集するメトリック、トラブル時の対応ガイドラインについて解説しています。   スライド          ","categories": ["Services","Networking"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-200/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/9ca991733d2a4670bdd4e5ed5b5770c4/slide_0.jpg"
       }]
