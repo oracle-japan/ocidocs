@@ -23,12 +23,6 @@ var store = [{
         "url": "https://oracle-japan.github.io/ocidocs/solutions/iam/iam-and-idcs/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/ac3060120271495cb8da562b79414c11/slide_0.jpg"
       },{
-        "title": "Oracle Cloudで考える高可用性アーキテクチャー",
-        "excerpt":"2019/11/30に実施した、OCHaCafe Premium 第1回のプレゼンテーション資料です。  高可用性システムの構築をサポートするOracle Cloudの様々な機能のご紹介から、障害に強いアーキテクチャ設計の考え方などをお届け致します。   スライド          ","categories": ["Solutions","High Availability"],
-        "tags": ["スライドあり","レベル:応用(200)"],
-        "url": "https://oracle-japan.github.io/ocidocs/solutions/high%20availability/high-availability/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/557350f25c9a4a209d57dfaf69a72889/slide_0.jpg"
-      },{
         "title": "OCIの運用管理力を高めよう",
         "excerpt":"2020年1月に実施した、OCIスキルアップセミナー 第6回のプレゼンテーション資料です。  OCIの監視、障害通知、監査、ログ管理などのシステム面の運用から、予算や課金管理、コスト制御まで、OCIをどう効率的に運用管理していくかについて考えます。  2019年はMonitoring、Notification、Logging(LA)、Cost Management、Budgetなど、様々な管理系機能がリリースされました。ここで一度OCIが備える管理系の機能の全体像を俯瞰したうえで、これらの機能、あるいは外部の製品を組み合わせてどこまでできるかについてお話しします。   スライド          ","categories": ["Solutions","Manageability"],
         "tags": ["スライドあり","レベル:応用(200)"],
@@ -76,12 +70,6 @@ var store = [{
         "tags": ["スライドあり","動画あり","レベル:応用(200)"],
         "url": "https://oracle-japan.github.io/ocidocs/services/database/autonomous-database-100/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/e534dd66f48847a69305eb40743691ef/slide_0.jpg"
-      },{
-        "title": "IDおよびアクセス管理 (IAM) 概要",
-        "excerpt":"OCIの認証、認可、ID管理などを司るコア・コンポーネントである OCI IAM (Identity and Access Management) についての解説資料です。  認証とID管理、認可およびポリシー、コンパートメントとその管理、IDフェデレーション(IDCSとの連携)、タグ付け(Tagging) のトピックをカバーしています。   スライド           セミナー動画      ","categories": ["Services","Governance and Administration"],
-        "tags": ["スライドあり","レベル:入門(100)"],
-        "url": "https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/iam-100/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/de3056b3ba2b4f61b47e48f0fe15d480/slide_0.jpg"
       },{
         "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2020/3～2020/5",
         "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介する資料です。  本資料は2020年3月～2020年5月の3ヶ月分の新機能について記載しています。   スライド          ","categories": ["Updates"],
@@ -220,4 +208,22 @@ var store = [{
         "tags": ["スライドあり","レベル:応用(200)"],
         "url": "https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-200/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/9ca991733d2a4670bdd4e5ed5b5770c4/slide_0.jpg"
+      },{
+        "title": "Oracle Cloudで考える高可用性アーキテクチャー",
+        "excerpt":"2019/11/30に実施した、OCHaCafe Premium 第1回のプレゼンテーション資料です。  高可用性システムの構築をサポートするOracle Cloudの様々な機能のご紹介から、障害に強いアーキテクチャ設計の考え方などをお届け致します。   スライド          ","categories": ["Solutions","High Availability"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "https://oracle-japan.github.io/ocidocs/solutions/high%20availability/high-availability/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/b707ab1f81c742cc87bf2e145ba2bd82/slide_0.jpg"
+      },{
+        "title": "IDおよびアクセス管理 (IAM) 概要",
+        "excerpt":"OCIの認証、認可、ID管理などを司るコア・コンポーネントである OCI IAM (Identity and Access Management) についての解説資料です。  認証とID管理、認可およびポリシー、コンパートメントとその管理、IDフェデレーション(IDCSとの連携)、タグ付け(Tagging) のトピックをカバーしています。   スライド           セミナー動画      ","categories": ["Services","Governance and Administration"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/iam-100/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/de3056b3ba2b4f61b47e48f0fe15d480/slide_0.jpg"
+      },{
+        "title": "IDおよびアクセス管理 (IAM) 詳細",
+        "excerpt":"OCIの認証、認可、ID管理などを司るコア・コンポーネントである OCI IAM (Identity and Access Management) についての詳細解説資料です。  インスタンス・プリンシパルと動的グループ、多要素認証(MFA)、高度なポリシーの記述、フェデレーションの詳細、コンパートメント階層とポリシーの継承、コンパートメントの移動、IAMの設計リファレンスのトピックをカバーしています。   スライド          ","categories": ["Services","Governance and Administration"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/iam-200/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/15a18e3567fb432ea74cd53e814dbfea/slide_0.jpg"
       }]
