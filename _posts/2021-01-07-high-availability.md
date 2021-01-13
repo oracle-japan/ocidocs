@@ -8,7 +8,7 @@ tags:
   - スライドあり
   - レベル:応用(200)
 header:
-  teaser: https://speakerd.s3.amazonaws.com/presentations/557350f25c9a4a209d57dfaf69a72889/slide_0.jpg
+  teaser: https://speakerd.s3.amazonaws.com/presentations/b707ab1f81c742cc87bf2e145ba2bd82/slide_0.jpg
 ---
 
 2019/11/30に実施した、OCHaCafe Premium 第1回のプレゼンテーション資料です。  
@@ -20,7 +20,7 @@ header:
 <div style="max-width:768px">
 
 <!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-<script async class="speakerdeck-embed" data-id="557350f25c9a4a209d57dfaf69a72889" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-id="b707ab1f81c742cc87bf2e145ba2bd82" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 <!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
 
 </div>
