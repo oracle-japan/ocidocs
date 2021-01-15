@@ -143,12 +143,6 @@ var store = [{
         "url": "https://oracle-japan.github.io/ocidocs/services/compute/compute-100/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/cf71c90194e445c4812a671235389dff/slide_0.jpg"
       },{
-        "title": "仮想クラウド・ネットワーク (VCN) 概要",
-        "excerpt":"仮想クラウド・ネットワークと、その構成コンポーネント (サブネット、仮想NIC、ゲートウェイ、ルート表、セキュリティ・リスト) と、ネットワークの結合(ピアリング)に関して解説しています。   スライド           セミナー動画      ","categories": ["Services","Networking"],
-        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
-        "url": "https://oracle-japan.github.io/ocidocs/services/networking/virtual-cloud-network-100/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/a3f5c9eb4fbb4fd49a20eaf26117024a/slide_0.jpg"
-      },{
         "title": "仮想クラウド・ネットワーク (VCN) 詳細",
         "excerpt":"VCNピアリングの詳細、トランジット・ルーティング、ハイブリッドDNS構成、Oracle Services Networkへの接続、アプライアンス型仮想ファイアウォールの利用など、VCNを利用するにあたり少し複雑なケースについて解説しています。   スライド          ","categories": ["Services","Networking"],
         "tags": ["スライドあり","レベル:応用(200)"],
@@ -226,4 +220,10 @@ var store = [{
         "tags": ["スライドあり","レベル:応用(200)"],
         "url": "https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/iam-200/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/15a18e3567fb432ea74cd53e814dbfea/slide_0.jpg"
+      },{
+        "title": "仮想クラウド・ネットワーク (VCN) 概要",
+        "excerpt":"仮想クラウド・ネットワークと、その構成コンポーネント (サブネット、仮想NIC、ゲートウェイ、ルート表、セキュリティ・リスト) と、ネットワークの結合(ピアリング)に関して解説しています。2021/1/14 動画を更新しました。   スライド           セミナー動画      ","categories": ["Services","Networking"],
+        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/networking/virtual-cloud-network-100/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/a3f5c9eb4fbb4fd49a20eaf26117024a/slide_0.jpg"
       }]

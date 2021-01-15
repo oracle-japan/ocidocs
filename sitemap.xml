@@ -97,10 +97,6 @@
 <lastmod>2020-10-20T00:00:00+09:00</lastmod>
 </url>
 <url>
-<loc>https://oracle-japan.github.io/ocidocs/services/networking/virtual-cloud-network-100/</loc>
-<lastmod>2020-10-20T00:00:00+09:00</lastmod>
-</url>
-<url>
 <loc>https://oracle-japan.github.io/ocidocs/services/networking/virtual-cloud-network-200/</loc>
 <lastmod>2020-10-20T00:00:00+09:00</lastmod>
 </url>
@@ -151,6 +147,10 @@
 <url>
 <loc>https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/iam-200/</loc>
 <lastmod>2021-01-13T00:00:00+09:00</lastmod>
+</url>
+<url>
+<loc>https://oracle-japan.github.io/ocidocs/services/networking/virtual-cloud-network-100/</loc>
+<lastmod>2021-01-14T00:00:00+09:00</lastmod>
 </url>
 <url>
 <loc>https://oracle-japan.github.io/ocidocs/about/</loc>
