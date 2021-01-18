@@ -180,8 +180,8 @@ var store = [{
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/e1bcc74f03584d94af62da8983f3c8d5/slide_0.jpg"
       },{
         "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2020/9～2020/11",
-        "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介する資料です。  本資料は2020年9月～2020年11月の3ヶ月分の新機能について記載しています。   スライド                 ","categories": ["Updates"],
-        "tags": ["スライドあり"],
+        "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介する資料です。  本資料は2020年9月～2020年11月の3ヶ月分の新機能について記載しています。   2021/1/18 動画を更新しました。   スライド            #### セミナー動画        https://videohub.oracle.com/media/1_hsda4tsn   ","categories": ["Updates"],
+        "tags": ["スライドあり","動画あり"],
         "url": "https://oracle-japan.github.io/ocidocs/updates/update-FY21Q2/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/80ce572018ad44db8222cec074ee5ac2/slide_0.jpg"
       },{
