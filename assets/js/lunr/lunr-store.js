@@ -29,6 +29,12 @@ var store = [{
         "url": "https://oracle-japan.github.io/ocidocs/solutions/manageability/managing-oci/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/8e5c50c20a3d45dabb5c41c3d46a2fb0/slide_0.jpg"
       },{
+        "title": "仮想クラウド・ネットワーク (VCN) 詳細",
+        "excerpt":"VCNピアリングの詳細、トランジット・ルーティング、ハイブリッドDNS構成、Oracle Services Networkへの接続、アプライアンス型仮想ファイアウォールの利用など、VCNを利用するにあたり少し複雑なケースについて解説しています。   更新履歴 2021/2/2 トランジット・ルーティングのユースケース3を追加しました   スライド          ","categories": ["Services","Networking"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/networking/virtual-cloud-network-200/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/40dbaf0f88cf4f148e0d7ca0694a8030/slide_0.jpg"
+      },{
         "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2019/9～2020/11",
         "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介する資料です。  2019年9月～2020年11月の3ヶ月分の新機能について記載しています。   スライド          ","categories": ["Updates"],
         "tags": ["スライドあり"],
@@ -142,12 +148,6 @@ var store = [{
         "tags": ["スライドあり","動画あり","レベル:入門(100)"],
         "url": "https://oracle-japan.github.io/ocidocs/services/compute/compute-100/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/cf71c90194e445c4812a671235389dff/slide_0.jpg"
-      },{
-        "title": "仮想クラウド・ネットワーク (VCN) 詳細",
-        "excerpt":"VCNピアリングの詳細、トランジット・ルーティング、ハイブリッドDNS構成、Oracle Services Networkへの接続、アプライアンス型仮想ファイアウォールの利用など、VCNを利用するにあたり少し複雑なケースについて解説しています。   スライド          ","categories": ["Services","Networking"],
-        "tags": ["スライドあり","レベル:応用(200)"],
-        "url": "https://oracle-japan.github.io/ocidocs/services/networking/virtual-cloud-network-200/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/40dbaf0f88cf4f148e0d7ca0694a8030/slide_0.jpg"
       },{
         "title": "OCI ユーザー作成・権限管理手順",
         "excerpt":"OCIの認証、認可、ID管理などを司るコア・コンポーネントである OCI IAM (Identity and Access Management) についての解説資料です。  管理者が、新しくユーザーを作成し、グループ、ポリシーなどを設定して、適切に権限を設定する方法について、画面ショットを交えながら解説しています。   スライド          ","categories": ["Services","Governance and Administration"],
