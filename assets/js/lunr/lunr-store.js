@@ -125,12 +125,6 @@ var store = [{
         "url": "https://oracle-japan.github.io/ocidocs/solutions/manageability/managing-oci-cost/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/d7bb02f732134b059e7568b1c6caecfc/slide_0.jpg"
       },{
-        "title": "データ移行(データ転送サービスとストレージ・ゲートウェイ)",
-        "excerpt":"オンプレミスからのデータ移行等で利用可能な、データ転送サービス、ストレージ・ゲートウェイなどについて解説しています。   スライド          ","categories": ["Services","Storage"],
-        "tags": ["スライドあり","レベル:入門(100)"],
-        "url": "https://oracle-japan.github.io/ocidocs/services/storage/data-transfer-and-storage-gateway/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/157e4694c8d04b11922b5f15cc88fcb4/slide_0.jpg"
-      },{
         "title": "Oracle Cloud Infrastructure サービス基本情報",
         "excerpt":"ログインに始まり、言語の変更、サービス制限、OCID、検索など、主にOCIコンソールの基本的情報について解説しています。   スライド           動画      ","categories": ["Services","Overall"],
         "tags": ["スライドあり","動画あり","レベル:入門(100)"],
@@ -220,6 +214,12 @@ var store = [{
         "tags": ["スライドあり","レベル:応用(200)"],
         "url": "https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/iam-200/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/15a18e3567fb432ea74cd53e814dbfea/slide_0.jpg"
+      },{
+        "title": "データ移行(データ転送サービスとストレージ・ゲートウェイ)",
+        "excerpt":"オンプレミスからのデータ移行等で利用可能な、データ転送サービス、ストレージ・ゲートウェイなどについて解説しています。   スライド          ","categories": ["Services","Storage"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/storage/data-transfer-and-storage-gateway/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/157e4694c8d04b11922b5f15cc88fcb4/slide_0.jpg"
       },{
         "title": "仮想クラウド・ネットワーク (VCN) 概要",
         "excerpt":"仮想クラウド・ネットワークと、その構成コンポーネント (サブネット、仮想NIC、ゲートウェイ、ルート表、セキュリティ・リスト) と、ネットワークの結合(ピアリング)に関して解説しています。2021/1/14 動画を更新しました。   スライド           セミナー動画      ","categories": ["Services","Networking"],
