@@ -47,6 +47,8 @@ docs:
         url: /solutions/iam/
       - title: "運用・管理"
         url: /solutions/manageability/
+      - title: "その他"
+        url: /solutions/others/
   - title: "その他"
     url: /misc/
   - title: "外部リンク"
