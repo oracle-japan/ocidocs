@@ -101,12 +101,6 @@ var store = [{
         "url": "https://oracle-japan.github.io/ocidocs/services/edge%20service/health-check-and-traffic-management/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/ad44958c474941c0a69dd6be27eda8dd/slide_0.jpg"
       },{
-        "title": "OCI Key Managementの概要と使い方",
-        "excerpt":"OCI Key Management (OCI Vault) の紹介資料です。  お客様による鍵持ち込み(Bring Your Own Key : BYOK) の手順を含めています   スライド          ","categories": ["Services","Security"],
-        "tags": ["スライドあり","レベル:入門(100)"],
-        "url": "https://oracle-japan.github.io/ocidocs/services/security/key-management/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/5e56e18f39ca40ebbe5be37e179c2571/slide_0.jpg"
-      },{
         "title": "モニタリング機能概要",
         "excerpt":"モニタリング・サービスの概要資料です   スライド           動画      ","categories": ["Services","Governance and Administration"],
         "tags": ["スライドあり","レベル:入門(100)"],
@@ -226,6 +220,24 @@ var store = [{
         "tags": ["スライドあり","動画あり","レベル:入門(100)"],
         "url": "https://oracle-japan.github.io/ocidocs/services/networking/virtual-cloud-network-100/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/a3f5c9eb4fbb4fd49a20eaf26117024a/slide_0.jpg"
+      },{
+        "title": "OCI Cloud Guardの概要",
+        "excerpt":"loud Guardは、Oracle Cloud Infrastructure内の様々なサービスの設定やアクティビティを継続的に監視し、即座に通知・是正するサービスです   スライド          ","categories": ["Services","Security"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/security/cloud-guard/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/9b6739fe516e4b8aba50228bebe59163/slide_0.jpg"
+      },{
+        "title": "Oracle Data Safeの機能概要と特徴",
+        "excerpt":"Oracle Databaseをよりセキュアにするクラウドサービス。Oracle Database Cloud だけでなくオンプレミスのデータベースも同様にセキュアに。   スライド          ","categories": ["Services","Security"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/security/data-safe/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/df873ab4b2da4efa8a4b2879e7010925/slide_0.jpg"
+      },{
+        "title": "OCI Vault 機能概要と特徴",
+        "excerpt":"ユーザーの暗号鍵・シークレットをセキュアに集中管理することができるOCI Vaultの機能概要と特徴について   スライド          ","categories": ["Services","Security"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/security/vault/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/042cc35ec9a34e5ab222bcd5c8f81f0c/slide_0.jpg"
       },{
         "title": "ユースケースから学ぶマルチクラウドの本当のところ",
         "excerpt":"2021/2/25 に実施した、Oracle Cloud ウェビナーシリーズの同名のセミナーの資料です。   世の中にはマルチクラウドという言葉がバズって(?)いますが、本当のところどの程度浸透しているのだろう? という個人的な疑問がありました。そこでOCIのマルチクラウドのケースを、実際に稼働しているものから提案中のものなど含めて、日本オラクル社内でヒアリングして作ったのがこのセミナー資料です。   取り上げたユースケースはどれも実在のものですが、事例化されていないため、かなりデフォルメや省略、数値の丸めなどを行っています。雰囲気を掴む程度に見ていただければと思います。   スライド          ","categories": ["Solution","Others"],
