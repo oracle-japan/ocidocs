@@ -226,4 +226,10 @@ var store = [{
         "tags": ["スライドあり","動画あり","レベル:入門(100)"],
         "url": "https://oracle-japan.github.io/ocidocs/services/networking/virtual-cloud-network-100/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/a3f5c9eb4fbb4fd49a20eaf26117024a/slide_0.jpg"
+      },{
+        "title": "ユースケースから学ぶマルチクラウドの本当のところ",
+        "excerpt":"2021/2/25 に実施した、Oracle Cloud ウェビナーシリーズの同名のセミナーの資料です。   世の中にはマルチクラウドという言葉がバズって(?)いますが、本当のところどの程度浸透しているのだろう? という個人的な疑問がありました。そこでOCIのマルチクラウドのケースを、実際に稼働しているものから提案中のものなど含めて、日本オラクル社内でヒアリングして作ったのがこのセミナー資料です。   取り上げたユースケースはどれも実在のものですが、事例化されていないため、かなりデフォルメや省略、数値の丸めなどを行っています。雰囲気を掴む程度に見ていただければと思います。   スライド          ","categories": ["Solution","Others"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "https://oracle-japan.github.io/ocidocs/solution/others/multicloud-case-studies/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/294e3d1743d8470dbc0488a95b837278/slide_0.jpg"
       }]
