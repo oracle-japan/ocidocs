@@ -53,7 +53,7 @@ kramdown:
 analytics:
   provider: "google-gtag"
   google:
-    tracking_id: "G-8SB1HX4VZG"
+    tracking_id: "G-VWKLFQKQEL"
     anonymize_ip: false # default
 
 # Outputting
