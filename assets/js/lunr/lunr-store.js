@@ -222,7 +222,7 @@ var store = [{
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/a3f5c9eb4fbb4fd49a20eaf26117024a/slide_0.jpg"
       },{
         "title": "OCI Cloud Guardの概要",
-        "excerpt":"loud Guardは、Oracle Cloud Infrastructure内の様々なサービスの設定やアクティビティを継続的に監視し、即座に通知・是正するサービスです   スライド          ","categories": ["Services","Security"],
+        "excerpt":"Cloud Guardは、Oracle Cloud Infrastructure内の様々なサービスの設定やアクティビティを継続的に監視し、即座に通知・是正するサービスです   スライド          ","categories": ["Services","Security"],
         "tags": ["スライドあり","レベル:入門(100)"],
         "url": "https://oracle-japan.github.io/ocidocs/services/security/cloud-guard/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/9b6739fe516e4b8aba50228bebe59163/slide_0.jpg"
