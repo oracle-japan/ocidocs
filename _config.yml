@@ -49,6 +49,13 @@ kramdown:
   auro_ids : true
 
 
+# Analytics
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-8SB1HX4VZG"
+    anonymize_ip: false # default
+
 # Outputting
 permalink: /:categories/:title/
 paginate: 5  # amount of posts to show

@@ -11,7 +11,7 @@ header:
   teaser: https://speakerd.s3.amazonaws.com/presentations/9b6739fe516e4b8aba50228bebe59163/slide_0.jpg
 ---
 
-loud Guardは、Oracle Cloud Infrastructure内の様々なサービスの設定やアクティビティを継続的に監視し、即座に通知・是正するサービスです 
+Cloud Guardは、Oracle Cloud Infrastructure内の様々なサービスの設定やアクティビティを継続的に監視し、即座に通知・是正するサービスです 
 
 #### スライド
 
