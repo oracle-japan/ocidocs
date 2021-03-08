@@ -1,4 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2021-03-02T16:46:32+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">ユースケースから学ぶマルチクラウドの本当のところ</title><link href="https://oracle-japan.github.io/ocidocs/solution/others/multicloud-case-studies/" rel="alternate" type="text/html" title="ユースケースから学ぶマルチクラウドの本当のところ" /><published>2021-02-25T00:00:00+09:00</published><updated>2021-02-25T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/solution/others/multicloud-case-studies</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/solution/others/multicloud-case-studies/">&lt;p&gt;2021/2/25 に実施した、Oracle Cloud ウェビナーシリーズの同名のセミナーの資料です。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2021-03-08T15:00:47+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">Update Fy21q3</title><link href="https://oracle-japan.github.io/ocidocs/update-FY21Q3/" rel="alternate" type="text/html" title="Update Fy21q3" /><published>2021-03-05T00:00:00+09:00</published><updated>2021-03-05T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/update-FY21Q3</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/update-FY21Q3/">&lt;hr /&gt;
+&lt;p&gt;title: “Oracle Cloud Infrastructure IaaS 新機能アップデート 2020/12～2021/2”
+excerpt: “2020年12月～2021年2月の3ヶ月分のOCI新機能についてのまとめ資料です”
+categories:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Updates
+tags:&lt;/li&gt;
+  &lt;li&gt;スライドあり&lt;/li&gt;
+  &lt;li&gt;動画あり
+header:
+  teaser: https://speakerd.s3.amazonaws.com/presentations/3be3b9c1707a47ad933a8ed906468a0d/slide_0.jpg
+—&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介する資料です。&lt;br /&gt;
+本資料は2020年12月～2021年2月の3ヶ月分の新機能について記載しています。&lt;/p&gt;
+
+&lt;h4 id=&quot;スライド&quot;&gt;スライド&lt;/h4&gt;
+
+&lt;div style=&quot;max-width:768px&quot;&gt;
+&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) --&gt;
+
+&lt;script async=&quot;&quot; class=&quot;speakerdeck-embed&quot; data-id=&quot;3be3b9c1707a47ad933a8ed906468a0d&quot; data-ratio=&quot;1.77777777777778&quot; src=&quot;//speakerdeck.com/assets/embed.js&quot;&gt;&lt;/script&gt;
+
+#### セミナー動画
+
+&lt;!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください --&gt;
+
+&lt;div style=&quot;max-width:768px&quot;&gt;&lt;div style=&quot;position:relative;padding-bottom:56.25%&quot;&gt;&lt;iframe id=&quot;kaltura_player&quot; src=&quot;https://cdnapisec.kaltura.com/p/2171811/sp/217181100/embedIframeJs/uiconf_id/35965902/partner_id/2171811?iframeembed=true&amp;amp;playerId=kaltura_player&amp;amp;entry_id=1_zrg87pms&amp;amp;flashvars[streamerType]=auto&amp;amp;flashvars[localizationCode]=en&amp;amp;flashvars[leadWithHTML5]=true&amp;amp;flashvars[sideBarContainer.plugin]=true&amp;amp;flashvars[sideBarContainer.position]=left&amp;amp;flashvars[sideBarContainer.clickToClose]=true&amp;amp;flashvars[chapters.plugin]=true&amp;amp;flashvars[chapters.layout]=vertical&amp;amp;flashvars[chapters.thumbnailRotator]=false&amp;amp;flashvars[streamSelector.plugin]=true&amp;amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;amp;flashvars[dualScreen.plugin]=true&amp;amp;flashvars[hotspots.plugin]=1&amp;amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;amp;&amp;amp;wid=1_8htvxh8z&quot; width=&quot;768&quot; height=&quot;432&quot; allowfullscreen=&quot;&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allow=&quot;autoplay *; fullscreen *; encrypted-media *&quot; sandbox=&quot;allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation&quot; frameborder=&quot;0&quot; title=&quot;Kaltura Player&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) --&gt;
+
+https://videohub.oracle.com/media/1_hsda4tsn
+&lt;/div&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><summary type="html">title: “Oracle Cloud Infrastructure IaaS 新機能アップデート 2020/12～2021/2” excerpt: “2020年12月～2021年2月の3ヶ月分のOCI新機能についてのまとめ資料です” categories: Updates tags: スライドあり 動画あり header: teaser: https://speakerd.s3.amazonaws.com/presentations/3be3b9c1707a47ad933a8ed906468a0d/slide_0.jpg —</summary></entry><entry><title type="html">ユースケースから学ぶマルチクラウドの本当のところ</title><link href="https://oracle-japan.github.io/ocidocs/solution/others/multicloud-case-studies/" rel="alternate" type="text/html" title="ユースケースから学ぶマルチクラウドの本当のところ" /><published>2021-02-25T00:00:00+09:00</published><updated>2021-02-25T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/solution/others/multicloud-case-studies</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/solution/others/multicloud-case-studies/">&lt;p&gt;2021/2/25 に実施した、Oracle Cloud ウェビナーシリーズの同名のセミナーの資料です。&lt;/p&gt;
 
 &lt;p&gt;世の中にはマルチクラウドという言葉がバズって(?)いますが、本当のところどの程度浸透しているのだろう? という個人的な疑問がありました。そこでOCIのマルチクラウドのケースを、実際に稼働しているものから提案中のものなど含めて、日本オラクル社内でヒアリングして作ったのがこのセミナー資料です。&lt;/p&gt;
 
@@ -107,20 +140,4 @@
 &lt;script async=&quot;&quot; class=&quot;speakerdeck-embed&quot; data-id=&quot;b707ab1f81c742cc87bf2e145ba2bd82&quot; data-ratio=&quot;1.77777777777778&quot; src=&quot;//speakerdeck.com/assets/embed.js&quot;&gt;&lt;/script&gt;
 &lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) --&gt;
 
-&lt;/div&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="Solutions" /><category term="High Availability" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html">高可用性システムの構築をサポートするOracle Cloudの様々な機能や、障害に強いアーキテクチャ設計の考え方などを紹介します</summary></entry><entry><title type="html">ロード・バランサー 概要</title><link href="https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-100/" rel="alternate" type="text/html" title="ロード・バランサー 概要" /><published>2020-12-25T00:00:00+09:00</published><updated>2020-12-25T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-100</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-100/">&lt;p&gt;バックエンドに配置した様々なサービスの冗長性やスケーリングをサポートする OCI ロード・バランサー・サービスについて、その機能概要、構成コンポーネントの内容、OCIコンソールを利用した構成方法などについて解説しています。&lt;/p&gt;
-
-&lt;h4 id=&quot;スライド&quot;&gt;スライド&lt;/h4&gt;
-
-&lt;div style=&quot;max-width:768px&quot;&gt;
-
-&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) --&gt;
-&lt;script async=&quot;&quot; class=&quot;speakerdeck-embed&quot; data-id=&quot;78914498b3c14b97a112f59283b754b7&quot; data-ratio=&quot;1.77777777777778&quot; src=&quot;//speakerdeck.com/assets/embed.js&quot;&gt;&lt;/script&gt;
-&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) --&gt;
-
-&lt;/div&gt;
-
-&lt;h4 id=&quot;セミナー動画&quot;&gt;セミナー動画&lt;/h4&gt;
-
-&lt;!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください --&gt;
-&lt;div style=&quot;max-width:768px&quot;&gt;&lt;div style=&quot;position:relative;padding-bottom:56.25%&quot;&gt;&lt;iframe id=&quot;kaltura_player&quot; src=&quot;https://cdnapisec.kaltura.com/p/2171811/sp/217181100/embedIframeJs/uiconf_id/35965902/partner_id/2171811?iframeembed=true&amp;amp;playerId=kaltura_player&amp;amp;entry_id=0_pgchkk4i&amp;amp;flashvars[streamerType]=auto&amp;amp;flashvars[localizationCode]=en&amp;amp;flashvars[leadWithHTML5]=true&amp;amp;flashvars[sideBarContainer.plugin]=true&amp;amp;flashvars[sideBarContainer.position]=left&amp;amp;flashvars[sideBarContainer.clickToClose]=true&amp;amp;flashvars[chapters.plugin]=true&amp;amp;flashvars[chapters.layout]=vertical&amp;amp;flashvars[chapters.thumbnailRotator]=false&amp;amp;flashvars[streamSelector.plugin]=true&amp;amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;amp;flashvars[dualScreen.plugin]=true&amp;amp;flashvars[hotspots.plugin]=1&amp;amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;amp;&amp;amp;wid=1_c428rwns&quot; width=&quot;768&quot; height=&quot;432&quot; allowfullscreen=&quot;&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allow=&quot;autoplay *; fullscreen *; encrypted-media *&quot; sandbox=&quot;allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation&quot; frameborder=&quot;0&quot; title=&quot;Kaltura Player&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) --&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Networking" /><category term="スライドあり" /><category term="動画あり" /><category term="レベル:入門(100)" /><summary type="html">OCIロード・バランサー・サービスについて、その機能概要、構成コンポーネントの内容、OCIコンソールを利用した構成方法などについて解説しています</summary></entry></feed>
+&lt;/div&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="Solutions" /><category term="High Availability" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html">高可用性システムの構築をサポートするOracle Cloudの様々な機能や、障害に強いアーキテクチャ設計の考え方などを紹介します</summary></entry></feed>
