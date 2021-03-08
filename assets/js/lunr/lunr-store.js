@@ -149,12 +149,6 @@ var store = [{
         "url": "https://oracle-japan.github.io/ocidocs/services/compute/compute-200/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/90e8e852d1c8443787f6f33e7e721177/slide_0.jpg"
       },{
-        "title": "Blog : Oracle Cloud Infrastructure 新機能ハイライト",
-        "excerpt":" ","categories": ["Updates"],
-        "tags": [],
-        "url": "https://oracle-japan.github.io/ocidocs/updates/updates-blog/",
-        "teaser": "https://cdn.app.compendium.com/uploads/user/e7c690e8-6ff9-102a-ac6d-e4aebca50425/36fb492f-3532-48e4-a057-f2b674a19de1/File/b5a9121425a0e376b622e07247bd054e/image_20201202094512173.png"
-      },{
         "title": "ブロックボリューム概要",
         "excerpt":"インスタンスにアタッチしてブロック・デバイスとして利用することができる、OCIブロック・ボリューム・サービスの基本的な内容について解説しています。また、DenseIO シェイプに内蔵される高速なローカルNVMeディスクについても説明しています。   スライド           動画 ~28分15秒      ","categories": ["Services","Storage"],
         "tags": ["スライドあり","動画あり","レベル:入門(100)"],
@@ -238,6 +232,12 @@ var store = [{
         "tags": ["スライドあり","レベル:入門(100)"],
         "url": "https://oracle-japan.github.io/ocidocs/services/security/vault/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/042cc35ec9a34e5ab222bcd5c8f81f0c/slide_0.jpg"
+      },{
+        "title": "Blog : Oracle Cloud Infrastructure 新機能ハイライト",
+        "excerpt":" ","categories": ["Updates"],
+        "tags": [],
+        "url": "https://oracle-japan.github.io/ocidocs/updates/updates-blog/",
+        "teaser": "https://cdn.app.compendium.com/uploads/user/e7c690e8-6ff9-102a-ac6d-e4aebca50425/36fb492f-3532-48e4-a057-f2b674a19de1/File/b5a9121425a0e376b622e07247bd054e/image_20201202094512173.png"
       },{
         "title": "ユースケースから学ぶマルチクラウドの本当のところ",
         "excerpt":"2021/2/25 に実施した、Oracle Cloud ウェビナーシリーズの同名のセミナーの資料です。   世の中にはマルチクラウドという言葉がバズって(?)いますが、本当のところどの程度浸透しているのだろう? という個人的な疑問がありました。そこでOCIのマルチクラウドのケースを、実際に稼働しているものから提案中のものなど含めて、日本オラクル社内でヒアリングして作ったのがこのセミナー資料です。   取り上げたユースケースはどれも実在のものですが、事例化されていないため、かなりデフォルメや省略、数値の丸めなどを行っています。雰囲気を掴む程度に見ていただければと思います。   スライド          ","categories": ["Solution","Others"],
