@@ -30,6 +30,8 @@ docs:
         url: /services/networking/
       - title: "データベース"
         url: /services/database/
+      - title: "アナリティクス"
+        url: /services/analytics/
       - title: "エッジ・サービス"
         url: /services/edge/
       - title: "セキュリティ"
