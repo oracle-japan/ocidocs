@@ -246,8 +246,20 @@ var store = [{
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/294e3d1743d8470dbc0488a95b837278/slide_0.jpg"
       },{
         "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2020/12～2021/2",
-        "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介する資料です。  本資料は2020年12月～2021年2月の3ヶ月分の新機能について記載しています。   スライド        #### セミナー動画        ","categories": ["Updates"],
+        "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介する資料です。  本資料は2020年12月～2021年2月の3ヶ月分の新機能について記載しています。   スライド          セミナー動画        ","categories": ["Updates"],
         "tags": ["スライドあり","動画あり"],
         "url": "https://oracle-japan.github.io/ocidocs/updates/update-FY21Q3/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/3be3b9c1707a47ad933a8ed906468a0d/slide_0.jpg"
+      },{
+        "title": "Email Deliveryサービス 概要",
+        "excerpt":"OCI Email Deliveryサービスは、OCI内外に配置されたサービスやアプリケーションから、確実にEmailを配信したい場合に利用することができるマネージドサービスです。  この資料では、OCI Email Deliveryサービスについて、サービスの概観、特徴、利用方法などの基礎的な内容について解説しています。   スライド         ","categories": ["Services","Edge Service"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/edge%20service/email-delivery-100/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/b80073aa58a141638ad5ba432009ba59/slide_0.jpg"
+      },{
+        "title": "Web Application Firewall (WAF) 概要",
+        "excerpt":"Web Application Firewall (WAF) サービスは、OCI内外に配置されたWebアプリケーションを悪意のある攻撃から保護することができるマネージドサービスです。  OCI WAFを利用すると、既存のアプリケーションには手を入れることなく、プロキシとして利用する形でOWASP Top10やCRS3に準拠した保護ルールや、攻撃に応じてアダプティブな保護を行うBot管理機能を利用し、Webアプリケーションを高度に保護することができるようになります。  この資料では、OCI Web Application Firewallサービスについて、サービスの概観、特徴、利用方法などの基礎的な内容について解説しています。   スライド         ","categories": ["Services","Edge Service"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/edge%20service/waf-100/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/b80073aa58a141638ad5ba432009ba59/slide_0.jpg"
       }]
