@@ -1,5 +1,5 @@
 ---
-title: "Oracle Database 機能概要"
+title: "Oracle Database 新リリースモデル"
 excerpt: "Oracle Database の機能、セキュリティ、運用管理、可用性など様々な機能についての解説資料です。"
 categories:
   - Database
