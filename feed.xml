@@ -1,4 +1,53 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2021-04-21T18:56:39+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">Web Application Firewall (WAF) 概要</title><link href="https://oracle-japan.github.io/ocidocs/services/edge%20service/waf-100/" rel="alternate" type="text/html" title="Web Application Firewall (WAF) 概要" /><published>2021-04-21T00:00:00+09:00</published><updated>2021-04-21T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/edge%20service/waf-100</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/edge%20service/waf-100/">&lt;p&gt;Web Application Firewall (WAF) サービスは、OCI内外に配置されたWebアプリケーションを悪意のある攻撃から保護することができるマネージドサービスです。&lt;br /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2021-05-11T11:16:22+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">Oracle Database 新リリースモデル</title><link href="https://oracle-japan.github.io/ocidocs/database/oracle-database-new-release-model/" rel="alternate" type="text/html" title="Oracle Database 新リリースモデル" /><published>2021-05-11T00:00:00+09:00</published><updated>2021-05-11T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/database/oracle-database-new-release-model</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/database/oracle-database-new-release-model/">&lt;p&gt;Oracle Database の最新情報と新しいリリースモデルついての解説資料です。&lt;/p&gt;
+
+&lt;h4 id=&quot;スライド&quot;&gt;スライド&lt;/h4&gt;
+
+&lt;div style=&quot;max-width:768px&quot;&gt;
+
+&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) --&gt;
+&lt;script async=&quot;&quot; class=&quot;speakerdeck-embed&quot; data-id=&quot;f4c3503347cb4cca90bd556950ed5853&quot; data-ratio=&quot;1.77777777777778&quot; src=&quot;//speakerdeck.com/assets/embed.js&quot;&gt;&lt;/script&gt;
+&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) --&gt;
+
+&lt;/div&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="Database" /><category term="スライドあり" /><summary type="html">Oracle Database の最新情報と新しいリリースモデルついての解説資料です。</summary></entry><entry><title type="html">Oracle Database 機能概要</title><link href="https://oracle-japan.github.io/ocidocs/database/oracle-database-features/" rel="alternate" type="text/html" title="Oracle Database 機能概要" /><published>2021-05-10T00:00:00+09:00</published><updated>2021-05-10T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/database/oracle-database-features</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/database/oracle-database-features/">&lt;p&gt;紹介機能&lt;br /&gt;
+・Parallel Query&lt;br /&gt;
+・Oracle Partitioning&lt;br /&gt;
+・Advanced Compression&lt;br /&gt;
+・Database In-Memory&lt;br /&gt;
+・Diagnostic Pack &amp;amp; Oracle Tuning Pack&lt;br /&gt;
+・Recovery Manager&lt;br /&gt;
+・Database Lifecycle Management Pack&lt;br /&gt;
+・Multitenant&lt;br /&gt;
+・Real Application Clusters&lt;br /&gt;
+・Automatic Storage Management&lt;br /&gt;
+・Data Guard &amp;amp; Oracle Active Data Guard&lt;br /&gt;
+・GoldenGate&lt;br /&gt;
+・Advanced Security&lt;br /&gt;
+・Database Vault&lt;br /&gt;
+・Audit Vault and Database Firewall&lt;br /&gt;
+・Real Application Testing&lt;br /&gt;
+・Data Masking and Subsetting Pack&lt;br /&gt;
+・Machine Learning&lt;br /&gt;
+・Spatial&lt;br /&gt;
+・Big Data SQL&lt;br /&gt;
+・Oracle Net Services&lt;br /&gt;
+・External Table&lt;br /&gt;
+・Database Link&lt;br /&gt;
+・Materialized View&lt;br /&gt;
+・Automatic Indexing&lt;br /&gt;
+・Optimizer Statics&lt;br /&gt;
+・Server Result Cache&lt;br /&gt;
+・Memoptimized Rowstore&lt;br /&gt;
+・Flashback Technology&lt;/p&gt;
+
+&lt;h4 id=&quot;スライド&quot;&gt;スライド&lt;/h4&gt;
+
+&lt;div style=&quot;max-width:768px&quot;&gt;
+
+&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) --&gt;
+&lt;script async=&quot;&quot; class=&quot;speakerdeck-embed&quot; data-id=&quot;3175188f416e496aa119aa6eaac549a7&quot; data-ratio=&quot;1.77777777777778&quot; src=&quot;//speakerdeck.com/assets/embed.js&quot;&gt;&lt;/script&gt;
+&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) --&gt;
+
+&lt;/div&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="Database" /><category term="スライドあり" /><summary type="html">Oracle Database の機能、セキュリティ、運用管理、可用性など様々な機能についての解説資料です。</summary></entry><entry><title type="html">Web Application Firewall (WAF) 概要</title><link href="https://oracle-japan.github.io/ocidocs/services/edge%20service/security/waf-100/" rel="alternate" type="text/html" title="Web Application Firewall (WAF) 概要" /><published>2021-04-21T00:00:00+09:00</published><updated>2021-04-21T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/edge%20service/security/waf-100</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/edge%20service/security/waf-100/">&lt;p&gt;Web Application Firewall (WAF) サービスは、OCI内外に配置されたWebアプリケーションを悪意のある攻撃から保護することができるマネージドサービスです。&lt;br /&gt;
 OCI WAFを利用すると、既存のアプリケーションには手を入れることなく、プロキシとして利用する形でOWASP Top10やCRS3に準拠した保護ルールや、攻撃に応じてアダプティブな保護を行うBot管理機能を利用し、Webアプリケーションを高度に保護することができるようになります。&lt;br /&gt;
 この資料では、OCI Web Application Firewallサービスについて、サービスの概観、特徴、利用方法などの基礎的な内容について解説しています。&lt;/p&gt;
 
@@ -9,7 +58,7 @@ OCI WAFを利用すると、既存のアプリケーションには手を入れ�
 
 &lt;script async=&quot;&quot; class=&quot;speakerdeck-embed&quot; data-id=&quot;67bc880ea70f4f389afe70db381961b2&quot; data-ratio=&quot;1.77777777777778&quot; src=&quot;//speakerdeck.com/assets/embed.js&quot;&gt;&lt;/script&gt;
 
-&lt;/div&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Edge Service" /><category term="スライドあり" /><category term="レベル:入門(100)" /><summary type="html">OCI内外に配置されたWebアプリケーションを悪意のある攻撃から保護することができるOCI Web Application Firewallサービスについて、概観、特徴、利用方法などの基礎的な内容について解説しています</summary></entry><entry><title type="html">Email Deliveryサービス 概要</title><link href="https://oracle-japan.github.io/ocidocs/services/edge%20service/email-delivery-100/" rel="alternate" type="text/html" title="Email Deliveryサービス 概要" /><published>2021-04-09T00:00:00+09:00</published><updated>2021-04-09T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/edge%20service/email-delivery-100</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/edge%20service/email-delivery-100/">&lt;p&gt;OCI Email Deliveryサービスは、OCI内外に配置されたサービスやアプリケーションから、確実にEmailを配信したい場合に利用することができるマネージドサービスです。&lt;br /&gt;
+&lt;/div&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Edge Service" /><category term="Security" /><category term="スライドあり" /><category term="レベル:入門(100)" /><summary type="html">OCI内外に配置されたWebアプリケーションを悪意のある攻撃から保護することができるOCI Web Application Firewallサービスについて、概観、特徴、利用方法などの基礎的な内容について解説しています</summary></entry><entry><title type="html">Email Deliveryサービス 概要</title><link href="https://oracle-japan.github.io/ocidocs/services/edge%20service/email-delivery-100/" rel="alternate" type="text/html" title="Email Deliveryサービス 概要" /><published>2021-04-09T00:00:00+09:00</published><updated>2021-04-09T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/edge%20service/email-delivery-100</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/edge%20service/email-delivery-100/">&lt;p&gt;OCI Email Deliveryサービスは、OCI内外に配置されたサービスやアプリケーションから、確実にEmailを配信したい場合に利用することができるマネージドサービスです。&lt;br /&gt;
 この資料では、OCI Email Deliveryサービスについて、サービスの概観、特徴、利用方法などの基礎的な内容について解説しています。&lt;/p&gt;
 
 &lt;h4 id=&quot;スライド&quot;&gt;スライド&lt;/h4&gt;
@@ -81,30 +130,4 @@ OCI WAFを利用すると、既存のアプリケーションには手を入れ�
 &lt;script async=&quot;&quot; class=&quot;speakerdeck-embed&quot; data-id=&quot;042cc35ec9a34e5ab222bcd5c8f81f0c&quot; data-ratio=&quot;1.77777777777778&quot; src=&quot;//speakerdeck.com/assets/embed.js&quot;&gt;&lt;/script&gt;
 &lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) --&gt;
 
-&lt;/div&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Security" /><category term="スライドあり" /><category term="レベル:入門(100)" /><summary type="html">ユーザーの暗号鍵・シークレットをセキュアに集中管理することができるOCI Vaultの機能概要と特徴について</summary></entry><entry><title type="html">データ移行(データ転送サービスとストレージ・ゲートウェイ)</title><link href="https://oracle-japan.github.io/ocidocs/services/storage/data-transfer-and-storage-gateway/" rel="alternate" type="text/html" title="データ移行(データ転送サービスとストレージ・ゲートウェイ)" /><published>2021-02-02T00:00:00+09:00</published><updated>2021-02-02T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/storage/data-transfer-and-storage-gateway</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/storage/data-transfer-and-storage-gateway/">&lt;p&gt;オンプレミスからのデータ移行等で利用可能な、データ転送サービス、ストレージ・ゲートウェイなどについて解説しています。&lt;/p&gt;
-
-&lt;h4 id=&quot;スライド&quot;&gt;スライド&lt;/h4&gt;
-
-&lt;div style=&quot;max-width:768px&quot;&gt;
-
-&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) --&gt;
-&lt;script async=&quot;&quot; class=&quot;speakerdeck-embed&quot; data-id=&quot;157e4694c8d04b11922b5f15cc88fcb4&quot; data-ratio=&quot;1.77777777777778&quot; src=&quot;//speakerdeck.com/assets/embed.js&quot;&gt;&lt;/script&gt;
-&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) --&gt;
-
-&lt;/div&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Storage" /><category term="スライドあり" /><category term="レベル:入門(100)" /><summary type="html">オンプレミスからのデータ移行等で利用可能な、データ転送サービス、ストレージ・ゲートウェイなどについて解説しています。 2021/2/2 資料を最新情報にアップデート</summary></entry><entry><title type="html">仮想クラウド・ネットワーク (VCN) 概要</title><link href="https://oracle-japan.github.io/ocidocs/services/networking/virtual-cloud-network-100/" rel="alternate" type="text/html" title="仮想クラウド・ネットワーク (VCN) 概要" /><published>2021-02-02T00:00:00+09:00</published><updated>2021-02-02T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/networking/virtual-cloud-network-100</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/networking/virtual-cloud-network-100/">&lt;p&gt;仮想クラウド・ネットワークと、その構成コンポーネント (サブネット、仮想NIC、ゲートウェイ、ルート表、セキュリティ・リスト) と、ネットワークの結合(ピアリング)に関して解説しています。2021/1/14 動画を更新しました。&lt;/p&gt;
-
-&lt;h4 id=&quot;スライド&quot;&gt;スライド&lt;/h4&gt;
-
-&lt;div style=&quot;max-width:768px&quot;&gt;
-
-&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) --&gt;
-&lt;script async=&quot;&quot; class=&quot;speakerdeck-embed&quot; data-id=&quot;a3f5c9eb4fbb4fd49a20eaf26117024a&quot; data-ratio=&quot;1.77777777777778&quot; src=&quot;//speakerdeck.com/assets/embed.js&quot;&gt;&lt;/script&gt;
-&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) --&gt;
-
-&lt;/div&gt;
-
-&lt;h4 id=&quot;セミナー動画&quot;&gt;セミナー動画&lt;/h4&gt;
-
-&lt;!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください --&gt;
-&lt;div style=&quot;max-width:768px&quot;&gt;&lt;div style=&quot;position:relative;padding-bottom:56.25%&quot;&gt;&lt;iframe id=&quot;kaltura_player&quot; src=&quot;https://cdnapisec.kaltura.com/p/2171811/sp/217181100/embedIframeJs/uiconf_id/35965902/partner_id/2171811?iframeembed=true&amp;amp;playerId=kaltura_player&amp;amp;entry_id=0_5ti7elke&amp;amp;flashvars[streamerType]=auto&amp;amp;flashvars[localizationCode]=en&amp;amp;flashvars[leadWithHTML5]=true&amp;amp;flashvars[sideBarContainer.plugin]=true&amp;amp;flashvars[sideBarContainer.position]=left&amp;amp;flashvars[sideBarContainer.clickToClose]=true&amp;amp;flashvars[chapters.plugin]=true&amp;amp;flashvars[chapters.layout]=vertical&amp;amp;flashvars[chapters.thumbnailRotator]=false&amp;amp;flashvars[streamSelector.plugin]=true&amp;amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;amp;flashvars[dualScreen.plugin]=true&amp;amp;flashvars[hotspots.plugin]=1&amp;amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;amp;&amp;amp;wid=1_jn33rh9r&quot; width=&quot;768&quot; height=&quot;432&quot; allowfullscreen=&quot;&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allow=&quot;autoplay *; fullscreen *; encrypted-media *&quot; sandbox=&quot;allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation&quot; frameborder=&quot;0&quot; title=&quot;Kaltura Player&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) --&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Networking" /><category term="スライドあり" /><category term="動画あり" /><category term="レベル:入門(100)" /><summary type="html">仮想クラウド・ネットワークと、その構成コンポーネント、ネットワークの結合(ピアリング)に関して解説しています</summary></entry></feed>
+&lt;/div&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Security" /><category term="スライドあり" /><category term="レベル:入門(100)" /><summary type="html">ユーザーの暗号鍵・シークレットをセキュアに集中管理することができるOCI Vaultの機能概要と特徴について</summary></entry></feed>

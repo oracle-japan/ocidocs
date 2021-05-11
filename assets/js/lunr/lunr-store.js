@@ -258,8 +258,20 @@ var store = [{
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/b80073aa58a141638ad5ba432009ba59/slide_0.jpg"
       },{
         "title": "Web Application Firewall (WAF) 概要",
-        "excerpt":"Web Application Firewall (WAF) サービスは、OCI内外に配置されたWebアプリケーションを悪意のある攻撃から保護することができるマネージドサービスです。  OCI WAFを利用すると、既存のアプリケーションには手を入れることなく、プロキシとして利用する形でOWASP Top10やCRS3に準拠した保護ルールや、攻撃に応じてアダプティブな保護を行うBot管理機能を利用し、Webアプリケーションを高度に保護することができるようになります。  この資料では、OCI Web Application Firewallサービスについて、サービスの概観、特徴、利用方法などの基礎的な内容について解説しています。   スライド         ","categories": ["Services","Edge Service"],
+        "excerpt":"Web Application Firewall (WAF) サービスは、OCI内外に配置されたWebアプリケーションを悪意のある攻撃から保護することができるマネージドサービスです。  OCI WAFを利用すると、既存のアプリケーションには手を入れることなく、プロキシとして利用する形でOWASP Top10やCRS3に準拠した保護ルールや、攻撃に応じてアダプティブな保護を行うBot管理機能を利用し、Webアプリケーションを高度に保護することができるようになります。  この資料では、OCI Web Application Firewallサービスについて、サービスの概観、特徴、利用方法などの基礎的な内容について解説しています。   スライド         ","categories": ["Services","Edge Service","Security"],
         "tags": ["スライドあり","レベル:入門(100)"],
-        "url": "https://oracle-japan.github.io/ocidocs/services/edge%20service/waf-100/",
+        "url": "https://oracle-japan.github.io/ocidocs/services/edge%20service/security/waf-100/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/b80073aa58a141638ad5ba432009ba59/slide_0.jpg"
+      },{
+        "title": "Oracle Database 機能概要",
+        "excerpt":"紹介機能 ・Parallel Query ・Oracle Partitioning ・Advanced Compression ・Database In-Memory ・Diagnostic Pack &amp; Oracle Tuning Pack ・Recovery Manager ・Database Lifecycle Management Pack ・Multitenant ・Real Application Clusters ・Automatic Storage Management ・Data Guard &amp; Oracle Active Data Guard ・GoldenGate ・Advanced Security ・Database Vault ・Audit Vault and Database Firewall ・Real Application Testing ・Data Masking...","categories": ["Database"],
+        "tags": ["スライドあり"],
+        "url": "https://oracle-japan.github.io/ocidocs/database/oracle-database-features/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/3175188f416e496aa119aa6eaac549a7/slide_0.jpg"
+      },{
+        "title": "Oracle Database 新リリースモデル",
+        "excerpt":"Oracle Database の最新情報と新しいリリースモデルついての解説資料です。   スライド          ","categories": ["Database"],
+        "tags": ["スライドあり"],
+        "url": "https://oracle-japan.github.io/ocidocs/database/oracle-database-new-release-model/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/f4c3503347cb4cca90bd556950ed5853/slide_0.jpg"
       }]

@@ -173,8 +173,16 @@
 <lastmod>2021-04-09T00:00:00+09:00</lastmod>
 </url>
 <url>
-<loc>https://oracle-japan.github.io/ocidocs/services/edge%20service/waf-100/</loc>
+<loc>https://oracle-japan.github.io/ocidocs/services/edge%20service/security/waf-100/</loc>
 <lastmod>2021-04-21T00:00:00+09:00</lastmod>
+</url>
+<url>
+<loc>https://oracle-japan.github.io/ocidocs/database/oracle-database-features/</loc>
+<lastmod>2021-05-10T00:00:00+09:00</lastmod>
+</url>
+<url>
+<loc>https://oracle-japan.github.io/ocidocs/database/oracle-database-new-release-model/</loc>
+<lastmod>2021-05-11T00:00:00+09:00</lastmod>
 </url>
 <url>
 <loc>https://oracle-japan.github.io/ocidocs/about/</loc>
@@ -274,5 +282,8 @@
 </url>
 <url>
 <loc>https://oracle-japan.github.io/ocidocs/page9/</loc>
+</url>
+<url>
+<loc>https://oracle-japan.github.io/ocidocs/page10/</loc>
 </url>
 </urlset>
