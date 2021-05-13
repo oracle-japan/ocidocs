@@ -274,4 +274,16 @@ var store = [{
         "tags": ["スライドあり"],
         "url": "https://oracle-japan.github.io/ocidocs/database/oracle-database-new-release-model/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/f4c3503347cb4cca90bd556950ed5853/slide_0.jpg"
+      },{
+        "title": "アプリケーション・コンティニュイティ（AC）の機能概要",
+        "excerpt":"Oracle Database で利用できる、アプリケーション・コンティニュイティ（AC）についての解説資料です。   スライド          ","categories": ["Database"],
+        "tags": ["スライドあり"],
+        "url": "https://oracle-japan.github.io/ocidocs/database/application-continuity/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/9c9fe48bc8944763850bb6577def09e8/slide_0.jpg"
+      },{
+        "title": "Real Application Clusters (RAC)の機能概要",
+        "excerpt":"Oracle Database Technology Night で紹介された Oracle Database で利用できる、Real Application Clusters (RAC) についての解説資料です。   スライド          ","categories": ["Database","Oracle Database Technology Night"],
+        "tags": ["スライドあり"],
+        "url": "https://oracle-japan.github.io/ocidocs/database/oracle%20database%20technology%20night/real-application-clusters/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/38893b821c2f4ec68961a5778d5456a4/slide_0.jpg"
       }]
