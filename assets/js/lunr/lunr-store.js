@@ -286,4 +286,10 @@ var store = [{
         "tags": ["スライドあり"],
         "url": "https://oracle-japan.github.io/ocidocs/database/oracle%20database%20technology%20night/real-application-clusters/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/38893b821c2f4ec68961a5778d5456a4/slide_0.jpg"
+      },{
+        "title": "Automatic Workload Repository(AWR) の分析",
+        "excerpt":"Oracle Database Technology Night で紹介された Oracle Database の Diagnostic Packで利用できる、Automatic Workload Repository(AWR) の分析ついての解説資料です。   スライド          ","categories": ["Database","Oracle Database Technology Night"],
+        "tags": ["スライドあり"],
+        "url": "https://oracle-japan.github.io/ocidocs/database/oracle%20database%20technology%20night/automatic-workload-repository/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/d32dcf24e9584b68a043ec15e020bd5f/slide_0.jpg"
       }]
