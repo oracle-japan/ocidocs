@@ -292,4 +292,10 @@ var store = [{
         "tags": ["スライドあり"],
         "url": "https://oracle-japan.github.io/ocidocs/database/oracle%20database%20technology%20night/automatic-workload-repository/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/d32dcf24e9584b68a043ec15e020bd5f/slide_0.jpg"
+      },{
+        "title": "ExaCSのセットアップガイド",
+        "excerpt":"Oracle Exadataをクラウド上でも利用できる、Exadata Cloud Service(ExaCS)の導入ガイドです。実際に利用する際の構築イメージを習得するために、Step-by-Stepでガイドしています。   スライド          ","categories": ["Services","Database"],
+        "tags": ["スライドあり"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/database/exadata-config-guide/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/b3b2069f83034851b729be6f2dd3ff3f/slide_0.jpg"
       }]
