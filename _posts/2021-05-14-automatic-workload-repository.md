@@ -1,6 +1,6 @@
 ---
-title: "Automatic Workload Repository(AWR) の分析"
-excerpt: "Oracle Database Technology Night で紹介された Oracle Database の Diagnostic Packで利用できる、Automatic Workload Repository(AWR) の分析ついての解説資料です。"
+title: "[コア技術]AWRによるパフォーマンス分析"
+excerpt: "データベースの性能調査にお困りの方はこちら。Oracle Databaseの性能診断レポートであるAutomatic Workload Repository(AWR) の利用に関する解説資料です。"
 categories:
   - Database
   - Oracle Database Technology Night 
@@ -11,7 +11,10 @@ header:
 ---
 
   
-Oracle Database Technology Night で紹介された Oracle Database の Diagnostic Packで利用できる、Automatic Workload Repository(AWR) の分析ついての解説資料です。
+Oracle Database Technology Night で紹介されたAutomatic Workload Repository(AWR) の分析ついての解説資料です。他社データベースでは実現できない非常に細かいレベルまで落とし込んだ調査診断が可能です。
+
+尚、このAWRの利用に関しては、オンプレミスにおいてはOracle Database Enterprise EditionおよびDiagnostic Packが必要ですが、OCIのDBCS/ExaCS/Autonomous Databaseであれば、一部DBCSのStandard Editionを除き、追加費用なくサブスクリプションの範囲内でご利用いただけます。
+
 
 
 
