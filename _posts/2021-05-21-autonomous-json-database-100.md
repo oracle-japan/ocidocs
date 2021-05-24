@@ -1,5 +1,5 @@
 ---
-title: "AJD技術詳細"  # タイトル
+title: "Autonomous JSON Database 技術詳細"  # タイトル
 excerpt: "非構造化されたJSONデータを主に扱うのであればAutonomous JSON Database (AJD)をご検討ください。コストを抑えつつ高速セキュアな基盤を構築いただけます。"
 categories:  # カテゴリーをタブで階層化して記入
   - Services

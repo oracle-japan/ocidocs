@@ -1,5 +1,5 @@
 ---
-title: "ExaCSセットアップガイド"  # タイトル
+title: "Exadata Cloud Service セットアップガイド"  # タイトル
 excerpt: "初めてExadata Cloud Service(ExaCS)をお使いの方のために、サービスリミットの解除といった事前準備からネットワーク関連を含め、構築からログイン方法まで詳細に解説しています"
 categories:  # カテゴリーをタブで階層化して記入
   - Services

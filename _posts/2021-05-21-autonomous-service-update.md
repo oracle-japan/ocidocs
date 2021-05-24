@@ -1,5 +1,5 @@
 ---
-title: "ADBサービスアップデート"  # タイトル
+title: "Autonomous Database サービスアップデート"  # タイトル
 excerpt: "リリース・ノートのお供としてご利用ください。OCIのサービスの中でもADBは頻繁に機能強化が行われますので、ADBに特化して更新情報を追記しています。"
 categories:  # カテゴリーをタブで階層化して記入
   - Database

@@ -1,5 +1,5 @@
 ---
-title: "ADB-D技術詳細"  # タイトル
+title: "Autonomous Database -Dedicated 技術詳細"  # タイトル
 excerpt: "Autonomous DatabaseのHWを特定のアカウントで専有いただけるAutonomous Database -Dedicated（ADB-D）について、その特徴および利用方法について解説しています"
 categories:  # カテゴリーをタブで階層化して記入
   - Services

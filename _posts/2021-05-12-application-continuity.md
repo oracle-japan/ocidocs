@@ -1,5 +1,5 @@
 ---
-title: "[コア技術]AC機能概要"
+title: "[コア技術]Application Continuity 機能概要"
 excerpt: "予期せぬネットワークの瞬断からアプリケーションを守るにはどうしたら良いか？ミッションクリティカルなシステムを支えるOracle Databaseの高可用性機能の一つであるApplication Continuity(AC)を紹介します。"
 categories:
   - Database

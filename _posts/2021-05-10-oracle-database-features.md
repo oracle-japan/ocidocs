@@ -1,5 +1,5 @@
 ---
-title: "[コア技術]Oracle Database機能概要"
+title: "[コア技術]Oracle Database 機能概要"
 excerpt: "非常に多くの機能を有するOracle Databaseの各種機能について、その特徴をそれぞれ簡単に紹介しています。復習にもぜひ。大作です。"
 categories:
   - Database
