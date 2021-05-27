@@ -47,8 +47,8 @@ var store = [{
         "url": "https://oracle-japan.github.io/ocidocs/updates/update-FY20Q3/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/c6ec7e9851b54121bd2ca72df5e075d6/slide_0.jpg"
       },{
-        "title": "Database Cloud VM/BM 技術詳細",
-        "excerpt":"Oracle Database を簡単に作成し利用することができる、Database Cloud Service (DBCS) についての解説資料です。  DBCSは OSのRoot権限を持ち、オンプレミスのデータベース環境をスムーズにクラウドに移行することができるサービスです。仮想マシン、ベアメタル、Exadataの3つのコンフィグレーションから選択し、Oracleを従量制サブスクリプションまたはBYOL(ライセンス持ち込み)で利用できます。   スライド           セミナー動画      ","categories": ["Services","Database"],
+        "title": "Database Cloud Service VM/BM 技術詳細",
+        "excerpt":"DBCSはOSのRoot権限を持ち、オンプレミスのデータベース環境をスムーズにクラウドに移行することができるサービスです。 仮想マシン型（VM）だけでなく、より高い性能を求められるシステムに向けたベアメタル型（BM）も選択可能であり、Oracle Databaseを従量制サブスクリプションまたはBYOL(ライセンス持ち込み)で利用できます。   スライド           セミナー動画      ","categories": ["Services","Database"],
         "tags": ["スライドあり","動画あり","レベル:入門(100)","レベル:応用(200)"],
         "url": "https://oracle-japan.github.io/ocidocs/services/database/database-100/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/51374bb7212c4564a2d18bbc26ad17b6/slide_0.jpg"
@@ -71,10 +71,10 @@ var store = [{
         "url": "https://oracle-japan.github.io/ocidocs/services/storage/object-storage-100/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/e01e15341d2e43adbf149afaf86f0719/slide_0.jpg"
       },{
-        "title": "Autonomous Database Cloud 技術詳細",
-        "excerpt":"Oracle Databaseを利用したフルマネージド・データベース・サービスである、Autonomous Databaseについての概要解説資料です。  高度な自動化技術が搭載された、世界初の自律型データベースの特徴や、利用方法などについてカバーしています。   スライド           セミナー動画      ","categories": ["Services","Database"],
+        "title": "Autonomous Database 技術詳細",
+        "excerpt":"Oracle Databaseを利用したフルマネージド・データベース・サービスである、Autonomous Databaseについての概要解説資料です。  高度な自動化技術が搭載された、世界初の自律型データベースの特徴や、利用方法などについてカバーしています。   スライド           セミナー動画      ","categories": ["Services","Database","Autonomous"],
         "tags": ["スライドあり","動画あり","レベル:応用(200)"],
-        "url": "https://oracle-japan.github.io/ocidocs/services/database/autonomous-database-100/",
+        "url": "https://oracle-japan.github.io/ocidocs/services/database/autonomous/autonomous-database-100/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/e534dd66f48847a69305eb40743691ef/slide_0.jpg"
       },{
         "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2020/3～2020/5",
@@ -84,7 +84,7 @@ var store = [{
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/d216e58ea8104fb788e751942fdb08c1/slide_0.jpg"
       },{
         "title": "Exadata Cloud Service 技術詳細",
-        "excerpt":"Oracle Exadataをクラウド上でも利用できる、Exadata Cloud Service (ExaCS) についての技術詳細です。Oracle Databaseを高速に、高可用性・高セキュリティな環境で動かすために最適化されたExadataを使たクラウド環境が、どのような構成になっていてどういった特徴があるのかなどを解説しています。   スライド          ","categories": ["Services","Database"],
+        "excerpt":"ExaCSは、高い可用性、高いセキュリティを担保しつつ最速に稼働させるためにチューニングされたExadataをクラウド上でも利用できるサービスです。 本資料ではExaCSを導入するに際してのメリットからアーキテクチャ、各種特徴について解説しています。   スライド          ","categories": ["Services","Database"],
         "tags": ["スライドあり","動画あり","レベル:応用(200)"],
         "url": "https://oracle-japan.github.io/ocidocs/services/database/exadata-200/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/93563fd1a83240e082d52b9b3c5b81f2/slide_0.jpg"
@@ -263,39 +263,57 @@ var store = [{
         "url": "https://oracle-japan.github.io/ocidocs/services/edge%20service/security/waf-100/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/b80073aa58a141638ad5ba432009ba59/slide_0.jpg"
       },{
-        "title": "Oracle Database 機能概要",
+        "title": "[コア技術]Oracle Database 機能概要",
         "excerpt":"紹介機能 ・Parallel Query ・Oracle Partitioning ・Advanced Compression ・Database In-Memory ・Diagnostic Pack &amp; Oracle Tuning Pack ・Recovery Manager ・Database Lifecycle Management Pack ・Multitenant ・Real Application Clusters ・Automatic Storage Management ・Data Guard &amp; Oracle Active Data Guard ・GoldenGate ・Advanced Security ・Database Vault ・Audit Vault and Database Firewall ・Real Application Testing ・Data Masking...","categories": ["Database"],
         "tags": ["スライドあり"],
         "url": "https://oracle-japan.github.io/ocidocs/database/oracle-database-features/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/3175188f416e496aa119aa6eaac549a7/slide_0.jpg"
       },{
-        "title": "Oracle Database 新リリースモデル",
-        "excerpt":"Oracle Database の最新情報と新しいリリースモデルついての解説資料です。   スライド          ","categories": ["Database"],
+        "title": "[コア技術]Oracle Databaseの新リリースモデル",
+        "excerpt":"OCIの特徴の一つに、オンプレミスでもクラウドでも同じOracle Databaseを利用できることが挙げられます。 同じソフトウェアを使っているからこそ、既存オンプレミスのOracle Databaseをスムーズにクラウドに移行できることだけでなく、これまで蓄積してきたOracle Databaseのノウハウをそのままクラウドでも活用いただけます。   データベースのバージョンに関しても同様のことが言えます。 本資料では、Oracle Database の年次リリースモデルに関して解説しています。OCIの各サービスにおいても基本的にOracle Database の年次リリースモデルの考え方が適用されます。   スライド          ","categories": ["Database"],
         "tags": ["スライドあり"],
         "url": "https://oracle-japan.github.io/ocidocs/database/oracle-database-new-release-model/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/f4c3503347cb4cca90bd556950ed5853/slide_0.jpg"
       },{
-        "title": "アプリケーション・コンティニュイティ（AC）の機能概要",
-        "excerpt":"Oracle Database で利用できる、アプリケーション・コンティニュイティ（AC）についての解説資料です。   スライド          ","categories": ["Database"],
+        "title": "[コア技術]Application Continuity 機能概要",
+        "excerpt":"更新処理を実行中に予期せずネットワークが切れてしまったらどうしますか？ミッションクリティカルなシステムをささえるOracle Databaseであればそんな状況においてもアプリケーションに影響を与えずに再実行する仕組みがあります。 本資料は更新処理の途中で異常終了してしまったら何が起こるのか？Oracle Databaseであればどう対応できるのか？アプリケーション・コンティニュイティ（AC）に関して解説しています。   スライド          ","categories": ["Database","Oracle Database Technology Night"],
         "tags": ["スライドあり"],
-        "url": "https://oracle-japan.github.io/ocidocs/database/application-continuity/",
+        "url": "https://oracle-japan.github.io/ocidocs/database/oracle%20database%20technology%20night/application-continuity/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/9c9fe48bc8944763850bb6577def09e8/slide_0.jpg"
       },{
-        "title": "Real Application Clusters (RAC)の機能概要",
+        "title": "[コア技術]RAC機能概要",
         "excerpt":"Oracle Database Technology Night で紹介された Oracle Database で利用できる、Real Application Clusters (RAC) についての解説資料です。   スライド          ","categories": ["Database","Oracle Database Technology Night"],
         "tags": ["スライドあり"],
         "url": "https://oracle-japan.github.io/ocidocs/database/oracle%20database%20technology%20night/real-application-clusters/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/38893b821c2f4ec68961a5778d5456a4/slide_0.jpg"
       },{
-        "title": "Automatic Workload Repository(AWR) の分析",
-        "excerpt":"Oracle Database Technology Night で紹介された Oracle Database の Diagnostic Packで利用できる、Automatic Workload Repository(AWR) の分析ついての解説資料です。   スライド          ","categories": ["Database","Oracle Database Technology Night"],
+        "title": "[コア技術]AWRによるパフォーマンス分析",
+        "excerpt":"Oracle Database Technology Night で紹介されたAutomatic Workload Repository(AWR) の分析ついての解説資料です。他社データベースでは実現できない非常に細かいレベルまで落とし込んだ調査診断が可能です。   尚、このAWRの利用に関しては、オンプレミスにおいてはOracle Database Enterprise EditionおよびDiagnostic Packが必要ですが、OCIのDBCS/ExaCS/Autonomous Databaseであれば、一部DBCSのStandard Editionを除き、追加費用なくサブスクリプションの範囲内でご利用いただけます。   スライド          ","categories": ["Database","Oracle Database Technology Night"],
         "tags": ["スライドあり"],
         "url": "https://oracle-japan.github.io/ocidocs/database/oracle%20database%20technology%20night/automatic-workload-repository/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/d32dcf24e9584b68a043ec15e020bd5f/slide_0.jpg"
       },{
-        "title": "ExaCSのセットアップガイド",
-        "excerpt":"Oracle Exadataをクラウド上でも利用できる、Exadata Cloud Service(ExaCS)の導入ガイドです。実際に利用する際の構築イメージを習得するために、Step-by-Stepでガイドしています。   スライド          ","categories": ["Services","Database"],
+        "title": "Exadata Cloud Service セットアップガイド",
+        "excerpt":"ExaCSは、Oracle Databaseを最速に稼働させるExadataをクラウド上でも利用できるサービスです。 本資料ではExaCSを導入するに際して、実際に利用する際の構築イメージを習得するためにご利用いただけます。   スライド          ","categories": ["Services","Database"],
         "tags": ["スライドあり"],
         "url": "https://oracle-japan.github.io/ocidocs/services/database/exadata-config-guide/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/b3b2069f83034851b729be6f2dd3ff3f/slide_0.jpg"
+      },{
+        "title": "Autonomous Database -Dedicated 技術詳細",
+        "excerpt":"Autonomous Database -Dedicatedは、Oracle Databaseのフルマネージド・サービスであるAutonomous Databaseは、簡単すぐにご利用いただける共有型（Shared）サービスと、HWをお客様に専有してご利用いただける専有型（Dedicated）のサービスがあります。セキュリティの観点から他のお客様とHWレベルで分けて管理しなくてはならないシステムや、アプリケーション・サーバーとのネットワーク・レイテンシの観点でデータベースは自社DCに配置しておきたいといった要件があるシステムに最適です。 本資料はこの専有型サービスであるAutonomous Database - Dedicated について解説しています。   スライド          ","categories": ["Services","Database","Autonomous"],
+        "tags": ["スライドあり"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/database/autonomous/autonomous-database-dedicated-100/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/5c66e0c005be4e8a81554a7e34d0d2e7/slide_0.jpg"
+      },{
+        "title": "Autonomous JSON Database 技術詳細",
+        "excerpt":"Autonomous JSON Database(AJD)は、Autonomous Databaseの中で、主にJSONデータを扱うシステムに向けて提供された低コストなフルマネージド・サービスです。JSONデータを簡単に取り込み、JSONデータとRDBMSデータとを単体SQLで同時に扱えると言ったOracle Databaseの利点を活かしたサービスです。従来のクラウド型サービスと比べて高速に処理できるといった特徴があります。本資料はAJDの概要について解説しています。   スライド          ","categories": ["Services","Database","Autonomous"],
+        "tags": ["スライドあり"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/database/autonomous/autonomous-json-database-100/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/e61c82e2d1f740c9ab4ca6260e79112e/slide_0.jpg"
+      },{
+        "title": "Autonomous Database サービスアップデート",
+        "excerpt":"頻繁に行われるAutonomous Databaseの機能強化について、適宜更新しています。 尚、最新情報は以下も併せてご確認ください。   OCI リリース・ノート   ADB-S What’s New   ADB-D What’s New   スライド          ","categories": ["Database","Autonomous","Updates"],
+        "tags": ["スライドあり"],
+        "url": "https://oracle-japan.github.io/ocidocs/database/autonomous/updates/autonomous-service-update/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/321763889e40491f9616346e568e1980/slide_0.jpg"
       }]
