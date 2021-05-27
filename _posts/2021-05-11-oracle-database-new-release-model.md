@@ -1,6 +1,6 @@
 ---
-title: "Oracle Database 新リリースモデル"
-excerpt: "Oracle Database の最新情報と新しいリリースモデルついての解説資料です。"
+title: "[コア技術]Oracle Databaseの新リリースモデル"
+excerpt: "年次リリースモデルは従来と何が違うのか？Release Updates(RU)や、Revisions(RUR)って何？について解説しています。"
 categories:
   - Database
 tags:
@@ -9,8 +9,12 @@ header:
   teaser: https://speakerd.s3.amazonaws.com/presentations/f4c3503347cb4cca90bd556950ed5853/slide_0.jpg
 ---
 
-  
-Oracle Database の最新情報と新しいリリースモデルついての解説資料です。
+OCIの特徴の一つに、オンプレミスでもクラウドでも同じOracle Databaseを利用できることが挙げられます。
+同じソフトウェアを使っているからこそ、既存オンプレミスのOracle Databaseをスムーズにクラウドに移行できることだけでなく、これまで蓄積してきたOracle Databaseのノウハウをそのままクラウドでも活用いただけます。
+
+データベースのバージョンに関しても同様のことが言えます。
+本資料では、Oracle Database の年次リリースモデルに関して解説しています。OCIの各サービスにおいても基本的にOracle Database の年次リリースモデルの考え方が適用されます。
+
 
 
 #### スライド

@@ -1,9 +1,10 @@
 ---
-title: "Autonomous Database Cloud 技術詳細"  # タイトル
-excerpt: "Oracle Databaseを利用したフルマネージド・データベース・サービスである、Autonomous Databaseについて、特徴や、利用方法などについてカバーしています"
+title: "Autonomous Database 技術詳細"  # タイトル
+excerpt: "Oracle Databaseを利用したフルマネージド・データベース・サービスであるAutonomous Database(ADB)について、特徴や利用方法などについてカバーしています"
 categories:  # カテゴリーはOCI新機能・新リリース情報 / サービス別資料 / ソリューション別資料 / その他の資料 / 外部リンク  から選択
   - Services
   - Database
+  - Autonomous
 tags:  # タグを複数入力、不要なものはコメントアウト
   - スライドあり
   - 動画あり

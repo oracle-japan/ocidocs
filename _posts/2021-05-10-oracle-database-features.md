@@ -1,6 +1,6 @@
 ---
-title: "Oracle Database 機能概要"
-excerpt: "Oracle Database の機能、セキュリティ、運用管理、可用性など様々な機能についての解説資料です。"
+title: "[コア技術]Oracle Database 機能概要"
+excerpt: "非常に多くの機能を有するOracle Databaseの各種機能について、その特徴をそれぞれ簡単に紹介しています。復習にもぜひ。大作です。"
 categories:
   - Database
 tags:

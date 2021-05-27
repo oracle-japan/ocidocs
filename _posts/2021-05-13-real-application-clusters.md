@@ -1,6 +1,6 @@
 ---
-title: "Real Application Clusters (RAC)の機能概要"
-excerpt: "Oracle Database Technology Night で紹介された Oracle Database で利用できる、Real Application Clusters (RAC) についての解説資料です。 "
+title: "[コア技術]RAC機能概要"
+excerpt: "なぜOracle Databaseがミッション・クリティカルなシステムで採用されるのか、Oracle Dabaseの高可用性機能の一つであるReal Application Clusters (RAC) についての解説資料です。 "
 categories:
   - Database
   - Oracle Database Technology Night 

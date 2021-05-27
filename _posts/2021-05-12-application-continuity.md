@@ -1,8 +1,9 @@
 ---
-title: "アプリケーション・コンティニュイティ（AC）の機能概要"
-excerpt: "Oracle Database で利用できる、アプリケーション・コンティニュイティについての解説資料です。"
+title: "[コア技術]Application Continuity 機能概要"
+excerpt: "予期せぬネットワークの瞬断からアプリケーションを守るにはどうしたら良いか？ミッションクリティカルなシステムを支えるOracle Databaseの高可用性機能の一つであるApplication Continuity(AC)を紹介します。"
 categories:
   - Database
+  - Oracle Database Technology Night 
 tags:
   - スライドあり
 header:
@@ -10,7 +11,8 @@ header:
 ---
 
   
-Oracle Database で利用できる、アプリケーション・コンティニュイティ（AC）についての解説資料です。  
+更新処理を実行中に予期せずネットワークが切れてしまったらどうしますか？ミッションクリティカルなシステムをささえるOracle Databaseであればそんな状況においてもアプリケーションに影響を与えずに再実行する仕組みがあります。
+本資料は更新処理の途中で異常終了してしまったら何が起こるのか？Oracle Databaseであればどう対応できるのか？アプリケーション・コンティニュイティ（AC）に関して解説しています。
 
 
 
