@@ -316,4 +316,10 @@ var store = [{
         "tags": ["スライドあり"],
         "url": "https://oracle-japan.github.io/ocidocs/database/autonomous/updates/autonomous-service-update/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/321763889e40491f9616346e568e1980/slide_0.jpg"
+      },{
+        "title": "Autonomous Database で機械学習を始めよう(Auto ML)",
+        "excerpt":"Autonomous Database標準機能の機械学習ツール AutoML UIを使って、オーストラリアの明日の降雨を予測します。この例を通して、機械学習入門者でも気軽にモデルを生成・デプロイまでできることをご体験頂けます。1ステップずつ一緒に進めていける構成にしておりますので、是非お試し下さい。   スライド          ","categories": ["Services","Database","Autonomous","Machine Learning"],
+        "tags": ["スライドあり"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/database/autonomous/machine%20learning/automl-ui/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/afddfc662d3f4f5ebaa75306d7147b7e/slide_0.jpg"
       }]
