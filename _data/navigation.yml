@@ -53,6 +53,8 @@ docs:
         url: /solutions/manageability/
       - title: "Cloud Native"
         url: /solutions/cloudnative/
+      - title: "Blockchain"
+        url: /solutions/blockchain/
       - title: "その他"
         url: /solutions/others/
   - title: "その他"
