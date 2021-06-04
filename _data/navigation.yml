@@ -32,6 +32,8 @@ docs:
         url: /services/database/
       - title: "アナリティクス"
         url: /services/analytics/
+      - title: "開発者サービス"
+        url: /services/developers/
       - title: "エッジ・サービス"
         url: /services/edge/
       - title: "セキュリティ"
@@ -49,6 +51,8 @@ docs:
         url: /solutions/iam/
       - title: "運用・管理"
         url: /solutions/manageability/
+      - title: "Cloud Native"
+        url: /solutions/cloudnative/
       - title: "その他"
         url: /solutions/others/
   - title: "その他"
