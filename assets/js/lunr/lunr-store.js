@@ -185,12 +185,6 @@ var store = [{
         "url": "https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-200/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/9ca991733d2a4670bdd4e5ed5b5770c4/slide_0.jpg"
       },{
-        "title": "Oracle Cloudで考える高可用性アーキテクチャー",
-        "excerpt":"2019/11/30に実施した、OCHaCafe Premium 第1回のプレゼンテーション資料です。  高可用性システムの構築をサポートするOracle Cloudの様々な機能のご紹介から、障害に強いアーキテクチャ設計の考え方などをお届け致します。   スライド          ","categories": ["Solutions","High Availability"],
-        "tags": ["スライドあり","レベル:応用(200)"],
-        "url": "https://oracle-japan.github.io/ocidocs/solutions/high%20availability/high-availability/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/b707ab1f81c742cc87bf2e145ba2bd82/slide_0.jpg"
-      },{
         "title": "IDおよびアクセス管理 (IAM) 概要",
         "excerpt":"OCIの認証、認可、ID管理などを司るコア・コンポーネントである OCI IAM (Identity and Access Management) についての解説資料です。  認証とID管理、認可およびポリシー、コンパートメントとその管理、IDフェデレーション(IDCSとの連携)、タグ付け(Tagging) のトピックをカバーしています。   スライド           セミナー動画      ","categories": ["Services","Governance and Administration"],
         "tags": ["スライドあり","レベル:入門(100)"],
@@ -317,9 +311,87 @@ var store = [{
         "url": "https://oracle-japan.github.io/ocidocs/database/autonomous/updates/autonomous-service-update/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/321763889e40491f9616346e568e1980/slide_0.jpg"
       },{
+        "title": "Oracle Cloudで考える高可用性アーキテクチャー",
+        "excerpt":"高可用性システムの構築をサポートするOracle Cloudの様々な機能のご紹介から、障害に強いアーキテクチャ設計の考え方などを説明する資料です。  ミッションクリティカルなシステムをどう堅牢に稼働させるかについての、オラクル社の知見をまとめたベスト・プラクティスである MAA(Maximum Availability Architecture) のリファレンス・モデルに触れながら、Oracle Cloud Infrastructure の機能やサービスを活用して、より安価に堅牢なシステムを作り上げることを目標にしています。   スライド          ","categories": ["Solutions","High Availability"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "https://oracle-japan.github.io/ocidocs/solutions/high%20availability/high-availability/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/b707ab1f81c742cc87bf2e145ba2bd82/slide_0.jpg"
+      },{
         "title": "Autonomous Database で機械学習を始めよう(Auto ML)",
         "excerpt":"Autonomous Database標準機能の機械学習ツール AutoML UIを使って、オーストラリアの明日の降雨を予測します。この例を通して、機械学習入門者でも気軽にモデルを生成・デプロイまでできることをご体験頂けます。1ステップずつ一緒に進めていける構成にしておりますので、是非お試し下さい。   スライド          ","categories": ["Services","Database","Autonomous","Machine Learning"],
         "tags": ["スライドあり"],
         "url": "https://oracle-japan.github.io/ocidocs/services/database/autonomous/machine%20learning/automl-ui/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/afddfc662d3f4f5ebaa75306d7147b7e/slide_0.jpg"
+      },{
+        "title": "OCI API Gatewayの技術詳細",
+        "excerpt":"OCI API Gatewayの技術詳細資料です。  主にヘッダー/クエリ変換、APIの認証、認可について解説しています。   スライド                ","categories": ["Services","Developers"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/developers/apigateway-details/",
+        "teaser": "https://image.slidesharecdn.com/apigatewayheaderquerytransformauthnzdetail-210528044838/95/api-gateway-1-1024.jpg?cb=1622177409"
+      },{
+        "title": "OCI API Gateway概要",
+        "excerpt":"OCIのマネージドAPI管理サービスであるOCI API Gatewayの概要資料です。   スライド          API Gatewayご紹介     ","categories": ["Services","Developers"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/developers/apigateway-overview/",
+        "teaser": "https://image.slidesharecdn.com/apigatewayoverview-210601072619/95/api-gateway-1-1024.jpg?cb=1622532807"
+      },{
+        "title": "Oracle Cloudで実現するCloud Native",
+        "excerpt":"Oracle CloudでCloud Nativeを実現するための考え方やソリューション群をご紹介します。   スライド                ","categories": ["Solutions","Cloud Native"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "https://oracle-japan.github.io/ocidocs/solutions/cloud%20native/cloud-native-strategy/",
+        "teaser": "https://image.slidesharecdn.com/oraclecloudnativestrategyoverview-210528043421/95/oraclecloud-native-1-1024.jpg?cb=1622176680"
+      },{
+        "title": "Oracle Functions概要",
+        "excerpt":"OracleのマネージドFaaS(Functions as a Service)サービスであるOracle Functionsについての概要資料です。   スライド          Oracle Functionsご紹介     ","categories": ["Services","Developers"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/developers/functions-overview/",
+        "teaser": "https://image.slidesharecdn.com/functionsoverview-210601072428/95/oracle-functions-1-1024.jpg?cb=1622532803"
+      },{
+        "title": "Helidon概要",
+        "excerpt":"Oracleが提供するマイクロサービスフレームワークであるHelidonの概要資料です。   スライド               ","categories": ["Solutions","Cloud Native"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "https://oracle-japan.github.io/ocidocs/solutions/cloud%20native/helidon-overview/",
+        "teaser": "https://image.slidesharecdn.com/helidonoverview-210528043903/95/helidon-1-1024.jpg?cb=1622178274"
+      },{
+        "title": "OCI Logging概要",
+        "excerpt":"OCIのロギングサービスであるOCI Loggingサービスの概要資料です。   スライド               ","categories": ["Services","Developers"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/developers/logging-overview/",
+        "teaser": "https://image.slidesharecdn.com/loggingoverview-210528044044/95/oci-logging-1-1024.jpg?cb=1622176898"
+      },{
+        "title": "Oracle NoSQL Database Cloud Service概要",
+        "excerpt":"OCIのマネージドNoSQLサービスであるOracle NoSQLサービスの概要資料です。   スライド                ","categories": ["Services","Database"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/database/nosql-overview/",
+        "teaser": "https://image.slidesharecdn.com/nosqloverview-210528044509/95/oracle-nosql-database-cloud-service-1-1024.jpg?cb=1622177148"
+      },{
+        "title": "OCIコンテナ関連サービスの技術詳細",
+        "excerpt":"OracleのマネージドKubernetesサービスであるOracle Container Engine for Kubernetes(OKE)についての技術詳細資料です。  Kubernetesで取り上げられる各トピックに沿って、OKEの実装を解説しています。  後半では、OCI上でのサンプルユースケースをピックアップし、Manifest(YAML)ファイルのサンプルを解説しています。   スライド                ","categories": ["Services","Developers"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/developers/oke-ocir-details/",
+        "teaser": "https://image.slidesharecdn.com/okeocirdetails-210528045123/95/oci-1-1024.jpg?cb=1622177577"
+      },{
+        "title": "OKE(Oracle Container Engine for Kubernetes)概要",
+        "excerpt":"OracleのマネージドKubernetesサービスであるOracle Container Engine for Kubernetes(OKE)についての概要資料です。   スライド               ","categories": ["Services","Developers"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/developers/oke-overview/",
+        "teaser": "https://image.slidesharecdn.com/okeoverview-210528052755/95/oracle-container-engine-for-kubernetes-oke-20215-1-1024.jpg?cb=1622179779"
+      },{
+        "title": "OCI Streamingの技術詳細",
+        "excerpt":"OCIのKafka互換メッセージングサービスであるOCI Streamingの技術詳細資料です。  実際にOCI Streamingを利用する際に必要となる知識を詳細に解説しています。   スライド               ","categories": ["Services","Developers"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/developers/streaming-details/",
+        "teaser": "https://image.slidesharecdn.com/streamingdetail-210528045307/95/oracle-cloud-infrastructure-streaming-service-1-1024.jpg?cb=1622177672"
+      },{
+        "title": "OCI Streaming概要",
+        "excerpt":"OCIのKafka互換メッセージングサービスであるOCI Streamingの概要資料です。   スライド          Streamingご紹介     ","categories": ["Services","Developers"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/developers/streaming-overview/",
+        "teaser": "https://image.slidesharecdn.com/streamingoverview-210601072720/95/streaming-1-1024.jpg?cb=1622532809"
+      },{
+        "title": "Verrazzano概要",
+        "excerpt":"Oracleが提供するマルチ/ハイブリッド対応のマルチKubernetesクラスタ管理プラットフォームであるVerrazzanoの概要資料です。   スライド               ","categories": ["Solutions","Cloud Native"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "https://oracle-japan.github.io/ocidocs/solutions/cloud%20native/verrazzano-overview/",
+        "teaser": "https://image.slidesharecdn.com/verrazzanooverview-210528044558/95/verrazzano-1-1024.jpg?cb=1622177303"
       }]
