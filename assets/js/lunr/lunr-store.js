@@ -407,7 +407,7 @@ var store = [{
         "url": "https://oracle-japan.github.io/ocidocs/solutions/blockchain/blockchain-table-100/",
         "teaser": "https://image.slidesharecdn.com/202106oracleblockchaintablepublic-210603021301/95/oracle-blockchain-table202106-1-638.jpg?cb=1622686799"
       },{
-        "title": "Oracle Cloudで考える高可用性アーキテクチャー",
+        "title": "オブジェクト・ストレージ Amazon S3互換APIの利用",
         "excerpt":"OCIのオブジェクト・ストレージ・サービスは、OCIのネイティブAPIだけでなく、Amazon S3互換のAPIも利用でき、awscli、s3api、s3fs-fuse などのほか、S3互換の様々なクライアントからアクセスすることができます。 この資料では、S3互換APIを利用する上での注意点に特化して解説しています。   スライド          ","categories": ["Services","Object Storage"],
         "tags": ["スライドあり","レベル:応用(200)"],
         "url": "https://oracle-japan.github.io/ocidocs/services/object%20storage/object-storage-using-s3api/",
