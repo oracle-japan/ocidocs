@@ -335,6 +335,12 @@ var store = [{
         "url": "https://oracle-japan.github.io/ocidocs/services/developers/apigateway-overview/",
         "teaser": "https://image.slidesharecdn.com/apigatewayoverview-210601072619/95/api-gateway-1-1024.jpg?cb=1622532807"
       },{
+        "title": "Oracleの提供するブロックチェーンソリューション概要",
+        "excerpt":"Oracle Blockchain Platformや、Oracle Databaseの機能のOracle Blockchain Tableについて、最新の事例、試用環境とデモスクリプト、Hyperledger Fabricの技術情報とともにご説明しています。   スライド          オラクルのブロックチェーンソリューションご紹介（2021/05版）  from オラクルエンジニア通信     ","categories": ["Solutions","Blockchain"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "https://oracle-japan.github.io/ocidocs/solutions/blockchain/blockchain-solution-100/",
+        "teaser": "https://image.slidesharecdn.com/20210528oracleblockchainslideshare-210528014231/95/202105-1-638.jpg?cb=1622166197"
+      },{
         "title": "Oracle Cloudで実現するCloud Native",
         "excerpt":"Oracle CloudでCloud Nativeを実現するための考え方やソリューション群をご紹介します。   スライド                ","categories": ["Solutions","Cloud Native"],
         "tags": ["スライドあり","レベル:入門(100)"],
@@ -394,4 +400,16 @@ var store = [{
         "tags": ["スライドあり","レベル:入門(100)"],
         "url": "https://oracle-japan.github.io/ocidocs/solutions/cloud%20native/verrazzano-overview/",
         "teaser": "https://image.slidesharecdn.com/verrazzanooverview-210528044558/95/verrazzano-1-1024.jpg?cb=1622177303"
+      },{
+        "title": "Oracle Blockchain Table概要",
+        "excerpt":"Oracle Databaseの機能のOracle Blockchain Tableについて、概要から想定ユースケースや実装での応用パターン、セキュリティ向上への効果などをご説明しています。   スライド          Oracle Blockchain tableのご紹介（2021/06版）   from オラクルエンジニア通信     ","categories": ["Solutions","Blockchain"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "https://oracle-japan.github.io/ocidocs/solutions/blockchain/blockchain-table-100/",
+        "teaser": "https://image.slidesharecdn.com/202106oracleblockchaintablepublic-210603021301/95/oracle-blockchain-table202106-1-638.jpg?cb=1622686799"
+      },{
+        "title": "Oracle Cloudで考える高可用性アーキテクチャー",
+        "excerpt":"OCIのオブジェクト・ストレージ・サービスは、OCIのネイティブAPIだけでなく、Amazon S3互換のAPIも利用でき、awscli、s3api、s3fs-fuse などのほか、S3互換の様々なクライアントからアクセスすることができます。 この資料では、S3互換APIを利用する上での注意点に特化して解説しています。   スライド          ","categories": ["Services","Object Storage"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/object%20storage/object-storage-using-s3api/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/fd6802aed5134735b09f3ed671730d20/slide_0.jpg"
       }]

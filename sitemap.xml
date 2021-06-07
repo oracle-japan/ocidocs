@@ -225,6 +225,10 @@
 <lastmod>2021-06-04T00:00:00+09:00</lastmod>
 </url>
 <url>
+<loc>https://oracle-japan.github.io/ocidocs/solutions/blockchain/blockchain-solution-100/</loc>
+<lastmod>2021-06-04T00:00:00+09:00</lastmod>
+</url>
+<url>
 <loc>https://oracle-japan.github.io/ocidocs/solutions/cloud%20native/cloud-native-strategy/</loc>
 <lastmod>2021-06-04T00:00:00+09:00</lastmod>
 </url>
@@ -263,6 +267,14 @@
 <url>
 <loc>https://oracle-japan.github.io/ocidocs/solutions/cloud%20native/verrazzano-overview/</loc>
 <lastmod>2021-06-04T00:00:00+09:00</lastmod>
+</url>
+<url>
+<loc>https://oracle-japan.github.io/ocidocs/solutions/blockchain/blockchain-table-100/</loc>
+<lastmod>2021-06-05T00:00:00+09:00</lastmod>
+</url>
+<url>
+<loc>https://oracle-japan.github.io/ocidocs/services/object%20storage/object-storage-using-s3api/</loc>
+<lastmod>2021-06-07T00:00:00+09:00</lastmod>
 </url>
 <url>
 <loc>https://oracle-japan.github.io/ocidocs/about/</loc>
@@ -317,6 +329,9 @@
 </url>
 <url>
 <loc>https://oracle-japan.github.io/ocidocs/sitemap/</loc>
+</url>
+<url>
+<loc>https://oracle-japan.github.io/ocidocs/solutions/blockchain/</loc>
 </url>
 <url>
 <loc>https://oracle-japan.github.io/ocidocs/solutions/cloudnative/</loc>
