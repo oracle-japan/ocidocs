@@ -1,5 +1,5 @@
 ---
-title: "Oracle Cloudで考える高可用性アーキテクチャー"
+title: "オブジェクト・ストレージ Amazon S3互換APIの利用"
 excerpt: "OCIオブジェクト・ストレージ・サービスを Amazon S3互換API を通じて利用する方法について解説しています"
 categories:
   - Services
