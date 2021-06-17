@@ -317,6 +317,12 @@ var store = [{
         "url": "https://oracle-japan.github.io/ocidocs/solutions/high%20availability/high-availability/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/b707ab1f81c742cc87bf2e145ba2bd82/slide_0.jpg"
       },{
+        "title": "コンピュート・サービス 技術FAQ",
+        "excerpt":"一般的なOracle Cloud InfrastructureのFAQはサービスの公式ページにも記載されていますのでご覧ください。 コンソールにログインできないのですがどうしたらいいでしょうか？ 質問 ブラウザからコンソールのURLにアクセスしたのですがページが表示されません。 回答 まずはクラウド・アカウント名、ユーザー名、パスワードが正しいかを確認してください。ログイン方法は XXXや、Oracle Cloud Infrastructureドキュメント : コンソールのサインイン を参考にしてください。 問題の切り分けや対処として、以下の対応が考えられます。 Oracle Cloud Infrastructureドキュメント : サポートされているブラウザ を確認し、サポートされているブラウザをご利用ください。 サポートされている他のブラウザでも同様の問題が発生するかどうかを確認します。 どのブラウザでも問題が発生する場合 クライアントが利用しているネットワークのファイアーウォール設定やPCのセキュリティ設定でコンソールURLにアクセス可能かどうかを確認してください。 クライアントPCの時刻設定が正しいか確認してください。PCの時刻がずれている場合は正しく設定して下さい。コンソールからは内部的にAPIリクエストが発行されます。この際、クライアント側の時刻とのずれが大きいとAPIが正しく実行できません。 特定のブラウザのみで問題が発生する場合 プライベートモード（シークレットモード）でログインする キャッシュのクリア 上記を実施しても解決しない場合はサポートにSRを起票してください。 コンピュート・インスタンスにsshでログインができません。 質問 Linuxのコンピュート・インスタンスを作成しましたが、クライアントからsshでのログインができません。 回答 問題の切り分けや対処として、以下の対応が考えられます。 クライアント側でお使いのネットワークのファイアーウォール設定でsshの通信が許可されているかを確認してください。 必要に応じてsshの通信を許可してください。不明な場合はネットワーク管理者の方にご確認ください。 クライアント側ネットワークでプロキシサーバーを経由する必要があるか確認してください。 プロキシサーバーの経由が必要な場合は、sshクライアント・ソフトウェアに適切にプロキシ設定を行ってください。不明な場合はネットワーク管理者の方にご確認ください。 (例) Tera Term の場合は、メニュー 設定 → プロキシ から設定 OCI上でコンピュート・インスタンスを配置しているサブネットの設定を確認します。手順は XXX を参考にしてください。 サブネットに設定されているセキリティ・リストのセキュリティ・ルールに以下のイングレス・ルールが存在するかを確認してください。ない場合はルールを追加してください。...","categories": ["Services","Compute"],
+        "tags": ["FAQ"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/compute/compute-faq/",
+        "teaser": null
+      },{
         "title": "Autonomous Database で機械学習を始めよう(Auto ML)",
         "excerpt":"Autonomous Database標準機能の機械学習ツール AutoML UIを使って、オーストラリアの明日の降雨を予測します。この例を通して、機械学習入門者でも気軽にモデルを生成・デプロイまでできることをご体験頂けます。1ステップずつ一緒に進めていける構成にしておりますので、是非お試し下さい。   スライド          ","categories": ["Services","Database","Autonomous","Machine Learning"],
         "tags": ["スライドあり"],
@@ -412,4 +418,10 @@ var store = [{
         "tags": ["スライドあり","レベル:応用(200)"],
         "url": "https://oracle-japan.github.io/ocidocs/services/object%20storage/object-storage-using-s3api/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/fd6802aed5134735b09f3ed671730d20/slide_0.jpg"
+      },{
+        "title": "OCIにおけるシステム運用・監視",
+        "excerpt":"Oracle Cloudが提供する2つの運用監視ソリューション、「Oracle Management Cloud」と「Oracle Cloud Observability and Management Platform」についてご紹介します   スライド          ","categories": ["Solutions","Manageability"],
+        "tags": ["スライドあり","レベル:入門(200)"],
+        "url": "https://oracle-japan.github.io/ocidocs/solutions/manageability/oci-monitoring-management/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/e60af2ae74c44505ae3104e4e25ac153/slide_0.jpg"
       }]

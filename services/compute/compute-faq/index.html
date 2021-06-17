@@ -1,0 +1,1015 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.21.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="ja" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>コンピュート・サービス 技術FAQ | Oracle Cloud Infrastructure 活用資料集</title>
+<meta name="description" content="コンピュート・サービスに関する技術FAQページです。Oracle Cloud Infrastructure利用時のよくある質問から、特に技術的な問題とそれに対する回答や対処策をまとめています">
+
+
+  <meta name="author" content="Oracle Japan Solution Engineers">
+  
+  <meta property="article:author" content="Oracle Japan Solution Engineers">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="Oracle Cloud Infrastructure 活用資料集">
+<meta property="og:title" content="コンピュート・サービス 技術FAQ">
+<meta property="og:url" content="https://oracle-japan.github.io/ocidocs/services/compute/compute-faq/">
+
+
+  <meta property="og:description" content="コンピュート・サービスに関する技術FAQページです。Oracle Cloud Infrastructure利用時のよくある質問から、特に技術的な問題とそれに対する回答や対処策をまとめています">
+
+
+
+  <meta property="og:image" content="https://oracle-japan.github.io/ocidocs/assets/images/rh01-cloud-home-pine-background.jpg">
+
+
+
+
+
+  <meta property="article:published_time" content="2021-05-31T00:00:00+09:00">
+
+
+
+
+
+
+<link rel="canonical" href="https://oracle-japan.github.io/ocidocs/services/compute/compute-faq/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "https://oracle-japan.github.io/ocidocs/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/ocidocs/feed.xml" type="application/atom+xml" rel="alternate" title="Oracle Cloud Infrastructure 活用資料集 Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/ocidocs/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/ocidocs/"><img src="/ocidocs/assets/images/social-og-oracle-badge.jpg" alt=""></a>
+        
+        <a class="site-title" href="/ocidocs/">
+          OCI活用資料集
+          <span class="site-subtitle">Oracle Cloud Infrastructure を使い倒すための資料集</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/ocidocs/updates/">新機能</a>
+            </li><li class="masthead__menu-item">
+              <a href="/ocidocs/services/">サービス別</a>
+            </li><li class="masthead__menu-item">
+              <a href="/ocidocs/solutions/">ソリューション別</a>
+            </li><li class="masthead__menu-item">
+              <a href="/ocidocs/misc/">その他</a>
+            </li><li class="masthead__menu-item">
+              <a href="/ocidocs/links/">外部リンク</a>
+            </li><li class="masthead__menu-item">
+              <a href="/ocidocs/tags/">タグ</a>
+            </li><li class="masthead__menu-item">
+              <a href="/ocidocs/about/">このサイトについて</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">メニュー</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: url('/ocidocs/assets/images/rh01-cloud-home-pine-background.jpg');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          コンピュート・サービス 技術FAQ
+
+        
+      </h1>
+      
+        <p class="page__lead">コンピュート・サービスに関する技術FAQページです。Oracle Cloud Infrastructure利用時のよくある質問から、特に技術的な問題とそれに対する回答や対処策をまとめています
+</p>
+      
+      
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-05-31T00:00:00+09:00">May 31, 2021</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+      
+      
+    </div>
+  
+  
+</div>
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">メニュー</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          <a href="/ocidocs/updates/"><span class="nav__sub-title">新機能</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          <a href="/ocidocs/services/"><span class="nav__sub-title">サービス別</span></a>
+        
+
+        
+        <ul>
+          
+            <li><a href="/ocidocs/services/overall/">サービス全般</a></li>
+          
+            <li><a href="/ocidocs/services/compute/">コンピュート</a></li>
+          
+            <li><a href="/ocidocs/services/storage/">ストレージ</a></li>
+          
+            <li><a href="/ocidocs/services/networking/">ネットワーク</a></li>
+          
+            <li><a href="/ocidocs/services/database/">データベース</a></li>
+          
+            <li><a href="/ocidocs/services/analytics/">アナリティクス</a></li>
+          
+            <li><a href="/ocidocs/services/developers/">開発者サービス</a></li>
+          
+            <li><a href="/ocidocs/services/edge/">エッジ・サービス</a></li>
+          
+            <li><a href="/ocidocs/services/security/">セキュリティ</a></li>
+          
+            <li><a href="/ocidocs/services/governance-and-administration/">ガバナンスと管理</a></li>
+          
+            <li><a href="/ocidocs/services/devtools/">開発ツール</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <a href="/ocidocs/solutions/"><span class="nav__sub-title">ソリューション別</span></a>
+        
+
+        
+        <ul>
+          
+            <li><a href="/ocidocs/solutions/ha/">HA・DR・高可用性システム</a></li>
+          
+            <li><a href="/ocidocs/solutions/iam/">認証・認可・セキュリティ</a></li>
+          
+            <li><a href="/ocidocs/solutions/manageability/">運用・管理</a></li>
+          
+            <li><a href="/ocidocs/solutions/cloudnative/">Cloud Native</a></li>
+          
+            <li><a href="/ocidocs/solutions/blockchain/">Blockchain</a></li>
+          
+            <li><a href="/ocidocs/solutions/others/">その他</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <a href="/ocidocs/misc/"><span class="nav__sub-title">その他</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          <a href="/ocidocs/links/"><span class="nav__sub-title">外部リンク</span></a>
+        
+
+        
+      </li>
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="コンピュート・サービス 技術FAQ">
+    <meta itemprop="description" content="コンピュート・サービスに関する技術FAQページです。Oracle Cloud Infrastructure利用時のよくある質問から、特に技術的な問題とそれに対する回答や対処策をまとめています">
+    <meta itemprop="datePublished" content="2021-05-31T00:00:00+09:00">
+    
+
+    <div class="page__inner-wrap">
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 目次</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#コンソールにログインできないのですがどうしたらいいでしょうか">コンソールにログインできないのですがどうしたらいいでしょうか？</a></li>
+  <li><a href="#コンピュートインスタンスにsshでログインができません">コンピュート・インスタンスにsshでログインができません。</a></li>
+  <li><a href="#インスタンスに関する計画メンテナンス通知を受け取った場合どのようなことを理解しておくべきですか">インスタンスに関する計画メンテナンス通知を受け取った場合、どのようなことを理解しておくべきですか?</a></li>
+  <li><a href="#インスタンスの状態が変化した時にメール通知を受け取ることができるようにするにはどうすればいいですか">インスタンスの状態が変化した時にメール通知を受け取ることができるようにするにはどうすればいいですか？</a></li>
+  <li><a href="#コンピュートインスタンスに永続的なパブリック-ip-アドレスを関連付ける方法について教えてください">コンピュート・インスタンスに永続的なパブリック IP アドレスを関連付ける方法について教えてください。</a></li>
+  <li><a href="#コンピュートインスタンスにセカンダリ-vnic-を追加するにはどうしたらよいですか">コンピュート・インスタンスにセカンダリ VNIC を追加するにはどうしたらよいですか?</a></li>
+  <li><a href="#コンピュートインスタンス用にセカンダリプライベート-ip-アドレスを設定するにはどうすればよいですか">コンピュート・インスタンス用にセカンダリプライベート IP アドレスを設定するにはどうすればよいですか?</a></li>
+  <li><a href="#コンピュートインスタンスのバックアップにはどのような方法がありますか-また自動化には-どのような方法がありますか">コンピュート・インスタンスのバックアップにはどのような方法がありますか? また、自動化には どのような方法がありますか?</a></li>
+  <li><a href="#既存の-コンピュートインスタンス-を-別の-可用性ドメイン-に移動させるにはどうすればよいですか">既存の コンピュート・インスタンス を 別の 可用性ドメイン に移動させるにはどうすればよいですか?</a></li>
+  <li><a href="#既存の-コンピュートインスタンス-を-別の-サブネット-に移動させるにはどうすればよいですか">既存の コンピュート・インスタンス を 別の サブネット に移動させるにはどうすればよいですか?</a></li>
+  <li><a href="#既存の-コンピュートインスタンス-を-別の-oci-リージョン-にコピーするにはどうすればよいですか">既存の コンピュート・インスタンス を 別の OCI リージョン にコピーするにはどうすればよいですか?</a></li>
+  <li><a href="#既存の-コンピュートインスタンス-を-別の-oci-テナンシー-に-共有するにはどうすればよいですか">既存の コンピュート・インスタンス を 別の OCI テナンシー に 共有するにはどうすればよいですか?</a></li>
+</ul>
+
+            </nav>
+          </aside>
+        
+        <p>一般的なOracle Cloud InfrastructureのFAQはサービスの公式ページにも記載されていますのでご覧ください。</p>
+
+<h1 id="コンソールにログインできないのですがどうしたらいいでしょうか">コンソールにログインできないのですがどうしたらいいでしょうか？</h1>
+
+<p><strong>質問</strong></p>
+
+<p>ブラウザからコンソールのURLにアクセスしたのですがページが表示されません。</p>
+
+<p><strong>回答</strong></p>
+
+<p>まずはクラウド・アカウント名、ユーザー名、パスワードが正しいかを確認してください。ログイン方法は XXXや、<a href="https://docs.oracle.com/ja-jp/iaas/Content/GSG/Tasks/signingin.htm">Oracle Cloud Infrastructureドキュメント : コンソールのサインイン</a> を参考にしてください。</p>
+
+<p>問題の切り分けや対処として、以下の対応が考えられます。</p>
+
+<ol>
+  <li><a href="https://docs.oracle.com/ja-jp/iaas/Content/GSG/Tasks/signingin.htm#Supporte" target="_blank">Oracle Cloud Infrastructureドキュメント : サポートされているブラウザ</a> を確認し、サポートされているブラウザをご利用ください。</li>
+  <li>
+    <p>サポートされている他のブラウザでも同様の問題が発生するかどうかを確認します。</p>
+
+    <p>どのブラウザでも問題が発生する場合</p>
+    <ul>
+      <li>クライアントが利用しているネットワークのファイアーウォール設定やPCのセキュリティ設定でコンソールURLにアクセス可能かどうかを確認してください。</li>
+      <li>クライアントPCの時刻設定が正しいか確認してください。PCの時刻がずれている場合は正しく設定して下さい。コンソールからは内部的にAPIリクエストが発行されます。この際、クライアント側の時刻とのずれが大きいとAPIが正しく実行できません。</li>
+    </ul>
+
+    <p>特定のブラウザのみで問題が発生する場合</p>
+    <ul>
+      <li>プライベートモード（シークレットモード）でログインする</li>
+      <li>キャッシュのクリア</li>
+    </ul>
+  </li>
+</ol>
+
+<p>上記を実施しても解決しない場合はサポートにSRを起票してください。</p>
+
+<h1 id="コンピュートインスタンスにsshでログインができません">コンピュート・インスタンスにsshでログインができません。</h1>
+
+<p><strong>質問</strong></p>
+
+<p>Linuxのコンピュート・インスタンスを作成しましたが、クライアントからsshでのログインができません。</p>
+
+<p><strong>回答</strong></p>
+
+<p>問題の切り分けや対処として、以下の対応が考えられます。</p>
+
+<ul>
+  <li>
+    <p>クライアント側でお使いのネットワークのファイアーウォール設定でsshの通信が許可されているかを確認してください。<br />
+  必要に応じてsshの通信を許可してください。不明な場合はネットワーク管理者の方にご確認ください。</p>
+  </li>
+  <li>
+    <p>クライアント側ネットワークでプロキシサーバーを経由する必要があるか確認してください。<br />
+  プロキシサーバーの経由が必要な場合は、sshクライアント・ソフトウェアに適切にプロキシ設定を行ってください。不明な場合はネットワーク管理者の方にご確認ください。<br />
+   (例) Tera Term の場合は、メニュー 設定 → プロキシ から設定</p>
+  </li>
+  <li>OCI上でコンピュート・インスタンスを配置しているサブネットの設定を確認します。手順は XXX を参考にしてください。<br />
+  サブネットに設定されているセキリティ・リストのセキュリティ・ルールに以下のイングレス・ルールが存在するかを確認してください。ない場合はルールを追加してください。
+    <ul>
+      <li>ステートレス：いいえ</li>
+      <li>ソース：0.0.0.0/0</li>
+      <li>IPプロトコル：TCP</li>
+      <li>ソース・ポート範囲：All</li>
+      <li>宛先ポート範囲：22</li>
+    </ul>
+  </li>
+  <li>インスタンスのIPアドレスに対してpingが応答するかを確認します、<strong>デフォルトではインスタンスへのpingは通らない</strong>設定になっていますので、セキュリティ・リストで以下の修正を行います、手順は を参考にしてください。<br />
+  サブネットに設定されているセキュリティ・リストのセキュリティ・ルールで、以下のイングレス・ルールを編集します。
+    <ul>
+      <li>ステートレス：いいえ</li>
+      <li>ソース：0.0.0.0/0</li>
+      <li>IPプロトコル：ICMP</li>
+      <li>タイプとコード：3, 4 (デフォルト) → All</li>
+    </ul>
+
+    <p>上記のタイプとコードをAllに修正後、クライアント側からインスタンスのIPアドレスに対してpingを実行します。正しく応答が返ってくる場合は、ネットワークは到達できていますが、sshでのログインに問題があることがわかります。</p>
+  </li>
+  <li>カスタム・イメージをご利用の場合はOSの設定でsshが許可されているかを確認してください。オラクル提供イメージから作成したLinuxインスタンスの場合はデフォルトでsshは許可されています。</li>
+</ul>
+
+<p>上記を実施しても解決しない場合はサポートにSRを起票してください。</p>
+
+<h1 id="インスタンスに関する計画メンテナンス通知を受け取った場合どのようなことを理解しておくべきですか">インスタンスに関する計画メンテナンス通知を受け取った場合、どのようなことを理解しておくべきですか?</h1>
+
+<p><strong>質問</strong></p>
+
+<p>コンピュート・インスタンスの計画メンテナンスのお知らせメールが届きました。または、コンソール上で計画メンテナンスの通知が表示されています。どのようなことを理解しておけばいいでしょうか?</p>
+
+<p><strong>回答</strong></p>
+
+<p>稼働中のインスタンスに影響するサーバーなどのインフラコンポーネントの計画メンテナンスをする必要がある場合、事前に通知がおこなわれ、コンソール上のお知らせページでの表示と管理者にメールが送信されます。<br />
+該当のインスタンスの詳細ページを確認すると、メンテナンス実施に関する項目が表示されており、通常14~16日後にメンテナンス作業の予定実施日時が記載されています。</p>
+
+<p>もし、通知に記載された予定日時までの間に、ユーザーが何のアクションも起こさなかった場合は、その日時にインスタンスが新しいホストに移行します。<br />
+もし、インスタンスがライブ・マイグレーションをサポートしているシェイプの場合は、移行はライブ・マイグレーションによって実施され、インスタンスが起動中ステータスのまま新しいホスト移行が完了します。<br />
+もし、インスタンスがライブ・マイグレーションをサポートしていないシェイプの場合は、ホストの移行はリブート・マイグレーション(再起動移行)によって実施され、短いダウンタイムを伴います。<br />
+ライブ・マイグレーション対象のシェイプは、<a href="https://docs.oracle.com/en-us/iaas/Content/Compute/Tasks/movinganinstance.htm#live-migration">Oracle Cloud Infrastructureドキュメント : Live Migration</a> をご確認ください。<br />
+リブート・マイグレーションの実施に当たっては、事前に注意しておくべき内容が <a href="https://docs.oracle.com/en-us/iaas/Content/Compute/Tasks/movinganinstance.htm#prerequisites-reboot">Oracle Cloud Infrastructureドキュメント : Prerequisites for Reboot Migration</a> にありますので、こちらもご確認ください。</p>
+
+<p>また、ユーザーは、通知に記載された予定日時よりも前の任意のタイミングで新しいホストへのインスタンスの移行を実施したり、スケジュールを行うことができます。</p>
+
+<p>ベアメタル・インスタンスやローカルNVMeを内蔵するDenseIO、HPCなどのシェイプは、ライブ・マイグレーションやリブート・マイグレーションによって別のホストにインスタンスを移動して稼働を継続させることができず、手動で内蔵データの移行作業を行う必要がある場合があります。詳細は、<a href="https://docs.oracle.com/ja-jp/iaas/Content/Compute/Tasks/movinganinstance.htm#manual" target="_blank">Oracle Cloud Infrastructureドキュメント : 手動移行によるインスタンスの移動</a> をご参照ください。</p>
+
+<h1 id="インスタンスの状態が変化した時にメール通知を受け取ることができるようにするにはどうすればいいですか">インスタンスの状態が変化した時にメール通知を受け取ることができるようにするにはどうすればいいですか？</h1>
+
+<p><strong>質問</strong></p>
+
+<p>コンピュート・インスタンスの状態が変化（起動、終了、シェイプ変更などのインスタンスの更新など）した際にメール通知を受け取りたいです。どのように設定すればいいでしょうか?</p>
+
+<p><strong>回答</strong></p>
+
+<p><a href="https://www.oracle.com/jp/cloud-native/events-service/" target="_blank">イベント(Event)サービス</a> でインスタンスの状態の変化を捉え、 <a href="https://www.oracle.com/jp/devops/notifications/" target="_blank">通知(Notification)サービス</a> に連携してユーザーに通知します。
+コンピュート・インスタンスにおいて状態変化に応じて生成できるイベントのタイプは <a href="https://docs.oracle.com/ja-jp/iaas/Content/Events/Reference/eventsproducers.htm" target="_blank">Oracle Cloud Infrastructureドキュメント : イベントを生成するサービス</a> のコンピュートの項を参照してください。</p>
+
+<p><strong>手順概要</strong></p>
+<ol>
+  <li><a href="https://docs.oracle.com/ja-jp/iaas/Content/Events/Reference/eventsproducers.htm" target="_blank">Oracle Cloud Infrastructureドキュメント : イベントの開始</a> に従って、通知先となる トピックとサブスクリプション を作成します</li>
+  <li>続いて以下の内容のイベントのルールを作成します。
+    <ul>
+      <li>ルール条件
+        <ul>
+          <li>サービス名：Compute</li>
+          <li>イベント・タイプ：通知したいイベントを選択<br />
+  インスタンスの起動や停止を通知したい場合は、Instance - Action Begin、Instance - Action End を選択します。</li>
+        </ul>
+      </li>
+      <li>アクション
+        <ul>
+          <li>アクション・タイプ：通知</li>
+          <li>通知コンパートメント：手順1で作成したトピックのあるコンパートメントを指定</li>
+          <li>トピック：手順1で作成したトピックを指定</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<h1 id="コンピュートインスタンスに永続的なパブリック-ip-アドレスを関連付ける方法について教えてください">コンピュート・インスタンスに永続的なパブリック IP アドレスを関連付ける方法について教えてください。</h1>
+
+<p><strong>質問</strong>
+コンピュート・インスタンスの終了後、同一のパブリック IP アドレスを別のコンピュート・インスタンスに関連付けたいと考えています。永続的なパブリック IP アドレスをコンピュート・インスタンスに関連付けるにはどうしたら良いですか。</p>
+
+<p><strong>回答</strong>
+OCI のパブリック IP アドレスには、エフェメラル・パブリック IP アドレスと、予約済みパブリック IP アドレスの２種類が存在します。永続的なパブリック IP アドレスを利用したい場合、予約済みパブリック IP アドレスを取得します。</p>
+
+<ul>
+  <li>
+    <p>**エフェメラル・パブリック IP アドレス : **<br />
+  インスタンスの存続期間中のみ保持される、一時的なパブリック IP アドレスです。インスタンスの起動・停止で変更されることはありません。</p>
+  </li>
+  <li>
+    <p>**予約済みパブリック IP アドレス : **<br />
+  割り当てられているインスタンスの存続期間を超えて永続的に保持可能なパブリック IP アドレスです。割り当てを解除し、いつでも好きなときに別のインスタンスに再割り当てすることができます。</p>
+  </li>
+</ul>
+
+<p>予約済みパブリック IP アドレスを取得し、コンピュート・インスタンスに割り当てるには、以下の手順を実行します。</p>
+
+<ol>
+  <li>
+    <p><a href="https://docs.oracle.com/ja-jp/iaas/Content/Network/Tasks/managingpublicIPs.htm#console-reserved" target="_blank">Oracle Cloud Infrastructureドキュメント : プールに新規予約済パブリックIPを作成するには</a> を参考に、予約済みパブリック IP アドレスを取得します。</p>
+  </li>
+  <li>
+    <p><a href="https://docs.oracle.com/ja-jp/iaas/Content/Network/Tasks/managingpublicIPs.htm#console-reserved" target="_blank">Oracle Cloud Infrastructureドキュメント : プライベートIPに予約済パブリックIPを割り当てるには</a> を参考に、コンピュート・インスタンスのアタッチされた VNIC に、取得した予約済みパブリック IP アドレスを割り当てます。</p>
+  </li>
+</ol>
+
+<p>既にコンピュート・インスタンスに エフェメラル・パブリック IP アドレス、または、予約済みパブリック IP アドレスが割り当てられている場合は、事前に対象のパブリック IP アドレスを削除する必要があります。詳細は <a href="https://docs.oracle.com/ja-jp/iaas/Content/Network/Tasks/managingpublicIPs.htm#console-ephemeral" target="_blank">Oracle Cloud Infrastructureドキュメント : インスタンスからエフェメラル・パブリックIPを削除するには</a> または  <a href="https://docs.oracle.com/ja-jp/iaas/Content/Network/Tasks/managingpublicIPs.htm#console-reserved" target="_blank">Oracle Cloud Infrastructureドキュメント : 予約済パブリックIPを割当て解除してプールに戻すには</a> 予約済みパブリック IP アドレスの割り当てを解除する をご参照ください。</p>
+
+<h1 id="コンピュートインスタンスにセカンダリ-vnic-を追加するにはどうしたらよいですか">コンピュート・インスタンスにセカンダリ VNIC を追加するにはどうしたらよいですか?</h1>
+
+<p><strong>質問</strong></p>
+
+<p>コンピュート・インスタンスを複数の VCN 内のサブネットに接続させたいと考えています。セカンダリ VNIC はどのように追加できますか？</p>
+
+<p><strong>回答</strong></p>
+
+<p>セカンダリ VNIC は、コンピュート・インスタンスの起動後にのみ追加可能です。<br />
+インスタンスにアタッチできる VNIC の数には制限があり、シェイプによって異なります。これらの制限については、<a href="https://docs.oracle.com/ja-jp/iaas/Content/Compute/References/computeshapes.htm" target="_blank">Oracle Cloud Infrastructureドキュメント : コンピュート・シェイプ</a> を参照してください。</p>
+
+<p>セカンダリ VNIC を追加するには、以下の手順を実行します。</p>
+<ol>
+  <li>
+    <p>対象のコンピュート・インスタンスにセカンダリ VNIC を作成します。
+ <a href="https://docs.oracle.com/ja-jp/iaas/Content/Network/Tasks/managingVNICs.htm#console" target="_blank">Oracle Cloud Infrastructureドキュメント : セカンダリVNICを作成してアタッチするには</a></p>
+  </li>
+  <li>
+    <p>セカンダリ VNIC を作成後、コンピュート・インスタンスの種類によっては、OS へ認識させるために構成する必要があります。
+ Linux VM インスタンスでは OS によって自動的にセカンダリ VNIC が認識されます
+ Linux BM インスタンスでセカンダリ VNIC を構成する
+Windows インスタンスでセカンダリ VNIC を構成する</p>
+  </li>
+</ol>
+
+<h1 id="コンピュートインスタンス用にセカンダリプライベート-ip-アドレスを設定するにはどうすればよいですか">コンピュート・インスタンス用にセカンダリプライベート IP アドレスを設定するにはどうすればよいですか?</h1>
+
+<p><strong>質問</strong></p>
+
+<p>コンピュート・インスタンスに、セカンダリプライベート IP アドレスを設定したいと考えています。どうすればよいですか？</p>
+
+<p><strong>回答</strong></p>
+
+<p>セカンダリ・プライベート IP アドレスは、既存のコンピュート・インスタンスのプライマリ VNIC、またはセカンダリ VNIC に追加することが可能です。
+セカンダリ・プライベートIPアドレスは、VNICサブネットのCIDRから取得する必要があります。
+両方のVNICが同じサブネットに属している場合、セカンダリ・プライベートIPをあるインスタンスのVNICから別のインスタンスのVNICに移動できます。
+セカンダリプライベート IP アドレスを取得し、コンピュート・インスタンスに割り当てるには、以下の手順を実行します。
+※詳細な手順は、「チュートリアル : Oracle Cloud Infrastructure を使ってみようチュートリアル」の記事でも紹介しております。
+コンピュート・インスタンスにアタッチされた VNIC にセカンダリ・プライベート IP アドレスを割り当てます。
+新しいセカンダリ・プライベート IP アドレスを VNIC に割り当てるには
+セカンダリ・プライベート IP を VNIC に割り当てた後、OS がその IP アドレスを使用するよう構成する必要があります。
+Linux でセカンダリ・プライベート IP アドレスを構成する
+Windows でセカンダリ・プライベート IP アドレスを構成する</p>
+
+<h1 id="コンピュートインスタンスのバックアップにはどのような方法がありますか-また自動化には-どのような方法がありますか">コンピュート・インスタンスのバックアップにはどのような方法がありますか? また、自動化には どのような方法がありますか?</h1>
+
+<p><strong>質問</strong></p>
+
+<p>コンピュート・インスタンスのバックアップを作成したいと考えています。バックアップにはどうような方法がありますか？また、自動化はどのような方法がありますか？</p>
+
+<p><strong>回答</strong></p>
+
+<p>コンピュート・インスタンスのバックアップには、カスタム・イメージの作成、または、ブート・ボリュームのバックアップ機能が利用できます。
+ブート・ボリュームは、Oracle Cloud Infrastructure ブロック・ボリュームのバックアップ機能を使用して、バックアップを作成することができ、ブロック・ボリュームのバックアップ機能と同じく、バックアップポリシーによって自動化することが可能です。
+コンピュート・インスタンスにブート・ボリューム以外のブロック・ボリュームをアタッチしている場合は、別途ブロック・ボリュームのバックアップが必要です。
+カスタム・イメージの作成、および、ブート・ボリュームのバックアップの使い分けについては、こちらの資料をご参照ください。
+カスタム・イメージを作成するには、以下の手順を実行します。
+対象のコンピュート・インスタンスからカスタム・イメージの作成を行います。
+カスタム・イメージを作成するには
+実行中のインスタンスのイメージを作成すると、インスタンスはシャットダウンし、数分間使用できなくなります。プロセスが完了すると、インスタンスが再起動されます。
+ブート・ボリュームのバックアップ作成、およびリストアを行うには、以下の手順を実行します。
+※詳細な手順は、「チュートリアル : Oracle Cloud Infrastructure を使ってみようチュートリアル」の記事でも紹介しております。
+対象のコンピュート・インスタンスのブート・ボリュームから手動バックアップの作成を行います。
+ブート・ボリュームのバックアップ
+作成したブート・ボリューム・バックアップからブート・ボリュームの作成を行います。
+ブート・ボリュームのリストア
+インスタンスの再作成を行う場合は、リストアしたブート・ボリュームからインスタンスの再作成を行います。
+既存のインスタンスへアタッチする場合は、対象のコンピュート・インスタンスのブート・ボリュームをデタッチした上で、リストアしたブート・ボリュームをアタッチします。
+ブート・ボリュームのデタッチ
+ブート・ボリュームのアタッチ
+バックアップはオブジェクトストレージに保持されるため、容量に応じたコストがかかります。
+ブート・ボリュームのバックアップを自動化するには、以下の手順を実行します。
+自動化したいブート・ボリュームにバックアップ・ポリシーの割り当てを行います。
+ボリュームへのバックアップ・ポリシー割り当ての管理</p>
+
+<h1 id="既存の-コンピュートインスタンス-を-別の-可用性ドメイン-に移動させるにはどうすればよいですか">既存の コンピュート・インスタンス を 別の 可用性ドメイン に移動させるにはどうすればよいですか?</h1>
+
+<p><strong>質問</strong></p>
+
+<p>既存のコンピュート・インスタンスを、別の可用性ドメインに、移動、またはコピーする必要があります。どうすれば良いですか？</p>
+
+<p><strong>回答</strong></p>
+
+<p>既存のインスタンスを別の可用性ドメインに移動することはできません。代わりに、対象のコンピュート・インスタンスからブート・ボリュームのバックアップを作成し、手動でコンピュート・インスタンスを目的の可用性ドメインに移動できます。
+コンピュート・インスタンスを別の可用性ドメインに移動させるには、以下の手順を実行します。
+コンピュート・インスタンスのバックアップを取得します。
+ブート・ボリュームのバックアップ
+作成したブート・ボリューム・バックアップからブート・ボリュームの作成を行い、その際に移動させたい可用性ドメインを選択します。
+ブート・ボリュームのリストア
+リストアしたブート・ボリュームからインスタンスの再作成を行います。</p>
+
+<h1 id="既存の-コンピュートインスタンス-を-別の-サブネット-に移動させるにはどうすればよいですか">既存の コンピュート・インスタンス を 別の サブネット に移動させるにはどうすればよいですか?</h1>
+
+<p><strong>質問</strong></p>
+
+<p>既存のコンピュート・インスタンスを、別のサブネットに、移動、またはコピーする必要があります。どうすれば良いですか？</p>
+
+<p><strong>回答</strong></p>
+
+<p>既存のインスタンスを別のサブネットに移動することはできません。代わりに、対象のコンピュート・インスタンスからカスタム・イメージの作成を行い、オブジェクト・ストレージを介して、目的のサブネットへ手動で移動することができます。
+コンピュート・インスタンスを別のサブネットに移動させるには、以下の手順を実行します。
+対象のコンピュート・インスタンスからカスタム・イメージの作成を行います。
+カスタム・イメージを作成するには
+作成したカスタム・イメージをエクスポートします。
+イメージのエクスポート
+※オブジェクト・ストレージのバケットは、移動先のサブネットが参照可能なバケットをお使いください。
+作成したカスタム・イメージをインポートします。
+イメージの読み込み</p>
+
+<h1 id="既存の-コンピュートインスタンス-を-別の-oci-リージョン-にコピーするにはどうすればよいですか">既存の コンピュート・インスタンス を 別の OCI リージョン にコピーするにはどうすればよいですか?</h1>
+
+<p><strong>質問</strong></p>
+
+<p>コンピュート・インスタンスのコピーを起動して、他の OCI リージョンにサービスを提供し、アプリケーションに冗長性を持たせたいと考えています。コンピュート・インスタンスのバックアップを作成し、それを別の OCI リージョンにコピーするには、どうすればよいですか？</p>
+
+<p><strong>回答</strong></p>
+
+<p>別の OCI リージョンに 既存のコンピュート・インスタンスのバックアップ をコピーするには、対象のコンピュート・インスタンスからカスタム・イメージの作成を行い、オブジェクト・ストレージを介して、目的の OCI リージョンへエクスポートする必要があります。
+コンピュート・インスタンスを別の OCI リージョンに移動させるには、以下の手順を実行します。
+対象のコンピュート・インスタンスからカスタム・イメージの作成を行います。
+カスタム・イメージを作成するには
+作成したカスタム・イメージをエクスポートします。
+イメージのエクスポート
+※オブジェクト・ストレージのバケットは、移動先リージョンで作成したバケットをお使いください。
+作成したカスタム・イメージをインポートします。
+イメージの読み込み</p>
+
+<h1 id="既存の-コンピュートインスタンス-を-別の-oci-テナンシー-に-共有するにはどうすればよいですか">既存の コンピュート・インスタンス を 別の OCI テナンシー に 共有するにはどうすればよいですか?</h1>
+
+<p><strong>質問</strong></p>
+
+<p>既存のコンピュート・インスタンスを別の OCI テナンシーへコピーしたいと考えています。どうすればよいですか？</p>
+
+<p><strong>回答</strong></p>
+
+<p>別の OCI テナンシーに 既存のコンピュート・インスタンスを共有するには、対象のコンピュート・インスタンスからカスタム・イメージの作成を行い、オブジェクト・ストレージを介して、目的の OCI テナンシーへエクスポートする必要があります。
+コンピュート・インスタンスを別の OCI テナンシーに移動させるには、以下の手順を実行します。
+対象のコンピュート・インスタンスからカスタム・イメージの作成を行います。
+カスタム・イメージを作成するには
+作成したカスタム・イメージをエクスポートします。
+イメージのエクスポート
+※オブジェクト・ストレージのバケットは、共有先の OCI テナンシーが参照可能なバケットをお使いください。
+作成したカスタム・イメージをインポートします。
+イメージの読み込み</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> タグ: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/ocidocs/tags/#faq" class="page__taxonomy-item" rel="tag">FAQ</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> カテゴリー: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/ocidocs/categories/#compute" class="page__taxonomy-item" rel="tag">Compute</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/ocidocs/categories/#services" class="page__taxonomy-item" rel="tag">Services</a>
+    
+    </span>
+  </p>
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 更新日時:</strong> <time datetime="2021-05-31T00:00:00+09:00">May 31, 2021</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">共有</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%83%88%E3%83%BB%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9+%E6%8A%80%E8%A1%93FAQ%20https%3A%2F%2Foracle-japan.github.io%2Focidocs%2Fservices%2Fcompute%2Fcompute-faq%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="共有 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Foracle-japan.github.io%2Focidocs%2Fservices%2Fcompute%2Fcompute-faq%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="共有 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Foracle-japan.github.io%2Focidocs%2Fservices%2Fcompute%2Fcompute-faq%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="共有 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/ocidocs/solutions/high%20availability/high-availability/" class="pagination--pager" title="Oracle Cloudで考える高可用性アーキテクチャー
+">前へ</a>
+    
+    
+      <a href="/ocidocs/services/database/autonomous/machine%20learning/automl-ui/" class="pagination--pager" title="Autonomous Database で機械学習を始めよう(Auto ML)
+">次へ</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">関連記事</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://speakerd.s3.amazonaws.com/presentations/e60af2ae74c44505ae3104e4e25ac153/slide_0.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ocidocs/solutions/manageability/oci-monitoring-management/" rel="permalink">OCIにおけるシステム運用・監視
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-06-08T00:00:00+09:00">June 8, 2021</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Oracle Cloudが提供する2つの運用監視ソリューション、「Oracle Management Cloud」と「Oracle Cloud Observability and Management Platform」についてご紹介します
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://speakerd.s3.amazonaws.com/presentations/fd6802aed5134735b09f3ed671730d20/slide_0.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ocidocs/services/object%20storage/object-storage-using-s3api/" rel="permalink">オブジェクト・ストレージ Amazon S3互換APIの利用
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-06-07T00:00:00+09:00">June 7, 2021</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">OCIオブジェクト・ストレージ・サービスを Amazon S3互換API を通じて利用する方法について解説しています
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://image.slidesharecdn.com/202106oracleblockchaintablepublic-210603021301/95/oracle-blockchain-table202106-1-638.jpg?cb=1622686799" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ocidocs/solutions/blockchain/blockchain-table-100/" rel="permalink">Oracle Blockchain Table概要
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-06-05T00:00:00+09:00">June 5, 2021</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Oracle DatabaseのBlockchain Table機能のご紹介資料です。
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://image.slidesharecdn.com/verrazzanooverview-210528044558/95/verrazzano-1-1024.jpg?cb=1622177303" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ocidocs/solutions/cloud%20native/verrazzano-overview/" rel="permalink">Verrazzano概要
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-06-04T00:00:00+09:00">June 4, 2021</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Oracleが提供するマルチ/ハイブリッドクラウド対応のマルチKubernetesクラスタ管理プラットフォームであるVerrazzanoの概要資料です。
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="検索キーワードを入力してください..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>フォロー</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/#ocijp" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/oracle-japan" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+    
+
+    <li><a href="/ocidocs/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2021 Oracle Cloud Infrastructure 活用資料集. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/ocidocs/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/ocidocs/assets/js/lunr/lunr.min.js"></script>
+<script src="/ocidocs/assets/js/lunr/lunr-store.js"></script>
+<script src="/ocidocs/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VWKLFQKQEL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VWKLFQKQEL', { 'anonymize_ip': false});
+</script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
