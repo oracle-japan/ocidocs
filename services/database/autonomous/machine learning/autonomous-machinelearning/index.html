@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>OCI CLI を使い倒す | Oracle Cloud Infrastructure 活用資料集</title>
-<meta name="description" content="Oracle Cloud Infrastructure の CLI について、セットアップ、よくあるコンポーネントの作成、シェルスクリプトからの呼び出し、クセやTipsなどについて解説しています">
+<!-- begin _includes/seo.html --><title>機械学習プラットフォームとして活用するAutonomous Database | Oracle Cloud Infrastructure 活用資料集</title>
+<meta name="description" content="機械学習に必要となるNotebookやAutoML UIといったAutonomous Databaseに同梱される各種ツールについて、体系立てて紹介します。">
 
 
   <meta name="author" content="Oracle Japan Solution Engineers">
@@ -22,11 +22,11 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:site_name" content="Oracle Cloud Infrastructure 活用資料集">
-<meta property="og:title" content="OCI CLI を使い倒す">
-<meta property="og:url" content="https://oracle-japan.github.io/ocidocs/services/devtool/ocicli/">
+<meta property="og:title" content="機械学習プラットフォームとして活用するAutonomous Database">
+<meta property="og:url" content="https://oracle-japan.github.io/ocidocs/services/database/autonomous/machine%20learning/autonomous-machinelearning/">
 
 
-  <meta property="og:description" content="Oracle Cloud Infrastructure の CLI について、セットアップ、よくあるコンポーネントの作成、シェルスクリプトからの呼び出し、クセやTipsなどについて解説しています">
+  <meta property="og:description" content="機械学習に必要となるNotebookやAutoML UIといったAutonomous Databaseに同梱される各種ツールについて、体系立てて紹介します。">
 
 
 
@@ -36,14 +36,14 @@
 
 
 
-  <meta property="article:published_time" content="2019-09-27T00:00:00+09:00">
+  <meta property="article:published_time" content="2021-06-17T00:00:00+09:00">
 
 
 
 
 
 
-<link rel="canonical" href="https://oracle-japan.github.io/ocidocs/services/devtool/ocicli/">
+<link rel="canonical" href="https://oracle-japan.github.io/ocidocs/services/database/autonomous/machine%20learning/autonomous-machinelearning/">
 
 
 
@@ -183,12 +183,12 @@
     <div class="wrapper">
       <h1 id="page-title" class="page__title" itemprop="headline">
         
-          OCI CLI を使い倒す
+          機械学習プラットフォームとして活用するAutonomous Database
 
         
       </h1>
       
-        <p class="page__lead">Oracle Cloud Infrastructure の CLI について、セットアップ、よくあるコンポーネントの作成、シェルスクリプトからの呼び出し、クセやTipsなどについて解説しています
+        <p class="page__lead">機械学習に必要となるNotebookやAutoML UIといったAutonomous Databaseに同梱される各種ツールについて、体系立てて紹介します。
 </p>
       
       
@@ -198,7 +198,7 @@
       
       <span class="page__meta-date">
         <i class="far fa-calendar-alt" aria-hidden="true"></i>
-        <time datetime="2019-09-27T00:00:00+09:00">September 27, 2019</time>
+        <time datetime="2021-06-17T00:00:00+09:00">June 17, 2021</time>
       </span>
     
 
@@ -331,9 +331,9 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="OCI CLI を使い倒す">
-    <meta itemprop="description" content="Oracle Cloud Infrastructure の CLI について、セットアップ、よくあるコンポーネントの作成、シェルスクリプトからの呼び出し、クセやTipsなどについて解説しています">
-    <meta itemprop="datePublished" content="2019-09-27T00:00:00+09:00">
+    <meta itemprop="headline" content="機械学習プラットフォームとして活用するAutonomous Database">
+    <meta itemprop="description" content="機械学習に必要となるNotebookやAutoML UIといったAutonomous Databaseに同梱される各種ツールについて、体系立てて紹介します。">
+    <meta itemprop="datePublished" content="2021-06-17T00:00:00+09:00">
     
 
     <div class="page__inner-wrap">
@@ -351,15 +351,17 @@
             </nav>
           </aside>
         
-        <p>Oracle Cloud Infrastructure (OCI) の CLI (Command Line Interface) の解説資料です。2019年9月27日のOCIスキルアップセミナーで使用しました。<br />
-CLIのセットアップから始まり、よくあるコンポーネント(VCN関連、インスタンス、ブロック・ボリュームなど)の作成、シェルスクリプトからの呼び出し、OCI CLIのクセとTipsなどについて解説しています。</p>
+        <p>Autonomous Database (ADB)では、機械学習に必要な各種ツールがセットアップされており、データベースインスタンスを作成後にすぐに利用いただくことが可能です。
+AutoMLテクノロジにより最適なアルゴリズムを自動選択しモデルを生成したり、
+Apache ZeppelinベースでSQL,PL/SQL,Pythonの併用が可能なNotebookが構成されているので、データの把握から前処理、機械学習の実行、予測モデルの管理などといった作業を実施いただくことが可能になっています。
+本資料ではこれら各ツールの概要について解説しています。</p>
 
 <h4 id="スライド">スライド</h4>
 
 <div style="max-width:768px">
 
 <!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-<script async="" class="speakerdeck-embed" data-id="7f7c73369f704d6e9687d7d4e45c81ae" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<script async="" class="speakerdeck-embed" data-id="a626b9f2631e44ebbe815f21b7dab081" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 <!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
 
 </div>
@@ -383,11 +385,7 @@ CLIのセットアップから始まり、よくあるコンポーネント(VCN�
     
       
       
-      <a href="/ocidocs/tags/#%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%89%E3%81%82%E3%82%8A" class="page__taxonomy-item" rel="tag">スライドあり</a><span class="sep">, </span>
-    
-      
-      
-      <a href="/ocidocs/tags/#%E3%83%AC%E3%83%99%E3%83%AB-%E5%85%A5%E9%96%80-100" class="page__taxonomy-item" rel="tag">レベル:入門(100)</a>
+      <a href="/ocidocs/tags/#%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%89%E3%81%82%E3%82%8A" class="page__taxonomy-item" rel="tag">スライドあり</a>
     
     </span>
   </p>
@@ -408,7 +406,15 @@ CLIのセットアップから始まり、よくあるコンポーネント(VCN�
     
       
       
-      <a href="/ocidocs/categories/#devtool" class="page__taxonomy-item" rel="tag">Devtool</a><span class="sep">, </span>
+      <a href="/ocidocs/categories/#autonomous" class="page__taxonomy-item" rel="tag">Autonomous</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/ocidocs/categories/#database" class="page__taxonomy-item" rel="tag">Database</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/ocidocs/categories/#machine-learning" class="page__taxonomy-item" rel="tag">Machine Learning</a><span class="sep">, </span>
     
       
       
@@ -419,7 +425,7 @@ CLIのセットアップから始まり、よくあるコンポーネント(VCN�
 
 
         
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 更新日時:</strong> <time datetime="2019-09-27T00:00:00+09:00">September 27, 2019</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 更新日時:</strong> <time datetime="2021-06-17T00:00:00+09:00">June 17, 2021</time></p>
 
 
       </footer>
@@ -429,23 +435,22 @@ CLIのセットアップから始まり、よくあるコンポーネント(VCN�
     <h4 class="page__share-title">共有</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=OCI+CLI+%E3%82%92%E4%BD%BF%E3%81%84%E5%80%92%E3%81%99%20https%3A%2F%2Foracle-japan.github.io%2Focidocs%2Fservices%2Fdevtool%2Focicli%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="共有 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E3%83%97%E3%83%A9%E3%83%83%E3%83%88%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0%E3%81%A8%E3%81%97%E3%81%A6%E6%B4%BB%E7%94%A8%E3%81%99%E3%82%8BAutonomous+Database%20https%3A%2F%2Foracle-japan.github.io%2Focidocs%2Fservices%2Fdatabase%2Fautonomous%2Fmachine%2520learning%2Fautonomous-machinelearning%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="共有 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Foracle-japan.github.io%2Focidocs%2Fservices%2Fdevtool%2Focicli%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="共有 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Foracle-japan.github.io%2Focidocs%2Fservices%2Fdatabase%2Fautonomous%2Fmachine%2520learning%2Fautonomous-machinelearning%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="共有 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Foracle-japan.github.io%2Focidocs%2Fservices%2Fdevtool%2Focicli%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="共有 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Foracle-japan.github.io%2Focidocs%2Fservices%2Fdatabase%2Fautonomous%2Fmachine%2520learning%2Fautonomous-machinelearning%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="共有 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/ocidocs/services/compute/autoscaling/" class="pagination--pager" title="自動スケーリング機能をさわってみよう
+      <a href="/ocidocs/solutions/manageability/oci-monitoring-management/" class="pagination--pager" title="OCIにおけるシステム運用・監視
 ">前へ</a>
     
     
-      <a href="/ocidocs/misc/oow-feedback-2019/" class="pagination--pager" title="Oracle OpenWorld 2019 フィードバック『OCI関連セッションまとめ』
-">次へ</a>
+      <a href="#" class="pagination--pager disabled">次へ</a>
     
   </nav>
 
@@ -459,46 +464,6 @@ CLIのセットアップから始まり、よくあるコンポーネント(VCN�
     <div class="page__related">
       <h4 class="page__related-title">関連記事</h4>
       <div class="grid__wrapper">
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src="https://speakerd.s3.amazonaws.com/presentations/a626b9f2631e44ebbe815f21b7dab081/slide_0.jpg" alt="">
-      </div>
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/ocidocs/services/database/autonomous/machine%20learning/autonomous-machinelearning/" rel="permalink">機械学習プラットフォームとして活用するAutonomous Database
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-calendar-alt" aria-hidden="true"></i>
-        <time datetime="2021-06-17T00:00:00+09:00">June 17, 2021</time>
-      </span>
-    
-
-    
-
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">機械学習に必要となるNotebookやAutoML UIといったAutonomous Databaseに同梱される各種ツールについて、体系立てて紹介します。
-</p>
-  </article>
-</div>
-
         
           
 
@@ -615,6 +580,46 @@ CLIのセットアップから始まり、よくあるコンポーネント(VCN�
 
 
     <p class="archive__item-excerpt" itemprop="description">Oracle DatabaseのBlockchain Table機能のご紹介資料です。
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://image.slidesharecdn.com/verrazzanooverview-210528044558/95/verrazzano-1-1024.jpg?cb=1622177303" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ocidocs/solutions/cloud%20native/verrazzano-overview/" rel="permalink">Verrazzano概要
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-06-04T00:00:00+09:00">June 4, 2021</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Oracleが提供するマルチ/ハイブリッドクラウド対応のマルチKubernetesクラスタ管理プラットフォームであるVerrazzanoの概要資料です。
 </p>
   </article>
 </div>

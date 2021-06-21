@@ -326,7 +326,7 @@ var store = [{
         "title": "Autonomous Database で機械学習を始めよう(Auto ML)",
         "excerpt":"Autonomous Database標準機能の機械学習ツール AutoML UIを使って、オーストラリアの明日の降雨を予測します。この例を通して、機械学習入門者でも気軽にモデルを生成・デプロイまでできることをご体験頂けます。1ステップずつ一緒に進めていける構成にしておりますので、是非お試し下さい。   スライド          ","categories": ["Services","Database","Autonomous","Machine Learning"],
         "tags": ["スライドあり"],
-        "url": "https://oracle-japan.github.io/ocidocs/services/database/autonomous/machine%20learning/automl-ui/",
+        "url": "https://oracle-japan.github.io/ocidocs/services/database/autonomous/machine%20learning/autonomous-automl-ui-startguide/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/afddfc662d3f4f5ebaa75306d7147b7e/slide_0.jpg"
       },{
         "title": "OCI API Gatewayの技術詳細",
@@ -354,10 +354,10 @@ var store = [{
         "teaser": "https://image.slidesharecdn.com/oraclecloudnativestrategyoverview-210528043421/95/oraclecloud-native-1-1024.jpg?cb=1622176680"
       },{
         "title": "Oracle Functions概要",
-        "excerpt":"OracleのマネージドFaaS(Functions as a Service)サービスであるOracle Functionsについての概要資料です。   スライド          Oracle Functionsご紹介     ","categories": ["Services","Developers"],
+        "excerpt":"OracleのマネージドFaaS(Functions as a Service)サービスであるOracle Functionsについての概要資料です。   スライド          Oracle Functions ご紹介      ","categories": ["Services","Developers"],
         "tags": ["スライドあり","レベル:入門(100)"],
         "url": "https://oracle-japan.github.io/ocidocs/services/developers/functions-overview/",
-        "teaser": "https://image.slidesharecdn.com/functionsoverview-210601072428/95/oracle-functions-1-1024.jpg?cb=1622532803"
+        "teaser": "https://image.slidesharecdn.com/functionsoverview-210618042330/95/oracle-functions-1-638.jpg?cb=1623990526"
       },{
         "title": "Helidon概要",
         "excerpt":"Oracleが提供するマイクロサービスフレームワークであるHelidonの概要資料です。   スライド               ","categories": ["Solutions","Cloud Native"],
@@ -424,4 +424,10 @@ var store = [{
         "tags": ["スライドあり","レベル:入門(200)"],
         "url": "https://oracle-japan.github.io/ocidocs/solutions/manageability/oci-monitoring-management/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/e60af2ae74c44505ae3104e4e25ac153/slide_0.jpg"
+      },{
+        "title": "機械学習プラットフォームとして活用するAutonomous Database",
+        "excerpt":"Autonomous Database (ADB)では、機械学習に必要な各種ツールがセットアップされており、データベースインスタンスを作成後にすぐに利用いただくことが可能です。 AutoMLテクノロジにより最適なアルゴリズムを自動選択しモデルを生成したり、 Apache ZeppelinベースでSQL,PL/SQL,Pythonの併用が可能なNotebookが構成されているので、データの把握から前処理、機械学習の実行、予測モデルの管理などといった作業を実施いただくことが可能になっています。 本資料ではこれら各ツールの概要について解説しています。   スライド          ","categories": ["Services","Database","Autonomous","Machine Learning"],
+        "tags": ["スライドあり"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/database/autonomous/machine%20learning/autonomous-machinelearning/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/a626b9f2631e44ebbe815f21b7dab081/slide_0.jpg"
       }]
