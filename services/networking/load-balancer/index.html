@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>DNS 概要 | Oracle Cloud Infrastructure 活用資料集</title>
-<meta name="description" content="インターネット上の名前解決を提供する権威DNSサービスであるOCI DNSサービスについて、サービスの概要、特長、利用方法、ユースケースなどについて解説していま">
+<!-- begin _includes/seo.html --><title>ロード・バランサ・サービス(再)入門 | Oracle Cloud Infrastructure 活用資料集</title>
+<meta name="description" content="OCIロード・バランサを初めて触る人のために基礎的な内容をおさらいしつつ、既にバリバリ使っている人のための新機能解説や応用的な活用方法、そしてテストしてわかったマニュアルには書いていない動作の仕組みを解説しています。">
 
 
   <meta name="author" content="Oracle Japan Solution Engineers">
@@ -22,11 +22,11 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:site_name" content="Oracle Cloud Infrastructure 活用資料集">
-<meta property="og:title" content="DNS 概要">
-<meta property="og:url" content="https://oracle-japan.github.io/ocidocs/services/edge%20service/dns-100/">
+<meta property="og:title" content="ロード・バランサ・サービス(再)入門">
+<meta property="og:url" content="https://oracle-japan.github.io/ocidocs/services/networking/load-balancer/">
 
 
-  <meta property="og:description" content="インターネット上の名前解決を提供する権威DNSサービスであるOCI DNSサービスについて、サービスの概要、特長、利用方法、ユースケースなどについて解説していま">
+  <meta property="og:description" content="OCIロード・バランサを初めて触る人のために基礎的な内容をおさらいしつつ、既にバリバリ使っている人のための新機能解説や応用的な活用方法、そしてテストしてわかったマニュアルには書いていない動作の仕組みを解説しています。">
 
 
 
@@ -36,14 +36,14 @@
 
 
 
-  <meta property="article:published_time" content="2020-07-03T00:00:00+09:00">
+  <meta property="article:published_time" content="2021-06-28T00:00:00+09:00">
 
 
 
 
 
 
-<link rel="canonical" href="https://oracle-japan.github.io/ocidocs/services/edge%20service/dns-100/">
+<link rel="canonical" href="https://oracle-japan.github.io/ocidocs/services/networking/load-balancer/">
 
 
 
@@ -183,12 +183,12 @@
     <div class="wrapper">
       <h1 id="page-title" class="page__title" itemprop="headline">
         
-          DNS 概要
+          ロード・バランサ・サービス(再)入門
 
         
       </h1>
       
-        <p class="page__lead">インターネット上の名前解決を提供する権威DNSサービスであるOCI DNSサービスについて、サービスの概要、特長、利用方法、ユースケースなどについて解説していま
+        <p class="page__lead">OCIロード・バランサを初めて触る人のために基礎的な内容をおさらいしつつ、既にバリバリ使っている人のための新機能解説や応用的な活用方法、そしてテストしてわかったマニュアルには書いていない動作の仕組みを解説しています。
 </p>
       
       
@@ -198,7 +198,7 @@
       
       <span class="page__meta-date">
         <i class="far fa-calendar-alt" aria-hidden="true"></i>
-        <time datetime="2020-07-03T00:00:00+09:00">July 3, 2020</time>
+        <time datetime="2021-06-28T00:00:00+09:00">June 28, 2021</time>
       </span>
     
 
@@ -331,9 +331,9 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="DNS 概要">
-    <meta itemprop="description" content="インターネット上の名前解決を提供する権威DNSサービスであるOCI DNSサービスについて、サービスの概要、特長、利用方法、ユースケースなどについて解説していま">
-    <meta itemprop="datePublished" content="2020-07-03T00:00:00+09:00">
+    <meta itemprop="headline" content="ロード・バランサ・サービス(再)入門">
+    <meta itemprop="description" content="OCIロード・バランサを初めて触る人のために基礎的な内容をおさらいしつつ、既にバリバリ使っている人のための新機能解説や応用的な活用方法、そしてテストしてわかったマニュアルには書いていない動作の仕組みを解説しています。">
+    <meta itemprop="datePublished" content="2021-06-28T00:00:00+09:00">
     
 
     <div class="page__inner-wrap">
@@ -346,28 +346,33 @@
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 目次</h4></header>
               <ul class="toc__menu">
   <li><a href="#スライド">スライド</a></li>
-  <li><a href="#セミナー動画-12分53秒まで">セミナー動画 (12分53秒まで)</a></li>
+  <li><a href="#セミナー動画">セミナー動画</a></li>
 </ul>
 
             </nav>
           </aside>
         
-        <p>インターネット上の名前解決を提供する権威DNSサービスであるOCI DNSサービスについて、サービスの概要、特長、利用方法、ユースケースなどについて解説しています。</p>
+        <p>2021/6/22実施のOCIスキルアップセミナー #9で使用したスライドです。最近大幅に機能が拡充されたOCIのロード・バランサ・サービスについて改めて取り上げました。</p>
+
+<p>OCIのリリース当初からあるロード・バランサですが、最近 Flexible Load Balancer や、Network Load Balancer といった機能が加わり、リリース当初とは全く違うサービスと言っていい進化を遂げています。</p>
+
+<p>このスライドでは (再)入門、ということで、OCIロード・バランサを初めて触る人のために基礎的な内容をおさらいしつつ、既にバリバリ使っている人のための新機能解説や応用的な活用方法、そしてテストしてわかったマニュアルには書いていない動作の仕組みを解説しています。
+特に新機能のNetwork Load Balancerはまだ情報も少ないので必見? です。</p>
 
 <h4 id="スライド">スライド</h4>
 
 <div style="max-width:768px">
 
 <!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-<script async="" class="speakerdeck-embed" data-id="64935bd8917b4707aaa7a1f0614864fa" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<script async="" class="speakerdeck-embed" data-id="7b765fc938b44be7a2749f4849529c22" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 <!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
 
 </div>
 
-<h4 id="セミナー動画-12分53秒まで">セミナー動画 (12分53秒まで)</h4>
+<h4 id="セミナー動画">セミナー動画</h4>
 
 <!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください -->
-<div style="max-width:768px"><div style="position:relative;padding-bottom:56.25%"><iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/2171811/sp/217181100/embedIframeJs/uiconf_id/35965902/partner_id/2171811?iframeembed=true&amp;playerId=kaltura_player&amp;entry_id=1_jv1ra7a3&amp;flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[hotspots.plugin]=1&amp;flashvars[mediaProxy.mediaPlayTo]=773&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&amp;wid=1_036h9vm4" width="768" height="432" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player" style="position:absolute;top:0;left:0;width:100%;height:100%"></iframe></div></div>
+<iframe width="768" height="432" src="https://www.youtube.com/embed/s4EIjmtkDkg?start=935" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 <!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) -->
 
         
@@ -397,6 +402,10 @@
     
       
       
+      <a href="/ocidocs/tags/#%E3%83%AC%E3%83%99%E3%83%AB-%E5%BF%9C%E7%94%A8-200" class="page__taxonomy-item" rel="tag">レベル:応用(200)</a><span class="sep">, </span>
+    
+      
+      
       <a href="/ocidocs/tags/#%E5%8B%95%E7%94%BB%E3%81%82%E3%82%8A" class="page__taxonomy-item" rel="tag">動画あり</a>
     
     </span>
@@ -418,7 +427,7 @@
     
       
       
-      <a href="/ocidocs/categories/#edge-service" class="page__taxonomy-item" rel="tag">Edge Service</a><span class="sep">, </span>
+      <a href="/ocidocs/categories/#networking" class="page__taxonomy-item" rel="tag">Networking</a><span class="sep">, </span>
     
       
       
@@ -429,7 +438,7 @@
 
 
         
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 更新日時:</strong> <time datetime="2020-07-03T00:00:00+09:00">July 3, 2020</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 更新日時:</strong> <time datetime="2021-06-28T00:00:00+09:00">June 28, 2021</time></p>
 
 
       </footer>
@@ -439,22 +448,22 @@
     <h4 class="page__share-title">共有</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=DNS+%E6%A6%82%E8%A6%81%20https%3A%2F%2Foracle-japan.github.io%2Focidocs%2Fservices%2Fedge%2520service%2Fdns-100%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="共有 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=%E3%83%AD%E3%83%BC%E3%83%89%E3%83%BB%E3%83%90%E3%83%A9%E3%83%B3%E3%82%B5%E3%83%BB%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%28%E5%86%8D%29%E5%85%A5%E9%96%80%20https%3A%2F%2Foracle-japan.github.io%2Focidocs%2Fservices%2Fnetworking%2Fload-balancer%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="共有 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Foracle-japan.github.io%2Focidocs%2Fservices%2Fedge%2520service%2Fdns-100%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="共有 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Foracle-japan.github.io%2Focidocs%2Fservices%2Fnetworking%2Fload-balancer%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="共有 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Foracle-japan.github.io%2Focidocs%2Fservices%2Fedge%2520service%2Fdns-100%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="共有 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Foracle-japan.github.io%2Focidocs%2Fservices%2Fnetworking%2Fload-balancer%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="共有 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/ocidocs/services/database/exadata-200/" class="pagination--pager" title="Exadata Cloud Service 技術詳細
+      <a href="/ocidocs/services/networking/LB-faq/" class="pagination--pager" title="Oracle Cloud Infrastructure 技術FAQ - ロード・バランサ編 -
 ">前へ</a>
     
     
-      <a href="/ocidocs/services/edge%20service/health-check-and-traffic-management/" class="pagination--pager" title="ヘルスチェック &amp; トラフィック管理
+      <a href="/ocidocs/services/networking/load-balancer-100/" class="pagination--pager" title="ロード・バランサー 概要
 ">次へ</a>
     
   </nav>
@@ -557,46 +566,6 @@
 <div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
-      <div class="archive__item-teaser">
-        <img src="https://speakerd.s3.amazonaws.com/presentations/7b765fc938b44be7a2749f4849529c22/slide_0.jpg" alt="">
-      </div>
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/ocidocs/services/networking/load-balancer/" rel="permalink">ロード・バランサ・サービス(再)入門
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-calendar-alt" aria-hidden="true"></i>
-        <time datetime="2021-06-28T00:00:00+09:00">June 28, 2021</time>
-      </span>
-    
-
-    
-
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">OCIロード・バランサを初めて触る人のために基礎的な内容をおさらいしつつ、既にバリバリ使っている人のための新機能解説や応用的な活用方法、そしてテストしてわかったマニュアルには書いていない動作の仕組みを解説しています。
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/ocidocs/services/networking/LB-faq/" rel="permalink">Oracle Cloud Infrastructure 技術FAQ - ロード・バランサ編 -
@@ -621,6 +590,46 @@
 
 
     <p class="archive__item-excerpt" itemprop="description">ロード・バランサに関する技術FAQページです。Oracle Cloud Infrastructure利用時のよくある質問から、特に技術的な問題とそれに対する回答や対処策をまとめています
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://speakerd.s3.amazonaws.com/presentations/a626b9f2631e44ebbe815f21b7dab081/slide_0.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ocidocs/services/database/autonomous/machine%20learning/autonomous-machinelearning/" rel="permalink">機械学習プラットフォームとして活用するAutonomous Database
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-06-17T00:00:00+09:00">June 17, 2021</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">機械学習に必要となるNotebookやAutoML UIといったAutonomous Databaseに同梱される各種ツールについて、体系立てて紹介します。
 </p>
   </article>
 </div>

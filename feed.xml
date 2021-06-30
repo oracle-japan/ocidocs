@@ -1,4 +1,652 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2021-06-21T11:59:29+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">機械学習プラットフォームとして活用するAutonomous Database</title><link href="https://oracle-japan.github.io/ocidocs/services/database/autonomous/machine%20learning/autonomous-machinelearning/" rel="alternate" type="text/html" title="機械学習プラットフォームとして活用するAutonomous Database" /><published>2021-06-17T00:00:00+09:00</published><updated>2021-06-17T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/database/autonomous/machine%20learning/autonomous-machinelearning</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/database/autonomous/machine%20learning/autonomous-machinelearning/">&lt;p&gt;Autonomous Database (ADB)では、機械学習に必要な各種ツールがセットアップされており、データベースインスタンスを作成後にすぐに利用いただくことが可能です。
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2021-06-30T10:39:47+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">ロード・バランサ・サービス(再)入門</title><link href="https://oracle-japan.github.io/ocidocs/services/networking/load-balancer/" rel="alternate" type="text/html" title="ロード・バランサ・サービス(再)入門" /><published>2021-06-28T00:00:00+09:00</published><updated>2021-06-28T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/networking/load-balancer/">&lt;p&gt;2021/6/22実施のOCIスキルアップセミナー #9で使用したスライドです。最近大幅に機能が拡充されたOCIのロード・バランサ・サービスについて改めて取り上げました。&lt;/p&gt;
+
+&lt;p&gt;OCIのリリース当初からあるロード・バランサですが、最近 Flexible Load Balancer や、Network Load Balancer といった機能が加わり、リリース当初とは全く違うサービスと言っていい進化を遂げています。&lt;/p&gt;
+
+&lt;p&gt;このスライドでは (再)入門、ということで、OCIロード・バランサを初めて触る人のために基礎的な内容をおさらいしつつ、既にバリバリ使っている人のための新機能解説や応用的な活用方法、そしてテストしてわかったマニュアルには書いていない動作の仕組みを解説しています。
+特に新機能のNetwork Load Balancerはまだ情報も少ないので必見? です。&lt;/p&gt;
+
+&lt;h4 id=&quot;スライド&quot;&gt;スライド&lt;/h4&gt;
+
+&lt;div style=&quot;max-width:768px&quot;&gt;
+
+&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) --&gt;
+&lt;script async=&quot;&quot; class=&quot;speakerdeck-embed&quot; data-id=&quot;7b765fc938b44be7a2749f4849529c22&quot; data-ratio=&quot;1.77777777777778&quot; src=&quot;//speakerdeck.com/assets/embed.js&quot;&gt;&lt;/script&gt;
+&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) --&gt;
+
+&lt;/div&gt;
+
+&lt;h4 id=&quot;セミナー動画&quot;&gt;セミナー動画&lt;/h4&gt;
+
+&lt;!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください --&gt;
+&lt;iframe width=&quot;768&quot; height=&quot;432&quot; src=&quot;https://www.youtube.com/embed/s4EIjmtkDkg?start=935&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) --&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Networking" /><category term="スライドあり" /><category term="動画あり" /><category term="レベル:入門(100)" /><category term="レベル:応用(200)" /><summary type="html">OCIロード・バランサを初めて触る人のために基礎的な内容をおさらいしつつ、既にバリバリ使っている人のための新機能解説や応用的な活用方法、そしてテストしてわかったマニュアルには書いていない動作の仕組みを解説しています。</summary></entry><entry><title type="html">ロード・バランサー 概要</title><link href="https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-100/" rel="alternate" type="text/html" title="ロード・バランサー 概要" /><published>2021-06-28T00:00:00+09:00</published><updated>2021-06-28T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-100</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-100/">&lt;p&gt;バックエンドに配置した様々なサービスの冗長性やスケーリングをサポートする OCI ロード・バランサー・サービスについて、その機能概要、構成コンポーネントの内容、OCIコンソールを利用した構成方法などについて解説しています。&lt;br /&gt;
+2021/6/28 ネットワーク・ロード・バランサのリリースに合わせて全般的に記述を見直しました。&lt;/p&gt;
+
+&lt;h4 id=&quot;スライド&quot;&gt;スライド&lt;/h4&gt;
+
+&lt;div style=&quot;max-width:768px&quot;&gt;
+
+&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) --&gt;
+&lt;script async=&quot;&quot; class=&quot;speakerdeck-embed&quot; data-id=&quot;78914498b3c14b97a112f59283b754b7&quot; data-ratio=&quot;1.77777777777778&quot; src=&quot;//speakerdeck.com/assets/embed.js&quot;&gt;&lt;/script&gt;
+&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) --&gt;
+
+&lt;/div&gt;
+
+&lt;h4 id=&quot;セミナー動画&quot;&gt;セミナー動画&lt;/h4&gt;
+
+&lt;!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください --&gt;
+&lt;div style=&quot;max-width:768px&quot;&gt;&lt;div style=&quot;position:relative;padding-bottom:56.25%&quot;&gt;&lt;iframe id=&quot;kaltura_player&quot; src=&quot;https://cdnapisec.kaltura.com/p/2171811/sp/217181100/embedIframeJs/uiconf_id/35965902/partner_id/2171811?iframeembed=true&amp;amp;playerId=kaltura_player&amp;amp;entry_id=0_pgchkk4i&amp;amp;flashvars[streamerType]=auto&amp;amp;flashvars[localizationCode]=en&amp;amp;flashvars[leadWithHTML5]=true&amp;amp;flashvars[sideBarContainer.plugin]=true&amp;amp;flashvars[sideBarContainer.position]=left&amp;amp;flashvars[sideBarContainer.clickToClose]=true&amp;amp;flashvars[chapters.plugin]=true&amp;amp;flashvars[chapters.layout]=vertical&amp;amp;flashvars[chapters.thumbnailRotator]=false&amp;amp;flashvars[streamSelector.plugin]=true&amp;amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;amp;flashvars[dualScreen.plugin]=true&amp;amp;flashvars[hotspots.plugin]=1&amp;amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;amp;&amp;amp;wid=1_c428rwns&quot; width=&quot;768&quot; height=&quot;432&quot; allowfullscreen=&quot;&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allow=&quot;autoplay *; fullscreen *; encrypted-media *&quot; sandbox=&quot;allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation&quot; frameborder=&quot;0&quot; title=&quot;Kaltura Player&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) --&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Networking" /><category term="スライドあり" /><category term="動画あり" /><category term="レベル:入門(100)" /><summary type="html">OCIロード・バランサー・サービスについて、その機能概要、構成コンポーネントの内容、OCIコンソールを利用した構成方法などについて解説しています</summary></entry><entry><title type="html">ロード・バランサー 詳細</title><link href="https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-200/" rel="alternate" type="text/html" title="ロード・バランサー 詳細" /><published>2021-06-28T00:00:00+09:00</published><updated>2021-06-28T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-200</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-200/">&lt;p&gt;様々なサービスの冗長性やスケーリングをサポートする OCI ロード・バランサー・サービスについて、応用的な利用方法について解説したドキュメントです。&lt;br /&gt;
+セッション永続性、仮想ホストによるルーティング、URIパス・ベース・ルーティング、SSL通信方式とロード・バランサーでのSSLターミネーションの設定、ロード・バランサーが収集するメトリック、トラブル時の対応ガイドラインについて解説しています。&lt;br /&gt;
+2021/6/28 ネットワーク・ロード・バランサのリリースに合わせて全般的に記述を見直しました。&lt;/p&gt;
+
+&lt;h4 id=&quot;スライド&quot;&gt;スライド&lt;/h4&gt;
+
+&lt;div style=&quot;max-width:768px&quot;&gt;
+
+&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) --&gt;
+&lt;script async=&quot;&quot; class=&quot;speakerdeck-embed&quot; data-id=&quot;9ca991733d2a4670bdd4e5ed5b5770c4&quot; data-ratio=&quot;1.77777777777778&quot; src=&quot;//speakerdeck.com/assets/embed.js&quot;&gt;&lt;/script&gt;
+&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) --&gt;
+
+&lt;/div&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Networking" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html">OCI ロード・バランサー・サービスについて、セッション永続性、仮想ホストによるルーティング、URIパス・ベース・ルーティング、SSL通信方式とロード・バランサーでのSSLターミネーションの設定、ロード・バランサーが収集するメトリック、トラブル時の対応ガイドラインなどの応用的な利用方法について解説しています</summary></entry><entry><title type="html">Oracle Cloud Infrastructure 技術FAQ - ロード・バランサ編 -</title><link href="https://oracle-japan.github.io/ocidocs/services/networking/LB-faq/" rel="alternate" type="text/html" title="Oracle Cloud Infrastructure 技術FAQ - ロード・バランサ編 -" /><published>2021-06-21T00:00:00+09:00</published><updated>2021-06-21T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/networking/LB-faq</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/networking/LB-faq/">&lt;p&gt;一般的なOracle Cloud InfrastructureのFAQは&lt;a href=&quot;https://www.oracle.com/jp/cloud/compute/faq.html&quot;&gt;サービスの公式ページ&lt;/a&gt;にも記載されていますのでご覧ください。&lt;/p&gt;
+
+&lt;h1 id=&quot;クライアントがロードバランサに接続できない理由として考えられる原因を教えてください&quot;&gt;クライアントがロード・バランサに接続できない理由として考えられる原因を教えてください。&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;簡単な説明：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;ロード ・バランサの接続の問題の一般的な原因には、次のものがあります。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;クライアントが接続しようとしているロード バランサに適切なトラフィック・タイプ（TCP、HTTP、HTTPS）のリスナーが構成されていません。&lt;/li&gt;
+  &lt;li&gt;ロード ・バランサを含む仮想クラウド・ネットワーク（VCN）のセキュリティ・ルール（「セキュリティ・グループ」または「セキュリティ・リスト」）が、リスナーのトラフィックを許可していません。&lt;/li&gt;
+  &lt;li&gt;ロード・バランサの作成でセキュリティ・リスト・ルールを自動的に追加していない場合、ロード・バランサやバックエンド・サーバーのサブネットに適切なイングレスおよびエグレス・セキュリティ・ルールが構成されていません。&lt;/li&gt;
+  &lt;li&gt;セキュリティ・ルールにヘルス・チェック・リクエストのソースのIP範囲が含まれていない可能性があります。ヘルス・チェックのソースIPは、各バックエンド・サーバーの「詳細」ページで確認できます。APIを使用して、HealthCheckResultオブジェクトのsourceIpAddressフィールドでIPを検索することもできます。&lt;/li&gt;
+  &lt;li&gt;ルート表のルート・ルールの構成が不適切な場合、リクエストをブロックしているか、不適切にルーティングしています。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;関連情報：&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#Managing_Listeners&quot;&gt;リスナーの管理&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Network/Concepts/securityrules.htm#Security_Rules&quot;&gt;セキュリティ・ルール&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingbackendservers.htm#Managing_Backend_Servers&quot;&gt;バックエンド・サーバーの管理&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingbackendservers.htm#healthstatus&quot;&gt;ヘルス・ステータス&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://docs.oracle.com/en-us/iaas/api/#/en/loadbalancer/20170115/HealthCheckResult/&quot;&gt;HealthCheckResult&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;ルーティング関連の質問&quot;&gt;&lt;font color=&quot;Green&quot;&gt;～ルーティング関連の質問～&lt;/font&gt;&lt;/h1&gt;
+
+&lt;h1 id=&quot;ロードバランサを使用してホストベースのルーティングを設定するにはどうすればよいですか&quot;&gt;ロード・バランサを使用してホストベースのルーティングを設定するにはどうすればよいですか？&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;簡単な説明：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;リクエスト・ルーティングの仮想ホスト名をリスナーに割り当てることで、ホスト名単位でのトラフィックのルーティングを設定することが可能です。
+また、リスナーあたりの仮想ホスト名は最大16個まで割り当てることが可能です。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;解決方法：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;仮想ホスト名をリスナーに適用するには、最初に、1つ以上の仮想ホスト名を作成します。
+次に、ロード・バランサのリスナーを作成または更新し、使用する1つ以上の仮想ホスト名を指定します。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;仮想ホスト名を作成するには&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;ナビゲーション・メニューを開きます。「&lt;strong&gt;ネットワーキング&lt;/strong&gt;」をクリックして「&lt;strong&gt;ロード・バランサ&lt;/strong&gt;」をクリックします。&lt;/li&gt;
+      &lt;li&gt;変更するロード・バランサを含む&lt;strong&gt;コンパートメント&lt;/strong&gt;を選択し、&lt;strong&gt;ロード・バランサの名前&lt;/strong&gt;をクリックします。&lt;/li&gt;
+      &lt;li&gt;「&lt;strong&gt;リソース&lt;/strong&gt;」メニューで、「&lt;strong&gt;ホスト名&lt;/strong&gt;」をクリックし、「&lt;strong&gt;ホスト名の作成&lt;/strong&gt;」をクリックします。&lt;/li&gt;
+      &lt;li&gt;「&lt;strong&gt;ホスト名の作成&lt;/strong&gt;」ダイアログ・ボックスで、次を入力します:
+        &lt;ul&gt;
+          &lt;li&gt;名前: 必須。ホスト名のわかりやすい名前を指定します。名前は一意である必要があり、変更することはできません。機密情報の入力は避けてください。&lt;/li&gt;
+          &lt;li&gt;ホスト名: 必須。仮想ホスト名を指定します。有効なホスト名の構成および動作の説明は、仮想ホスト名を参照してください。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;「&lt;strong&gt;作成&lt;/strong&gt;」をクリックします。「&lt;strong&gt;作業リクエスト送信済&lt;/strong&gt;」ダイアログ・ボックスが開きます。&lt;/li&gt;
+      &lt;li&gt;ダイアログ・ボックスを閉じるには、「&lt;strong&gt;閉じる&lt;/strong&gt;」をクリックします。「&lt;strong&gt;作業リクエスト&lt;/strong&gt;」ページを開いて作業リクエストのステータスを表示するには、「&lt;strong&gt;すべての作業リクエストの表示&lt;/strong&gt;」をクリックします。&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;仮想ホスト名を作成すると、関連付けられたロード・バランサでその名前を使用できるようになります。&lt;br /&gt;
+ホスト名を適用するには、&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#create&quot;&gt;リスナーを作成または更新&lt;/a&gt;します。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;関連情報：&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrequest.htm#routing__vhost&quot;&gt;リクエスト・ルーティングの管理&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;ロードバランサでのパスベースのルーティングを実現するにはどうすればよいですか&quot;&gt;ロード・バランサでのパスベースのルーティングを実現するにはどうすればよいですか？&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;簡単な説明：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;リクエスト・ルーティングのパス・ルート・ルールをリスナーに割り当てることで、パスベースのルーティングを設定することが可能です。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;解決方法：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;パス・ルート・ルールをリスナーに適用するには、最初に、ルールが含まれる「&lt;strong&gt;パス・ルート・セット&lt;/strong&gt;」を作成します。&lt;br /&gt;
+パス・ルート・セットは、ロード・バランサの構成の一部になります。&lt;br /&gt;
+次に、ロード・バランサのリスナーを作成または更新するときに、使用する「&lt;strong&gt;パス・ルート・セット&lt;/strong&gt;」を指定します。&lt;br /&gt;
+リスナーからパス・ルート・セットを削除するには、リスナーを編集し、「&lt;strong&gt;パス・ルート・セット&lt;/strong&gt;」オプションとして「&lt;strong&gt;なし&lt;/strong&gt;」を選択します。&lt;br /&gt;
+詳細の手順については、&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrequest.htm#&quot;&gt;リクエスト・ルーティングの管理&lt;/a&gt;の「パス・ルート・セットを作成するには」を参照してください。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;関連情報：&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#edit&quot;&gt;リスナーを編集&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrequest.htm#&quot;&gt;リクエスト・ルーティングの管理&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;ロードバランサーを使用してカスタムhttpヘッダーに基づきトラフィックをルーティングする方法を教えてください&quot;&gt;ロードバランサーを使用して、カスタムHTTPヘッダーに基づきトラフィックをルーティングする方法を教えてください。&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;簡単な説明：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;ロード・バランサのリスナーに適用されるルール・セットのリクエスト/レスポンス・ヘッダー・ルールを作成する事で、カスタムHTTPヘッダーの値に基づいて、リクエストに対する特定のアクションを実行できます。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;解決方法：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;ルール・セットをリスナーに適用するには、最初に、ルールが含まれるルール・セットを作成します。&lt;br /&gt;
+ロード・バランサのリスナーを作成または更新するときに、使用するルール・セットを指定できます。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;ルール・セットを作成するには&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;ナビゲーション・メニューを開きます。「&lt;strong&gt;ネットワーキング&lt;/strong&gt;」に移動して「&lt;strong&gt;ロード・バランサ&lt;/strong&gt;」をクリックします。&lt;/li&gt;
+  &lt;li&gt;変更するロード・バランサを含む&lt;strong&gt;コンパートメント&lt;/strong&gt;を選択し、&lt;strong&gt;ロード・バランサの名前&lt;/strong&gt;をクリックします。&lt;/li&gt;
+  &lt;li&gt;「&lt;strong&gt;リソース&lt;/strong&gt;」メニューで、「&lt;strong&gt;ルール・セット&lt;/strong&gt;」をクリックし、「&lt;strong&gt;ルール・セットの作成&lt;/strong&gt;」をクリックします。&lt;/li&gt;
+  &lt;li&gt;「&lt;strong&gt;ルール・セットの作成&lt;/strong&gt;」ダイアログ・ボックスで、次を入力します:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;名前&lt;/strong&gt;: 必須。ルール・セットのわかりやすい名前を指定します。名前は一意である必要があり、変更することはできません。機密情報の入力は避けてください。&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;リクエスト・ヘッダー・ルールの指定&lt;/strong&gt;: リクエスト・ヘッダー・ルールを追加する場合は、このボックスを選択します。
+        &lt;ul&gt;
+          &lt;li&gt;&lt;strong&gt;順序&lt;/strong&gt;: オプション。複数のルールがある場合は、上矢印または下矢印をクリックして、対応するルールを移動できます。&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;アクション&lt;/strong&gt;: ルールで適用するアクションを選択します。使用可能なアクションを示します:
+            &lt;ul&gt;
+              &lt;li&gt;&lt;strong&gt;リクエスト・ヘッダーの追加&lt;/strong&gt;&lt;br /&gt;
+  指定したヘッダーと値を受信リクエストに追加します。&lt;br /&gt;
+  指定したヘッダーがすでに存在する場合は、システムによって置き換えられます。&lt;br /&gt;
+  同じ名前のヘッダーが複数存在する場合、それらはすべて削除され、指定したヘッダーと値に対応するヘッダーが1つ追加されます。&lt;/li&gt;
+              &lt;li&gt;&lt;strong&gt;リクエスト・ヘッダーの拡張&lt;/strong&gt;&lt;br /&gt;
+  指定した接頭辞または接尾辞を受信リクエストに追加します。&lt;br /&gt;
+  このアクションを選択する場合は、接頭辞の値または接尾辞の値(あるいはその両方)を指定します。&lt;br /&gt;
+  複数の値を持つヘッダーについては、このルールはサポートされていません。&lt;/li&gt;
+              &lt;li&gt;&lt;strong&gt;リクエスト・ヘッダーの削除&lt;/strong&gt;&lt;br /&gt;
+  指定されたヘッダーを削除します。
+  同じヘッダーがリクエスト内に複数回出現する場合、ロード・バランサは、指定されたヘッダーのすべての出現部分を削除します。&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;ヘッダー&lt;/strong&gt;: RFC 7230に準拠するヘッダー名。&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;値&lt;/strong&gt;: (追加ルールのみ。)RFC 7230に準拠するヘッダー値。&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;接頭辞&lt;/strong&gt;: (拡張ルールのみ。)既存のヘッダー名の先頭に追加する文字列。結果のヘッダーはRFC 7230に準拠している必要があります。&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;接尾辞&lt;/strong&gt;: (拡張ルールのみ。)既存のヘッダー名の末尾に追加する文字列。結果のヘッダーはRFC 7230に準拠している必要があります。&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;+別のリクエスト・ヘッダー・ルール&lt;/strong&gt; (オプション)。このボタンをクリックして別のルールを作成するか、対応する「X」をクリックして既存のルールを削除します。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;レスポンス・ヘッダー・ルールの指定&lt;/strong&gt;: レスポンス・ヘッダー・ルールを追加する場合は、このボックスを選択します。
+        &lt;ul&gt;
+          &lt;li&gt;&lt;strong&gt;順序&lt;/strong&gt;: オプション。複数のルールがある場合は、上矢印または下矢印をクリックして、対応するルールを移動できます。&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;アクション&lt;/strong&gt;: ルールで適用するアクションを選択します。使用可能なアクションを示します:
+            &lt;ul&gt;
+              &lt;li&gt;&lt;strong&gt;レスポンス・ヘッダーの追加&lt;/strong&gt;&lt;br /&gt;
+  指定したヘッダーと値を送信レスポンスに追加します。&lt;br /&gt;
+  指定したヘッダーがすでに存在する場合は、システムによって置き換えられます。&lt;br /&gt;
+  同じ名前のヘッダーが複数存在する場合、それらはすべて削除され、指定したヘッダーと値に対応するヘッダーが1つ追加されます。&lt;/li&gt;
+              &lt;li&gt;&lt;strong&gt;レスポンス・ヘッダーの拡張&lt;/strong&gt;&lt;br /&gt;
+  指定した接頭辞または接尾辞を受信リクエストに追加します。&lt;br /&gt;
+  このアクションを選択する場合は、接頭辞の値または接尾辞の値(あるいはその両方)を指定します。&lt;br /&gt;
+  複数の値を持つヘッダーについては、このルールはサポートされていません。&lt;/li&gt;
+              &lt;li&gt;&lt;strong&gt;レスポンス・ヘッダーの削除&lt;/strong&gt;&lt;br /&gt;
+  指定されたヘッダーを削除します。&lt;br /&gt;
+  同じヘッダーがレスポンス内に複数回出現する場合、ロード・バランサは、指定されたヘッダーのすべての出現部分を削除します。&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;ヘッダー&lt;/strong&gt;: RFC 7230に準拠するヘッダー名。&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;値&lt;/strong&gt;: (追加ルールのみ。)RFC 7230に準拠するヘッダー値。&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;接頭辞&lt;/strong&gt;: (拡張ルールのみ。)既存のヘッダー名の先頭に追加する文字列。結果のヘッダーはRFC 7230に準拠している必要があります。&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;接尾辞&lt;/strong&gt;: (拡張ルールのみ。)既存のヘッダー名の末尾に追加する文字列。結果のヘッダーはRFC 7230に準拠している必要があります。&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;+別のリクエスト・ヘッダー・ルール&lt;/strong&gt; (オプション)。このボタンをクリックして別のルールを作成するか、対応する「X」をクリックして既存のルールを削除します。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;「&lt;strong&gt;作成&lt;/strong&gt;」をクリックします。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;ルール・セットを作成すると、関連付けられたロード・バランサでそのセットを使用できるようになります。&lt;br /&gt;
+ルール・セットを適用するには、&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#edit&quot;&gt;リスナーを更新&lt;/a&gt;します。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;関連情報：&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm&quot;&gt;ルール・セットの管理&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm#header-rules&quot;&gt;リクエストおよびレスポンス・ヘッダー・ルール&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;ロードバランサを使用してソースipに基づいてリクエストをルーティングするにはどうすればよいですか&quot;&gt;ロード・バランサを使用してソースIPに基づいてリクエストをルーティングするにはどうすればよいですか？&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;簡単な説明：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingloadbalancer.htm#Managing_Load_Balancers&quot;&gt;ロード・バランサを作成&lt;/a&gt;した後に、トラフィック分散を制御するポリシーであるIPハッシュ・ポリシーをバックエンド・サーバーに適用することで、送信元IPアドレスのハッシュキーに基づいたトラフィックのルーティングが可能です。&lt;br /&gt;
+IPハッシュ・ポリシーでは、受信リクエストのソースIPアドレスがハッシュ・キーとして使用され、スティッキーではないトラフィックが同じバックエンド・サーバーにルーティングされます。&lt;br /&gt;
+ロード・バランサは、サーバーが使用可能であるかぎり、同じクライアントから同じバックエンド・サーバーにリクエストをルーティングします。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;関連情報：&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Reference/lbpolicies.htm#hash&quot;&gt;IPハッシュ&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Reference/lbpolicies.htm#hash&quot;&gt;ロード・バランシング・ポリシーの仕組み&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;リダイレクトルール関連の質問&quot;&gt;&lt;font color=&quot;Green&quot;&gt;～リダイレクト・ルール関連の質問～&lt;/font&gt;&lt;/h1&gt;
+
+&lt;h1 id=&quot;ロードバランサを使用してあるドメインを別のドメインにリダイレクトするにはどうすればよいですか&quot;&gt;ロード・バランサを使用して、あるドメインを別のドメインにリダイレクトするにはどうすればよいですか？&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;簡単な説明：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;ロード・バランサのリスナーに適用されるルール・セットの&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm#redirect&quot;&gt;URLリダイレクト・ルール&lt;/a&gt;を作成する事で、HTTPからHTTPSへのリダイレクト、ドメイン名のリダイレクトやパスベースでのリダイレクトが可能です。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;解決方法：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;ルール・セットをリスナーに適用するには、最初に、ルールが含まれるルール・セットを作成します。&lt;br /&gt;
+ロード・バランサのリスナーを作成または更新するときに、使用するルール・セットを指定できます。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;ルール・セットを作成するには&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;ナビゲーション・メニューを開きます。「&lt;strong&gt;ネットワーキング&lt;/strong&gt;」に移動して「&lt;strong&gt;ロード・バランサ&lt;/strong&gt;」をクリックします。&lt;/li&gt;
+  &lt;li&gt;変更するロード・バランサを含む&lt;strong&gt;コンパートメント&lt;/strong&gt;を選択し、&lt;strong&gt;ロード・バランサの名前&lt;/strong&gt;をクリックします。&lt;/li&gt;
+  &lt;li&gt;「&lt;strong&gt;リソース&lt;/strong&gt;」メニューで、「&lt;strong&gt;ルール・セット&lt;/strong&gt;」をクリックし、「&lt;strong&gt;ルール・セットの作成&lt;/strong&gt;」をクリックします。&lt;/li&gt;
+  &lt;li&gt;「&lt;strong&gt;ルール・セットの作成&lt;/strong&gt;」ダイアログ・ボックスで、次を入力します:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;名前&lt;/strong&gt;: 必須。ルール・セットのわかりやすい名前を指定します。名前は一意である必要があり、変更することはできません。機密情報の入力は避けてください。&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;URLリダイレクト・ルールの指定&lt;/strong&gt;: URLリダイレクト・ルールを追加する場合は、このボックスを選択します。
+        &lt;ul&gt;
+          &lt;li&gt;&lt;strong&gt;ソース・パス&lt;/strong&gt;: リダイレクト・ルールをトリガーする受信パス文字列を指定します。たとえば、/videoです。&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;一致タイプ&lt;/strong&gt;: 受信パス文字列を評価するときに適用する一致条件を選択します。使用可能な一致タイプは次のとおりです:
+            &lt;ul&gt;
+              &lt;li&gt;FORCE_LONGEST_PREFIX_MATCH
+システムでは、受信URLパスの開始部分が最適に最長一致するリダイレクト・ルール・パス文字列を検索します。&lt;/li&gt;
+              &lt;li&gt;EXACT_MATCH
+受信URLパスは、指定されたパス文字列と正確かつ完全に一致する必要があります。&lt;/li&gt;
+              &lt;li&gt;PREFIX_MATCH
+受信URLパスの開始部分は、指定されたパス文字列と完全に一致する必要があります。&lt;/li&gt;
+              &lt;li&gt;SUFFIX_MATCH
+受信URLパスの終了部分は、指定されたパス文字列と完全に一致する必要があります。&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;リダイレクト先&lt;/strong&gt;: 少なくとも1つのURLコンポーネント・フィールドに値を指定します。変更しないコンポーネント・フィールドには、受信URLの値が保持されます。 オプションで、「完全なURLに切替え」リンクをクリックして、リダイレクトURLを手動で入力します。&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;プロトコル&lt;/strong&gt;: リダイレクトURLで使用するHTTPプロトコルを指定します。有効な値は次のとおりです:
+            &lt;ul&gt;
+              &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{protocol}&lt;/code&gt;&lt;/li&gt;
+              &lt;li&gt;HTTPS&lt;/li&gt;
+              &lt;li&gt;HTTP&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;ホスト&lt;/strong&gt;: リダイレクトURLに対して有効なドメイン名(ホスト名)またはIPアドレスを指定します。このプロパティでは、すべてのリダイレクトURLトークンが有効です。&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;ポート&lt;/strong&gt;: リダイレクトURLで使用する通信ポートを指定します。有効な値には、1から65535までの整数が含まれます。&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;パス&lt;/strong&gt;: リダイレクトURLで使用するHTTP URLパス。このプロパティでは、すべてのリダイレクトURLトークンが有効です。
+            &lt;blockquote&gt;
+              &lt;p&gt;&lt;strong&gt;✔重要&lt;/strong&gt;「パス文字列が&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{path}&lt;/code&gt;トークンで開始していない場合、スラッシュ文字/で開始する必要があります。」&lt;/p&gt;
+            &lt;/blockquote&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;問合せ&lt;/strong&gt;: リダイレクトURLで使用する問合せ文字列を指定します。このプロパティでは、すべてのリダイレクトURLトークンが有効です。
+            &lt;blockquote&gt;
+              &lt;p&gt;&lt;strong&gt;✔重要&lt;/strong&gt;「問合せ文字列が&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{query}&lt;/code&gt;トークンで開始していない場合、疑問符?文字で開始する必要があります。」&lt;/p&gt;
+            &lt;/blockquote&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;レスポンス・コード&lt;/strong&gt;: 受信リクエストがリダイレクトされたときに返されるHTTPステータス・コードを指定します。デフォルトのレスポンス・コードは&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;302 Found&lt;/code&gt;です。&lt;br /&gt;
+  標準HTTP仕様によるリダイレクトに有効なレスポンス・コードは次のとおりです:
+            &lt;ul&gt;
+              &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;301 Moved Permanently&lt;/code&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;302 Found&lt;/code&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;303 See Other&lt;/code&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;307 Temporary Redirect&lt;/code&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;308 Permanent Redirect&lt;/code&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;+別のURLリダイレクト・ルール&lt;/strong&gt; (オプション)。このボタンをクリックして別のルールを作成するか、対応する「X」をクリックして既存のルールを削除します。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;「&lt;strong&gt;作成&lt;/strong&gt;」をクリックします。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;ルール・セットを作成すると、関連付けられたロード・バランサでそのセットを使用できるようになります。&lt;br /&gt;
+ルール・セットを適用するには、&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#edit&quot;&gt;リスナーを更新&lt;/a&gt;します。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;関連情報：&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm&quot;&gt;ルール・セットの管理&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm#redirect&quot;&gt;URLリダイレクト・ルール&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;ロードバランサを使い-http-リクエストを-https-にリダイレクトするにはどうすればよいですか&quot;&gt;ロード・バランサを使い HTTP リクエストを HTTPS にリダイレクトするにはどうすればよいですか?&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;簡単な説明：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;ロード・バランサのリスナーに適用されるルール・セットのURLリダイレクト・ルールを作成する事で、HTTPからHTTPSへのリダイレクト、ドメイン名のリダイレクトやパスベースでのリダイレクトが可能です。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;解決方法：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;ルール・セットをリスナーに適用するには、最初に、ルールが含まれるルール・セットを作成します。&lt;br /&gt;
+ロード・バランサのリスナーを作成または更新するときに、使用するルール・セットを指定できます。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;ルール・セットを作成するには&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;ナビゲーション・メニューを開きます。「&lt;strong&gt;ネットワーキング&lt;/strong&gt;」に移動して「&lt;strong&gt;ロード・バランサ&lt;/strong&gt;」をクリックします。&lt;/li&gt;
+  &lt;li&gt;変更するロード・バランサを含む&lt;strong&gt;コンパートメント&lt;/strong&gt;を選択し、&lt;strong&gt;ロード・バランサの名前&lt;/strong&gt;をクリックします。&lt;/li&gt;
+  &lt;li&gt;「&lt;strong&gt;リソース&lt;/strong&gt;」メニューで、「&lt;strong&gt;ルール・セット&lt;/strong&gt;」をクリックし、「&lt;strong&gt;ルール・セットの作成&lt;/strong&gt;」をクリックします。&lt;/li&gt;
+  &lt;li&gt;「&lt;strong&gt;ルール・セットの作成&lt;/strong&gt;」ダイアログ・ボックスで、次を入力します:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;名前&lt;/strong&gt;: 必須。ルール・セットのわかりやすい名前を指定します。名前は一意である必要があり、変更することはできません。機密情報の入力は避けてください。&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;URLリダイレクト・ルールの指定&lt;/strong&gt;: URLリダイレクト・ルールを追加する場合は、このボックスを選択します。
+        &lt;ul&gt;
+          &lt;li&gt;&lt;strong&gt;ソース・パス&lt;/strong&gt;: リダイレクト・ルールをトリガーする受信パス文字列を指定します。たとえば、/videoです。&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;一致タイプ&lt;/strong&gt;: 受信パス文字列を評価するときに適用する一致条件を選択します。使用可能な一致タイプは次のとおりです:
+            &lt;ul&gt;
+              &lt;li&gt;FORCE_LONGEST_PREFIX_MATCH
+システムでは、受信URLパスの開始部分が最適に最長一致するリダイレクト・ルール・パス文字列を検索します。&lt;/li&gt;
+              &lt;li&gt;EXACT_MATCH
+受信URLパスは、指定されたパス文字列と正確かつ完全に一致する必要があります。&lt;/li&gt;
+              &lt;li&gt;PREFIX_MATCH
+受信URLパスの開始部分は、指定されたパス文字列と完全に一致する必要があります。&lt;/li&gt;
+              &lt;li&gt;SUFFIX_MATCH
+受信URLパスの終了部分は、指定されたパス文字列と完全に一致する必要があります。&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;リダイレクト先&lt;/strong&gt;: 少なくとも1つのURLコンポーネント・フィールドに値を指定します。変更しないコンポーネント・フィールドには、受信URLの値が保持されます。 オプションで、「完全なURLに切替え」リンクをクリックして、リダイレクトURLを手動で入力します。&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;プロトコル&lt;/strong&gt;: リダイレクトURLで使用するHTTPプロトコルを指定します。有効な値は次のとおりです:
+            &lt;ul&gt;
+              &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{protocol}&lt;/code&gt;&lt;/li&gt;
+              &lt;li&gt;HTTPS&lt;/li&gt;
+              &lt;li&gt;HTTP&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;ホスト&lt;/strong&gt;: リダイレクトURLに対して有効なドメイン名(ホスト名)またはIPアドレスを指定します。このプロパティでは、すべてのリダイレクトURLトークンが有効です。&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;ポート&lt;/strong&gt;: リダイレクトURLで使用する通信ポートを指定します。有効な値には、1から65535までの整数が含まれます。&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;パス&lt;/strong&gt;: リダイレクトURLで使用するHTTP URLパス。このプロパティでは、すべてのリダイレクトURLトークンが有効です。
+            &lt;blockquote&gt;
+              &lt;p&gt;&lt;strong&gt;✔重要&lt;/strong&gt;「パス文字列が&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{path}&lt;/code&gt;トークンで開始していない場合、スラッシュ文字/で開始する必要があります。」&lt;/p&gt;
+            &lt;/blockquote&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;問合せ&lt;/strong&gt;: リダイレクトURLで使用する問合せ文字列を指定します。このプロパティでは、すべてのリダイレクトURLトークンが有効です。
+            &lt;blockquote&gt;
+              &lt;p&gt;&lt;strong&gt;✔重要&lt;/strong&gt;「問合せ文字列が&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{query}&lt;/code&gt;トークンで開始していない場合、疑問符?文字で開始する必要があります。」&lt;/p&gt;
+            &lt;/blockquote&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;レスポンス・コード&lt;/strong&gt;: 受信リクエストがリダイレクトされたときに返されるHTTPステータス・コードを指定します。デフォルトのレスポンス・コードは&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;302 Found&lt;/code&gt;です。&lt;br /&gt;
+  標準HTTP仕様によるリダイレクトに有効なレスポンス・コードは次のとおりです:
+            &lt;ul&gt;
+              &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;301 Moved Permanently&lt;/code&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;302 Found&lt;/code&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;303 See Other&lt;/code&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;307 Temporary Redirect&lt;/code&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;308 Permanent Redirect&lt;/code&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;+別のURLリダイレクト・ルール&lt;/strong&gt; (オプション)。このボタンをクリックして別のルールを作成するか、対応する「X」をクリックして既存のルールを削除します。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;「&lt;strong&gt;作成&lt;/strong&gt;」をクリックします。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;ルール・セットを作成すると、関連付けられたロード・バランサでそのセットを使用できるようになります。&lt;br /&gt;
+ルール・セットを適用するには、&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#edit&quot;&gt;リスナーを更新&lt;/a&gt;します。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;関連情報：&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm&quot;&gt;ルール・セットの管理&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm#redirect&quot;&gt;URLリダイレクト・ルール&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm#redirect&quot;&gt;リスナーを更新&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;ipアドレス関連の質問&quot;&gt;&lt;font color=&quot;Green&quot;&gt;～IPアドレス関連の質問～&lt;/font&gt;&lt;/h1&gt;
+
+&lt;h1 id=&quot;ipv6アドレスを使用するようにロードバランサを設定するにはどうすればよいですか&quot;&gt;IPv6アドレスを使用するようにロード・バランサを設定するにはどうすればよいですか？&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;簡単な説明：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;IPv6 アドレスを使用するには、ロード・バランサを作成する際に「&lt;strong&gt;IPv6アドレス割当ての有効化&lt;/strong&gt;」を選択してください。&lt;br /&gt;
+ロード・バランサを作成する場合、オプションでIPv4/IPv6デュアルスタック構成を選択できます。IPv6オプションを選択すると、ロード・バランシング・サービスによってIPv4とIPv6アドレスの両方がロード・バランサに割り当てられます。&lt;br /&gt;
+ロード・バランサは、割り当てられたIPv6アドレスに送信されるクライアント・トラフィックを受信しますが、バックエンド・サーバーとの通信は、IPv4アドレスのみを使用して通信します。ロード・バランサとバックエンド・サーバー間にIPv6通信はありません。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;IPv6アドレスの割当ては、ロード・バランサの作成時にのみ行われます。既存のロード・バランサにIPv6アドレスを割り当てることはできません。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;関連情報：&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Network/Concepts/ipv6.htm&quot;&gt;IPv6アドレス&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Concepts/balanceoverview.htm#Overview_of_Load_Balancing&quot;&gt;ロード・バランサ&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;予約済パブリックipアドレスを新規もしくは既存のロードバランサにアタッチするにはどうすればよいですか&quot;&gt;予約済パブリックIPアドレスを新規もしくは既存のロード・バランサにアタッチするには、どうすればよいですか？&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;簡単な説明：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;新規のロード・バランサを作成する時に「予約済パブリックIPアドレス」の選択が可能ですが、既存のロード・バランサに予約済パブリックIPアドレスをアタッチする方法はございません。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;解決方法：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;予約済パブリックIPアドレスを新しいロード・バランサにアタッチする&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;新規の予約済パブリックIPを作成するには&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;予約済パブリックIPを作成するリージョンおよびコンパートメントを表示していることを確認します。&lt;/li&gt;
+  &lt;li&gt;ナビゲーション・メニューを開きます。「&lt;strong&gt;ネットワーキング&lt;/strong&gt;」をクリックして、IP管理グループにある「&lt;strong&gt;予約済IP&lt;/strong&gt;」をクリックします。&lt;/li&gt;
+  &lt;li&gt;「&lt;strong&gt;パブリックIPアドレスの作成&lt;/strong&gt;」をクリックします。&lt;/li&gt;
+  &lt;li&gt;次を入力します:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;名前&lt;/strong&gt;: 予約済パブリックIPアドレスのわかりやすい名前。名前は一意である必要はなく、後で変更できます。機密情報の入力は避けてください。&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;コンパートメント&lt;/strong&gt;: そのままにします。&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;IPアドレス・ソース&lt;/strong&gt;を選択します。&lt;/li&gt;
+      &lt;li&gt;(拡張オプション) &lt;strong&gt;タグ&lt;/strong&gt;: リソースの作成権限がある場合、そのリソースにフリーフォーム・タグを適用する権限もあります。&lt;br /&gt;
+ 定義済のタグを適用するには、タグ・ネームスペースを使用する権限が必要です。タグ付けの詳細は、リソース・タグを参照してください。&lt;br /&gt;
+ タグを適用すべきかわからない場合は、このオプションをスキップするか(後でタグを適用できます)、管理者に問い合せてください。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;「&lt;strong&gt;パブリックIPの予約&lt;/strong&gt;」をクリックします。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;作成した予約済パブリックIPアドレスを新規のロード・バランサにアタッチするには、ロード・バランサの作成時に「&lt;strong&gt;予約済IPアドレス&lt;/strong&gt;」をクリックし、「&lt;strong&gt;既存の予約済IPアドレスの選択&lt;/strong&gt;」を選択します。&lt;br /&gt;
+詳細は、&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingloadbalancer.htm&quot;&gt;ロード・バランサの作成&lt;/a&gt;を参照してください。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;関連情報：&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Network/Tasks/managingpublicIPs.htm&quot;&gt;パブリックIPアドレス&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingloadbalancer.htm&quot;&gt;ロード・バランサの作成&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;ヘルスチェック関連の質問&quot;&gt;&lt;font color=&quot;Green&quot;&gt;～ヘルス・チェック関連の質問～&lt;/font&gt;&lt;/h1&gt;
+
+&lt;h1 id=&quot;ロードバランサのトラブルシューティングを行いヘルスチェックの失敗を修正するにはどうすればよいですか&quot;&gt;ロード・バランサのトラブルシューティングを行い、ヘルス・チェックの失敗を修正するにはどうすればよいですか？&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;解決方法：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;ロード・バランサをトラブルシューティングし、ヘルス・チェックの失敗を修正するには：&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;ヘルス・チェック・エラーを見つけるために、ロード・バランサのアクセスとエラー・ログを有効にします。詳細については、&lt;a href=&quot;https://docs.oracle.com/en-us/iaas/Content/Balance/Tasks/managingloadbalancer_topic-Logging.htm#LogManagement&quot;&gt;ログ管理&lt;/a&gt;を参照してください。&lt;/li&gt;
+  &lt;li&gt;受け取ったヘルス・チェック・エラーについて、考えられる原因と解決策は以下の通りになります。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;No Healthy Backends&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;エラー・メッセージ&lt;/strong&gt;:
+        &lt;ul&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;No healthy backends available in associated backendSet&lt;/code&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Oracle Cloud Infrastructureログ・カテゴリ&lt;/strong&gt;: エラー・ログ&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;症状&lt;/strong&gt;: クライアントは&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;502 Bad Gateway&lt;/code&gt;エラーで失敗します。&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;考えられる原因&lt;/strong&gt;:
+        &lt;ul&gt;
+          &lt;li&gt;バックエンド・セットにバックエンドがありません。&lt;/li&gt;
+          &lt;li&gt;ヘルス・チェックに応答するバックエンドはありません。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;可能な解決策&lt;/strong&gt;:
+        &lt;ul&gt;
+          &lt;li&gt;バックエンドがヘルス・チェックに応答しない理由を特定します。&lt;/li&gt;
+          &lt;li&gt;ステータス・コード、正規表現、間隔、タイムアウト、ポート、プロトコルなどのヘルス・チェック設定を確認して調整します。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;トラブルシューティング・ドキュメント&lt;/strong&gt;: &lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/editinghealthcheck.htm&quot;&gt;ヘルス・チェック・ポリシーの編集&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Status Code Issues&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;エラー・メッセージ&lt;/strong&gt;:
+        &lt;ul&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;msg&quot;:&quot;invalid statusCode&quot;,&quot;statusCode&quot;:XXX,&quot;expected&quot;:&quot;200&quot;&lt;/code&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Oracle Cloud Infrastructureログ・カテゴリ&lt;/strong&gt;: エラー・ログ&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;症状&lt;/strong&gt;:
+        &lt;ul&gt;
+          &lt;li&gt;バックエンドはヘルス・チェックに失敗します。&lt;/li&gt;
+          &lt;li&gt;クライアントは&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;502 Bad Gateway&lt;/code&gt;エラーで失敗します。&lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;invalid statusCode&lt;/code&gt;がエラー・ログに表示されます。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;考えられる原因&lt;/strong&gt;:
+        &lt;ul&gt;
+          &lt;li&gt;バックエンドが正しくない応答コードで応答しています。&lt;/li&gt;
+          &lt;li&gt;応答コードが一致しないため、バックエンドのヘルス・チェックが失敗します。&lt;/li&gt;
+          &lt;li&gt;ヘルス・チェックの失敗は、正規表現の本文に予期しないステータス・コードが含まれていることが原因です。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;可能な解決策&lt;/strong&gt;:
+        &lt;ul&gt;
+          &lt;li&gt;バックエンドが間違った応答コードを送信している理由を特定してください。&lt;/li&gt;
+          &lt;li&gt;ヘルス・チェックのパスまたはステータス・コードを調整して、バックエンドに一致させます。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;トラブルシューティング・ドキュメント&lt;/strong&gt;: &lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/editinghealthcheck.htm&quot;&gt;ヘルス・チェック・ポリシーの編集&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Response Match Failed&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;エラー・メッセージ&lt;/strong&gt;:
+        &lt;ul&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;response match result: failed&quot;&lt;/code&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Oracle Cloud Infrastructureログ・カテゴリ&lt;/strong&gt;: エラー・ログ&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;症状&lt;/strong&gt;:
+        &lt;ul&gt;
+          &lt;li&gt;バックエンドはヘルスチェックに失敗します。&lt;/li&gt;
+          &lt;li&gt;クライアントは&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;502 Bad Gateway&lt;/code&gt;エラーで失敗します。&lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;response match result: failed&quot;&lt;/code&gt; がエラー・ログに表示されます。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;考えられる原因&lt;/strong&gt;:
+        &lt;ul&gt;
+          &lt;li&gt;正規表現の不一致、不正な値が返される、またはヘルス・チェックに提供された不正な値が原因で、バックエンドのヘルス・チェックが失敗します。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;可能な解決策&lt;/strong&gt;:
+        &lt;ul&gt;
+          &lt;li&gt;バックエンドが正しくない本文を送信している理由を特定してください。&lt;/li&gt;
+          &lt;li&gt;ヘルス・チェックのパスまたは正規表現パターンを調整して、バックエンドに一致させます。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;トラブルシューティング・ドキュメント&lt;/strong&gt;: &lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/editinghealthcheck.htm&quot;&gt;ヘルス・チェック・ポリシーの編集&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Unreachable Host&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;エラー・メッセージ&lt;/strong&gt;:
+        &lt;ul&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;errno&quot;:&quot;EHOSTUNREACH&quot;,&quot;syscall&quot;:&quot;connect&quot;&lt;/code&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;ECONNREFUSED&quot;,&quot;errno&quot;:&quot;ECONNREFUSED&quot;&lt;/code&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Oracle Cloud Infrastructureログ・カテゴリ&lt;/strong&gt;: エラー・ログ&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;症状&lt;/strong&gt;:
+        &lt;ul&gt;
+          &lt;li&gt;バックエンドはヘルス・チェックに失敗します。&lt;/li&gt;
+          &lt;li&gt;クライアントは&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;502 Bad Gateway&lt;/code&gt;エラーで失敗します。&lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;EHOSTUNREACH&quot;&lt;/code&gt;がエラー・ログに表示されます。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;考えられる原因&lt;/strong&gt;:
+        &lt;ul&gt;
+          &lt;li&gt;ホストに到達できないため、バックエンドのヘルス・チェックが失敗します。&lt;/li&gt;
+          &lt;li&gt;接続がリセットされたため、バックエンドのヘルス・チェックが失敗します。&lt;/li&gt;
+          &lt;li&gt;アプリケーションまたはファイアウォールが接続を積極的に拒否しています。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;可能な解決策&lt;/strong&gt;:
+        &lt;ul&gt;
+          &lt;li&gt;インスタンスのファイアウォールをチェックして、トラフィックが許可されていることを確認します。&lt;/li&gt;
+          &lt;li&gt;インスタンスをチェックして、アプリケーションが実行されていることを確認します。&lt;/li&gt;
+          &lt;li&gt;ネットワーク・セキュリティ・グループとセキュリティ・リストをチェックして、トラフィックが許可されていることを確認します。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;トラブルシューティング・ドキュメント&lt;/strong&gt;: &lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Network/Concepts/permissions.htm#Access_and_Security&quot;&gt;アクセスとセキュリティ&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Health Status Issues&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;エラー・メッセージ&lt;/strong&gt;:
+        &lt;ul&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;healthStatus&quot;:&quot;Unhealthy to Healthy&quot;&lt;/code&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;healthStatus&quot;:&quot;Healthy to Unhealthy&quot;&lt;/code&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Oracle Cloud Infrastructureログ・カテゴリ&lt;/strong&gt;: エラー・ログ&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;症状&lt;/strong&gt;:
+        &lt;ul&gt;
+          &lt;li&gt;クライアントは期待どおりに動作する時もありますが、定期的に失敗します。&lt;/li&gt;
+          &lt;li&gt;バックエンドはヘルス・チェックの状態を切り替えます。&lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;Unhealthy to Healthy&quot;&lt;/code&gt;または&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;Healthy to Unhealthy&quot;&lt;/code&gt;がエラー・ログに表示されます。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;考えられる原因&lt;/strong&gt;:
+        &lt;ul&gt;
+          &lt;li&gt;不健全なバックエンドが健全な状態になる。&lt;/li&gt;
+          &lt;li&gt;バックエンドのヘルス・ステータスが頻繁に変化する場合は、慢性的な問題を示している可能性があります。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;可能な解決策&lt;/strong&gt;:
+        &lt;ul&gt;
+          &lt;li&gt;インスタンスのヘルス・ステータスが異常に変化していないことを確認します。&lt;/li&gt;
+          &lt;li&gt;アプリケーション固有の問題がないか、バックエンド・サーバーのアプリケーション・ログを確認します。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Connection Issues&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;エラー・メッセージ&lt;/strong&gt;:
+        &lt;ul&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;msg&quot;:&quot;connect timed out&quot;,&quot;elapsed&quot;:3000}&lt;/code&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Oracle Cloud Infrastructureログ・カテゴリ&lt;/strong&gt;: エラー・ログ&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;症状&lt;/strong&gt;:
+        &lt;ul&gt;
+          &lt;li&gt;クライアントは&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;502 Bad Gateway&lt;/code&gt;エラーで失敗します。&lt;/li&gt;
+          &lt;li&gt;バックエンドが定期的または慢性的にヘルス・チェックに失敗しています。&lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;connect timed out&quot;&lt;/code&gt; がエラー・ログに表示されます。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;考えられる原因&lt;/strong&gt;:
+        &lt;ul&gt;
+          &lt;li&gt;バックエンド・サーバーは、予期された時間内にヘルス・チェックに応答していません。&lt;/li&gt;
+          &lt;li&gt;データベース、アプリケーション・サービスまたはAPIを含むアップストリームの依存関係が遅いか、Oracle Cloud Infrastructure ファイル・ストレージ、ブロック・ストレージ、オブジェクト・ストレージなどのストレージ・サービスが遅い。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;可能な解決策&lt;/strong&gt;:
+        &lt;ul&gt;
+          &lt;li&gt;バックエンドに対してローカル・テストを実行して、ロード・バランサを原因として排除します。&lt;/li&gt;
+          &lt;li&gt;すべてのアップストリームの依存関係のパフォーマンスを確認します。&lt;/li&gt;
+          &lt;li&gt;何らかのタイムアウトを報告する依存関係がないか、バックエンド・サーバーのアプリケーション・ログを確認します。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;トラブルシューティング・ドキュメント&lt;/strong&gt;: &lt;a href=&quot;https://docs.oracle.com/en-us/iaas/Content/Balance/Reference/troubleshooting_load_balancer.htm#TestTCPHTTPBackendServers&quot;&gt;TCP および HTTPバックエンド・サーバーのテスト&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;関連情報：&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;https://docs.oracle.com/en-us/iaas/Content/Balance/Tasks/managingloadbalancer_topic-Logging.htm#LogManagement&quot;&gt;ログ管理&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://docs.oracle.com/en-us/iaas/Content/Balance/Reference/troubleshooting_load_balancer.htm&quot;&gt;ロード・バランシングのトラブルシューティング&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/editinghealthcheck.htm&quot;&gt;ヘルス・チェック・ポリシーの編集&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Network/Concepts/permissions.htm#Access_and_Security&quot;&gt;アクセスとセキュリティ&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://docs.oracle.com/en-us/iaas/Content/Balance/Reference/troubleshooting_load_balancer.htm#TestTCPHTTPBackendServers&quot;&gt;TCP および HTTPバックエンド・サーバーのテスト&lt;/a&gt;&lt;/p&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Networking" /><category term="FAQ" /><summary type="html">ロード・バランサに関する技術FAQページです。Oracle Cloud Infrastructure利用時のよくある質問から、特に技術的な問題とそれに対する回答や対処策をまとめています</summary></entry><entry><title type="html">機械学習プラットフォームとして活用するAutonomous Database</title><link href="https://oracle-japan.github.io/ocidocs/services/database/autonomous/machine%20learning/autonomous-machinelearning/" rel="alternate" type="text/html" title="機械学習プラットフォームとして活用するAutonomous Database" /><published>2021-06-17T00:00:00+09:00</published><updated>2021-06-17T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/database/autonomous/machine%20learning/autonomous-machinelearning</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/database/autonomous/machine%20learning/autonomous-machinelearning/">&lt;p&gt;Autonomous Database (ADB)では、機械学習に必要な各種ツールがセットアップされており、データベースインスタンスを作成後にすぐに利用いただくことが可能です。
 AutoMLテクノロジにより最適なアルゴリズムを自動選択しモデルを生成したり、
 Apache ZeppelinベースでSQL,PL/SQL,Pythonの併用が可能なNotebookが構成されているので、データの把握から前処理、機械学習の実行、予測モデルの管理などといった作業を実施いただくことが可能になっています。
 本資料ではこれら各ツールの概要について解説しています。&lt;/p&gt;
@@ -63,44 +711,4 @@ Apache ZeppelinベースでSQL,PL/SQL,Pythonの併用が可能なNotebookが構�
 &lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/BrMPxyLL9f3Cak&quot; width=&quot;595&quot; height=&quot;485&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen=&quot;&quot;&gt; &lt;/iframe&gt; &lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;//www.slideshare.net/oracle4engineer/api-gateway-248818040&quot; title=&quot;API Gatewayご紹介&quot; target=&quot;_blank&quot;&gt;API Gatewayご紹介&lt;/a&gt; &lt;/strong&gt;&lt;/div&gt;
 &lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) --&gt;
 
-&lt;/div&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Developers" /><category term="スライドあり" /><category term="レベル:入門(100)" /><summary type="html">OCIのマネージドAPI管理サービスであるOCI API Gatewayの概要資料です。</summary></entry><entry><title type="html">Oracleの提供するブロックチェーンソリューション概要</title><link href="https://oracle-japan.github.io/ocidocs/solutions/blockchain/blockchain-solution-100/" rel="alternate" type="text/html" title="Oracleの提供するブロックチェーンソリューション概要" /><published>2021-06-04T00:00:00+09:00</published><updated>2021-06-04T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/solutions/blockchain/blockchain-solution-100</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/solutions/blockchain/blockchain-solution-100/">&lt;p&gt;Oracle Blockchain Platformや、Oracle Databaseの機能のOracle Blockchain Tableについて、最新の事例、試用環境とデモスクリプト、Hyperledger Fabricの技術情報とともにご説明しています。&lt;/p&gt;
-
-&lt;h4 id=&quot;スライド&quot;&gt;スライド&lt;/h4&gt;
-
-&lt;div style=&quot;max-width:768px&quot;&gt;
-
-&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) --&gt;
-&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/MFAfJ7zqLB9yHP&quot; width=&quot;595&quot; height=&quot;485&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen=&quot;&quot;&gt; &lt;/iframe&gt; &lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;//www.slideshare.net/oracle4engineer/202105-248641359&quot; title=&quot;オラクルのブロックチェーンソリューションご紹介（2021/05版）&quot; target=&quot;_blank&quot;&gt;オラクルのブロックチェーンソリューションご紹介（2021/05版）&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&quot;https://www.slideshare.net/oracle4engineer&quot; target=&quot;_blank&quot;&gt;オラクルエンジニア通信&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
-&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) --&gt;
-
-&lt;/div&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="Solutions" /><category term="Blockchain" /><category term="スライドあり" /><category term="レベル:入門(100)" /><summary type="html">オラクルのブロックチェーンソリューションご紹介資料です。</summary></entry><entry><title type="html">Oracle Cloudで実現するCloud Native</title><link href="https://oracle-japan.github.io/ocidocs/solutions/cloud%20native/cloud-native-strategy/" rel="alternate" type="text/html" title="Oracle Cloudで実現するCloud Native" /><published>2021-06-04T00:00:00+09:00</published><updated>2021-06-04T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/solutions/cloud%20native/cloud-native-strategy</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/solutions/cloud%20native/cloud-native-strategy/">&lt;p&gt;Oracle CloudでCloud Nativeを実現するための考え方やソリューション群をご紹介します。&lt;/p&gt;
-
-&lt;h4 id=&quot;スライド&quot;&gt;スライド&lt;/h4&gt;
-
-&lt;div style=&quot;max-width:768px&quot;&gt;
-
-&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) --&gt;
-&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/3tD5UeuWpZ4Bnk&quot; width=&quot;595&quot; height=&quot;485&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen=&quot;&quot;&gt; &lt;/iframe&gt; &lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;//www.slideshare.net/oracle4engineer/oraclecloud-native&quot; title=&quot;OracleのCloud Native 戦略／ソリューションの特徴&quot; target=&quot;_blank&quot;&gt;&lt;/a&gt; &lt;/strong&gt; &lt;/div&gt;
-&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) --&gt;
-
-&lt;/div&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="Solutions" /><category term="Cloud Native" /><category term="スライドあり" /><category term="レベル:入門(100)" /><summary type="html">Oracle CloudでCloud Nativeを実現するための考え方やソリューション群をご紹介します。</summary></entry><entry><title type="html">Oracle Functions概要</title><link href="https://oracle-japan.github.io/ocidocs/services/developers/functions-overview/" rel="alternate" type="text/html" title="Oracle Functions概要" /><published>2021-06-04T00:00:00+09:00</published><updated>2021-06-04T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/developers/functions-overview</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/developers/functions-overview/">&lt;p&gt;OracleのマネージドFaaS(Functions as a Service)サービスであるOracle Functionsについての概要資料です。&lt;/p&gt;
-
-&lt;h4 id=&quot;スライド&quot;&gt;スライド&lt;/h4&gt;
-
-&lt;div style=&quot;max-width:768px&quot;&gt;
-
-&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) --&gt;
-&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/k1kjv6nZi4iF6C&quot; width=&quot;595&quot; height=&quot;485&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen=&quot;&quot;&gt; &lt;/iframe&gt; &lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;//www.slideshare.net/oracle4engineer/oracle-functions-249403185&quot; title=&quot;Oracle Functions ご紹介&quot; target=&quot;_blank&quot;&gt;Oracle Functions ご紹介&lt;/a&gt; &lt;/strong&gt; &lt;/div&gt;
-&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) --&gt;
-
-&lt;/div&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Developers" /><category term="スライドあり" /><category term="レベル:入門(100)" /><summary type="html">OracleのマネージドFaaS(Functions as a Service)サービスであるOracle Functionsについての概要資料です。</summary></entry><entry><title type="html">Helidon概要</title><link href="https://oracle-japan.github.io/ocidocs/solutions/cloud%20native/helidon-overview/" rel="alternate" type="text/html" title="Helidon概要" /><published>2021-06-04T00:00:00+09:00</published><updated>2021-06-04T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/solutions/cloud%20native/helidon-overview</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/solutions/cloud%20native/helidon-overview/">&lt;p&gt;Oracleが提供するマイクロサービスフレームワークであるHelidonの概要資料です。&lt;/p&gt;
-
-&lt;h4 id=&quot;スライド&quot;&gt;スライド&lt;/h4&gt;
-
-&lt;div style=&quot;max-width:768px&quot;&gt;
-
-&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) --&gt;
-&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/JjLQhj7TPOS9Hf&quot; width=&quot;595&quot; height=&quot;485&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen=&quot;&quot;&gt; &lt;/iframe&gt; &lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;//www.slideshare.net/oracle4engineer/helidon&quot; title=&quot;Helidon 概要&quot; target=&quot;_blank&quot;&gt;&lt;/a&gt; &lt;/strong&gt;&lt;/div&gt;
-&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) --&gt;
-
-&lt;/div&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="Solutions" /><category term="Cloud Native" /><category term="スライドあり" /><category term="レベル:入門(100)" /><summary type="html">Oracleが提供するマイクロサービスフレームワークであるHelidonの概要資料です。</summary></entry></feed>
+&lt;/div&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Developers" /><category term="スライドあり" /><category term="レベル:入門(100)" /><summary type="html">OCIのマネージドAPI管理サービスであるOCI API Gatewayの概要資料です。</summary></entry></feed>

@@ -173,18 +173,6 @@ var store = [{
         "url": "https://oracle-japan.github.io/ocidocs/services/overall/service-lineup/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/df57e649bf8b4cf3a6035b324cc71ae4/slide_0.jpg"
       },{
-        "title": "ロード・バランサー 概要",
-        "excerpt":"バックエンドに配置した様々なサービスの冗長性やスケーリングをサポートする OCI ロード・バランサー・サービスについて、その機能概要、構成コンポーネントの内容、OCIコンソールを利用した構成方法などについて解説しています。   スライド           セミナー動画      ","categories": ["Services","Networking"],
-        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
-        "url": "https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-100/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/78914498b3c14b97a112f59283b754b7/slide_0.jpg"
-      },{
-        "title": "ロード・バランサー 詳細",
-        "excerpt":"様々なサービスの冗長性やスケーリングをサポートする OCI ロード・バランサー・サービスについて、応用的な利用方法について解説したドキュメントです。  セッション永続性、仮想ホストによるルーティング、URIパス・ベース・ルーティング、SSL通信方式とロード・バランサーでのSSLターミネーションの設定、ロード・バランサーが収集するメトリック、トラブル時の対応ガイドラインについて解説しています。   スライド          ","categories": ["Services","Networking"],
-        "tags": ["スライドあり","レベル:応用(200)"],
-        "url": "https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-200/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/9ca991733d2a4670bdd4e5ed5b5770c4/slide_0.jpg"
-      },{
         "title": "IDおよびアクセス管理 (IAM) 概要",
         "excerpt":"OCIの認証、認可、ID管理などを司るコア・コンポーネントである OCI IAM (Identity and Access Management) についての解説資料です。  認証とID管理、認可およびポリシー、コンパートメントとその管理、IDフェデレーション(IDCSとの連携)、タグ付け(Tagging) のトピックをカバーしています。   スライド           セミナー動画      ","categories": ["Services","Governance and Administration"],
         "tags": ["スライドあり","レベル:入門(100)"],
@@ -430,4 +418,28 @@ var store = [{
         "tags": ["スライドあり"],
         "url": "https://oracle-japan.github.io/ocidocs/services/database/autonomous/machine%20learning/autonomous-machinelearning/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/a626b9f2631e44ebbe815f21b7dab081/slide_0.jpg"
+      },{
+        "title": "Oracle Cloud Infrastructure 技術FAQ - ロード・バランサ編 -",
+        "excerpt":"一般的なOracle Cloud InfrastructureのFAQはサービスの公式ページにも記載されていますのでご覧ください。 クライアントがロード・バランサに接続できない理由として考えられる原因を教えてください。 簡単な説明： ロード ・バランサの接続の問題の一般的な原因には、次のものがあります。 クライアントが接続しようとしているロード バランサに適切なトラフィック・タイプ（TCP、HTTP、HTTPS）のリスナーが構成されていません。 ロード ・バランサを含む仮想クラウド・ネットワーク（VCN）のセキュリティ・ルール（「セキュリティ・グループ」または「セキュリティ・リスト」）が、リスナーのトラフィックを許可していません。 ロード・バランサの作成でセキュリティ・リスト・ルールを自動的に追加していない場合、ロード・バランサやバックエンド・サーバーのサブネットに適切なイングレスおよびエグレス・セキュリティ・ルールが構成されていません。 セキュリティ・ルールにヘルス・チェック・リクエストのソースのIP範囲が含まれていない可能性があります。ヘルス・チェックのソースIPは、各バックエンド・サーバーの「詳細」ページで確認できます。APIを使用して、HealthCheckResultオブジェクトのsourceIpAddressフィールドでIPを検索することもできます。 ルート表のルート・ルールの構成が不適切な場合、リクエストをブロックしているか、不適切にルーティングしています。 関連情報： リスナーの管理 セキュリティ・ルール バックエンド・サーバーの管理 ヘルス・ステータス HealthCheckResult ～ルーティング関連の質問～ ロード・バランサを使用してホストベースのルーティングを設定するにはどうすればよいですか？ 簡単な説明： リクエスト・ルーティングの仮想ホスト名をリスナーに割り当てることで、ホスト名単位でのトラフィックのルーティングを設定することが可能です。 また、リスナーあたりの仮想ホスト名は最大16個まで割り当てることが可能です。 解決方法： 仮想ホスト名をリスナーに適用するには、最初に、1つ以上の仮想ホスト名を作成します。 次に、ロード・バランサのリスナーを作成または更新し、使用する1つ以上の仮想ホスト名を指定します。 仮想ホスト名を作成するには ナビゲーション・メニューを開きます。「ネットワーキング」をクリックして「ロード・バランサ」をクリックします。 変更するロード・バランサを含むコンパートメントを選択し、ロード・バランサの名前をクリックします。 「リソース」メニューで、「ホスト名」をクリックし、「ホスト名の作成」をクリックします。 「ホスト名の作成」ダイアログ・ボックスで、次を入力します: 名前: 必須。ホスト名のわかりやすい名前を指定します。名前は一意である必要があり、変更することはできません。機密情報の入力は避けてください。 ホスト名: 必須。仮想ホスト名を指定します。有効なホスト名の構成および動作の説明は、仮想ホスト名を参照してください。 「作成」をクリックします。「作業リクエスト送信済」ダイアログ・ボックスが開きます。 ダイアログ・ボックスを閉じるには、「閉じる」をクリックします。「作業リクエスト」ページを開いて作業リクエストのステータスを表示するには、「すべての作業リクエストの表示」をクリックします。 仮想ホスト名を作成すると、関連付けられたロード・バランサでその名前を使用できるようになります。 ホスト名を適用するには、リスナーを作成または更新します。 関連情報： リクエスト・ルーティングの管理 ロード・バランサでのパスベースのルーティングを実現するにはどうすればよいですか？ 簡単な説明： リクエスト・ルーティングのパス・ルート・ルールをリスナーに割り当てることで、パスベースのルーティングを設定することが可能です。 解決方法： パス・ルート・ルールをリスナーに適用するには、最初に、ルールが含まれる「パス・ルート・セット」を作成します。 パス・ルート・セットは、ロード・バランサの構成の一部になります。 次に、ロード・バランサのリスナーを作成または更新するときに、使用する「パス・ルート・セット」を指定します。...","categories": ["Services","Networking"],
+        "tags": ["FAQ"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/networking/LB-faq/",
+        "teaser": null
+      },{
+        "title": "ロード・バランサ・サービス(再)入門",
+        "excerpt":"2021/6/22実施のOCIスキルアップセミナー #9で使用したスライドです。最近大幅に機能が拡充されたOCIのロード・バランサ・サービスについて改めて取り上げました。   OCIのリリース当初からあるロード・バランサですが、最近 Flexible Load Balancer や、Network Load Balancer といった機能が加わり、リリース当初とは全く違うサービスと言っていい進化を遂げています。   このスライドでは (再)入門、ということで、OCIロード・バランサを初めて触る人のために基礎的な内容をおさらいしつつ、既にバリバリ使っている人のための新機能解説や応用的な活用方法、そしてテストしてわかったマニュアルには書いていない動作の仕組みを解説しています。 特に新機能のNetwork Load Balancerはまだ情報も少ないので必見? です。   スライド           セミナー動画      ","categories": ["Services","Networking"],
+        "tags": ["スライドあり","動画あり","レベル:入門(100)","レベル:応用(200)"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/networking/load-balancer/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/7b765fc938b44be7a2749f4849529c22/slide_0.jpg"
+      },{
+        "title": "ロード・バランサー 概要",
+        "excerpt":"バックエンドに配置した様々なサービスの冗長性やスケーリングをサポートする OCI ロード・バランサー・サービスについて、その機能概要、構成コンポーネントの内容、OCIコンソールを利用した構成方法などについて解説しています。  2021/6/28 ネットワーク・ロード・バランサのリリースに合わせて全般的に記述を見直しました。   スライド           セミナー動画      ","categories": ["Services","Networking"],
+        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-100/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/78914498b3c14b97a112f59283b754b7/slide_0.jpg"
+      },{
+        "title": "ロード・バランサー 詳細",
+        "excerpt":"様々なサービスの冗長性やスケーリングをサポートする OCI ロード・バランサー・サービスについて、応用的な利用方法について解説したドキュメントです。  セッション永続性、仮想ホストによるルーティング、URIパス・ベース・ルーティング、SSL通信方式とロード・バランサーでのSSLターミネーションの設定、ロード・バランサーが収集するメトリック、トラブル時の対応ガイドラインについて解説しています。  2021/6/28 ネットワーク・ロード・バランサのリリースに合わせて全般的に記述を見直しました。   スライド          ","categories": ["Services","Networking"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-200/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/9ca991733d2a4670bdd4e5ed5b5770c4/slide_0.jpg"
       }]
