@@ -1,10 +1,12 @@
 main:
   - title: "新機能"
     url: /updates/
-  - title: "サービス別"
+  - title: "サービス別資料"
     url: /services/
-  - title: "ソリューション別"
+  - title: "ソリューション別資料"
     url: /solutions/
+  - title: "技術FAQ"
+    url: /faqs/
   - title: "その他"
     url: /misc/
   - title: "外部リンク"
@@ -17,7 +19,7 @@ main:
 docs:
   - title: "新機能"
     url: /updates/
-  - title: "サービス別"
+  - title: "サービス別資料"
     url: /services/
     children:
       - title: "サービス全般"
@@ -30,8 +32,8 @@ docs:
         url: /services/networking/
       - title: "データベース"
         url: /services/database/
-      - title: "アナリティクス"
-        url: /services/analytics/
+      # - title: "アナリティクス"
+      #   url: /services/analytics/
       - title: "開発者サービス"
         url: /services/developers/
       - title: "エッジ・サービス"
@@ -42,7 +44,7 @@ docs:
         url: /services/governance-and-administration/
       - title: "開発ツール"
         url: /services/devtools/
-  - title: "ソリューション別"
+  - title: "ソリューション別資料"
     url: /solutions/
     children:
       - title: "HA・DR・高可用性システム"
@@ -57,6 +59,8 @@ docs:
         url: /solutions/blockchain/
       - title: "その他"
         url: /solutions/others/
+  - title: "技術FAQ"
+    url: /faqs/
   - title: "その他"
     url: /misc/
   - title: "外部リンク"
