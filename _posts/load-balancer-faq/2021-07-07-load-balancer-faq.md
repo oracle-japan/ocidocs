@@ -1,19 +1,28 @@
 ---
-title: "Oracle Cloud Infrastructure 技術FAQ - ロード・バランサ編 -"
-excerpt: "ロード・バランサに関する技術FAQページです。Oracle Cloud Infrastructure利用時のよくある質問から、特に技術的な問題とそれに対する回答や対処策をまとめています"
+title: "ロード・バランサ・サービス 技術FAQ"
+excerpt: "Oracle Cloud Infrastructure ロード・バランサ・サービスに関して、利用時のよくある質問に対する回答や、技術的な問題に対する対処策をまとめています。"
+layout: faq
 categories:
-  - Services
+  - FAQ
   - Networking
 tags:
   - FAQ
+tagline: "Oracle Cloud Infrastructure ロード・バランサ・サービスに関する技術FAQです<br>サービス仕様に関する⼀般的な質問や、既知の問題については下記の外部リンクもご参照ください" 
+header:
+  actions:
+    - label: "Load Balancingに関するよくある質問"
+      url: "https://www.oracle.com/jp/cloud/networking/load-balancing-faq.html"
+    - label: "既知の問題 - ロード・バランシング"
+      url: "https://docs.oracle.com/ja-jp/iaas/Content/knownissues.htm#loadbalancing"
 ---
 
-一般的なOracle Cloud InfrastructureのFAQは[サービスの公式ページ](https://www.oracle.com/jp/cloud/compute/faq.html)にも記載されていますのでご覧ください。
+# クライアントがロード・バランサに接続できない
 
+## 質問
 
-# クライアントがロード・バランサに接続できない理由として考えられる原因を教えてください。
+クライアントがロード・バランサに接続できない理由として考えられる原因を教えてください。
 
-**簡単な説明：**  
+## 回答
 
 ロード ・バランサの接続の問題の一般的な原因には、次のものがあります。
 
@@ -23,25 +32,27 @@ tags:
 - セキュリティ・ルールにヘルス・チェック・リクエストのソースのIP範囲が含まれていない可能性があります。ヘルス・チェックのソースIPは、各バックエンド・サーバーの「詳細」ページで確認できます。APIを使用して、HealthCheckResultオブジェクトのsourceIpAddressフィールドでIPを検索することもできます。
 - ルート表のルート・ルールの構成が不適切な場合、リクエストをブロックしているか、不適切にルーティングしています。
 
-**関連情報：**  
-[リスナーの管理](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#Managing_Listeners)  
-[セキュリティ・ルール](https://docs.oracle.com/ja-jp/iaas/Content/Network/Concepts/securityrules.htm#Security_Rules)  
-[バックエンド・サーバーの管理](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingbackendservers.htm#Managing_Backend_Servers)  
-[ヘルス・ステータス](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingbackendservers.htm#healthstatus)  
-[HealthCheckResult](https://docs.oracle.com/en-us/iaas/api/#/en/loadbalancer/20170115/HealthCheckResult/)  
+**関連情報 :**
 
+- [Oracle Cloud Infrastructureドキュメント : リスナーの管理](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#Managing_Listeners){:target="_blank"}
+- [Oracle Cloud Infrastructureドキュメント : セキュリティ・ルール](https://docs.oracle.com/ja-jp/iaas/Content/Network/Concepts/securityrules.htm#Security_Rules){:target="_blank"}
+- [Oracle Cloud Infrastructureドキュメント : バックエンド・サーバーの管理](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingbackendservers.htm#Managing_Backend_Servers){:target="_blank"}
+- [Oracle Cloud Infrastructureドキュメント : ヘルス・ステータス](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingbackendservers.htm#healthstatus){:target="_blank"}
+- [Oracle Cloud Infrastructureドキュメント : HealthCheckResult](https://docs.oracle.com/ja-jp/iaas/api/#/en/loadbalancer/20170115/HealthCheckResult/)  
 
-# <font color="Green">～ルーティング関連の質問～</font>
+<a href="#main" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+<br />
 
+# ホストベースのルーティングを設定するには?
 
-# ロード・バランサを使用してホストベースのルーティングを設定するにはどうすればよいですか？
+## 質問
 
-**簡単な説明：**
+ホストベースのルーティングを設定するにはどうすればよいですか？
+
+## 回答
 
 リクエスト・ルーティングの仮想ホスト名をリスナーに割り当てることで、ホスト名単位でのトラフィックのルーティングを設定することが可能です。
 また、リスナーあたりの仮想ホスト名は最大16個まで割り当てることが可能です。
-
-**解決方法：**
 
 仮想ホスト名をリスナーに適用するには、最初に、1つ以上の仮想ホスト名を作成します。
 次に、ロード・バランサのリスナーを作成または更新し、使用する1つ以上の仮想ホスト名を指定します。
@@ -49,47 +60,57 @@ tags:
 - **仮想ホスト名を作成するには**
 
   1. ナビゲーション・メニューを開きます。「**ネットワーキング**」をクリックして「**ロード・バランサ**」をクリックします。
-  1. 変更するロード・バランサを含む**コンパートメント**を選択し、**ロード・バランサの名前**をクリックします。
-  1. 「**リソース**」メニューで、「**ホスト名**」をクリックし、「**ホスト名の作成**」をクリックします。
-  1. 「**ホスト名の作成**」ダイアログ・ボックスで、次を入力します:
+  2. 変更するロード・バランサを含む**コンパートメント**を選択し、**ロード・バランサの名前**をクリックします。
+  3. 「**リソース**」メニューで「**ホスト名**」をクリックし、「**ホスト名の作成**」をクリックします。
+  4. 「**ホスト名の作成**」ダイアログ・ボックスで、次を入力します:
       - 名前: 必須。ホスト名のわかりやすい名前を指定します。名前は一意である必要があり、変更することはできません。機密情報の入力は避けてください。
       - ホスト名: 必須。仮想ホスト名を指定します。有効なホスト名の構成および動作の説明は、仮想ホスト名を参照してください。
-  1. 「**作成**」をクリックします。「**作業リクエスト送信済**」ダイアログ・ボックスが開きます。
-  1. ダイアログ・ボックスを閉じるには、「**閉じる**」をクリックします。「**作業リクエスト**」ページを開いて作業リクエストのステータスを表示するには、「**すべての作業リクエストの表示**」をクリックします。
+  5. 「**作成**」をクリックします。「**作業リクエスト送信済**」ダイアログ・ボックスが開きます。
+  6. ダイアログ・ボックスを閉じるには、「**閉じる**」をクリックします。「**作業リクエスト**」ページを開いて作業リクエストのステータスを表示するには、「**すべての作業リクエストの表示**」をクリックします。
 
 仮想ホスト名を作成すると、関連付けられたロード・バランサでその名前を使用できるようになります。  
-ホスト名を適用するには、[リスナーを作成または更新](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#create)します。
+ホスト名を適用するには、[リスナーを作成または更新](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#create){:target="_blank"}します。
 
-**関連情報：**  
-[リクエスト・ルーティングの管理](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrequest.htm#routing__vhost)
+**関連情報 :**
+- [Oracle Cloud Infrastructureドキュメント : リクエスト・ルーティングの管理](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrequest.htm#routing__vhost){:target="_blank"}
 
+<a href="#main" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+<br />
 
-# ロード・バランサでのパスベースのルーティングを実現するにはどうすればよいですか？
+# パスベースのルーティングを実現するには?
 
-**簡単な説明：**
+## 質問
+
+ロード・バランサでのパスベースのルーティングを実現するにはどうすればよいですか？
+
+## 回答
 
 リクエスト・ルーティングのパス・ルート・ルールをリスナーに割り当てることで、パスベースのルーティングを設定することが可能です。
 
-**解決方法：**
+パス・ルート・ルールをリスナーに適用するには、最初に、ルールが含まれる「**パス・ルート・セット**」を作成します。
+パス・ルート・セットは、ロード・バランサの構成の一部になります。
+次に、ロード・バランサのリスナーを作成または更新するときに、使用する「**パス・ルート・セット**」を指定します。
+リスナーからパス・ルート・セットを削除するには、リスナーを編集し、「**パス・ルート・セット**」オプションとして「**なし**」を選択します。
 
-パス・ルート・ルールをリスナーに適用するには、最初に、ルールが含まれる「**パス・ルート・セット**」を作成します。  
-パス・ルート・セットは、ロード・バランサの構成の一部になります。  
-次に、ロード・バランサのリスナーを作成または更新するときに、使用する「**パス・ルート・セット**」を指定します。  
-リスナーからパス・ルート・セットを削除するには、リスナーを編集し、「**パス・ルート・セット**」オプションとして「**なし**」を選択します。  
-詳細の手順については、[リクエスト・ルーティングの管理](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrequest.htm#)の「パス・ルート・セットを作成するには」を参照してください。
+詳細の手順については、[リクエスト・ルーティングの管理](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrequest.htm#){:target="_blank"}の「パス・ルート・セットを作成するには」を参照してください。
 
-**関連情報：**  
-[リスナーを編集](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#edit)  
-[リクエスト・ルーティングの管理](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrequest.htm#)
+**関連情報 :**
 
+- [Oracle Cloud Infrastructureドキュメント : リスナーを編集](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#edit){:target="_blank"}
+- [Oracle Cloud Infrastructureドキュメント : リクエスト・ルーティングの管理](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrequest.htm#){:target="_blank"}
 
-# ロードバランサーを使用して、カスタムHTTPヘッダーに基づきトラフィックをルーティングする方法を教えてください。
+<a href="#main" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+<br />
 
-**簡単な説明：**
+# カスタムHTTPヘッダーに基づいてルーティングするには?
+
+## 質問
+
+ロードバランサーを使用して、カスタムHTTPヘッダーに基づきトラフィックをルーティングする方法を教えてください。
+
+## 回答
 
 ロード・バランサのリスナーに適用されるルール・セットのリクエスト/レスポンス・ヘッダー・ルールを作成する事で、カスタムHTTPヘッダーの値に基づいて、リクエストに対する特定のアクションを実行できます。
-
-**解決方法：** 
 
 ルール・セットをリスナーに適用するには、最初に、ルールが含まれるルール・セットを作成します。  
 ロード・バランサのリスナーを作成または更新するときに、使用するルール・セットを指定できます。
@@ -97,9 +118,9 @@ tags:
 - **ルール・セットを作成するには**
 
 1. ナビゲーション・メニューを開きます。「**ネットワーキング**」に移動して「**ロード・バランサ**」をクリックします。
-1. 変更するロード・バランサを含む**コンパートメント**を選択し、**ロード・バランサの名前**をクリックします。
-1. 「**リソース**」メニューで、「**ルール・セット**」をクリックし、「**ルール・セットの作成**」をクリックします。
-1. 「**ルール・セットの作成**」ダイアログ・ボックスで、次を入力します:
+2. 変更するロード・バランサを含む**コンパートメント**を選択し、**ロード・バランサの名前**をクリックします。
+3. 「**リソース**」メニューで、「**ルール・セット**」をクリックし、「**ルール・セットの作成**」をクリックします。
+4. 「**ルール・セットの作成**」ダイアログ・ボックスで、次を入力します:
     - **名前**: 必須。ルール・セットのわかりやすい名前を指定します。名前は一意である必要があり、変更することはできません。機密情報の入力は避けてください。
     - **リクエスト・ヘッダー・ルールの指定**: リクエスト・ヘッダー・ルールを追加する場合は、このボックスを選択します。
         - **順序**: オプション。複数のルールがある場合は、上矢印または下矢印をクリックして、対応するルールを移動できます。
@@ -139,39 +160,46 @@ tags:
         - **接頭辞**: (拡張ルールのみ。)既存のヘッダー名の先頭に追加する文字列。結果のヘッダーはRFC 7230に準拠している必要があります。
         - **接尾辞**: (拡張ルールのみ。)既存のヘッダー名の末尾に追加する文字列。結果のヘッダーはRFC 7230に準拠している必要があります。
         - **+別のリクエスト・ヘッダー・ルール** (オプション)。このボタンをクリックして別のルールを作成するか、対応する「X」をクリックして既存のルールを削除します。
-1. 「**作成**」をクリックします。
+5. 「**作成**」をクリックします。
 
 ルール・セットを作成すると、関連付けられたロード・バランサでそのセットを使用できるようになります。  
-ルール・セットを適用するには、[リスナーを更新](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#edit)します。
+ルール・セットを適用するには、[リスナーを更新](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#edit){:target="_blank"}します。
 
-**関連情報：**  
-[ルール・セットの管理](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm)  
-[リクエストおよびレスポンス・ヘッダー・ルール](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm#header-rules)
+**関連情報 :**
+- [Oracle Cloud Infrastructureドキュメント : ルール・セットの管理](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm){:target="_blank"}
+- [Oracle Cloud Infrastructureドキュメント : リクエストおよびレスポンス・ヘッダー・ルール](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm#header-rules){:target="_blank"}
 
+<a href="#main" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+<br />
 
-# ロード・バランサを使用してソースIPに基づいてリクエストをルーティングするにはどうすればよいですか？
+# クライアントのソースIPに基づいてルーティングするには?
 
-**簡単な説明：**  
+## 質問
 
-[ロード・バランサを作成](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingloadbalancer.htm#Managing_Load_Balancers)した後に、トラフィック分散を制御するポリシーであるIPハッシュ・ポリシーをバックエンド・サーバーに適用することで、送信元IPアドレスのハッシュキーに基づいたトラフィックのルーティングが可能です。  
+ロード・バランサを使用して、クライアントのソースIPに基づいてリクエストをルーティングするにはどうすればよいですか？
+
+## 回答
+
+[ロード・バランサを作成](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingloadbalancer.htm#Managing_Load_Balancers){:target="_blank"}した後に、トラフィック分散を制御するポリシーであるIPハッシュ・ポリシーをバックエンド・サーバーに適用することで、送信元IPアドレスのハッシュキーに基づいたトラフィックのルーティングが可能です。  
 IPハッシュ・ポリシーでは、受信リクエストのソースIPアドレスがハッシュ・キーとして使用され、スティッキーではないトラフィックが同じバックエンド・サーバーにルーティングされます。  
 ロード・バランサは、サーバーが使用可能であるかぎり、同じクライアントから同じバックエンド・サーバーにリクエストをルーティングします。
 
 **関連情報：**  
-[IPハッシュ](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Reference/lbpolicies.htm#hash)  
-[ロード・バランシング・ポリシーの仕組み](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Reference/lbpolicies.htm#hash)
+[Oracle Cloud Infrastructureドキュメント : IPハッシュ](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Reference/lbpolicies.htm#hash){:target="_blank"}
+[Oracle Cloud Infrastructureドキュメント : ロード・バランシング・ポリシーの仕組み](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Reference/lbpolicies.htm#hash){:target="_blank"}
 
+<a href="#main" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+<br />
 
-# <font color="Green">～リダイレクト・ルール関連の質問～</font>
+# あるドメインを別のドメインにリダイレクトするには?
 
+## 質問
 
-# ロード・バランサを使用して、あるドメインを別のドメインにリダイレクトするにはどうすればよいですか？
+ロード・バランサを使用して、あるドメインを別のドメインにリダイレクトするにはどうすればよいですか？
 
-**簡単な説明：**
+## 回答
 
 ロード・バランサのリスナーに適用されるルール・セットの[URLリダイレクト・ルール](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm#redirect)を作成する事で、HTTPからHTTPSへのリダイレクト、ドメイン名のリダイレクトやパスベースでのリダイレクトが可能です。
-
-**解決方法：**
 
 ルール・セットをリスナーに適用するには、最初に、ルールが含まれるルール・セットを作成します。  
 ロード・バランサのリスナーを作成または更新するときに、使用するルール・セットを指定できます。
@@ -179,9 +207,9 @@ IPハッシュ・ポリシーでは、受信リクエストのソースIPアド�
 - **ルール・セットを作成するには**
 
 1. ナビゲーション・メニューを開きます。「**ネットワーキング**」に移動して「**ロード・バランサ**」をクリックします。
-1. 変更するロード・バランサを含む**コンパートメント**を選択し、**ロード・バランサの名前**をクリックします。
-1. 「**リソース**」メニューで、「**ルール・セット**」をクリックし、「**ルール・セットの作成**」をクリックします。
-1. 「**ルール・セットの作成**」ダイアログ・ボックスで、次を入力します:
+2. 変更するロード・バランサを含む**コンパートメント**を選択し、**ロード・バランサの名前**をクリックします。
+3. 「**リソース**」メニューで、「**ルール・セット**」をクリックし、「**ルール・セットの作成**」をクリックします。
+4. 「**ルール・セットの作成**」ダイアログ・ボックスで、次を入力します:
     - **名前**: 必須。ルール・セットのわかりやすい名前を指定します。名前は一意である必要があり、変更することはできません。機密情報の入力は避けてください。
     - **URLリダイレクト・ルールの指定**: URLリダイレクト・ルールを追加する場合は、このボックスを選択します。
         - **ソース・パス**: リダイレクト・ルールをトリガーする受信パス文字列を指定します。たとえば、/videoです。
@@ -213,24 +241,27 @@ IPハッシュ・ポリシーでは、受信リクエストのソースIPアド�
             - `307 Temporary Redirect`
             - `308 Permanent Redirect`
     - **+別のURLリダイレクト・ルール** (オプション)。このボタンをクリックして別のルールを作成するか、対応する「X」をクリックして既存のルールを削除します。
-1. 「**作成**」をクリックします。
+5. 「**作成**」をクリックします。
 
 ルール・セットを作成すると、関連付けられたロード・バランサでそのセットを使用できるようになります。  
-ルール・セットを適用するには、[リスナーを更新](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#edit)します。
+ルール・セットを適用するには、[リスナーを更新](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#edit){:target="_blank"}します。
 
+**関連情報 :**
+- [Oracle Cloud Infrastructureドキュメント : ルール・セットの管理](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm){:target="_blank"}
+- [Oracle Cloud Infrastructureドキュメント : URLリダイレクト・ルール](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm#redirect){:target="_blank"}
 
-**関連情報：**  
-[ルール・セットの管理](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm)  
-[URLリダイレクト・ルール](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm#redirect)
+<a href="#main" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+<br />
 
+# HTTP リクエストを HTTPS にリダイレクトするには?
 
-# ロード・バランサを使い HTTP リクエストを HTTPS にリダイレクトするにはどうすればよいですか?
+## 質問
 
-**簡単な説明：**
+ロード・バランサを使い HTTP リクエストを HTTPS にリダイレクトするにはどうすればよいですか?
+
+## 回答
 
 ロード・バランサのリスナーに適用されるルール・セットのURLリダイレクト・ルールを作成する事で、HTTPからHTTPSへのリダイレクト、ドメイン名のリダイレクトやパスベースでのリダイレクトが可能です。
-
-**解決方法：**
 
 ルール・セットをリスナーに適用するには、最初に、ルールが含まれるルール・セットを作成します。  
 ロード・バランサのリスナーを作成または更新するときに、使用するルール・セットを指定できます。
@@ -238,9 +269,9 @@ IPハッシュ・ポリシーでは、受信リクエストのソースIPアド�
 - **ルール・セットを作成するには**
 
 1. ナビゲーション・メニューを開きます。「**ネットワーキング**」に移動して「**ロード・バランサ**」をクリックします。
-1. 変更するロード・バランサを含む**コンパートメント**を選択し、**ロード・バランサの名前**をクリックします。
-1. 「**リソース**」メニューで、「**ルール・セット**」をクリックし、「**ルール・セットの作成**」をクリックします。
-1. 「**ルール・セットの作成**」ダイアログ・ボックスで、次を入力します:
+2. 変更するロード・バランサを含む**コンパートメント**を選択し、**ロード・バランサの名前**をクリックします。
+3. 「**リソース**」メニューで、「**ルール・セット**」をクリックし、「**ルール・セットの作成**」をクリックします。
+4. 「**ルール・セットの作成**」ダイアログ・ボックスで、次を入力します:
     - **名前**: 必須。ルール・セットのわかりやすい名前を指定します。名前は一意である必要があり、変更することはできません。機密情報の入力は避けてください。
     - **URLリダイレクト・ルールの指定**: URLリダイレクト・ルールを追加する場合は、このボックスを選択します。
         - **ソース・パス**: リダイレクト・ルールをトリガーする受信パス文字列を指定します。たとえば、/videoです。
@@ -272,24 +303,27 @@ IPハッシュ・ポリシーでは、受信リクエストのソースIPアド�
             - `307 Temporary Redirect`
             - `308 Permanent Redirect`
     - **+別のURLリダイレクト・ルール** (オプション)。このボタンをクリックして別のルールを作成するか、対応する「X」をクリックして既存のルールを削除します。
-1. 「**作成**」をクリックします。
+5. 「**作成**」をクリックします。
 
 ルール・セットを作成すると、関連付けられたロード・バランサでそのセットを使用できるようになります。  
-ルール・セットを適用するには、[リスナーを更新](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#edit)します。
+ルール・セットを適用するには、[リスナーを更新](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#edit){:target="_blank"}します。
 
+**関連情報 ：**
 
-**関連情報：**  
-[ルール・セットの管理](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm)  
-[URLリダイレクト・ルール](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm#redirect)  
-[リスナーを更新](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm#redirect)  
+- [Oracle Cloud Infrastructureドキュメント : ルール・セットの管理](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm){:target="_blank"}
+- [Oracle Cloud Infrastructureドキュメント : URLリダイレクト・ルール](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm#redirect){:target="_blank"}
+- [Oracle Cloud Infrastructureドキュメント : リスナーを更新](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm#redirect){:target="_blank"}
 
+<a href="#main" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+<br />
 
-# <font color="Green">～IPアドレス関連の質問～</font>
+# ロード・バランサでIPv6アドレスを使用するには?
 
+## 質問
 
-# IPv6アドレスを使用するようにロード・バランサを設定するにはどうすればよいですか？
+IPv6アドレスを使用するようにロード・バランサを設定するにはどうすればよいですか？
 
-**簡単な説明：**  
+## 回答
 
 IPv6 アドレスを使用するには、ロード・バランサを作成する際に「**IPv6アドレス割当ての有効化**」を選択してください。  
 ロード・バランサを作成する場合、オプションでIPv4/IPv6デュアルスタック構成を選択できます。IPv6オプションを選択すると、ロード・バランシング・サービスによってIPv4とIPv6アドレスの両方がロード・バランサに割り当てられます。  
@@ -297,53 +331,63 @@ IPv6 アドレスを使用するには、ロード・バランサを作成する
 
 > IPv6アドレスの割当ては、ロード・バランサの作成時にのみ行われます。既存のロード・バランサにIPv6アドレスを割り当てることはできません。
 
-**関連情報：**  
-[IPv6アドレス](https://docs.oracle.com/ja-jp/iaas/Content/Network/Concepts/ipv6.htm)  
-[ロード・バランサ](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Concepts/balanceoverview.htm#Overview_of_Load_Balancing)
+**関連情報 ：**
 
+- [Oracle Cloud Infrastructureドキュメント : IPv6アドレス](https://docs.oracle.com/ja-jp/iaas/Content/Network/Concepts/ipv6.htm){:target="_blank"}
+- [Oracle Cloud Infrastructureドキュメント : ロード・バランサ](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Concepts/balanceoverview.htm#Overview_of_Load_Balancing){:target="_blank"}
 
-# 予約済パブリックIPアドレスを新規もしくは既存のロード・バランサにアタッチするには、どうすればよいですか？
+<a href="#main" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+<br />
 
-**簡単な説明：** 
+# 予約済パブリックIPアドレスを新規もしくは既存のロード・バランサにアタッチする方法は?
+
+## 質問
+
+予約済パブリックIPアドレスを新規もしくは既存のロード・バランサにアタッチするには、どうすればよいですか？
+
+## 回答
 
 新規のロード・バランサを作成する時に「予約済パブリックIPアドレス」の選択が可能ですが、既存のロード・バランサに予約済パブリックIPアドレスをアタッチする方法はございません。
-
-**解決方法：** 
 
 **予約済パブリックIPアドレスを新しいロード・バランサにアタッチする**
 
 - **新規の予約済パブリックIPを作成するには**
 
 1. 予約済パブリックIPを作成するリージョンおよびコンパートメントを表示していることを確認します。
-1. ナビゲーション・メニューを開きます。「**ネットワーキング**」をクリックして、IP管理グループにある「**予約済IP**」をクリックします。
-1. 「**パブリックIPアドレスの作成**」をクリックします。
-1. 次を入力します:
+2. ナビゲーション・メニューを開きます。「**ネットワーキング**」をクリックして、IP管理グループにある「**予約済IP**」をクリックします。
+3. 「**パブリックIPアドレスの作成**」をクリックします。
+4. 次を入力します:
     - **名前**: 予約済パブリックIPアドレスのわかりやすい名前。名前は一意である必要はなく、後で変更できます。機密情報の入力は避けてください。
     - **コンパートメント**: そのままにします。
     - **IPアドレス・ソース**を選択します。
     - (拡張オプション) **タグ**: リソースの作成権限がある場合、そのリソースにフリーフォーム・タグを適用する権限もあります。  
     定義済のタグを適用するには、タグ・ネームスペースを使用する権限が必要です。タグ付けの詳細は、リソース・タグを参照してください。  
     タグを適用すべきかわからない場合は、このオプションをスキップするか(後でタグを適用できます)、管理者に問い合せてください。
-1. 「**パブリックIPの予約**」をクリックします。
+5. 「**パブリックIPの予約**」をクリックします。
 
 作成した予約済パブリックIPアドレスを新規のロード・バランサにアタッチするには、ロード・バランサの作成時に「**予約済IPアドレス**」をクリックし、「**既存の予約済IPアドレスの選択**」を選択します。  
 詳細は、[ロード・バランサの作成](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingloadbalancer.htm)を参照してください。
 
-**関連情報：**  
-[パブリックIPアドレス](https://docs.oracle.com/ja-jp/iaas/Content/Network/Tasks/managingpublicIPs.htm)  
-[ロード・バランサの作成](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingloadbalancer.htm)
+**関連情報 ：**
 
+- [Oracle Cloud Infrastructureドキュメント : パブリックIPアドレス](https://docs.oracle.com/ja-jp/iaas/Content/Network/Tasks/managingpublicIPs.htm){:target="_blank"}
+- [Oracle Cloud Infrastructureドキュメント : ロード・バランサの作成](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingloadbalancer.htm){:target="_blank"}
 
-# <font color="Green">～ヘルス・チェック関連の質問～</font>
+<a href="#main" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+<br />
 
+# ヘルス・チェックの失敗を修正するには?
 
-# ロード・バランサのトラブルシューティングを行い、ヘルス・チェックの失敗を修正するにはどうすればよいですか？
+## 質問
 
-**解決方法：**
+ロード・バランサのトラブルシューティングを行い、ヘルス・チェックの失敗を修正するにはどうすればよいですか？
 
-ロード・バランサをトラブルシューティングし、ヘルス・チェックの失敗を修正するには：  
+## 回答
+
+ロード・バランサをトラブルシューティングし、ヘルス・チェックの失敗を修正するには：
+
 1. ヘルス・チェック・エラーを見つけるために、ロード・バランサのアクセスとエラー・ログを有効にします。詳細については、[ログ管理](https://docs.oracle.com/en-us/iaas/Content/Balance/Tasks/managingloadbalancer_topic-Logging.htm#LogManagement)を参照してください。
-1. 受け取ったヘルス・チェック・エラーについて、考えられる原因と解決策は以下の通りになります。
+2. 受け取ったヘルス・チェック・エラーについて、考えられる原因と解決策は以下の通りになります。
 
 - **No Healthy Backends**  
     - **エラー・メッセージ**:  
@@ -442,9 +486,10 @@ IPv6 アドレスを使用するには、ロード・バランサを作成する
       - 何らかのタイムアウトを報告する依存関係がないか、バックエンド・サーバーのアプリケーション・ログを確認します。  
     - **トラブルシューティング・ドキュメント**: [TCP および HTTPバックエンド・サーバーのテスト](https://docs.oracle.com/en-us/iaas/Content/Balance/Reference/troubleshooting_load_balancer.htm#TestTCPHTTPBackendServers)
 
-**関連情報：**  
-[ログ管理](https://docs.oracle.com/en-us/iaas/Content/Balance/Tasks/managingloadbalancer_topic-Logging.htm#LogManagement)  
-[ロード・バランシングのトラブルシューティング](https://docs.oracle.com/en-us/iaas/Content/Balance/Reference/troubleshooting_load_balancer.htm)  
-[ヘルス・チェック・ポリシーの編集](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/editinghealthcheck.htm)  
-[アクセスとセキュリティ](https://docs.oracle.com/ja-jp/iaas/Content/Network/Concepts/permissions.htm#Access_and_Security)  
-[TCP および HTTPバックエンド・サーバーのテスト](https://docs.oracle.com/en-us/iaas/Content/Balance/Reference/troubleshooting_load_balancer.htm#TestTCPHTTPBackendServers)
+**関連情報 ：**
+
+- [Oracle Cloud Infrastructureドキュメント : ログ管理](https://docs.oracle.com/en-us/iaas/Content/Balance/Tasks/managingloadbalancer_topic-Logging.htm#LogManagement){:target="_blank"}
+- [Oracle Cloud Infrastructureドキュメント : ロード・バランシングのトラブルシューティング](https://docs.oracle.com/en-us/iaas/Content/Balance/Reference/troubleshooting_load_balancer.htm){:target="_blank"}
+- [Oracle Cloud Infrastructureドキュメント : ヘルス・チェック・ポリシーの編集](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/editinghealthcheck.htm){:target="_blank"}
+- [Oracle Cloud Infrastructureドキュメント : アクセスとセキュリティ](https://docs.oracle.com/ja-jp/iaas/Content/Network/Concepts/permissions.htm#Access_and_Security){:target="_blank"}
+- [Oracle Cloud Infrastructureドキュメント : TCP および HTTPバックエンド・サーバーのテスト](https://docs.oracle.com/en-us/iaas/Content/Balance/Reference/troubleshooting_load_balancer.htm#TestTCPHTTPBackendServers){:target="_blank"}
