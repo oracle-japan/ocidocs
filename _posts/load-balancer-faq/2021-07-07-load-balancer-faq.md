@@ -38,7 +38,7 @@ header:
 - [Oracle Cloud Infrastructureドキュメント : セキュリティ・ルール](https://docs.oracle.com/ja-jp/iaas/Content/Network/Concepts/securityrules.htm#Security_Rules){:target="_blank"}
 - [Oracle Cloud Infrastructureドキュメント : バックエンド・サーバーの管理](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingbackendservers.htm#Managing_Backend_Servers){:target="_blank"}
 - [Oracle Cloud Infrastructureドキュメント : ヘルス・ステータス](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingbackendservers.htm#healthstatus){:target="_blank"}
-- [Oracle Cloud Infrastructureドキュメント : HealthCheckResult](https://docs.oracle.com/ja-jp/iaas/api/#/en/loadbalancer/20170115/HealthCheckResult/)  
+- [Oracle Cloud Infrastructureドキュメント : HealthCheckResult](https://docs.oracle.com/ja-jp/iaas/api/#/en/loadbalancer/20170115/HealthCheckResult/){:target="_blank"}  
 
 <a href="#main" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
 <br />
@@ -69,7 +69,7 @@ header:
   6. ダイアログ・ボックスを閉じるには、「**閉じる**」をクリックします。「**作業リクエスト**」ページを開いて作業リクエストのステータスを表示するには、「**すべての作業リクエストの表示**」をクリックします。
 
 仮想ホスト名を作成すると、関連付けられたロード・バランサでその名前を使用できるようになります。  
-ホスト名を適用するには、[リスナーを作成または更新](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#create){:target="_blank"}します。
+ホスト名を適用するには、[リスナーを作成または更新](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#create){:target="_blank"} します。
 
 **関連情報 :**
 - [Oracle Cloud Infrastructureドキュメント : リクエスト・ルーティングの管理](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrequest.htm#routing__vhost){:target="_blank"}
@@ -92,7 +92,7 @@ header:
 次に、ロード・バランサのリスナーを作成または更新するときに、使用する「**パス・ルート・セット**」を指定します。
 リスナーからパス・ルート・セットを削除するには、リスナーを編集し、「**パス・ルート・セット**」オプションとして「**なし**」を選択します。
 
-詳細の手順については、[リクエスト・ルーティングの管理](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrequest.htm#){:target="_blank"}の「パス・ルート・セットを作成するには」を参照してください。
+詳細の手順については、[リクエスト・ルーティングの管理](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrequest.htm#){:target="_blank"} の「パス・ルート・セットを作成するには」を参照してください。
 
 **関連情報 :**
 
@@ -163,7 +163,7 @@ header:
 5. 「**作成**」をクリックします。
 
 ルール・セットを作成すると、関連付けられたロード・バランサでそのセットを使用できるようになります。  
-ルール・セットを適用するには、[リスナーを更新](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#edit){:target="_blank"}します。
+ルール・セットを適用するには、[リスナーを更新](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#edit){:target="_blank"} します。
 
 **関連情報 :**
 - [Oracle Cloud Infrastructureドキュメント : ルール・セットの管理](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm){:target="_blank"}
@@ -180,7 +180,7 @@ header:
 
 ## 回答
 
-[ロード・バランサを作成](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingloadbalancer.htm#Managing_Load_Balancers){:target="_blank"}した後に、トラフィック分散を制御するポリシーであるIPハッシュ・ポリシーをバックエンド・サーバーに適用することで、送信元IPアドレスのハッシュキーに基づいたトラフィックのルーティングが可能です。  
+[ロード・バランサを作成](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingloadbalancer.htm#Managing_Load_Balancers){:target="_blank"} した後に、トラフィック分散を制御するポリシーであるIPハッシュ・ポリシーをバックエンド・サーバーに適用することで、送信元IPアドレスのハッシュキーに基づいたトラフィックのルーティングが可能です。  
 IPハッシュ・ポリシーでは、受信リクエストのソースIPアドレスがハッシュ・キーとして使用され、スティッキーではないトラフィックが同じバックエンド・サーバーにルーティングされます。  
 ロード・バランサは、サーバーが使用可能であるかぎり、同じクライアントから同じバックエンド・サーバーにリクエストをルーティングします。
 
@@ -199,7 +199,7 @@ IPハッシュ・ポリシーでは、受信リクエストのソースIPアド�
 
 ## 回答
 
-ロード・バランサのリスナーに適用されるルール・セットの[URLリダイレクト・ルール](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm#redirect)を作成する事で、HTTPからHTTPSへのリダイレクト、ドメイン名のリダイレクトやパスベースでのリダイレクトが可能です。
+ロード・バランサのリスナーに適用されるルール・セットの[URLリダイレクト・ルール](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm#redirect){:target="_blank"} を作成する事で、HTTPからHTTPSへのリダイレクト、ドメイン名のリダイレクトやパスベースでのリダイレクトが可能です。
 
 ルール・セットをリスナーに適用するには、最初に、ルールが含まれるルール・セットを作成します。  
 ロード・バランサのリスナーを作成または更新するときに、使用するルール・セットを指定できます。
@@ -244,7 +244,7 @@ IPハッシュ・ポリシーでは、受信リクエストのソースIPアド�
 5. 「**作成**」をクリックします。
 
 ルール・セットを作成すると、関連付けられたロード・バランサでそのセットを使用できるようになります。  
-ルール・セットを適用するには、[リスナーを更新](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#edit){:target="_blank"}します。
+ルール・セットを適用するには、[リスナーを更新](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#edit){:target="_blank"} します。
 
 **関連情報 :**
 - [Oracle Cloud Infrastructureドキュメント : ルール・セットの管理](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm){:target="_blank"}
@@ -306,7 +306,7 @@ IPハッシュ・ポリシーでは、受信リクエストのソースIPアド�
 5. 「**作成**」をクリックします。
 
 ルール・セットを作成すると、関連付けられたロード・バランサでそのセットを使用できるようになります。  
-ルール・セットを適用するには、[リスナーを更新](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#edit){:target="_blank"}します。
+ルール・セットを適用するには、[リスナーを更新](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#edit){:target="_blank"} します。
 
 **関連情報 ：**
 
@@ -366,7 +366,7 @@ IPv6 アドレスを使用するには、ロード・バランサを作成する
 5. 「**パブリックIPの予約**」をクリックします。
 
 作成した予約済パブリックIPアドレスを新規のロード・バランサにアタッチするには、ロード・バランサの作成時に「**予約済IPアドレス**」をクリックし、「**既存の予約済IPアドレスの選択**」を選択します。  
-詳細は、[ロード・バランサの作成](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingloadbalancer.htm)を参照してください。
+詳細は、[ロード・バランサの作成](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingloadbalancer.htm){:target="_blank"} を参照してください。
 
 **関連情報 ：**
 
@@ -386,7 +386,7 @@ IPv6 アドレスを使用するには、ロード・バランサを作成する
 
 ロード・バランサをトラブルシューティングし、ヘルス・チェックの失敗を修正するには：
 
-1. ヘルス・チェック・エラーを見つけるために、ロード・バランサのアクセスとエラー・ログを有効にします。詳細については、[ログ管理](https://docs.oracle.com/en-us/iaas/Content/Balance/Tasks/managingloadbalancer_topic-Logging.htm#LogManagement)を参照してください。
+1. ヘルス・チェック・エラーを見つけるために、ロード・バランサのアクセスとエラー・ログを有効にします。詳細については、[ログ管理](https://docs.oracle.com/en-us/iaas/Content/Balance/Tasks/managingloadbalancer_topic-Logging.htm#LogManagement){:target="_blank"} を参照してください。
 2. 受け取ったヘルス・チェック・エラーについて、考えられる原因と解決策は以下の通りになります。
 
 - **No Healthy Backends**  
@@ -400,7 +400,7 @@ IPv6 アドレスを使用するには、ロード・バランサを作成する
     - **可能な解決策**:  
       - バックエンドがヘルス・チェックに応答しない理由を特定します。    
       - ステータス・コード、正規表現、間隔、タイムアウト、ポート、プロトコルなどのヘルス・チェック設定を確認して調整します。  
-    - **トラブルシューティング・ドキュメント**: [ヘルス・チェック・ポリシーの編集](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/editinghealthcheck.htm)  
+    - **トラブルシューティング・ドキュメント**: [ヘルス・チェック・ポリシーの編集](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/editinghealthcheck.htm){:target="_blank"}  
 
 - **Status Code Issues**  
     - **エラー・メッセージ**:  
@@ -417,7 +417,7 @@ IPv6 アドレスを使用するには、ロード・バランサを作成する
     - **可能な解決策**:  
       - バックエンドが間違った応答コードを送信している理由を特定してください。
       - ヘルス・チェックのパスまたはステータス・コードを調整して、バックエンドに一致させます。  
-    - **トラブルシューティング・ドキュメント**: [ヘルス・チェック・ポリシーの編集](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/editinghealthcheck.htm)  
+    - **トラブルシューティング・ドキュメント**: [ヘルス・チェック・ポリシーの編集](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/editinghealthcheck.htm){:target="_blank"}  
 
 - **Response Match Failed**  
     - **エラー・メッセージ**:  
@@ -432,7 +432,7 @@ IPv6 アドレスを使用するには、ロード・バランサを作成する
     - **可能な解決策**:  
       - バックエンドが正しくない本文を送信している理由を特定してください。  
       - ヘルス・チェックのパスまたは正規表現パターンを調整して、バックエンドに一致させます。  
-    - **トラブルシューティング・ドキュメント**: [ヘルス・チェック・ポリシーの編集](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/editinghealthcheck.htm)  
+    - **トラブルシューティング・ドキュメント**: [ヘルス・チェック・ポリシーの編集](https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/editinghealthcheck.htm){:target="_blank"}  
 
 - **Unreachable Host**  
     - **エラー・メッセージ**:  
@@ -451,7 +451,7 @@ IPv6 アドレスを使用するには、ロード・バランサを作成する
       - インスタンスのファイアウォールをチェックして、トラフィックが許可されていることを確認します。  
       - インスタンスをチェックして、アプリケーションが実行されていることを確認します。  
       - ネットワーク・セキュリティ・グループとセキュリティ・リストをチェックして、トラフィックが許可されていることを確認します。  
-    - **トラブルシューティング・ドキュメント**: [アクセスとセキュリティ](https://docs.oracle.com/ja-jp/iaas/Content/Network/Concepts/permissions.htm#Access_and_Security)    
+    - **トラブルシューティング・ドキュメント**: [アクセスとセキュリティ](https://docs.oracle.com/ja-jp/iaas/Content/Network/Concepts/permissions.htm#Access_and_Security){:target="_blank"}    
 
 - **Health Status Issues**  
     - **エラー・メッセージ**:  
@@ -484,7 +484,7 @@ IPv6 アドレスを使用するには、ロード・バランサを作成する
       - バックエンドに対してローカル・テストを実行して、ロード・バランサを原因として排除します。  
       - すべてのアップストリームの依存関係のパフォーマンスを確認します。  
       - 何らかのタイムアウトを報告する依存関係がないか、バックエンド・サーバーのアプリケーション・ログを確認します。  
-    - **トラブルシューティング・ドキュメント**: [TCP および HTTPバックエンド・サーバーのテスト](https://docs.oracle.com/en-us/iaas/Content/Balance/Reference/troubleshooting_load_balancer.htm#TestTCPHTTPBackendServers)
+    - **トラブルシューティング・ドキュメント**: [TCP および HTTPバックエンド・サーバーのテスト](https://docs.oracle.com/en-us/iaas/Content/Balance/Reference/troubleshooting_load_balancer.htm#TestTCPHTTPBackendServers){:target="_blank"}
 
 **関連情報 ：**
 
