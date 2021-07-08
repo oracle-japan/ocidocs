@@ -1,0 +1,1258 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.21.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="ja" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>ブロック・ボリューム・サービス 技術FAQ | Oracle Cloud Infrastructure 活用資料集</title>
+<meta name="description" content="Oracle Cloud Infrastructure ブロック・ボリューム・サービスに関して、利用時のよくある質問に対する回答や、技術的な問題に対する対処策をまとめています。">
+
+
+  <meta name="author" content="Oracle Japan Solution Engineers">
+  
+  <meta property="article:author" content="Oracle Japan Solution Engineers">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="Oracle Cloud Infrastructure 活用資料集">
+<meta property="og:title" content="ブロック・ボリューム・サービス 技術FAQ">
+<meta property="og:url" content="https://oracle-japan.github.io/ocidocs/faq/storage/block-volumes-faq/">
+
+
+  <meta property="og:description" content="Oracle Cloud Infrastructure ブロック・ボリューム・サービスに関して、利用時のよくある質問に対する回答や、技術的な問題に対する対処策をまとめています。">
+
+
+
+  <meta property="og:image" content="https://oracle-japan.github.io/ocidocs/assets/images/rh01-cloud-home-pine-background.jpg">
+
+
+
+
+
+  <meta property="article:published_time" content="2021-07-07T00:00:00+09:00">
+
+
+
+
+
+
+<link rel="canonical" href="https://oracle-japan.github.io/ocidocs/faq/storage/block-volumes-faq/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "https://oracle-japan.github.io/ocidocs/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/ocidocs/feed.xml" type="application/atom+xml" rel="alternate" title="Oracle Cloud Infrastructure 活用資料集 Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/ocidocs/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--faq">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/ocidocs/"><img src="/ocidocs/assets/images/social-og-oracle-badge.jpg" alt=""></a>
+        
+        <a class="site-title" href="/ocidocs/">
+          OCI活用資料集
+          <span class="site-subtitle">Oracle Cloud Infrastructure を使い倒すための資料集</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/ocidocs/updates/">新機能</a>
+            </li><li class="masthead__menu-item">
+              <a href="/ocidocs/services/">サービス別資料</a>
+            </li><li class="masthead__menu-item">
+              <a href="/ocidocs/solutions/">ソリューション別資料</a>
+            </li><li class="masthead__menu-item">
+              <a href="/ocidocs/faqs/">技術FAQ</a>
+            </li><li class="masthead__menu-item">
+              <a href="/ocidocs/misc/">その他</a>
+            </li><li class="masthead__menu-item">
+              <a href="/ocidocs/links/">外部リンク</a>
+            </li><li class="masthead__menu-item">
+              <a href="/ocidocs/tags/">タグ</a>
+            </li><li class="masthead__menu-item">
+              <a href="/ocidocs/about/">このサイトについて</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">メニュー</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: url('/ocidocs/assets/images/rh01-cloud-home-pine-background.jpg');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          ブロック・ボリューム・サービス 技術FAQ
+
+        
+      </h1>
+      
+        <p class="page__lead">Oracle Cloud Infrastructure ブロック・ボリューム・サービスに関する技術FAQです<br />サービス仕様に関する⼀般的な質問や、既知の問題については下記の外部リンクもご参照ください
+</p>
+      
+      
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-07-07T00:00:00+09:00">July 7, 2021</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+      
+      
+        <p>
+        
+          <a href="https://www.oracle.com/jp/cloud/storage/block-volumes-faq.html" class="btn btn--light-outline btn--large">Block Volumesに関するよくある質問</a>
+        
+          <a href="https://docs.oracle.com/ja-jp/iaas/Content/knownissues.htm#knownBlock" class="btn btn--light-outline btn--large">既知の問題 - ブロック・ボリューム</a>
+        
+      
+    </div>
+  
+  
+    <span class="page__hero-caption"><a href="https://design.oracle.com/">Oracle Redwood</a>
+</span>
+  
+</div>
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">メニュー</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          <a href="/ocidocs/updates/"><span class="nav__sub-title">新機能</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          <a href="/ocidocs/services/"><span class="nav__sub-title">サービス別資料</span></a>
+        
+
+        
+        <ul>
+          
+            <li><a href="/ocidocs/services/overall/">サービス全般</a></li>
+          
+            <li><a href="/ocidocs/services/compute/">コンピュート</a></li>
+          
+            <li><a href="/ocidocs/services/storage/">ストレージ</a></li>
+          
+            <li><a href="/ocidocs/services/networking/">ネットワーク</a></li>
+          
+            <li><a href="/ocidocs/services/database/">データベース</a></li>
+          
+            <li><a href="/ocidocs/services/developers/">開発者サービス</a></li>
+          
+            <li><a href="/ocidocs/services/edge/">エッジ・サービス</a></li>
+          
+            <li><a href="/ocidocs/services/security/">セキュリティ</a></li>
+          
+            <li><a href="/ocidocs/services/governance-and-administration/">ガバナンスと管理</a></li>
+          
+            <li><a href="/ocidocs/services/devtools/">開発ツール</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <a href="/ocidocs/solutions/"><span class="nav__sub-title">ソリューション別資料</span></a>
+        
+
+        
+        <ul>
+          
+            <li><a href="/ocidocs/solutions/ha/">HA・DR・高可用性システム</a></li>
+          
+            <li><a href="/ocidocs/solutions/iam/">認証・認可・セキュリティ</a></li>
+          
+            <li><a href="/ocidocs/solutions/manageability/">運用・管理</a></li>
+          
+            <li><a href="/ocidocs/solutions/cloudnative/">Cloud Native</a></li>
+          
+            <li><a href="/ocidocs/solutions/blockchain/">Blockchain</a></li>
+          
+            <li><a href="/ocidocs/solutions/others/">その他</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <a href="/ocidocs/faqs/"><span class="nav__sub-title">技術FAQ</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          <a href="/ocidocs/misc/"><span class="nav__sub-title">その他</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          <a href="/ocidocs/links/"><span class="nav__sub-title">外部リンク</span></a>
+        
+
+        
+      </li>
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="ブロック・ボリューム・サービス 技術FAQ">
+    <meta itemprop="description" content="Oracle Cloud Infrastructure ブロック・ボリューム・サービスに関して、利用時のよくある質問に対する回答や、技術的な問題に対する対処策をまとめています。">
+    <meta itemprop="datePublished" content="2021-07-07T00:00:00+09:00">
+    
+
+    <div class="page__inner-wrap">
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 目次</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#課金を完全に停止するには">課金を完全に停止するには?</a></li>
+  <li><a href="#複数ボリュームの同時点のバックアップを取得するには">複数ボリュームの同時点のバックアップを取得するには?</a></li>
+  <li><a href="#バックアップにかかるストレージ料金はどのように確認できますか">バックアップにかかるストレージ料金はどのように確認できますか?</a></li>
+  <li><a href="#顧客管理キーを使用したボリュームの作成方法は">顧客管理キーを使用したボリュームの作成方法は?</a></li>
+  <li><a href="#ボリュームの使用量に対してアラームを設定することは可能">ボリュームの使用量に対してアラームを設定することは可能?</a></li>
+  <li><a href="#特定のリソースに関する操作ログの確認方法は">特定のリソースに関する操作ログの確認方法は?</a></li>
+  <li><a href="#ボリュームのサービス制限の引上げ方法">ボリュームのサービス制限の引上げ方法</a></li>
+  <li><a href="#ボリュームを別テナントに移動する方法">ボリュームを別テナントに移動する方法</a></li>
+  <li><a href="#インスタンスがアタッチされたボリュームを認識しない">インスタンスがアタッチされたボリュームを認識しない</a></li>
+  <li><a href="#ボリュームをアタッチした後パーティションやファイルシステムを作成するには">ボリュームをアタッチした後、パーティションやファイルシステムを作成するには?</a></li>
+  <li><a href="#ボリュームのサイズの拡張をosに反映させるには">ボリュームのサイズの拡張をOSに反映させるには?</a></li>
+  <li><a href="#アタッチされているブロックボリュームをインスタンス構成に含める方法">アタッチされているブロック・ボリュームをインスタンス構成に含める方法</a></li>
+</ul>
+
+            </nav>
+          </aside>
+        
+        <h1 id="課金を完全に停止するには">課金を完全に停止するには?</h1>
+
+<h2 id="質問">質問</h2>
+
+<p>コンピュート・インスタンスをすべて削除しましたが、ブロック・ボリュームに対する課金が継続しています。完全に課金を停止するためには、何を確認すべきですか?</p>
+
+<h2 id="回答">回答</h2>
+
+<p>ブロック・ボリューム(またはブート・ボリューム)は、リソースが削除されるまで課金が継続します。下記３つの観点で全てのリソースが削除されているかを確認してください。</p>
+
+<ul>
+  <li>
+    <p><strong>ブート・ボリュームの削除</strong></p>
+
+    <p>コンピュート・インスタンスの削除時に「アタッチされたブート・ボリュームを完全に削除」というチェック・ボックスを有効にしない限り、ブート・ボリュームは削除されません。<br />
+  不要な場合は、チェックを有効化した上でコンピュート・インスタンスを終了してください。<br />
+  チェックを有効化せずに終了した場合、Oracle Cloud Infrastructure ドキュメント：<a href="https://docs.oracle.com/ja-jp/iaas/Content/Block/Tasks/deletingbootvolume.htm">ブート・ボリュームの削除</a> 手順に従って、不要なボリュームを削除してください。</p>
+  </li>
+  <li>
+    <p><strong>ブロック・ボリュームの削除</strong></p>
+
+    <p>コンピュート・インスタンスを削除しても、アタッチされたブロック・ボリュームが同時に削除されることはありません。Oracle Cloud Infrastructure ドキュメント：<a href="https://docs.oracle.com/ja-jp/iaas/Content/Block/Tasks/deletingavolume.htm">ボリュームの削除</a> 手順に従って、不要なボリュームを削除してください。<br />
+  なお、コンピュート・インスタンスにアタッチされた状態では削除ができません。Oracle Cloud Infrastructure ドキュメント：<a href="https://docs.oracle.com/ja-jp/iaas/Content/Block/Tasks/detachingavolume.htm">ボリュームのデタッチ</a> 手順に従って、デタッチを行ってください。</p>
+  </li>
+  <li>
+    <p><strong>バックアップの削除</strong></p>
+
+    <p>手動で作成したバックアップは、バックアップ元のボリュームを削除しても、同時に削除されることはありません。(ただし、ポリシー・ベースで取得したバックアップは、ボリュームの削除と共に削除されます)<br />
+  ブロック・ボリューム(またはブート・ボリューム)のバックアップ一覧を確認し、不要なバックアップを削除してください。</p>
+  </li>
+</ul>
+
+<p><a href="#main" class="back-to-top">Back to Top ↑</a>
+<br /></p>
+
+<h1 id="複数ボリュームの同時点のバックアップを取得するには">複数ボリュームの同時点のバックアップを取得するには?</h1>
+
+<h2 id="質問-1">質問</h2>
+
+<p>コンピュート・インスタンスに複数のブロック・ボリュームをアタッチしています。
+ブート・ボリュームを含めた全てのボリュームに対して、同一時点でのバックアップを取得したいと考えています。
+どのように取得できますか?</p>
+
+<h2 id="回答-1">回答</h2>
+
+<p>ボリューム・グループを構成することで、対象の ブロック・ボリューム および ブート・ボリューム を含めた複数のボリュームに対するバックアップが取得可能です。</p>
+
+<p>ただし、ボリューム・グループに含むことができるのは、最大32個 (最大サイズの制限は128 TB) のボリュームです。また、各ボリュームが所属できるボリューム・グループは 1つのみです。</p>
+
+<p>詳細は Oracle Cloud Infrastructure ドキュメント：<a href="https://docs.oracle.com/ja-jp/iaas/Content/Block/Concepts/volumegroups.htm">ボリューム・グループ</a> および <a href="https://docs.oracle.com/ja-jp/iaas/Content/Block/Concepts/volumegroups.htm#unique_643775725">ボリューム・グループ・バックアップ</a> を参照してください。</p>
+
+<p class="notice--warning"><strong>注意：顧客管理キーを使用して暗号化されたボリュームのリージョン間バックアップに関して</strong><br />
+既知の問題として、Vault サービスの暗号化キーを使用して暗号化されたボリュームに対して、クロス・リージョン・コピーが有効なバックアップ・ポリシーを使用している場合、暗号化キーは ボリューム・バックアップとともに宛先リージョンにコピーされません。
+暗号化キーの代わりに、宛先リージョンのボリューム・バックアップ・コピーは、Oracleが提供するキーを使用して暗号化されます。<br />
+回避策などの詳細については <a href="https://docs.oracle.com/en-us/iaas/Content/knownissues.htm#xregioncopyKMSkeyknownissue">スケジュール済のリージョン間バックアップ・コピーでボールト暗号化キーが宛先リージョンにコピーされない問題</a> をご参照ください。</p>
+
+<p><a href="#main" class="back-to-top">Back to Top ↑</a>
+<br /></p>
+
+<h1 id="バックアップにかかるストレージ料金はどのように確認できますか">バックアップにかかるストレージ料金はどのように確認できますか?</h1>
+
+<h2 id="質問-2">質問</h2>
+
+<p>ブロック・ボリューム(またはブート・ボリューム)のバックアップを取得しています。バックアップにかかる料金はどのように計算されますか?また、どのように確認できますか?</p>
+
+<h2 id="回答-2">回答</h2>
+
+<p>ブロック・ボリューム(またはブート・ボリューム)のバックアップは、Oracle Cloud Infrastructure オブジェクト・ストレージ に保存され、そのサイズに応じて、オブジェクト・ストレージの料金がかかります。階層は、常に Standard (標準) 層です。オブジェクト・ストレージの価格については、<a href="https://www.oracle.com/jp/cloud/storage/pricing.html">Object Storageの価格</a>を参照してください。</p>
+
+<p>バックアップのサイズは、コンソール画面から確認ができます。</p>
+
+<ul>
+  <li>
+    <p><strong>ブロック・ボリューム</strong></p>
+
+    <p>コンソール画面 → ストレージ → ブロック・ストレージ → ブロック・ボリュームのバックアップ にアクセスし、バックアップ・リストの「バックアップ・サイズ/ボリューム・サイズ(GB)」から確認します。</p>
+  </li>
+  <li>
+    <p><strong>ブート・ボリューム</strong></p>
+
+    <p>コンソール画面 → ストレージ → ブロック・ストレージ → ブート・ボリューム・バックアップ にアクセスし、バックアップ・リストの「バックアップ・サイズ/ボリューム・サイズ(GB)」から確認します。</p>
+  </li>
+</ul>
+
+<p>なお、バックアップを複数世代 取得している場合などに、古い世代を削除すると、その次の世代のバックアップ・サイズが古い世代のサイズを考慮した値で 更新されます。</p>
+
+<p>例えば、世代１：フルバックアップ 50GB、世代２：増分バックアップ 2GB、世代３：増分バックアップ 5GB、とあった場合に、世代１を削除すると、世代２のバックアップ・サイズが、前の世代のサイズを含む「52GB」のように更新されます。</p>
+
+<p>これは、OCI のブロック・ボリュームが、前の世代を削除された場合も、次の世代に影響なく復元できる仕様になっているためです。従って、古い世代を削除することが 必ずしも容量削減につながらない可能性があることに注意してください。</p>
+
+<p>詳細は、OCI技術資料 : ブロック・ボリューム 概要 の <a href="https://speakerdeck.com/ocise/ociji-shu-zi-liao-burotukuboriyumu-gai-yao?slide=18">バックアップとリストア</a> を参照してください。</p>
+
+<p><a href="#main" class="back-to-top">Back to Top ↑</a>
+<br /></p>
+
+<h1 id="顧客管理キーを使用したボリュームの作成方法は">顧客管理キーを使用したボリュームの作成方法は?</h1>
+
+<h2 id="質問-3">質問</h2>
+
+<p>顧客管理キーを使用し、ブロック・ボリューム(または ブート・ボリューム)を暗号化したいと考えています。
+ボリュームの作成時に ボールト と マスター暗号化キー をそれぞれ指定しましたが、「<em>Authorization failed or requested resource not found.</em>」というエラー・メッセージが表示され、作成ができません。<br />
+どのように設定すべきですか?</p>
+
+<h2 id="回答-3">回答</h2>
+
+<p>エラー・メッセージの内容から、必要な権限が不足していると考えられます。
+キーを使用するためには、「サービス自体にキーの使用が許可されていること」および「ユーザーがリソースにキーを関連づける権限を持っていること」の２つの条件が満たされている必要があります。</p>
+
+<ul>
+  <li>
+    <p><strong>各サービスがキーを使用する権限</strong></p>
+
+    <p>Vault(顧客管理キー)を使用する場合、各サービスに対して Vault サービスの使用権限を付与する必要があります。
+  ブロック・ボリューム(または ブート・ボリューム)に Vault の使用許可を与える場合のサンプル・ポリシーは以下の通りです。</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  Allow service blockstorage to use keys in compartment &lt;compartment_name&gt; where target.key.id = '&lt;key_OCID&gt;'
+</code></pre></div>    </div>
+
+    <p>詳細は Oracle Cloud Infrastructure ドキュメント：共通ポリシー - <a href="https://docs.oracle.com/ja-jp/iaas/Content/Identity/Concepts/commonpolicies.htm#services-use-key">ブロック・ボリューム (略) によるボリューム (略) の暗号化と復号化</a> を参照してください。</p>
+  </li>
+  <li>
+    <p><strong>ユーザーがキーの使用をサービスに委任する権限</strong></p>
+
+    <p>ユーザーにキーの委任権限(または包括的な使用権限)がない場合、各サービスに Vault(顧客管理キー)を関連づけることができません。以下のポリシーを参考に、キーの使用を委任する権限を設定してください。</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  Allow group &lt;group_name&gt; to use key-delegate in compartment &lt;compartment_name&gt; where target.key.id = '&lt;key_OCID&gt;'
+</code></pre></div>    </div>
+
+    <p>詳細は Oracle Cloud Infrastructure ドキュメント：共通ポリシー - <a href="https://docs.oracle.com/ja-jp/iaas/Content/Identity/Concepts/commonpolicies.htm#os-bv-admins-use-key-id">ユーザー・グループによるコンパートメントのキーの使用の委任</a> を参照してください。</p>
+  </li>
+</ul>
+
+<p>その他、詳細については、Oracle Cloud Infrastructure ドキュメント：キーの使用 - <a href="https://docs.oracle.com/ja-jp/iaas/Content/KeyManagement/Tasks/usingkeys.htm#permissions">必須IAMポリシー</a> も合わせて参照してください。</p>
+
+<p><a href="#main" class="back-to-top">Back to Top ↑</a>
+<br /></p>
+
+<h1 id="ボリュームの使用量に対してアラームを設定することは可能">ボリュームの使用量に対してアラームを設定することは可能?</h1>
+
+<h2 id="質問-4">質問</h2>
+
+<p>ブロック・ボリューム(またはブート・ボリューム)の実使用量が、指定した値を超過した際に、通知するようアラームを構成したいと考えています。どのように実現できますか?</p>
+
+<h2 id="回答-4">回答</h2>
+
+<p>ブロック・ボリューム(またはブート・ボリューム)の実使用量は、ブロック・ボリューム・メトリックに含まれていません。そのため、モニタリングを利用して実使用量を監視したい場合は、カスタムメトリックを構成する必要があります。カスタム・メトリックについては、Oracle Cloud Infrastructure ドキュメント：<a href="https://docs.oracle.com/ja-jp/iaas/Content/Monitoring/Tasks/publishingcustommetrics.htm">カスタム・メトリックの公開</a> を参照してください。</p>
+
+<p>大まかな流れとしては、対象のボリュームに対して df や free コマンドを実行し、容量に関する情報を取得します。取得した情報をカスタム・メトリックとして、<a href="https://docs.oracle.com/en-us/iaas/api/#/en/monitoring/20180401/MetricData/PostMetricData">PostMetricData</a> API を使用し、カスタム・メトリックとして発行します。</p>
+
+<p>または、<a href="https://docs.oracle.com/cd/E83857_01/paas/management-cloud/index.html">Oracle Management Cloud</a>サービスを使用し、監視することも可能です。</p>
+
+<p><a href="#main" class="back-to-top">Back to Top ↑</a>
+<br /></p>
+
+<h1 id="特定のリソースに関する操作ログの確認方法は">特定のリソースに関する操作ログの確認方法は?</h1>
+
+<h2 id="質問-5">質問</h2>
+
+<p>監査(Audit)ログを利用し、ブロック・ボリュームの削除など、特定のブロック・ボリューム(またはブート・ボリューム)に関するアクティビティを監視するには、どのように設定すべきですか?</p>
+
+<h2 id="回答-5">回答</h2>
+
+<ul>
+  <li>
+    <p><strong>コンソールでの確認方法</strong></p>
+
+    <p>コンソールから監査(Audit)ログの確認を行う場合、ロギングの監査ページから検索が行えます。フィルタリング項目にて、対象のリソースや、イベント・タイプを設定することで、特定のリソースに関する、特定のアクティビティを確認することができます。詳細は Oracle Cloud Infrastructure ドキュメント：<a href="https://docs.oracle.com/ja-jp/iaas/Content/Logging/Concepts/audit_logs.htm">監査ログのフィルタリング</a> をご参照ください。</p>
+
+    <p>参考として、ボリュームに関連する主なイベント・タイプには下記のような種類があります。</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>イベント・タイプ</th>
+          <th>操作の概要</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>com.oraclecloud.BlockVolumes.CreateVolume.begin</td>
+          <td>ボリュームの作成を開始</td>
+        </tr>
+        <tr>
+          <td>com.oraclecloud.BlockVolumes.DeleteVolume.begin</td>
+          <td>ボリュームの削除を開始</td>
+        </tr>
+        <tr>
+          <td>com.oraclecloud.BlockVolumes.UpdateVolume.begin</td>
+          <td>ボリュームのアップデートを開始(サイズの拡張、パフォーマンスの自動チューニングの有効化など)</td>
+        </tr>
+        <tr>
+          <td>com.oraclecloud.computeApi.AttachVolume.begin</td>
+          <td>コンピュート・インスタンスに対してボリュームのアタッチを開始</td>
+        </tr>
+        <tr>
+          <td>com.oraclecloud.computeApi.DetachVolume.begin</td>
+          <td>コンピュート・インスタンスに対してボリュームのデタッチを開始</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <p><strong>コマンドラインでの確認方法</strong></p>
+
+    <p>コマンドラインで監査ログの確認を行う場合は、ログの検索専用の問合せ構文を用いて検索します。下記にコマンドの例を示しますが、詳細は Oracle Cloud Infrastructure ドキュメント：<a href="https://docs.oracle.com/ja-jp/iaas/Content/Logging/Concepts/searchinglogs.htm#using_the_cli_logsearch">ログの検索</a> をご参照ください。</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  oci logging-search search-logs --search-query "search \"&lt;compartment-id&gt;/_Audit\" | sort by datetime desc" --time-start 2021-01-01 --time-end 2021-01-31
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p><a href="#main" class="back-to-top">Back to Top ↑</a>
+<br /></p>
+
+<h1 id="ボリュームのサービス制限の引上げ方法">ボリュームのサービス制限の引上げ方法</h1>
+
+<h2 id="質問-6">質問</h2>
+
+<p>ブロック・ボリューム(またはブート・ボリューム)を作成しようとしましたが、サービス制限に達したため、作成できません。サービス制限の引上げを行うにはどのようにすべきですか?</p>
+
+<h2 id="回答-6">回答</h2>
+
+<p>ブロック・ボリューム(またはブート・ボリューム)を利用するには、「Volume Count」「Volume Size (GB)」に対するリクエストを挙げる必要があります。「Volume Count」はボリュームの数、「Volume Size (GB)」はボリュームの総量を意味しています。</p>
+
+<p>自身のテナントが、どの制限に達しているのかを確認するには、コンソール画面 → ガバナンスと管理 → 制限、割当ておよび使用状況 から確認できます。サービスを「Block Volume」、スコープを「対象の可用性ドメイン」で指定し、現在の使用状況を確認してください。</p>
+
+<p>リクエストは、コンソール画面のヘルプ、または、My Oracle Support より可能です。</p>
+
+<p><img src="block-volumes-faq-image1.png" alt="block-volumes-faq-image1.png" /></p>
+
+<p><a href="#main" class="back-to-top">Back to Top ↑</a>
+<br /></p>
+
+<h1 id="ボリュームを別テナントに移動する方法">ボリュームを別テナントに移動する方法</h1>
+
+<h2 id="質問-7">質問</h2>
+
+<p>ブロック・ボリューム(またはブート・ボリューム)を別のテナントに移動したいと考えています。どのように実現できますか?</p>
+
+<h2 id="回答-7">回答</h2>
+
+<p>現時点では、ブロック・ボリュームやブート・ボリュームを直接的に別テナントへ移動することはできません。従って、対象のテナントの コンピュート・インスタンス間で通信できるように構成し、robocopy や rsync コマンドを利用し、ボリューム間でデータをコピーする必要があります。</p>
+
+<p>コンピュート・インスタンス間の通信をプライベートに行いたい場合は、ローカル・ピアリングを構成することで、別テナント間でもプライベート接続が可能です。</p>
+
+<p>なお、移動対象がブート・ボリュームだけであり、且つ、400GB以下のサイズであれば、カスタム・イメージ化し、オブジェクト・ストレージを介することで移動を実現できます。(参考：Oracle Cloud Infrastructure ドキュメント：<a href="https://docs.oracle.com/ja-jp/iaas/Content/Compute/Tasks/imageimportexport.htm#Exporting">イメージのエクスポート</a>)</p>
+
+<p><a href="#main" class="back-to-top">Back to Top ↑</a>
+<br /></p>
+
+<h1 id="インスタンスがアタッチされたボリュームを認識しない">インスタンスがアタッチされたボリュームを認識しない</h1>
+
+<h2 id="質問-8">質問</h2>
+
+<p>コンピュート・インスタンスに、ブロック・ボリュームを新規に追加しました。接続方法は、「iSCSI」を選択しています。OSまたはディスク管理で確認すると、追加したブロック・ボリュームが反映されていないようです。この問題を解決する方法を教えてください。</p>
+
+<h2 id="回答-8">回答</h2>
+
+<p>アタッチ・タイプに「iSCSI」を選択した場合、iSCSIコマンドを実行するなど、iSCSI 接続を構成する必要があります。アタッチ完了後、アタッチされたブロック・ボリュームの一覧から、対象のブロック・ボリュームのメニューから「iSCSIコマンドおよび情報」を選択することで、iSCSI 接続を構成するために必要な情報を表示することができます。</p>
+
+<p>詳細については Oracle Cloud Infrastructure ドキュメント：<a href="https://docs.oracle.com/ja-jp/iaas/Content/Block/Concepts/iscsiinformation.htm">iSCSIコマンドおよび情報</a> を参照してください。</p>
+
+<ul>
+  <li><strong>Windows OS の場合</strong>：<a href="https://docs.oracle.com/ja-jp/iaas/Content/GSG/Tasks/addingstorageForWindows.htm#Attachin">Windowsインスタンスへのブロック・ボリュームの追加</a></li>
+  <li><strong>Linux ベース OS の場合</strong>：<a href="https://docs.oracle.com/ja-jp/iaas/Content/GSG/Tasks/addingstorage.htm#Attachin">ブロック・ボリュームの追加</a></li>
+</ul>
+
+<p>下記イメージは、Linux ベース OS の場合の「iSCSIコマンドおよび情報」の例です。</p>
+
+<p><img src="block-volumes-faq-image2.png" alt="block-volumes-faq-image2.png" /></p>
+
+<p><a href="#main" class="back-to-top">Back to Top ↑</a>
+<br /></p>
+
+<h1 id="ボリュームをアタッチした後パーティションやファイルシステムを作成するには">ボリュームをアタッチした後、パーティションやファイルシステムを作成するには?</h1>
+
+<h2 id="質問-9">質問</h2>
+
+<p>Linux ベース OS のコンピュート・インスタンスに、ブロック・ボリュームを新規に追加しました。接続は完了しています。追加したボリュームに対して、パーティションや Linux ファイルシステムを作成するには、どうしたら良いですか?</p>
+
+<h2 id="回答-9">回答</h2>
+
+<p>ここでは、例として、Oracle Linux 7.9 での構成手順を示します。ご利用のインスタンスのファイルシステム、および、パーティションテーブルに合わせて、読み替えてください。</p>
+
+<div class="notice--info">
+  
+<p><strong>1. パーティションの作成</strong></p>
+
+<p>パーティションを作成するボリュームを特定するために、次のコマンドを実行して、アタッチされたブロック・ボリュームをリストします。</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>lsblk
+</code></pre></div></div>
+
+<p>コマンドの結果の例を以下に示します。この例では、「sdc」というボリュームがパーティションを作成する対象のボリュームです。</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sdb      8:16   0   50G  0 disk
+├ sdb2   8:18   0    8G  0 part <span class="o">[</span>SWAP]
+├ sdb3   8:19   0 41.8G  0 part /
+└ sdb1   8:17   0  200M  0 part /boot/efi
+sdc      8:32   0   55G  0 disk
+</code></pre></div></div>
+
+<p>次に、<code class="language-plaintext highlighter-rouge">parted</code> コマンドを実行し、パーティションテーブルを編集します。<volume_id> は、ボリューム識別子(`/dev/sdc`など)です。</volume_id></p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>parted &lt;volume_id&gt;
+</code></pre></div></div>
+
+<p>ボリュームの正確な開始位置がわかるように、次のコマンドを実行して、表示単位をセクターに変更します。</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>parted<span class="o">)</span> unit s
+</code></pre></div></div>
+
+<p>次のコマンドを実行して、ラベルを作成します。ここでは、「gpt」を指定します。</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>parted<span class="o">)</span> mklabel gpt
+</code></pre></div></div>
+
+<p>次のコマンドを実行して、パーティションを作成します。</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>parted<span class="o">)</span> mkpart
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">Partition name?  []?</code> ： 任意のパーティション名を指定します。例えば、<code class="language-plaintext highlighter-rouge">primary</code> などです。</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">File system type?  [ext2]?</code> ： ファイルシステムの種類を指定します。例えば、<code class="language-plaintext highlighter-rouge">xfs</code> などです。</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">Start?</code> ： 開始位置を指定します。例えば、<code class="language-plaintext highlighter-rouge">0%</code> などです。</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">End?</code> ： 終了位置を指定します。例えば、<code class="language-plaintext highlighter-rouge">100%</code> などです。</p>
+  </li>
+</ul>
+
+<p>以上でパーティションの作成は完了です。次のコマンドを実行して、<code class="language-plaintext highlighter-rouge">parted</code>を終了します。</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>parted<span class="o">)</span> quit
+</code></pre></div></div>
+
+<p>再度ボリュームのリストを確認するため、次のコマンドを実行します。</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>lsblk
+</code></pre></div></div>
+
+<p>コマンドの結果の例を以下に示します。この例では、「sdc」というボリュームに <code class="language-plaintext highlighter-rouge">sdc1</code> というパーティションを作成できたことが確認できます。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sdb      8:16   0   50G  0 disk
+├ sdb2   8:18   0    8G  0 part [SWAP]
+├ sdb3   8:19   0 41.8G  0 part /
+└ sdb1   8:17   0  200M  0 part /boot/efi
+sdc      8:32   0   55G  0 disk
+└ sdc1   8:33   0   55G  0 part
+</code></pre></div></div>
+
+<p><strong>2. マウント・ポイントの作成</strong></p>
+
+<p>次のコマンドを実行し、マウント用のディレクトリを作成し、権限の設定を行います。例として、<code class="language-plaintext highlighter-rouge">/mnt/devsdc</code> というディレクトリを作成しています。</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo mkdir</span> /mnt/devsdc
+<span class="nv">$ </span><span class="nb">sudo chown </span>opc:opc /mnt/devsdc/
+</code></pre></div></div>
+
+<p><strong>3. fstabの編集</strong></p>
+
+<p>インスタンスの起動時に自動でマウントされるよう、<code class="language-plaintext highlighter-rouge">/etc/fstab</code> を編集します。</p>
+
+<p>ボリュームの指定方法によって、手順が異なります。</p>
+
+<blockquote>
+  <p><strong>ボリュームの指定方法について</strong></p>
+
+  <p>Linux ベースの OSでは、ボリュームがアタッチされる順序は、再起動のたびに変わる可能性があります。ルート以外のボリュームが複数ある場合に、<code class="language-plaintext highlighter-rouge">/dev/sdb</code> のようにデバイス名を使用してボリュームを参照していると、特定のデバイス名に対してマウントしようとするボリュームと、実際にマウントされるボリュームが異なってしまう可能性があります。
+この問題を回避するには、<code class="language-plaintext highlighter-rouge">/etc/fstab</code>ファイル内に、デバイス名のかわりに <strong>ボリュームUUID</strong> を指定します。もしくは、<a href="https://docs.oracle.com/ja-jp/iaas/Content/Block/References/consistentdevicepaths.htm#images">一貫性のあるデバイス・パスが使用可能なイメージ</a> の場合は、<strong>一貫性のあるデバイス・パス</strong> を指定します。</p>
+</blockquote>
+
+<p><strong>3-a. ボリュームUUIDを指定する場合</strong></p>
+
+<p>ボリュームのUUIDを確認するため、次のコマンドを実行します。</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>blkid
+</code></pre></div></div>
+
+<p>次に、fstab を編集するため、次のコマンドを実行します。</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>vi /etc/fstab
+</code></pre></div></div>
+
+<p>下記の例を参考に、fstab ファイルの最後に追記し、保存します。(<strong><code class="language-plaintext highlighter-rouge">insert</code></strong> で編集、<strong><code class="language-plaintext highlighter-rouge">Esc</code></strong> → <strong><code class="language-plaintext highlighter-rouge">:wq</code></strong> で保存して終了、編集をキャンセルする場合は <strong><code class="language-plaintext highlighter-rouge">Esc</code></strong> → <strong><code class="language-plaintext highlighter-rouge">:q!</code></strong>)</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">UUID</span><span class="o">=</span>&lt;確認したUUID&gt; /mnt/devsdc xfs defaults,_netdev,nofail 0 2
+</code></pre></div></div>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">&lt;確認したUUID&gt;</code> ： ボリュームのUUIDを指定します</li>
+  <li><code class="language-plaintext highlighter-rouge">/mnt/devsdc</code> ： 作成したマウント・ポイントを指定します</li>
+  <li><code class="language-plaintext highlighter-rouge">_netdev</code>、<code class="language-plaintext highlighter-rouge">nofail</code> オプションを指定する理由については、<a href="https://docs.oracle.com/ja-jp/iaas/Content/Block/References/fstaboptions.htm#Use_the__netdev_and_nofail_Options">_netdevおよびnofailオプションの使用</a> を参照してください。</li>
+</ul>
+
+<p>次のコマンドを実行し、設定を反映します。</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>mount <span class="nt">-a</span>
+</code></pre></div></div>
+
+<p>最後に、以下のコマンドを実行することで、アタッチしたブロック・ボリューム が追加されていることが確認できます。</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">df</span> <span class="nt">-h</span>
+    <span class="sb">```</span>
+
+<span class="k">**</span>3-b. 一貫性のあるデバイス・パスを指定する場合<span class="k">**</span>
+
+一貫性のあるデバイス・パスを使用する前に、以下に該当しないことを確認してください。
+
+<span class="o">&gt;</span> 1. アタッチしたボリュームが ブート・ボリュームでないこと。<span class="o">(</span>ブート・ボリュームをデータ・ボリュームとして2番目のインスタンスにアタッチする場合、デバイス・パスは使用できません。<span class="o">)</span>
+<span class="o">&gt;</span> 2. インスタンスが <span class="o">[</span>一貫性のあるデバイス・パスをサポートしているイメージ]<span class="o">(</span>https://docs.oracle.com/ja-jp/iaas/Content/Block/References/consistentdevicepaths.htm#images<span class="o">)</span> であること。
+<span class="o">&gt;</span> 3. インスタンスへアタッチする際、[デバイス・パスを指定済み]<span class="o">(</span>https://docs.oracle.com/ja-jp/iaas/Content/Block/References/consistentdevicepaths.htm#Device_Paths_in_the_Console<span class="o">)</span> であること。
+
+次に、一貫性のあるデバイス・パスが正しく構成されていることを確認するため、次のコマンドを実行します。
+
+<span class="sb">```</span>sh
+<span class="nv">$ </span>ll /dev/oracleoci/oraclevd<span class="k">*</span>
+</code></pre></div></div>
+
+<p>以下のような出力がされていれば、問題ありません。</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lrwxrwxrwx. 1 root root 6 Feb  7 21:02 /dev/oracleoci/oraclevda -&gt; ../sda
+lrwxrwxrwx. 1 root root 7 Feb  7 21:02 /dev/oracleoci/oraclevda1 -&gt; ../sda1
+lrwxrwxrwx. 1 root root 7 Feb  7 21:02 /dev/oracleoci/oraclevda2 -&gt; ../sda2
+lrwxrwxrwx. 1 root root 7 Feb  7 21:02 /dev/oracleoci/oraclevda3 -&gt; ../sda3
+</code></pre></div></div>
+
+<p>次のコマンドを実行し、fstab を編集します。</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>vi /etc/fstab
+</code></pre></div></div>
+
+<p>下記の例を参考に、fstab ファイルの最後に追記し、保存します。(<strong><code class="language-plaintext highlighter-rouge">insert</code></strong> で編集、<strong><code class="language-plaintext highlighter-rouge">Esc</code></strong> → <strong><code class="language-plaintext highlighter-rouge">:wq</code></strong> で保存して終了、編集をキャンセルする場合は <strong><code class="language-plaintext highlighter-rouge">Esc</code></strong> → <strong><code class="language-plaintext highlighter-rouge">:q!</code></strong>)</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/dev/oracleoci/oraclevdb /mnt/devsdc xfs defaults,_netdev,nofail 0 2
+</code></pre></div></div>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">/dev/oracleoci/oraclevdb</code> ： 一貫性のあるデバイス・パスを指定します</li>
+  <li><code class="language-plaintext highlighter-rouge">/mnt/devsdc</code> ： 作成したマウント・ポイントを指定します</li>
+  <li><code class="language-plaintext highlighter-rouge">_netdev</code>、<code class="language-plaintext highlighter-rouge">nofail</code> オプションを指定する理由については、<a href="https://docs.oracle.com/ja-jp/iaas/Content/Block/References/fstaboptionsconsistentdevicepaths.htm#Use_the__netdev_and_nofail_Options">_netdevおよびnofailオプションの使用</a> を参照してください。</li>
+</ul>
+
+<p>次のコマンドを実行し、設定を反映します。</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>mount <span class="nt">-a</span>
+</code></pre></div></div>
+
+<p>最後に、以下のコマンドを実行することで、アタッチしたブロック・ボリューム が追加されていることが確認できます。</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">df</span> <span class="nt">-h</span>
+</code></pre></div></div>
+
+</div>
+
+<p><a href="#main" class="back-to-top">Back to Top ↑</a>
+<br /></p>
+
+<h1 id="ボリュームのサイズの拡張をosに反映させるには">ボリュームのサイズの拡張をOSに反映させるには?</h1>
+
+<h2 id="質問-10">質問</h2>
+
+<p>ブロック・ボリューム(またはブート・ボリューム)の容量を拡張しましたが、OSまたはディスク管理で確認すると、追加したボリュームが反映されていないようです。この問題を解決する方法を教えてください。</p>
+
+<h2 id="回答-10">回答</h2>
+
+<p>ボリュームを拡張した後は、ディスクの再スキャンが必要です。再スキャン・コマンドを実行することにより、OSが拡張されたディスク・サイズを認識します。</p>
+
+<p>コマンドの詳細については Oracle Cloud Infrastructure ドキュメント：<a href="https://docs.oracle.com/ja-jp/iaas/Content/Block/Tasks/rescanningdisk.htm">ブロック・ボリュームまたはブート・ボリュームのディスクの再スキャン</a> をご参照ください。</p>
+
+<ul>
+  <li>
+    <p><strong>Windows OS の場合</strong>：<a href="https://docs.oracle.com/ja-jp/iaas/Content/Block/Tasks/rescanningdisk.htm#Rescanni2">Windowsインスタンスにアタッチされたボリュームのディスクの再スキャン</a></p>
+  </li>
+  <li>
+    <p><strong>Linux ベース OS の場合</strong>：<a href="https://docs.oracle.com/ja-jp/iaas/Content/Block/Tasks/rescanningdisk.htm#Rescanni">Linuxベースのインスタンスにアタッチされたボリュームのディスクの再スキャン</a></p>
+  </li>
+</ul>
+
+<p>また、ディスクの再スキャン後は、パーティションの拡張も必要です。</p>
+
+<p>ブロック・ボリュームの場合は、<a href="https://docs.oracle.com/ja-jp/iaas/Content/Block/Tasks/extendingblockpartition.htm">ブロック・ボリュームのパーティションの拡張</a>を、ブート・ボリュームの場合は、<a href="https://docs.oracle.com/ja-jp/iaas/Content/Block/Tasks/extendingbootpartition.htm">ブート・ボリュームのパーティションの拡張</a> を参照してください。</p>
+
+<p><a href="#main" class="back-to-top">Back to Top ↑</a>
+<br /></p>
+
+<h1 id="アタッチされているブロックボリュームをインスタンス構成に含める方法">アタッチされているブロック・ボリュームをインスタンス構成に含める方法</h1>
+
+<h2 id="質問-11">質問</h2>
+
+<p>インスタンスにアタッチされているブロック・ボリュームをインスタンス構成に含めたいと考えています。設定方法について教えてください。</p>
+
+<h2 id="回答-11">回答</h2>
+
+<p>コンソール画面を使用して インスタンス構成を作成する場合、アタッチされたブロック・ボリュームをインスタンス構成に含めることはできません。</p>
+
+<p>インスタンス構成にブロック・ボリュームのコンテンツを含めるには、まず <a href="https://docs.oracle.com/ja-jp/iaas/Content/Block/Tasks/backingupavolume.htm#Backing_Up_a_Volume">アタッチされたブロック・ボリュームのバックアップを作成</a>します。</p>
+
+<p>次に、SDK、CLIまたはAPIを使用し、インスタンス構成を作成する際に、”構成設定” にて、ブロック・ボリュームのバックアップを指定します。インスタンス構成を作成する際の “構成設定” は、以下コマンドを参考に、テンプレートを取得することをおすすめします。</p>
+
+<ul>
+  <li>
+    <p>“構成設定” テンプレートの取得 [<a href="https://docs.oracle.com/iaas/tools/oci-cli/latest/oci_cli_docs/cmdref/compute-management/instance-configuration/create.html">CLI documents</a>]</p>
+
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  oci compute-management instance-configuration create <span class="nt">--generate-param-json-input</span> instance-details <span class="o">&gt;</span> template.json
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>続いて、取得したテンプレートを、作成したいインスタンス構成の内容に応じて 編集します。その際、”blockVolumes” ブロックの “sourceDetails” にて、予め作成したブロック・ボリューム・バックアップの OCID を指定します。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"blockVolumes": {
+  ~ 略 ~
+  "createDetails": {
+    "sourceDetails": {
+      "id":"ocid1.volumebackup.oc1.xxxxxxxxxxxxxxxx",
+      "type": "volumeBackup"
+    },
+  ~ 略 ~
+</code></pre></div></div>
+
+<p>最後に、以下のコマンドを参考に、インスタンス構成を作成します。<code class="language-plaintext highlighter-rouge">--instance-details</code> パラメータにて、編集した “構成設定” ファイルを指定してください。</p>
+
+<ul>
+  <li>
+    <p>インスタンス構成の作成 [<a href="https://docs.oracle.com/iaas/tools/oci-cli/latest/oci_cli_docs/cmdref/compute-management/instance-configuration/create.html">CLI documents</a>]</p>
+
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  oci compute-management instance-configuration create <span class="nt">--compartment-id</span> ocid1.compartment.oc1.xxxxxxxxxxxxxxxx <span class="nt">--instance-details</span> file://input.json <span class="nt">--display-name</span> instance-config-xxx
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>なお、その他の注意事項として、インスタンス構成には、インスタンスのブート・ボリュームの情報(インスタンスにインストールされているアプリケーション、バイナリ、ファイルなど)も含まれません。
+それらの情報を含むインスタンス構成を作成するには、まず<a href="https://docs.oracle.com/ja-jp/iaas/Content/Compute/Tasks/managingcustomimages.htm#To">インスタンスからカスタム・イメージを作成</a>し、次に<a href="https://docs.oracle.com/ja-jp/iaas/Content/Compute/Tasks/managingcustomimages.htm#To2">そのカスタム・イメージを使用して新しいインスタンスを起動</a>する必要があります。</p>
+
+<p>詳細は、Oracle Cloud Infrastructure ドキュメント：<a href="https://docs.oracle.com/ja-jp/iaas/Content/Compute/Tasks/creatinginstanceconfig.htm">インスタンス構成の作成</a> を参照してください。</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> タグ: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/ocidocs/tags/#faq" class="page__taxonomy-item" rel="tag">FAQ</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> カテゴリー: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/ocidocs/categories/#faq" class="page__taxonomy-item" rel="tag">FAQ</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/ocidocs/categories/#storage" class="page__taxonomy-item" rel="tag">Storage</a>
+    
+    </span>
+  </p>
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 更新日時:</strong> <time datetime="2021-07-07T00:00:00+09:00">July 7, 2021</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">共有</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF%E3%83%BB%E3%83%9C%E3%83%AA%E3%83%A5%E3%83%BC%E3%83%A0%E3%83%BB%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9+%E6%8A%80%E8%A1%93FAQ%20https%3A%2F%2Foracle-japan.github.io%2Focidocs%2Ffaq%2Fstorage%2Fblock-volumes-faq%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="共有 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Foracle-japan.github.io%2Focidocs%2Ffaq%2Fstorage%2Fblock-volumes-faq%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="共有 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Foracle-japan.github.io%2Focidocs%2Ffaq%2Fstorage%2Fblock-volumes-faq%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="共有 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/ocidocs/services/networking/load-balancer-200/" class="pagination--pager" title="ロード・バランサー 詳細
+">前へ</a>
+    
+    
+      <a href="/ocidocs/faq/compute/compute-faq/" class="pagination--pager" title="コンピュート・サービス 技術FAQ
+">次へ</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">関連記事</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ocidocs/faq/networking/load-balancer-faq/" rel="permalink">ロード・バランサ・サービス 技術FAQ
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-07-07T00:00:00+09:00">July 7, 2021</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Oracle Cloud Infrastructure ロード・バランサ・サービスに関して、利用時のよくある質問に対する回答や、技術的な問題に対する対処策をまとめています。
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ocidocs/faq/storage/file-storage-faq/" rel="permalink">ファイル・ストレージ・サービス 技術FAQ
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-07-07T00:00:00+09:00">July 7, 2021</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Oracle Cloud Infrastructure ファイル・ストレージ・サービスに関して、利用時のよくある質問に対する回答や、技術的な問題に対する対処策をまとめています。
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ocidocs/faq/compute/compute-faq/" rel="permalink">コンピュート・サービス 技術FAQ
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-07-07T00:00:00+09:00">July 7, 2021</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Oracle Cloud Infrastructure コンピュート・サービスに関して、利用時のよくある質問に対する回答や、技術的な問題に対する対処策をまとめています。
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://speakerd.s3.amazonaws.com/presentations/9ca991733d2a4670bdd4e5ed5b5770c4/slide_0.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ocidocs/services/networking/load-balancer-200/" rel="permalink">ロード・バランサー 詳細
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-06-28T00:00:00+09:00">June 28, 2021</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">OCI ロード・バランサー・サービスについて、セッション永続性、仮想ホストによるルーティング、URIパス・ベース・ルーティング、SSL通信方式とロード・バランサーでのSSLターミネーションの設定、ロード・バランサーが収集するメトリック、トラブル時の対応ガイドラインなどの応用的な利用方法について解説しています
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="検索キーワードを入力してください..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>フォロー</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/#ocijp" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/oracle-japan" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+    
+
+    <li><a href="/ocidocs/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2021 Oracle Cloud Infrastructure 活用資料集. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/ocidocs/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/ocidocs/assets/js/lunr/lunr.min.js"></script>
+<script src="/ocidocs/assets/js/lunr/lunr-store.js"></script>
+<script src="/ocidocs/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VWKLFQKQEL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VWKLFQKQEL', { 'anonymize_ip': false});
+</script>
+
+
+
+
+
+
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+  
+    <script src="/ocidocs/assets/js/clipboardrouge.js"></script>
+  
+
+
+
+  </body>
+</html>

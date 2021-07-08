@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Oracle Cloud Infrastructure 技術FAQ - ロード・バランサ編 - | Oracle Cloud Infrastructure 活用資料集</title>
-<meta name="description" content="ロード・バランサに関する技術FAQページです。Oracle Cloud Infrastructure利用時のよくある質問から、特に技術的な問題とそれに対する回答や対処策をまとめています">
+<!-- begin _includes/seo.html --><title>ロード・バランサ・サービス 技術FAQ | Oracle Cloud Infrastructure 活用資料集</title>
+<meta name="description" content="Oracle Cloud Infrastructure ロード・バランサ・サービスに関して、利用時のよくある質問に対する回答や、技術的な問題に対する対処策をまとめています。">
 
 
   <meta name="author" content="Oracle Japan Solution Engineers">
@@ -22,11 +22,11 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:site_name" content="Oracle Cloud Infrastructure 活用資料集">
-<meta property="og:title" content="Oracle Cloud Infrastructure 技術FAQ - ロード・バランサ編 -">
-<meta property="og:url" content="https://oracle-japan.github.io/ocidocs/services/networking/LB-faq/">
+<meta property="og:title" content="ロード・バランサ・サービス 技術FAQ">
+<meta property="og:url" content="https://oracle-japan.github.io/ocidocs/faq/networking/load-balancer-faq/">
 
 
-  <meta property="og:description" content="ロード・バランサに関する技術FAQページです。Oracle Cloud Infrastructure利用時のよくある質問から、特に技術的な問題とそれに対する回答や対処策をまとめています">
+  <meta property="og:description" content="Oracle Cloud Infrastructure ロード・バランサ・サービスに関して、利用時のよくある質問に対する回答や、技術的な問題に対する対処策をまとめています。">
 
 
 
@@ -36,14 +36,14 @@
 
 
 
-  <meta property="article:published_time" content="2021-06-21T00:00:00+09:00">
+  <meta property="article:published_time" content="2021-07-07T00:00:00+09:00">
 
 
 
 
 
 
-<link rel="canonical" href="https://oracle-japan.github.io/ocidocs/services/networking/LB-faq/">
+<link rel="canonical" href="https://oracle-japan.github.io/ocidocs/faq/networking/load-balancer-faq/">
 
 
 
@@ -105,7 +105,7 @@
 
   </head>
 
-  <body class="layout--single">
+  <body class="layout--faq">
     <nav class="skip-links">
   <h2 class="screen-reader-text">Skip links</h2>
   <ul>
@@ -135,9 +135,11 @@
         <ul class="visible-links"><li class="masthead__menu-item">
               <a href="/ocidocs/updates/">新機能</a>
             </li><li class="masthead__menu-item">
-              <a href="/ocidocs/services/">サービス別</a>
+              <a href="/ocidocs/services/">サービス別資料</a>
             </li><li class="masthead__menu-item">
-              <a href="/ocidocs/solutions/">ソリューション別</a>
+              <a href="/ocidocs/solutions/">ソリューション別資料</a>
+            </li><li class="masthead__menu-item">
+              <a href="/ocidocs/faqs/">技術FAQ</a>
             </li><li class="masthead__menu-item">
               <a href="/ocidocs/misc/">その他</a>
             </li><li class="masthead__menu-item">
@@ -183,12 +185,12 @@
     <div class="wrapper">
       <h1 id="page-title" class="page__title" itemprop="headline">
         
-          Oracle Cloud Infrastructure 技術FAQ - ロード・バランサ編 -
+          ロード・バランサ・サービス 技術FAQ
 
         
       </h1>
       
-        <p class="page__lead">ロード・バランサに関する技術FAQページです。Oracle Cloud Infrastructure利用時のよくある質問から、特に技術的な問題とそれに対する回答や対処策をまとめています
+        <p class="page__lead">Oracle Cloud Infrastructure ロード・バランサ・サービスに関する技術FAQです<br />サービス仕様に関する⼀般的な質問や、既知の問題については下記の外部リンクもご参照ください
 </p>
       
       
@@ -198,7 +200,7 @@
       
       <span class="page__meta-date">
         <i class="far fa-calendar-alt" aria-hidden="true"></i>
-        <time datetime="2021-06-21T00:00:00+09:00">June 21, 2021</time>
+        <time datetime="2021-07-07T00:00:00+09:00">July 7, 2021</time>
       </span>
     
 
@@ -210,8 +212,18 @@
 
       
       
+        <p>
+        
+          <a href="https://www.oracle.com/jp/cloud/networking/load-balancing-faq.html" class="btn btn--light-outline btn--large">Load Balancingに関するよくある質問</a>
+        
+          <a href="https://docs.oracle.com/ja-jp/iaas/Content/knownissues.htm#loadbalancing" class="btn btn--light-outline btn--large">既知の問題 - ロード・バランシング</a>
+        
+      
     </div>
   
+  
+    <span class="page__hero-caption"><a href="https://design.oracle.com/">Oracle Redwood</a>
+</span>
   
 </div>
 
@@ -249,7 +261,7 @@
     
       <li>
         
-          <a href="/ocidocs/services/"><span class="nav__sub-title">サービス別</span></a>
+          <a href="/ocidocs/services/"><span class="nav__sub-title">サービス別資料</span></a>
         
 
         
@@ -264,8 +276,6 @@
             <li><a href="/ocidocs/services/networking/">ネットワーク</a></li>
           
             <li><a href="/ocidocs/services/database/">データベース</a></li>
-          
-            <li><a href="/ocidocs/services/analytics/">アナリティクス</a></li>
           
             <li><a href="/ocidocs/services/developers/">開発者サービス</a></li>
           
@@ -283,7 +293,7 @@
     
       <li>
         
-          <a href="/ocidocs/solutions/"><span class="nav__sub-title">ソリューション別</span></a>
+          <a href="/ocidocs/solutions/"><span class="nav__sub-title">ソリューション別資料</span></a>
         
 
         
@@ -302,6 +312,14 @@
             <li><a href="/ocidocs/solutions/others/">その他</a></li>
           
         </ul>
+        
+      </li>
+    
+      <li>
+        
+          <a href="/ocidocs/faqs/"><span class="nav__sub-title">技術FAQ</span></a>
+        
+
         
       </li>
     
@@ -331,9 +349,9 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Oracle Cloud Infrastructure 技術FAQ - ロード・バランサ編 -">
-    <meta itemprop="description" content="ロード・バランサに関する技術FAQページです。Oracle Cloud Infrastructure利用時のよくある質問から、特に技術的な問題とそれに対する回答や対処策をまとめています">
-    <meta itemprop="datePublished" content="2021-06-21T00:00:00+09:00">
+    <meta itemprop="headline" content="ロード・バランサ・サービス 技術FAQ">
+    <meta itemprop="description" content="Oracle Cloud Infrastructure ロード・バランサ・サービスに関して、利用時のよくある質問に対する回答や、技術的な問題に対する対処策をまとめています。">
+    <meta itemprop="datePublished" content="2021-07-07T00:00:00+09:00">
     
 
     <div class="page__inner-wrap">
@@ -345,30 +363,28 @@
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 目次</h4></header>
               <ul class="toc__menu">
-  <li><a href="#クライアントがロードバランサに接続できない理由として考えられる原因を教えてください">クライアントがロード・バランサに接続できない理由として考えられる原因を教えてください。</a></li>
-  <li><a href="#ルーティング関連の質問">～ルーティング関連の質問～</a></li>
-  <li><a href="#ロードバランサを使用してホストベースのルーティングを設定するにはどうすればよいですか">ロード・バランサを使用してホストベースのルーティングを設定するにはどうすればよいですか？</a></li>
-  <li><a href="#ロードバランサでのパスベースのルーティングを実現するにはどうすればよいですか">ロード・バランサでのパスベースのルーティングを実現するにはどうすればよいですか？</a></li>
-  <li><a href="#ロードバランサーを使用してカスタムhttpヘッダーに基づきトラフィックをルーティングする方法を教えてください">ロードバランサーを使用して、カスタムHTTPヘッダーに基づきトラフィックをルーティングする方法を教えてください。</a></li>
-  <li><a href="#ロードバランサを使用してソースipに基づいてリクエストをルーティングするにはどうすればよいですか">ロード・バランサを使用してソースIPに基づいてリクエストをルーティングするにはどうすればよいですか？</a></li>
-  <li><a href="#リダイレクトルール関連の質問">～リダイレクト・ルール関連の質問～</a></li>
-  <li><a href="#ロードバランサを使用してあるドメインを別のドメインにリダイレクトするにはどうすればよいですか">ロード・バランサを使用して、あるドメインを別のドメインにリダイレクトするにはどうすればよいですか？</a></li>
-  <li><a href="#ロードバランサを使い-http-リクエストを-https-にリダイレクトするにはどうすればよいですか">ロード・バランサを使い HTTP リクエストを HTTPS にリダイレクトするにはどうすればよいですか?</a></li>
-  <li><a href="#ipアドレス関連の質問">～IPアドレス関連の質問～</a></li>
-  <li><a href="#ipv6アドレスを使用するようにロードバランサを設定するにはどうすればよいですか">IPv6アドレスを使用するようにロード・バランサを設定するにはどうすればよいですか？</a></li>
-  <li><a href="#予約済パブリックipアドレスを新規もしくは既存のロードバランサにアタッチするにはどうすればよいですか">予約済パブリックIPアドレスを新規もしくは既存のロード・バランサにアタッチするには、どうすればよいですか？</a></li>
-  <li><a href="#ヘルスチェック関連の質問">～ヘルス・チェック関連の質問～</a></li>
-  <li><a href="#ロードバランサのトラブルシューティングを行いヘルスチェックの失敗を修正するにはどうすればよいですか">ロード・バランサのトラブルシューティングを行い、ヘルス・チェックの失敗を修正するにはどうすればよいですか？</a></li>
+  <li><a href="#クライアントがロードバランサに接続できない">クライアントがロード・バランサに接続できない</a></li>
+  <li><a href="#ホストベースのルーティングを設定するには">ホストベースのルーティングを設定するには?</a></li>
+  <li><a href="#パスベースのルーティングを実現するには">パスベースのルーティングを実現するには?</a></li>
+  <li><a href="#カスタムhttpヘッダーに基づいてルーティングするには">カスタムHTTPヘッダーに基づいてルーティングするには?</a></li>
+  <li><a href="#クライアントのソースipに基づいてルーティングするには">クライアントのソースIPに基づいてルーティングするには?</a></li>
+  <li><a href="#あるドメインを別のドメインにリダイレクトするには">あるドメインを別のドメインにリダイレクトするには?</a></li>
+  <li><a href="#http-リクエストを-https-にリダイレクトするには">HTTP リクエストを HTTPS にリダイレクトするには?</a></li>
+  <li><a href="#ロードバランサでipv6アドレスを使用するには">ロード・バランサでIPv6アドレスを使用するには?</a></li>
+  <li><a href="#予約済パブリックipアドレスを新規もしくは既存のロードバランサにアタッチする方法は">予約済パブリックIPアドレスを新規もしくは既存のロード・バランサにアタッチする方法は?</a></li>
+  <li><a href="#ヘルスチェックの失敗を修正するには">ヘルス・チェックの失敗を修正するには?</a></li>
 </ul>
 
             </nav>
           </aside>
         
-        <p>一般的なOracle Cloud InfrastructureのFAQは<a href="https://www.oracle.com/jp/cloud/compute/faq.html">サービスの公式ページ</a>にも記載されていますのでご覧ください。</p>
+        <h1 id="クライアントがロードバランサに接続できない">クライアントがロード・バランサに接続できない</h1>
 
-<h1 id="クライアントがロードバランサに接続できない理由として考えられる原因を教えてください">クライアントがロード・バランサに接続できない理由として考えられる原因を教えてください。</h1>
+<h2 id="質問">質問</h2>
 
-<p><strong>簡単な説明：</strong></p>
+<p>クライアントがロード・バランサに接続できない理由として考えられる原因を教えてください。</p>
+
+<h2 id="回答">回答</h2>
 
 <p>ロード ・バランサの接続の問題の一般的な原因には、次のものがあります。</p>
 
@@ -380,23 +396,29 @@
   <li>ルート表のルート・ルールの構成が不適切な場合、リクエストをブロックしているか、不適切にルーティングしています。</li>
 </ul>
 
-<p><strong>関連情報：</strong><br />
-<a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#Managing_Listeners">リスナーの管理</a><br />
-<a href="https://docs.oracle.com/ja-jp/iaas/Content/Network/Concepts/securityrules.htm#Security_Rules">セキュリティ・ルール</a><br />
-<a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingbackendservers.htm#Managing_Backend_Servers">バックエンド・サーバーの管理</a><br />
-<a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingbackendservers.htm#healthstatus">ヘルス・ステータス</a><br />
-<a href="https://docs.oracle.com/en-us/iaas/api/#/en/loadbalancer/20170115/HealthCheckResult/">HealthCheckResult</a></p>
+<p><strong>関連情報 :</strong></p>
 
-<h1 id="ルーティング関連の質問"><font color="Green">～ルーティング関連の質問～</font></h1>
+<ul>
+  <li><a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#Managing_Listeners" target="_blank">Oracle Cloud Infrastructureドキュメント : リスナーの管理</a></li>
+  <li><a href="https://docs.oracle.com/ja-jp/iaas/Content/Network/Concepts/securityrules.htm#Security_Rules" target="_blank">Oracle Cloud Infrastructureドキュメント : セキュリティ・ルール</a></li>
+  <li><a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingbackendservers.htm#Managing_Backend_Servers" target="_blank">Oracle Cloud Infrastructureドキュメント : バックエンド・サーバーの管理</a></li>
+  <li><a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingbackendservers.htm#healthstatus" target="_blank">Oracle Cloud Infrastructureドキュメント : ヘルス・ステータス</a></li>
+  <li><a href="https://docs.oracle.com/ja-jp/iaas/api/#/en/loadbalancer/20170115/HealthCheckResult/">Oracle Cloud Infrastructureドキュメント : HealthCheckResult</a></li>
+</ul>
 
-<h1 id="ロードバランサを使用してホストベースのルーティングを設定するにはどうすればよいですか">ロード・バランサを使用してホストベースのルーティングを設定するにはどうすればよいですか？</h1>
+<p><a href="#main" class="back-to-top">Back to Top ↑</a>
+<br /></p>
 
-<p><strong>簡単な説明：</strong></p>
+<h1 id="ホストベースのルーティングを設定するには">ホストベースのルーティングを設定するには?</h1>
+
+<h2 id="質問-1">質問</h2>
+
+<p>ホストベースのルーティングを設定するにはどうすればよいですか？</p>
+
+<h2 id="回答-1">回答</h2>
 
 <p>リクエスト・ルーティングの仮想ホスト名をリスナーに割り当てることで、ホスト名単位でのトラフィックのルーティングを設定することが可能です。
 また、リスナーあたりの仮想ホスト名は最大16個まで割り当てることが可能です。</p>
-
-<p><strong>解決方法：</strong></p>
 
 <p>仮想ホスト名をリスナーに適用するには、最初に、1つ以上の仮想ホスト名を作成します。
 次に、ロード・バランサのリスナーを作成または更新し、使用する1つ以上の仮想ホスト名を指定します。</p>
@@ -408,7 +430,7 @@
     <ol>
       <li>ナビゲーション・メニューを開きます。「<strong>ネットワーキング</strong>」をクリックして「<strong>ロード・バランサ</strong>」をクリックします。</li>
       <li>変更するロード・バランサを含む<strong>コンパートメント</strong>を選択し、<strong>ロード・バランサの名前</strong>をクリックします。</li>
-      <li>「<strong>リソース</strong>」メニューで、「<strong>ホスト名</strong>」をクリックし、「<strong>ホスト名の作成</strong>」をクリックします。</li>
+      <li>「<strong>リソース</strong>」メニューで「<strong>ホスト名</strong>」をクリックし、「<strong>ホスト名の作成</strong>」をクリックします。</li>
       <li>「<strong>ホスト名の作成</strong>」ダイアログ・ボックスで、次を入力します:
         <ul>
           <li>名前: 必須。ホスト名のわかりやすい名前を指定します。名前は一意である必要があり、変更することはできません。機密情報の入力は避けてください。</li>
@@ -422,36 +444,52 @@
 </ul>
 
 <p>仮想ホスト名を作成すると、関連付けられたロード・バランサでその名前を使用できるようになります。<br />
-ホスト名を適用するには、<a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#create">リスナーを作成または更新</a>します。</p>
+ホスト名を適用するには、<a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#create" target="_blank">リスナーを作成または更新</a>します。</p>
 
-<p><strong>関連情報：</strong><br />
-<a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrequest.htm#routing__vhost">リクエスト・ルーティングの管理</a></p>
+<p><strong>関連情報 :</strong></p>
+<ul>
+  <li><a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrequest.htm#routing__vhost" target="_blank">Oracle Cloud Infrastructureドキュメント : リクエスト・ルーティングの管理</a></li>
+</ul>
 
-<h1 id="ロードバランサでのパスベースのルーティングを実現するにはどうすればよいですか">ロード・バランサでのパスベースのルーティングを実現するにはどうすればよいですか？</h1>
+<p><a href="#main" class="back-to-top">Back to Top ↑</a>
+<br /></p>
 
-<p><strong>簡単な説明：</strong></p>
+<h1 id="パスベースのルーティングを実現するには">パスベースのルーティングを実現するには?</h1>
+
+<h2 id="質問-2">質問</h2>
+
+<p>ロード・バランサでのパスベースのルーティングを実現するにはどうすればよいですか？</p>
+
+<h2 id="回答-2">回答</h2>
 
 <p>リクエスト・ルーティングのパス・ルート・ルールをリスナーに割り当てることで、パスベースのルーティングを設定することが可能です。</p>
 
-<p><strong>解決方法：</strong></p>
+<p>パス・ルート・ルールをリスナーに適用するには、最初に、ルールが含まれる「<strong>パス・ルート・セット</strong>」を作成します。
+パス・ルート・セットは、ロード・バランサの構成の一部になります。
+次に、ロード・バランサのリスナーを作成または更新するときに、使用する「<strong>パス・ルート・セット</strong>」を指定します。
+リスナーからパス・ルート・セットを削除するには、リスナーを編集し、「<strong>パス・ルート・セット</strong>」オプションとして「<strong>なし</strong>」を選択します。</p>
 
-<p>パス・ルート・ルールをリスナーに適用するには、最初に、ルールが含まれる「<strong>パス・ルート・セット</strong>」を作成します。<br />
-パス・ルート・セットは、ロード・バランサの構成の一部になります。<br />
-次に、ロード・バランサのリスナーを作成または更新するときに、使用する「<strong>パス・ルート・セット</strong>」を指定します。<br />
-リスナーからパス・ルート・セットを削除するには、リスナーを編集し、「<strong>パス・ルート・セット</strong>」オプションとして「<strong>なし</strong>」を選択します。<br />
-詳細の手順については、<a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrequest.htm#">リクエスト・ルーティングの管理</a>の「パス・ルート・セットを作成するには」を参照してください。</p>
+<p>詳細の手順については、<a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrequest.htm#" target="_blank">リクエスト・ルーティングの管理</a>の「パス・ルート・セットを作成するには」を参照してください。</p>
 
-<p><strong>関連情報：</strong><br />
-<a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#edit">リスナーを編集</a><br />
-<a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrequest.htm#">リクエスト・ルーティングの管理</a></p>
+<p><strong>関連情報 :</strong></p>
 
-<h1 id="ロードバランサーを使用してカスタムhttpヘッダーに基づきトラフィックをルーティングする方法を教えてください">ロードバランサーを使用して、カスタムHTTPヘッダーに基づきトラフィックをルーティングする方法を教えてください。</h1>
+<ul>
+  <li><a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#edit" target="_blank">Oracle Cloud Infrastructureドキュメント : リスナーを編集</a></li>
+  <li><a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrequest.htm#" target="_blank">Oracle Cloud Infrastructureドキュメント : リクエスト・ルーティングの管理</a></li>
+</ul>
 
-<p><strong>簡単な説明：</strong></p>
+<p><a href="#main" class="back-to-top">Back to Top ↑</a>
+<br /></p>
+
+<h1 id="カスタムhttpヘッダーに基づいてルーティングするには">カスタムHTTPヘッダーに基づいてルーティングするには?</h1>
+
+<h2 id="質問-3">質問</h2>
+
+<p>ロードバランサーを使用して、カスタムHTTPヘッダーに基づきトラフィックをルーティングする方法を教えてください。</p>
+
+<h2 id="回答-3">回答</h2>
 
 <p>ロード・バランサのリスナーに適用されるルール・セットのリクエスト/レスポンス・ヘッダー・ルールを作成する事で、カスタムHTTPヘッダーの値に基づいて、リクエストに対する特定のアクションを実行できます。</p>
-
-<p><strong>解決方法：</strong></p>
 
 <p>ルール・セットをリスナーに適用するには、最初に、ルールが含まれるルール・セットを作成します。<br />
 ロード・バランサのリスナーを作成または更新するときに、使用するルール・セットを指定できます。</p>
@@ -523,34 +561,46 @@
 </ol>
 
 <p>ルール・セットを作成すると、関連付けられたロード・バランサでそのセットを使用できるようになります。<br />
-ルール・セットを適用するには、<a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#edit">リスナーを更新</a>します。</p>
+ルール・セットを適用するには、<a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#edit" target="_blank">リスナーを更新</a>します。</p>
 
-<p><strong>関連情報：</strong><br />
-<a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm">ルール・セットの管理</a><br />
-<a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm#header-rules">リクエストおよびレスポンス・ヘッダー・ルール</a></p>
+<p><strong>関連情報 :</strong></p>
+<ul>
+  <li><a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm" target="_blank">Oracle Cloud Infrastructureドキュメント : ルール・セットの管理</a></li>
+  <li><a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm#header-rules" target="_blank">Oracle Cloud Infrastructureドキュメント : リクエストおよびレスポンス・ヘッダー・ルール</a></li>
+</ul>
 
-<h1 id="ロードバランサを使用してソースipに基づいてリクエストをルーティングするにはどうすればよいですか">ロード・バランサを使用してソースIPに基づいてリクエストをルーティングするにはどうすればよいですか？</h1>
+<p><a href="#main" class="back-to-top">Back to Top ↑</a>
+<br /></p>
 
-<p><strong>簡単な説明：</strong></p>
+<h1 id="クライアントのソースipに基づいてルーティングするには">クライアントのソースIPに基づいてルーティングするには?</h1>
 
-<p><a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingloadbalancer.htm#Managing_Load_Balancers">ロード・バランサを作成</a>した後に、トラフィック分散を制御するポリシーであるIPハッシュ・ポリシーをバックエンド・サーバーに適用することで、送信元IPアドレスのハッシュキーに基づいたトラフィックのルーティングが可能です。<br />
+<h2 id="質問-4">質問</h2>
+
+<p>ロード・バランサを使用して、クライアントのソースIPに基づいてリクエストをルーティングするにはどうすればよいですか？</p>
+
+<h2 id="回答-4">回答</h2>
+
+<p><a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingloadbalancer.htm#Managing_Load_Balancers" target="_blank">ロード・バランサを作成</a>した後に、トラフィック分散を制御するポリシーであるIPハッシュ・ポリシーをバックエンド・サーバーに適用することで、送信元IPアドレスのハッシュキーに基づいたトラフィックのルーティングが可能です。<br />
 IPハッシュ・ポリシーでは、受信リクエストのソースIPアドレスがハッシュ・キーとして使用され、スティッキーではないトラフィックが同じバックエンド・サーバーにルーティングされます。<br />
 ロード・バランサは、サーバーが使用可能であるかぎり、同じクライアントから同じバックエンド・サーバーにリクエストをルーティングします。</p>
 
 <p><strong>関連情報：</strong><br />
-<a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Reference/lbpolicies.htm#hash">IPハッシュ</a><br />
-<a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Reference/lbpolicies.htm#hash">ロード・バランシング・ポリシーの仕組み</a></p>
+<a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Reference/lbpolicies.htm#hash" target="_blank">Oracle Cloud Infrastructureドキュメント : IPハッシュ</a>
+<a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Reference/lbpolicies.htm#hash" target="_blank">Oracle Cloud Infrastructureドキュメント : ロード・バランシング・ポリシーの仕組み</a></p>
 
-<h1 id="リダイレクトルール関連の質問"><font color="Green">～リダイレクト・ルール関連の質問～</font></h1>
+<p><a href="#main" class="back-to-top">Back to Top ↑</a>
+<br /></p>
 
-<h1 id="ロードバランサを使用してあるドメインを別のドメインにリダイレクトするにはどうすればよいですか">ロード・バランサを使用して、あるドメインを別のドメインにリダイレクトするにはどうすればよいですか？</h1>
+<h1 id="あるドメインを別のドメインにリダイレクトするには">あるドメインを別のドメインにリダイレクトするには?</h1>
 
-<p><strong>簡単な説明：</strong></p>
+<h2 id="質問-5">質問</h2>
+
+<p>ロード・バランサを使用して、あるドメインを別のドメインにリダイレクトするにはどうすればよいですか？</p>
+
+<h2 id="回答-5">回答</h2>
 
 <p>ロード・バランサのリスナーに適用されるルール・セットの<a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm#redirect">URLリダイレクト・ルール</a>を作成する事で、HTTPからHTTPSへのリダイレクト、ドメイン名のリダイレクトやパスベースでのリダイレクトが可能です。</p>
 
-<p><strong>解決方法：</strong></p>
-
 <p>ルール・セットをリスナーに適用するには、最初に、ルールが含まれるルール・セットを作成します。<br />
 ロード・バランサのリスナーを作成または更新するときに、使用するルール・セットを指定できます。</p>
 
@@ -619,20 +669,27 @@ IPハッシュ・ポリシーでは、受信リクエストのソースIPアド�
 </ol>
 
 <p>ルール・セットを作成すると、関連付けられたロード・バランサでそのセットを使用できるようになります。<br />
-ルール・セットを適用するには、<a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#edit">リスナーを更新</a>します。</p>
+ルール・セットを適用するには、<a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#edit" target="_blank">リスナーを更新</a>します。</p>
 
-<p><strong>関連情報：</strong><br />
-<a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm">ルール・セットの管理</a><br />
-<a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm#redirect">URLリダイレクト・ルール</a></p>
+<p><strong>関連情報 :</strong></p>
+<ul>
+  <li><a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm" target="_blank">Oracle Cloud Infrastructureドキュメント : ルール・セットの管理</a></li>
+  <li><a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm#redirect" target="_blank">Oracle Cloud Infrastructureドキュメント : URLリダイレクト・ルール</a></li>
+</ul>
 
-<h1 id="ロードバランサを使い-http-リクエストを-https-にリダイレクトするにはどうすればよいですか">ロード・バランサを使い HTTP リクエストを HTTPS にリダイレクトするにはどうすればよいですか?</h1>
+<p><a href="#main" class="back-to-top">Back to Top ↑</a>
+<br /></p>
 
-<p><strong>簡単な説明：</strong></p>
+<h1 id="http-リクエストを-https-にリダイレクトするには">HTTP リクエストを HTTPS にリダイレクトするには?</h1>
+
+<h2 id="質問-6">質問</h2>
+
+<p>ロード・バランサを使い HTTP リクエストを HTTPS にリダイレクトするにはどうすればよいですか?</p>
+
+<h2 id="回答-6">回答</h2>
 
 <p>ロード・バランサのリスナーに適用されるルール・セットのURLリダイレクト・ルールを作成する事で、HTTPからHTTPSへのリダイレクト、ドメイン名のリダイレクトやパスベースでのリダイレクトが可能です。</p>
 
-<p><strong>解決方法：</strong></p>
-
 <p>ルール・セットをリスナーに適用するには、最初に、ルールが含まれるルール・セットを作成します。<br />
 ロード・バランサのリスナーを作成または更新するときに、使用するルール・セットを指定できます。</p>
 
@@ -701,18 +758,26 @@ IPハッシュ・ポリシーでは、受信リクエストのソースIPアド�
 </ol>
 
 <p>ルール・セットを作成すると、関連付けられたロード・バランサでそのセットを使用できるようになります。<br />
-ルール・セットを適用するには、<a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#edit">リスナーを更新</a>します。</p>
+ルール・セットを適用するには、<a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#edit" target="_blank">リスナーを更新</a>します。</p>
 
-<p><strong>関連情報：</strong><br />
-<a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm">ルール・セットの管理</a><br />
-<a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm#redirect">URLリダイレクト・ルール</a><br />
-<a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm#redirect">リスナーを更新</a></p>
+<p><strong>関連情報 ：</strong></p>
 
-<h1 id="ipアドレス関連の質問"><font color="Green">～IPアドレス関連の質問～</font></h1>
+<ul>
+  <li><a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm" target="_blank">Oracle Cloud Infrastructureドキュメント : ルール・セットの管理</a></li>
+  <li><a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm#redirect" target="_blank">Oracle Cloud Infrastructureドキュメント : URLリダイレクト・ルール</a></li>
+  <li><a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm#redirect" target="_blank">Oracle Cloud Infrastructureドキュメント : リスナーを更新</a></li>
+</ul>
 
-<h1 id="ipv6アドレスを使用するようにロードバランサを設定するにはどうすればよいですか">IPv6アドレスを使用するようにロード・バランサを設定するにはどうすればよいですか？</h1>
+<p><a href="#main" class="back-to-top">Back to Top ↑</a>
+<br /></p>
 
-<p><strong>簡単な説明：</strong></p>
+<h1 id="ロードバランサでipv6アドレスを使用するには">ロード・バランサでIPv6アドレスを使用するには?</h1>
+
+<h2 id="質問-7">質問</h2>
+
+<p>IPv6アドレスを使用するようにロード・バランサを設定するにはどうすればよいですか？</p>
+
+<h2 id="回答-7">回答</h2>
 
 <p>IPv6 アドレスを使用するには、ロード・バランサを作成する際に「<strong>IPv6アドレス割当ての有効化</strong>」を選択してください。<br />
 ロード・バランサを作成する場合、オプションでIPv4/IPv6デュアルスタック構成を選択できます。IPv6オプションを選択すると、ロード・バランシング・サービスによってIPv4とIPv6アドレスの両方がロード・バランサに割り当てられます。<br />
@@ -722,17 +787,25 @@ IPハッシュ・ポリシーでは、受信リクエストのソースIPアド�
   <p>IPv6アドレスの割当ては、ロード・バランサの作成時にのみ行われます。既存のロード・バランサにIPv6アドレスを割り当てることはできません。</p>
 </blockquote>
 
-<p><strong>関連情報：</strong><br />
-<a href="https://docs.oracle.com/ja-jp/iaas/Content/Network/Concepts/ipv6.htm">IPv6アドレス</a><br />
-<a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Concepts/balanceoverview.htm#Overview_of_Load_Balancing">ロード・バランサ</a></p>
+<p><strong>関連情報 ：</strong></p>
 
-<h1 id="予約済パブリックipアドレスを新規もしくは既存のロードバランサにアタッチするにはどうすればよいですか">予約済パブリックIPアドレスを新規もしくは既存のロード・バランサにアタッチするには、どうすればよいですか？</h1>
+<ul>
+  <li><a href="https://docs.oracle.com/ja-jp/iaas/Content/Network/Concepts/ipv6.htm" target="_blank">Oracle Cloud Infrastructureドキュメント : IPv6アドレス</a></li>
+  <li><a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Concepts/balanceoverview.htm#Overview_of_Load_Balancing" target="_blank">Oracle Cloud Infrastructureドキュメント : ロード・バランサ</a></li>
+</ul>
 
-<p><strong>簡単な説明：</strong></p>
+<p><a href="#main" class="back-to-top">Back to Top ↑</a>
+<br /></p>
+
+<h1 id="予約済パブリックipアドレスを新規もしくは既存のロードバランサにアタッチする方法は">予約済パブリックIPアドレスを新規もしくは既存のロード・バランサにアタッチする方法は?</h1>
+
+<h2 id="質問-8">質問</h2>
+
+<p>予約済パブリックIPアドレスを新規もしくは既存のロード・バランサにアタッチするには、どうすればよいですか？</p>
+
+<h2 id="回答-8">回答</h2>
 
 <p>新規のロード・バランサを作成する時に「予約済パブリックIPアドレス」の選択が可能ですが、既存のロード・バランサに予約済パブリックIPアドレスをアタッチする方法はございません。</p>
-
-<p><strong>解決方法：</strong></p>
 
 <p><strong>予約済パブリックIPアドレスを新しいロード・バランサにアタッチする</strong></p>
 
@@ -760,17 +833,26 @@ IPハッシュ・ポリシーでは、受信リクエストのソースIPアド�
 <p>作成した予約済パブリックIPアドレスを新規のロード・バランサにアタッチするには、ロード・バランサの作成時に「<strong>予約済IPアドレス</strong>」をクリックし、「<strong>既存の予約済IPアドレスの選択</strong>」を選択します。<br />
 詳細は、<a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingloadbalancer.htm">ロード・バランサの作成</a>を参照してください。</p>
 
-<p><strong>関連情報：</strong><br />
-<a href="https://docs.oracle.com/ja-jp/iaas/Content/Network/Tasks/managingpublicIPs.htm">パブリックIPアドレス</a><br />
-<a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingloadbalancer.htm">ロード・バランサの作成</a></p>
+<p><strong>関連情報 ：</strong></p>
 
-<h1 id="ヘルスチェック関連の質問"><font color="Green">～ヘルス・チェック関連の質問～</font></h1>
+<ul>
+  <li><a href="https://docs.oracle.com/ja-jp/iaas/Content/Network/Tasks/managingpublicIPs.htm" target="_blank">Oracle Cloud Infrastructureドキュメント : パブリックIPアドレス</a></li>
+  <li><a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingloadbalancer.htm" target="_blank">Oracle Cloud Infrastructureドキュメント : ロード・バランサの作成</a></li>
+</ul>
 
-<h1 id="ロードバランサのトラブルシューティングを行いヘルスチェックの失敗を修正するにはどうすればよいですか">ロード・バランサのトラブルシューティングを行い、ヘルス・チェックの失敗を修正するにはどうすればよいですか？</h1>
+<p><a href="#main" class="back-to-top">Back to Top ↑</a>
+<br /></p>
 
-<p><strong>解決方法：</strong></p>
+<h1 id="ヘルスチェックの失敗を修正するには">ヘルス・チェックの失敗を修正するには?</h1>
+
+<h2 id="質問-9">質問</h2>
+
+<p>ロード・バランサのトラブルシューティングを行い、ヘルス・チェックの失敗を修正するにはどうすればよいですか？</p>
+
+<h2 id="回答-9">回答</h2>
 
 <p>ロード・バランサをトラブルシューティングし、ヘルス・チェックの失敗を修正するには：</p>
+
 <ol>
   <li>ヘルス・チェック・エラーを見つけるために、ロード・バランサのアクセスとエラー・ログを有効にします。詳細については、<a href="https://docs.oracle.com/en-us/iaas/Content/Balance/Tasks/managingloadbalancer_topic-Logging.htm#LogManagement">ログ管理</a>を参照してください。</li>
   <li>受け取ったヘルス・チェック・エラーについて、考えられる原因と解決策は以下の通りになります。</li>
@@ -957,12 +1039,15 @@ IPハッシュ・ポリシーでは、受信リクエストのソースIPアド�
   </li>
 </ul>
 
-<p><strong>関連情報：</strong><br />
-<a href="https://docs.oracle.com/en-us/iaas/Content/Balance/Tasks/managingloadbalancer_topic-Logging.htm#LogManagement">ログ管理</a><br />
-<a href="https://docs.oracle.com/en-us/iaas/Content/Balance/Reference/troubleshooting_load_balancer.htm">ロード・バランシングのトラブルシューティング</a><br />
-<a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/editinghealthcheck.htm">ヘルス・チェック・ポリシーの編集</a><br />
-<a href="https://docs.oracle.com/ja-jp/iaas/Content/Network/Concepts/permissions.htm#Access_and_Security">アクセスとセキュリティ</a><br />
-<a href="https://docs.oracle.com/en-us/iaas/Content/Balance/Reference/troubleshooting_load_balancer.htm#TestTCPHTTPBackendServers">TCP および HTTPバックエンド・サーバーのテスト</a></p>
+<p><strong>関連情報 ：</strong></p>
+
+<ul>
+  <li><a href="https://docs.oracle.com/en-us/iaas/Content/Balance/Tasks/managingloadbalancer_topic-Logging.htm#LogManagement" target="_blank">Oracle Cloud Infrastructureドキュメント : ログ管理</a></li>
+  <li><a href="https://docs.oracle.com/en-us/iaas/Content/Balance/Reference/troubleshooting_load_balancer.htm" target="_blank">Oracle Cloud Infrastructureドキュメント : ロード・バランシングのトラブルシューティング</a></li>
+  <li><a href="https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/editinghealthcheck.htm" target="_blank">Oracle Cloud Infrastructureドキュメント : ヘルス・チェック・ポリシーの編集</a></li>
+  <li><a href="https://docs.oracle.com/ja-jp/iaas/Content/Network/Concepts/permissions.htm#Access_and_Security" target="_blank">Oracle Cloud Infrastructureドキュメント : アクセスとセキュリティ</a></li>
+  <li><a href="https://docs.oracle.com/en-us/iaas/Content/Balance/Reference/troubleshooting_load_balancer.htm#TestTCPHTTPBackendServers" target="_blank">Oracle Cloud Infrastructureドキュメント : TCP および HTTPバックエンド・サーバーのテスト</a></li>
+</ul>
 
         
       </section>
@@ -1004,18 +1089,18 @@ IPハッシュ・ポリシーでは、受信リクエストのソースIPアド�
     
       
       
-      <a href="/ocidocs/categories/#networking" class="page__taxonomy-item" rel="tag">Networking</a><span class="sep">, </span>
+      <a href="/ocidocs/categories/#faq" class="page__taxonomy-item" rel="tag">FAQ</a><span class="sep">, </span>
     
       
       
-      <a href="/ocidocs/categories/#services" class="page__taxonomy-item" rel="tag">Services</a>
+      <a href="/ocidocs/categories/#networking" class="page__taxonomy-item" rel="tag">Networking</a>
     
     </span>
   </p>
 
 
         
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 更新日時:</strong> <time datetime="2021-06-21T00:00:00+09:00">June 21, 2021</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 更新日時:</strong> <time datetime="2021-07-07T00:00:00+09:00">July 7, 2021</time></p>
 
 
       </footer>
@@ -1025,23 +1110,22 @@ IPハッシュ・ポリシーでは、受信リクエストのソースIPアド�
     <h4 class="page__share-title">共有</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Oracle+Cloud+Infrastructure+%E6%8A%80%E8%A1%93FAQ+-+%E3%83%AD%E3%83%BC%E3%83%89%E3%83%BB%E3%83%90%E3%83%A9%E3%83%B3%E3%82%B5%E7%B7%A8+-%20https%3A%2F%2Foracle-japan.github.io%2Focidocs%2Fservices%2Fnetworking%2FLB-faq%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="共有 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=%E3%83%AD%E3%83%BC%E3%83%89%E3%83%BB%E3%83%90%E3%83%A9%E3%83%B3%E3%82%B5%E3%83%BB%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9+%E6%8A%80%E8%A1%93FAQ%20https%3A%2F%2Foracle-japan.github.io%2Focidocs%2Ffaq%2Fnetworking%2Fload-balancer-faq%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="共有 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Foracle-japan.github.io%2Focidocs%2Fservices%2Fnetworking%2FLB-faq%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="共有 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Foracle-japan.github.io%2Focidocs%2Ffaq%2Fnetworking%2Fload-balancer-faq%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="共有 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Foracle-japan.github.io%2Focidocs%2Fservices%2Fnetworking%2FLB-faq%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="共有 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Foracle-japan.github.io%2Focidocs%2Ffaq%2Fnetworking%2Fload-balancer-faq%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="共有 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/ocidocs/services/database/autonomous/machine%20learning/autonomous-machinelearning/" class="pagination--pager" title="機械学習プラットフォームとして活用するAutonomous Database
+      <a href="/ocidocs/faq/storage/file-storage-faq/" class="pagination--pager" title="ファイル・ストレージ・サービス 技術FAQ
 ">前へ</a>
     
     
-      <a href="/ocidocs/services/networking/load-balancer/" class="pagination--pager" title="ロード・バランサ・サービス(再)入門
-">次へ</a>
+      <a href="#" class="pagination--pager disabled">次へ</a>
     
   </nav>
 
@@ -1055,6 +1139,114 @@ IPハッシュ・ポリシーでは、受信リクエストのソースIPアド�
     <div class="page__related">
       <h4 class="page__related-title">関連記事</h4>
       <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ocidocs/faq/storage/file-storage-faq/" rel="permalink">ファイル・ストレージ・サービス 技術FAQ
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-07-07T00:00:00+09:00">July 7, 2021</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Oracle Cloud Infrastructure ファイル・ストレージ・サービスに関して、利用時のよくある質問に対する回答や、技術的な問題に対する対処策をまとめています。
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ocidocs/faq/compute/compute-faq/" rel="permalink">コンピュート・サービス 技術FAQ
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-07-07T00:00:00+09:00">July 7, 2021</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Oracle Cloud Infrastructure コンピュート・サービスに関して、利用時のよくある質問に対する回答や、技術的な問題に対する対処策をまとめています。
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ocidocs/faq/storage/block-volumes-faq/" rel="permalink">ブロック・ボリューム・サービス 技術FAQ
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-07-07T00:00:00+09:00">July 7, 2021</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Oracle Cloud Infrastructure ブロック・ボリューム・サービスに関して、利用時のよくある質問に対する回答や、技術的な問題に対する対処策をまとめています。
+</p>
+  </article>
+</div>
+
         
           
 
@@ -1096,132 +1288,11 @@ IPハッシュ・ポリシーでは、受信リクエストのソースIPアド�
 </div>
 
         
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src="https://speakerd.s3.amazonaws.com/presentations/78914498b3c14b97a112f59283b754b7/slide_0.jpg" alt="">
-      </div>
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/ocidocs/services/networking/load-balancer-100/" rel="permalink">ロード・バランサー 概要
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-calendar-alt" aria-hidden="true"></i>
-        <time datetime="2021-06-28T00:00:00+09:00">June 28, 2021</time>
-      </span>
-    
-
-    
-
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">OCIロード・バランサー・サービスについて、その機能概要、構成コンポーネントの内容、OCIコンソールを利用した構成方法などについて解説しています
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src="https://speakerd.s3.amazonaws.com/presentations/7b765fc938b44be7a2749f4849529c22/slide_0.jpg" alt="">
-      </div>
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/ocidocs/services/networking/load-balancer/" rel="permalink">ロード・バランサ・サービス(再)入門
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-calendar-alt" aria-hidden="true"></i>
-        <time datetime="2021-06-28T00:00:00+09:00">June 28, 2021</time>
-      </span>
-    
-
-    
-
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">OCIロード・バランサを初めて触る人のために基礎的な内容をおさらいしつつ、既にバリバリ使っている人のための新機能解説や応用的な活用方法、そしてテストしてわかったマニュアルには書いていない動作の仕組みを解説しています。
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src="https://speakerd.s3.amazonaws.com/presentations/a626b9f2631e44ebbe815f21b7dab081/slide_0.jpg" alt="">
-      </div>
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/ocidocs/services/database/autonomous/machine%20learning/autonomous-machinelearning/" rel="permalink">機械学習プラットフォームとして活用するAutonomous Database
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-calendar-alt" aria-hidden="true"></i>
-        <time datetime="2021-06-17T00:00:00+09:00">June 17, 2021</time>
-      </span>
-    
-
-    
-
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">機械学習に必要となるNotebookやAutoML UIといったAutonomous Databaseに同梱される各種ツールについて、体系立てて紹介します。
-</p>
-  </article>
-</div>
-
-        
       </div>
     </div>
   
   
 </div>
-
     </div>
 
     
@@ -1297,6 +1368,12 @@ IPハッシュ・ポリシーでは、受信リクエストのソースIPアド�
 
 
 
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+  
+    <script src="/ocidocs/assets/js/clipboardrouge.js"></script>
+  
 
 
 

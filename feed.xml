@@ -1,58 +1,1192 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2021-06-30T10:39:47+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">ロード・バランサ・サービス(再)入門</title><link href="https://oracle-japan.github.io/ocidocs/services/networking/load-balancer/" rel="alternate" type="text/html" title="ロード・バランサ・サービス(再)入門" /><published>2021-06-28T00:00:00+09:00</published><updated>2021-06-28T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/networking/load-balancer/">&lt;p&gt;2021/6/22実施のOCIスキルアップセミナー #9で使用したスライドです。最近大幅に機能が拡充されたOCIのロード・バランサ・サービスについて改めて取り上げました。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2021-07-08T09:23:46+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">ブロック・ボリューム・サービス 技術FAQ</title><link href="https://oracle-japan.github.io/ocidocs/faq/storage/block-volumes-faq/" rel="alternate" type="text/html" title="ブロック・ボリューム・サービス 技術FAQ" /><published>2021-07-07T00:00:00+09:00</published><updated>2021-07-07T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/faq/storage/block-volumes-faq</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/faq/storage/block-volumes-faq/">&lt;h1 id=&quot;課金を完全に停止するには&quot;&gt;課金を完全に停止するには?&lt;/h1&gt;
 
-&lt;p&gt;OCIのリリース当初からあるロード・バランサですが、最近 Flexible Load Balancer や、Network Load Balancer といった機能が加わり、リリース当初とは全く違うサービスと言っていい進化を遂げています。&lt;/p&gt;
+&lt;h2 id=&quot;質問&quot;&gt;質問&lt;/h2&gt;
 
-&lt;p&gt;このスライドでは (再)入門、ということで、OCIロード・バランサを初めて触る人のために基礎的な内容をおさらいしつつ、既にバリバリ使っている人のための新機能解説や応用的な活用方法、そしてテストしてわかったマニュアルには書いていない動作の仕組みを解説しています。
-特に新機能のNetwork Load Balancerはまだ情報も少ないので必見? です。&lt;/p&gt;
+&lt;p&gt;コンピュート・インスタンスをすべて削除しましたが、ブロック・ボリュームに対する課金が継続しています。完全に課金を停止するためには、何を確認すべきですか?&lt;/p&gt;
 
-&lt;h4 id=&quot;スライド&quot;&gt;スライド&lt;/h4&gt;
+&lt;h2 id=&quot;回答&quot;&gt;回答&lt;/h2&gt;
 
-&lt;div style=&quot;max-width:768px&quot;&gt;
+&lt;p&gt;ブロック・ボリューム(またはブート・ボリューム)は、リソースが削除されるまで課金が継続します。下記３つの観点で全てのリソースが削除されているかを確認してください。&lt;/p&gt;
 
-&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) --&gt;
-&lt;script async=&quot;&quot; class=&quot;speakerdeck-embed&quot; data-id=&quot;7b765fc938b44be7a2749f4849529c22&quot; data-ratio=&quot;1.77777777777778&quot; src=&quot;//speakerdeck.com/assets/embed.js&quot;&gt;&lt;/script&gt;
-&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) --&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;ブート・ボリュームの削除&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;コンピュート・インスタンスの削除時に「アタッチされたブート・ボリュームを完全に削除」というチェック・ボックスを有効にしない限り、ブート・ボリュームは削除されません。&lt;br /&gt;
+  不要な場合は、チェックを有効化した上でコンピュート・インスタンスを終了してください。&lt;br /&gt;
+  チェックを有効化せずに終了した場合、Oracle Cloud Infrastructure ドキュメント：&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Block/Tasks/deletingbootvolume.htm&quot;&gt;ブート・ボリュームの削除&lt;/a&gt; 手順に従って、不要なボリュームを削除してください。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;ブロック・ボリュームの削除&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;コンピュート・インスタンスを削除しても、アタッチされたブロック・ボリュームが同時に削除されることはありません。Oracle Cloud Infrastructure ドキュメント：&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Block/Tasks/deletingavolume.htm&quot;&gt;ボリュームの削除&lt;/a&gt; 手順に従って、不要なボリュームを削除してください。&lt;br /&gt;
+  なお、コンピュート・インスタンスにアタッチされた状態では削除ができません。Oracle Cloud Infrastructure ドキュメント：&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Block/Tasks/detachingavolume.htm&quot;&gt;ボリュームのデタッチ&lt;/a&gt; 手順に従って、デタッチを行ってください。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;バックアップの削除&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;手動で作成したバックアップは、バックアップ元のボリュームを削除しても、同時に削除されることはありません。(ただし、ポリシー・ベースで取得したバックアップは、ボリュームの削除と共に削除されます)&lt;br /&gt;
+  ブロック・ボリューム(またはブート・ボリューム)のバックアップ一覧を確認し、不要なバックアップを削除してください。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;#main&quot; class=&quot;back-to-top&quot;&gt;Back to Top ↑&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;複数ボリュームの同時点のバックアップを取得するには&quot;&gt;複数ボリュームの同時点のバックアップを取得するには?&lt;/h1&gt;
+
+&lt;h2 id=&quot;質問-1&quot;&gt;質問&lt;/h2&gt;
+
+&lt;p&gt;コンピュート・インスタンスに複数のブロック・ボリュームをアタッチしています。
+ブート・ボリュームを含めた全てのボリュームに対して、同一時点でのバックアップを取得したいと考えています。
+どのように取得できますか?&lt;/p&gt;
+
+&lt;h2 id=&quot;回答-1&quot;&gt;回答&lt;/h2&gt;
+
+&lt;p&gt;ボリューム・グループを構成することで、対象の ブロック・ボリューム および ブート・ボリューム を含めた複数のボリュームに対するバックアップが取得可能です。&lt;/p&gt;
+
+&lt;p&gt;ただし、ボリューム・グループに含むことができるのは、最大32個 (最大サイズの制限は128 TB) のボリュームです。また、各ボリュームが所属できるボリューム・グループは 1つのみです。&lt;/p&gt;
+
+&lt;p&gt;詳細は Oracle Cloud Infrastructure ドキュメント：&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Block/Concepts/volumegroups.htm&quot;&gt;ボリューム・グループ&lt;/a&gt; および &lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Block/Concepts/volumegroups.htm#unique_643775725&quot;&gt;ボリューム・グループ・バックアップ&lt;/a&gt; を参照してください。&lt;/p&gt;
+
+&lt;p class=&quot;notice--warning&quot;&gt;&lt;strong&gt;注意：顧客管理キーを使用して暗号化されたボリュームのリージョン間バックアップに関して&lt;/strong&gt;&lt;br /&gt;
+既知の問題として、Vault サービスの暗号化キーを使用して暗号化されたボリュームに対して、クロス・リージョン・コピーが有効なバックアップ・ポリシーを使用している場合、暗号化キーは ボリューム・バックアップとともに宛先リージョンにコピーされません。
+暗号化キーの代わりに、宛先リージョンのボリューム・バックアップ・コピーは、Oracleが提供するキーを使用して暗号化されます。&lt;br /&gt;
+回避策などの詳細については &lt;a href=&quot;https://docs.oracle.com/en-us/iaas/Content/knownissues.htm#xregioncopyKMSkeyknownissue&quot;&gt;スケジュール済のリージョン間バックアップ・コピーでボールト暗号化キーが宛先リージョンにコピーされない問題&lt;/a&gt; をご参照ください。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#main&quot; class=&quot;back-to-top&quot;&gt;Back to Top ↑&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;バックアップにかかるストレージ料金はどのように確認できますか&quot;&gt;バックアップにかかるストレージ料金はどのように確認できますか?&lt;/h1&gt;
+
+&lt;h2 id=&quot;質問-2&quot;&gt;質問&lt;/h2&gt;
+
+&lt;p&gt;ブロック・ボリューム(またはブート・ボリューム)のバックアップを取得しています。バックアップにかかる料金はどのように計算されますか?また、どのように確認できますか?&lt;/p&gt;
+
+&lt;h2 id=&quot;回答-2&quot;&gt;回答&lt;/h2&gt;
+
+&lt;p&gt;ブロック・ボリューム(またはブート・ボリューム)のバックアップは、Oracle Cloud Infrastructure オブジェクト・ストレージ に保存され、そのサイズに応じて、オブジェクト・ストレージの料金がかかります。階層は、常に Standard (標準) 層です。オブジェクト・ストレージの価格については、&lt;a href=&quot;https://www.oracle.com/jp/cloud/storage/pricing.html&quot;&gt;Object Storageの価格&lt;/a&gt;を参照してください。&lt;/p&gt;
+
+&lt;p&gt;バックアップのサイズは、コンソール画面から確認ができます。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;ブロック・ボリューム&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;コンソール画面 → ストレージ → ブロック・ストレージ → ブロック・ボリュームのバックアップ にアクセスし、バックアップ・リストの「バックアップ・サイズ/ボリューム・サイズ(GB)」から確認します。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;ブート・ボリューム&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;コンソール画面 → ストレージ → ブロック・ストレージ → ブート・ボリューム・バックアップ にアクセスし、バックアップ・リストの「バックアップ・サイズ/ボリューム・サイズ(GB)」から確認します。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;なお、バックアップを複数世代 取得している場合などに、古い世代を削除すると、その次の世代のバックアップ・サイズが古い世代のサイズを考慮した値で 更新されます。&lt;/p&gt;
+
+&lt;p&gt;例えば、世代１：フルバックアップ 50GB、世代２：増分バックアップ 2GB、世代３：増分バックアップ 5GB、とあった場合に、世代１を削除すると、世代２のバックアップ・サイズが、前の世代のサイズを含む「52GB」のように更新されます。&lt;/p&gt;
+
+&lt;p&gt;これは、OCI のブロック・ボリュームが、前の世代を削除された場合も、次の世代に影響なく復元できる仕様になっているためです。従って、古い世代を削除することが 必ずしも容量削減につながらない可能性があることに注意してください。&lt;/p&gt;
+
+&lt;p&gt;詳細は、OCI技術資料 : ブロック・ボリューム 概要 の &lt;a href=&quot;https://speakerdeck.com/ocise/ociji-shu-zi-liao-burotukuboriyumu-gai-yao?slide=18&quot;&gt;バックアップとリストア&lt;/a&gt; を参照してください。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#main&quot; class=&quot;back-to-top&quot;&gt;Back to Top ↑&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;顧客管理キーを使用したボリュームの作成方法は&quot;&gt;顧客管理キーを使用したボリュームの作成方法は?&lt;/h1&gt;
+
+&lt;h2 id=&quot;質問-3&quot;&gt;質問&lt;/h2&gt;
+
+&lt;p&gt;顧客管理キーを使用し、ブロック・ボリューム(または ブート・ボリューム)を暗号化したいと考えています。
+ボリュームの作成時に ボールト と マスター暗号化キー をそれぞれ指定しましたが、「&lt;em&gt;Authorization failed or requested resource not found.&lt;/em&gt;」というエラー・メッセージが表示され、作成ができません。&lt;br /&gt;
+どのように設定すべきですか?&lt;/p&gt;
+
+&lt;h2 id=&quot;回答-3&quot;&gt;回答&lt;/h2&gt;
+
+&lt;p&gt;エラー・メッセージの内容から、必要な権限が不足していると考えられます。
+キーを使用するためには、「サービス自体にキーの使用が許可されていること」および「ユーザーがリソースにキーを関連づける権限を持っていること」の２つの条件が満たされている必要があります。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;各サービスがキーを使用する権限&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;Vault(顧客管理キー)を使用する場合、各サービスに対して Vault サービスの使用権限を付与する必要があります。
+  ブロック・ボリューム(または ブート・ボリューム)に Vault の使用許可を与える場合のサンプル・ポリシーは以下の通りです。&lt;/p&gt;
+
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  Allow service blockstorage to use keys in compartment &amp;lt;compartment_name&amp;gt; where target.key.id = '&amp;lt;key_OCID&amp;gt;'
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;詳細は Oracle Cloud Infrastructure ドキュメント：共通ポリシー - &lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Identity/Concepts/commonpolicies.htm#services-use-key&quot;&gt;ブロック・ボリューム (略) によるボリューム (略) の暗号化と復号化&lt;/a&gt; を参照してください。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;ユーザーがキーの使用をサービスに委任する権限&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;ユーザーにキーの委任権限(または包括的な使用権限)がない場合、各サービスに Vault(顧客管理キー)を関連づけることができません。以下のポリシーを参考に、キーの使用を委任する権限を設定してください。&lt;/p&gt;
+
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  Allow group &amp;lt;group_name&amp;gt; to use key-delegate in compartment &amp;lt;compartment_name&amp;gt; where target.key.id = '&amp;lt;key_OCID&amp;gt;'
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;詳細は Oracle Cloud Infrastructure ドキュメント：共通ポリシー - &lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Identity/Concepts/commonpolicies.htm#os-bv-admins-use-key-id&quot;&gt;ユーザー・グループによるコンパートメントのキーの使用の委任&lt;/a&gt; を参照してください。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;その他、詳細については、Oracle Cloud Infrastructure ドキュメント：キーの使用 - &lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/KeyManagement/Tasks/usingkeys.htm#permissions&quot;&gt;必須IAMポリシー&lt;/a&gt; も合わせて参照してください。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#main&quot; class=&quot;back-to-top&quot;&gt;Back to Top ↑&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;ボリュームの使用量に対してアラームを設定することは可能&quot;&gt;ボリュームの使用量に対してアラームを設定することは可能?&lt;/h1&gt;
+
+&lt;h2 id=&quot;質問-4&quot;&gt;質問&lt;/h2&gt;
+
+&lt;p&gt;ブロック・ボリューム(またはブート・ボリューム)の実使用量が、指定した値を超過した際に、通知するようアラームを構成したいと考えています。どのように実現できますか?&lt;/p&gt;
+
+&lt;h2 id=&quot;回答-4&quot;&gt;回答&lt;/h2&gt;
+
+&lt;p&gt;ブロック・ボリューム(またはブート・ボリューム)の実使用量は、ブロック・ボリューム・メトリックに含まれていません。そのため、モニタリングを利用して実使用量を監視したい場合は、カスタムメトリックを構成する必要があります。カスタム・メトリックについては、Oracle Cloud Infrastructure ドキュメント：&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Monitoring/Tasks/publishingcustommetrics.htm&quot;&gt;カスタム・メトリックの公開&lt;/a&gt; を参照してください。&lt;/p&gt;
+
+&lt;p&gt;大まかな流れとしては、対象のボリュームに対して df や free コマンドを実行し、容量に関する情報を取得します。取得した情報をカスタム・メトリックとして、&lt;a href=&quot;https://docs.oracle.com/en-us/iaas/api/#/en/monitoring/20180401/MetricData/PostMetricData&quot;&gt;PostMetricData&lt;/a&gt; API を使用し、カスタム・メトリックとして発行します。&lt;/p&gt;
+
+&lt;p&gt;または、&lt;a href=&quot;https://docs.oracle.com/cd/E83857_01/paas/management-cloud/index.html&quot;&gt;Oracle Management Cloud&lt;/a&gt;サービスを使用し、監視することも可能です。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#main&quot; class=&quot;back-to-top&quot;&gt;Back to Top ↑&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;特定のリソースに関する操作ログの確認方法は&quot;&gt;特定のリソースに関する操作ログの確認方法は?&lt;/h1&gt;
+
+&lt;h2 id=&quot;質問-5&quot;&gt;質問&lt;/h2&gt;
+
+&lt;p&gt;監査(Audit)ログを利用し、ブロック・ボリュームの削除など、特定のブロック・ボリューム(またはブート・ボリューム)に関するアクティビティを監視するには、どのように設定すべきですか?&lt;/p&gt;
+
+&lt;h2 id=&quot;回答-5&quot;&gt;回答&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;コンソールでの確認方法&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;コンソールから監査(Audit)ログの確認を行う場合、ロギングの監査ページから検索が行えます。フィルタリング項目にて、対象のリソースや、イベント・タイプを設定することで、特定のリソースに関する、特定のアクティビティを確認することができます。詳細は Oracle Cloud Infrastructure ドキュメント：&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Logging/Concepts/audit_logs.htm&quot;&gt;監査ログのフィルタリング&lt;/a&gt; をご参照ください。&lt;/p&gt;
+
+    &lt;p&gt;参考として、ボリュームに関連する主なイベント・タイプには下記のような種類があります。&lt;/p&gt;
+
+    &lt;table&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;イベント・タイプ&lt;/th&gt;
+          &lt;th&gt;操作の概要&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;com.oraclecloud.BlockVolumes.CreateVolume.begin&lt;/td&gt;
+          &lt;td&gt;ボリュームの作成を開始&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;com.oraclecloud.BlockVolumes.DeleteVolume.begin&lt;/td&gt;
+          &lt;td&gt;ボリュームの削除を開始&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;com.oraclecloud.BlockVolumes.UpdateVolume.begin&lt;/td&gt;
+          &lt;td&gt;ボリュームのアップデートを開始(サイズの拡張、パフォーマンスの自動チューニングの有効化など)&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;com.oraclecloud.computeApi.AttachVolume.begin&lt;/td&gt;
+          &lt;td&gt;コンピュート・インスタンスに対してボリュームのアタッチを開始&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;com.oraclecloud.computeApi.DetachVolume.begin&lt;/td&gt;
+          &lt;td&gt;コンピュート・インスタンスに対してボリュームのデタッチを開始&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;コマンドラインでの確認方法&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;コマンドラインで監査ログの確認を行う場合は、ログの検索専用の問合せ構文を用いて検索します。下記にコマンドの例を示しますが、詳細は Oracle Cloud Infrastructure ドキュメント：&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Logging/Concepts/searchinglogs.htm#using_the_cli_logsearch&quot;&gt;ログの検索&lt;/a&gt; をご参照ください。&lt;/p&gt;
+
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  oci logging-search search-logs --search-query &quot;search \&quot;&amp;lt;compartment-id&amp;gt;/_Audit\&quot; | sort by datetime desc&quot; --time-start 2021-01-01 --time-end 2021-01-31
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;#main&quot; class=&quot;back-to-top&quot;&gt;Back to Top ↑&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;ボリュームのサービス制限の引上げ方法&quot;&gt;ボリュームのサービス制限の引上げ方法&lt;/h1&gt;
+
+&lt;h2 id=&quot;質問-6&quot;&gt;質問&lt;/h2&gt;
+
+&lt;p&gt;ブロック・ボリューム(またはブート・ボリューム)を作成しようとしましたが、サービス制限に達したため、作成できません。サービス制限の引上げを行うにはどのようにすべきですか?&lt;/p&gt;
+
+&lt;h2 id=&quot;回答-6&quot;&gt;回答&lt;/h2&gt;
+
+&lt;p&gt;ブロック・ボリューム(またはブート・ボリューム)を利用するには、「Volume Count」「Volume Size (GB)」に対するリクエストを挙げる必要があります。「Volume Count」はボリュームの数、「Volume Size (GB)」はボリュームの総量を意味しています。&lt;/p&gt;
+
+&lt;p&gt;自身のテナントが、どの制限に達しているのかを確認するには、コンソール画面 → ガバナンスと管理 → 制限、割当ておよび使用状況 から確認できます。サービスを「Block Volume」、スコープを「対象の可用性ドメイン」で指定し、現在の使用状況を確認してください。&lt;/p&gt;
+
+&lt;p&gt;リクエストは、コンソール画面のヘルプ、または、My Oracle Support より可能です。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;block-volumes-faq-image1.png&quot; alt=&quot;block-volumes-faq-image1.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#main&quot; class=&quot;back-to-top&quot;&gt;Back to Top ↑&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;ボリュームを別テナントに移動する方法&quot;&gt;ボリュームを別テナントに移動する方法&lt;/h1&gt;
+
+&lt;h2 id=&quot;質問-7&quot;&gt;質問&lt;/h2&gt;
+
+&lt;p&gt;ブロック・ボリューム(またはブート・ボリューム)を別のテナントに移動したいと考えています。どのように実現できますか?&lt;/p&gt;
+
+&lt;h2 id=&quot;回答-7&quot;&gt;回答&lt;/h2&gt;
+
+&lt;p&gt;現時点では、ブロック・ボリュームやブート・ボリュームを直接的に別テナントへ移動することはできません。従って、対象のテナントの コンピュート・インスタンス間で通信できるように構成し、robocopy や rsync コマンドを利用し、ボリューム間でデータをコピーする必要があります。&lt;/p&gt;
+
+&lt;p&gt;コンピュート・インスタンス間の通信をプライベートに行いたい場合は、ローカル・ピアリングを構成することで、別テナント間でもプライベート接続が可能です。&lt;/p&gt;
+
+&lt;p&gt;なお、移動対象がブート・ボリュームだけであり、且つ、400GB以下のサイズであれば、カスタム・イメージ化し、オブジェクト・ストレージを介することで移動を実現できます。(参考：Oracle Cloud Infrastructure ドキュメント：&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Compute/Tasks/imageimportexport.htm#Exporting&quot;&gt;イメージのエクスポート&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#main&quot; class=&quot;back-to-top&quot;&gt;Back to Top ↑&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;インスタンスがアタッチされたボリュームを認識しない&quot;&gt;インスタンスがアタッチされたボリュームを認識しない&lt;/h1&gt;
+
+&lt;h2 id=&quot;質問-8&quot;&gt;質問&lt;/h2&gt;
+
+&lt;p&gt;コンピュート・インスタンスに、ブロック・ボリュームを新規に追加しました。接続方法は、「iSCSI」を選択しています。OSまたはディスク管理で確認すると、追加したブロック・ボリュームが反映されていないようです。この問題を解決する方法を教えてください。&lt;/p&gt;
+
+&lt;h2 id=&quot;回答-8&quot;&gt;回答&lt;/h2&gt;
+
+&lt;p&gt;アタッチ・タイプに「iSCSI」を選択した場合、iSCSIコマンドを実行するなど、iSCSI 接続を構成する必要があります。アタッチ完了後、アタッチされたブロック・ボリュームの一覧から、対象のブロック・ボリュームのメニューから「iSCSIコマンドおよび情報」を選択することで、iSCSI 接続を構成するために必要な情報を表示することができます。&lt;/p&gt;
+
+&lt;p&gt;詳細については Oracle Cloud Infrastructure ドキュメント：&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Block/Concepts/iscsiinformation.htm&quot;&gt;iSCSIコマンドおよび情報&lt;/a&gt; を参照してください。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Windows OS の場合&lt;/strong&gt;：&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/GSG/Tasks/addingstorageForWindows.htm#Attachin&quot;&gt;Windowsインスタンスへのブロック・ボリュームの追加&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Linux ベース OS の場合&lt;/strong&gt;：&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/GSG/Tasks/addingstorage.htm#Attachin&quot;&gt;ブロック・ボリュームの追加&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;下記イメージは、Linux ベース OS の場合の「iSCSIコマンドおよび情報」の例です。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;block-volumes-faq-image2.png&quot; alt=&quot;block-volumes-faq-image2.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#main&quot; class=&quot;back-to-top&quot;&gt;Back to Top ↑&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;ボリュームをアタッチした後パーティションやファイルシステムを作成するには&quot;&gt;ボリュームをアタッチした後、パーティションやファイルシステムを作成するには?&lt;/h1&gt;
+
+&lt;h2 id=&quot;質問-9&quot;&gt;質問&lt;/h2&gt;
+
+&lt;p&gt;Linux ベース OS のコンピュート・インスタンスに、ブロック・ボリュームを新規に追加しました。接続は完了しています。追加したボリュームに対して、パーティションや Linux ファイルシステムを作成するには、どうしたら良いですか?&lt;/p&gt;
+
+&lt;h2 id=&quot;回答-9&quot;&gt;回答&lt;/h2&gt;
+
+&lt;p&gt;ここでは、例として、Oracle Linux 7.9 での構成手順を示します。ご利用のインスタンスのファイルシステム、および、パーティションテーブルに合わせて、読み替えてください。&lt;/p&gt;
+
+&lt;div class=&quot;notice--info&quot;&gt;
+  
+&lt;p&gt;&lt;strong&gt;1. パーティションの作成&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;パーティションを作成するボリュームを特定するために、次のコマンドを実行して、アタッチされたブロック・ボリュームをリストします。&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;lsblk
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;コマンドの結果の例を以下に示します。この例では、「sdc」というボリュームがパーティションを作成する対象のボリュームです。&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sdb      8:16   0   50G  0 disk
+├ sdb2   8:18   0    8G  0 part &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;SWAP]
+├ sdb3   8:19   0 41.8G  0 part /
+└ sdb1   8:17   0  200M  0 part /boot/efi
+sdc      8:32   0   55G  0 disk
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;次に、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;parted&lt;/code&gt; コマンドを実行し、パーティションテーブルを編集します。&lt;volume_id&gt; は、ボリューム識別子(`/dev/sdc`など)です。&lt;/volume_id&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;parted &amp;lt;volume_id&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;ボリュームの正確な開始位置がわかるように、次のコマンドを実行して、表示単位をセクターに変更します。&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;parted&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; unit s
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;次のコマンドを実行して、ラベルを作成します。ここでは、「gpt」を指定します。&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;parted&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; mklabel gpt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;次のコマンドを実行して、パーティションを作成します。&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;parted&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; mkpart
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Partition name?  []?&lt;/code&gt; ： 任意のパーティション名を指定します。例えば、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;primary&lt;/code&gt; などです。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;File system type?  [ext2]?&lt;/code&gt; ： ファイルシステムの種類を指定します。例えば、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xfs&lt;/code&gt; などです。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Start?&lt;/code&gt; ： 開始位置を指定します。例えば、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0%&lt;/code&gt; などです。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;End?&lt;/code&gt; ： 終了位置を指定します。例えば、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;100%&lt;/code&gt; などです。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;以上でパーティションの作成は完了です。次のコマンドを実行して、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;parted&lt;/code&gt;を終了します。&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;parted&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; quit
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;再度ボリュームのリストを確認するため、次のコマンドを実行します。&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;lsblk
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;コマンドの結果の例を以下に示します。この例では、「sdc」というボリュームに &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sdc1&lt;/code&gt; というパーティションを作成できたことが確認できます。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sdb      8:16   0   50G  0 disk
+├ sdb2   8:18   0    8G  0 part [SWAP]
+├ sdb3   8:19   0 41.8G  0 part /
+└ sdb1   8:17   0  200M  0 part /boot/efi
+sdc      8:32   0   55G  0 disk
+└ sdc1   8:33   0   55G  0 part
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;2. マウント・ポイントの作成&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;次のコマンドを実行し、マウント用のディレクトリを作成し、権限の設定を行います。例として、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/mnt/devsdc&lt;/code&gt; というディレクトリを作成しています。&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo mkdir&lt;/span&gt; /mnt/devsdc
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo chown &lt;/span&gt;opc:opc /mnt/devsdc/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;3. fstabの編集&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;インスタンスの起動時に自動でマウントされるよう、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/etc/fstab&lt;/code&gt; を編集します。&lt;/p&gt;
+
+&lt;p&gt;ボリュームの指定方法によって、手順が異なります。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;ボリュームの指定方法について&lt;/strong&gt;&lt;/p&gt;
+
+  &lt;p&gt;Linux ベースの OSでは、ボリュームがアタッチされる順序は、再起動のたびに変わる可能性があります。ルート以外のボリュームが複数ある場合に、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/dev/sdb&lt;/code&gt; のようにデバイス名を使用してボリュームを参照していると、特定のデバイス名に対してマウントしようとするボリュームと、実際にマウントされるボリュームが異なってしまう可能性があります。
+この問題を回避するには、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/etc/fstab&lt;/code&gt;ファイル内に、デバイス名のかわりに &lt;strong&gt;ボリュームUUID&lt;/strong&gt; を指定します。もしくは、&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Block/References/consistentdevicepaths.htm#images&quot;&gt;一貫性のあるデバイス・パスが使用可能なイメージ&lt;/a&gt; の場合は、&lt;strong&gt;一貫性のあるデバイス・パス&lt;/strong&gt; を指定します。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;3-a. ボリュームUUIDを指定する場合&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;ボリュームのUUIDを確認するため、次のコマンドを実行します。&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;blkid
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;次に、fstab を編集するため、次のコマンドを実行します。&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;vi /etc/fstab
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;下記の例を参考に、fstab ファイルの最後に追記し、保存します。(&lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;insert&lt;/code&gt;&lt;/strong&gt; で編集、&lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Esc&lt;/code&gt;&lt;/strong&gt; → &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;:wq&lt;/code&gt;&lt;/strong&gt; で保存して終了、編集をキャンセルする場合は &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Esc&lt;/code&gt;&lt;/strong&gt; → &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;:q!&lt;/code&gt;&lt;/strong&gt;)&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;UUID&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&amp;lt;確認したUUID&amp;gt; /mnt/devsdc xfs defaults,_netdev,nofail 0 2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;確認したUUID&amp;gt;&lt;/code&gt; ： ボリュームのUUIDを指定します&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/mnt/devsdc&lt;/code&gt; ： 作成したマウント・ポイントを指定します&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_netdev&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nofail&lt;/code&gt; オプションを指定する理由については、&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Block/References/fstaboptions.htm#Use_the__netdev_and_nofail_Options&quot;&gt;_netdevおよびnofailオプションの使用&lt;/a&gt; を参照してください。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;次のコマンドを実行し、設定を反映します。&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;mount &lt;span class=&quot;nt&quot;&gt;-a&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;最後に、以下のコマンドを実行することで、アタッチしたブロック・ボリューム が追加されていることが確認できます。&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;df&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-h&lt;/span&gt;
+    &lt;span class=&quot;sb&quot;&gt;```&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;**&lt;/span&gt;3-b. 一貫性のあるデバイス・パスを指定する場合&lt;span class=&quot;k&quot;&gt;**&lt;/span&gt;
+
+一貫性のあるデバイス・パスを使用する前に、以下に該当しないことを確認してください。
+
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; 1. アタッチしたボリュームが ブート・ボリュームでないこと。&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;ブート・ボリュームをデータ・ボリュームとして2番目のインスタンスにアタッチする場合、デバイス・パスは使用できません。&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; 2. インスタンスが &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;一貫性のあるデバイス・パスをサポートしているイメージ]&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;https://docs.oracle.com/ja-jp/iaas/Content/Block/References/consistentdevicepaths.htm#images&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; であること。
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; 3. インスタンスへアタッチする際、[デバイス・パスを指定済み]&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;https://docs.oracle.com/ja-jp/iaas/Content/Block/References/consistentdevicepaths.htm#Device_Paths_in_the_Console&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; であること。
+
+次に、一貫性のあるデバイス・パスが正しく構成されていることを確認するため、次のコマンドを実行します。
+
+&lt;span class=&quot;sb&quot;&gt;```&lt;/span&gt;sh
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ll /dev/oracleoci/oraclevd&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;以下のような出力がされていれば、問題ありません。&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;lrwxrwxrwx. 1 root root 6 Feb  7 21:02 /dev/oracleoci/oraclevda -&amp;gt; ../sda
+lrwxrwxrwx. 1 root root 7 Feb  7 21:02 /dev/oracleoci/oraclevda1 -&amp;gt; ../sda1
+lrwxrwxrwx. 1 root root 7 Feb  7 21:02 /dev/oracleoci/oraclevda2 -&amp;gt; ../sda2
+lrwxrwxrwx. 1 root root 7 Feb  7 21:02 /dev/oracleoci/oraclevda3 -&amp;gt; ../sda3
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;次のコマンドを実行し、fstab を編集します。&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;vi /etc/fstab
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;下記の例を参考に、fstab ファイルの最後に追記し、保存します。(&lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;insert&lt;/code&gt;&lt;/strong&gt; で編集、&lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Esc&lt;/code&gt;&lt;/strong&gt; → &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;:wq&lt;/code&gt;&lt;/strong&gt; で保存して終了、編集をキャンセルする場合は &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Esc&lt;/code&gt;&lt;/strong&gt; → &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;:q!&lt;/code&gt;&lt;/strong&gt;)&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/dev/oracleoci/oraclevdb /mnt/devsdc xfs defaults,_netdev,nofail 0 2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/dev/oracleoci/oraclevdb&lt;/code&gt; ： 一貫性のあるデバイス・パスを指定します&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/mnt/devsdc&lt;/code&gt; ： 作成したマウント・ポイントを指定します&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_netdev&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nofail&lt;/code&gt; オプションを指定する理由については、&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Block/References/fstaboptionsconsistentdevicepaths.htm#Use_the__netdev_and_nofail_Options&quot;&gt;_netdevおよびnofailオプションの使用&lt;/a&gt; を参照してください。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;次のコマンドを実行し、設定を反映します。&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;mount &lt;span class=&quot;nt&quot;&gt;-a&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;最後に、以下のコマンドを実行することで、アタッチしたブロック・ボリューム が追加されていることが確認できます。&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;df&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-h&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;/div&gt;
 
-&lt;h4 id=&quot;セミナー動画&quot;&gt;セミナー動画&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;#main&quot; class=&quot;back-to-top&quot;&gt;Back to Top ↑&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
 
-&lt;!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください --&gt;
-&lt;iframe width=&quot;768&quot; height=&quot;432&quot; src=&quot;https://www.youtube.com/embed/s4EIjmtkDkg?start=935&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) --&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Networking" /><category term="スライドあり" /><category term="動画あり" /><category term="レベル:入門(100)" /><category term="レベル:応用(200)" /><summary type="html">OCIロード・バランサを初めて触る人のために基礎的な内容をおさらいしつつ、既にバリバリ使っている人のための新機能解説や応用的な活用方法、そしてテストしてわかったマニュアルには書いていない動作の仕組みを解説しています。</summary></entry><entry><title type="html">ロード・バランサー 概要</title><link href="https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-100/" rel="alternate" type="text/html" title="ロード・バランサー 概要" /><published>2021-06-28T00:00:00+09:00</published><updated>2021-06-28T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-100</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-100/">&lt;p&gt;バックエンドに配置した様々なサービスの冗長性やスケーリングをサポートする OCI ロード・バランサー・サービスについて、その機能概要、構成コンポーネントの内容、OCIコンソールを利用した構成方法などについて解説しています。&lt;br /&gt;
-2021/6/28 ネットワーク・ロード・バランサのリリースに合わせて全般的に記述を見直しました。&lt;/p&gt;
+&lt;h1 id=&quot;ボリュームのサイズの拡張をosに反映させるには&quot;&gt;ボリュームのサイズの拡張をOSに反映させるには?&lt;/h1&gt;
 
-&lt;h4 id=&quot;スライド&quot;&gt;スライド&lt;/h4&gt;
+&lt;h2 id=&quot;質問-10&quot;&gt;質問&lt;/h2&gt;
 
-&lt;div style=&quot;max-width:768px&quot;&gt;
+&lt;p&gt;ブロック・ボリューム(またはブート・ボリューム)の容量を拡張しましたが、OSまたはディスク管理で確認すると、追加したボリュームが反映されていないようです。この問題を解決する方法を教えてください。&lt;/p&gt;
 
-&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) --&gt;
-&lt;script async=&quot;&quot; class=&quot;speakerdeck-embed&quot; data-id=&quot;78914498b3c14b97a112f59283b754b7&quot; data-ratio=&quot;1.77777777777778&quot; src=&quot;//speakerdeck.com/assets/embed.js&quot;&gt;&lt;/script&gt;
-&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) --&gt;
+&lt;h2 id=&quot;回答-10&quot;&gt;回答&lt;/h2&gt;
 
-&lt;/div&gt;
+&lt;p&gt;ボリュームを拡張した後は、ディスクの再スキャンが必要です。再スキャン・コマンドを実行することにより、OSが拡張されたディスク・サイズを認識します。&lt;/p&gt;
 
-&lt;h4 id=&quot;セミナー動画&quot;&gt;セミナー動画&lt;/h4&gt;
+&lt;p&gt;コマンドの詳細については Oracle Cloud Infrastructure ドキュメント：&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Block/Tasks/rescanningdisk.htm&quot;&gt;ブロック・ボリュームまたはブート・ボリュームのディスクの再スキャン&lt;/a&gt; をご参照ください。&lt;/p&gt;
 
-&lt;!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください --&gt;
-&lt;div style=&quot;max-width:768px&quot;&gt;&lt;div style=&quot;position:relative;padding-bottom:56.25%&quot;&gt;&lt;iframe id=&quot;kaltura_player&quot; src=&quot;https://cdnapisec.kaltura.com/p/2171811/sp/217181100/embedIframeJs/uiconf_id/35965902/partner_id/2171811?iframeembed=true&amp;amp;playerId=kaltura_player&amp;amp;entry_id=0_pgchkk4i&amp;amp;flashvars[streamerType]=auto&amp;amp;flashvars[localizationCode]=en&amp;amp;flashvars[leadWithHTML5]=true&amp;amp;flashvars[sideBarContainer.plugin]=true&amp;amp;flashvars[sideBarContainer.position]=left&amp;amp;flashvars[sideBarContainer.clickToClose]=true&amp;amp;flashvars[chapters.plugin]=true&amp;amp;flashvars[chapters.layout]=vertical&amp;amp;flashvars[chapters.thumbnailRotator]=false&amp;amp;flashvars[streamSelector.plugin]=true&amp;amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;amp;flashvars[dualScreen.plugin]=true&amp;amp;flashvars[hotspots.plugin]=1&amp;amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;amp;&amp;amp;wid=1_c428rwns&quot; width=&quot;768&quot; height=&quot;432&quot; allowfullscreen=&quot;&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allow=&quot;autoplay *; fullscreen *; encrypted-media *&quot; sandbox=&quot;allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation&quot; frameborder=&quot;0&quot; title=&quot;Kaltura Player&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) --&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Networking" /><category term="スライドあり" /><category term="動画あり" /><category term="レベル:入門(100)" /><summary type="html">OCIロード・バランサー・サービスについて、その機能概要、構成コンポーネントの内容、OCIコンソールを利用した構成方法などについて解説しています</summary></entry><entry><title type="html">ロード・バランサー 詳細</title><link href="https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-200/" rel="alternate" type="text/html" title="ロード・バランサー 詳細" /><published>2021-06-28T00:00:00+09:00</published><updated>2021-06-28T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-200</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-200/">&lt;p&gt;様々なサービスの冗長性やスケーリングをサポートする OCI ロード・バランサー・サービスについて、応用的な利用方法について解説したドキュメントです。&lt;br /&gt;
-セッション永続性、仮想ホストによるルーティング、URIパス・ベース・ルーティング、SSL通信方式とロード・バランサーでのSSLターミネーションの設定、ロード・バランサーが収集するメトリック、トラブル時の対応ガイドラインについて解説しています。&lt;br /&gt;
-2021/6/28 ネットワーク・ロード・バランサのリリースに合わせて全般的に記述を見直しました。&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Windows OS の場合&lt;/strong&gt;：&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Block/Tasks/rescanningdisk.htm#Rescanni2&quot;&gt;Windowsインスタンスにアタッチされたボリュームのディスクの再スキャン&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Linux ベース OS の場合&lt;/strong&gt;：&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Block/Tasks/rescanningdisk.htm#Rescanni&quot;&gt;Linuxベースのインスタンスにアタッチされたボリュームのディスクの再スキャン&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h4 id=&quot;スライド&quot;&gt;スライド&lt;/h4&gt;
+&lt;p&gt;また、ディスクの再スキャン後は、パーティションの拡張も必要です。&lt;/p&gt;
 
-&lt;div style=&quot;max-width:768px&quot;&gt;
+&lt;p&gt;ブロック・ボリュームの場合は、&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Block/Tasks/extendingblockpartition.htm&quot;&gt;ブロック・ボリュームのパーティションの拡張&lt;/a&gt;を、ブート・ボリュームの場合は、&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Block/Tasks/extendingbootpartition.htm&quot;&gt;ブート・ボリュームのパーティションの拡張&lt;/a&gt; を参照してください。&lt;/p&gt;
 
-&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) --&gt;
-&lt;script async=&quot;&quot; class=&quot;speakerdeck-embed&quot; data-id=&quot;9ca991733d2a4670bdd4e5ed5b5770c4&quot; data-ratio=&quot;1.77777777777778&quot; src=&quot;//speakerdeck.com/assets/embed.js&quot;&gt;&lt;/script&gt;
-&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) --&gt;
+&lt;p&gt;&lt;a href=&quot;#main&quot; class=&quot;back-to-top&quot;&gt;Back to Top ↑&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
 
-&lt;/div&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Networking" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html">OCI ロード・バランサー・サービスについて、セッション永続性、仮想ホストによるルーティング、URIパス・ベース・ルーティング、SSL通信方式とロード・バランサーでのSSLターミネーションの設定、ロード・バランサーが収集するメトリック、トラブル時の対応ガイドラインなどの応用的な利用方法について解説しています</summary></entry><entry><title type="html">Oracle Cloud Infrastructure 技術FAQ - ロード・バランサ編 -</title><link href="https://oracle-japan.github.io/ocidocs/services/networking/LB-faq/" rel="alternate" type="text/html" title="Oracle Cloud Infrastructure 技術FAQ - ロード・バランサ編 -" /><published>2021-06-21T00:00:00+09:00</published><updated>2021-06-21T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/networking/LB-faq</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/networking/LB-faq/">&lt;p&gt;一般的なOracle Cloud InfrastructureのFAQは&lt;a href=&quot;https://www.oracle.com/jp/cloud/compute/faq.html&quot;&gt;サービスの公式ページ&lt;/a&gt;にも記載されていますのでご覧ください。&lt;/p&gt;
+&lt;h1 id=&quot;アタッチされているブロックボリュームをインスタンス構成に含める方法&quot;&gt;アタッチされているブロック・ボリュームをインスタンス構成に含める方法&lt;/h1&gt;
 
-&lt;h1 id=&quot;クライアントがロードバランサに接続できない理由として考えられる原因を教えてください&quot;&gt;クライアントがロード・バランサに接続できない理由として考えられる原因を教えてください。&lt;/h1&gt;
+&lt;h2 id=&quot;質問-11&quot;&gt;質問&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;簡単な説明：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;インスタンスにアタッチされているブロック・ボリュームをインスタンス構成に含めたいと考えています。設定方法について教えてください。&lt;/p&gt;
+
+&lt;h2 id=&quot;回答-11&quot;&gt;回答&lt;/h2&gt;
+
+&lt;p&gt;コンソール画面を使用して インスタンス構成を作成する場合、アタッチされたブロック・ボリュームをインスタンス構成に含めることはできません。&lt;/p&gt;
+
+&lt;p&gt;インスタンス構成にブロック・ボリュームのコンテンツを含めるには、まず &lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Block/Tasks/backingupavolume.htm#Backing_Up_a_Volume&quot;&gt;アタッチされたブロック・ボリュームのバックアップを作成&lt;/a&gt;します。&lt;/p&gt;
+
+&lt;p&gt;次に、SDK、CLIまたはAPIを使用し、インスタンス構成を作成する際に、”構成設定” にて、ブロック・ボリュームのバックアップを指定します。インスタンス構成を作成する際の “構成設定” は、以下コマンドを参考に、テンプレートを取得することをおすすめします。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;“構成設定” テンプレートの取得 [&lt;a href=&quot;https://docs.oracle.com/iaas/tools/oci-cli/latest/oci_cli_docs/cmdref/compute-management/instance-configuration/create.html&quot;&gt;CLI documents&lt;/a&gt;]&lt;/p&gt;
+
+    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  oci compute-management instance-configuration create &lt;span class=&quot;nt&quot;&gt;--generate-param-json-input&lt;/span&gt; instance-details &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; template.json
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;続いて、取得したテンプレートを、作成したいインスタンス構成の内容に応じて 編集します。その際、”blockVolumes” ブロックの “sourceDetails” にて、予め作成したブロック・ボリューム・バックアップの OCID を指定します。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;blockVolumes&quot;: {
+  ~ 略 ~
+  &quot;createDetails&quot;: {
+    &quot;sourceDetails&quot;: {
+      &quot;id&quot;:&quot;ocid1.volumebackup.oc1.xxxxxxxxxxxxxxxx&quot;,
+      &quot;type&quot;: &quot;volumeBackup&quot;
+    },
+  ~ 略 ~
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;最後に、以下のコマンドを参考に、インスタンス構成を作成します。&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--instance-details&lt;/code&gt; パラメータにて、編集した “構成設定” ファイルを指定してください。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;インスタンス構成の作成 [&lt;a href=&quot;https://docs.oracle.com/iaas/tools/oci-cli/latest/oci_cli_docs/cmdref/compute-management/instance-configuration/create.html&quot;&gt;CLI documents&lt;/a&gt;]&lt;/p&gt;
+
+    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  oci compute-management instance-configuration create &lt;span class=&quot;nt&quot;&gt;--compartment-id&lt;/span&gt; ocid1.compartment.oc1.xxxxxxxxxxxxxxxx &lt;span class=&quot;nt&quot;&gt;--instance-details&lt;/span&gt; file://input.json &lt;span class=&quot;nt&quot;&gt;--display-name&lt;/span&gt; instance-config-xxx
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;なお、その他の注意事項として、インスタンス構成には、インスタンスのブート・ボリュームの情報(インスタンスにインストールされているアプリケーション、バイナリ、ファイルなど)も含まれません。
+それらの情報を含むインスタンス構成を作成するには、まず&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Compute/Tasks/managingcustomimages.htm#To&quot;&gt;インスタンスからカスタム・イメージを作成&lt;/a&gt;し、次に&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Compute/Tasks/managingcustomimages.htm#To2&quot;&gt;そのカスタム・イメージを使用して新しいインスタンスを起動&lt;/a&gt;する必要があります。&lt;/p&gt;
+
+&lt;p&gt;詳細は、Oracle Cloud Infrastructure ドキュメント：&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Compute/Tasks/creatinginstanceconfig.htm&quot;&gt;インスタンス構成の作成&lt;/a&gt; を参照してください。&lt;/p&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="FAQ" /><category term="Storage" /><category term="FAQ" /><summary type="html">Oracle Cloud Infrastructure ブロック・ボリューム・サービスに関して、利用時のよくある質問に対する回答や、技術的な問題に対する対処策をまとめています。</summary></entry><entry><title type="html">コンピュート・サービス 技術FAQ</title><link href="https://oracle-japan.github.io/ocidocs/faq/compute/compute-faq/" rel="alternate" type="text/html" title="コンピュート・サービス 技術FAQ" /><published>2021-07-07T00:00:00+09:00</published><updated>2021-07-07T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/faq/compute/compute-faq</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/faq/compute/compute-faq/">&lt;h1 id=&quot;コンソールにログインできない&quot;&gt;コンソールにログインできない&lt;/h1&gt;
+
+&lt;h2 id=&quot;質問&quot;&gt;質問&lt;/h2&gt;
+
+&lt;p&gt;ブラウザからコンソールのURLにアクセスしたのですがページが表示されません。&lt;/p&gt;
+
+&lt;h2 id=&quot;回答&quot;&gt;回答&lt;/h2&gt;
+
+&lt;p&gt;まずはクラウド・アカウント名、ユーザー名、パスワードが正しいかを確認してください。ログイン方法は &lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/GSG/Tasks/signingin.htm&quot;&gt;Oracle Cloud Infrastructureドキュメント : コンソールのサインイン&lt;/a&gt; を参考にしてください。&lt;/p&gt;
+
+&lt;p&gt;問題の切り分けや対処として、以下の対応が考えられます。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/GSG/Tasks/signingin.htm#Supporte&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : サポートされているブラウザ&lt;/a&gt; を確認し、サポートされているブラウザをご利用ください。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;サポートされている他のブラウザでも同様の問題が発生するかどうかを確認します。&lt;/p&gt;
+
+    &lt;p&gt;どのブラウザでも問題が発生する場合&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;クライアントが利用しているネットワークのファイアーウォール設定やPCのセキュリティ設定でコンソールURLにアクセス可能かどうかを確認してください。&lt;/li&gt;
+      &lt;li&gt;クライアントPCの時刻設定が正しいか確認してください。PCの時刻がずれている場合は正しく設定して下さい。コンソールからはデータ取得のためにOCIに対しAPIリクエストが発行されますが、クライアントとOCIの時刻とのずれが大きいとAPIが正しく実行できずエラーになります。&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;特定のブラウザのみで問題が発生する場合&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;プライベートモード(シークレットモード)でログインする&lt;/li&gt;
+      &lt;li&gt;キャッシュのクリア&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;上記を実施しても解決しない場合はサポートにSRを起票してください。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#main&quot; class=&quot;back-to-top&quot;&gt;Back to Top ↑&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;コンピュートインスタンスにsshできない&quot;&gt;コンピュート・インスタンスにsshできない&lt;/h1&gt;
+
+&lt;h2 id=&quot;質問-1&quot;&gt;質問&lt;/h2&gt;
+
+&lt;p&gt;Linuxのコンピュート・インスタンスを作成しましたが、クライアントからsshでのログインができません。&lt;/p&gt;
+
+&lt;h2 id=&quot;回答-1&quot;&gt;回答&lt;/h2&gt;
+
+&lt;p&gt;問題の切り分けや対処として、以下の対応が考えられます。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;クライアント側でお使いのネットワークのファイアーウォール設定でsshの通信が許可されているかを確認し、必要に応じてsshの通信を許可してください。&lt;br /&gt;
+  不明な場合はネットワーク管理者の方にご確認ください。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;クライアント側ネットワークでプロキシサーバーを経由する必要があるか確認してください。&lt;br /&gt;
+  プロキシサーバーの経由が必要な場合は、sshクライアント・ソフトウェアに適切にプロキシ設定を行ってください。不明な場合はネットワーク管理者の方にご確認ください。&lt;br /&gt;
+   (例) Tera Term の場合は、メニュー 設定 → プロキシ から設定&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;OCI上でコンピュート・インスタンスを配置しているサブネットの設定を確認します。&lt;br /&gt;
+  サブネットに設定されているセキリティ・リスト、またはインスタンスに関連づけられているネットワーク・セキュリティ・グループのルールに以下のイングレス・ルールが存在するかを確認してください。ない場合はルールを追加してください。
+    &lt;ul&gt;
+      &lt;li&gt;ステートレス：いいえ&lt;/li&gt;
+      &lt;li&gt;ソース：0.0.0.0/0 (またはアクセス元のクライアントのパブリックIPアドレス範囲)&lt;/li&gt;
+      &lt;li&gt;IPプロトコル：TCP&lt;/li&gt;
+      &lt;li&gt;ソース・ポート範囲：All&lt;/li&gt;
+      &lt;li&gt;宛先ポート範囲：22&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;切り分けのために、インスタンスのIPアドレスに対してpingが応答するかを確認します、&lt;strong&gt;デフォルトではインスタンスへのpingは通らない&lt;/strong&gt;設定になっていますので、セキュリティ・リストまたはネットワーク・セキュリティ・グループのルールの以下のイングレス・ルールを以下のように編集します。
+    &lt;ul&gt;
+      &lt;li&gt;ステートレス：いいえ&lt;/li&gt;
+      &lt;li&gt;ソース：0.0.0.0/0 (またはアクセス元のクライアントのパブリックIPアドレス範囲)&lt;/li&gt;
+      &lt;li&gt;IPプロトコル：ICMP&lt;/li&gt;
+      &lt;li&gt;タイプとコード：3, 4 (デフォルト) → All に変更&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;上記の変更を適用後、クライアント側からインスタンスのIPアドレスに対してpingを実行します。正しく応答が返ってくる場合は、ネットワークは到達できていますが、sshでのログインに問題があることがわかります。sshに問題がある場合は、インスタンスのsshの設定や、sshクライアントの設定を見直してください。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;カスタム・イメージをご利用の場合はOSの設定でsshが許可されているかを確認してください。&lt;br /&gt;
+  オラクル提供イメージから作成したLinuxインスタンスの場合はデフォルトでsshは許可されていますが、カスタム・イメージの場合は、イメージの元となったインスタンス側でsshを許可しないように設定されている場合があります。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;上記を実施しても解決しない場合はサポートにSRを起票してください。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#main&quot; class=&quot;back-to-top&quot;&gt;Back to Top ↑&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;インスタンスに関する計画メンテナンス通知を受け取った場合に理解しておくことは何ですか&quot;&gt;インスタンスに関する計画メンテナンス通知を受け取った場合に理解しておくことは何ですか?&lt;/h1&gt;
+
+&lt;h2 id=&quot;質問-2&quot;&gt;質問&lt;/h2&gt;
+
+&lt;p&gt;コンピュート・インスタンスの計画メンテナンスのお知らせメールが届きました。または、コンソール上で計画メンテナンスの通知が表示されています。どのようなことを理解しておけばいいでしょうか?&lt;/p&gt;
+
+&lt;h2 id=&quot;回答-2&quot;&gt;回答&lt;/h2&gt;
+
+&lt;p&gt;稼働中のインスタンスに影響するサーバーなどのインフラコンポーネントの計画メンテナンスをする必要がある場合、事前に通知がおこなわれ、コンソール上のお知らせページでの表示と管理者にメールが送信されます。&lt;br /&gt;
+該当のインスタンスの詳細ページを確認すると、メンテナンス実施に関する項目が表示されており、通常14~16日後にメンテナンス作業の予定実施日時が記載されています。&lt;/p&gt;
+
+&lt;p&gt;もし、通知に記載された予定日時までの間に、ユーザーが何のアクションも起こさなかった場合は、その日時にインスタンスが新しいホストに移行します。&lt;/p&gt;
+
+&lt;p&gt;もし、インスタンスがライブ・マイグレーションをサポートしているシェイプ[^1]の場合は、移行はライブ・マイグレーションによって実施され、インスタンスが起動中ステータスのまま新しいホスト移行が完了します。&lt;/p&gt;
+
+&lt;p class=&quot;notice--info&quot;&gt;[^1]ライブ・マイグレーション対象のシェイプは、&lt;a href=&quot;https://docs.oracle.com/en-us/iaas/Content/Compute/Tasks/movinganinstance.htm#live-migration&quot;&gt;Oracle Cloud Infrastructureドキュメント : Live Migration&lt;/a&gt; をご確認ください。&lt;/p&gt;
+
+&lt;p&gt;もし、インスタンスがライブ・マイグレーションをサポートしていないシェイプの場合は、ホストの移行はリブート・マイグレーション(再起動移行)によって実施され、短いダウンタイムを伴います。&lt;br /&gt;
+リブート・マイグレーションの実施に当たっては、事前に注意しておくべき内容が &lt;a href=&quot;https://docs.oracle.com/en-us/iaas/Content/Compute/Tasks/movinganinstance.htm#prerequisites-reboot&quot;&gt;Oracle Cloud Infrastructureドキュメント : Prerequisites for Reboot Migration&lt;/a&gt; にありますので、こちらもご確認ください。&lt;/p&gt;
+
+&lt;p&gt;また、ユーザーは、通知に記載された予定日時よりも前の任意のタイミングで新しいホストへのインスタンスの移行を実施したり、スケジュールを行うことができます。&lt;/p&gt;
+
+&lt;p&gt;ベアメタル・インスタンスやローカルNVMeを内蔵するDenseIO、HPCなどのシェイプは、ライブ・マイグレーションやリブート・マイグレーションによって別のホストにインスタンスを移動して稼働を継続させることができず、手動で内蔵データの移行作業を行う必要がある場合があります。詳細は、&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Compute/Tasks/movinganinstance.htm#manual&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : 手動移行によるインスタンスの移動&lt;/a&gt; をご参照ください。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#main&quot; class=&quot;back-to-top&quot;&gt;Back to Top ↑&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;インスタンスの状態が変化した時にメール通知を受け取りたい&quot;&gt;インスタンスの状態が変化した時にメール通知を受け取りたい&lt;/h1&gt;
+
+&lt;h2 id=&quot;質問-3&quot;&gt;質問&lt;/h2&gt;
+
+&lt;p&gt;コンピュート・インスタンスの状態が変化(起動、終了、シェイプ変更などのインスタンスの更新など)した際にメール通知を受け取りたいです。どのように設定すればいいでしょうか?&lt;/p&gt;
+
+&lt;h2 id=&quot;回答-3&quot;&gt;回答&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.oracle.com/jp/cloud-native/events-service/&quot; target=&quot;_blank&quot;&gt;イベント(Event)サービス&lt;/a&gt; でインスタンスの状態の変化を捉え、 &lt;a href=&quot;https://www.oracle.com/jp/devops/notifications/&quot; target=&quot;_blank&quot;&gt;通知(Notification)サービス&lt;/a&gt; に連携してユーザーに通知します。
+コンピュート・インスタンスにおいて状態変化に応じて生成できるイベントのタイプは &lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Events/Reference/eventsproducers.htm&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : イベントを生成するサービス&lt;/a&gt; のコンピュートの項を参照してください。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;手順概要 :&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Events/Reference/eventsproducers.htm&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : イベントの開始&lt;/a&gt; に従って、通知先となる トピックとサブスクリプション を作成します&lt;/li&gt;
+  &lt;li&gt;続いて以下の内容のイベントのルールを作成します。
+    &lt;ul&gt;
+      &lt;li&gt;ルール条件
+        &lt;ul&gt;
+          &lt;li&gt;サービス名：Compute&lt;/li&gt;
+          &lt;li&gt;イベント・タイプ：通知したいイベントを選択&lt;br /&gt;
+  インスタンスの起動や停止を通知したい場合は、Instance - Action Begin、Instance - Action End を選択します。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;アクション
+        &lt;ul&gt;
+          &lt;li&gt;アクション・タイプ：通知&lt;/li&gt;
+          &lt;li&gt;通知コンパートメント：手順1で作成したトピックのあるコンパートメントを指定&lt;/li&gt;
+          &lt;li&gt;トピック：手順1で作成したトピックを指定&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;a href=&quot;#main&quot; class=&quot;back-to-top&quot;&gt;Back to Top ↑&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;インスタンスに永続的なパブリックipを付与する方法&quot;&gt;インスタンスに永続的なパブリックIPを付与する方法&lt;/h1&gt;
+
+&lt;h2 id=&quot;質問-4&quot;&gt;質問&lt;/h2&gt;
+&lt;p&gt;コンピュート・インスタンスの終了後、同一のパブリックIPアドレスを別のコンピュート・インスタンスに関連付けたいと考えています。永続的なパブリックIPアドレスをコンピュート・インスタンスに関連付けるにはどうしたら良いですか。&lt;/p&gt;
+
+&lt;h2 id=&quot;回答-4&quot;&gt;回答&lt;/h2&gt;
+&lt;p&gt;OCI のパブリック IP アドレスには、エフェメラル・パブリック IP アドレスと、予約済みパブリック IP アドレスの２種類が存在します。永続的なパブリック IP アドレスを利用したい場合、予約済みパブリック IP アドレスを取得します。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;エフェメラル・パブリック IP アドレス&lt;/strong&gt;&lt;br /&gt;
+  インスタンスの存続期間中のみ保持される、一時的なパブリック IP アドレスです。インスタンスの起動・停止で変更されることはありません。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;予約済みパブリック IP アドレス&lt;/strong&gt;&lt;br /&gt;
+  割り当てられているインスタンスの存続期間を超えて永続的に保持可能なパブリック IP アドレスです。割り当てを解除し、いつでも好きなときに別のインスタンスに再割り当てすることができます。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;予約済みパブリック IP アドレスを取得し、コンピュート・インスタンスに割り当てるには、以下の手順を実行します。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Network/Tasks/managingpublicIPs.htm#console-reserved&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : プールに新規予約済パブリックIPを作成するには&lt;/a&gt; を参考に、予約済みパブリック IP アドレスを取得します。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Network/Tasks/managingpublicIPs.htm#console-reserved&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : プライベートIPに予約済パブリックIPを割り当てるには&lt;/a&gt; を参考に、コンピュート・インスタンスのアタッチされた VNIC に、取得した予約済みパブリック IP アドレスを割り当てます。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;既にコンピュート・インスタンスに エフェメラル・パブリック IP アドレス、または、予約済みパブリック IP アドレスが割り当てられている場合は、事前に対象のパブリック IP アドレスを削除する必要があります。詳細は &lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Network/Tasks/managingpublicIPs.htm#console-ephemeral&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : インスタンスからエフェメラル・パブリックIPを削除するには&lt;/a&gt; または  &lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Network/Tasks/managingpublicIPs.htm#console-reserved&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : 予約済パブリックIPを割当て解除してプールに戻すには&lt;/a&gt; をご参照ください。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#main&quot; class=&quot;back-to-top&quot;&gt;Back to Top ↑&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;インスタンスに仮想nicvnicを追加する方法&quot;&gt;インスタンスに仮想NIC(VNIC)を追加する方法&lt;/h1&gt;
+
+&lt;h2 id=&quot;質問-5&quot;&gt;質問&lt;/h2&gt;
+
+&lt;p&gt;コンピュート・インスタンスを複数の VCN 内のサブネットに接続させたいと考えています。セカンダリ VNIC はどのように追加できますか?&lt;/p&gt;
+
+&lt;h2 id=&quot;回答-5&quot;&gt;回答&lt;/h2&gt;
+
+&lt;p&gt;セカンダリ VNIC は、コンピュート・インスタンスの起動後にのみ追加可能です。&lt;br /&gt;
+インスタンスにアタッチできる VNIC の数には制限があり、シェイプによって異なります。これらの制限については、&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Compute/References/computeshapes.htm&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : コンピュート・シェイプ&lt;/a&gt; を参照してください。&lt;/p&gt;
+
+&lt;p&gt;セカンダリ VNIC を追加するには、以下の手順を実行します。&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;コンソール画面から、対象のコンピュート・インスタンスにセカンダリVNICを作成します。
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Network/Tasks/managingVNICs.htm#console&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : セカンダリVNICを作成してアタッチするには&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;セカンダリ VNIC を作成後、コンピュート・インスタンスの種類によっては、OS へ認識させるために構成する必要があります。&lt;br /&gt;
+Linux VM インスタンスでは OS によって自動的にセカンダリ VNIC が認識されます。&lt;br /&gt;
+その他の場合は、下記の手順を参考に手動でセカンダリVNICをOSに構成します。
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Network/Tasks/managingVNICs.htm#Linux&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : Linux BM インスタンスでセカンダリ VNIC を構成する&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Network/Tasks/managingVNICs.htm#Windows&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : Windows インスタンスでセカンダリ VNIC を構成する&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;a href=&quot;#main&quot; class=&quot;back-to-top&quot;&gt;Back to Top ↑&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;インスタンスに追加のプライベートipアドレスを設定する方法&quot;&gt;インスタンスに追加のプライベートIPアドレスを設定する方法&lt;/h1&gt;
+
+&lt;h2 id=&quot;質問-6&quot;&gt;質問&lt;/h2&gt;
+
+&lt;p&gt;コンピュート・インスタンスに、セカンダリプライベートIPアドレスを設定したいと考えています。どうすればよいですか?&lt;/p&gt;
+
+&lt;h2 id=&quot;回答-6&quot;&gt;回答&lt;/h2&gt;
+
+&lt;p&gt;セカンダリ・プライベートIPアドレスは、コンピュート・インスタンスのプライマリVNIC、またはセカンダリVNICに追加することが可能です。&lt;br /&gt;
+その際のIPアドレスは、VNICのプライマリ・プライベートIPアドレスが存在しているのと同じサブネットのCIDRから取得されます。&lt;/p&gt;
+
+&lt;p&gt;インスタンスのVNICのセカンダリ・プライベートIPを、同じサブネットに属している別のインスタンスのVNICに移動することもできます。&lt;/p&gt;
+
+&lt;p&gt;セカンダリプライベート IP アドレスを取得し、コンピュート・インスタンスに割り当てるには、以下の手順を実行します。&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;コンピュート・インスタンスにアタッチされた VNIC にセカンダリ・プライベート IP アドレスを割り当てます。
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Network/Tasks/managingIPaddresses.htm#console&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : VNICに新規セカンダリ・プライベートIPを割り当てるには&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;セカンダリ・プライベート IP を VNIC に割り当てた後、OS がその IP アドレスを使用するよう構成する必要があります。
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Network/Tasks/managingIPaddresses.htm#Linux&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : Linux: セカンダリIPアドレスの詳細&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Network/Tasks/managingIPaddresses.htm#Windows&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : Windows: セカンダリIPアドレスの詳細&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p class=&quot;notice--success&quot;&gt;セカンダリIPの付与については、OCIチュートリアル&lt;a href=&quot;https://oracle-japan.github.io/ocitutorials/intermediates/attaching-secondary-ips/&quot; target=&quot;_blank&quot;&gt;インスタンスにセカンダリIPを付与する&lt;/a&gt; でも手順を紹介しています&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#main&quot; class=&quot;back-to-top&quot;&gt;Back to Top ↑&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;インスタンスのバックアップにはどのような方法がありますか-またバックアップを自動化できますか&quot;&gt;インスタンスのバックアップにはどのような方法がありますか? またバックアップを自動化できますか?&lt;/h1&gt;
+
+&lt;h2 id=&quot;質問-7&quot;&gt;質問&lt;/h2&gt;
+
+&lt;p&gt;コンピュート・インスタンスのバックアップを作成したいと考えています。バックアップにはどうような方法がありますか? また、自動化はどのような方法がありますか?&lt;/p&gt;
+
+&lt;h2 id=&quot;回答-7&quot;&gt;回答&lt;/h2&gt;
+
+&lt;p&gt;コンピュート・インスタンスのバックアップには、カスタム・イメージの作成、または、ブート・ボリュームのバックアップ機能が利用できます。&lt;br /&gt;
+ブート・ボリュームは、Oracle Cloud Infrastructure ブロック・ボリュームのバックアップ機能を使用して、バックアップを作成することができ、またバックアップポリシーによって自動化することもできます。&lt;br /&gt;
+コンピュート・インスタンスにブート・ボリューム以外のブロック・ボリュームをアタッチしている場合は、あわせてブロック・ボリュームのバックアップも必要です。&lt;/p&gt;
+
+&lt;p&gt;カスタム・イメージの作成、および、ブート・ボリュームのバックアップについては、下記資料もあわせてご参照ください。
+    - &lt;a href=&quot;https://oracle-japan.github.io/ocidocs/services/compute/compute-100/&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructure 技術資料 - コンピュート概要&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;カスタム・イメージを作成するには、以下の手順を実行します。&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;対象のコンピュート・インスタンスからカスタム・イメージの作成を行います。
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Compute/Tasks/managingcustomimages.htm#Using2&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : カスタム・イメージを作成するには&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p class=&quot;notice--warning&quot;&gt;&lt;strong&gt;注意&lt;/strong&gt;&lt;br /&gt;
+ 実行中のインスタンスのイメージを作成すると、インスタンスはシャットダウンし、数分間使用できなくなります。&lt;br /&gt;
+ プロセスが完了すると、インスタンスが再起動されます。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;ブート・ボリュームのバックアップ作成、およびリストアを行うには、以下の手順を実行します。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;対象のコンピュート・インスタンスのブート・ボリュームから手動バックアップの作成を行います。
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Block/Tasks/backingupabootvolume.htm&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : ブート・ボリュームのバックアップ&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;ブート・ボリュームのバックアップから、新しいブート・ボリュームを作成します。
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Block/Tasks/creatingbootvolume.htm&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : ブート・ボリュームのリストア&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;インスタンスをバックアップ時点に復元したい場合は、リストアしたブート・ボリュームからインスタンスの作成を行います。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;既存のインスタンスへアタッチする場合は、対象のコンピュート・インスタンスのブート・ボリュームをデタッチした上で、リストアしたブート・ボリュームをアタッチします。
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Block/Tasks/detachingabootvolume.htm&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : ブート・ボリュームのデタッチ&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Block/Tasks/attachingabootvolume.htm&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : ブート・ボリュームのアタッチ&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p class=&quot;notice--warning&quot;&gt;&lt;strong&gt;情報&lt;/strong&gt;&lt;br /&gt;
+ バックアップはオブジェクトストレージに保持されるため、容量に応じたコストがかかります。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p class=&quot;notice--success&quot;&gt;&lt;strong&gt;情報&lt;/strong&gt;&lt;br /&gt;
+ボリュームのバックアップについては、&lt;a href=&quot;https://oracle-japan.github.io/ocitutorials/intermediates/taking-block-volume-backups/&quot; target=&quot;_blank&quot;&gt;OCIチュートリアル ブロック・ボリュームをバックアップする&lt;/a&gt; でも手順を紹介しています&lt;/p&gt;
+
+&lt;p&gt;ブート・ボリュームのバックアップを自動化するには、以下の手順を実行します。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;自動化したいブート・ボリュームにバックアップ・ポリシーの割り当てを行います。
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Block/Tasks/schedulingvolumebackups.htm#assignPolicies&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : ボリュームへのバックアップ・ポリシー割当ての管理&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;a href=&quot;#main&quot; class=&quot;back-to-top&quot;&gt;Back to Top ↑&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;インスタンスを別の可用性ドメインに移動させることはできますか&quot;&gt;インスタンスを別の可用性ドメインに移動させることはできますか?&lt;/h1&gt;
+
+&lt;h2 id=&quot;質問-8&quot;&gt;質問&lt;/h2&gt;
+
+&lt;p&gt;既存のコンピュート・インスタンスを、別の可用性ドメインに、移動、またはコピーする必要があります。どうすれば良いですか?&lt;/p&gt;
+
+&lt;h2 id=&quot;回答-8&quot;&gt;回答&lt;/h2&gt;
+
+&lt;p&gt;既存のインスタンスを直接別の可用性ドメインに移動することはできません。
+代わりに、対象のコンピュート・インスタンスからブート・ボリュームのバックアップを作成し、バックアップから別の可用性ドメインにブート・ボリュームをリストアすることで、コンピュート・インスタンスを目的の可用性ドメインに移動できます。&lt;/p&gt;
+
+&lt;p&gt;コンピュート・インスタンスを別の可用性ドメインに移動させるには、以下の手順を実行します。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;ブート・ボリュームのバックアップを取得します
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Block/Tasks/backingupabootvolume.htm&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : ブート・ボリュームのバックアップ&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;作成したブート・ボリューム・バックアップからブート・ボリュームの作成を行い、その際に移動させたい可用性ドメインを選択します。
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Block/Tasks/creatingbootvolume.htm&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : ブート・ボリュームのリストア&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;リストアしたブート・ボリュームからインスタンスの再作成を行います。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;a href=&quot;#main&quot; class=&quot;back-to-top&quot;&gt;Back to Top ↑&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;インスタンスを別のサブネットに移動できますか&quot;&gt;インスタンスを別のサブネットに移動できますか?&lt;/h1&gt;
+
+&lt;h2 id=&quot;質問-9&quot;&gt;質問&lt;/h2&gt;
+
+&lt;p&gt;既存のコンピュート・インスタンスを、別のサブネットに移動、またはコピーする必要があります。どうすれば良いですか?&lt;/p&gt;
+
+&lt;h2 id=&quot;回答-9&quot;&gt;回答&lt;/h2&gt;
+
+&lt;p&gt;既存のインスタンスを直接別のサブネットに移動することはできません。
+代わりに、対象のコンピュート・インスタンスからブート・ボリュームのバックアップを作成し、バックアップから別のサブネットにブート・ボリュームをリストアすることで、コンピュート・インスタンスを目的のサブネットに移動できます。&lt;/p&gt;
+
+&lt;p&gt;コンピュート・インスタンスを別のサブネットに移動させるには、以下の手順を実行します。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;ブート・ボリュームのバックアップを取得します
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Block/Tasks/backingupabootvolume.htm&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : ブート・ボリュームのバックアップ&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;作成したブート・ボリューム・バックアップからブート・ボリュームの作成を行い、その際に移動させたいサブネットを選択します。
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Block/Tasks/creatingbootvolume.htm&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : ブート・ボリュームのリストア&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;リストアしたブート・ボリュームからインスタンスの再作成を行います。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;a href=&quot;#main&quot; class=&quot;back-to-top&quot;&gt;Back to Top ↑&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;インスタンスを別のリージョンに移動できますか&quot;&gt;インスタンスを別のリージョンに移動できますか?&lt;/h1&gt;
+
+&lt;h2 id=&quot;質問-10&quot;&gt;質問&lt;/h2&gt;
+
+&lt;p&gt;コンピュート・インスタンスのコピーを起動して、他のOCIリージョンにサービスを提供し、アプリケーションに冗長性を持たせたいと考えています。コンピュート・インスタンスを別のOCIリージョンにコピーするには、どうすればよいですか?&lt;/p&gt;
+
+&lt;h2 id=&quot;回答-10&quot;&gt;回答&lt;/h2&gt;
+
+&lt;p&gt;別のOCIリージョンに既存のコンピュート・インスタンスのバックアップをコピーするには、対象のコンピュート・インスタンスからカスタム・イメージの作成を行い、オブジェクト・ストレージを介して、目的の OCI リージョンへエクスポートする必要があります。&lt;/p&gt;
+
+&lt;p&gt;コンピュート・インスタンスを別のOCIリージョンに移動させるには、以下の手順を実行します。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;移動元のインスタンスが存在するリージョンで、オブジェクト・ストレージ・バケットを作成します。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;移動元のコンピュート・インスタンスからカスタム・イメージの作成を行います。
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Compute/Tasks/managingcustomimages.htm#Using2&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : カスタム・イメージを作成するには&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;バケットに、作成したカスタム・イメージをイメージ・ファイルとしてエクスポートします。
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Compute/Tasks/imageimportexport.htm&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : イメージのエクスポート&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;リージョン・セレクタを使って移動先のリージョンに遷移し、エクスポートしたイメージ・ファイルをカスタム・イメージとしてインポートします。
+    &lt;ul&gt;
+      &lt;li&gt;[Oracle Cloud Infrastructureドキュメント : イメージの読み込み(https://docs.oracle.com/ja-jp/iaas/Content/Compute/Tasks/imageimportexport.htm#Importing){:target=”_blank”}&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;インポートしたカスタム・イメージから新しいコンピュート・インスタンスを作成します。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;a href=&quot;#main&quot; class=&quot;back-to-top&quot;&gt;Back to Top ↑&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;インスタンスを別のテナンシに移動できますか&quot;&gt;インスタンスを別のテナンシに移動できますか?&lt;/h1&gt;
+
+&lt;h2 id=&quot;質問-11&quot;&gt;質問&lt;/h2&gt;
+
+&lt;p&gt;既存のコンピュート・インスタンスをOCIの別のテナンシへ移動(コピー)したいと考えています。どうすればよいですか?&lt;/p&gt;
+
+&lt;h2 id=&quot;回答-11&quot;&gt;回答&lt;/h2&gt;
+
+&lt;p&gt;OCIの別テナンシに 既存のコンピュート・インスタンスをコピーするには、対象のコンピュート・インスタンスからカスタム・イメージの作成を行い、オブジェクト・ストレージを介して、目的のOCIテナンシにインポートする必要があります。&lt;br /&gt;
+その際、オブジェクト・ストレージの事前認証済リクエストを使うことで、他のテナンシに対してイメージ・ファイルをセキュアに共有することができます。&lt;/p&gt;
+
+&lt;p&gt;コンピュート・インスタンスを別の OCI テナンシーに移動させるには、以下の手順を実行します。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;移動元のインスタンスが存在するリージョンで、オブジェクト・ストレージ・バケットを作成します。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;移動元のコンピュート・インスタンスからカスタム・イメージの作成を行います。
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Compute/Tasks/managingcustomimages.htm#Using2&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : カスタム・イメージを作成するには&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;バケットに、作成したカスタム・イメージをイメージ・ファイルとしてエクスポートします。
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Compute/Tasks/imageimportexport.htm&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : イメージのエクスポート&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;エクスポートしたイメージ・ファイルに対して、別のテナンシからの読み取りを許可するためのオブジェクトの事前認証済リクエストを作成します。
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Object/Tasks/usingpreauthenticatedrequests.htm#usingconsole&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : オブジェクトの事前認証済リクエストを作成するには&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;移動先のテナンシで、エクスポートしたイメージ・ファイルをカスタム・イメージとしてインポートします。その際、インポートするイメージとして、作成した事前承認済リクエストのURIを使います。
+    &lt;ul&gt;
+      &lt;li&gt;[Oracle Cloud Infrastructureドキュメント : イメージの読み込み(https://docs.oracle.com/ja-jp/iaas/Content/Compute/Tasks/imageimportexport.htm#Importing){:target=”_blank”}&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;インポートしたカスタム・イメージから新しいコンピュート・インスタンスを作成します。&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="FAQ" /><category term="Compute" /><category term="FAQ" /><summary type="html">Oracle Cloud Infrastructure コンピュート・サービスに関して、利用時のよくある質問に対する回答や、技術的な問題に対する対処策をまとめています。</summary></entry><entry><title type="html">ファイル・ストレージ・サービス 技術FAQ</title><link href="https://oracle-japan.github.io/ocidocs/faq/storage/file-storage-faq/" rel="alternate" type="text/html" title="ファイル・ストレージ・サービス 技術FAQ" /><published>2021-07-07T00:00:00+09:00</published><updated>2021-07-07T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/faq/storage/file-storage-faq</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/faq/storage/file-storage-faq/">&lt;h1 id=&quot;ファイルストレージに接続するインスタンスを制限するにはどうすればいいですか&quot;&gt;ファイル・ストレージに接続するインスタンスを制限するにはどうすればいいですか？&lt;/h1&gt;
+
+&lt;h2 id=&quot;質問&quot;&gt;質問&lt;/h2&gt;
+
+&lt;p&gt;ファイル・ストレージに特定のインスタンスからのみ接続を許可する制御を行いたいです。どのように設定したらよいでしょうか？&lt;/p&gt;
+
+&lt;h2 id=&quot;回答&quot;&gt;回答&lt;/h2&gt;
+
+&lt;p&gt;ファイル・ストレージへアクセスするインスタンスを制限するには、以下の2つのレイヤーでの制御方法があります。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;セキュリティ・ルール&lt;/strong&gt;（VCN内のセキュリティ・リストやネットワーク・セキュリティ・グループで設定）
+    &lt;ul&gt;
+      &lt;li&gt;VCNのネットワーク上の仮想ファイアウォール機能&lt;/li&gt;
+      &lt;li&gt;特定のCIDRブロックやVNICから、また、特定のプロトコルとポートの通信を許可する&lt;/li&gt;
+      &lt;li&gt;参考：&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Network/Concepts/securityrules.htm&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : セキュリティ・ルール&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;エクスポート・オプション&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;ファイル・システムのエクスポートごとに設定。つまり、同一のマウント・ターゲットであっても、ファイル・システムごとに別々の権限が設定できるので、セキュリティ・ルールよりも細かい制御が可能。&lt;/li&gt;
+      &lt;li&gt;ファイル・システム単位でどのCIDRブロックのアクセスを許可するか、また、アクセスオプション（Read/Write, Read Onlyなど）を制御&lt;/li&gt;
+      &lt;li&gt;参考：&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/File/Tasks/exportoptions2.htm&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : エクスポート・オプション&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;ここではエクスポート・オプションの利用例と設定方法を記載します。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;エクスポート・オプションの利用例&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;10.0.0.0/24 に割り当てられたクライアント X は、ファイル・システム A に対する読み取り/書き込み権限が必要だが、ファイル・システム B に対しては必要ない。&lt;/li&gt;
+      &lt;li&gt;10.0.1.0/24 に割り当てられたクライアント Y は、ファイル・システム B への読み取り権限が必要だが、ファイル・システム Aにはアクセスしない。&lt;/li&gt;
+      &lt;li&gt;ファイル・システム A と B の両方が単一のマウント・ターゲットに関連付けられている。&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;&lt;img src=&quot;fss_faq_exportpath.png&quot; alt=&quot;fss_faq_exportpath&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;エクスポート・オプションの設定方法&lt;/strong&gt;
+    &lt;ol&gt;
+      &lt;li&gt;必要なセキュリティ・ルールが設定されて通信自体が許可されていることを確認。&lt;/li&gt;
+      &lt;li&gt;ファイル・システムのエクスポートの設定
+        &lt;ol&gt;
+          &lt;li&gt;ファイル・ストレージ → ファイル・システム → ファイル・システム詳細 → 対象のエクスポートの 「&lt;strong&gt;エクスポート詳細&lt;/strong&gt;」を開く&lt;/li&gt;
+          &lt;li&gt;「&lt;strong&gt;NFSエクスポート・オプションの編集&lt;/strong&gt;」 をクリック
+            &lt;ul&gt;
+              &lt;li&gt;ソース：接続を許可するNFSクライアントのIPアドレスまたはCIDRブロックを指定。&lt;/li&gt;
+              &lt;li&gt;ポート：任意 / 特権。特権を選択すると、特権ソース・ポート（1-1023）からのみの接続を許可。&lt;/li&gt;
+              &lt;li&gt;アクセス：読取り専用 / 読取り書込み。&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;「&lt;strong&gt;更新&lt;/strong&gt;」 をクリック&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;関連情報 :&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/File/Tasks/exportoptions2.htm#Export&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : NFSエクスポート・オプション&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Network/Concepts/securityrules.htm#Security_Rules&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : セキュリティ・ルール&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;#main&quot; class=&quot;back-to-top&quot;&gt;Back to Top ↑&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;ファイルシステムをマウントしましたが書き込みができないのはなぜですか&quot;&gt;ファイル・システムをマウントしましたが書き込みができないのはなぜですか？&lt;/h1&gt;
+
+&lt;h2 id=&quot;質問-1&quot;&gt;質問&lt;/h2&gt;
+
+&lt;p&gt;ファイル・システムを作成してクライアントのインスタンスからマウントしましたが、書き込みができません。どうしたらいいでしょうか？&lt;/p&gt;
+
+&lt;h2 id=&quot;回答-1&quot;&gt;回答&lt;/h2&gt;
+
+&lt;p&gt;ファイル・システムへの書込みが失敗する場合、いくつかの原因が考えられますが、典型的な例はOSユーザーの権限不足です。ドキュメントのトラブルシューティングを参考に適切に権限を設定してください。&lt;/p&gt;
+
+&lt;p&gt;参考：&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/File/Troubleshooting/cannotwrite.htm#Write_to_File_System_Fails&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : ファイル・システムへの書込みの失敗&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;関連情報 :&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/File/Concepts/troubleshootingfilesystems.htm&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : ファイル・システムのトラブルシューティング&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;#main&quot; class=&quot;back-to-top&quot;&gt;Back to Top ↑&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;ファイルシステムのマウントが失敗するのはなぜですか&quot;&gt;ファイル・システムのマウントが失敗するのはなぜですか？&lt;/h1&gt;
+
+&lt;h2 id=&quot;質問-2&quot;&gt;質問&lt;/h2&gt;
+
+&lt;p&gt;インスタンスからファイル・システムのマウントが失敗するのはなぜですか？&lt;/p&gt;
+
+&lt;h2 id=&quot;回答-2&quot;&gt;回答&lt;/h2&gt;
+
+&lt;p&gt;ファイル・システムのマウントが失敗する場合、マウント・コマンドの情報、特にエクスポート・パスの情報が誤っている可能性があります。ドキュメントのトラブルシューティングを参考に、適切なマウントコマンドを実行してください。&lt;/p&gt;
+
+&lt;p&gt;参考：&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/File/Troubleshooting/exportpaths.htm&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : マウント・コマンドの失敗&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;関連情報 :&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/File/Concepts/troubleshootingfilesystems.htm&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : ファイル・システムのトラブルシューティング&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#main&quot; class=&quot;back-to-top&quot;&gt;Back to Top ↑&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;インスタンスからfssへのデータのコピーおよび-fss-からインスタンスへのコピーを高速化するにはどうすればよいですか&quot;&gt;インスタンスからFSSへのデータのコピー、および FSS からインスタンスへのコピーを高速化するにはどうすればよいですか?&lt;/h1&gt;
+
+&lt;h2 id=&quot;質問-3&quot;&gt;質問&lt;/h2&gt;
+
+&lt;p&gt;インスタンスからファイル・ストレージへのデータのコピー、およびファイル・ストレージからインスタンスへのデータのコピーを高速化するにはどうすればいいですか？&lt;/p&gt;
+
+&lt;h2 id=&quot;回答-3&quot;&gt;回答&lt;/h2&gt;
+
+&lt;p&gt;ファイル・ストレージの最大性能は、容量に応じて変動します。容量 1 TB あたり、読取り約100MB/sec、書込み約50MB/sec、約2,500 IOPS の性能となります。つまりファイル・ストレージに格納されているデータ量が多ければそれだけ全体の性能も向上します。&lt;/p&gt;
+
+&lt;p&gt;ただし、シリアル処理ではこのファイル・ストレージの最大性能を活かしきることはできません。シリアルで処理するのではなくパラレルで処理することで大量データのコピーなどの長時間かかる操作を高速化することが可能です。&lt;/p&gt;
+
+&lt;p&gt;並列処理を行うための手段として、ここでは2つの方法をご紹介します。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;File Storage Parallel Tools (fss-parallel-tools) を使用する&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;tar, rm, cp コマンドを並列化して実行するためのツール。クライアントOSにインストールして使用する。&lt;/p&gt;
+
+        &lt;ul&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;partar:&lt;/code&gt; 並列でtarの作成と展開を行う&lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;parrm:&lt;/code&gt; 並列でディレクトリ内を再帰的に削除&lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;parcp:&lt;/code&gt; 並列でディレクトリ内を再帰的にコピー&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;実行例&lt;/p&gt;
+
+        &lt;ul&gt;
+          &lt;li&gt;
+            &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;parcp&lt;/code&gt; を使用して、あるディレクトリから別のディレクトリに内容をコピーする。 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-P&lt;/code&gt; オプションでパラレルスレッド数を設定する。&lt;/p&gt;
+
+            &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$parcp -P 16 /source/folder /destination/folder
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;            &lt;/div&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;詳細：&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/File/Tasks/using_file_storage_parallel_tools.htm#using_file_storage_parallel_tools&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : Using File Storage Parallel Tools&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;GNU Parallel を利用して並列化する&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;実行例&lt;/p&gt;
+
+        &lt;ul&gt;
+          &lt;li&gt;
+            &lt;p&gt;GNU Parallel を使用した rsync の並列化&lt;/p&gt;
+
+            &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;time find /mnt/MyFileSystem -mindepth 1 -maxdepth 1 | parallel -P100 rsync --archive --perms --owner --group --xattrs --acls --recursive --delete --compress --exclude=.snapshot --ignore-errors --progress --log-file=$HOME/rsync/logs/test.log1 --quiet -e ssh {} root@10.0.3.6:/mnt/rsync_target
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;            &lt;/div&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;詳細：&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/File/Troubleshooting/rsync_is_slow_copying_files.htm&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : RSYNC is Slow When Copying Files&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;関連情報 :&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/en-us/iaas/Content/Resources/Assets/whitepapers/file-storage-performance-guide.pdf&quot; target=&quot;_blank&quot;&gt;File Storage Service Performance Guide&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/en-us/iaas/Content/File/Tasks/using_file_storage_parallel_tools.htm#using_file_storage_parallel_tools&quot; target=&quot;_blank&quot;&gt;Using File Storage Parallel Tools&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="FAQ" /><category term="Storage" /><category term="FAQ" /><summary type="html">Oracle Cloud Infrastructure ファイル・ストレージ・サービスに関して、利用時のよくある質問に対する回答や、技術的な問題に対する対処策をまとめています。</summary></entry><entry><title type="html">ロード・バランサ・サービス 技術FAQ</title><link href="https://oracle-japan.github.io/ocidocs/faq/networking/load-balancer-faq/" rel="alternate" type="text/html" title="ロード・バランサ・サービス 技術FAQ" /><published>2021-07-07T00:00:00+09:00</published><updated>2021-07-07T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/faq/networking/load-balancer-faq</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/faq/networking/load-balancer-faq/">&lt;h1 id=&quot;クライアントがロードバランサに接続できない&quot;&gt;クライアントがロード・バランサに接続できない&lt;/h1&gt;
+
+&lt;h2 id=&quot;質問&quot;&gt;質問&lt;/h2&gt;
+
+&lt;p&gt;クライアントがロード・バランサに接続できない理由として考えられる原因を教えてください。&lt;/p&gt;
+
+&lt;h2 id=&quot;回答&quot;&gt;回答&lt;/h2&gt;
 
 &lt;p&gt;ロード ・バランサの接続の問題の一般的な原因には、次のものがあります。&lt;/p&gt;
 
@@ -64,23 +1198,29 @@
   &lt;li&gt;ルート表のルート・ルールの構成が不適切な場合、リクエストをブロックしているか、不適切にルーティングしています。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;strong&gt;関連情報：&lt;/strong&gt;&lt;br /&gt;
-&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#Managing_Listeners&quot;&gt;リスナーの管理&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Network/Concepts/securityrules.htm#Security_Rules&quot;&gt;セキュリティ・ルール&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingbackendservers.htm#Managing_Backend_Servers&quot;&gt;バックエンド・サーバーの管理&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingbackendservers.htm#healthstatus&quot;&gt;ヘルス・ステータス&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://docs.oracle.com/en-us/iaas/api/#/en/loadbalancer/20170115/HealthCheckResult/&quot;&gt;HealthCheckResult&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;関連情報 :&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;ルーティング関連の質問&quot;&gt;&lt;font color=&quot;Green&quot;&gt;～ルーティング関連の質問～&lt;/font&gt;&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#Managing_Listeners&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : リスナーの管理&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Network/Concepts/securityrules.htm#Security_Rules&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : セキュリティ・ルール&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingbackendservers.htm#Managing_Backend_Servers&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : バックエンド・サーバーの管理&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingbackendservers.htm#healthstatus&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : ヘルス・ステータス&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/api/#/en/loadbalancer/20170115/HealthCheckResult/&quot;&gt;Oracle Cloud Infrastructureドキュメント : HealthCheckResult&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h1 id=&quot;ロードバランサを使用してホストベースのルーティングを設定するにはどうすればよいですか&quot;&gt;ロード・バランサを使用してホストベースのルーティングを設定するにはどうすればよいですか？&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;#main&quot; class=&quot;back-to-top&quot;&gt;Back to Top ↑&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;簡単な説明：&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&quot;ホストベースのルーティングを設定するには&quot;&gt;ホストベースのルーティングを設定するには?&lt;/h1&gt;
+
+&lt;h2 id=&quot;質問-1&quot;&gt;質問&lt;/h2&gt;
+
+&lt;p&gt;ホストベースのルーティングを設定するにはどうすればよいですか？&lt;/p&gt;
+
+&lt;h2 id=&quot;回答-1&quot;&gt;回答&lt;/h2&gt;
 
 &lt;p&gt;リクエスト・ルーティングの仮想ホスト名をリスナーに割り当てることで、ホスト名単位でのトラフィックのルーティングを設定することが可能です。
 また、リスナーあたりの仮想ホスト名は最大16個まで割り当てることが可能です。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;解決方法：&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;仮想ホスト名をリスナーに適用するには、最初に、1つ以上の仮想ホスト名を作成します。
 次に、ロード・バランサのリスナーを作成または更新し、使用する1つ以上の仮想ホスト名を指定します。&lt;/p&gt;
@@ -92,7 +1232,7 @@
     &lt;ol&gt;
       &lt;li&gt;ナビゲーション・メニューを開きます。「&lt;strong&gt;ネットワーキング&lt;/strong&gt;」をクリックして「&lt;strong&gt;ロード・バランサ&lt;/strong&gt;」をクリックします。&lt;/li&gt;
       &lt;li&gt;変更するロード・バランサを含む&lt;strong&gt;コンパートメント&lt;/strong&gt;を選択し、&lt;strong&gt;ロード・バランサの名前&lt;/strong&gt;をクリックします。&lt;/li&gt;
-      &lt;li&gt;「&lt;strong&gt;リソース&lt;/strong&gt;」メニューで、「&lt;strong&gt;ホスト名&lt;/strong&gt;」をクリックし、「&lt;strong&gt;ホスト名の作成&lt;/strong&gt;」をクリックします。&lt;/li&gt;
+      &lt;li&gt;「&lt;strong&gt;リソース&lt;/strong&gt;」メニューで「&lt;strong&gt;ホスト名&lt;/strong&gt;」をクリックし、「&lt;strong&gt;ホスト名の作成&lt;/strong&gt;」をクリックします。&lt;/li&gt;
       &lt;li&gt;「&lt;strong&gt;ホスト名の作成&lt;/strong&gt;」ダイアログ・ボックスで、次を入力します:
         &lt;ul&gt;
           &lt;li&gt;名前: 必須。ホスト名のわかりやすい名前を指定します。名前は一意である必要があり、変更することはできません。機密情報の入力は避けてください。&lt;/li&gt;
@@ -106,36 +1246,52 @@
 &lt;/ul&gt;
 
 &lt;p&gt;仮想ホスト名を作成すると、関連付けられたロード・バランサでその名前を使用できるようになります。&lt;br /&gt;
-ホスト名を適用するには、&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#create&quot;&gt;リスナーを作成または更新&lt;/a&gt;します。&lt;/p&gt;
+ホスト名を適用するには、&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#create&quot; target=&quot;_blank&quot;&gt;リスナーを作成または更新&lt;/a&gt;します。&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;関連情報：&lt;/strong&gt;&lt;br /&gt;
-&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrequest.htm#routing__vhost&quot;&gt;リクエスト・ルーティングの管理&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;関連情報 :&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrequest.htm#routing__vhost&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : リクエスト・ルーティングの管理&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h1 id=&quot;ロードバランサでのパスベースのルーティングを実現するにはどうすればよいですか&quot;&gt;ロード・バランサでのパスベースのルーティングを実現するにはどうすればよいですか？&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;#main&quot; class=&quot;back-to-top&quot;&gt;Back to Top ↑&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;簡単な説明：&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&quot;パスベースのルーティングを実現するには&quot;&gt;パスベースのルーティングを実現するには?&lt;/h1&gt;
+
+&lt;h2 id=&quot;質問-2&quot;&gt;質問&lt;/h2&gt;
+
+&lt;p&gt;ロード・バランサでのパスベースのルーティングを実現するにはどうすればよいですか？&lt;/p&gt;
+
+&lt;h2 id=&quot;回答-2&quot;&gt;回答&lt;/h2&gt;
 
 &lt;p&gt;リクエスト・ルーティングのパス・ルート・ルールをリスナーに割り当てることで、パスベースのルーティングを設定することが可能です。&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;解決方法：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;パス・ルート・ルールをリスナーに適用するには、最初に、ルールが含まれる「&lt;strong&gt;パス・ルート・セット&lt;/strong&gt;」を作成します。
+パス・ルート・セットは、ロード・バランサの構成の一部になります。
+次に、ロード・バランサのリスナーを作成または更新するときに、使用する「&lt;strong&gt;パス・ルート・セット&lt;/strong&gt;」を指定します。
+リスナーからパス・ルート・セットを削除するには、リスナーを編集し、「&lt;strong&gt;パス・ルート・セット&lt;/strong&gt;」オプションとして「&lt;strong&gt;なし&lt;/strong&gt;」を選択します。&lt;/p&gt;
 
-&lt;p&gt;パス・ルート・ルールをリスナーに適用するには、最初に、ルールが含まれる「&lt;strong&gt;パス・ルート・セット&lt;/strong&gt;」を作成します。&lt;br /&gt;
-パス・ルート・セットは、ロード・バランサの構成の一部になります。&lt;br /&gt;
-次に、ロード・バランサのリスナーを作成または更新するときに、使用する「&lt;strong&gt;パス・ルート・セット&lt;/strong&gt;」を指定します。&lt;br /&gt;
-リスナーからパス・ルート・セットを削除するには、リスナーを編集し、「&lt;strong&gt;パス・ルート・セット&lt;/strong&gt;」オプションとして「&lt;strong&gt;なし&lt;/strong&gt;」を選択します。&lt;br /&gt;
-詳細の手順については、&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrequest.htm#&quot;&gt;リクエスト・ルーティングの管理&lt;/a&gt;の「パス・ルート・セットを作成するには」を参照してください。&lt;/p&gt;
+&lt;p&gt;詳細の手順については、&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrequest.htm#&quot; target=&quot;_blank&quot;&gt;リクエスト・ルーティングの管理&lt;/a&gt;の「パス・ルート・セットを作成するには」を参照してください。&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;関連情報：&lt;/strong&gt;&lt;br /&gt;
-&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#edit&quot;&gt;リスナーを編集&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrequest.htm#&quot;&gt;リクエスト・ルーティングの管理&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;関連情報 :&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;ロードバランサーを使用してカスタムhttpヘッダーに基づきトラフィックをルーティングする方法を教えてください&quot;&gt;ロードバランサーを使用して、カスタムHTTPヘッダーに基づきトラフィックをルーティングする方法を教えてください。&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#edit&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : リスナーを編集&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrequest.htm#&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : リクエスト・ルーティングの管理&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;&lt;strong&gt;簡単な説明：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#main&quot; class=&quot;back-to-top&quot;&gt;Back to Top ↑&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;カスタムhttpヘッダーに基づいてルーティングするには&quot;&gt;カスタムHTTPヘッダーに基づいてルーティングするには?&lt;/h1&gt;
+
+&lt;h2 id=&quot;質問-3&quot;&gt;質問&lt;/h2&gt;
+
+&lt;p&gt;ロードバランサーを使用して、カスタムHTTPヘッダーに基づきトラフィックをルーティングする方法を教えてください。&lt;/p&gt;
+
+&lt;h2 id=&quot;回答-3&quot;&gt;回答&lt;/h2&gt;
 
 &lt;p&gt;ロード・バランサのリスナーに適用されるルール・セットのリクエスト/レスポンス・ヘッダー・ルールを作成する事で、カスタムHTTPヘッダーの値に基づいて、リクエストに対する特定のアクションを実行できます。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;解決方法：&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;ルール・セットをリスナーに適用するには、最初に、ルールが含まれるルール・セットを作成します。&lt;br /&gt;
 ロード・バランサのリスナーを作成または更新するときに、使用するルール・セットを指定できます。&lt;/p&gt;
@@ -207,34 +1363,46 @@
 &lt;/ol&gt;
 
 &lt;p&gt;ルール・セットを作成すると、関連付けられたロード・バランサでそのセットを使用できるようになります。&lt;br /&gt;
-ルール・セットを適用するには、&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#edit&quot;&gt;リスナーを更新&lt;/a&gt;します。&lt;/p&gt;
+ルール・セットを適用するには、&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#edit&quot; target=&quot;_blank&quot;&gt;リスナーを更新&lt;/a&gt;します。&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;関連情報：&lt;/strong&gt;&lt;br /&gt;
-&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm&quot;&gt;ルール・セットの管理&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm#header-rules&quot;&gt;リクエストおよびレスポンス・ヘッダー・ルール&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;関連情報 :&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : ルール・セットの管理&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm#header-rules&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : リクエストおよびレスポンス・ヘッダー・ルール&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h1 id=&quot;ロードバランサを使用してソースipに基づいてリクエストをルーティングするにはどうすればよいですか&quot;&gt;ロード・バランサを使用してソースIPに基づいてリクエストをルーティングするにはどうすればよいですか？&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;#main&quot; class=&quot;back-to-top&quot;&gt;Back to Top ↑&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;簡単な説明：&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&quot;クライアントのソースipに基づいてルーティングするには&quot;&gt;クライアントのソースIPに基づいてルーティングするには?&lt;/h1&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingloadbalancer.htm#Managing_Load_Balancers&quot;&gt;ロード・バランサを作成&lt;/a&gt;した後に、トラフィック分散を制御するポリシーであるIPハッシュ・ポリシーをバックエンド・サーバーに適用することで、送信元IPアドレスのハッシュキーに基づいたトラフィックのルーティングが可能です。&lt;br /&gt;
+&lt;h2 id=&quot;質問-4&quot;&gt;質問&lt;/h2&gt;
+
+&lt;p&gt;ロード・バランサを使用して、クライアントのソースIPに基づいてリクエストをルーティングするにはどうすればよいですか？&lt;/p&gt;
+
+&lt;h2 id=&quot;回答-4&quot;&gt;回答&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingloadbalancer.htm#Managing_Load_Balancers&quot; target=&quot;_blank&quot;&gt;ロード・バランサを作成&lt;/a&gt;した後に、トラフィック分散を制御するポリシーであるIPハッシュ・ポリシーをバックエンド・サーバーに適用することで、送信元IPアドレスのハッシュキーに基づいたトラフィックのルーティングが可能です。&lt;br /&gt;
 IPハッシュ・ポリシーでは、受信リクエストのソースIPアドレスがハッシュ・キーとして使用され、スティッキーではないトラフィックが同じバックエンド・サーバーにルーティングされます。&lt;br /&gt;
 ロード・バランサは、サーバーが使用可能であるかぎり、同じクライアントから同じバックエンド・サーバーにリクエストをルーティングします。&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;関連情報：&lt;/strong&gt;&lt;br /&gt;
-&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Reference/lbpolicies.htm#hash&quot;&gt;IPハッシュ&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Reference/lbpolicies.htm#hash&quot;&gt;ロード・バランシング・ポリシーの仕組み&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Reference/lbpolicies.htm#hash&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : IPハッシュ&lt;/a&gt;
+&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Reference/lbpolicies.htm#hash&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : ロード・バランシング・ポリシーの仕組み&lt;/a&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;リダイレクトルール関連の質問&quot;&gt;&lt;font color=&quot;Green&quot;&gt;～リダイレクト・ルール関連の質問～&lt;/font&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;#main&quot; class=&quot;back-to-top&quot;&gt;Back to Top ↑&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;ロードバランサを使用してあるドメインを別のドメインにリダイレクトするにはどうすればよいですか&quot;&gt;ロード・バランサを使用して、あるドメインを別のドメインにリダイレクトするにはどうすればよいですか？&lt;/h1&gt;
+&lt;h1 id=&quot;あるドメインを別のドメインにリダイレクトするには&quot;&gt;あるドメインを別のドメインにリダイレクトするには?&lt;/h1&gt;
 
-&lt;p&gt;&lt;strong&gt;簡単な説明：&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;質問-5&quot;&gt;質問&lt;/h2&gt;
+
+&lt;p&gt;ロード・バランサを使用して、あるドメインを別のドメインにリダイレクトするにはどうすればよいですか？&lt;/p&gt;
+
+&lt;h2 id=&quot;回答-5&quot;&gt;回答&lt;/h2&gt;
 
 &lt;p&gt;ロード・バランサのリスナーに適用されるルール・セットの&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm#redirect&quot;&gt;URLリダイレクト・ルール&lt;/a&gt;を作成する事で、HTTPからHTTPSへのリダイレクト、ドメイン名のリダイレクトやパスベースでのリダイレクトが可能です。&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;解決方法：&lt;/strong&gt;&lt;/p&gt;
-
 &lt;p&gt;ルール・セットをリスナーに適用するには、最初に、ルールが含まれるルール・セットを作成します。&lt;br /&gt;
 ロード・バランサのリスナーを作成または更新するときに、使用するルール・セットを指定できます。&lt;/p&gt;
 
@@ -303,20 +1471,27 @@ IPハッシュ・ポリシーでは、受信リクエストのソースIPアド�
 &lt;/ol&gt;
 
 &lt;p&gt;ルール・セットを作成すると、関連付けられたロード・バランサでそのセットを使用できるようになります。&lt;br /&gt;
-ルール・セットを適用するには、&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#edit&quot;&gt;リスナーを更新&lt;/a&gt;します。&lt;/p&gt;
+ルール・セットを適用するには、&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#edit&quot; target=&quot;_blank&quot;&gt;リスナーを更新&lt;/a&gt;します。&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;関連情報：&lt;/strong&gt;&lt;br /&gt;
-&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm&quot;&gt;ルール・セットの管理&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm#redirect&quot;&gt;URLリダイレクト・ルール&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;関連情報 :&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : ルール・セットの管理&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm#redirect&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : URLリダイレクト・ルール&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h1 id=&quot;ロードバランサを使い-http-リクエストを-https-にリダイレクトするにはどうすればよいですか&quot;&gt;ロード・バランサを使い HTTP リクエストを HTTPS にリダイレクトするにはどうすればよいですか?&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;#main&quot; class=&quot;back-to-top&quot;&gt;Back to Top ↑&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;簡単な説明：&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&quot;http-リクエストを-https-にリダイレクトするには&quot;&gt;HTTP リクエストを HTTPS にリダイレクトするには?&lt;/h1&gt;
+
+&lt;h2 id=&quot;質問-6&quot;&gt;質問&lt;/h2&gt;
+
+&lt;p&gt;ロード・バランサを使い HTTP リクエストを HTTPS にリダイレクトするにはどうすればよいですか?&lt;/p&gt;
+
+&lt;h2 id=&quot;回答-6&quot;&gt;回答&lt;/h2&gt;
 
 &lt;p&gt;ロード・バランサのリスナーに適用されるルール・セットのURLリダイレクト・ルールを作成する事で、HTTPからHTTPSへのリダイレクト、ドメイン名のリダイレクトやパスベースでのリダイレクトが可能です。&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;解決方法：&lt;/strong&gt;&lt;/p&gt;
-
 &lt;p&gt;ルール・セットをリスナーに適用するには、最初に、ルールが含まれるルール・セットを作成します。&lt;br /&gt;
 ロード・バランサのリスナーを作成または更新するときに、使用するルール・セットを指定できます。&lt;/p&gt;
 
@@ -385,18 +1560,26 @@ IPハッシュ・ポリシーでは、受信リクエストのソースIPアド�
 &lt;/ol&gt;
 
 &lt;p&gt;ルール・セットを作成すると、関連付けられたロード・バランサでそのセットを使用できるようになります。&lt;br /&gt;
-ルール・セットを適用するには、&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#edit&quot;&gt;リスナーを更新&lt;/a&gt;します。&lt;/p&gt;
+ルール・セットを適用するには、&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managinglisteners.htm#edit&quot; target=&quot;_blank&quot;&gt;リスナーを更新&lt;/a&gt;します。&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;関連情報：&lt;/strong&gt;&lt;br /&gt;
-&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm&quot;&gt;ルール・セットの管理&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm#redirect&quot;&gt;URLリダイレクト・ルール&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm#redirect&quot;&gt;リスナーを更新&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;関連情報 ：&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;ipアドレス関連の質問&quot;&gt;&lt;font color=&quot;Green&quot;&gt;～IPアドレス関連の質問～&lt;/font&gt;&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : ルール・セットの管理&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm#redirect&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : URLリダイレクト・ルール&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingrulesets.htm#redirect&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : リスナーを更新&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h1 id=&quot;ipv6アドレスを使用するようにロードバランサを設定するにはどうすればよいですか&quot;&gt;IPv6アドレスを使用するようにロード・バランサを設定するにはどうすればよいですか？&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;#main&quot; class=&quot;back-to-top&quot;&gt;Back to Top ↑&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;簡単な説明：&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&quot;ロードバランサでipv6アドレスを使用するには&quot;&gt;ロード・バランサでIPv6アドレスを使用するには?&lt;/h1&gt;
+
+&lt;h2 id=&quot;質問-7&quot;&gt;質問&lt;/h2&gt;
+
+&lt;p&gt;IPv6アドレスを使用するようにロード・バランサを設定するにはどうすればよいですか？&lt;/p&gt;
+
+&lt;h2 id=&quot;回答-7&quot;&gt;回答&lt;/h2&gt;
 
 &lt;p&gt;IPv6 アドレスを使用するには、ロード・バランサを作成する際に「&lt;strong&gt;IPv6アドレス割当ての有効化&lt;/strong&gt;」を選択してください。&lt;br /&gt;
 ロード・バランサを作成する場合、オプションでIPv4/IPv6デュアルスタック構成を選択できます。IPv6オプションを選択すると、ロード・バランシング・サービスによってIPv4とIPv6アドレスの両方がロード・バランサに割り当てられます。&lt;br /&gt;
@@ -406,17 +1589,25 @@ IPハッシュ・ポリシーでは、受信リクエストのソースIPアド�
   &lt;p&gt;IPv6アドレスの割当ては、ロード・バランサの作成時にのみ行われます。既存のロード・バランサにIPv6アドレスを割り当てることはできません。&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;strong&gt;関連情報：&lt;/strong&gt;&lt;br /&gt;
-&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Network/Concepts/ipv6.htm&quot;&gt;IPv6アドレス&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Concepts/balanceoverview.htm#Overview_of_Load_Balancing&quot;&gt;ロード・バランサ&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;関連情報 ：&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;予約済パブリックipアドレスを新規もしくは既存のロードバランサにアタッチするにはどうすればよいですか&quot;&gt;予約済パブリックIPアドレスを新規もしくは既存のロード・バランサにアタッチするには、どうすればよいですか？&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Network/Concepts/ipv6.htm&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : IPv6アドレス&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Concepts/balanceoverview.htm#Overview_of_Load_Balancing&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : ロード・バランサ&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;&lt;strong&gt;簡単な説明：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#main&quot; class=&quot;back-to-top&quot;&gt;Back to Top ↑&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;予約済パブリックipアドレスを新規もしくは既存のロードバランサにアタッチする方法は&quot;&gt;予約済パブリックIPアドレスを新規もしくは既存のロード・バランサにアタッチする方法は?&lt;/h1&gt;
+
+&lt;h2 id=&quot;質問-8&quot;&gt;質問&lt;/h2&gt;
+
+&lt;p&gt;予約済パブリックIPアドレスを新規もしくは既存のロード・バランサにアタッチするには、どうすればよいですか？&lt;/p&gt;
+
+&lt;h2 id=&quot;回答-8&quot;&gt;回答&lt;/h2&gt;
 
 &lt;p&gt;新規のロード・バランサを作成する時に「予約済パブリックIPアドレス」の選択が可能ですが、既存のロード・バランサに予約済パブリックIPアドレスをアタッチする方法はございません。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;解決方法：&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;予約済パブリックIPアドレスを新しいロード・バランサにアタッチする&lt;/strong&gt;&lt;/p&gt;
 
@@ -444,17 +1635,26 @@ IPハッシュ・ポリシーでは、受信リクエストのソースIPアド�
 &lt;p&gt;作成した予約済パブリックIPアドレスを新規のロード・バランサにアタッチするには、ロード・バランサの作成時に「&lt;strong&gt;予約済IPアドレス&lt;/strong&gt;」をクリックし、「&lt;strong&gt;既存の予約済IPアドレスの選択&lt;/strong&gt;」を選択します。&lt;br /&gt;
 詳細は、&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingloadbalancer.htm&quot;&gt;ロード・バランサの作成&lt;/a&gt;を参照してください。&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;関連情報：&lt;/strong&gt;&lt;br /&gt;
-&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Network/Tasks/managingpublicIPs.htm&quot;&gt;パブリックIPアドレス&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingloadbalancer.htm&quot;&gt;ロード・バランサの作成&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;関連情報 ：&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;ヘルスチェック関連の質問&quot;&gt;&lt;font color=&quot;Green&quot;&gt;～ヘルス・チェック関連の質問～&lt;/font&gt;&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Network/Tasks/managingpublicIPs.htm&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : パブリックIPアドレス&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/managingloadbalancer.htm&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : ロード・バランサの作成&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h1 id=&quot;ロードバランサのトラブルシューティングを行いヘルスチェックの失敗を修正するにはどうすればよいですか&quot;&gt;ロード・バランサのトラブルシューティングを行い、ヘルス・チェックの失敗を修正するにはどうすればよいですか？&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;#main&quot; class=&quot;back-to-top&quot;&gt;Back to Top ↑&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;解決方法：&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&quot;ヘルスチェックの失敗を修正するには&quot;&gt;ヘルス・チェックの失敗を修正するには?&lt;/h1&gt;
+
+&lt;h2 id=&quot;質問-9&quot;&gt;質問&lt;/h2&gt;
+
+&lt;p&gt;ロード・バランサのトラブルシューティングを行い、ヘルス・チェックの失敗を修正するにはどうすればよいですか？&lt;/p&gt;
+
+&lt;h2 id=&quot;回答-9&quot;&gt;回答&lt;/h2&gt;
 
 &lt;p&gt;ロード・バランサをトラブルシューティングし、ヘルス・チェックの失敗を修正するには：&lt;/p&gt;
+
 &lt;ol&gt;
   &lt;li&gt;ヘルス・チェック・エラーを見つけるために、ロード・バランサのアクセスとエラー・ログを有効にします。詳細については、&lt;a href=&quot;https://docs.oracle.com/en-us/iaas/Content/Balance/Tasks/managingloadbalancer_topic-Logging.htm#LogManagement&quot;&gt;ログ管理&lt;/a&gt;を参照してください。&lt;/li&gt;
   &lt;li&gt;受け取ったヘルス・チェック・エラーについて、考えられる原因と解決策は以下の通りになります。&lt;/li&gt;
@@ -641,12 +1841,65 @@ IPハッシュ・ポリシーでは、受信リクエストのソースIPアド�
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;strong&gt;関連情報：&lt;/strong&gt;&lt;br /&gt;
-&lt;a href=&quot;https://docs.oracle.com/en-us/iaas/Content/Balance/Tasks/managingloadbalancer_topic-Logging.htm#LogManagement&quot;&gt;ログ管理&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://docs.oracle.com/en-us/iaas/Content/Balance/Reference/troubleshooting_load_balancer.htm&quot;&gt;ロード・バランシングのトラブルシューティング&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/editinghealthcheck.htm&quot;&gt;ヘルス・チェック・ポリシーの編集&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Network/Concepts/permissions.htm#Access_and_Security&quot;&gt;アクセスとセキュリティ&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://docs.oracle.com/en-us/iaas/Content/Balance/Reference/troubleshooting_load_balancer.htm#TestTCPHTTPBackendServers&quot;&gt;TCP および HTTPバックエンド・サーバーのテスト&lt;/a&gt;&lt;/p&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Networking" /><category term="FAQ" /><summary type="html">ロード・バランサに関する技術FAQページです。Oracle Cloud Infrastructure利用時のよくある質問から、特に技術的な問題とそれに対する回答や対処策をまとめています</summary></entry><entry><title type="html">機械学習プラットフォームとして活用するAutonomous Database</title><link href="https://oracle-japan.github.io/ocidocs/services/database/autonomous/machine%20learning/autonomous-machinelearning/" rel="alternate" type="text/html" title="機械学習プラットフォームとして活用するAutonomous Database" /><published>2021-06-17T00:00:00+09:00</published><updated>2021-06-17T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/database/autonomous/machine%20learning/autonomous-machinelearning</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/database/autonomous/machine%20learning/autonomous-machinelearning/">&lt;p&gt;Autonomous Database (ADB)では、機械学習に必要な各種ツールがセットアップされており、データベースインスタンスを作成後にすぐに利用いただくことが可能です。
+&lt;p&gt;&lt;strong&gt;関連情報 ：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/en-us/iaas/Content/Balance/Tasks/managingloadbalancer_topic-Logging.htm#LogManagement&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : ログ管理&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/en-us/iaas/Content/Balance/Reference/troubleshooting_load_balancer.htm&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : ロード・バランシングのトラブルシューティング&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Balance/Tasks/editinghealthcheck.htm&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : ヘルス・チェック・ポリシーの編集&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Network/Concepts/permissions.htm#Access_and_Security&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : アクセスとセキュリティ&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/en-us/iaas/Content/Balance/Reference/troubleshooting_load_balancer.htm#TestTCPHTTPBackendServers&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント : TCP および HTTPバックエンド・サーバーのテスト&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="FAQ" /><category term="Networking" /><category term="FAQ" /><summary type="html">Oracle Cloud Infrastructure ロード・バランサ・サービスに関して、利用時のよくある質問に対する回答や、技術的な問題に対する対処策をまとめています。</summary></entry><entry><title type="html">ロード・バランサ・サービス(再)入門</title><link href="https://oracle-japan.github.io/ocidocs/services/networking/load-balancer/" rel="alternate" type="text/html" title="ロード・バランサ・サービス(再)入門" /><published>2021-06-28T00:00:00+09:00</published><updated>2021-06-28T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/networking/load-balancer/">&lt;p&gt;2021/6/22実施のOCIスキルアップセミナー #9で使用したスライドです。最近大幅に機能が拡充されたOCIのロード・バランサ・サービスについて改めて取り上げました。&lt;/p&gt;
+
+&lt;p&gt;OCIのリリース当初からあるロード・バランサですが、最近 Flexible Load Balancer や、Network Load Balancer といった機能が加わり、リリース当初とは全く違うサービスと言っていい進化を遂げています。&lt;/p&gt;
+
+&lt;p&gt;このスライドでは (再)入門、ということで、OCIロード・バランサを初めて触る人のために基礎的な内容をおさらいしつつ、既にバリバリ使っている人のための新機能解説や応用的な活用方法、そしてテストしてわかったマニュアルには書いていない動作の仕組みを解説しています。
+特に新機能のNetwork Load Balancerはまだ情報も少ないので必見? です。&lt;/p&gt;
+
+&lt;h4 id=&quot;スライド&quot;&gt;スライド&lt;/h4&gt;
+
+&lt;div style=&quot;max-width:768px&quot;&gt;
+
+&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) --&gt;
+&lt;script async=&quot;&quot; class=&quot;speakerdeck-embed&quot; data-id=&quot;7b765fc938b44be7a2749f4849529c22&quot; data-ratio=&quot;1.77777777777778&quot; src=&quot;//speakerdeck.com/assets/embed.js&quot;&gt;&lt;/script&gt;
+&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) --&gt;
+
+&lt;/div&gt;
+
+&lt;h4 id=&quot;セミナー動画&quot;&gt;セミナー動画&lt;/h4&gt;
+
+&lt;!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください --&gt;
+&lt;iframe width=&quot;768&quot; height=&quot;432&quot; src=&quot;https://www.youtube.com/embed/s4EIjmtkDkg?start=935&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) --&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Networking" /><category term="スライドあり" /><category term="動画あり" /><category term="レベル:入門(100)" /><category term="レベル:応用(200)" /><summary type="html">OCIロード・バランサを初めて触る人のために基礎的な内容をおさらいしつつ、既にバリバリ使っている人のための新機能解説や応用的な活用方法、そしてテストしてわかったマニュアルには書いていない動作の仕組みを解説しています。</summary></entry><entry><title type="html">ロード・バランサー 概要</title><link href="https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-100/" rel="alternate" type="text/html" title="ロード・バランサー 概要" /><published>2021-06-28T00:00:00+09:00</published><updated>2021-06-28T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-100</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-100/">&lt;p&gt;バックエンドに配置した様々なサービスの冗長性やスケーリングをサポートする OCI ロード・バランサー・サービスについて、その機能概要、構成コンポーネントの内容、OCIコンソールを利用した構成方法などについて解説しています。&lt;br /&gt;
+2021/6/28 ネットワーク・ロード・バランサのリリースに合わせて全般的に記述を見直しました。&lt;/p&gt;
+
+&lt;h4 id=&quot;スライド&quot;&gt;スライド&lt;/h4&gt;
+
+&lt;div style=&quot;max-width:768px&quot;&gt;
+
+&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) --&gt;
+&lt;script async=&quot;&quot; class=&quot;speakerdeck-embed&quot; data-id=&quot;78914498b3c14b97a112f59283b754b7&quot; data-ratio=&quot;1.77777777777778&quot; src=&quot;//speakerdeck.com/assets/embed.js&quot;&gt;&lt;/script&gt;
+&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) --&gt;
+
+&lt;/div&gt;
+
+&lt;h4 id=&quot;セミナー動画&quot;&gt;セミナー動画&lt;/h4&gt;
+
+&lt;!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください --&gt;
+&lt;div style=&quot;max-width:768px&quot;&gt;&lt;div style=&quot;position:relative;padding-bottom:56.25%&quot;&gt;&lt;iframe id=&quot;kaltura_player&quot; src=&quot;https://cdnapisec.kaltura.com/p/2171811/sp/217181100/embedIframeJs/uiconf_id/35965902/partner_id/2171811?iframeembed=true&amp;amp;playerId=kaltura_player&amp;amp;entry_id=0_pgchkk4i&amp;amp;flashvars[streamerType]=auto&amp;amp;flashvars[localizationCode]=en&amp;amp;flashvars[leadWithHTML5]=true&amp;amp;flashvars[sideBarContainer.plugin]=true&amp;amp;flashvars[sideBarContainer.position]=left&amp;amp;flashvars[sideBarContainer.clickToClose]=true&amp;amp;flashvars[chapters.plugin]=true&amp;amp;flashvars[chapters.layout]=vertical&amp;amp;flashvars[chapters.thumbnailRotator]=false&amp;amp;flashvars[streamSelector.plugin]=true&amp;amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;amp;flashvars[dualScreen.plugin]=true&amp;amp;flashvars[hotspots.plugin]=1&amp;amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;amp;&amp;amp;wid=1_c428rwns&quot; width=&quot;768&quot; height=&quot;432&quot; allowfullscreen=&quot;&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allow=&quot;autoplay *; fullscreen *; encrypted-media *&quot; sandbox=&quot;allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation&quot; frameborder=&quot;0&quot; title=&quot;Kaltura Player&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) --&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Networking" /><category term="スライドあり" /><category term="動画あり" /><category term="レベル:入門(100)" /><summary type="html">OCIロード・バランサー・サービスについて、その機能概要、構成コンポーネントの内容、OCIコンソールを利用した構成方法などについて解説しています</summary></entry><entry><title type="html">ロード・バランサー 詳細</title><link href="https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-200/" rel="alternate" type="text/html" title="ロード・バランサー 詳細" /><published>2021-06-28T00:00:00+09:00</published><updated>2021-06-28T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-200</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-200/">&lt;p&gt;様々なサービスの冗長性やスケーリングをサポートする OCI ロード・バランサー・サービスについて、応用的な利用方法について解説したドキュメントです。&lt;br /&gt;
+セッション永続性、仮想ホストによるルーティング、URIパス・ベース・ルーティング、SSL通信方式とロード・バランサーでのSSLターミネーションの設定、ロード・バランサーが収集するメトリック、トラブル時の対応ガイドラインについて解説しています。&lt;br /&gt;
+2021/6/28 ネットワーク・ロード・バランサのリリースに合わせて全般的に記述を見直しました。&lt;/p&gt;
+
+&lt;h4 id=&quot;スライド&quot;&gt;スライド&lt;/h4&gt;
+
+&lt;div style=&quot;max-width:768px&quot;&gt;
+
+&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) --&gt;
+&lt;script async=&quot;&quot; class=&quot;speakerdeck-embed&quot; data-id=&quot;9ca991733d2a4670bdd4e5ed5b5770c4&quot; data-ratio=&quot;1.77777777777778&quot; src=&quot;//speakerdeck.com/assets/embed.js&quot;&gt;&lt;/script&gt;
+&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) --&gt;
+
+&lt;/div&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Networking" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html">OCI ロード・バランサー・サービスについて、セッション永続性、仮想ホストによるルーティング、URIパス・ベース・ルーティング、SSL通信方式とロード・バランサーでのSSLターミネーションの設定、ロード・バランサーが収集するメトリック、トラブル時の対応ガイドラインなどの応用的な利用方法について解説しています</summary></entry><entry><title type="html">機械学習プラットフォームとして活用するAutonomous Database</title><link href="https://oracle-japan.github.io/ocidocs/services/database/autonomous/machine%20learning/autonomous-machinelearning/" rel="alternate" type="text/html" title="機械学習プラットフォームとして活用するAutonomous Database" /><published>2021-06-17T00:00:00+09:00</published><updated>2021-06-17T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/database/autonomous/machine%20learning/autonomous-machinelearning</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/database/autonomous/machine%20learning/autonomous-machinelearning/">&lt;p&gt;Autonomous Database (ADB)では、機械学習に必要な各種ツールがセットアップされており、データベースインスタンスを作成後にすぐに利用いただくことが可能です。
 AutoMLテクノロジにより最適なアルゴリズムを自動選択しモデルを生成したり、
 Apache ZeppelinベースでSQL,PL/SQL,Pythonの併用が可能なNotebookが構成されているので、データの把握から前処理、機械学習の実行、予測モデルの管理などといった作業を実施いただくことが可能になっています。
 本資料ではこれら各ツールの概要について解説しています。&lt;/p&gt;
@@ -680,35 +1933,4 @@ Apache ZeppelinベースでSQL,PL/SQL,Pythonの併用が可能なNotebookが構�
 &lt;script async=&quot;&quot; class=&quot;speakerdeck-embed&quot; data-id=&quot;fd6802aed5134735b09f3ed671730d20&quot; data-ratio=&quot;1.77777777777778&quot; src=&quot;//speakerdeck.com/assets/embed.js&quot;&gt;&lt;/script&gt;
 &lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) --&gt;
 
-&lt;/div&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Object Storage" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html">OCIオブジェクト・ストレージ・サービスを Amazon S3互換API を通じて利用する方法について解説しています</summary></entry><entry><title type="html">Oracle Blockchain Table概要</title><link href="https://oracle-japan.github.io/ocidocs/solutions/blockchain/blockchain-table-100/" rel="alternate" type="text/html" title="Oracle Blockchain Table概要" /><published>2021-06-05T00:00:00+09:00</published><updated>2021-06-05T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/solutions/blockchain/blockchain-table-100</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/solutions/blockchain/blockchain-table-100/">&lt;p&gt;Oracle Databaseの機能のOracle Blockchain Tableについて、概要から想定ユースケースや実装での応用パターン、セキュリティ向上への効果などをご説明しています。&lt;/p&gt;
-
-&lt;h4 id=&quot;スライド&quot;&gt;スライド&lt;/h4&gt;
-
-&lt;div style=&quot;max-width:768px&quot;&gt;
-
-&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) --&gt;
-&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/hX3Tk5HcLpfZpv&quot; width=&quot;595&quot; height=&quot;485&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen=&quot;&quot;&gt; &lt;/iframe&gt; &lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;//www.slideshare.net/oracle4engineer/oracle-blockchain-table202106&quot; title=&quot;Oracle Blockchain tableのご紹介（2021/06版） &quot; target=&quot;_blank&quot;&gt;Oracle Blockchain tableのご紹介（2021/06版） &lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&quot;//www.slideshare.net/oracle4engineer&quot; target=&quot;_blank&quot;&gt;オラクルエンジニア通信&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
-&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) --&gt;
-
-&lt;/div&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="Solutions" /><category term="Blockchain" /><category term="スライドあり" /><category term="レベル:入門(100)" /><summary type="html">Oracle DatabaseのBlockchain Table機能のご紹介資料です。</summary></entry><entry><title type="html">OCI API Gatewayの技術詳細</title><link href="https://oracle-japan.github.io/ocidocs/services/developers/apigateway-details/" rel="alternate" type="text/html" title="OCI API Gatewayの技術詳細" /><published>2021-06-04T00:00:00+09:00</published><updated>2021-06-04T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/developers/apigateway-details</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/developers/apigateway-details/">&lt;p&gt;OCI API Gatewayの技術詳細資料です。&lt;br /&gt;
-主にヘッダー/クエリ変換、APIの認証、認可について解説しています。&lt;/p&gt;
-
-&lt;h4 id=&quot;スライド&quot;&gt;スライド&lt;/h4&gt;
-
-&lt;div style=&quot;max-width:768px&quot;&gt;
-
-&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) --&gt;
-&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/jgyePvqKryNNKl&quot; width=&quot;595&quot; height=&quot;485&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen=&quot;&quot;&gt; &lt;/iframe&gt; &lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;//www.slideshare.net/oracle4engineer/api-gateway-248654596&quot; title=&quot;API Gateway - ヘッダー／クエリー変換、認証・認可機能詳細&quot; target=&quot;_blank&quot;&gt;&lt;/a&gt; &lt;/strong&gt; &lt;/div&gt;
-&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) --&gt;
-
-&lt;/div&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Developers" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html">OCI API Gatewayの技術詳細資料です。</summary></entry><entry><title type="html">OCI API Gateway概要</title><link href="https://oracle-japan.github.io/ocidocs/services/developers/apigateway-overview/" rel="alternate" type="text/html" title="OCI API Gateway概要" /><published>2021-06-04T00:00:00+09:00</published><updated>2021-06-04T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/developers/apigateway-overview</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/developers/apigateway-overview/">&lt;p&gt;OCIのマネージドAPI管理サービスであるOCI API Gatewayの概要資料です。&lt;/p&gt;
-
-&lt;h4 id=&quot;スライド&quot;&gt;スライド&lt;/h4&gt;
-
-&lt;div style=&quot;max-width:768px&quot;&gt;
-
-&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) --&gt;
-&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/BrMPxyLL9f3Cak&quot; width=&quot;595&quot; height=&quot;485&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen=&quot;&quot;&gt; &lt;/iframe&gt; &lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;//www.slideshare.net/oracle4engineer/api-gateway-248818040&quot; title=&quot;API Gatewayご紹介&quot; target=&quot;_blank&quot;&gt;API Gatewayご紹介&lt;/a&gt; &lt;/strong&gt;&lt;/div&gt;
-&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) --&gt;
-
-&lt;/div&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Developers" /><category term="スライドあり" /><category term="レベル:入門(100)" /><summary type="html">OCIのマネージドAPI管理サービスであるOCI API Gatewayの概要資料です。</summary></entry></feed>
+&lt;/div&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Object Storage" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html">OCIオブジェクト・ストレージ・サービスを Amazon S3互換API を通じて利用する方法について解説しています</summary></entry></feed>
