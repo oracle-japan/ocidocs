@@ -30,12 +30,12 @@ header:
 
     コンピュート・インスタンスの削除時に「アタッチされたブート・ボリュームを完全に削除」というチェック・ボックスを有効にしない限り、ブート・ボリュームは削除されません。  
     不要な場合は、チェックを有効化した上でコンピュート・インスタンスを終了してください。  
-    チェックを有効化せずに終了した場合、Oracle Cloud Infrastructure ドキュメント：[ブート・ボリュームの削除](https://docs.oracle.com/ja-jp/iaas/Content/Block/Tasks/deletingbootvolume.htm) 手順に従って、不要なボリュームを削除してください。
+    チェックを有効化せずに終了した場合、Oracle Cloud Infrastructure ドキュメント：[ブート・ボリュームの削除](https://docs.oracle.com/ja-jp/iaas/Content/Block/Tasks/deletingbootvolume.htm){:target="_blank"} 手順に従って、不要なボリュームを削除してください。
 
 - **ブロック・ボリュームの削除**
 
-    コンピュート・インスタンスを削除しても、アタッチされたブロック・ボリュームが同時に削除されることはありません。Oracle Cloud Infrastructure ドキュメント：[ボリュームの削除](https://docs.oracle.com/ja-jp/iaas/Content/Block/Tasks/deletingavolume.htm) 手順に従って、不要なボリュームを削除してください。  
-    なお、コンピュート・インスタンスにアタッチされた状態では削除ができません。Oracle Cloud Infrastructure ドキュメント：[ボリュームのデタッチ](https://docs.oracle.com/ja-jp/iaas/Content/Block/Tasks/detachingavolume.htm) 手順に従って、デタッチを行ってください。
+    コンピュート・インスタンスを削除しても、アタッチされたブロック・ボリュームが同時に削除されることはありません。Oracle Cloud Infrastructure ドキュメント：[ボリュームの削除](https://docs.oracle.com/ja-jp/iaas/Content/Block/Tasks/deletingavolume.htm){:target="_blank"} 手順に従って、不要なボリュームを削除してください。  
+    なお、コンピュート・インスタンスにアタッチされた状態では削除ができません。Oracle Cloud Infrastructure ドキュメント：[ボリュームのデタッチ](https://docs.oracle.com/ja-jp/iaas/Content/Block/Tasks/detachingavolume.htm){:target="_blank"} 手順に従って、デタッチを行ってください。
 
 - **バックアップの削除**
 
@@ -59,12 +59,12 @@ header:
 
 ただし、ボリューム・グループに含むことができるのは、最大32個 (最大サイズの制限は128 TB) のボリュームです。また、各ボリュームが所属できるボリューム・グループは 1つのみです。
 
-詳細は Oracle Cloud Infrastructure ドキュメント：[ボリューム・グループ](https://docs.oracle.com/ja-jp/iaas/Content/Block/Concepts/volumegroups.htm) および [ボリューム・グループ・バックアップ](https://docs.oracle.com/ja-jp/iaas/Content/Block/Concepts/volumegroups.htm#unique_643775725) を参照してください。
+詳細は Oracle Cloud Infrastructure ドキュメント：[ボリューム・グループ](https://docs.oracle.com/ja-jp/iaas/Content/Block/Concepts/volumegroups.htm) および [ボリューム・グループ・バックアップ](https://docs.oracle.com/ja-jp/iaas/Content/Block/Concepts/volumegroups.htm#unique_643775725){:target="_blank"} を参照してください。
 
 **注意：顧客管理キーを使用して暗号化されたボリュームのリージョン間バックアップに関して**  
 既知の問題として、Vault サービスの暗号化キーを使用して暗号化されたボリュームに対して、クロス・リージョン・コピーが有効なバックアップ・ポリシーを使用している場合、暗号化キーは ボリューム・バックアップとともに宛先リージョンにコピーされません。
 暗号化キーの代わりに、宛先リージョンのボリューム・バックアップ・コピーは、Oracleが提供するキーを使用して暗号化されます。  
-回避策などの詳細については [スケジュール済のリージョン間バックアップ・コピーでボールト暗号化キーが宛先リージョンにコピーされない問題](https://docs.oracle.com/en-us/iaas/Content/knownissues.htm#xregioncopyKMSkeyknownissue) をご参照ください。
+回避策などの詳細については [スケジュール済のリージョン間バックアップ・コピーでボールト暗号化キーが宛先リージョンにコピーされない問題](https://docs.oracle.com/en-us/iaas/Content/knownissues.htm#xregioncopyKMSkeyknownissue){:target="_blank"} をご参照ください。
 {: .notice--warning}
 
 <a href="#main" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
@@ -78,7 +78,7 @@ header:
 
 ## 回答
 
-ブロック・ボリューム(またはブート・ボリューム)のバックアップは、Oracle Cloud Infrastructure オブジェクト・ストレージ に保存され、そのサイズに応じて、オブジェクト・ストレージの料金がかかります。階層は、常に Standard (標準) 層です。オブジェクト・ストレージの価格については、[Object Storageの価格](https://www.oracle.com/jp/cloud/storage/pricing.html)を参照してください。
+ブロック・ボリューム(またはブート・ボリューム)のバックアップは、Oracle Cloud Infrastructure オブジェクト・ストレージ に保存され、そのサイズに応じて、オブジェクト・ストレージの料金がかかります。階層は、常に Standard (標準) 層です。オブジェクト・ストレージの価格については、[Object Storageの価格](https://www.oracle.com/jp/cloud/storage/pricing.html){:target="_blank"} を参照してください。
 
 バックアップのサイズは、コンソール画面から確認ができます。
 
@@ -96,7 +96,7 @@ header:
 
 これは、OCI のブロック・ボリュームが、前の世代を削除された場合も、次の世代に影響なく復元できる仕様になっているためです。従って、古い世代を削除することが 必ずしも容量削減につながらない可能性があることに注意してください。
 
-詳細は、OCI技術資料 : ブロック・ボリューム 概要 の [バックアップとリストア](https://speakerdeck.com/ocise/ociji-shu-zi-liao-burotukuboriyumu-gai-yao?slide=18) を参照してください。
+詳細は、OCI技術資料 : ブロック・ボリューム 概要 の [バックアップとリストア](https://speakerdeck.com/ocise/ociji-shu-zi-liao-burotukuboriyumu-gai-yao?slide=18){:target="_blank"} を参照してください。
 
 <a href="#main" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
 <br />
@@ -123,7 +123,7 @@ header:
     Allow service blockstorage to use keys in compartment <compartment_name> where target.key.id = '<key_OCID>'
     ```
 
-    詳細は Oracle Cloud Infrastructure ドキュメント：共通ポリシー - [ブロック・ボリューム (略) によるボリューム (略) の暗号化と復号化](https://docs.oracle.com/ja-jp/iaas/Content/Identity/Concepts/commonpolicies.htm#services-use-key) を参照してください。
+    詳細は Oracle Cloud Infrastructure ドキュメント：共通ポリシー - [ブロック・ボリューム (略) によるボリューム (略) の暗号化と復号化](https://docs.oracle.com/ja-jp/iaas/Content/Identity/Concepts/commonpolicies.htm#services-use-key){:target="_blank"} を参照してください。
 
 - **ユーザーがキーの使用をサービスに委任する権限**
 
@@ -133,9 +133,9 @@ header:
     Allow group <group_name> to use key-delegate in compartment <compartment_name> where target.key.id = '<key_OCID>'
     ```
 
-    詳細は Oracle Cloud Infrastructure ドキュメント：共通ポリシー - [ユーザー・グループによるコンパートメントのキーの使用の委任](https://docs.oracle.com/ja-jp/iaas/Content/Identity/Concepts/commonpolicies.htm#os-bv-admins-use-key-id) を参照してください。
+    詳細は Oracle Cloud Infrastructure ドキュメント：共通ポリシー - [ユーザー・グループによるコンパートメントのキーの使用の委任](https://docs.oracle.com/ja-jp/iaas/Content/Identity/Concepts/commonpolicies.htm#os-bv-admins-use-key-id){:target="_blank"} を参照してください。
 
-その他、詳細については、Oracle Cloud Infrastructure ドキュメント：キーの使用 - [必須IAMポリシー](https://docs.oracle.com/ja-jp/iaas/Content/KeyManagement/Tasks/usingkeys.htm#permissions) も合わせて参照してください。
+その他、詳細については、Oracle Cloud Infrastructure ドキュメント：キーの使用 - [必須IAMポリシー](https://docs.oracle.com/ja-jp/iaas/Content/KeyManagement/Tasks/usingkeys.htm#permissions){:target="_blank"} も合わせて参照してください。
 
 <a href="#main" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
 <br />
@@ -148,11 +148,11 @@ header:
 
 ## 回答
 
-ブロック・ボリューム(またはブート・ボリューム)の実使用量は、ブロック・ボリューム・メトリックに含まれていません。そのため、モニタリングを利用して実使用量を監視したい場合は、カスタムメトリックを構成する必要があります。カスタム・メトリックについては、Oracle Cloud Infrastructure ドキュメント：[カスタム・メトリックの公開](https://docs.oracle.com/ja-jp/iaas/Content/Monitoring/Tasks/publishingcustommetrics.htm) を参照してください。
+ブロック・ボリューム(またはブート・ボリューム)の実使用量は、ブロック・ボリューム・メトリックに含まれていません。そのため、モニタリングを利用して実使用量を監視したい場合は、カスタムメトリックを構成する必要があります。カスタム・メトリックについては、Oracle Cloud Infrastructure ドキュメント：[カスタム・メトリックの公開](https://docs.oracle.com/ja-jp/iaas/Content/Monitoring/Tasks/publishingcustommetrics.htm){:target="_blank"} を参照してください。
 
-大まかな流れとしては、対象のボリュームに対して df や free コマンドを実行し、容量に関する情報を取得します。取得した情報をカスタム・メトリックとして、[PostMetricData](https://docs.oracle.com/en-us/iaas/api/#/en/monitoring/20180401/MetricData/PostMetricData) API を使用し、カスタム・メトリックとして発行します。
+大まかな流れとしては、対象のボリュームに対して df や free コマンドを実行し、容量に関する情報を取得します。取得した情報をカスタム・メトリックとして、[PostMetricData](https://docs.oracle.com/en-us/iaas/api/#/en/monitoring/20180401/MetricData/PostMetricData){:target="_blank"} API を使用し、カスタム・メトリックとして発行します。
 
-または、[Oracle Management Cloud](https://docs.oracle.com/cd/E83857_01/paas/management-cloud/index.html)サービスを使用し、監視することも可能です。
+または、[Oracle Management Cloud](https://docs.oracle.com/cd/E83857_01/paas/management-cloud/index.html){:target="_blank"} サービスを使用し、監視することも可能です。
 
 <a href="#main" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
 <br />
@@ -167,7 +167,7 @@ header:
 
 - **コンソールでの確認方法**
 
-    コンソールから監査(Audit)ログの確認を行う場合、ロギングの監査ページから検索が行えます。フィルタリング項目にて、対象のリソースや、イベント・タイプを設定することで、特定のリソースに関する、特定のアクティビティを確認することができます。詳細は Oracle Cloud Infrastructure ドキュメント：[監査ログのフィルタリング](https://docs.oracle.com/ja-jp/iaas/Content/Logging/Concepts/audit_logs.htm) をご参照ください。
+    コンソールから監査(Audit)ログの確認を行う場合、ロギングの監査ページから検索が行えます。フィルタリング項目にて、対象のリソースや、イベント・タイプを設定することで、特定のリソースに関する、特定のアクティビティを確認することができます。詳細は Oracle Cloud Infrastructure ドキュメント：[監査ログのフィルタリング](https://docs.oracle.com/ja-jp/iaas/Content/Logging/Concepts/audit_logs.htm){:target="_blank"} をご参照ください。
 
     参考として、ボリュームに関連する主なイベント・タイプには下記のような種類があります。
 
@@ -181,7 +181,7 @@ header:
 
 - **コマンドラインでの確認方法**
 
-    コマンドラインで監査ログの確認を行う場合は、ログの検索専用の問合せ構文を用いて検索します。下記にコマンドの例を示しますが、詳細は Oracle Cloud Infrastructure ドキュメント：[ログの検索](https://docs.oracle.com/ja-jp/iaas/Content/Logging/Concepts/searchinglogs.htm#using_the_cli_logsearch) をご参照ください。
+    コマンドラインで監査ログの確認を行う場合は、ログの検索専用の問合せ構文を用いて検索します。下記にコマンドの例を示しますが、詳細は Oracle Cloud Infrastructure ドキュメント：[ログの検索](https://docs.oracle.com/ja-jp/iaas/Content/Logging/Concepts/searchinglogs.htm#using_the_cli_logsearch){:target="_blank"} をご参照ください。
 
     ```
     oci logging-search search-logs --search-query "search \"<compartment-id>/_Audit\" | sort by datetime desc" --time-start 2021-01-01 --time-end 2021-01-31
@@ -221,7 +221,7 @@ header:
 
 コンピュート・インスタンス間の通信をプライベートに行いたい場合は、ローカル・ピアリングを構成することで、別テナント間でもプライベート接続が可能です。
 
- なお、移動対象がブート・ボリュームだけであり、且つ、400GB以下のサイズであれば、カスタム・イメージ化し、オブジェクト・ストレージを介することで移動を実現できます。(参考：Oracle Cloud Infrastructure ドキュメント：[イメージのエクスポート](https://docs.oracle.com/ja-jp/iaas/Content/Compute/Tasks/imageimportexport.htm#Exporting))
+ なお、移動対象がブート・ボリュームだけであり、且つ、400GB以下のサイズであれば、カスタム・イメージ化し、オブジェクト・ストレージを介することで移動を実現できます。(参考：Oracle Cloud Infrastructure ドキュメント：[イメージのエクスポート](https://docs.oracle.com/ja-jp/iaas/Content/Compute/Tasks/imageimportexport.htm#Exporting)){:target="_blank"}
 
 <a href="#main" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
 <br />
@@ -236,10 +236,10 @@ header:
 
 アタッチ・タイプに「iSCSI」を選択した場合、iSCSIコマンドを実行するなど、iSCSI 接続を構成する必要があります。アタッチ完了後、アタッチされたブロック・ボリュームの一覧から、対象のブロック・ボリュームのメニューから「iSCSIコマンドおよび情報」を選択することで、iSCSI 接続を構成するために必要な情報を表示することができます。
 
-詳細については Oracle Cloud Infrastructure ドキュメント：[iSCSIコマンドおよび情報](https://docs.oracle.com/ja-jp/iaas/Content/Block/Concepts/iscsiinformation.htm) を参照してください。
+詳細については Oracle Cloud Infrastructure ドキュメント：[iSCSIコマンドおよび情報](https://docs.oracle.com/ja-jp/iaas/Content/Block/Concepts/iscsiinformation.htm){:target="_blank"} を参照してください。
 
-- **Windows OS の場合**：[Windowsインスタンスへのブロック・ボリュームの追加](https://docs.oracle.com/ja-jp/iaas/Content/GSG/Tasks/addingstorageForWindows.htm#Attachin)
-- **Linux ベース OS の場合**：[ブロック・ボリュームの追加](https://docs.oracle.com/ja-jp/iaas/Content/GSG/Tasks/addingstorage.htm#Attachin)
+- **Windows OS の場合**：[Windowsインスタンスへのブロック・ボリュームの追加](https://docs.oracle.com/ja-jp/iaas/Content/GSG/Tasks/addingstorageForWindows.htm#Attachin){:target="_blank"}
+- **Linux ベース OS の場合**：[ブロック・ボリュームの追加](https://docs.oracle.com/ja-jp/iaas/Content/GSG/Tasks/addingstorage.htm#Attachin){:target="_blank"}
 
 下記イメージは、Linux ベース OS の場合の「iSCSIコマンドおよび情報」の例です。
 
@@ -353,7 +353,7 @@ $ sudo chown opc:opc /mnt/devsdc/
 > **ボリュームの指定方法について**
 >
 > Linux ベースの OSでは、ボリュームがアタッチされる順序は、再起動のたびに変わる可能性があります。ルート以外のボリュームが複数ある場合に、`/dev/sdb` のようにデバイス名を使用してボリュームを参照していると、特定のデバイス名に対してマウントしようとするボリュームと、実際にマウントされるボリュームが異なってしまう可能性があります。
-> この問題を回避するには、`/etc/fstab`ファイル内に、デバイス名のかわりに **ボリュームUUID** を指定します。もしくは、[一貫性のあるデバイス・パスが使用可能なイメージ](https://docs.oracle.com/ja-jp/iaas/Content/Block/References/consistentdevicepaths.htm#images) の場合は、**一貫性のあるデバイス・パス** を指定します。
+> この問題を回避するには、`/etc/fstab`ファイル内に、デバイス名のかわりに **ボリュームUUID** を指定します。もしくは、[一貫性のあるデバイス・パスが使用可能なイメージ](https://docs.oracle.com/ja-jp/iaas/Content/Block/References/consistentdevicepaths.htm#images){:target="_blank"} の場合は、**一貫性のあるデバイス・パス** を指定します。
 
 **3-a. ボリュームUUIDを指定する場合**
 
@@ -377,7 +377,7 @@ UUID=<確認したUUID> /mnt/devsdc xfs defaults,_netdev,nofail 0 2
 
 - `<確認したUUID>` ： ボリュームのUUIDを指定します
 - `/mnt/devsdc` ： 作成したマウント・ポイントを指定します
-- `_netdev`、`nofail` オプションを指定する理由については、[_netdevおよびnofailオプションの使用](https://docs.oracle.com/ja-jp/iaas/Content/Block/References/fstaboptions.htm#Use_the__netdev_and_nofail_Options) を参照してください。
+- `_netdev`、`nofail` オプションを指定する理由については、[_netdevおよびnofailオプションの使用](https://docs.oracle.com/ja-jp/iaas/Content/Block/References/fstaboptions.htm#Use_the__netdev_and_nofail_Options){:target="_blank"} を参照してください。
 
 次のコマンドを実行し、設定を反映します。
 
@@ -396,8 +396,8 @@ $ df -h
 一貫性のあるデバイス・パスを使用する前に、以下に該当しないことを確認してください。
 
 > 1. アタッチしたボリュームが ブート・ボリュームでないこと。(ブート・ボリュームをデータ・ボリュームとして2番目のインスタンスにアタッチする場合、デバイス・パスは使用できません。)
-> 2. インスタンスが [一貫性のあるデバイス・パスをサポートしているイメージ](https://docs.oracle.com/ja-jp/iaas/Content/Block/References/consistentdevicepaths.htm#images) であること。
-> 3. インスタンスへアタッチする際、[デバイス・パスを指定済み](https://docs.oracle.com/ja-jp/iaas/Content/Block/References/consistentdevicepaths.htm#Device_Paths_in_the_Console) であること。
+> 2. インスタンスが [一貫性のあるデバイス・パスをサポートしているイメージ](https://docs.oracle.com/ja-jp/iaas/Content/Block/References/consistentdevicepaths.htm#images){:target="_blank"} であること。
+> 3. インスタンスへアタッチする際、[デバイス・パスを指定済み](https://docs.oracle.com/ja-jp/iaas/Content/Block/References/consistentdevicepaths.htm#Device_Paths_in_the_Console){:target="_blank"} であること。
 
 次に、一貫性のあるデバイス・パスが正しく構成されていることを確認するため、次のコマンドを実行します。
 
@@ -428,7 +428,7 @@ $ sudo vi /etc/fstab
 
 - `/dev/oracleoci/oraclevdb` ： 一貫性のあるデバイス・パスを指定します
 - `/mnt/devsdc` ： 作成したマウント・ポイントを指定します
-- `_netdev`、`nofail` オプションを指定する理由については、[_netdevおよびnofailオプションの使用](https://docs.oracle.com/ja-jp/iaas/Content/Block/References/fstaboptionsconsistentdevicepaths.htm#Use_the__netdev_and_nofail_Options) を参照してください。
+- `_netdev`、`nofail` オプションを指定する理由については、[_netdevおよびnofailオプションの使用](https://docs.oracle.com/ja-jp/iaas/Content/Block/References/fstaboptionsconsistentdevicepaths.htm#Use_the__netdev_and_nofail_Options){:target="_blank"} を参照してください。
 
 次のコマンドを実行し、設定を反映します。
 
@@ -460,15 +460,15 @@ $ df -h
 
 ボリュームを拡張した後は、ディスクの再スキャンが必要です。再スキャン・コマンドを実行することにより、OSが拡張されたディスク・サイズを認識します。
 
-コマンドの詳細については Oracle Cloud Infrastructure ドキュメント：[ブロック・ボリュームまたはブート・ボリュームのディスクの再スキャン](https://docs.oracle.com/ja-jp/iaas/Content/Block/Tasks/rescanningdisk.htm) をご参照ください。
+コマンドの詳細については Oracle Cloud Infrastructure ドキュメント：[ブロック・ボリュームまたはブート・ボリュームのディスクの再スキャン](https://docs.oracle.com/ja-jp/iaas/Content/Block/Tasks/rescanningdisk.htm){:target="_blank"} をご参照ください。
 
-- **Windows OS の場合**：[Windowsインスタンスにアタッチされたボリュームのディスクの再スキャン](https://docs.oracle.com/ja-jp/iaas/Content/Block/Tasks/rescanningdisk.htm#Rescanni2)
+- **Windows OS の場合**：[Windowsインスタンスにアタッチされたボリュームのディスクの再スキャン](https://docs.oracle.com/ja-jp/iaas/Content/Block/Tasks/rescanningdisk.htm#Rescanni2){:target="_blank"}
 
-- **Linux ベース OS の場合**：[Linuxベースのインスタンスにアタッチされたボリュームのディスクの再スキャン](https://docs.oracle.com/ja-jp/iaas/Content/Block/Tasks/rescanningdisk.htm#Rescanni)
+- **Linux ベース OS の場合**：[Linuxベースのインスタンスにアタッチされたボリュームのディスクの再スキャン](https://docs.oracle.com/ja-jp/iaas/Content/Block/Tasks/rescanningdisk.htm#Rescanni){:target="_blank"}
 
 また、ディスクの再スキャン後は、パーティションの拡張も必要です。
 
-ブロック・ボリュームの場合は、[ブロック・ボリュームのパーティションの拡張](https://docs.oracle.com/ja-jp/iaas/Content/Block/Tasks/extendingblockpartition.htm)を、ブート・ボリュームの場合は、[ブート・ボリュームのパーティションの拡張](https://docs.oracle.com/ja-jp/iaas/Content/Block/Tasks/extendingbootpartition.htm) を参照してください。
+ブロック・ボリュームの場合は、[ブロック・ボリュームのパーティションの拡張](https://docs.oracle.com/ja-jp/iaas/Content/Block/Tasks/extendingblockpartition.htm)を、ブート・ボリュームの場合は、[ブート・ボリュームのパーティションの拡張](https://docs.oracle.com/ja-jp/iaas/Content/Block/Tasks/extendingbootpartition.htm){:target="_blank"} を参照してください。
 
 <a href="#main" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
 <br />
@@ -483,11 +483,11 @@ $ df -h
 
 コンソール画面を使用して インスタンス構成を作成する場合、アタッチされたブロック・ボリュームをインスタンス構成に含めることはできません。
 
-インスタンス構成にブロック・ボリュームのコンテンツを含めるには、まず [アタッチされたブロック・ボリュームのバックアップを作成](https://docs.oracle.com/ja-jp/iaas/Content/Block/Tasks/backingupavolume.htm#Backing_Up_a_Volume)します。
+インスタンス構成にブロック・ボリュームのコンテンツを含めるには、まず [アタッチされたブロック・ボリュームのバックアップを作成](https://docs.oracle.com/ja-jp/iaas/Content/Block/Tasks/backingupavolume.htm#Backing_Up_a_Volume){:target="_blank"} します。
 
 次に、SDK、CLIまたはAPIを使用し、インスタンス構成を作成する際に、"構成設定" にて、ブロック・ボリュームのバックアップを指定します。インスタンス構成を作成する際の "構成設定" は、以下コマンドを参考に、テンプレートを取得することをおすすめします。
 
-- "構成設定" テンプレートの取得 [[CLI documents](https://docs.oracle.com/iaas/tools/oci-cli/latest/oci_cli_docs/cmdref/compute-management/instance-configuration/create.html)]
+- "構成設定" テンプレートの取得 [[CLI documents](https://docs.oracle.com/iaas/tools/oci-cli/latest/oci_cli_docs/cmdref/compute-management/instance-configuration/create.html){:target="_blank"} ]
 
     ```sh
     oci compute-management instance-configuration create --generate-param-json-input instance-details > template.json
@@ -508,13 +508,13 @@ $ df -h
 
 最後に、以下のコマンドを参考に、インスタンス構成を作成します。`--instance-details` パラメータにて、編集した "構成設定" ファイルを指定してください。
 
-- インスタンス構成の作成 [[CLI documents](https://docs.oracle.com/iaas/tools/oci-cli/latest/oci_cli_docs/cmdref/compute-management/instance-configuration/create.html)]
+- インスタンス構成の作成 [[CLI documents](https://docs.oracle.com/iaas/tools/oci-cli/latest/oci_cli_docs/cmdref/compute-management/instance-configuration/create.html){:target="_blank"} ]
 
     ```sh
     oci compute-management instance-configuration create --compartment-id ocid1.compartment.oc1.xxxxxxxxxxxxxxxx --instance-details file://input.json --display-name instance-config-xxx
     ```
 
  なお、その他の注意事項として、インスタンス構成には、インスタンスのブート・ボリュームの情報(インスタンスにインストールされているアプリケーション、バイナリ、ファイルなど)も含まれません。
-それらの情報を含むインスタンス構成を作成するには、まず[インスタンスからカスタム・イメージを作成](https://docs.oracle.com/ja-jp/iaas/Content/Compute/Tasks/managingcustomimages.htm#To)し、次に[そのカスタム・イメージを使用して新しいインスタンスを起動](https://docs.oracle.com/ja-jp/iaas/Content/Compute/Tasks/managingcustomimages.htm#To2)する必要があります。
+それらの情報を含むインスタンス構成を作成するには、まず[インスタンスからカスタム・イメージを作成](https://docs.oracle.com/ja-jp/iaas/Content/Compute/Tasks/managingcustomimages.htm#To)し、次に[そのカスタム・イメージを使用して新しいインスタンスを起動](https://docs.oracle.com/ja-jp/iaas/Content/Compute/Tasks/managingcustomimages.htm#To2){:target="_blank"} する必要があります。
 
-詳細は、Oracle Cloud Infrastructure ドキュメント：[インスタンス構成の作成](https://docs.oracle.com/ja-jp/iaas/Content/Compute/Tasks/creatinginstanceconfig.htm) を参照してください。
+詳細は、Oracle Cloud Infrastructure ドキュメント：[インスタンス構成の作成](https://docs.oracle.com/ja-jp/iaas/Content/Compute/Tasks/creatinginstanceconfig.htm){:target="_blank"} を参照してください。

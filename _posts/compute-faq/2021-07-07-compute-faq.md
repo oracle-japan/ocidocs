@@ -4,6 +4,7 @@ excerpt: "Oracle Cloud Infrastructure コンピュート・サービスに関し
 layout: faq
 categories:
   - FAQ
+  - Services
   - Compute
 tags:
   - FAQ
@@ -24,7 +25,7 @@ header:
 
 ## 回答
 
-まずはクラウド・アカウント名、ユーザー名、パスワードが正しいかを確認してください。ログイン方法は [Oracle Cloud Infrastructureドキュメント : コンソールのサインイン](https://docs.oracle.com/ja-jp/iaas/Content/GSG/Tasks/signingin.htm) を参考にしてください。
+まずはクラウド・アカウント名、ユーザー名、パスワードが正しいかを確認してください。ログイン方法は [Oracle Cloud Infrastructureドキュメント : コンソールのサインイン](https://docs.oracle.com/ja-jp/iaas/Content/GSG/Tasks/signingin.htm){:target="_blank"} を参考にしてください。
 
 問題の切り分けや対処として、以下の対応が考えられます。
 
@@ -102,11 +103,11 @@ Linuxのコンピュート・インスタンスを作成しましたが、クラ
 
 もし、インスタンスがライブ・マイグレーションをサポートしているシェイプ[^1]の場合は、移行はライブ・マイグレーションによって実施され、インスタンスが起動中ステータスのまま新しいホスト移行が完了します。  
 
-[^1]ライブ・マイグレーション対象のシェイプは、[Oracle Cloud Infrastructureドキュメント : Live Migration](https://docs.oracle.com/en-us/iaas/Content/Compute/Tasks/movinganinstance.htm#live-migration) をご確認ください。
+[^1]ライブ・マイグレーション対象のシェイプは、[Oracle Cloud Infrastructureドキュメント : Live Migration](https://docs.oracle.com/en-us/iaas/Content/Compute/Tasks/movinganinstance.htm#live-migration){:target="_blank"} をご確認ください。
 {: .notice--info}
 
 もし、インスタンスがライブ・マイグレーションをサポートしていないシェイプの場合は、ホストの移行はリブート・マイグレーション(再起動移行)によって実施され、短いダウンタイムを伴います。  
-リブート・マイグレーションの実施に当たっては、事前に注意しておくべき内容が [Oracle Cloud Infrastructureドキュメント : Prerequisites for Reboot Migration](https://docs.oracle.com/en-us/iaas/Content/Compute/Tasks/movinganinstance.htm#prerequisites-reboot) にありますので、こちらもご確認ください。
+リブート・マイグレーションの実施に当たっては、事前に注意しておくべき内容が [Oracle Cloud Infrastructureドキュメント : Prerequisites for Reboot Migration](https://docs.oracle.com/en-us/iaas/Content/Compute/Tasks/movinganinstance.htm#prerequisites-reboot){:target="_blank"} にありますので、こちらもご確認ください。
 
 また、ユーザーは、通知に記載された予定日時よりも前の任意のタイミングで新しいホストへのインスタンスの移行を実施したり、スケジュールを行うことができます。
 
