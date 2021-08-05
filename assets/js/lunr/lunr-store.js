@@ -454,4 +454,16 @@ var store = [{
         "tags": ["FAQ"],
         "url": "https://oracle-japan.github.io/ocidocs/faq/networking/load-balancer-faq/",
         "teaser": null
+      },{
+        "title": "もう迷わない! コンピュートの選び方を学ぼう",
+        "excerpt":"2021/07/27開催の、OCI スキルアップセミナー #10 「もう迷わない! コンピュートの選び方を学ぼう」の資料です。セミナー情報 https://oracle-code-tokyo-dev.connpass.com/event/215004/   ここのところOCIの新機能が大量にリリースされてきています。コンピュートだけでも、容量予約、プリエンプティブル、バースト可能、Optimized3、Armインスタンス、、などなど、あまりに新機能が多すぎてどれを使えばいいのかがわからなくなったりしませんか？   第10回のOCIスキルアップセミナーでは、これまでのインスタンスの種類も含めて総まとめをしながら、ユースケースに応じて、これらの様々な選択肢からいったいどれを選んだらよいのかを整理していきたいと思います！   うまく活用できればCloudならではのコスト削減にもつながりますので、ぜひ選択のポイントを押さえていきましょう。   スライド          セミナー動画      ","categories": ["Services","Compute"],
+        "tags": ["スライドあり","動画あり","レベル:入門(100)","レベル:応用(200)"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/compute/compute-choice/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/51d21668d7c942db82da2925f5efd801/slide_0.jpg"
+      },{
+        "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2021/3～2021/5",
+        "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介する資料です。  本資料は2021年3月～2021年5月の3ヶ月分の新機能について記載しています。   スライド          ","categories": ["Updates"],
+        "tags": ["スライドあり","動画あり"],
+        "url": "https://oracle-japan.github.io/ocidocs/updates/update-FY21Q4/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/cfc6c2cd296248a68f4878db4c82df3c/slide_0.jpg"
       }]
