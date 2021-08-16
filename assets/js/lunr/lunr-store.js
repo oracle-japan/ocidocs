@@ -323,12 +323,6 @@ var store = [{
         "url": "https://oracle-japan.github.io/ocidocs/services/developers/apigateway-overview/",
         "teaser": "https://image.slidesharecdn.com/apigatewayoverview-210601072619/95/api-gateway-1-1024.jpg?cb=1622532807"
       },{
-        "title": "Oracleの提供するブロックチェーンソリューション概要",
-        "excerpt":"Oracle Blockchain Platformや、Oracle Databaseの機能のOracle Blockchain Tableについて、最新の事例、試用環境とデモスクリプト、Hyperledger Fabricの技術情報とともにご説明しています。   スライド          オラクルのブロックチェーンソリューションご紹介（2021/05版）  from オラクルエンジニア通信     ","categories": ["Solutions","Blockchain"],
-        "tags": ["スライドあり","レベル:入門(100)"],
-        "url": "https://oracle-japan.github.io/ocidocs/solutions/blockchain/blockchain-solution-100/",
-        "teaser": "https://image.slidesharecdn.com/20210528oracleblockchainslideshare-210528014231/95/202105-1-638.jpg?cb=1622166197"
-      },{
         "title": "Oracle Cloudで実現するCloud Native",
         "excerpt":"Oracle CloudでCloud Nativeを実現するための考え方やソリューション群をご紹介します。   スライド                ","categories": ["Solutions","Cloud Native"],
         "tags": ["スライドあり","レベル:入門(100)"],
@@ -466,4 +460,22 @@ var store = [{
         "tags": ["スライドあり","動画あり"],
         "url": "https://oracle-japan.github.io/ocidocs/updates/update-FY21Q4/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/cfc6c2cd296248a68f4878db4c82df3c/slide_0.jpg"
+      },{
+        "title": "Oracleの提供するブロックチェーンソリューション概要",
+        "excerpt":"Oracle Blockchain Platformや、Oracle Databaseの機能のOracle Blockchain Tableについて、最新の事例、試用環境とデモスクリプト、Hyperledger Fabricの技術情報とともにご説明しています。   スライド          オラクルのブロックチェーンソリューションご紹介（2021/08版）  from オラクルエンジニア通信     ","categories": ["Solutions","Blockchain"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "https://oracle-japan.github.io/ocidocs/solutions/blockchain/blockchain-solution-100/",
+        "teaser": "https://image.slidesharecdn.com/202108oracleblockchainslideshare-210810055935/95/202108-1-638.jpg?cb=1628575486"
+      },{
+        "title": "ブロックチェーンテーブル文書管理サンプルアプリケーション",
+        "excerpt":"Oracle Databaseの機能のBlockchain Tableの特性を体験し、そのメリットを理解していただくためのサンプルアプリケーションを紹介します。 ブロックチェーンテーブル文書管理サンプルアプリケーションの概要 このアプリケーションは、Oracle Databaseのブロックチェーンテーブルのふたつの特性―耐改ざん性と監査性―を、文書ファイルの管理（保管と検索、閲覧）のシナリオを通じて体験いただくためのサンプルです。 このブロックチェーンテーブル文書管理サンプルアプリケーションは、Oracle APEX（Application Express）で実装されています。そのため、Oracle Database上でアプリケーションを稼働させることができ、アプリケーション・サーバーなどの用意の必要なく利用することができます。このサンプルはまた、Oracle APEXの利便性とパワフルさを体験いただけるものにもなっています。 ブロックチェーンテーブルでの文書管理 このアプリケーションでは、文書（のファイル）の管理というシナリオをブロックチェーンテーブルを活用して実装しています。 WORD、PDF、Excel、テキストなど任意の形式の文書ファイルを保存可能です。 ある文書についてのデータ（文書データ）は、文書ファイルそのものと、ドキュメントID、バージョン、ドキュメント名、登録者などのデータから成ります。 文書データはブロックチェーンテーブルに保存され、登録後は更新不能です。 ひとつの文書（同一のドキュメントIDを付与された文書データ）に対してひとつ～複数のバージョンの文書データを管理可能です。 また、文書のステータス、カテゴリー、備考から成る付加情報データを文書に付与できます。 付加情報のデータは通常のテーブルに保存され、後から更新することができます。 付加情報はひとつの文書に対してひとつです（複数バージョンが存在する場合も共通です）。 主な機能 文書管理に関わる機能と、ブロックチェーンテーブルの特性である耐改ざん性と監査性を体験するための機能を備えています。 文書管理に関わる機能 文書データおよび付加情報の登録 文書データの検索、一覧表示、文書のダウンロード ある文書についての新バージョンの文書データの登録 付加情報の更新 耐改ざん性と監査性に関わる機能 ブロックチェーンテーブルの行の整合性検証（ハッシュチェーンの検証） ブロックチェーンテーブル上の文書データのUPDATE、DELETE不能の確認 ダウンロードとインストール、実行方法 前提：必要な環境と準備 ブロックチェーンテーブルの利用可能なOracle Database アプリケーション内でブロックチェーンテーブルを利用するため、ブロックチェーンテーブルをサポートしているバージョンのOracle Databaseが必要です。 記事執筆時点（2021/8/12）では、主な選択肢として以下いずれかで利用可能です。 Oracle CloudのAutonomous Database（Autonomous Data WarehouseあるいはAutonomous Transaction Processing）の21cバージョンを利用する（注意：現在、Autonomous Databaseで21cのバージョンを選択できるのは、Always Free枠のみです）。 Oracle CloudのDatabase Cloud ServiceのOracle...","categories": ["Solutions","Blockchain"],
+        "tags": ["レベル:入門(100)"],
+        "url": "https://oracle-japan.github.io/ocidocs/solutions/blockchain/blockchain-table-document-sample/",
+        "teaser": "https://oracle-japan.github.io/ocidocs/solutions/blockchain/blockchain-table-document-sample/app-home.png"
+      },{
+        "title": "オブジェクト・ストレージ・サービス 技術FAQ",
+        "excerpt":"オブジェクトへのアクセス拒否エラーが発生した場合のトラブルシューティング方法を教えてください 質問 オブジェクト・ストレージ・バケット内のオブジェクトへのアクセスを試みたところ、アクセス拒否エラーが発生しました。このような場合のトラブルシューティング方法を教えてください。 回答 オブジェクト・ストレージ・バケットへのアクセス方法は下記の２つの方法があります。 コンソール、SDK、CLI、その他のツールを使用したREST APIからのアクセス 事前認証済みリクエストを使用したアクセス それぞれのアクセス方法でアクセスエラーが発生した際のトラブルシューティング方法は下記の通りです： コンソール、SDK、CLI、その他のツールを使用したREST APIからのアクセスの場合 自分のしたいアクセスタイプに必要な、IAMポリシーが付与されているかを確認してください。 【アクセスタイプ別のポリシー・ステートメント例】 オブジェクト・ストレージ管理者によるバケットおよびオブジェクトの管理： すべてのコンパートメントのオブジェクト・ストレージ・バケットおよびオブジェクトのすべての操作を実行する機能 Allow group ObjectAdmins to manage buckets in tenancy Allow group ObjectAdmins to manage objects in tenancy ユーザーによるオブジェクトのオブジェクト・ストレージ・バケットへの書込み： テナンシおよびコンパートメント内の、任意のオブジェクト・ストレージ・バケットにオブジェクトを書き込む機能 Allow group ObjectWriters to read buckets in [任意のテナンシおよびコンパートメント] Allow group ObjectWriters to manage objects in [任意のテナンシおよびコンパートメント] where...","categories": ["FAQ","Storage"],
+        "tags": ["FAQ"],
+        "url": "https://oracle-japan.github.io/ocidocs/faq/storage/object-storage-faq/",
+        "teaser": null
       }]

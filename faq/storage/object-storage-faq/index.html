@@ -1,0 +1,1177 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.21.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="ja" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>オブジェクト・ストレージ・サービス 技術FAQ | Oracle Cloud Infrastructure 活用資料集</title>
+<meta name="description" content="Oracle Cloud Infrastructure オブジェクト・ストレージ・サービスに関して、利用時のよくある質問に対する回答や、技術的な問題に対する対処策をまとめています。">
+
+
+  <meta name="author" content="Oracle Japan Solution Engineers">
+  
+  <meta property="article:author" content="Oracle Japan Solution Engineers">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="Oracle Cloud Infrastructure 活用資料集">
+<meta property="og:title" content="オブジェクト・ストレージ・サービス 技術FAQ">
+<meta property="og:url" content="https://oracle-japan.github.io/ocidocs/faq/storage/object-storage-faq/">
+
+
+  <meta property="og:description" content="Oracle Cloud Infrastructure オブジェクト・ストレージ・サービスに関して、利用時のよくある質問に対する回答や、技術的な問題に対する対処策をまとめています。">
+
+
+
+  <meta property="og:image" content="https://oracle-japan.github.io/ocidocs/assets/images/rh01-cloud-home-pine-background.jpg">
+
+
+
+
+
+  <meta property="article:published_time" content="2021-08-11T00:00:00+09:00">
+
+
+
+
+
+
+<link rel="canonical" href="https://oracle-japan.github.io/ocidocs/faq/storage/object-storage-faq/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "https://oracle-japan.github.io/ocidocs/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/ocidocs/feed.xml" type="application/atom+xml" rel="alternate" title="Oracle Cloud Infrastructure 活用資料集 Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/ocidocs/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--faq">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/ocidocs/"><img src="/ocidocs/assets/images/social-og-oracle-badge.jpg" alt=""></a>
+        
+        <a class="site-title" href="/ocidocs/">
+          OCI活用資料集
+          <span class="site-subtitle">Oracle Cloud Infrastructure を使い倒すための資料集</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/ocidocs/updates/">新機能</a>
+            </li><li class="masthead__menu-item">
+              <a href="/ocidocs/services/">サービス別資料</a>
+            </li><li class="masthead__menu-item">
+              <a href="/ocidocs/solutions/">ソリューション別資料</a>
+            </li><li class="masthead__menu-item">
+              <a href="/ocidocs/faqs/">技術FAQ</a>
+            </li><li class="masthead__menu-item">
+              <a href="/ocidocs/misc/">その他</a>
+            </li><li class="masthead__menu-item">
+              <a href="/ocidocs/links/">外部リンク</a>
+            </li><li class="masthead__menu-item">
+              <a href="/ocidocs/tags/">タグ</a>
+            </li><li class="masthead__menu-item">
+              <a href="/ocidocs/about/">このサイトについて</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">メニュー</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: url('/ocidocs/assets/images/rh01-cloud-home-pine-background.jpg');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          オブジェクト・ストレージ・サービス 技術FAQ
+
+        
+      </h1>
+      
+        <p class="page__lead">Oracle Cloud Infrastructure オブジェクト・ストレージ・サービスに関する技術FAQです<br />サービス仕様に関する⼀般的な質問や、既知の問題については下記の外部リンクもご参照ください
+</p>
+      
+      
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-08-11T00:00:00+09:00">August 11, 2021</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+      
+      
+        <p>
+        
+          <a href="https://www.oracle.com/jp/cloud/storage/object-storage-faq.html" class="btn btn--light-outline btn--large">Object Storageに関するよくある質問</a>
+        
+          <a href="https://docs.oracle.com/ja-jp/iaas/Content/knownissues.htm#objectstorage" class="btn btn--light-outline btn--large">既知の問題 - オブジェクト・ストレージ</a>
+        
+      
+    </div>
+  
+  
+    <span class="page__hero-caption"><a href="https://design.oracle.com/">Oracle Redwood</a>
+</span>
+  
+</div>
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">メニュー</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          <a href="/ocidocs/updates/"><span class="nav__sub-title">新機能</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          <a href="/ocidocs/services/"><span class="nav__sub-title">サービス別資料</span></a>
+        
+
+        
+        <ul>
+          
+            <li><a href="/ocidocs/services/overall/">サービス全般</a></li>
+          
+            <li><a href="/ocidocs/services/compute/">コンピュート</a></li>
+          
+            <li><a href="/ocidocs/services/storage/">ストレージ</a></li>
+          
+            <li><a href="/ocidocs/services/networking/">ネットワーク</a></li>
+          
+            <li><a href="/ocidocs/services/database/">データベース</a></li>
+          
+            <li><a href="/ocidocs/services/developers/">開発者サービス</a></li>
+          
+            <li><a href="/ocidocs/services/edge/">エッジ・サービス</a></li>
+          
+            <li><a href="/ocidocs/services/security/">セキュリティ</a></li>
+          
+            <li><a href="/ocidocs/services/governance-and-administration/">ガバナンスと管理</a></li>
+          
+            <li><a href="/ocidocs/services/devtools/">開発ツール</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <a href="/ocidocs/solutions/"><span class="nav__sub-title">ソリューション別資料</span></a>
+        
+
+        
+        <ul>
+          
+            <li><a href="/ocidocs/solutions/ha/">HA・DR・高可用性システム</a></li>
+          
+            <li><a href="/ocidocs/solutions/iam/">認証・認可・セキュリティ</a></li>
+          
+            <li><a href="/ocidocs/solutions/manageability/">運用・管理</a></li>
+          
+            <li><a href="/ocidocs/solutions/cloudnative/">Cloud Native</a></li>
+          
+            <li><a href="/ocidocs/solutions/blockchain/">Blockchain</a></li>
+          
+            <li><a href="/ocidocs/solutions/others/">その他</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <a href="/ocidocs/faqs/"><span class="nav__sub-title">技術FAQ</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          <a href="/ocidocs/misc/"><span class="nav__sub-title">その他</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          <a href="/ocidocs/links/"><span class="nav__sub-title">外部リンク</span></a>
+        
+
+        
+      </li>
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="オブジェクト・ストレージ・サービス 技術FAQ">
+    <meta itemprop="description" content="Oracle Cloud Infrastructure オブジェクト・ストレージ・サービスに関して、利用時のよくある質問に対する回答や、技術的な問題に対する対処策をまとめています。">
+    <meta itemprop="datePublished" content="2021-08-11T00:00:00+09:00">
+    
+
+    <div class="page__inner-wrap">
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 目次</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#オブジェクトへのアクセス拒否エラーが発生した場合のトラブルシューティング方法を教えてください">オブジェクトへのアクセス拒否エラーが発生した場合のトラブルシューティング方法を教えてください</a></li>
+  <li><a href="#バケット間でオブジェクトのデータをコピーしたい場合のセットアップ方法を教えてください">バケット間でオブジェクトのデータをコピーしたい場合のセットアップ方法を教えてください。</a></li>
+  <li><a href="#ライフサイクルポリシーを使用してバケット内のオブジェクトをすべて削除するにはどうすればよいですか">ライフサイクルポリシーを使用して、バケット内のオブジェクトをすべて削除するにはどうすればよいですか？</a></li>
+  <li><a href="#オブジェクトストレージバケット別のコストを一覧するにはどうしたらよいですか">オブジェクト・ストレージ・バケット別のコストを一覧するにはどうしたらよいですか?</a></li>
+  <li><a href="#アーカイブストレージ層から一括でリストアしたい場合の効率的なリストア方法を教えてください">アーカイブ・ストレージ層から一括でリストアしたい場合の、効率的なリストア方法を教えてください。</a></li>
+  <li><a href="#オブジェクトストレージにイベント通知を設定しましたイベントがトリガーされたかを確認する方法を教えてください">オブジェクト・ストレージにイベント通知を設定しました。イベントがトリガーされたかを確認する方法を教えてください。</a></li>
+  <li><a href="#バケット間にレプリケーションをセットアップしたのですがオブジェクトがレプリケートされませんどうすれば解決できますか">バケット間にレプリケーションをセットアップしたのですが、オブジェクトがレプリケートされません。どうすれば解決できますか?</a></li>
+  <li><a href="#オブジェクトストレージに大容量のファイルをアップロードするときにパフォーマンスを最適化する方法を教えてください">オブジェクトストレージに大容量のファイルをアップロードするときにパフォーマンスを最適化する方法を教えてください。</a></li>
+</ul>
+
+            </nav>
+          </aside>
+        
+        <h1 id="オブジェクトへのアクセス拒否エラーが発生した場合のトラブルシューティング方法を教えてください">オブジェクトへのアクセス拒否エラーが発生した場合のトラブルシューティング方法を教えてください</h1>
+
+<h2 id="質問">質問</h2>
+
+<p>オブジェクト・ストレージ・バケット内のオブジェクトへのアクセスを試みたところ、アクセス拒否エラーが発生しました。このような場合のトラブルシューティング方法を教えてください。</p>
+
+<h2 id="回答">回答</h2>
+
+<p>オブジェクト・ストレージ・バケットへのアクセス方法は下記の２つの方法があります。</p>
+
+<ol>
+  <li>コンソール、SDK、CLI、その他のツールを使用したREST APIからのアクセス</li>
+  <li>事前認証済みリクエストを使用したアクセス</li>
+</ol>
+
+<p>それぞれのアクセス方法でアクセスエラーが発生した際のトラブルシューティング方法は下記の通りです：</p>
+
+<ol>
+  <li>
+    <p><strong>コンソール、SDK、CLI、その他のツールを使用したREST APIからのアクセスの場合</strong></p>
+
+    <ul>
+      <li>
+        <p>自分のしたいアクセスタイプに必要な、IAMポリシーが付与されているかを確認してください。</p>
+
+        <p><strong>【アクセスタイプ別のポリシー・ステートメント例】</strong></p>
+
+        <ol>
+          <li>
+            <p><strong>オブジェクト・ストレージ管理者によるバケットおよびオブジェクトの管理</strong>：</p>
+
+            <p>すべてのコンパートメントのオブジェクト・ストレージ・バケットおよびオブジェクトのすべての操作を実行する機能</p>
+          </li>
+        </ol>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Allow group ObjectAdmins to manage buckets in tenancy
+Allow group ObjectAdmins to manage objects in tenancy 
+</code></pre></div>        </div>
+
+        <ol>
+          <li>
+            <p><strong>ユーザーによるオブジェクトのオブジェクト・ストレージ・バケットへの書込み</strong>：</p>
+
+            <p>テナンシおよびコンパートメント内の、任意のオブジェクト・ストレージ・バケットにオブジェクトを書き込む機能</p>
+          </li>
+        </ol>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Allow group ObjectWriters to read buckets in [任意のテナンシおよびコンパートメント]
+Allow group ObjectWriters to manage objects in [任意のテナンシおよびコンパートメント] where any request.permission='OBJECT_CREATE', request.permission='OBJECT_INSPECT'}
+</code></pre></div>        </div>
+
+        <p>​			※特定のコンパートメント内の特定のバケットへのアクセスを制限するには、条件where target.bucket.name=’<bucket_name>'を追加してください。</bucket_name></p>
+
+        <ol>
+          <li><strong>ユーザーによるオブジェクトのオブジェクト・ストレージ・バケットからのダウンロード</strong>：</li>
+        </ol>
+
+        <p>　テナンシおよびコンパートメント内の、任意のオブジェクト・ストレージ・バケットからオブジェクトをダウンロードする機能</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Allow group ObjectReaders to read buckets in [任意のテナンシおよびコンパートメント]
+Allow group ObjectReaders to read objects in [任意のテナンシおよびコンパートメント]
+</code></pre></div>        </div>
+
+        <p>​			※特定のコンパートメント内の特定のバケットへのアクセスを制限するには、条件where target.bucket.name=’<bucket_name>'を追加してください。</bucket_name></p>
+      </li>
+      <li>
+        <p>詳細は<a href="https://docs.oracle.com/ja-jp/iaas/Content/Identity/Concepts/commonpolicies.htm#" target="_blank">Oracle Cloud Infrastructure ドキュメント：オブジェクト・ストレージ管理者によるバケットおよびオブジェクトの管理</a> をご覧ください。</p>
+      </li>
+      <li>
+        <p>なお、適切なIAMポリシーが設定されているにもかかわらず、アクションを実行しようとした際に、「権限がない」または「認可されていない」というメッセージが表示された場合は、IAMポリシーが正しく設定されていない可能性があります。必要なアクセスのタイプと作業するコンパートメントを管理者に確認してください。</p>
+      </li>
+      <li>
+        <p>【参考】<a href="https://docs.oracle.com/ja-jp/iaas/Content/Object/Tasks/managingbuckets.htm#Managing_Buckets" target="_blank">Oracle Cloud Infrastructure ドキュメント「バケットの管理」</a></p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>事前認証済みリクエストを使用したアクセスの場合</strong></p>
+
+    <ul>
+      <li>事前認証済みリクエストとは？
+        <ul>
+          <li>事前認証済リクエストを作成すると、一意のURLが生成されます。このURLを提供するすべての人は、curlやwgetなどの標準HTTPツールを使用して、特定のオブジェクト・ストレージ・リソースにアクセスできるようになります。事前認証済リクエストは、OCIの資格証明を持たない人にも、バケットにアクセスを可能にするアクセス方法です。</li>
+        </ul>
+      </li>
+      <li>事前認証済みリクエストが使用できないときには、下記項目を確認してください。
+        <ol>
+          <li>事前認証済リクエスト作成者の権限が変更されていないか</li>
+          <li>事前認証済リクエストを作成したユーザーが削除されていないか</li>
+          <li>事前認証済リクエストを作成したフェデレーテッド・ユーザーが、そのリクエストを作成したときのユーザー機能を失っていないか</li>
+          <li>事前認証済リクエストが期限切れになっていないか
+            <ul>
+              <li>事前認証済リクエストには、URIの有効期限があり、期限を過ぎたURLは無効になります。</li>
+            </ul>
+          </li>
+        </ol>
+      </li>
+      <li>【参考】<a href="https://docs.oracle.com/ja-jp/iaas/Content/Object/Tasks/usingpreauthenticatedrequests.htm#Using_PreAuthenticated_Requests" target="_blank">Oracle Cloud Infrastructure ドキュメント「事前認証済リクエストの使用」</a></li>
+    </ul>
+  </li>
+</ol>
+
+<p><strong>関連情報 :</strong></p>
+
+<ul>
+  <li><a href="https://docs.oracle.com/ja-jp/iaas/Content/Identity/Concepts/commonpolicies.htm#" target="_blank">Oracle Cloud Infrastructure ドキュメント：オブジェクト・ストレージ管理者によるバケットおよびオブジェクトの管理</a></li>
+  <li><a href="https://docs.oracle.com/ja-jp/iaas/Content/Object/Tasks/managingbuckets.htm#Managing_Buckets" target="_blank">Oracle Cloud Infrastructure ドキュメント：バケットの管理</a></li>
+  <li><a href="https://docs.oracle.com/ja-jp/iaas/Content/Object/Tasks/usingpreauthenticatedrequests.htm#Using_PreAuthenticated_Requests" target="_blank">Oracle Cloud Infrastructure ドキュメント：事前認証済リクエストの使用</a></li>
+</ul>
+
+<p><a href="#main" class="back-to-top">Back to Top ↑</a>
+<br /></p>
+
+<h1 id="バケット間でオブジェクトのデータをコピーしたい場合のセットアップ方法を教えてください">バケット間でオブジェクトのデータをコピーしたい場合のセットアップ方法を教えてください。</h1>
+
+<h2 id="質問-1">質問</h2>
+
+<p>オブジェクト・ストレージ・バケット間で、オブジェクトのデータをコピーしたい場合のセットアップ方法を教えてください。</p>
+
+<h2 id="回答-1">回答</h2>
+
+<p>オブジェクト・ストレージでは、オブジェクトを同一リージョン内の他のバケット、および他のリージョン内のバケットにコピーすることができます。</p>
+
+<p>バケット間のコピーを実施する上で、下記項目が設定されていることを、事前にご確認ください。</p>
+
+<ol>
+  <li>【ユーザ権限】適切なアクセス権が、IAMポリシーで定義されていること
+    <ul>
+      <li>オブジェクト・コピーを実行する場合、ソース・バケットおよび宛先バケットの両方に対して、必要なアクセス権を持っている必要があります。ソース・バケットおよび宛先バケット内のオブジェクトを管理する権限も必要です。</li>
+    </ul>
+  </li>
+  <li>【サービス権限】オブジェクト・ストレージはリージョナル・サービスであるため、代理でコピー操作を実行する各リージョンのオブジェクト・ストレージ・サービスを認可する必要があります。
+    <ul>
+      <li>たとえば、オブジェクト・ストレージ・サービスをJapan East(Tokyo)リージョンで認可して、代理でオブジェクトを管理できます。オブジェクト・ストレージ・サービスを認可すると、Japan East(Tokyo)リージョンのバケットに格納されているオブジェクトを、別のリージョンのバケットにコピーできます。</li>
+    </ul>
+  </li>
+</ol>
+
+<p>オブジェクトのデータを手動でコピーしたい場合の手順詳細はこちらをご参照ください。
+<a href="https://docs.oracle.com/ja-jp/iaas/Content/Object/Tasks/copyingobjects.htm#usingconsole" target="_blank">Oracle Cloud Infrastructure ドキュメント：コンソールを使用したオブジェクトのコピー</a></p>
+
+<p><strong>関連情報 :</strong></p>
+
+<ul>
+  <li><a href="https://docs.oracle.com/ja-jp/iaas/Content/Object/Tasks/copyingobjects.htm#usingconsole" target="_blank">Oracle Cloud Infrastructure ドキュメント：オブジェクトのコピー → コンソールを使用したオブジェクトのコピー</a></li>
+</ul>
+
+<p><a href="#main" class="back-to-top">Back to Top ↑</a>
+<br /></p>
+
+<h1 id="ライフサイクルポリシーを使用してバケット内のオブジェクトをすべて削除するにはどうすればよいですか">ライフサイクルポリシーを使用して、バケット内のオブジェクトをすべて削除するにはどうすればよいですか？</h1>
+
+<h2 id="質問-2">質問</h2>
+
+<p>ライフサイクルポリシーを使用して、バケット内のオブジェクトをすべて削除するにはどうすればよいですか？</p>
+
+<h2 id="回答-2">回答</h2>
+
+<p>下記項目が設定されていることを、事前にご確認ください：</p>
+
+<ol>
+  <li>
+    <p>【ユーザ権限】適切なアクセス権が、IAMポリシーで定義されていること</p>
+
+    <ul>
+      <li>Oracle Cloud Infrastructureを使用するには、管理者が記述するポリシー で、コンソールまたはSDK、CLIまたはその他のツールを使用したREST APIのどれを使用しているかにかかわらず、必要なアクセスのタイプを付与されている必要があります。</li>
+      <li>なお、適切なIAMポリシーが設定されているにもかかわらず、アクションを実行しようとした際に、「権限がない」または「認可されていない」というメッセージが表示された場合は、IAMポリシーが正しく設定されていない可能性があります。必要なアクセスのタイプと作業するコンパートメントを管理者に確認してください。</li>
+    </ul>
+  </li>
+  <li>
+    <p>【サービス権限】オブジェクト・ライフサイクル・ポリシーを実行するには、代理でオブジェクトをアーカイブおよび削除する権限をサービスに付与する必要があります。これを行うには、テナンシのルート・コンパートメントに次のポリシーを作成します:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Allow service objectstorage-&lt;region_identifier&gt; to manage object-family in compartment &lt;compartment_name&gt;
+</code></pre></div>    </div>
+
+    <p>オブジェクト・ストレージはリージョナル・サービスであるため、ライフサイクル・ポリシーを使用する各リージョンでオブジェクト・ストレージ・サービスを認可する必要があります。オブジェクト・ストレージにより、データが権限のないリージョンから読み取られないことが保証されます。</p>
+  </li>
+</ol>
+
+<p>ライフサイクルポリシーを作成する際に、「ライフサイクル・アクション」にてポリシーを適用したバケット内のオブジェクトに対するアクションを設定します。</p>
+
+<p>バケット内のオブジェクトを削除したい場合には、このライフサイクル・アクションを「削除」に設定します。</p>
+
+<p>ライフサイクルポリシーの設定方法は下記のドキュメントをご覧ください。</p>
+
+<ul>
+  <li>コンソールを使用して作成する場合
+    <ul>
+      <li><a href="https://docs.oracle.com/ja-jp/iaas/Content/Object/Tasks/usinglifecyclepolicies.htm#usingconsole" target="_blank">Oracle Cloud Infrastructure ドキュメント：オブジェクト・ライフサイクルの使用 → コンソールの使用</a></li>
+    </ul>
+  </li>
+  <li>CLIを使用して作成する場合
+    <ul>
+      <li><a href="https://docs.oracle.com/ja-jp/iaas/Content/Object/Tasks/usinglifecyclepolicies.htm#cli" target="_blank">Oracle Cloud Infrastructure ドキュメント：オブジェクト・ライフサイクルの使用 → CLIの使用</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>関連情報 :</strong></p>
+
+<ul>
+  <li><a href="https://docs.oracle.com/ja-jp/iaas/Content/Object/Tasks/usinglifecyclepolicies.htm" target="_blank">Oracle Cloud Infrastructure ドキュメント：オブジェクト・ライフサイクルの使用</a></li>
+</ul>
+
+<p><a href="#main" class="back-to-top">Back to Top ↑</a>
+<br /></p>
+
+<h1 id="オブジェクトストレージバケット別のコストを一覧するにはどうしたらよいですか">オブジェクト・ストレージ・バケット別のコストを一覧するにはどうしたらよいですか?</h1>
+
+<h2 id="質問-3">質問</h2>
+
+<p>オブジェクト・ストレージ・バケット別のコストを一覧するにはどうしたらよいですか?</p>
+
+<h2 id="回答-3">回答</h2>
+
+<p>バケット別のコストを一覧する方法は大きく2つの方法があります：</p>
+
+<ol>
+  <li>コスト分析で一覧する</li>
+  <li>コストおよび使用状況レポートを閲覧する</li>
+</ol>
+
+<p>以下、それぞれの方法を解説します。</p>
+
+<ol>
+  <li>コスト分析で一覧する
+    <ul>
+      <li>コスト分析では、テナンシ内のリソースのコスト・使用量を可視化する機能です。
+コストを可視化したいリソースの、期間・特定のタグ・コンパートメント・サービスまたはフィルタでフィルタ処理し、グループ化して表示することができます。</li>
+      <li>バケット別のコストを閲覧したい場合には、タグを使用したフィルタリングが有効です。
+設定方法は下記の通り：
+        <ol>
+          <li>コスト分析を行いたいバケットにタグを追加する。
+            <ul>
+              <li>この際に、タグはタグ・ネームスペースを持ったタグである必要があります。コスト分析では、タグ・ネームスペースを持たないフリーフォームタグを使用してフィルタリングすることはできませんので、ご注意ください。</li>
+              <li>タグについてはドキュメントをご参照ください。
+                <ul>
+                  <li><a href="https://docs.oracle.com/ja-jp/iaas/Content/Tagging/Tasks/managingtagsandtagnamespaces.htm">「タグおよびタグ・ネームスペースの管理」</a></li>
+                  <li><a href="https://docs.oracle.com/ja-jp/iaas/Content/Tagging/Concepts/understandingfreeformtags.htm">「フリーフォームタグの理解」</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>「グループ化ディメンション」で「タグ」を選択し、１で設定したタグを選択。
+            <ul>
+              <li>手順：<a href="https://docs.oracle.com/ja-jp/iaas/Content/Billing/Concepts/costanalysisoverview.htm">「コスト分析の概要」</a></li>
+            </ul>
+          </li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>コストおよび使用状況レポートを閲覧する</p>
+
+    <ul>
+      <li>
+        <p>コストおよび使用状況レポートは、毎日生成されてオブジェクト・ストレージ・バケットに格納されるカンマ区切り値(CSV)ファイルです。このレポートはダウンロードして閲覧することが可能です</p>
+      </li>
+      <li>
+        <p>コストおよび使用状況レポートへアクセスする際には、下記事項が適切に設定されていることをご確認ください。</p>
+
+        <ol>
+          <li>
+            <p>【ユーザ権限】適切なアクセス権が、IAMポリシーで定義されていること</p>
+          </li>
+          <li>
+            <p>コストおよび使用状況レポートを使用するには、管理者が記述するポリシー で、コンソールまたはSDK、CLIまたはその他のツールを使用したREST APIのどれを使用しているかにかかわらず、次のポリシー・ステートメントが定義されている必要があります。</p>
+
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>define tenancy usage-report as ocid1.tenancy.oc1..aaaaaaaaned4fkpkisbwjlr56u7cj63lf3wffbilvqknstgtvzub7vhqkggq
+        
+endorse group &lt;group&gt; to read objects in tenancy usage-report
+</code></pre></div>            </div>
+
+            <p>なお、適切なIAMポリシーが設定されているにもかかわらず、アクションを実行しようとした際に、「権限がない」または「認可されていない」というメッセージが表示された場合は、IAMポリシーが正しく設定されていない可能性があります。必要なアクセスのタイプと作業するコンパートメントを管理者に確認してください。</p>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <p>コンソールおよびAPIを使用したアクセスが可能です。詳細は下記のURLをご確認ください。</p>
+
+        <ul>
+          <li><a href="https://docs.oracle.com/ja-jp/iaas/Content/Billing/Tasks/accessingusagereports.htm#console">「コストおよび使用状況レポートへのアクセス」 → コンソールの使用</a></li>
+          <li><a href="https://docs.oracle.com/ja-jp/iaas/Content/Billing/Tasks/accessingusagereports.htm#api">「コストおよび使用状況レポートへのアクセス」→ APIの使用</a></li>
+        </ul>
+      </li>
+      <li>
+        <p>コストおよび使用状況レポートのcsvファイルでは、作成されたリソースを一覧することができます。コストを比較したいバケットの詳細情報が記載された行を探し、コスト欄を確認することが可能です。</p>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<p><strong>関連情報 :</strong></p>
+
+<ul>
+  <li><a href="https://docs.oracle.com/ja-jp/iaas/Content/Billing/Concepts/costanalysisoverview.htm" target="_blank">Oracle Cloud Infrastructureドキュメント：コスト分析の概要</a></li>
+  <li><a href="https://docs.oracle.com/ja-jp/iaas/Content/Billing/Tasks/accessingusagereports.htm" target="_blank">Oracle Cloud Infrastructureドキュメント：コストおよび使用状況レポートへのアクセス </a></li>
+</ul>
+
+<p><a href="#main" class="back-to-top">Back to Top ↑</a>
+<br /></p>
+
+<h1 id="アーカイブストレージ層から一括でリストアしたい場合の効率的なリストア方法を教えてください">アーカイブ・ストレージ層から一括でリストアしたい場合の、効率的なリストア方法を教えてください。</h1>
+
+<h2 id="質問-4">質問</h2>
+
+<p>アーカイブ・ストレージ層にある大規模なデータを一括でリストアしたい場合の、効率的なリストア方法を教えてください。</p>
+
+<h2 id="回答-4">回答</h2>
+
+<p>アーカイブ・ストレージ層にあるデータをリストアする方法は、コンソールを使用した方法と、CLIを使用した方法の２つがあります。</p>
+
+<p>また、アーカイブ・ストレージのオブジェクトをリストアするには、OBJECT_RESTORE権限が必要です。事前にご確認ください。</p>
+
+<p>１．コンソールを使用したリストア方法</p>
+
+<p>バケット詳細からリストアすることができます。複数のオブジェクトを一括でリストアしたい場合には、すべてのオブジェクトがフォルダを使用することなくフラットに保存されている必要があります。（実際にはフラットに保存されていますが、仮想的に階層構造で管理することができます。）</p>
+
+<p>２．CLIを使用したリストア方法</p>
+
+<p>下記のコマンドを実行するとリストアが始まります。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>oci os object restore --namespace &lt;object_storage_namespace&gt; --bucket-name &lt;archive_bucket_name&gt; --name &lt;archived_object_name&gt; [--hours &lt;#_of_hours&gt;]
+</code></pre></div></div>
+
+<p>詳細はOCI CLIのコマンドレファレンス<a href="https://docs.oracle.com/en-us/iaas/tools/oci-cli/2.17.0/oci_cli_docs/cmdref/os/object/restore.html">【OCI CLI command reference】</a>をご確認ください。</p>
+
+<p><strong>関連情報 :</strong></p>
+
+<ul>
+  <li><a href="https://docs.oracle.com/ja-jp/iaas/Content/Object/Tasks/managingobjects.htm#usingconsole" target="_blank">Oracle Cloud Infrastructure ドキュメント：コンソールの使用 → アーカイブ・ストレージからオブジェクトをリストアするには</a></li>
+</ul>
+
+<p><a href="#main" class="back-to-top">Back to Top ↑</a>
+<br /></p>
+
+<h1 id="オブジェクトストレージにイベント通知を設定しましたイベントがトリガーされたかを確認する方法を教えてください">オブジェクト・ストレージにイベント通知を設定しました。イベントがトリガーされたかを確認する方法を教えてください。</h1>
+
+<h2 id="質問-5">質問</h2>
+
+<p>オブジェクト・ストレージ・リソースにイベントを設定し、アクションとして通知を設定しました。イベントがトリガーされたかどうかを確認する方法を教えてください。</p>
+
+<h2 id="回答-5">回答</h2>
+
+<p>イベント・サービスのイベントメトリックの「発行済みメトリック」では、コンパートメント内のリソースによって発行されたイベントの合計数が分かります。
+時間の範囲を絞り、指定した範囲でトリガーされたイベントに対する結果をグラフ表示することができます。</p>
+
+<p>詳細はドキュメント<a href="https://docs.oracle.com/ja-jp/iaas/Content/Events/Reference/eventsmetrics.htm" target="_blank">「イベント・メトリック」</a>をご確認ください。</p>
+
+<p><strong>関連情報 :</strong></p>
+
+<ul>
+  <li><a href="https://docs.oracle.com/ja-jp/iaas/Content/Events/Reference/eventsmetrics.htm" target="_blank">Oracle Cloud Infrastructure ドキュメント：イベント・メトリック</a></li>
+</ul>
+
+<p><a href="#main" class="back-to-top">Back to Top ↑</a>
+<br /></p>
+
+<h1 id="バケット間にレプリケーションをセットアップしたのですがオブジェクトがレプリケートされませんどうすれば解決できますか">バケット間にレプリケーションをセットアップしたのですが、オブジェクトがレプリケートされません。どうすれば解決できますか?</h1>
+
+<h2 id="質問-6">質問</h2>
+
+<p>オブジェクト・ストレージ・バケット間にクロスリージョンレプリケーションまたは同一リージョンレプリケーションをセットアップしたのですが、オブジェクトがレプリケート先バケットにレプリケートされません。どうすれば解決できますか?</p>
+
+<h2 id="回答-6">回答</h2>
+
+<p>レプリケートできないときに確認すべき事項は下記の通りです：</p>
+
+<ol>
+  <li>
+    <p>【ユーザ権限】レプリケーションを構成するときは、ソース・バケットと宛先バケットの両方に対して必要なアクセス権を持っている必要があります。ソース・バケットおよび宛先バケット内のオブジェクトを管理する権限も必要です。</p>
+
+    <p>＜ポリシー・ステートメント例＞</p>
+    <ul>
+      <li>管理者の場合：テナンシのオブジェクト・ストレージ・サービス・リソースに対してすべての操作を実行できるようにするポリシー・ステートメント例
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Allow group [IAMグループ名] to manage object-family in tenancy
+</code></pre></div>        </div>
+      </li>
+      <li>テナンシの特定のコンパートメント内のバケットとオブジェクトを管理できるようにするポリシー・ステートメント例:
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Allow group [IAMグループ] to manage buckets in [コンパートメント名]
+ Allow group [IAMグループ] to manage objects in [コンパートメント名]
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>【サービス権限】オブジェクト・ストレージはリージョナル・サービスであるため、代理でレプリケーションを実行する各リージョンのオブジェクト・ストレージ・サービスを認可する必要があります。</p>
+
+    <p>＜ポリシー・ステートメント例＞</p>
+    <ul>
+      <li>オブジェクト・ストレージ・サービスが米国西部(フェニックス)リージョンのテナンシ内のリソースに対して、すべての操作を実行できるようにするポリシー・ステートメント例：</li>
+    </ul>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Allow service objectstorage-us-phoenix-1 to manage object-family in     tenancy
+</code></pre></div>    </div>
+    <ul>
+      <li>オブジェクト・ストレージ・サービスが、米国西部(フェニックス)リージョン内の特定のコンパートメント内のリソースに対して、すべての操作を実行できるようにするポリシー・ステートメント例：
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Allow service objectstorage-us-phoenix-1 to manage object-family in compartment [コンパートメント名]		
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>宛先バケットが作成されていることを確認する。
+    <ul>
+      <li>レプリケーション・ポリシーの作成では、宛先バケットは自動的に作成されません。ソース・バケットにレプリケーション・ポリシーを作成する前に、宛先バケットを作成します。</li>
+    </ul>
+  </li>
+  <li>ソースバケットに指定しようとしているバケットが、別バケットのレプリケート先バケットでないことを確認する。
+    <ul>
+      <li>宛先バケットはレプリケーション・ソースになることはできません。連鎖レプリケーションはサポートされていません。</li>
+    </ul>
+  </li>
+</ol>
+
+<p><strong>関連情報 :</strong></p>
+
+<ul>
+  <li><a href="https://docs.oracle.com/ja-jp/iaas/Content/Object/Tasks/usingreplication.htm" target="_blank">Oracle Cloud Infrastructure ドキュメント：レプリケーションの使用</a></li>
+</ul>
+
+<p><a href="#main" class="back-to-top">Back to Top ↑</a>
+<br /></p>
+
+<h1 id="オブジェクトストレージに大容量のファイルをアップロードするときにパフォーマンスを最適化する方法を教えてください">オブジェクトストレージに大容量のファイルをアップロードするときにパフォーマンスを最適化する方法を教えてください。</h1>
+
+<h2 id="質問-7">質問</h2>
+
+<p>オブジェクトストレージに大容量のファイル(1 GB 以上)をアップロードするときにパフォーマンスを最適化する方法を教えてください。</p>
+
+<h2 id="回答-7">回答</h2>
+
+<p>大容量のファイルを一括アップロードしたいときには、CLIのbulk-upload コマンドを使用します。
+詳細はドキュメントの「<a href="https://docs.oracle.com/ja-jp/iaas/Content/Object/Tasks/managingobjects.htm#cli" target="_blank">オブジェクトバケットを一括アップロードするには</a> 」の項目をご確認ください。</p>
+
+<p>コマンドの構成は次の通りです：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ oci os object bulk-upload -ns [名前空間] -bn [アップロード先バケット名] --src-dir [対象ファイルが格納されているディレクトリパス] --no-multipart
+</code></pre></div></div>
+
+<p>パラメータの詳細や具体的な使用方法については、コマンドリファレンスをご確認ください。</p>
+
+<ul>
+  <li><a href="https://docs.oracle.com/en-us/iaas/tools/oci-cli/2.24.5/oci_cli_docs/cmdref/os/object/bulk-upload.html#description" target="_blank">コマンドリファレンス</a></li>
+  <li><a href="https://docs.oracle.com/ja-jp/iaas/Content/Object/Tasks/managingobjects.htm#" target="_blank">【ドキュメント】オブジェクトの管理</a></li>
+</ul>
+
+<p><strong>関連情報 :</strong></p>
+
+<ul>
+  <li><a href="https://docs.oracle.com/ja-jp/iaas/Content/Object/Tasks/copyingobjects.htm#usingconsole" target="_blank">Oracle Cloud Infrastructure ドキュメント：オブジェクトのコピー»コンソールを使用したオブジェクトのコピー</a></li>
+</ul>
+
+<p><a href="#main" class="back-to-top">Back to Top ↑</a>
+<br /></p>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> タグ: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/ocidocs/tags/#faq" class="page__taxonomy-item" rel="tag">FAQ</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> カテゴリー: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/ocidocs/categories/#faq" class="page__taxonomy-item" rel="tag">FAQ</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/ocidocs/categories/#storage" class="page__taxonomy-item" rel="tag">Storage</a>
+    
+    </span>
+  </p>
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 更新日時:</strong> <time datetime="2021-08-11T00:00:00+09:00">August 11, 2021</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">共有</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%83%BB%E3%82%B9%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B8%E3%83%BB%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9+%E6%8A%80%E8%A1%93FAQ%20https%3A%2F%2Foracle-japan.github.io%2Focidocs%2Ffaq%2Fstorage%2Fobject-storage-faq%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="共有 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Foracle-japan.github.io%2Focidocs%2Ffaq%2Fstorage%2Fobject-storage-faq%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="共有 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Foracle-japan.github.io%2Focidocs%2Ffaq%2Fstorage%2Fobject-storage-faq%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="共有 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/ocidocs/solutions/blockchain/blockchain-table-document-sample/" class="pagination--pager" title="ブロックチェーンテーブル文書管理サンプルアプリケーション
+">前へ</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">次へ</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">関連記事</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/ocidocs/solutions/blockchain/blockchain-table-document-sample/app-home.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ocidocs/solutions/blockchain/blockchain-table-document-sample/" rel="permalink">ブロックチェーンテーブル文書管理サンプルアプリケーション
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-08-11T00:00:00+09:00">August 11, 2021</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Oracle DatabaseのBlockchain Tableを活用したサンプルアプリケーションのご紹介です。
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://image.slidesharecdn.com/202108oracleblockchainslideshare-210810055935/95/202108-1-638.jpg?cb=1628575486" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ocidocs/solutions/blockchain/blockchain-solution-100/" rel="permalink">Oracleの提供するブロックチェーンソリューション概要
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-08-11T00:00:00+09:00">August 11, 2021</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">オラクルのブロックチェーンソリューションご紹介資料です。
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://speakerd.s3.amazonaws.com/presentations/cfc6c2cd296248a68f4878db4c82df3c/slide_0.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ocidocs/updates/update-FY21Q4/" rel="permalink">Oracle Cloud Infrastructure IaaS 新機能アップデート 2021/3～2021/5
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-08-02T00:00:00+09:00">August 2, 2021</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">2021年3月～2021年5月の3ヶ月分のOCI新機能についてのまとめ資料です
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://speakerd.s3.amazonaws.com/presentations/51d21668d7c942db82da2925f5efd801/slide_0.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ocidocs/services/compute/compute-choice/" rel="permalink">もう迷わない! コンピュートの選び方を学ぼう
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-08-02T00:00:00+09:00">August 2, 2021</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">OCIコンピュート・サービスの新機能ラッシュで迷いがちな今、OCIでどのコンピュートを選ぶべきかをわかり易く整理します。
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="検索キーワードを入力してください..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>フォロー</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/#ocijp" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/oracle-japan" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+    
+
+    <li><a href="/ocidocs/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2021 Oracle Cloud Infrastructure 活用資料集. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/ocidocs/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/ocidocs/assets/js/lunr/lunr.min.js"></script>
+<script src="/ocidocs/assets/js/lunr/lunr-store.js"></script>
+<script src="/ocidocs/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VWKLFQKQEL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VWKLFQKQEL', { 'anonymize_ip': false});
+</script>
+
+
+
+
+
+
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+  
+    <script src="/ocidocs/assets/js/clipboardrouge.js"></script>
+  
+
+
+
+  </body>
+</html>

@@ -1,4 +1,615 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2021-08-05T17:49:06+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">もう迷わない! コンピュートの選び方を学ぼう</title><link href="https://oracle-japan.github.io/ocidocs/services/compute/compute-choice/" rel="alternate" type="text/html" title="もう迷わない! コンピュートの選び方を学ぼう" /><published>2021-08-02T00:00:00+09:00</published><updated>2021-08-02T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/compute/compute-choice</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/compute/compute-choice/">&lt;p&gt;2021/07/27開催の、OCI スキルアップセミナー #10 「もう迷わない! コンピュートの選び方を学ぼう」の資料です。セミナー情報 https://oracle-code-tokyo-dev.connpass.com/event/215004/&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2021-08-16T21:46:26+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">Oracleの提供するブロックチェーンソリューション概要</title><link href="https://oracle-japan.github.io/ocidocs/solutions/blockchain/blockchain-solution-100/" rel="alternate" type="text/html" title="Oracleの提供するブロックチェーンソリューション概要" /><published>2021-08-11T00:00:00+09:00</published><updated>2021-08-11T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/solutions/blockchain/blockchain-solution-100</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/solutions/blockchain/blockchain-solution-100/">&lt;p&gt;Oracle Blockchain Platformや、Oracle Databaseの機能のOracle Blockchain Tableについて、最新の事例、試用環境とデモスクリプト、Hyperledger Fabricの技術情報とともにご説明しています。&lt;/p&gt;
+
+&lt;h4 id=&quot;スライド&quot;&gt;スライド&lt;/h4&gt;
+
+&lt;div style=&quot;max-width:768px&quot;&gt;
+
+&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) --&gt;
+&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/Djjelfy37XPQ74&quot; width=&quot;595&quot; height=&quot;485&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen=&quot;&quot;&gt; &lt;/iframe&gt; &lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;//www.slideshare.net/oracle4engineer/202108-249950637&quot; title=&quot;オラクルのブロックチェーンソリューションご紹介（2021/08版）&quot; target=&quot;_blank&quot;&gt;オラクルのブロックチェーンソリューションご紹介（2021/08版）&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&quot;https://www.slideshare.net/oracle4engineer&quot; target=&quot;_blank&quot;&gt;オラクルエンジニア通信&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) --&gt;
+
+&lt;/div&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="Solutions" /><category term="Blockchain" /><category term="スライドあり" /><category term="レベル:入門(100)" /><summary type="html">オラクルのブロックチェーンソリューションご紹介資料です。</summary></entry><entry><title type="html">ブロックチェーンテーブル文書管理サンプルアプリケーション</title><link href="https://oracle-japan.github.io/ocidocs/solutions/blockchain/blockchain-table-document-sample/" rel="alternate" type="text/html" title="ブロックチェーンテーブル文書管理サンプルアプリケーション" /><published>2021-08-11T00:00:00+09:00</published><updated>2021-08-11T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/solutions/blockchain/blockchain-table-document-sample</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/solutions/blockchain/blockchain-table-document-sample/">&lt;p&gt;Oracle Databaseの機能のBlockchain Tableの特性を体験し、そのメリットを理解していただくためのサンプルアプリケーションを紹介します。&lt;/p&gt;
+
+&lt;h1 id=&quot;ブロックチェーンテーブル文書管理サンプルアプリケーションの概要&quot;&gt;ブロックチェーンテーブル文書管理サンプルアプリケーションの概要&lt;/h1&gt;
+
+&lt;p&gt;このアプリケーションは、Oracle Databaseのブロックチェーンテーブルのふたつの特性―&lt;strong&gt;耐改ざん性&lt;/strong&gt;と&lt;strong&gt;監査性&lt;/strong&gt;―を、文書ファイルの管理（保管と検索、閲覧）のシナリオを通じて体験いただくためのサンプルです。&lt;/p&gt;
+
+&lt;p&gt;このブロックチェーンテーブル文書管理サンプルアプリケーションは、Oracle APEX（Application Express）で実装されています。そのため、Oracle Database上でアプリケーションを稼働させることができ、アプリケーション・サーバーなどの用意の必要なく利用することができます。このサンプルはまた、Oracle APEXの利便性とパワフルさを体験いただけるものにもなっています。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;app-home.png&quot; alt=&quot;アプリのホーム&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;ブロックチェーンテーブルでの文書管理&quot;&gt;ブロックチェーンテーブルでの文書管理&lt;/h2&gt;
+
+&lt;p&gt;このアプリケーションでは、文書（のファイル）の管理というシナリオをブロックチェーンテーブルを活用して実装しています。&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;WORD、PDF、Excel、テキストなど任意の形式の文書ファイルを保存可能です。&lt;/li&gt;
+  &lt;li&gt;ある文書についてのデータ（文書データ）は、文書ファイルそのものと、ドキュメントID、バージョン、ドキュメント名、登録者などのデータから成ります。
+    &lt;ul&gt;
+      &lt;li&gt;文書データはブロックチェーンテーブルに保存され、登録後は更新不能です。&lt;/li&gt;
+      &lt;li&gt;ひとつの文書（同一のドキュメントIDを付与された文書データ）に対してひとつ～複数のバージョンの文書データを管理可能です。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;また、文書のステータス、カテゴリー、備考から成る付加情報データを文書に付与できます。
+    &lt;ul&gt;
+      &lt;li&gt;付加情報のデータは通常のテーブルに保存され、後から更新することができます。&lt;/li&gt;
+      &lt;li&gt;付加情報はひとつの文書に対してひとつです（複数バージョンが存在する場合も共通です）。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;主な機能&quot;&gt;主な機能&lt;/h2&gt;
+
+&lt;p&gt;文書管理に関わる機能と、ブロックチェーンテーブルの特性である耐改ざん性と監査性を体験するための機能を備えています。&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;文書管理に関わる機能
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;文書データおよび付加情報の登録
+&lt;img src=&quot;app-register.png&quot; alt=&quot;文書登録画面&quot; /&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;文書データの検索、一覧表示、文書のダウンロード
+&lt;img src=&quot;app-report-latest.png&quot; alt=&quot;文書検索・一覧画面&quot; /&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;ある文書についての新バージョンの文書データの登録&lt;/li&gt;
+      &lt;li&gt;付加情報の更新&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;耐改ざん性と監査性に関わる機能
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;ブロックチェーンテーブルの行の整合性検証（ハッシュチェーンの検証）
+&lt;img src=&quot;app-audit.png&quot; alt=&quot;監査画面&quot; /&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;ブロックチェーンテーブル上の文書データのUPDATE、DELETE不能の確認
+&lt;img src=&quot;app-delete-error.png&quot; alt=&quot;不変性確認画面&quot; /&gt;&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;ダウンロードとインストール実行方法&quot;&gt;ダウンロードとインストール、実行方法&lt;/h1&gt;
+
+&lt;h2 id=&quot;前提必要な環境と準備&quot;&gt;前提：必要な環境と準備&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;ブロックチェーンテーブルの利用可能なOracle Database&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;アプリケーション内でブロックチェーンテーブルを利用するため、ブロックチェーンテーブルをサポートしているバージョンのOracle Databaseが必要です。&lt;/li&gt;
+      &lt;li&gt;記事執筆時点（2021/8/12）では、主な選択肢として以下いずれかで利用可能です。
+        &lt;ul&gt;
+          &lt;li&gt;Oracle CloudのAutonomous Database（Autonomous Data WarehouseあるいはAutonomous Transaction Processing）の&lt;strong&gt;21c&lt;/strong&gt;バージョンを利用する（注意：現在、Autonomous Databaseで21cのバージョンを選択できるのは、Always Free枠のみです）。&lt;/li&gt;
+          &lt;li&gt;Oracle CloudのDatabase Cloud ServiceのOracle Databaseの&lt;strong&gt;19cのRU11以降のバージョン&lt;/strong&gt;を利用する。&lt;/li&gt;
+          &lt;li&gt;オンプレミス／IaaSなどに自身で構築したOracle Databaseの&lt;strong&gt;19cのRU11以降、または21cのバージョン&lt;/strong&gt;を利用する。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Oracle APEXの利用準備&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;このアプリケーションはOracle APEXアプリケーションとして実装されているため、稼働環境のデータベースのOracle APEXをセットアップしておく必要があります。また、利用している機能との互換性の関係で、&lt;strong&gt;Oracle APEX 20.2以降のバージョン&lt;/strong&gt;が必要です。
+        &lt;ul&gt;
+          &lt;li&gt;Autonomous Databaseでは、Oracle APEXはデフォルトで有効化され、利用可能な状態になっています。&lt;/li&gt;
+          &lt;li&gt;Database Cloud Serviceや、自身で構築したOracle Databaseを利用する場合には、Oracle APEXをインストールし、セットアップしてください。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;サンプルアプリケーションのダウンロード&quot;&gt;サンプルアプリケーションのダウンロード&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;/ocidocs/solutions/blockchain/blockchain-table-document-sample/BlockchainTable_Document_Sample.sql&quot;&gt;こちらからダウンロードください&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;サンプルアプリケーションのインストール作業所要時間5分程度&quot;&gt;サンプルアプリケーションのインストール（作業所要時間：5分程度）&lt;/h2&gt;
+
+&lt;p&gt;ダウンロードしたアプリケーションをOracle APEXでインポートすることでアプリケーションが利用可能になります。&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;インストールする対象のAPEXワークスペースで、「アプリケーション・ビルダー」の画面のメニューから「インポート」を選択し、表示されるガイドに従ってインポートしてください。オプションはデフォルトのままでOKです。
+&lt;img src=&quot;APEX-menu-import.png&quot; alt=&quot;インポートのメニュー&quot; /&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;APEX-import-1.png&quot; alt=&quot;インポートの画面1&quot; /&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;APEX-import-2.png&quot; alt=&quot;インポートの画面2&quot; /&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;APEX-import-3.png&quot; alt=&quot;インポートの画面3&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;サンプルアプリケーション専用に新規のAPEXワークスペースを作成することを推奨&lt;/strong&gt;します。&lt;/li&gt;
+  &lt;li&gt;アプリケーションのインストールプロセスの一部として、必要なテーブル、ビューなどのデータベース・オブジェクトも作成されます。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;サンプルアプリケーションの実行&quot;&gt;サンプルアプリケーションの実行&lt;/h2&gt;
+
+&lt;p&gt;インストールしたアプリケーションはすぐに利用可能です。&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;インストールしたAPEXワークスペースで、「アプリケーション・ビルダー」の画面のメニューから当該アプリケーションを選択します。&lt;/li&gt;
+  &lt;li&gt;「アプリケーションの実行」を選択します。&lt;/li&gt;
+  &lt;li&gt;別ウィンドウでログイン画面が表示されます。ワークスペース管理者のユーザー（また、ワークスペース内に他のユーザーを作成済であればそのユーザーでも可）でログインします。&lt;/li&gt;
+  &lt;li&gt;ログインに成功するとアプリケーション画面が表示されます。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;サンプルアプリケーションについてのtips&quot;&gt;サンプルアプリケーションについてのTips&lt;/h1&gt;
+
+&lt;h2 id=&quot;カスタマイズ&quot;&gt;カスタマイズ&lt;/h2&gt;
+
+&lt;p&gt;インストールしたサンプルアプリケーションは、APEXのアプリケーション・ビルダーでカスタマイズが可能です。
+&lt;img src=&quot;APEX-customize-app.png&quot; alt=&quot;アプリケーション・ビルダー&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;利用しているテーブルやビュー&quot;&gt;利用しているテーブルやビュー&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;アプリケーション内で利用しているテーブルやビューなどのデータベース・オブジェクトは、APEXのSQLワークショップのオブジェクト・ブラウザで確認したり、SQLコマンドで直接SQLを発行することができます。
+&lt;img src=&quot;APEX-object-browser.png&quot; alt=&quot;オブジェクト・ブラウザ&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;ブロックチェーンテーブルはテーブルの破棄（DROP）を制約、禁止できます。今回、アプリ内で使用しているブロックチェーンテーブル（DOCUMENT_BCTテーブル）は、利便性のためにDDLで&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NO DROP UNTIL 0 DAYS IDLE&lt;/code&gt;を指定しておくことで、いつでもDROP可能にしています。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;参考ドキュメントリンクなど&quot;&gt;参考ドキュメント、リンクなど&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.oracle.com/jp/tools/downloads/apex-downloads.html&quot;&gt;APEXのインストーラのダウンロード・ページ&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.ydc.co.jp/solution/standby/article/oracle_apex_1.html&quot;&gt;APEX構築の参考ページ1：Oracle Application Express［環境構築編］（1）インストール&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://fullenergy.co.jp/tech-blog/apex_on_oci_database/&quot;&gt;APEX構築の参考ページ2：terraformでAPEXをDBaasにインストールする手順&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="Solutions" /><category term="Blockchain" /><category term="レベル:入門(100)" /><summary type="html">Oracle DatabaseのBlockchain Tableを活用したサンプルアプリケーションのご紹介です。</summary></entry><entry><title type="html">オブジェクト・ストレージ・サービス 技術FAQ</title><link href="https://oracle-japan.github.io/ocidocs/faq/storage/object-storage-faq/" rel="alternate" type="text/html" title="オブジェクト・ストレージ・サービス 技術FAQ" /><published>2021-08-11T00:00:00+09:00</published><updated>2021-08-11T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/faq/storage/object-storage-faq</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/faq/storage/object-storage-faq/">&lt;h1 id=&quot;オブジェクトへのアクセス拒否エラーが発生した場合のトラブルシューティング方法を教えてください&quot;&gt;オブジェクトへのアクセス拒否エラーが発生した場合のトラブルシューティング方法を教えてください&lt;/h1&gt;
+
+&lt;h2 id=&quot;質問&quot;&gt;質問&lt;/h2&gt;
+
+&lt;p&gt;オブジェクト・ストレージ・バケット内のオブジェクトへのアクセスを試みたところ、アクセス拒否エラーが発生しました。このような場合のトラブルシューティング方法を教えてください。&lt;/p&gt;
+
+&lt;h2 id=&quot;回答&quot;&gt;回答&lt;/h2&gt;
+
+&lt;p&gt;オブジェクト・ストレージ・バケットへのアクセス方法は下記の２つの方法があります。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;コンソール、SDK、CLI、その他のツールを使用したREST APIからのアクセス&lt;/li&gt;
+  &lt;li&gt;事前認証済みリクエストを使用したアクセス&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;それぞれのアクセス方法でアクセスエラーが発生した際のトラブルシューティング方法は下記の通りです：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;コンソール、SDK、CLI、その他のツールを使用したREST APIからのアクセスの場合&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;自分のしたいアクセスタイプに必要な、IAMポリシーが付与されているかを確認してください。&lt;/p&gt;
+
+        &lt;p&gt;&lt;strong&gt;【アクセスタイプ別のポリシー・ステートメント例】&lt;/strong&gt;&lt;/p&gt;
+
+        &lt;ol&gt;
+          &lt;li&gt;
+            &lt;p&gt;&lt;strong&gt;オブジェクト・ストレージ管理者によるバケットおよびオブジェクトの管理&lt;/strong&gt;：&lt;/p&gt;
+
+            &lt;p&gt;すべてのコンパートメントのオブジェクト・ストレージ・バケットおよびオブジェクトのすべての操作を実行する機能&lt;/p&gt;
+          &lt;/li&gt;
+        &lt;/ol&gt;
+
+        &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Allow group ObjectAdmins to manage buckets in tenancy
+Allow group ObjectAdmins to manage objects in tenancy 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+
+        &lt;ol&gt;
+          &lt;li&gt;
+            &lt;p&gt;&lt;strong&gt;ユーザーによるオブジェクトのオブジェクト・ストレージ・バケットへの書込み&lt;/strong&gt;：&lt;/p&gt;
+
+            &lt;p&gt;テナンシおよびコンパートメント内の、任意のオブジェクト・ストレージ・バケットにオブジェクトを書き込む機能&lt;/p&gt;
+          &lt;/li&gt;
+        &lt;/ol&gt;
+
+        &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Allow group ObjectWriters to read buckets in [任意のテナンシおよびコンパートメント]
+Allow group ObjectWriters to manage objects in [任意のテナンシおよびコンパートメント] where any request.permission='OBJECT_CREATE', request.permission='OBJECT_INSPECT'}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+
+        &lt;p&gt;​			※特定のコンパートメント内の特定のバケットへのアクセスを制限するには、条件where target.bucket.name=’&lt;bucket_name&gt;'を追加してください。&lt;/bucket_name&gt;&lt;/p&gt;
+
+        &lt;ol&gt;
+          &lt;li&gt;&lt;strong&gt;ユーザーによるオブジェクトのオブジェクト・ストレージ・バケットからのダウンロード&lt;/strong&gt;：&lt;/li&gt;
+        &lt;/ol&gt;
+
+        &lt;p&gt;　テナンシおよびコンパートメント内の、任意のオブジェクト・ストレージ・バケットからオブジェクトをダウンロードする機能&lt;/p&gt;
+
+        &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Allow group ObjectReaders to read buckets in [任意のテナンシおよびコンパートメント]
+Allow group ObjectReaders to read objects in [任意のテナンシおよびコンパートメント]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+
+        &lt;p&gt;​			※特定のコンパートメント内の特定のバケットへのアクセスを制限するには、条件where target.bucket.name=’&lt;bucket_name&gt;'を追加してください。&lt;/bucket_name&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;詳細は&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Identity/Concepts/commonpolicies.htm#&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructure ドキュメント：オブジェクト・ストレージ管理者によるバケットおよびオブジェクトの管理&lt;/a&gt; をご覧ください。&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;なお、適切なIAMポリシーが設定されているにもかかわらず、アクションを実行しようとした際に、「権限がない」または「認可されていない」というメッセージが表示された場合は、IAMポリシーが正しく設定されていない可能性があります。必要なアクセスのタイプと作業するコンパートメントを管理者に確認してください。&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;【参考】&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Object/Tasks/managingbuckets.htm#Managing_Buckets&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructure ドキュメント「バケットの管理」&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;事前認証済みリクエストを使用したアクセスの場合&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;事前認証済みリクエストとは？
+        &lt;ul&gt;
+          &lt;li&gt;事前認証済リクエストを作成すると、一意のURLが生成されます。このURLを提供するすべての人は、curlやwgetなどの標準HTTPツールを使用して、特定のオブジェクト・ストレージ・リソースにアクセスできるようになります。事前認証済リクエストは、OCIの資格証明を持たない人にも、バケットにアクセスを可能にするアクセス方法です。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;事前認証済みリクエストが使用できないときには、下記項目を確認してください。
+        &lt;ol&gt;
+          &lt;li&gt;事前認証済リクエスト作成者の権限が変更されていないか&lt;/li&gt;
+          &lt;li&gt;事前認証済リクエストを作成したユーザーが削除されていないか&lt;/li&gt;
+          &lt;li&gt;事前認証済リクエストを作成したフェデレーテッド・ユーザーが、そのリクエストを作成したときのユーザー機能を失っていないか&lt;/li&gt;
+          &lt;li&gt;事前認証済リクエストが期限切れになっていないか
+            &lt;ul&gt;
+              &lt;li&gt;事前認証済リクエストには、URIの有効期限があり、期限を過ぎたURLは無効になります。&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;【参考】&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Object/Tasks/usingpreauthenticatedrequests.htm#Using_PreAuthenticated_Requests&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructure ドキュメント「事前認証済リクエストの使用」&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;関連情報 :&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Identity/Concepts/commonpolicies.htm#&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructure ドキュメント：オブジェクト・ストレージ管理者によるバケットおよびオブジェクトの管理&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Object/Tasks/managingbuckets.htm#Managing_Buckets&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructure ドキュメント：バケットの管理&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Object/Tasks/usingpreauthenticatedrequests.htm#Using_PreAuthenticated_Requests&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructure ドキュメント：事前認証済リクエストの使用&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;#main&quot; class=&quot;back-to-top&quot;&gt;Back to Top ↑&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;バケット間でオブジェクトのデータをコピーしたい場合のセットアップ方法を教えてください&quot;&gt;バケット間でオブジェクトのデータをコピーしたい場合のセットアップ方法を教えてください。&lt;/h1&gt;
+
+&lt;h2 id=&quot;質問-1&quot;&gt;質問&lt;/h2&gt;
+
+&lt;p&gt;オブジェクト・ストレージ・バケット間で、オブジェクトのデータをコピーしたい場合のセットアップ方法を教えてください。&lt;/p&gt;
+
+&lt;h2 id=&quot;回答-1&quot;&gt;回答&lt;/h2&gt;
+
+&lt;p&gt;オブジェクト・ストレージでは、オブジェクトを同一リージョン内の他のバケット、および他のリージョン内のバケットにコピーすることができます。&lt;/p&gt;
+
+&lt;p&gt;バケット間のコピーを実施する上で、下記項目が設定されていることを、事前にご確認ください。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;【ユーザ権限】適切なアクセス権が、IAMポリシーで定義されていること
+    &lt;ul&gt;
+      &lt;li&gt;オブジェクト・コピーを実行する場合、ソース・バケットおよび宛先バケットの両方に対して、必要なアクセス権を持っている必要があります。ソース・バケットおよび宛先バケット内のオブジェクトを管理する権限も必要です。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;【サービス権限】オブジェクト・ストレージはリージョナル・サービスであるため、代理でコピー操作を実行する各リージョンのオブジェクト・ストレージ・サービスを認可する必要があります。
+    &lt;ul&gt;
+      &lt;li&gt;たとえば、オブジェクト・ストレージ・サービスをJapan East(Tokyo)リージョンで認可して、代理でオブジェクトを管理できます。オブジェクト・ストレージ・サービスを認可すると、Japan East(Tokyo)リージョンのバケットに格納されているオブジェクトを、別のリージョンのバケットにコピーできます。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;オブジェクトのデータを手動でコピーしたい場合の手順詳細はこちらをご参照ください。
+&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Object/Tasks/copyingobjects.htm#usingconsole&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructure ドキュメント：コンソールを使用したオブジェクトのコピー&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;関連情報 :&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Object/Tasks/copyingobjects.htm#usingconsole&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructure ドキュメント：オブジェクトのコピー → コンソールを使用したオブジェクトのコピー&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;#main&quot; class=&quot;back-to-top&quot;&gt;Back to Top ↑&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;ライフサイクルポリシーを使用してバケット内のオブジェクトをすべて削除するにはどうすればよいですか&quot;&gt;ライフサイクルポリシーを使用して、バケット内のオブジェクトをすべて削除するにはどうすればよいですか？&lt;/h1&gt;
+
+&lt;h2 id=&quot;質問-2&quot;&gt;質問&lt;/h2&gt;
+
+&lt;p&gt;ライフサイクルポリシーを使用して、バケット内のオブジェクトをすべて削除するにはどうすればよいですか？&lt;/p&gt;
+
+&lt;h2 id=&quot;回答-2&quot;&gt;回答&lt;/h2&gt;
+
+&lt;p&gt;下記項目が設定されていることを、事前にご確認ください：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;【ユーザ権限】適切なアクセス権が、IAMポリシーで定義されていること&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Oracle Cloud Infrastructureを使用するには、管理者が記述するポリシー で、コンソールまたはSDK、CLIまたはその他のツールを使用したREST APIのどれを使用しているかにかかわらず、必要なアクセスのタイプを付与されている必要があります。&lt;/li&gt;
+      &lt;li&gt;なお、適切なIAMポリシーが設定されているにもかかわらず、アクションを実行しようとした際に、「権限がない」または「認可されていない」というメッセージが表示された場合は、IAMポリシーが正しく設定されていない可能性があります。必要なアクセスのタイプと作業するコンパートメントを管理者に確認してください。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【サービス権限】オブジェクト・ライフサイクル・ポリシーを実行するには、代理でオブジェクトをアーカイブおよび削除する権限をサービスに付与する必要があります。これを行うには、テナンシのルート・コンパートメントに次のポリシーを作成します:&lt;/p&gt;
+
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Allow service objectstorage-&amp;lt;region_identifier&amp;gt; to manage object-family in compartment &amp;lt;compartment_name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;オブジェクト・ストレージはリージョナル・サービスであるため、ライフサイクル・ポリシーを使用する各リージョンでオブジェクト・ストレージ・サービスを認可する必要があります。オブジェクト・ストレージにより、データが権限のないリージョンから読み取られないことが保証されます。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;ライフサイクルポリシーを作成する際に、「ライフサイクル・アクション」にてポリシーを適用したバケット内のオブジェクトに対するアクションを設定します。&lt;/p&gt;
+
+&lt;p&gt;バケット内のオブジェクトを削除したい場合には、このライフサイクル・アクションを「削除」に設定します。&lt;/p&gt;
+
+&lt;p&gt;ライフサイクルポリシーの設定方法は下記のドキュメントをご覧ください。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;コンソールを使用して作成する場合
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Object/Tasks/usinglifecyclepolicies.htm#usingconsole&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructure ドキュメント：オブジェクト・ライフサイクルの使用 → コンソールの使用&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;CLIを使用して作成する場合
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Object/Tasks/usinglifecyclepolicies.htm#cli&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructure ドキュメント：オブジェクト・ライフサイクルの使用 → CLIの使用&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;関連情報 :&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Object/Tasks/usinglifecyclepolicies.htm&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructure ドキュメント：オブジェクト・ライフサイクルの使用&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;#main&quot; class=&quot;back-to-top&quot;&gt;Back to Top ↑&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;オブジェクトストレージバケット別のコストを一覧するにはどうしたらよいですか&quot;&gt;オブジェクト・ストレージ・バケット別のコストを一覧するにはどうしたらよいですか?&lt;/h1&gt;
+
+&lt;h2 id=&quot;質問-3&quot;&gt;質問&lt;/h2&gt;
+
+&lt;p&gt;オブジェクト・ストレージ・バケット別のコストを一覧するにはどうしたらよいですか?&lt;/p&gt;
+
+&lt;h2 id=&quot;回答-3&quot;&gt;回答&lt;/h2&gt;
+
+&lt;p&gt;バケット別のコストを一覧する方法は大きく2つの方法があります：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;コスト分析で一覧する&lt;/li&gt;
+  &lt;li&gt;コストおよび使用状況レポートを閲覧する&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;以下、それぞれの方法を解説します。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;コスト分析で一覧する
+    &lt;ul&gt;
+      &lt;li&gt;コスト分析では、テナンシ内のリソースのコスト・使用量を可視化する機能です。
+コストを可視化したいリソースの、期間・特定のタグ・コンパートメント・サービスまたはフィルタでフィルタ処理し、グループ化して表示することができます。&lt;/li&gt;
+      &lt;li&gt;バケット別のコストを閲覧したい場合には、タグを使用したフィルタリングが有効です。
+設定方法は下記の通り：
+        &lt;ol&gt;
+          &lt;li&gt;コスト分析を行いたいバケットにタグを追加する。
+            &lt;ul&gt;
+              &lt;li&gt;この際に、タグはタグ・ネームスペースを持ったタグである必要があります。コスト分析では、タグ・ネームスペースを持たないフリーフォームタグを使用してフィルタリングすることはできませんので、ご注意ください。&lt;/li&gt;
+              &lt;li&gt;タグについてはドキュメントをご参照ください。
+                &lt;ul&gt;
+                  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Tagging/Tasks/managingtagsandtagnamespaces.htm&quot;&gt;「タグおよびタグ・ネームスペースの管理」&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Tagging/Concepts/understandingfreeformtags.htm&quot;&gt;「フリーフォームタグの理解」&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;「グループ化ディメンション」で「タグ」を選択し、１で設定したタグを選択。
+            &lt;ul&gt;
+              &lt;li&gt;手順：&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Billing/Concepts/costanalysisoverview.htm&quot;&gt;「コスト分析の概要」&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;コストおよび使用状況レポートを閲覧する&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;コストおよび使用状況レポートは、毎日生成されてオブジェクト・ストレージ・バケットに格納されるカンマ区切り値(CSV)ファイルです。このレポートはダウンロードして閲覧することが可能です&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;コストおよび使用状況レポートへアクセスする際には、下記事項が適切に設定されていることをご確認ください。&lt;/p&gt;
+
+        &lt;ol&gt;
+          &lt;li&gt;
+            &lt;p&gt;【ユーザ権限】適切なアクセス権が、IAMポリシーで定義されていること&lt;/p&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;p&gt;コストおよび使用状況レポートを使用するには、管理者が記述するポリシー で、コンソールまたはSDK、CLIまたはその他のツールを使用したREST APIのどれを使用しているかにかかわらず、次のポリシー・ステートメントが定義されている必要があります。&lt;/p&gt;
+
+            &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;define tenancy usage-report as ocid1.tenancy.oc1..aaaaaaaaned4fkpkisbwjlr56u7cj63lf3wffbilvqknstgtvzub7vhqkggq
+        
+endorse group &amp;lt;group&amp;gt; to read objects in tenancy usage-report
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;            &lt;/div&gt;
+
+            &lt;p&gt;なお、適切なIAMポリシーが設定されているにもかかわらず、アクションを実行しようとした際に、「権限がない」または「認可されていない」というメッセージが表示された場合は、IAMポリシーが正しく設定されていない可能性があります。必要なアクセスのタイプと作業するコンパートメントを管理者に確認してください。&lt;/p&gt;
+          &lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;コンソールおよびAPIを使用したアクセスが可能です。詳細は下記のURLをご確認ください。&lt;/p&gt;
+
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Billing/Tasks/accessingusagereports.htm#console&quot;&gt;「コストおよび使用状況レポートへのアクセス」 → コンソールの使用&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Billing/Tasks/accessingusagereports.htm#api&quot;&gt;「コストおよび使用状況レポートへのアクセス」→ APIの使用&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;コストおよび使用状況レポートのcsvファイルでは、作成されたリソースを一覧することができます。コストを比較したいバケットの詳細情報が記載された行を探し、コスト欄を確認することが可能です。&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;関連情報 :&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Billing/Concepts/costanalysisoverview.htm&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント：コスト分析の概要&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Billing/Tasks/accessingusagereports.htm&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructureドキュメント：コストおよび使用状況レポートへのアクセス &lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;#main&quot; class=&quot;back-to-top&quot;&gt;Back to Top ↑&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;アーカイブストレージ層から一括でリストアしたい場合の効率的なリストア方法を教えてください&quot;&gt;アーカイブ・ストレージ層から一括でリストアしたい場合の、効率的なリストア方法を教えてください。&lt;/h1&gt;
+
+&lt;h2 id=&quot;質問-4&quot;&gt;質問&lt;/h2&gt;
+
+&lt;p&gt;アーカイブ・ストレージ層にある大規模なデータを一括でリストアしたい場合の、効率的なリストア方法を教えてください。&lt;/p&gt;
+
+&lt;h2 id=&quot;回答-4&quot;&gt;回答&lt;/h2&gt;
+
+&lt;p&gt;アーカイブ・ストレージ層にあるデータをリストアする方法は、コンソールを使用した方法と、CLIを使用した方法の２つがあります。&lt;/p&gt;
+
+&lt;p&gt;また、アーカイブ・ストレージのオブジェクトをリストアするには、OBJECT_RESTORE権限が必要です。事前にご確認ください。&lt;/p&gt;
+
+&lt;p&gt;１．コンソールを使用したリストア方法&lt;/p&gt;
+
+&lt;p&gt;バケット詳細からリストアすることができます。複数のオブジェクトを一括でリストアしたい場合には、すべてのオブジェクトがフォルダを使用することなくフラットに保存されている必要があります。（実際にはフラットに保存されていますが、仮想的に階層構造で管理することができます。）&lt;/p&gt;
+
+&lt;p&gt;２．CLIを使用したリストア方法&lt;/p&gt;
+
+&lt;p&gt;下記のコマンドを実行するとリストアが始まります。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;oci os object restore --namespace &amp;lt;object_storage_namespace&amp;gt; --bucket-name &amp;lt;archive_bucket_name&amp;gt; --name &amp;lt;archived_object_name&amp;gt; [--hours &amp;lt;#_of_hours&amp;gt;]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;詳細はOCI CLIのコマンドレファレンス&lt;a href=&quot;https://docs.oracle.com/en-us/iaas/tools/oci-cli/2.17.0/oci_cli_docs/cmdref/os/object/restore.html&quot;&gt;【OCI CLI command reference】&lt;/a&gt;をご確認ください。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;関連情報 :&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Object/Tasks/managingobjects.htm#usingconsole&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructure ドキュメント：コンソールの使用 → アーカイブ・ストレージからオブジェクトをリストアするには&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;#main&quot; class=&quot;back-to-top&quot;&gt;Back to Top ↑&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;オブジェクトストレージにイベント通知を設定しましたイベントがトリガーされたかを確認する方法を教えてください&quot;&gt;オブジェクト・ストレージにイベント通知を設定しました。イベントがトリガーされたかを確認する方法を教えてください。&lt;/h1&gt;
+
+&lt;h2 id=&quot;質問-5&quot;&gt;質問&lt;/h2&gt;
+
+&lt;p&gt;オブジェクト・ストレージ・リソースにイベントを設定し、アクションとして通知を設定しました。イベントがトリガーされたかどうかを確認する方法を教えてください。&lt;/p&gt;
+
+&lt;h2 id=&quot;回答-5&quot;&gt;回答&lt;/h2&gt;
+
+&lt;p&gt;イベント・サービスのイベントメトリックの「発行済みメトリック」では、コンパートメント内のリソースによって発行されたイベントの合計数が分かります。
+時間の範囲を絞り、指定した範囲でトリガーされたイベントに対する結果をグラフ表示することができます。&lt;/p&gt;
+
+&lt;p&gt;詳細はドキュメント&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Events/Reference/eventsmetrics.htm&quot; target=&quot;_blank&quot;&gt;「イベント・メトリック」&lt;/a&gt;をご確認ください。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;関連情報 :&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Events/Reference/eventsmetrics.htm&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructure ドキュメント：イベント・メトリック&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;#main&quot; class=&quot;back-to-top&quot;&gt;Back to Top ↑&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;バケット間にレプリケーションをセットアップしたのですがオブジェクトがレプリケートされませんどうすれば解決できますか&quot;&gt;バケット間にレプリケーションをセットアップしたのですが、オブジェクトがレプリケートされません。どうすれば解決できますか?&lt;/h1&gt;
+
+&lt;h2 id=&quot;質問-6&quot;&gt;質問&lt;/h2&gt;
+
+&lt;p&gt;オブジェクト・ストレージ・バケット間にクロスリージョンレプリケーションまたは同一リージョンレプリケーションをセットアップしたのですが、オブジェクトがレプリケート先バケットにレプリケートされません。どうすれば解決できますか?&lt;/p&gt;
+
+&lt;h2 id=&quot;回答-6&quot;&gt;回答&lt;/h2&gt;
+
+&lt;p&gt;レプリケートできないときに確認すべき事項は下記の通りです：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;【ユーザ権限】レプリケーションを構成するときは、ソース・バケットと宛先バケットの両方に対して必要なアクセス権を持っている必要があります。ソース・バケットおよび宛先バケット内のオブジェクトを管理する権限も必要です。&lt;/p&gt;
+
+    &lt;p&gt;＜ポリシー・ステートメント例＞&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;管理者の場合：テナンシのオブジェクト・ストレージ・サービス・リソースに対してすべての操作を実行できるようにするポリシー・ステートメント例
+        &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; Allow group [IAMグループ名] to manage object-family in tenancy
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;テナンシの特定のコンパートメント内のバケットとオブジェクトを管理できるようにするポリシー・ステートメント例:
+        &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; Allow group [IAMグループ] to manage buckets in [コンパートメント名]
+ Allow group [IAMグループ] to manage objects in [コンパートメント名]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【サービス権限】オブジェクト・ストレージはリージョナル・サービスであるため、代理でレプリケーションを実行する各リージョンのオブジェクト・ストレージ・サービスを認可する必要があります。&lt;/p&gt;
+
+    &lt;p&gt;＜ポリシー・ステートメント例＞&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;オブジェクト・ストレージ・サービスが米国西部(フェニックス)リージョンのテナンシ内のリソースに対して、すべての操作を実行できるようにするポリシー・ステートメント例：&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; Allow service objectstorage-us-phoenix-1 to manage object-family in     tenancy
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;ul&gt;
+      &lt;li&gt;オブジェクト・ストレージ・サービスが、米国西部(フェニックス)リージョン内の特定のコンパートメント内のリソースに対して、すべての操作を実行できるようにするポリシー・ステートメント例：
+        &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; Allow service objectstorage-us-phoenix-1 to manage object-family in compartment [コンパートメント名]		
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;宛先バケットが作成されていることを確認する。
+    &lt;ul&gt;
+      &lt;li&gt;レプリケーション・ポリシーの作成では、宛先バケットは自動的に作成されません。ソース・バケットにレプリケーション・ポリシーを作成する前に、宛先バケットを作成します。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;ソースバケットに指定しようとしているバケットが、別バケットのレプリケート先バケットでないことを確認する。
+    &lt;ul&gt;
+      &lt;li&gt;宛先バケットはレプリケーション・ソースになることはできません。連鎖レプリケーションはサポートされていません。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;関連情報 :&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Object/Tasks/usingreplication.htm&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructure ドキュメント：レプリケーションの使用&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;#main&quot; class=&quot;back-to-top&quot;&gt;Back to Top ↑&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;オブジェクトストレージに大容量のファイルをアップロードするときにパフォーマンスを最適化する方法を教えてください&quot;&gt;オブジェクトストレージに大容量のファイルをアップロードするときにパフォーマンスを最適化する方法を教えてください。&lt;/h1&gt;
+
+&lt;h2 id=&quot;質問-7&quot;&gt;質問&lt;/h2&gt;
+
+&lt;p&gt;オブジェクトストレージに大容量のファイル(1 GB 以上)をアップロードするときにパフォーマンスを最適化する方法を教えてください。&lt;/p&gt;
+
+&lt;h2 id=&quot;回答-7&quot;&gt;回答&lt;/h2&gt;
+
+&lt;p&gt;大容量のファイルを一括アップロードしたいときには、CLIのbulk-upload コマンドを使用します。
+詳細はドキュメントの「&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Object/Tasks/managingobjects.htm#cli&quot; target=&quot;_blank&quot;&gt;オブジェクトバケットを一括アップロードするには&lt;/a&gt; 」の項目をご確認ください。&lt;/p&gt;
+
+&lt;p&gt;コマンドの構成は次の通りです：&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ oci os object bulk-upload -ns [名前空間] -bn [アップロード先バケット名] --src-dir [対象ファイルが格納されているディレクトリパス] --no-multipart
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;パラメータの詳細や具体的な使用方法については、コマンドリファレンスをご確認ください。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/en-us/iaas/tools/oci-cli/2.24.5/oci_cli_docs/cmdref/os/object/bulk-upload.html#description&quot; target=&quot;_blank&quot;&gt;コマンドリファレンス&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Object/Tasks/managingobjects.htm#&quot; target=&quot;_blank&quot;&gt;【ドキュメント】オブジェクトの管理&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;関連情報 :&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/ja-jp/iaas/Content/Object/Tasks/copyingobjects.htm#usingconsole&quot; target=&quot;_blank&quot;&gt;Oracle Cloud Infrastructure ドキュメント：オブジェクトのコピー»コンソールを使用したオブジェクトのコピー&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;#main&quot; class=&quot;back-to-top&quot;&gt;Back to Top ↑&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="FAQ" /><category term="Storage" /><category term="FAQ" /><summary type="html">Oracle Cloud Infrastructure オブジェクト・ストレージ・サービスに関して、利用時のよくある質問に対する回答や、技術的な問題に対する対処策をまとめています。</summary></entry><entry><title type="html">もう迷わない! コンピュートの選び方を学ぼう</title><link href="https://oracle-japan.github.io/ocidocs/services/compute/compute-choice/" rel="alternate" type="text/html" title="もう迷わない! コンピュートの選び方を学ぼう" /><published>2021-08-02T00:00:00+09:00</published><updated>2021-08-02T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/compute/compute-choice</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/compute/compute-choice/">&lt;p&gt;2021/07/27開催の、OCI スキルアップセミナー #10 「もう迷わない! コンピュートの選び方を学ぼう」の資料です。セミナー情報 https://oracle-code-tokyo-dev.connpass.com/event/215004/&lt;/p&gt;
 
 &lt;p&gt;ここのところOCIの新機能が大量にリリースされてきています。コンピュートだけでも、容量予約、プリエンプティブル、バースト可能、Optimized3、Armインスタンス、、などなど、あまりに新機能が多すぎてどれを使えばいいのかがわからなくなったりしませんか？&lt;/p&gt;
 
@@ -1901,46 +2512,4 @@ IPハッシュ・ポリシーでは、受信リクエストのソースIPアド�
 
 &lt;!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください --&gt;
 &lt;iframe width=&quot;768&quot; height=&quot;432&quot; src=&quot;https://www.youtube.com/embed/s4EIjmtkDkg?start=935&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) --&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Networking" /><category term="スライドあり" /><category term="動画あり" /><category term="レベル:入門(100)" /><category term="レベル:応用(200)" /><summary type="html">OCIロード・バランサを初めて触る人のために基礎的な内容をおさらいしつつ、既にバリバリ使っている人のための新機能解説や応用的な活用方法、そしてテストしてわかったマニュアルには書いていない動作の仕組みを解説しています。</summary></entry><entry><title type="html">ロード・バランサー 概要</title><link href="https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-100/" rel="alternate" type="text/html" title="ロード・バランサー 概要" /><published>2021-06-28T00:00:00+09:00</published><updated>2021-06-28T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-100</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-100/">&lt;p&gt;バックエンドに配置した様々なサービスの冗長性やスケーリングをサポートする OCI ロード・バランサー・サービスについて、その機能概要、構成コンポーネントの内容、OCIコンソールを利用した構成方法などについて解説しています。&lt;br /&gt;
-2021/6/28 ネットワーク・ロード・バランサのリリースに合わせて全般的に記述を見直しました。&lt;/p&gt;
-
-&lt;h4 id=&quot;スライド&quot;&gt;スライド&lt;/h4&gt;
-
-&lt;div style=&quot;max-width:768px&quot;&gt;
-
-&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) --&gt;
-&lt;script async=&quot;&quot; class=&quot;speakerdeck-embed&quot; data-id=&quot;78914498b3c14b97a112f59283b754b7&quot; data-ratio=&quot;1.77777777777778&quot; src=&quot;//speakerdeck.com/assets/embed.js&quot;&gt;&lt;/script&gt;
-&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) --&gt;
-
-&lt;/div&gt;
-
-&lt;h4 id=&quot;セミナー動画&quot;&gt;セミナー動画&lt;/h4&gt;
-
-&lt;!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください --&gt;
-&lt;div style=&quot;max-width:768px&quot;&gt;&lt;div style=&quot;position:relative;padding-bottom:56.25%&quot;&gt;&lt;iframe id=&quot;kaltura_player&quot; src=&quot;https://cdnapisec.kaltura.com/p/2171811/sp/217181100/embedIframeJs/uiconf_id/35965902/partner_id/2171811?iframeembed=true&amp;amp;playerId=kaltura_player&amp;amp;entry_id=0_pgchkk4i&amp;amp;flashvars[streamerType]=auto&amp;amp;flashvars[localizationCode]=en&amp;amp;flashvars[leadWithHTML5]=true&amp;amp;flashvars[sideBarContainer.plugin]=true&amp;amp;flashvars[sideBarContainer.position]=left&amp;amp;flashvars[sideBarContainer.clickToClose]=true&amp;amp;flashvars[chapters.plugin]=true&amp;amp;flashvars[chapters.layout]=vertical&amp;amp;flashvars[chapters.thumbnailRotator]=false&amp;amp;flashvars[streamSelector.plugin]=true&amp;amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;amp;flashvars[dualScreen.plugin]=true&amp;amp;flashvars[hotspots.plugin]=1&amp;amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;amp;&amp;amp;wid=1_c428rwns&quot; width=&quot;768&quot; height=&quot;432&quot; allowfullscreen=&quot;&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allow=&quot;autoplay *; fullscreen *; encrypted-media *&quot; sandbox=&quot;allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation&quot; frameborder=&quot;0&quot; title=&quot;Kaltura Player&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) --&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Networking" /><category term="スライドあり" /><category term="動画あり" /><category term="レベル:入門(100)" /><summary type="html">OCIロード・バランサー・サービスについて、その機能概要、構成コンポーネントの内容、OCIコンソールを利用した構成方法などについて解説しています</summary></entry><entry><title type="html">ロード・バランサー 詳細</title><link href="https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-200/" rel="alternate" type="text/html" title="ロード・バランサー 詳細" /><published>2021-06-28T00:00:00+09:00</published><updated>2021-06-28T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-200</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-200/">&lt;p&gt;様々なサービスの冗長性やスケーリングをサポートする OCI ロード・バランサー・サービスについて、応用的な利用方法について解説したドキュメントです。&lt;br /&gt;
-セッション永続性、仮想ホストによるルーティング、URIパス・ベース・ルーティング、SSL通信方式とロード・バランサーでのSSLターミネーションの設定、ロード・バランサーが収集するメトリック、トラブル時の対応ガイドラインについて解説しています。&lt;br /&gt;
-2021/6/28 ネットワーク・ロード・バランサのリリースに合わせて全般的に記述を見直しました。&lt;/p&gt;
-
-&lt;h4 id=&quot;スライド&quot;&gt;スライド&lt;/h4&gt;
-
-&lt;div style=&quot;max-width:768px&quot;&gt;
-
-&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) --&gt;
-&lt;script async=&quot;&quot; class=&quot;speakerdeck-embed&quot; data-id=&quot;9ca991733d2a4670bdd4e5ed5b5770c4&quot; data-ratio=&quot;1.77777777777778&quot; src=&quot;//speakerdeck.com/assets/embed.js&quot;&gt;&lt;/script&gt;
-&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) --&gt;
-
-&lt;/div&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Networking" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html">OCI ロード・バランサー・サービスについて、セッション永続性、仮想ホストによるルーティング、URIパス・ベース・ルーティング、SSL通信方式とロード・バランサーでのSSLターミネーションの設定、ロード・バランサーが収集するメトリック、トラブル時の対応ガイドラインなどの応用的な利用方法について解説しています</summary></entry><entry><title type="html">機械学習プラットフォームとして活用するAutonomous Database</title><link href="https://oracle-japan.github.io/ocidocs/services/database/autonomous/machine%20learning/autonomous-machinelearning/" rel="alternate" type="text/html" title="機械学習プラットフォームとして活用するAutonomous Database" /><published>2021-06-17T00:00:00+09:00</published><updated>2021-06-17T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/database/autonomous/machine%20learning/autonomous-machinelearning</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/database/autonomous/machine%20learning/autonomous-machinelearning/">&lt;p&gt;Autonomous Database (ADB)では、機械学習に必要な各種ツールがセットアップされており、データベースインスタンスを作成後にすぐに利用いただくことが可能です。
-AutoMLテクノロジにより最適なアルゴリズムを自動選択しモデルを生成したり、
-Apache ZeppelinベースでSQL,PL/SQL,Pythonの併用が可能なNotebookが構成されているので、データの把握から前処理、機械学習の実行、予測モデルの管理などといった作業を実施いただくことが可能になっています。
-本資料ではこれら各ツールの概要について解説しています。&lt;/p&gt;
-
-&lt;h4 id=&quot;スライド&quot;&gt;スライド&lt;/h4&gt;
-
-&lt;div style=&quot;max-width:768px&quot;&gt;
-
-&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) --&gt;
-&lt;script async=&quot;&quot; class=&quot;speakerdeck-embed&quot; data-id=&quot;a626b9f2631e44ebbe815f21b7dab081&quot; data-ratio=&quot;1.77777777777778&quot; src=&quot;//speakerdeck.com/assets/embed.js&quot;&gt;&lt;/script&gt;
-&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) --&gt;
-
-&lt;/div&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Database" /><category term="Autonomous" /><category term="Machine Learning" /><category term="スライドあり" /><summary type="html">機械学習に必要となるNotebookやAutoML UIといったAutonomous Databaseに同梱される各種ツールについて、体系立てて紹介します。</summary></entry></feed>
+&lt;!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) --&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Networking" /><category term="スライドあり" /><category term="動画あり" /><category term="レベル:入門(100)" /><category term="レベル:応用(200)" /><summary type="html">OCIロード・バランサを初めて触る人のために基礎的な内容をおさらいしつつ、既にバリバリ使っている人のための新機能解説や応用的な活用方法、そしてテストしてわかったマニュアルには書いていない動作の仕組みを解説しています。</summary></entry></feed>
