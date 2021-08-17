@@ -34,6 +34,9 @@ Oracle Databaseの機能のBlockchain Tableの特性を体験し、そのメリ�
 ## 主な機能
 
 文書管理に関わる機能と、ブロックチェーンテーブルの特性である耐改ざん性と監査性を体験するための機能を備えています。
+
+![アプリの主な機能](slide-app-features.png)
+
 - 文書管理に関わる機能
   - 文書データおよび付加情報の登録
   ![文書登録画面](app-register.png)
@@ -101,6 +104,8 @@ Oracle Databaseの機能のBlockchain Tableの特性を体験し、そのメリ�
 ![アプリケーション・ビルダー](APEX-customize-app.png)
 
 ## 利用しているテーブルやビュー
+
+![テーブルとビュー](slide-app-tables.png)
 
 - アプリケーション内で利用しているテーブルやビューなどのデータベース・オブジェクトは、APEXのSQLワークショップのオブジェクト・ブラウザで確認したり、SQLコマンドで直接SQLを発行することができます。
   ![オブジェクト・ブラウザ](APEX-object-browser.png)
