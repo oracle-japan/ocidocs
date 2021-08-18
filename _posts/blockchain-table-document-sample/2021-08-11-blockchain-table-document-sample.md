@@ -112,8 +112,19 @@ Oracle Databaseの機能のBlockchain Tableの特性を体験し、そのメリ�
 
 - ブロックチェーンテーブルはテーブルの破棄（DROP）を制約、禁止できます。今回、アプリ内で使用しているブロックチェーンテーブル（DOCUMENT_BCTテーブル）は、利便性のためにDDLで```NO DROP UNTIL 0 DAYS IDLE```を指定しておくことで、いつでもDROP可能にしています。
 
+## 監査ページの機能の詳細
+
+アプリ内の監査ページでは　①ブロックチェーンテーブルの行の整合性検証（ハッシュチェーンの検証）　と　②ブロックチェーンテーブルの隠しカラムのデータの閲覧　が行えます。
+
+- **ブロックチェーンテーブルの行の整合性検証（ハッシュチェーンの検証）**<br>
+  ブロックチェーンテーブルには、保存された行のハッシュ値のチェーンを検証することにより、行がINSERT以降に改ざん、削除などされていないかを確認する機能が備わっています。この機能は、```DBMS_BLOCKCHAIN_TABLE.VERIFY_TABLE_BLOCKCHAIN```プロシージャを実行することにより利用可能で、サンプルアプリ内でもこれを呼び出しています。このプロシージャの利用方法について詳しくは[こちら](https://docs.oracle.com/en/database/oracle/oracle-database/21/admin/managing-tables.html#GUID-F4275F22-3A9E-4A78-BF80-0FB43A909A8B)を参照ください。
+
+- **ブロックチェーンテーブルの隠しカラムのデータの閲覧**<br>
+  ブロックチェーンテーブルでは、行のハッシュ値、行のINSERT時刻などの耐改ざん性、監査性担保のための情報が行のINSERT時に自動的に保存されます。どのような情報が隠しカラムに保存されるのかについて詳しくは[こちら](https://docs.oracle.com/en/database/oracle/oracle-database/21/admin/managing-tables.html#GUID-02BD6C35-E1E9-41B7-BD56-68C7A667B51F)を参照ください。
+
 # 参考ドキュメント、リンクなど
 
 - [APEXのインストーラのダウンロード・ページ](https://www.oracle.com/jp/tools/downloads/apex-downloads.html)
 - [APEX構築の参考ページ1：Oracle Application Express［環境構築編］（1）インストール](https://www.ydc.co.jp/solution/standby/article/oracle_apex_1.html)
 - [APEX構築の参考ページ2：terraformでAPEXをDBaasにインストールする手順](https://fullenergy.co.jp/tech-blog/apex_on_oci_database/)
+- [Oracle Database 21cの公式ドキュメントのBlockchain Table関連の箇所](https://docs.oracle.com/en/database/oracle/oracle-database/21/admin/managing-tables.html#GUID-43470B0C-DE4A-4640-9278-B066901C3926)
