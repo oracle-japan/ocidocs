@@ -374,6 +374,7 @@
     <ul>
       <li><a href="#カスタマイズ">カスタマイズ</a></li>
       <li><a href="#利用しているテーブルやビュー">利用しているテーブルやビュー</a></li>
+      <li><a href="#監査ページの機能の詳細">監査ページの機能の詳細</a></li>
     </ul>
   </li>
   <li><a href="#参考ドキュメントリンクなど">参考ドキュメント、リンクなど</a></li>
@@ -414,6 +415,9 @@
 <h2 id="主な機能">主な機能</h2>
 
 <p>文書管理に関わる機能と、ブロックチェーンテーブルの特性である耐改ざん性と監査性を体験するための機能を備えています。</p>
+
+<p><img src="slide-app-features.png" alt="アプリの主な機能" /></p>
+
 <ul>
   <li>文書管理に関わる機能
     <ul>
@@ -513,6 +517,8 @@
 
 <h2 id="利用しているテーブルやビュー">利用しているテーブルやビュー</h2>
 
+<p><img src="slide-app-tables.png" alt="テーブルとビュー" /></p>
+
 <ul>
   <li>
     <p>アプリケーション内で利用しているテーブルやビューなどのデータベース・オブジェクトは、APEXのSQLワークショップのオブジェクト・ブラウザで確認したり、SQLコマンドで直接SQLを発行することができます。
@@ -523,12 +529,28 @@
   </li>
 </ul>
 
+<h2 id="監査ページの機能の詳細">監査ページの機能の詳細</h2>
+
+<p>アプリ内の監査ページでは　①ブロックチェーンテーブルの行の整合性検証（ハッシュチェーンの検証）　と　②ブロックチェーンテーブルの隠しカラムのデータの閲覧　が行えます。</p>
+
+<ul>
+  <li>
+    <p><strong>ブロックチェーンテーブルの行の整合性検証（ハッシュチェーンの検証）</strong><br />
+ブロックチェーンテーブルには、保存された行のハッシュ値のチェーンを検証することにより、行がINSERT以降に改ざん、削除などされていないかを確認する機能が備わっています。この機能は、<code class="language-plaintext highlighter-rouge">DBMS_BLOCKCHAIN_TABLE.VERIFY_TABLE_BLOCKCHAIN</code>プロシージャを実行することにより利用可能で、サンプルアプリ内でもこれを呼び出しています。このプロシージャの利用方法について詳しくは<a href="https://docs.oracle.com/en/database/oracle/oracle-database/21/admin/managing-tables.html#GUID-F4275F22-3A9E-4A78-BF80-0FB43A909A8B">こちら</a>を参照ください。</p>
+  </li>
+  <li>
+    <p><strong>ブロックチェーンテーブルの隠しカラムのデータの閲覧</strong><br />
+ブロックチェーンテーブルでは、行のハッシュ値、行のINSERT時刻などの耐改ざん性、監査性担保のための情報が行のINSERT時に自動的に保存されます。どのような情報が隠しカラムに保存されるのかについて詳しくは<a href="https://docs.oracle.com/en/database/oracle/oracle-database/21/admin/managing-tables.html#GUID-02BD6C35-E1E9-41B7-BD56-68C7A667B51F">こちら</a>を参照ください。</p>
+  </li>
+</ul>
+
 <h1 id="参考ドキュメントリンクなど">参考ドキュメント、リンクなど</h1>
 
 <ul>
   <li><a href="https://www.oracle.com/jp/tools/downloads/apex-downloads.html">APEXのインストーラのダウンロード・ページ</a></li>
   <li><a href="https://www.ydc.co.jp/solution/standby/article/oracle_apex_1.html">APEX構築の参考ページ1：Oracle Application Express［環境構築編］（1）インストール</a></li>
   <li><a href="https://fullenergy.co.jp/tech-blog/apex_on_oci_database/">APEX構築の参考ページ2：terraformでAPEXをDBaasにインストールする手順</a></li>
+  <li><a href="https://docs.oracle.com/en/database/oracle/oracle-database/21/admin/managing-tables.html#GUID-43470B0C-DE4A-4640-9278-B066901C3926">Oracle Database 21cの公式ドキュメントのBlockchain Table関連の箇所</a></li>
 </ul>
 
         

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2021-08-16T21:46:26+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">Oracleの提供するブロックチェーンソリューション概要</title><link href="https://oracle-japan.github.io/ocidocs/solutions/blockchain/blockchain-solution-100/" rel="alternate" type="text/html" title="Oracleの提供するブロックチェーンソリューション概要" /><published>2021-08-11T00:00:00+09:00</published><updated>2021-08-11T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/solutions/blockchain/blockchain-solution-100</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/solutions/blockchain/blockchain-solution-100/">&lt;p&gt;Oracle Blockchain Platformや、Oracle Databaseの機能のOracle Blockchain Tableについて、最新の事例、試用環境とデモスクリプト、Hyperledger Fabricの技術情報とともにご説明しています。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2021-08-19T09:37:07+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">Oracleの提供するブロックチェーンソリューション概要</title><link href="https://oracle-japan.github.io/ocidocs/solutions/blockchain/blockchain-solution-100/" rel="alternate" type="text/html" title="Oracleの提供するブロックチェーンソリューション概要" /><published>2021-08-11T00:00:00+09:00</published><updated>2021-08-11T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/solutions/blockchain/blockchain-solution-100</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/solutions/blockchain/blockchain-solution-100/">&lt;p&gt;Oracle Blockchain Platformや、Oracle Databaseの機能のOracle Blockchain Tableについて、最新の事例、試用環境とデモスクリプト、Hyperledger Fabricの技術情報とともにご説明しています。&lt;/p&gt;
 
 &lt;h4 id=&quot;スライド&quot;&gt;スライド&lt;/h4&gt;
 
@@ -40,6 +40,9 @@
 &lt;h2 id=&quot;主な機能&quot;&gt;主な機能&lt;/h2&gt;
 
 &lt;p&gt;文書管理に関わる機能と、ブロックチェーンテーブルの特性である耐改ざん性と監査性を体験するための機能を備えています。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;slide-app-features.png&quot; alt=&quot;アプリの主な機能&quot; /&gt;&lt;/p&gt;
+
 &lt;ul&gt;
   &lt;li&gt;文書管理に関わる機能
     &lt;ul&gt;
@@ -139,6 +142,8 @@
 
 &lt;h2 id=&quot;利用しているテーブルやビュー&quot;&gt;利用しているテーブルやビュー&lt;/h2&gt;
 
+&lt;p&gt;&lt;img src=&quot;slide-app-tables.png&quot; alt=&quot;テーブルとビュー&quot; /&gt;&lt;/p&gt;
+
 &lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;アプリケーション内で利用しているテーブルやビューなどのデータベース・オブジェクトは、APEXのSQLワークショップのオブジェクト・ブラウザで確認したり、SQLコマンドで直接SQLを発行することができます。
@@ -149,12 +154,28 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;h2 id=&quot;監査ページの機能の詳細&quot;&gt;監査ページの機能の詳細&lt;/h2&gt;
+
+&lt;p&gt;アプリ内の監査ページでは　①ブロックチェーンテーブルの行の整合性検証（ハッシュチェーンの検証）　と　②ブロックチェーンテーブルの隠しカラムのデータの閲覧　が行えます。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;ブロックチェーンテーブルの行の整合性検証（ハッシュチェーンの検証）&lt;/strong&gt;&lt;br /&gt;
+ブロックチェーンテーブルには、保存された行のハッシュ値のチェーンを検証することにより、行がINSERT以降に改ざん、削除などされていないかを確認する機能が備わっています。この機能は、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DBMS_BLOCKCHAIN_TABLE.VERIFY_TABLE_BLOCKCHAIN&lt;/code&gt;プロシージャを実行することにより利用可能で、サンプルアプリ内でもこれを呼び出しています。このプロシージャの利用方法について詳しくは&lt;a href=&quot;https://docs.oracle.com/en/database/oracle/oracle-database/21/admin/managing-tables.html#GUID-F4275F22-3A9E-4A78-BF80-0FB43A909A8B&quot;&gt;こちら&lt;/a&gt;を参照ください。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;ブロックチェーンテーブルの隠しカラムのデータの閲覧&lt;/strong&gt;&lt;br /&gt;
+ブロックチェーンテーブルでは、行のハッシュ値、行のINSERT時刻などの耐改ざん性、監査性担保のための情報が行のINSERT時に自動的に保存されます。どのような情報が隠しカラムに保存されるのかについて詳しくは&lt;a href=&quot;https://docs.oracle.com/en/database/oracle/oracle-database/21/admin/managing-tables.html#GUID-02BD6C35-E1E9-41B7-BD56-68C7A667B51F&quot;&gt;こちら&lt;/a&gt;を参照ください。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h1 id=&quot;参考ドキュメントリンクなど&quot;&gt;参考ドキュメント、リンクなど&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.oracle.com/jp/tools/downloads/apex-downloads.html&quot;&gt;APEXのインストーラのダウンロード・ページ&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.ydc.co.jp/solution/standby/article/oracle_apex_1.html&quot;&gt;APEX構築の参考ページ1：Oracle Application Express［環境構築編］（1）インストール&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://fullenergy.co.jp/tech-blog/apex_on_oci_database/&quot;&gt;APEX構築の参考ページ2：terraformでAPEXをDBaasにインストールする手順&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/en/database/oracle/oracle-database/21/admin/managing-tables.html#GUID-43470B0C-DE4A-4640-9278-B066901C3926&quot;&gt;Oracle Database 21cの公式ドキュメントのBlockchain Table関連の箇所&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="Solutions" /><category term="Blockchain" /><category term="レベル:入門(100)" /><summary type="html">Oracle DatabaseのBlockchain Tableを活用したサンプルアプリケーションのご紹介です。</summary></entry><entry><title type="html">オブジェクト・ストレージ・サービス 技術FAQ</title><link href="https://oracle-japan.github.io/ocidocs/faq/storage/object-storage-faq/" rel="alternate" type="text/html" title="オブジェクト・ストレージ・サービス 技術FAQ" /><published>2021-08-11T00:00:00+09:00</published><updated>2021-08-11T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/faq/storage/object-storage-faq</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/faq/storage/object-storage-faq/">&lt;h1 id=&quot;オブジェクトへのアクセス拒否エラーが発生した場合のトラブルシューティング方法を教えてください&quot;&gt;オブジェクトへのアクセス拒否エラーが発生した場合のトラブルシューティング方法を教えてください&lt;/h1&gt;
 
 &lt;h2 id=&quot;質問&quot;&gt;質問&lt;/h2&gt;
