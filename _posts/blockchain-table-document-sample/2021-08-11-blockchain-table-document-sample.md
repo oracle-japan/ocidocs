@@ -127,4 +127,6 @@ Oracle Databaseの機能のBlockchain Tableの特性を体験し、そのメリ�
 - [APEXのインストーラのダウンロード・ページ](https://www.oracle.com/jp/tools/downloads/apex-downloads.html)
 - [APEX構築の参考ページ1：Oracle Application Express［環境構築編］（1）インストール](https://www.ydc.co.jp/solution/standby/article/oracle_apex_1.html)
 - [APEX構築の参考ページ2：terraformでAPEXをDBaasにインストールする手順](https://fullenergy.co.jp/tech-blog/apex_on_oci_database/)
+- [APEX構築の参考ページ3：DBCSにAPEXをインストールしてみた How to install APEX on DBCS](https://itedge.stars.ne.jp/oci-dbaas-apex18/)
+- [APEX構築の参考ページ4：Oracle Cloud Infrastructure（OCI）の Database Cloud Service（DBCS）に Oracle Application Express（APEX）を構築してみた](https://qiita.com/ayamakkk/items/e150b485fc64997b40bc)
 - [Oracle Database 21cの公式ドキュメントのBlockchain Table関連の箇所](https://docs.oracle.com/en/database/oracle/oracle-database/21/admin/managing-tables.html#GUID-43470B0C-DE4A-4640-9278-B066901C3926)
