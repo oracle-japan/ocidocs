@@ -478,4 +478,10 @@ var store = [{
         "tags": ["FAQ"],
         "url": "https://oracle-japan.github.io/ocidocs/faq/storage/object-storage-faq/",
         "teaser": null
+      },{
+        "title": "Service Connector Hub概要",
+        "excerpt":"OCI のメッセージ・バス・プラットフォームである Service Connector Hub の概要資料です。   スライド          Service Connector Hub ご紹介     ","categories": ["Services","Developers"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/developers/service-connector-hub-overview/",
+        "teaser": "https://image.slidesharecdn.com/serviceconnectorhuboverview-210831121152/95/service-connector-hub-1-638.jpg?cb=1630412244"
       }]
