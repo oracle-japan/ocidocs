@@ -54,7 +54,7 @@ var store = [{
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/51374bb7212c4564a2d18bbc26ad17b6/slide_0.jpg"
       },{
         "title": "外部接続 概要",
-        "excerpt":"OCIのリージョンまでのネットワーク接続の形態や、IPsecを利用したVPN接続、専用線や閉域網を経由する FastConnect 接続について、概要を解説しています。   スライド           セミナー動画      ","categories": ["Services","Networking"],
+        "excerpt":"OCIのリージョンまでのネットワーク接続の形態や、IPsecを利用したVPN接続、専用線や閉域網を経由する FastConnect 接続について、概要を解説しています。   スライド           セミナー動画        ","categories": ["Services","Networking"],
         "tags": ["スライドあり","動画あり","レベル:入門(100)"],
         "url": "https://oracle-japan.github.io/ocidocs/services/networking/connectivity-100/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/78fd892617f74e83b9c40ca0a2dd5537/slide_0.jpg"
@@ -66,7 +66,7 @@ var store = [{
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/f74062dcf2a84dbdba4a49bb4964ef67/slide_0.jpg"
       },{
         "title": "オブジェクト・ストレージ",
-        "excerpt":"安価で耐久性の高いストレージ・サービスであるOCIオブジェクト・ストレージ・サービスについて解説しています。  オブジェクト・ストレージ・サービスのユースケースや、機能、VCN内からのプライベート・アクセスの方法などについてカバーしています。   スライド           セミナー動画      ","categories": ["Services","Storage"],
+        "excerpt":"安価で耐久性の高いストレージ・サービスであるOCIオブジェクト・ストレージ・サービスについて解説しています。  オブジェクト・ストレージ・サービスのユースケースや、機能、VCN内からのプライベート・アクセスの方法などについてカバーしています。   スライド           ","categories": ["Services","Storage"],
         "tags": ["スライドあり","動画あり","レベル:入門(100)"],
         "url": "https://oracle-japan.github.io/ocidocs/services/storage/object-storage-100/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/e01e15341d2e43adbf149afaf86f0719/slide_0.jpg"
@@ -120,13 +120,13 @@ var store = [{
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/d7bb02f732134b059e7568b1c6caecfc/slide_0.jpg"
       },{
         "title": "Oracle Cloud Infrastructure サービス基本情報",
-        "excerpt":"ログインに始まり、言語の変更、サービス制限、OCID、検索など、主にOCIコンソールの基本的情報について解説しています。   スライド           動画      ","categories": ["Services","Overall"],
+        "excerpt":"ログインに始まり、言語の変更、サービス制限、OCID、検索など、主にOCIコンソールの基本的情報について解説しています。   スライド           関連動画       ","categories": ["Services","Overall"],
         "tags": ["スライドあり","動画あり","レベル:入門(100)"],
         "url": "https://oracle-japan.github.io/ocidocs/services/overall/service-essentials/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/dadec91d58b24202a8af17f075301fba/slide_0.jpg"
       },{
         "title": "Oracle Cloud Infrastructure 概要",
-        "excerpt":"OCIに初めて触れる人のために、OCI全般の特長や、アーキテクチャについて解説しています。   スライド           動画      ","categories": ["Services","Overall"],
+        "excerpt":"OCIに初めて触れる人のために、OCI全般の特長や、アーキテクチャについて解説しています。   スライド           関連動画        ","categories": ["Services","Overall"],
         "tags": ["スライドあり","動画あり","レベル:入門(100)"],
         "url": "https://oracle-japan.github.io/ocidocs/services/overall/oracle-cloud-infrastructure-overview/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/63c6514d88204918bc3e572bd3183589/slide_0.jpg"
@@ -484,4 +484,16 @@ var store = [{
         "tags": ["スライドあり","レベル:入門(100)"],
         "url": "https://oracle-japan.github.io/ocidocs/services/developers/service-connector-hub-overview/",
         "teaser": "https://image.slidesharecdn.com/serviceconnectorhuboverview-210831121152/95/service-connector-hub-1-638.jpg?cb=1630412244"
+      },{
+        "title": "OCI外部接続大全",
+        "excerpt":"2021/08/24開催の、OCI スキルアップセミナー #11 「OCI外部接続大全」の資料です。   セミナー情報 https://oracle-code-tokyo-dev.connpass.com/event/219223/   FastConnect, IPSec VPN, Multi-Cloud接続など、さまざまな接続パターンがある外部接続をすべて自宅からルーターを使用してOCIへ接続して検証していました。物理ルーター、ソフトウェア・ルーターや クラウド・ルーターを使用して接続したりした検証内容総まとめを語りたいと思います。      使用機器            物理ルーター: Cisco, NEC, Yamaha       ソフトウェア・ルーター: Cisco, Fortigate, Juniper, Palo Alto, Yamaha       クラウド・ルーター: Equinix Network Edge, Megaport           スライド          セミナー動画      ","categories": ["Services","Networking"],
+        "tags": ["スライドあり","動画あり","レベル:入門(100)","レベル:応用(200)"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/networking/connectivity-complete/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/51d21668d7c942db82da2925f5efd801/slide_0.jpg"
+      },{
+        "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2021/6～2021/8",
+        "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介する資料です。  本資料は2021年6月～2021年8月の3ヶ月分の新機能について記載しています。   スライド          セミナー動画        ","categories": ["Updates"],
+        "tags": ["スライドあり","動画あり"],
+        "url": "https://oracle-japan.github.io/ocidocs/updates/update-FY22Q1/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/cfc6c2cd296248a68f4878db4c82df3c/slide_0.jpg"
       }]
