@@ -31,7 +31,7 @@ spec:
     spec:
       containers:
       - name: ocidocs-preview
-        image: nrt.ocir.io/orasejapan/oci-tutorials/staging-env-ocidocs
+        image: nrt.ocir.io/orasejapan/oci-tutorials/staging-env-ocidocs:${BUILDRUN_HASH}
         ports:
         - protocol: TCP
           containerPort: 4001
