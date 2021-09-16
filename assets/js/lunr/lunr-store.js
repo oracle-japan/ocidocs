@@ -66,7 +66,7 @@ var store = [{
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/f74062dcf2a84dbdba4a49bb4964ef67/slide_0.jpg"
       },{
         "title": "オブジェクト・ストレージ",
-        "excerpt":"安価で耐久性の高いストレージ・サービスであるOCIオブジェクト・ストレージ・サービスについて解説しています。  オブジェクト・ストレージ・サービスのユースケースや、機能、VCN内からのプライベート・アクセスの方法などについてカバーしています。   スライド           ","categories": ["Services","Storage"],
+        "excerpt":"安価で耐久性の高いストレージ・サービスであるOCIオブジェクト・ストレージ・サービスについて解説しています。  オブジェクト・ストレージ・サービスのユースケースや、機能、VCN内からのプライベート・アクセスの方法などについてカバーしています。   スライド             ","categories": ["Services","Storage"],
         "tags": ["スライドあり","動画あり","レベル:入門(100)"],
         "url": "https://oracle-japan.github.io/ocidocs/services/storage/object-storage-100/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/e01e15341d2e43adbf149afaf86f0719/slide_0.jpg"
