@@ -59,8 +59,8 @@ Oracle Databaseの機能のBlockchain Tableの特性を体験し、そのメリ�
 
 - **ブロックチェーンテーブルの利用可能なOracle Database**
   - アプリケーション内でブロックチェーンテーブルを利用するため、ブロックチェーンテーブルをサポートしているバージョンのOracle Databaseが必要です。
-  - 記事執筆時点（2021/8/12）では、主な選択肢として以下いずれかで利用可能です。
-      - Oracle CloudのAutonomous Database（Autonomous Data WarehouseあるいはAutonomous Transaction Processing）の**21c**バージョンを利用する（注意：現在、Autonomous Databaseで21cのバージョンを選択できるのは、Always Free枠のみです）。
+  - 2021/9/29時点では、主な選択肢として以下いずれかで利用可能です。
+      - Oracle CloudのAutonomous Database（Autonomous Data WarehouseあるいはAutonomous Transaction Processing）の**19c**バージョンまたは**21c**バージョンを利用する（注意：現在、Autonomous Databaseで21cのバージョンを選択できるのは、Always Free枠のみです）。
       - Oracle CloudのDatabase Cloud ServiceのOracle Databaseの**19cのRU11以降のバージョン**を利用する。
       - オンプレミス／IaaSなどに自身で構築したOracle Databaseの**19cのRU11以降、または21cのバージョン**を利用する。
 
