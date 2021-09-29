@@ -41,10 +41,6 @@
 <lastmod>2020-04-22T00:00:00+09:00</lastmod>
 </url>
 <url>
-<loc>https://oracle-japan.github.io/ocidocs/services/storage/file-storage-100/</loc>
-<lastmod>2020-04-22T00:00:00+09:00</lastmod>
-</url>
-<url>
 <loc>https://oracle-japan.github.io/ocidocs/services/storage/object-storage-100/</loc>
 <lastmod>2020-04-22T00:00:00+09:00</lastmod>
 </url>
@@ -331,6 +327,10 @@
 <url>
 <loc>https://oracle-japan.github.io/ocidocs/updates/update-FY22Q1/</loc>
 <lastmod>2021-09-06T00:00:00+09:00</lastmod>
+</url>
+<url>
+<loc>https://oracle-japan.github.io/ocidocs/services/storage/file-storage-100/</loc>
+<lastmod>2021-09-29T00:00:00+09:00</lastmod>
 </url>
 <url>
 <loc>https://oracle-japan.github.io/ocidocs/about/</loc>

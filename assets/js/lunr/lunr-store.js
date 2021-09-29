@@ -59,12 +59,6 @@ var store = [{
         "url": "https://oracle-japan.github.io/ocidocs/services/networking/connectivity-100/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/78fd892617f74e83b9c40ca0a2dd5537/slide_0.jpg"
       },{
-        "title": "ファイル・ストレージ概要",
-        "excerpt":"VCN内にエンド・ポイントを持つマネージドNFSサービスである、OCIファイル・ストレージ・サービスについて解説しています。  ファイル・ストレージ・サービスのユースケースの他、サービスを構成する基本的なコンポーネントと役割、インスタンスからのアクセス、セキュリティ、スナップショット機能についてカバーしています。   スライド           動画      ","categories": ["Services","Storage"],
-        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
-        "url": "https://oracle-japan.github.io/ocidocs/services/storage/file-storage-100/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/f74062dcf2a84dbdba4a49bb4964ef67/slide_0.jpg"
-      },{
         "title": "オブジェクト・ストレージ",
         "excerpt":"安価で耐久性の高いストレージ・サービスであるOCIオブジェクト・ストレージ・サービスについて解説しています。  オブジェクト・ストレージ・サービスのユースケースや、機能、VCN内からのプライベート・アクセスの方法などについてカバーしています。   スライド             ","categories": ["Services","Storage"],
         "tags": ["スライドあり","動画あり","レベル:入門(100)"],
@@ -496,4 +490,10 @@ var store = [{
         "tags": ["スライドあり","動画あり"],
         "url": "https://oracle-japan.github.io/ocidocs/updates/update-FY22Q1/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/cfc6c2cd296248a68f4878db4c82df3c/slide_0.jpg"
+      },{
+        "title": "ファイル・ストレージ概要",
+        "excerpt":"VCN内にエンド・ポイントを持つマネージドNFSサービスである、OCIファイル・ストレージ・サービスについて解説しています。  ファイル・ストレージ・サービスのユースケースの他、サービスを構成する基本的なコンポーネントと役割、インスタンスからのアクセス、セキュリティ、スナップショット機能についてカバーしています。   スライド           動画      ","categories": ["Services","Storage"],
+        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/storage/file-storage-100/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/f74062dcf2a84dbdba4a49bb4964ef67/slide_0.jpg"
       }]
