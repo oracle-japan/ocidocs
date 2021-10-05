@@ -378,10 +378,10 @@ var store = [{
         "teaser": "https://image.slidesharecdn.com/verrazzanooverview-210528044558/95/verrazzano-1-1024.jpg?cb=1622177303"
       },{
         "title": "Oracle Blockchain Table概要",
-        "excerpt":"Oracle Databaseの機能のOracle Blockchain Tableについて、概要から想定ユースケースや実装での応用パターン、セキュリティ向上への効果などをご説明しています。   スライド          Oracle Blockchain tableのご紹介（2021/06版）   from オラクルエンジニア通信     ","categories": ["Solutions","Blockchain"],
+        "excerpt":"Oracle Databaseの機能のOracle Blockchain Tableについて、概要から想定ユースケースや実装での応用パターン、セキュリティ向上への効果などをご説明しています。   スライド          ","categories": ["Solutions","Blockchain"],
         "tags": ["スライドあり","レベル:入門(100)"],
         "url": "https://oracle-japan.github.io/ocidocs/solutions/blockchain/blockchain-table-100/",
-        "teaser": "https://image.slidesharecdn.com/202106oracleblockchaintablepublic-210603021301/95/oracle-blockchain-table202106-1-638.jpg?cb=1622686799"
+        "teaser": "https://files.speakerdeck.com/presentations/09b6afd795124a39bdf5835df7c11fb4/slide_0.jpg"
       },{
         "title": "オブジェクト・ストレージ Amazon S3互換APIの利用",
         "excerpt":"OCIのオブジェクト・ストレージ・サービスは、OCIのネイティブAPIだけでなく、Amazon S3互換のAPIも利用でき、awscli、s3api、s3fs-fuse などのほか、S3互換の様々なクライアントからアクセスすることができます。 この資料では、S3互換APIを利用する上での注意点に特化して解説しています。   スライド          ","categories": ["Services","Object Storage"],
@@ -456,10 +456,10 @@ var store = [{
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/cfc6c2cd296248a68f4878db4c82df3c/slide_0.jpg"
       },{
         "title": "Oracleの提供するブロックチェーンソリューション概要",
-        "excerpt":"Oracle Blockchain Platformや、Oracle Databaseの機能のOracle Blockchain Tableについて、最新の事例、試用環境とデモスクリプト、Hyperledger Fabricの技術情報とともにご説明しています。   スライド          オラクルのブロックチェーンソリューションご紹介（2021/08版）  from オラクルエンジニア通信     ","categories": ["Solutions","Blockchain"],
+        "excerpt":"Oracle Blockchain Platformや、Oracle Databaseの機能のOracle Blockchain Tableについて、最新の事例、試用環境とデモスクリプト、Hyperledger Fabricの技術情報とともにご説明しています。   スライド          ","categories": ["Solutions","Blockchain"],
         "tags": ["スライドあり","レベル:入門(100)"],
         "url": "https://oracle-japan.github.io/ocidocs/solutions/blockchain/blockchain-solution-100/",
-        "teaser": "https://image.slidesharecdn.com/202108oracleblockchainslideshare-210810055935/95/202108-1-638.jpg?cb=1628575486"
+        "teaser": "https://files.speakerdeck.com/presentations/f4d298447aae40bd8d8f7ad6ed7b771a/slide_0.jpg"
       },{
         "title": "ブロックチェーンテーブル文書管理サンプルアプリケーション",
         "excerpt":"Oracle Databaseの機能のBlockchain Tableの特性を体験し、そのメリットを理解していただくためのサンプルアプリケーションを紹介します。 ブロックチェーンテーブル文書管理サンプルアプリケーションの概要 このアプリケーションは、Oracle Databaseのブロックチェーンテーブルのふたつの特性―耐改ざん性と監査性―を、文書ファイルの管理（保管と検索、閲覧）のシナリオを通じて体験いただくためのサンプルです。 このブロックチェーンテーブル文書管理サンプルアプリケーションは、Oracle APEX（Application Express）で実装されています。そのため、Oracle Database上でアプリケーションを稼働させることができ、アプリケーション・サーバーなどの用意の必要なく利用することができます。このサンプルはまた、Oracle APEXの利便性とパワフルさを体験いただけるものにもなっています。 ブロックチェーンテーブルでの文書管理 このアプリケーションでは、文書（のファイル）の管理というシナリオをブロックチェーンテーブルを活用して実装しています。 WORD、PDF、Excel、テキストなど任意の形式の文書ファイルを保存可能です。 ある文書についてのデータ（文書データ）は、文書ファイルそのものと、ドキュメントID、バージョン、ドキュメント名、登録者などのデータから成ります。 文書データはブロックチェーンテーブルに保存され、登録後は更新不能です。 ひとつの文書（同一のドキュメントIDを付与された文書データ）に対してひとつ～複数のバージョンの文書データを管理可能です。 また、文書のステータス、カテゴリー、備考から成る付加情報データを文書に付与できます。 付加情報のデータは通常のテーブルに保存され、後から更新することができます。 付加情報はひとつの文書に対してひとつです（複数バージョンが存在する場合も共通です）。 主な機能 文書管理に関わる機能と、ブロックチェーンテーブルの特性である耐改ざん性と監査性を体験するための機能を備えています。 文書管理に関わる機能 文書データおよび付加情報の登録 文書データの検索、一覧表示、文書のダウンロード ある文書についての新バージョンの文書データの登録 付加情報の更新 耐改ざん性と監査性に関わる機能 ブロックチェーンテーブルの行の整合性検証（ハッシュチェーンの検証） ブロックチェーンテーブル上の文書データのUPDATE、DELETE不能の確認 ダウンロードとインストール、実行方法 前提：必要な環境と準備 ブロックチェーンテーブルの利用可能なOracle Database アプリケーション内でブロックチェーンテーブルを利用するため、ブロックチェーンテーブルをサポートしているバージョンのOracle Databaseが必要です。 2021/9/29時点では、主な選択肢として以下いずれかで利用可能です。 Oracle CloudのAutonomous Database（Autonomous Data WarehouseあるいはAutonomous Transaction Processing）の19cバージョンまたは21cバージョンを利用する（注意：現在、Autonomous Databaseで21cのバージョンを選択できるのは、Always Free枠のみです）。 Oracle CloudのDatabase Cloud ServiceのOracle...","categories": ["Solutions","Blockchain"],
