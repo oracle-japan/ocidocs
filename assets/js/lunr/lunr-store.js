@@ -95,12 +95,6 @@ var store = [{
         "url": "https://oracle-japan.github.io/ocidocs/services/edge%20service/health-check-and-traffic-management/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/ad44958c474941c0a69dd6be27eda8dd/slide_0.jpg"
       },{
-        "title": "モニタリング機能概要",
-        "excerpt":"モニタリング・サービスの概要資料です   スライド           動画      ","categories": ["Services","Governance and Administration"],
-        "tags": ["スライドあり","レベル:入門(100)"],
-        "url": "https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/monitoring/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/0afd8c1a326848a18ab99eba0c054148/slide_0.jpg"
-      },{
         "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2020/6～2020/8",
         "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介する資料です。2020年6月～2020年8月の3ヶ月分の新機能について記載しています。   スライド          ","categories": ["Updates"],
         "tags": ["スライドあり"],
@@ -496,4 +490,10 @@ var store = [{
         "tags": ["スライドあり","動画あり","レベル:入門(100)"],
         "url": "https://oracle-japan.github.io/ocidocs/services/storage/file-storage-100/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/f74062dcf2a84dbdba4a49bb4964ef67/slide_0.jpg"
+      },{
+        "title": "モニタリング機能概要",
+        "excerpt":"モニタリング・サービスの概要資料です   スライド           動画      ","categories": ["Services","Governance and Administration"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/monitoring/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/0afd8c1a326848a18ab99eba0c054148/slide_0.jpg"
       }]
