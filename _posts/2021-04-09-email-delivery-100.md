@@ -8,7 +8,7 @@ tags:
   - スライドあり
   - レベル:入門(100)
 header:
-  teaser: https://speakerd.s3.amazonaws.com/presentations/b80073aa58a141638ad5ba432009ba59/slide_0.jpg
+  teaser: https://files.speakerdeck.com/presentations/ee67829f073544f2a04c016a114501ac/slide_0.jpg
 ---
 
 OCI Email Deliveryサービスは、OCI内外に配置されたサービスやアプリケーションから、確実にEmailを配信したい場合に利用することができるマネージドサービスです。  
