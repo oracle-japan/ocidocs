@@ -10,7 +10,7 @@ tags:
   - レベル:入門(100)
   - レベル:応用(200)
 header:
-  teaser: https://speakerd.s3.amazonaws.com/presentations/51d21668d7c942db82da2925f5efd801/slide_0.jpg
+  teaser: https://files.speakerdeck.com/presentations/2c21b7a92bbc440da85cd66fb8ce5ac7/slide_0.jpg
 ---
 
 2021/08/24開催の、OCI スキルアップセミナー #11 「OCI外部接続大全」の資料です。
