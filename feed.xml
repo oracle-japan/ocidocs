@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2021-10-12T09:06:54+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">Blog : Oracle Cloud Infrastructure 新機能ハイライト</title><link href="https://oracle-japan.github.io/ocidocs/updates/updates-blog/" rel="alternate" type="text/html" title="Blog : Oracle Cloud Infrastructure 新機能ハイライト" /><published>2021-10-08T00:00:00+09:00</published><updated>2021-10-08T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/updates/updates-blog</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/updates/updates-blog/"></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Updates" /><summary type="html">OCIの新機能・新リリースについてのまとめ情報を隔週で掲載しているOracle Cloud 公式ブログへの外部リンクです</summary></entry><entry><title type="html">モニタリング機能概要</title><link href="https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/monitoring/" rel="alternate" type="text/html" title="モニタリング機能概要" /><published>2021-10-07T00:00:00+09:00</published><updated>2021-10-07T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/monitoring</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/monitoring/">&lt;p&gt;モニタリング・サービスの概要資料です&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2021-10-18T22:26:48+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">イベント・サービス概要</title><link href="https://oracle-japan.github.io/ocidocs/services/developers/events-service/" rel="alternate" type="text/html" title="イベント・サービス概要" /><published>2021-10-18T00:00:00+09:00</published><updated>2021-10-18T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/developers/events-service</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/developers/events-service/">&lt;p&gt;クラウド上のリソースの変化を捉え、サービスが自動的に連動する仕組みを実現する、イベント・サービスの概要資料です。&lt;/p&gt;
+
+&lt;h4 id=&quot;スライド&quot;&gt;スライド&lt;/h4&gt;
+
+&lt;div style=&quot;max-width:768px&quot;&gt;
+
+&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) --&gt;
+&lt;script async=&quot;&quot; class=&quot;speakerdeck-embed&quot; data-id=&quot;7f8bb60e28a5437ab6c40dd664de8b49&quot; data-ratio=&quot;1.77777777777778&quot; src=&quot;//speakerdeck.com/assets/embed.js&quot;&gt;&lt;/script&gt;
+&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) --&gt;
+
+&lt;/div&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Developers" /><category term="スライドあり" /><category term="レベル:入門(100)" /><summary type="html">イベント・サービスの概要資料です</summary></entry><entry><title type="html">Blog : Oracle Cloud Infrastructure 新機能ハイライト</title><link href="https://oracle-japan.github.io/ocidocs/updates/updates-blog/" rel="alternate" type="text/html" title="Blog : Oracle Cloud Infrastructure 新機能ハイライト" /><published>2021-10-08T00:00:00+09:00</published><updated>2021-10-08T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/updates/updates-blog</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/updates/updates-blog/"></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Updates" /><summary type="html">OCIの新機能・新リリースについてのまとめ情報を隔週で掲載しているOracle Cloud 公式ブログへの外部リンクです</summary></entry><entry><title type="html">モニタリング機能概要</title><link href="https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/monitoring/" rel="alternate" type="text/html" title="モニタリング機能概要" /><published>2021-10-07T00:00:00+09:00</published><updated>2021-10-07T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/monitoring</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/monitoring/">&lt;p&gt;モニタリング・サービスの概要資料です&lt;/p&gt;
 
 &lt;h4 id=&quot;スライド&quot;&gt;スライド&lt;/h4&gt;
 
@@ -722,25 +732,4 @@ endorse group &amp;lt;group&amp;gt; to read objects in tenancy usage-report
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;a href=&quot;#main&quot; class=&quot;back-to-top&quot;&gt;Back to Top ↑&lt;/a&gt;
-&lt;br /&gt;&lt;/p&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="FAQ" /><category term="Storage" /><category term="FAQ" /><summary type="html">Oracle Cloud Infrastructure オブジェクト・ストレージ・サービスに関して、利用時のよくある質問に対する回答や、技術的な問題に対する対処策をまとめています。</summary></entry><entry><title type="html">もう迷わない! コンピュートの選び方を学ぼう</title><link href="https://oracle-japan.github.io/ocidocs/services/compute/compute-choice/" rel="alternate" type="text/html" title="もう迷わない! コンピュートの選び方を学ぼう" /><published>2021-08-02T00:00:00+09:00</published><updated>2021-08-02T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/compute/compute-choice</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/compute/compute-choice/">&lt;p&gt;2021/07/27開催の、OCI スキルアップセミナー #10 「もう迷わない! コンピュートの選び方を学ぼう」の資料です。セミナー情報 https://oracle-code-tokyo-dev.connpass.com/event/215004/&lt;/p&gt;
-
-&lt;p&gt;ここのところOCIの新機能が大量にリリースされてきています。コンピュートだけでも、容量予約、プリエンプティブル、バースト可能、Optimized3、Armインスタンス、、などなど、あまりに新機能が多すぎてどれを使えばいいのかがわからなくなったりしませんか？&lt;/p&gt;
-
-&lt;p&gt;第10回のOCIスキルアップセミナーでは、これまでのインスタンスの種類も含めて総まとめをしながら、ユースケースに応じて、これらの様々な選択肢からいったいどれを選んだらよいのかを整理していきたいと思います！&lt;/p&gt;
-
-&lt;p&gt;うまく活用できればCloudならではのコスト削減にもつながりますので、ぜひ選択のポイントを押さえていきましょう。&lt;/p&gt;
-
-&lt;h4 id=&quot;スライド&quot;&gt;スライド&lt;/h4&gt;
-
-&lt;div style=&quot;max-width:768px&quot;&gt;
-&lt;!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) --&gt;
-
-&lt;script async=&quot;&quot; class=&quot;speakerdeck-embed&quot; data-id=&quot;51d21668d7c942db82da2925f5efd801&quot; data-ratio=&quot;1.77777777777778&quot; src=&quot;//speakerdeck.com/assets/embed.js&quot;&gt;&lt;/script&gt;
-
-&lt;/div&gt;
-
-&lt;h4 id=&quot;セミナー動画&quot;&gt;セミナー動画&lt;/h4&gt;
-
-&lt;!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください --&gt;
-&lt;iframe width=&quot;768&quot; height=&quot;432&quot; src=&quot;https://www.youtube.com/embed/NW13wSbcmbg&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) --&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Compute" /><category term="スライドあり" /><category term="動画あり" /><category term="レベル:入門(100)" /><category term="レベル:応用(200)" /><summary type="html">OCIコンピュート・サービスの新機能ラッシュで迷いがちな今、OCIでどのコンピュートを選ぶべきかをわかり易く整理します。</summary></entry></feed>
+&lt;br /&gt;&lt;/p&gt;</content><author><name>Oracle Japan Solution Engineers</name></author><category term="FAQ" /><category term="Storage" /><category term="FAQ" /><summary type="html">Oracle Cloud Infrastructure オブジェクト・ストレージ・サービスに関して、利用時のよくある質問に対する回答や、技術的な問題に対する対処策をまとめています。</summary></entry></feed>

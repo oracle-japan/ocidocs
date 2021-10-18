@@ -219,13 +219,13 @@ var store = [{
         "excerpt":"OCI Email Deliveryサービスは、OCI内外に配置されたサービスやアプリケーションから、確実にEmailを配信したい場合に利用することができるマネージドサービスです。  この資料では、OCI Email Deliveryサービスについて、サービスの概観、特徴、利用方法などの基礎的な内容について解説しています。   スライド         ","categories": ["Services","Edge Service"],
         "tags": ["スライドあり","レベル:入門(100)"],
         "url": "https://oracle-japan.github.io/ocidocs/services/edge%20service/email-delivery-100/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/b80073aa58a141638ad5ba432009ba59/slide_0.jpg"
+        "teaser": "https://files.speakerdeck.com/presentations/ee67829f073544f2a04c016a114501ac/slide_0.jpg"
       },{
         "title": "Web Application Firewall (WAF) 概要",
         "excerpt":"Web Application Firewall (WAF) サービスは、OCI内外に配置されたWebアプリケーションを悪意のある攻撃から保護することができるマネージドサービスです。  OCI WAFを利用すると、既存のアプリケーションには手を入れることなく、プロキシとして利用する形でOWASP Top10やCRS3に準拠した保護ルールや、攻撃に応じてアダプティブな保護を行うBot管理機能を利用し、Webアプリケーションを高度に保護することができるようになります。  この資料では、OCI Web Application Firewallサービスについて、サービスの概観、特徴、利用方法などの基礎的な内容について解説しています。   スライド         ","categories": ["Services","Edge Service","Security"],
         "tags": ["スライドあり","レベル:入門(100)"],
         "url": "https://oracle-japan.github.io/ocidocs/services/edge%20service/security/waf-100/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/b80073aa58a141638ad5ba432009ba59/slide_0.jpg"
+        "teaser": "https://files.speakerdeck.com/presentations/67bc880ea70f4f389afe70db381961b2/slide_0.jpg"
       },{
         "title": "[コア技術]Oracle Database 機能概要",
         "excerpt":"紹介機能 ・Parallel Query ・Oracle Partitioning ・Advanced Compression ・Database In-Memory ・Diagnostic Pack &amp; Oracle Tuning Pack ・Recovery Manager ・Database Lifecycle Management Pack ・Multitenant ・Real Application Clusters ・Automatic Storage Management ・Data Guard &amp; Oracle Active Data Guard ・GoldenGate ・Advanced Security ・Database Vault ・Audit Vault and Database Firewall ・Real Application Testing ・Data Masking...","categories": ["Database"],
@@ -471,7 +471,7 @@ var store = [{
         "excerpt":"2021/08/24開催の、OCI スキルアップセミナー #11 「OCI外部接続大全」の資料です。   セミナー情報 https://oracle-code-tokyo-dev.connpass.com/event/219223/   FastConnect, IPSec VPN, Multi-Cloud接続など、さまざまな接続パターンがある外部接続をすべて自宅からルーターを使用してOCIへ接続して検証していました。物理ルーター、ソフトウェア・ルーターや クラウド・ルーターを使用して接続したりした検証内容総まとめを語りたいと思います。      使用機器            物理ルーター: Cisco, NEC, Yamaha       ソフトウェア・ルーター: Cisco, Fortigate, Juniper, Palo Alto, Yamaha       クラウド・ルーター: Equinix Network Edge, Megaport           スライド          セミナー動画      ","categories": ["Services","Networking"],
         "tags": ["スライドあり","動画あり","レベル:入門(100)","レベル:応用(200)"],
         "url": "https://oracle-japan.github.io/ocidocs/services/networking/connectivity-complete/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/51d21668d7c942db82da2925f5efd801/slide_0.jpg"
+        "teaser": "https://files.speakerdeck.com/presentations/2c21b7a92bbc440da85cd66fb8ce5ac7/slide_0.jpg"
       },{
         "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2021/6～2021/8",
         "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介する資料です。  本資料は2021年6月～2021年8月の3ヶ月分の新機能について記載しています。   スライド          セミナー動画        ","categories": ["Updates"],
@@ -496,4 +496,10 @@ var store = [{
         "tags": [],
         "url": "https://oracle-japan.github.io/ocidocs/updates/updates-blog/",
         "teaser": "https://cdn.app.compendium.com/uploads/user/e7c690e8-6ff9-102a-ac6d-e4aebca50425/36fb492f-3532-48e4-a057-f2b674a19de1/File/b5a9121425a0e376b622e07247bd054e/image_20201202094512173.png"
+      },{
+        "title": "イベント・サービス概要",
+        "excerpt":"クラウド上のリソースの変化を捉え、サービスが自動的に連動する仕組みを実現する、イベント・サービスの概要資料です。   スライド          ","categories": ["Services","Developers"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/developers/events-service/",
+        "teaser": "https://files.speakerdeck.com/presentations/7f8bb60e28a5437ab6c40dd664de8b49/slide_0.jpg"
       }]
