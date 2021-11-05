@@ -502,4 +502,16 @@ var store = [{
         "tags": ["スライドあり","レベル:入門(100)"],
         "url": "https://oracle-japan.github.io/ocidocs/services/developers/events-service/",
         "teaser": "https://files.speakerdeck.com/presentations/7f8bb60e28a5437ab6c40dd664de8b49/slide_0.jpg"
+      },{
+        "title": "Autonomous Database 技術FAQ",
+        "excerpt":"■ サービス概要編 Autonomous DatabaseではExadataのモデルを選択できますか？ (New. 2021/11) Share型とDedicated型で異なります。 Shared型ではモデルを選択することはできません。ExadataのSmartScanといったハードウェアのスペックに依存しないソフトウェアの機能による高速化がありますので、モデルを気にせずにお使いいただけます。それもメリットの一つです。 一方、筐体を専有してご利用いただくDedicated型の場合は、利用できるOCPU/ストレージの総量にも関係しますので、Exadata X7またはX8といったようにモデルをご選択いただくことが可能です。 Autonomous JSON Database(AJD) は ACID が保証されているのでしょうか？もしくは一般的なNo-SQL サービスと言う理解でしょうか？ (New. 2021/11) ACIDが保証されているサービスとなります。 良くMongoDBと比較されますが、Autonomous JSON DatabaseはOracle Databaseにドキュメントを格納するため、RDBMSの特徴をそのまま享受できる点がMongoDBと異なる最大の特徴となります。 詳細についてはこちらに記載がありますので、併せてご確認ください。 (APEX)ADB上のOracle REST Data Serviceで作成したAPIはどうやって認証するでしょうか? (New. 2021/11) OAuth2で認証する設定にしていただくことになります。こちらのドキュメントに認証に関する記載がありますので、ご一読くださいますようお願いいたします。 3.3 RESTfulサービスへのセキュアなアクセスの構成 3.3.5 チュートリアル: リソースの保護およびアクセス ページトップに戻る ■ 課金/ライセンス OCPU、ストレージの課金は時間単位でしょうか？(New. 2021/11) 価格表にはストレージはTB/月、CPUはOCPU数/時で記載されていますが、 実際はどちらも秒単位の請求となります。OCPU、ストレージ共に最低1分から秒単位での利用が可能です。 Auto Scaling 有効時の課金について教えてください (New. 2021/11) 分単位でCPU使用率を算出し、それを時間で平均したものが課金されます。少数点以下は切り上げとなります。例えば、ベースが4...","categories": ["FAQ","Services","Autonomous"],
+        "tags": ["FAQ"],
+        "url": "https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq/",
+        "teaser": null
+      },{
+        "title": "証明書サービス概要",
+        "excerpt":"Oracle Cloud Infrastructure 証明書サービス（OCI Certificates Service）は、証明書の発行、保管、管理機能を提供するサービスで、証明書を必要とするOCIリソースにシームレスに関連付けが可能となっています。   スライド             ","categories": ["Services","Security"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "https://oracle-japan.github.io/ocidocs/services/security/certificates/",
+        "teaser": "https://files.speakerdeck.com/presentations/38d1a11d7de04d6c9c57d5e838c29dae/slide_0.jpg"
       }]
