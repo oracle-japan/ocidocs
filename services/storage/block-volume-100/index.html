@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.21.0 by Michael Rose
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
   Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
@@ -64,10 +64,13 @@
 
 
 
+
 <!-- end _includes/seo.html -->
 
 
-<link href="/ocidocs/feed.xml" type="application/atom+xml" rel="alternate" title="Oracle Cloud Infrastructure 活用資料集 Feed">
+
+  <link href="/ocidocs/feed.xml" type="application/atom+xml" rel="alternate" title="Oracle Cloud Infrastructure 活用資料集 Feed">
+
 
 <!-- https://t.co/dKP3o1e -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -78,22 +81,8 @@
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="/ocidocs/assets/css/main.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
-
-<!--[if IE]>
-  <style>
-    /* old IE unsupported flexbox fixes */
-    .greedy-nav .site-title {
-      padding-right: 3em;
-    }
-    .greedy-nav button {
-      position: absolute;
-      top: 0;
-      right: 0;
-      height: 100%;
-    }
-  </style>
-<![endif]-->
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
 
 
 
@@ -107,7 +96,6 @@
 
   <body class="layout--single">
     <nav class="skip-links">
-  <h2 class="screen-reader-text">Skip links</h2>
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
     <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
@@ -126,7 +114,7 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         
-          <a class="site-logo" href="/ocidocs/"><img src="/ocidocs/assets/images/social-og-oracle-badge.jpg" alt=""></a>
+          <a class="site-logo" href="/ocidocs/"><img src="/ocidocs/assets/images/social-og-oracle-badge.jpg" alt="OCI活用資料集"></a>
         
         <a class="site-title" href="/ocidocs/">
           OCI活用資料集
@@ -152,9 +140,7 @@
         
         <button class="search__toggle" type="button">
           <span class="visually-hidden">Toggle search</span>
-          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
-            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
-          </svg>
+          <i class="fas fa-search"></i>
         </button>
         
         <button class="greedy-nav__toggle hidden" type="button">
@@ -200,6 +186,7 @@
       
       <span class="page__meta-date">
         <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
         <time datetime="2020-12-08T00:00:00+09:00">December 8, 2020</time>
       </span>
     
@@ -355,10 +342,7 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 目次</h4></header>
-              <ul class="toc__menu">
-  <li><a href="#スライド">スライド</a></li>
-  <li><a href="#動画-28分15秒">動画 ~28分15秒</a></li>
-</ul>
+              <ul class="toc__menu"><li><a href="#スライド">スライド</a></li><li><a href="#動画-28分15秒">動画 ~28分15秒</a></li></ul>
 
             </nav>
           </aside>
@@ -391,23 +375,15 @@
 
 
   
-  
-  
 
   <p class="page__taxonomy">
     <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> タグ: </strong>
     <span itemprop="keywords">
     
-      
-      
       <a href="/ocidocs/tags/#%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%89%E3%81%82%E3%82%8A" class="page__taxonomy-item" rel="tag">スライドあり</a><span class="sep">, </span>
     
-      
-      
       <a href="/ocidocs/tags/#%E3%83%AC%E3%83%99%E3%83%AB-%E5%85%A5%E9%96%80-100" class="page__taxonomy-item" rel="tag">レベル:入門(100)</a><span class="sep">, </span>
     
-      
-      
       <a href="/ocidocs/tags/#%E5%8B%95%E7%94%BB%E3%81%82%E3%82%8A" class="page__taxonomy-item" rel="tag">動画あり</a>
     
     </span>
@@ -420,19 +396,13 @@
 
 
   
-  
-  
 
   <p class="page__taxonomy">
     <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> カテゴリー: </strong>
     <span itemprop="keywords">
     
-      
-      
       <a href="/ocidocs/categories/#services" class="page__taxonomy-item" rel="tag">Services</a><span class="sep">, </span>
     
-      
-      
       <a href="/ocidocs/categories/#storage" class="page__taxonomy-item" rel="tag">Storage</a>
     
     </span>
@@ -440,6 +410,7 @@
 
 
         
+
   <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 更新日時:</strong> <time datetime="2020-12-08T00:00:00+09:00">December 8, 2020</time></p>
 
 
@@ -489,6 +460,47 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
+        <img src="https://speakerd.s3.amazonaws.com/presentations/cfc6c2cd296248a68f4878db4c82df3c/slide_0.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ocidocs/updates/update-FY22Q2/" rel="permalink">Oracle Cloud Infrastructure IaaS 新機能アップデート 2021/9～2021/11
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2021-12-09T00:00:00+09:00">December 9, 2021</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">2021年9月～2021年11月の3ヶ月分のOCI新機能についてのまとめ資料です
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
         <img src="https://files.speakerdeck.com/presentations/38d1a11d7de04d6c9c57d5e838c29dae/slide_0.jpg" alt="">
       </div>
     
@@ -505,6 +517,7 @@
       
       <span class="page__meta-date">
         <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
         <time datetime="2021-11-05T00:00:00+09:00">November 5, 2021</time>
       </span>
     
@@ -541,6 +554,7 @@
       
       <span class="page__meta-date">
         <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
         <time datetime="2021-11-01T00:00:00+09:00">November 1, 2021</time>
       </span>
     
@@ -581,6 +595,7 @@
       
       <span class="page__meta-date">
         <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
         <time datetime="2021-10-18T00:00:00+09:00">October 18, 2021</time>
       </span>
     
@@ -592,46 +607,6 @@
 
 
     <p class="archive__item-excerpt" itemprop="description">イベント・サービスの概要資料です
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src="https://cdn.app.compendium.com/uploads/user/e7c690e8-6ff9-102a-ac6d-e4aebca50425/36fb492f-3532-48e4-a057-f2b674a19de1/File/b5a9121425a0e376b622e07247bd054e/image_20201202094512173.png" alt="">
-      </div>
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="https://blogs.oracle.com/oracle4engineer/category/o4e-oci%E6%96%B0%E6%A9%9F%E8%83%BD%E3%83%8F%E3%82%A4%E3%83%A9%E3%82%A4%E3%83%88">Blog : Oracle Cloud Infrastructure 新機能ハイライト
-</a> <a href="/ocidocs/updates/updates-blog/" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-calendar-alt" aria-hidden="true"></i>
-        <time datetime="2021-10-08T00:00:00+09:00">October 8, 2021</time>
-      </span>
-    
-
-    
-
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">OCIの新機能・新リリースについてのまとめ情報を隔週で掲載しているOracle Cloud 公式ブログへの外部リンクです
 </p>
   </article>
 </div>
@@ -681,7 +656,9 @@
       
     
 
-    <li><a href="/ocidocs/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+      <li><a href="/ocidocs/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
   </ul>
 </div>
 
