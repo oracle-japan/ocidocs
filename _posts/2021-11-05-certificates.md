@@ -8,8 +8,7 @@ tags:
   - スライドあり
   - レベル:入門(100)
 header:
-  teaser: 
-https://files.speakerdeck.com/presentations/38d1a11d7de04d6c9c57d5e838c29dae/slide_0.jpg
+  teaser: https://files.speakerdeck.com/presentations/38d1a11d7de04d6c9c57d5e838c29dae/slide_0.jpg
 ---
 
 Oracle Cloud Infrastructure 証明書サービス（OCI Certificates Service）は、証明書の発行、保管、管理機能を提供するサービスで、証明書を必要とするOCIリソースにシームレスに関連付けが可能となっています。
