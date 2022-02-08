@@ -520,4 +520,10 @@ var store = [{
         "tags": ["スライドあり","動画あり"],
         "url": "/ocidocs/updates/update-FY22Q2/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/cfc6c2cd296248a68f4878db4c82df3c/slide_0.jpg"
+      },{
+        "title": "Oracle Cloud Infrastructure 技術概要",
+        "excerpt":"OCIの主にIaaS周りのサービスに特化した技術概要資料です。 OCIのアーキテクチャーの説明と、各コンポーネントについてなるべく短く網羅的にご紹介しています。   スライド           ","categories": ["Services","Overall"],
+        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
+        "url": "/ocidocs/services/overall/oracle-cloud-infrastructure-tech-overview/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/4e0d4cd1bfae4eeebb36faf522e5a279/slide_0.jpg"
       }]
