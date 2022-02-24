@@ -526,4 +526,10 @@ var store = [{
         "tags": ["スライドあり","動画あり","レベル:入門(100)"],
         "url": "/ocidocs/services/overall/oracle-cloud-infrastructure-tech-overview/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/4e0d4cd1bfae4eeebb36faf522e5a279/slide_0.jpg"
+      },{
+        "title": "ストレージの選び方 虎の巻",
+        "excerpt":"2022/02/22開催の、OCI スキルアップセミナー #16 「ストレージの選び方 虎の巻」の資料です。 セミナー情報: https://oracle-code-tokyo-dev.connpass.com/event/236134/   スライド           セミナー動画        ","categories": ["Services","Storage"],
+        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
+        "url": "/ocidocs/services/storage/storage-choice/",
+        "teaser": "https://files.speakerdeck.com/presentations/37459f6fd37d46bd85c2a040c7f3882d/slide_0.jpg"
       }]
