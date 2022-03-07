@@ -161,18 +161,6 @@ var store = [{
         "url": "/ocidocs/services/overall/service-lineup/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/df57e649bf8b4cf3a6035b324cc71ae4/slide_0.jpg"
       },{
-        "title": "IDおよびアクセス管理 (IAM) 概要",
-        "excerpt":"OCIの認証、認可、ID管理などを司るコア・コンポーネントである OCI IAM (Identity and Access Management) についての解説資料です。  認証とID管理、認可およびポリシー、コンパートメントとその管理、IDフェデレーション(IDCSとの連携)、タグ付け(Tagging) のトピックをカバーしています。   スライド           セミナー動画      ","categories": ["Services","Governance and Administration"],
-        "tags": ["スライドあり","レベル:入門(100)"],
-        "url": "/ocidocs/services/governance%20and%20administration/iam-100/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/de3056b3ba2b4f61b47e48f0fe15d480/slide_0.jpg"
-      },{
-        "title": "IDおよびアクセス管理 (IAM) 詳細",
-        "excerpt":"OCIの認証、認可、ID管理などを司るコア・コンポーネントである OCI IAM (Identity and Access Management) についての詳細解説資料です。  インスタンス・プリンシパルと動的グループ、多要素認証(MFA)、高度なポリシーの記述、フェデレーションの詳細、コンパートメント階層とポリシーの継承、コンパートメントの移動、IAMの設計リファレンスのトピックをカバーしています。   スライド          ","categories": ["Services","Governance and Administration"],
-        "tags": ["スライドあり","レベル:応用(200)"],
-        "url": "/ocidocs/services/governance%20and%20administration/iam-200/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/15a18e3567fb432ea74cd53e814dbfea/slide_0.jpg"
-      },{
         "title": "データ移行(データ転送サービスとストレージ・ゲートウェイ)",
         "excerpt":"オンプレミスからのデータ移行等で利用可能な、データ転送サービス、ストレージ・ゲートウェイなどについて解説しています。   スライド          ","categories": ["Services","Storage"],
         "tags": ["スライドあり","レベル:入門(100)"],
@@ -197,6 +185,12 @@ var store = [{
         "url": "/ocidocs/services/security/data-safe/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/df873ab4b2da4efa8a4b2879e7010925/slide_0.jpg"
       },{
+        "title": "Oracle Identity Cloud Service 機能概要",
+        "excerpt":"Oracle Identity Cloud Service の機能の概要をご紹介する資料です。   スライド          ","categories": ["Services","Governance and Administration"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/services/governance%20and%20administration/idcs/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/7e9aa719ea294cba989be5ecf15b0955/slide_0.jpg"
+      },{
         "title": "OCI Vault 機能概要と特徴",
         "excerpt":"ユーザーの暗号鍵・シークレットをセキュアに集中管理することができるOCI Vaultの機能概要と特徴について   スライド          ","categories": ["Services","Security"],
         "tags": ["スライドあり","レベル:入門(100)"],
@@ -220,12 +214,6 @@ var store = [{
         "tags": ["スライドあり","レベル:入門(100)"],
         "url": "/ocidocs/services/edge%20service/email-delivery-100/",
         "teaser": "https://files.speakerdeck.com/presentations/ee67829f073544f2a04c016a114501ac/slide_0.jpg"
-      },{
-        "title": "Web Application Firewall (WAF) 概要",
-        "excerpt":"Web Application Firewall (WAF) サービスは、OCI内外に配置されたWebアプリケーションを悪意のある攻撃から保護することができるマネージドサービスです。  OCI WAFを利用すると、既存のアプリケーションには手を入れることなく、プロキシとして利用する形でOWASP Top10やCRS3に準拠した保護ルールや、攻撃に応じてアダプティブな保護を行うBot管理機能を利用し、Webアプリケーションを高度に保護することができるようになります。  この資料では、OCI Web Application Firewallサービスについて、サービスの概観、特徴、利用方法などの基礎的な内容について解説しています。   スライド         ","categories": ["Services","Edge Service","Security"],
-        "tags": ["スライドあり","レベル:入門(100)"],
-        "url": "/ocidocs/services/edge%20service/security/waf-100/",
-        "teaser": "https://files.speakerdeck.com/presentations/67bc880ea70f4f389afe70db381961b2/slide_0.jpg"
       },{
         "title": "[コア技術]Oracle Database 機能概要",
         "excerpt":"紹介機能 ・Parallel Query ・Oracle Partitioning ・Advanced Compression ・Database In-Memory ・Diagnostic Pack &amp; Oracle Tuning Pack ・Recovery Manager ・Database Lifecycle Management Pack ・Multitenant ・Real Application Clusters ・Automatic Storage Management ・Data Guard &amp; Oracle Active Data Guard ・GoldenGate ・Advanced Security ・Database Vault ・Audit Vault and Database Firewall ・Real Application Testing ・Data Masking...","categories": ["Database"],
@@ -286,6 +274,12 @@ var store = [{
         "tags": ["スライドあり","レベル:応用(200)"],
         "url": "/ocidocs/solutions/high%20availability/high-availability/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/b707ab1f81c742cc87bf2e145ba2bd82/slide_0.jpg"
+      },{
+        "title": "OCI IAMとIDCSの違いとIDCSを利用するメリット",
+        "excerpt":"OCIの認証、認可、ID管理などを司るOCI IAM (Identity and Access Management) と Identity Cloud Service (IDCS) について、違いやIDCS利用のメリットについて解説した資料です   スライド          ","categories": ["Services","Governance and Administration"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "/ocidocs/services/governance%20and%20administration/iam-and-idcs/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/cbd4887040ff42fa925fe25b7181c6c1/slide_0.jpg"
       },{
         "title": "Autonomous Database で機械学習を始めよう(Auto ML)",
         "excerpt":"Autonomous Database標準機能の機械学習ツール AutoML UIを使って、オーストラリアの明日の降雨を予測します。この例を通して、機械学習入門者でも気軽にモデルを生成・デプロイまでできることをご体験頂けます。1ステップずつ一緒に進めていける構成にしておりますので、是非お試し下さい。   スライド          ","categories": ["Services","Database","Autonomous","Machine Learning"],
@@ -479,6 +473,12 @@ var store = [{
         "url": "/ocidocs/updates/update-FY22Q1/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/cfc6c2cd296248a68f4878db4c82df3c/slide_0.jpg"
       },{
+        "title": "OCIのインフラセキュリティとコンプライアンス対応、そしてISMAP",
+        "excerpt":"2021/9/28開催のOCIスキルアップセミナー #12の発表資料です。   OCIの様々なサービスを安全に提供するために、インフラには多大なセキュリティ対策が施されています。 その仕組みは一般的には公開されていませんが、各種ドキュメントやWebサイトを読み解くことにより、その実像が浮かび上がってきています。 この資料では、OCIインフラのセキュリティ対策を読み解くヒントとともに、OCIも登録したISMAPへの対応をご紹介します。   スライド           セミナー動画      ","categories": ["Services","Security"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/services/security/security-and-compliance/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/6f43aa858b3e41b79582df43f7ce2829/slide_0.jpg"
+      },{
         "title": "ファイル・ストレージ概要",
         "excerpt":"VCN内にエンド・ポイントを持つマネージドNFSサービスである、OCIファイル・ストレージ・サービスについて解説しています。  ファイル・ストレージ・サービスのユースケースの他、サービスを構成する基本的なコンポーネントと役割、インスタンスからのアクセス、セキュリティ、スナップショット機能についてカバーしています。   スライド           動画      ","categories": ["Services","Storage"],
         "tags": ["スライドあり","動画あり","レベル:入門(100)"],
@@ -503,6 +503,12 @@ var store = [{
         "url": "/ocidocs/services/developers/events-service/",
         "teaser": "https://files.speakerdeck.com/presentations/7f8bb60e28a5437ab6c40dd664de8b49/slide_0.jpg"
       },{
+        "title": "OCI運用監視入門",
+        "excerpt":"2021/10/26に実施したOCIスキルアップセミナー「OCI運用監視入門」にて投影した資料です。 OCIも提供開始から3年が経ち、システムの運用監視に関する様々なサービス群が充実してきました。特に、Observability &amp; Management Platform というサービス群は機能がどんどん拡張され、今では、システム監視、ログ監視、アプリケーションパフォーマンス監視、データベース監視など、OCI内外の様々なシステムを統合的に監視することができる便利なサービスへと成長しています。 資料中では、今年提供を開始した Application Performance Monitoring や Database Management のデモの他、OCIのMonitoring、Loggingといったサービスと連携する方法、エージェントを経由してOCI内外のシステムを監視する方法などについて解説します。   「OCIの運用監視って、サービスでどこまでできるの？」「使ってみたいけど、どのように使うの？」など、OCIの運用監視に関する知識を得たい方、ご興味がある方に向けた資料です。   スライド           セミナー動画      ","categories": ["Services","Governance and Administration"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/services/governance%20and%20administration/managing-oci-100/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/cd1d3c875f76482cae0862ea475cb562/slide_0.jpg"
+      },{
         "title": "Autonomous Database 技術FAQ",
         "excerpt":"■ サービス概要編 Autonomous DatabaseではExadataのモデルを選択できますか？ (New. 2021/11) Share型とDedicated型で異なります。 Shared型ではモデルを選択することはできません。ExadataのSmartScanといったハードウェアのスペックに依存しないソフトウェアの機能による高速化がありますので、モデルを気にせずにお使いいただけます。それもメリットの一つです。 一方、筐体を専有してご利用いただくDedicated型の場合は、利用できるOCPU/ストレージの総量にも関係しますので、Exadata X7またはX8といったようにモデルをご選択いただくことが可能です。 Autonomous JSON Database(AJD) は ACID が保証されているのでしょうか？もしくは一般的なNo-SQL サービスと言う理解でしょうか？ (New. 2021/11) ACIDが保証されているサービスとなります。 良くMongoDBと比較されますが、Autonomous JSON DatabaseはOracle Databaseにドキュメントを格納するため、RDBMSの特徴をそのまま享受できる点がMongoDBと異なる最大の特徴となります。 詳細についてはこちらに記載がありますので、併せてご確認ください。 (APEX)ADB上のOracle REST Data Serviceで作成したAPIはどうやって認証するでしょうか? (New. 2021/11) OAuth2で認証する設定にしていただくことになります。こちらのドキュメントに認証に関する記載がありますので、ご一読くださいますようお願いいたします。 3.3 RESTfulサービスへのセキュアなアクセスの構成 3.3.5 チュートリアル: リソースの保護およびアクセス ページトップに戻る ■ 課金/ライセンス OCPU、ストレージの課金は時間単位でしょうか？(New. 2021/11) 価格表にはストレージはTB/月、CPUはOCPU数/時で記載されていますが、 実際はどちらも秒単位の請求となります。OCPU、ストレージ共に最低1分から秒単位での利用が可能です。 Auto Scaling 有効時の課金について教えてください (New. 2021/11) 分単位でCPU使用率を算出し、それを時間で平均したものが課金されます。少数点以下は切り上げとなります。例えば、ベースが4...","categories": ["FAQ","Services","Autonomous"],
         "tags": ["FAQ"],
@@ -515,11 +521,53 @@ var store = [{
         "url": "/ocidocs/services/security/certificates/",
         "teaser": "https://files.speakerdeck.com/presentations/38d1a11d7de04d6c9c57d5e838c29dae/slide_0.jpg"
       },{
+        "title": "OCI WAFのログ分析",
+        "excerpt":"OCI WAFのログを分析するための環境構築手順についての説明資料です   スライド          ","categories": ["Services","Security","Edge Service"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/services/security/edge%20service/analyzing-waf-logs/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/65ec3ecf0ec54228a4529217f2f2eb79/slide_0.jpg"
+      },{
+        "title": "Vulnerability Scanning Service設定・操作ガイド",
+        "excerpt":"Vulnerability Scanning Service（VSS）に関する機能説明およびVSSの設定・操作に関するガイド付き。   スライド          ","categories": ["Services","Security"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/services/security/vulnerability-scanning/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/9e3dcba6d150423daa42bc6fa8d75361/slide_0.jpg"
+      },{
         "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2021/9～2021/11",
         "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介する資料です。  本資料は2021年9月～2021年11月の3ヶ月分の新機能について記載しています。   スライド          セミナー動画       ","categories": ["Updates"],
         "tags": ["スライドあり","動画あり"],
         "url": "/ocidocs/updates/update-FY22Q2/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/cfc6c2cd296248a68f4878db4c82df3c/slide_0.jpg"
+      },{
+        "title": "WAFv2設定手順",
+        "excerpt":"本資料ではOCI Load Balancerに直接アタッチする形のWAFの構成手順、および動作確認をご紹介いたします。 WAFポリシーにて、攻撃を検知・ブロックする保護ルールを有効化し、実際にアプリケーションを攻撃して動作を確認します。   スライド          ","categories": ["Services","Security","Edge Service"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/services/security/edge%20service/using-wafv2/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/1babeab2d66849cc9a216dbf8be3e6f0/slide_0.jpg"
+      },{
+        "title": "Oracle Cloud Observability and Management Platform ログ管理サービス",
+        "excerpt":"OCIの運用管理サービス・プラットフォームのログ管理サービスに関する詳細説明資料です   スライド          ","categories": ["Services","Governance and Administration"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/services/governance%20and%20administration/oandm-logging/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/25bcf1c9df424a47a480289b65f102e2/slide_0.jpg"
+      },{
+        "title": "Oracle Cloud Observability and Management Platform概要",
+        "excerpt":"OCIの運用管理サービスを全体像と各サービスの概要を説明した資料です   スライド          ","categories": ["Services","Governance and Administration"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/services/governance%20and%20administration/oandm-overview/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/dfd3aeb7e9bb46d49f139d58e8d6c627/slide_0.jpg"
+      },{
+        "title": "OCIの新認証基盤について知ろう",
+        "excerpt":"2022/1/25に実施したOracle Code Night 第15回スキルアップセミナー「OCIの新認証基盤について知ろう」の投影資料です。 2021年11月に、IDCSの機能を取り込んで、大幅に機能強化された「OCI IAM Identity Domains」がリリースされました。 この資料では、Identity Domains機能の概要、これまでのOCI IAMやIDCSからの変更点、新課金体系の説明などを説明しています。 セミナー動画にはデモなども含んでいます。   資料中には、セミナー中にいただきましたご質問への回答も記載しています。   ※ 現在OCI Identity Domains機能は、新規契約のアカウントのみが有効化されています。既存アカウントへの対応時期や、対応方法については未定で、現在整理中です。本セミナーでは、既存アカウントの以降については、わかる限りの情報をお伝えしますが、まだ詳細説明は難しい旨ご了承ください   スライド           セミナー動画       ","categories": ["Services","Governance and Administration"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "/ocidocs/services/governance%20and%20administration/identity-domains-overview/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/4288c22c8f1d411382695e4a7a0201ab/slide_0.jpg"
+      },{
+        "title": "Web Application Firewall (WAF)",
+        "excerpt":"Web Application Firewall (WAF) サービスは、OCI内外に配置されたWebアプリケーションを悪意のある攻撃から保護することができるマネージドサービスです。  OCI WAFを利用すると、既存のアプリケーションには手を入れることなく、プロキシとして利用する形でOWASP Top10やCRS3に準拠した保護ルールや、攻撃に応じてアダプティブな保護を行うBot管理機能を利用し、Webアプリケーションを高度に保護することができるようになります。  この資料では、OCI Web Application Firewallサービスについて、サービスの概観、特徴、利用方法などの基礎的な内容について解説しています。   スライド        ","categories": ["Services","Edge Service","Security"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/services/edge%20service/security/waf-100/",
+        "teaser": "https://files.speakerdeck.com/presentations/7288ee26528b4ebe89eeae40493ae4e1/slide_0.jpg"
       },{
         "title": "Oracle Cloud Infrastructure 技術概要",
         "excerpt":"OCIの主にIaaS周りのサービスに特化した技術概要資料です。 OCIのアーキテクチャーの説明と、各コンポーネントについてなるべく短く網羅的にご紹介しています。   スライド           ","categories": ["Services","Overall"],
@@ -532,4 +580,16 @@ var store = [{
         "tags": ["スライドあり","動画あり","レベル:入門(100)"],
         "url": "/ocidocs/services/storage/storage-choice/",
         "teaser": "https://files.speakerdeck.com/presentations/37459f6fd37d46bd85c2a040c7f3882d/slide_0.jpg"
+      },{
+        "title": "IDおよびアクセス管理 (IAM) 概要",
+        "excerpt":"OCIの認証、認可、ID管理などを司るコア・コンポーネントである OCI IAM (Identity and Access Management) についての解説資料です。  認証とID管理、認可およびポリシー、コンパートメントとその管理、IDフェデレーション(IDCSとの連携)、タグ付け(Tagging) のトピックをカバーしています。   スライド           セミナー動画      ","categories": ["Services","Governance and Administration"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/services/governance%20and%20administration/iam-100/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/de3056b3ba2b4f61b47e48f0fe15d480/slide_0.jpg"
+      },{
+        "title": "IDおよびアクセス管理 (IAM) 詳細",
+        "excerpt":"OCIの認証、認可、ID管理などを司るコア・コンポーネントである OCI IAM (Identity and Access Management) についての詳細解説資料です。  インスタンス・プリンシパルと動的グループ、多要素認証(MFA)、高度なポリシーの記述、フェデレーションの詳細、コンパートメント階層とポリシーの継承、コンパートメントの移動、IAMの設計リファレンスのトピックをカバーしています。   スライド          ","categories": ["Services","Governance and Administration"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "/ocidocs/services/governance%20and%20administration/iam-200/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/15a18e3567fb432ea74cd53e814dbfea/slide_0.jpg"
       }]
