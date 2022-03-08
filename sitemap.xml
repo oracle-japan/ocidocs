@@ -397,6 +397,14 @@
 <lastmod>2022-03-04T00:00:00+09:00</lastmod>
 </url>
 <url>
+<loc>https://oracle-japan.github.io/ocidocs/updates/update-FY22Q3/</loc>
+<lastmod>2022-03-07T00:00:00+09:00</lastmod>
+</url>
+<url>
+<loc>https://oracle-japan.github.io/ocidocs/updates/updates-blog/</loc>
+<lastmod>2022-03-07T00:00:00+09:00</lastmod>
+</url>
+<url>
 <loc>https://oracle-japan.github.io/ocidocs/about/</loc>
 </url>
 <url>
@@ -539,5 +547,8 @@
 </url>
 <url>
 <loc>https://oracle-japan.github.io/ocidocs/page20/</loc>
+</url>
+<url>
+<loc>https://oracle-japan.github.io/ocidocs/page21/</loc>
 </url>
 </urlset>

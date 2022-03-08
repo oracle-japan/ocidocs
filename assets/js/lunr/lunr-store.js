@@ -592,4 +592,16 @@ var store = [{
         "tags": ["スライドあり","レベル:応用(200)"],
         "url": "/ocidocs/services/governance%20and%20administration/iam-200/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/15a18e3567fb432ea74cd53e814dbfea/slide_0.jpg"
+      },{
+        "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2021/12～2022/2",
+        "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介する資料です。  本資料は2021年12月～2022年2月の3ヶ月分の新機能について記載しています。   スライド         セミナー動画       ","categories": ["Updates"],
+        "tags": ["スライドあり","動画あり"],
+        "url": "/ocidocs/updates/update-FY22Q3/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/cfc6c2cd296248a68f4878db4c82df3c/slide_0.jpg"
+      },{
+        "title": "Blog : Oracle Cloud Infrastructure 新機能ハイライト",
+        "excerpt":" ","categories": ["Updates"],
+        "tags": [],
+        "url": "/ocidocs/updates/updates-blog/",
+        "teaser": "https://cdn.app.compendium.com/uploads/user/e7c690e8-6ff9-102a-ac6d-e4aebca50425/36fb492f-3532-48e4-a057-f2b674a19de1/File/b5a9121425a0e376b622e07247bd054e/image_20201202094512173.png"
       }]
