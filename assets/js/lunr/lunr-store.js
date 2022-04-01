@@ -324,7 +324,7 @@ var store = [{
         "teaser": "https://image.slidesharecdn.com/loggingoverview-210528044044/95/oci-logging-1-1024.jpg?cb=1622176898"
       },{
         "title": "Oracle NoSQL Database Cloud Service概要",
-        "excerpt":"OCIのマネージドNoSQLサービスであるOracle NoSQLサービスの概要資料です。   スライド                ","categories": ["Services","Database"],
+        "excerpt":"OCIのマネージドNoSQLサービスであるOracle NoSQLサービスの概要資料です。   スライド          ","categories": ["Services","Database"],
         "tags": ["スライドあり","レベル:入門(100)"],
         "url": "/ocidocs/services/database/nosql-overview/",
         "teaser": "https://image.slidesharecdn.com/nosqloverview-210528044509/95/oracle-nosql-database-cloud-service-1-1024.jpg?cb=1622177148"
