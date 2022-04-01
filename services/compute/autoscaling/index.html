@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>自動スケーリング機能をさわってみよう | Oracle Cloud Infrastructure 活用資料集</title>
-<meta name="description" content="OCIの自動スケーリング機能と、それを支えるコンポーネント(インスタンス構成、インスタンス・プール、自動スケーリング構成)を実際に触って動作を理解します">
+<!-- begin _includes/seo.html --><title>自動スケーリング概要 | Oracle Cloud Infrastructure 活用資料集</title>
+<meta name="description" content="OCIの自動スケーリング機能と、それを支えるコンポーネント(インスタンス構成、インスタンス・プール、自動スケーリング構成)について解説しています">
 
 
   <meta name="author" content="Oracle Japan Solution Engineers">
@@ -22,11 +22,11 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:site_name" content="Oracle Cloud Infrastructure 活用資料集">
-<meta property="og:title" content="自動スケーリング機能をさわってみよう">
+<meta property="og:title" content="自動スケーリング概要">
 <meta property="og:url" content="https://oracle-japan.github.io/ocidocs/services/compute/autoscaling/">
 
 
-  <meta property="og:description" content="OCIの自動スケーリング機能と、それを支えるコンポーネント(インスタンス構成、インスタンス・プール、自動スケーリング構成)を実際に触って動作を理解します">
+  <meta property="og:description" content="OCIの自動スケーリング機能と、それを支えるコンポーネント(インスタンス構成、インスタンス・プール、自動スケーリング構成)について解説しています">
 
 
 
@@ -36,7 +36,7 @@
 
 
 
-  <meta property="article:published_time" content="2019-09-04T00:00:00+09:00">
+  <meta property="article:published_time" content="2022-04-01T00:00:00+09:00">
 
 
 
@@ -171,12 +171,12 @@
     <div class="wrapper">
       <h1 id="page-title" class="page__title" itemprop="headline">
         
-          自動スケーリング機能をさわってみよう
+          自動スケーリング概要
 
         
       </h1>
       
-        <p class="page__lead">OCIの自動スケーリング機能と、それを支えるコンポーネント(インスタンス構成、インスタンス・プール、自動スケーリング構成)を実際に触って動作を理解します
+        <p class="page__lead">OCIの自動スケーリング機能と、それを支えるコンポーネント(インスタンス構成、インスタンス・プール、自動スケーリング構成)について解説しています
 </p>
       
       
@@ -187,7 +187,7 @@
       <span class="page__meta-date">
         <i class="far fa-calendar-alt" aria-hidden="true"></i>
         
-        <time datetime="2019-09-04T00:00:00+09:00">September 4, 2019</time>
+        <time datetime="2022-04-01T00:00:00+09:00">April 1, 2022</time>
       </span>
     
 
@@ -329,9 +329,9 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="自動スケーリング機能をさわってみよう">
-    <meta itemprop="description" content="OCIの自動スケーリング機能と、それを支えるコンポーネント(インスタンス構成、インスタンス・プール、自動スケーリング構成)を実際に触って動作を理解します">
-    <meta itemprop="datePublished" content="2019-09-04T00:00:00+09:00">
+    <meta itemprop="headline" content="自動スケーリング概要">
+    <meta itemprop="description" content="OCIの自動スケーリング機能と、それを支えるコンポーネント(インスタンス構成、インスタンス・プール、自動スケーリング構成)について解説しています">
+    <meta itemprop="datePublished" content="2022-04-01T00:00:00+09:00">
     
 
     <div class="page__inner-wrap">
@@ -347,15 +347,15 @@
             </nav>
           </aside>
         
-        <p>自動スケーリング機能 (Auto Scaling) の解説資料です。2019年8月27日のOCIスキルアップセミナーで使用しました。<br />
-OCIの自動スケーリング機能と、それを支えるコンポーネント(インスタンス構成、インスタンス・プール、自動スケーリング構成)を実際に触って動作を理解します。</p>
+        <p>自動スケーリング機能 (Auto Scaling) の概要資料です。OCIの自動スケーリング機能と、それを支えるコンポーネント(インスタンス構成、インスタンス・プール、自動スケーリング構成)について解説しています。</p>
 
 <h4 id="スライド">スライド</h4>
 
 <div style="max-width:768px">
-
 <!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-<script async="" class="speakerdeck-embed" data-id="3277a22d639b4857b185569a6181278c" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+<script async="" class="speakerdeck-embed" data-id="4385d06e60e14edf8b5432b19bc08924" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
 <!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
 
 </div>
@@ -376,6 +376,8 @@ OCIの自動スケーリング機能と、それを支えるコンポーネン�
     <span itemprop="keywords">
     
       <a href="/ocidocs/tags/#%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%89%E3%81%82%E3%82%8A" class="page__taxonomy-item" rel="tag">スライドあり</a><span class="sep">, </span>
+    
+      <a href="/ocidocs/tags/#%E3%83%AC%E3%83%99%E3%83%AB-%E5%85%A5%E9%96%80-100" class="page__taxonomy-item" rel="tag">レベル:入門(100)</a><span class="sep">, </span>
     
       <a href="/ocidocs/tags/#%E3%83%AC%E3%83%99%E3%83%AB-%E5%BF%9C%E7%94%A8-200" class="page__taxonomy-item" rel="tag">レベル:応用(200)</a>
     
@@ -404,7 +406,7 @@ OCIの自動スケーリング機能と、それを支えるコンポーネン�
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 更新日時:</strong> <time datetime="2019-09-04T00:00:00+09:00">September 4, 2019</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 更新日時:</strong> <time datetime="2022-04-01T00:00:00+09:00">April 1, 2022</time></p>
 
 
       </footer>
@@ -414,7 +416,7 @@ OCIの自動スケーリング機能と、それを支えるコンポーネン�
     <h4 class="page__share-title">共有</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=%E8%87%AA%E5%8B%95%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%B0%E6%A9%9F%E8%83%BD%E3%82%92%E3%81%95%E3%82%8F%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86%20https%3A%2F%2Foracle-japan.github.io%2Focidocs%2Fservices%2Fcompute%2Fautoscaling%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="共有 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=%E8%87%AA%E5%8B%95%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%B0%E6%A6%82%E8%A6%81%20https%3A%2F%2Foracle-japan.github.io%2Focidocs%2Fservices%2Fcompute%2Fautoscaling%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="共有 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
   <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Foracle-japan.github.io%2Focidocs%2Fservices%2Fcompute%2Fautoscaling%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="共有 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
@@ -425,11 +427,11 @@ OCIの自動スケーリング機能と、それを支えるコンポーネン�
       
   <nav class="pagination">
     
-      <a href="#" class="pagination--pager disabled">前へ</a>
+      <a href="/ocidocs/faq/services/autonomous/autonomous-database-faq/" class="pagination--pager" title="Autonomous Database 技術FAQ
+">前へ</a>
     
     
-      <a href="/ocidocs/services/devtool/ocicli/" class="pagination--pager" title="OCI CLI を使い倒す
-">次へ</a>
+      <a href="#" class="pagination--pager disabled">次へ</a>
     
   </nav>
 

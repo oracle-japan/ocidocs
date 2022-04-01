@@ -610,4 +610,10 @@ var store = [{
         "tags": ["FAQ"],
         "url": "/ocidocs/faq/services/autonomous/autonomous-database-faq/",
         "teaser": null
+      },{
+        "title": "自動スケーリング概要",
+        "excerpt":"自動スケーリング機能 (Auto Scaling) の概要資料です。OCIの自動スケーリング機能と、それを支えるコンポーネント(インスタンス構成、インスタンス・プール、自動スケーリング構成)について解説しています。   スライド           ","categories": ["Services","Compute"],
+        "tags": ["スライドあり","レベル:入門(100)","レベル:応用(200)"],
+        "url": "/ocidocs/services/compute/autoscaling/",
+        "teaser": "https://files.speakerdeck.com/presentations/4385d06e60e14edf8b5432b19bc08924/slide_0.jpg"
       }]
