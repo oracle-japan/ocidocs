@@ -616,4 +616,16 @@ var store = [{
         "tags": ["スライドあり","レベル:入門(100)","レベル:応用(200)"],
         "url": "/ocidocs/services/compute/autoscaling/",
         "teaser": "https://files.speakerdeck.com/presentations/4385d06e60e14edf8b5432b19bc08924/slide_0.jpg"
+      },{
+        "title": "組織管理(Organization Management)概要",
+        "excerpt":"OCIの技術説明資料 組織管理 (Organization Management) の概要資料です。 複数のテナンシの請求やコスト管理を一元化できる機能である「組織管理」に関して解説しています。   スライド           ","categories": ["Services","Governance and Administration"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "/ocidocs/services/governance%20and%20administration/organization/",
+        "teaser": "https://files.speakerdeck.com/presentations/a7d1e15509464d9daefa9609a01c6d6c/slide_0.jpg"
+      },{
+        "title": "動的ルーティング・ゲートウェイ (DRG) 概要",
+        "excerpt":"OCIの技術説明資料 動的ルーティング・ゲートウェイ (DRG) の概要資料です。 Oracle Cloud Infrastructure リージョンにおいて、ネットワーク間の接続機能を提供するDRGについて解説しています。   スライド          ","categories": ["Services","Networking"],
+        "tags": ["スライドあり","レベル:入門(100)","レベル:応用(200)"],
+        "url": "/ocidocs/services/networking/dynamic-routing-gateway/",
+        "teaser": "https://files.speakerdeck.com/presentations/bf0484aa9989433a8df32b2aa8d9ea32/slide_0.jpg"
       }]

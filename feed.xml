@@ -1,4 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2022-04-01T16:29:34+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">自動スケーリング概要</title><link href="https://oracle-japan.github.io/ocidocs/services/compute/autoscaling/" rel="alternate" type="text/html" title="自動スケーリング概要" /><published>2022-04-01T00:00:00+09:00</published><updated>2022-04-01T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/compute/autoscaling</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/compute/autoscaling/"><![CDATA[<p>自動スケーリング機能 (Auto Scaling) の概要資料です。OCIの自動スケーリング機能と、それを支えるコンポーネント(インスタンス構成、インスタンス・プール、自動スケーリング構成)について解説しています。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2022-05-24T15:11:17+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">動的ルーティング・ゲートウェイ (DRG) 概要</title><link href="https://oracle-japan.github.io/ocidocs/services/networking/dynamic-routing-gateway/" rel="alternate" type="text/html" title="動的ルーティング・ゲートウェイ (DRG) 概要" /><published>2022-05-23T00:00:00+09:00</published><updated>2022-05-23T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/networking/dynamic-routing-gateway</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/networking/dynamic-routing-gateway/"><![CDATA[<p>OCIの技術説明資料 動的ルーティング・ゲートウェイ (DRG) の概要資料です。
+Oracle Cloud Infrastructure リージョンにおいて、ネットワーク間の接続機能を提供するDRGについて解説しています。</p>
+
+<h4 id="スライド">スライド</h4>
+
+<div style="max-width:768px">
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
+<script async="" class="speakerdeck-embed" data-id="bf0484aa9989433a8df32b2aa8d9ea32" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
+
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Networking" /><category term="スライドあり" /><category term="レベル:入門(100)" /><category term="レベル:応用(200)" /><summary type="html"><![CDATA[OCIのリージョンにおいて、ネットワーク間の接続機能を提供するDRGについて解説しています。]]></summary></entry><entry><title type="html">組織管理(Organization Management)概要</title><link href="https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/organization/" rel="alternate" type="text/html" title="組織管理(Organization Management)概要" /><published>2022-04-19T00:00:00+09:00</published><updated>2022-04-19T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/organization</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/organization/"><![CDATA[<p>OCIの技術説明資料 組織管理 (Organization Management) の概要資料です。
+複数のテナンシの請求やコスト管理を一元化できる機能である「組織管理」に関して解説しています。</p>
+
+<h4 id="スライド">スライド</h4>
+
+<div style="max-width:768px">
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
+
+<script async="" class="speakerdeck-embed" data-id="a7d1e15509464d9daefa9609a01c6d6c" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
+
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Governance and Administration" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html"><![CDATA[複数のテナンシの請求やコスト管理を一元化できる機能である「組織管理」に関して解説しています。]]></summary></entry><entry><title type="html">自動スケーリング概要</title><link href="https://oracle-japan.github.io/ocidocs/services/compute/autoscaling/" rel="alternate" type="text/html" title="自動スケーリング概要" /><published>2022-04-01T00:00:00+09:00</published><updated>2022-04-01T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/compute/autoscaling</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/compute/autoscaling/"><![CDATA[<p>自動スケーリング機能 (Auto Scaling) の概要資料です。OCIの自動スケーリング機能と、それを支えるコンポーネント(インスタンス構成、インスタンス・プール、自動スケーリング構成)について解説しています。</p>
 
 <h4 id="スライド">スライド</h4>
 
@@ -958,37 +981,4 @@ OCIのアーキテクチャーの説明と、各コンポーネントについ�
 <script async="" class="speakerdeck-embed" data-id="4e0d4cd1bfae4eeebb36faf522e5a279" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 <!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
 
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Overall" /><category term="スライドあり" /><category term="動画あり" /><category term="レベル:入門(100)" /><summary type="html"><![CDATA[OCIの主にIaaS周りのサービスに特化した技術概要資料です。OCIのアーキテクチャーの説明と、主なサービスについてなるべく短く網羅的にご紹介しています。"]]></summary></entry><entry><title type="html">Web Application Firewall (WAF)</title><link href="https://oracle-japan.github.io/ocidocs/services/edge%20service/security/waf-100/" rel="alternate" type="text/html" title="Web Application Firewall (WAF)" /><published>2022-01-28T00:00:00+09:00</published><updated>2022-01-28T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/edge%20service/security/waf-100</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/edge%20service/security/waf-100/"><![CDATA[<p>Web Application Firewall (WAF) サービスは、OCI内外に配置されたWebアプリケーションを悪意のある攻撃から保護することができるマネージドサービスです。<br />
-OCI WAFを利用すると、既存のアプリケーションには手を入れることなく、プロキシとして利用する形でOWASP Top10やCRS3に準拠した保護ルールや、攻撃に応じてアダプティブな保護を行うBot管理機能を利用し、Webアプリケーションを高度に保護することができるようになります。<br />
-この資料では、OCI Web Application Firewallサービスについて、サービスの概観、特徴、利用方法などの基礎的な内容について解説しています。</p>
-
-<h4 id="スライド">スライド</h4>
-
-<div style="max-width:768px">
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-
-<script async="" class="speakerdeck-embed" data-id="7288ee26528b4ebe89eeae40493ae4e1" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Edge Service" /><category term="Security" /><category term="スライドあり" /><category term="レベル:入門(100)" /><summary type="html"><![CDATA[OCI内外に配置されたWebアプリケーションを悪意のある攻撃から保護することができるOCI Web Application Firewallサービスについて、概観、特徴、利用方法などの基礎的な内容について解説しています]]></summary></entry><entry><title type="html">OCIの新認証基盤について知ろう</title><link href="https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/identity-domains-overview/" rel="alternate" type="text/html" title="OCIの新認証基盤について知ろう" /><published>2022-01-26T00:00:00+09:00</published><updated>2022-01-26T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/identity-domains-overview</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/identity-domains-overview/"><![CDATA[<p>2022/1/25に実施したOracle Code Night 第15回スキルアップセミナー「OCIの新認証基盤について知ろう」の投影資料です。
-2021年11月に、IDCSの機能を取り込んで、大幅に機能強化された「OCI IAM Identity Domains」がリリースされました。
-この資料では、Identity Domains機能の概要、これまでのOCI IAMやIDCSからの変更点、新課金体系の説明などを説明しています。
-セミナー動画にはデモなども含んでいます。</p>
-
-<p>資料中には、セミナー中にいただきましたご質問への回答も記載しています。</p>
-
-<p>※ 現在OCI Identity Domains機能は、新規契約のアカウントのみが有効化されています。既存アカウントへの対応時期や、対応方法については未定で、現在整理中です。本セミナーでは、既存アカウントの以降については、わかる限りの情報をお伝えしますが、まだ詳細説明は難しい旨ご了承ください</p>
-
-<h4 id="スライド">スライド</h4>
-
-<div style="max-width:768px">
-
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-<script async="" class="speakerdeck-embed" data-id="4288c22c8f1d411382695e4a7a0201ab" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
-
-</div>
-
-<h4 id="セミナー動画">セミナー動画</h4>
-
-<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください -->
-<iframe width="768" height="432" src="https://www.youtube.com/embed/gedKjkrULxM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) -->]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Governance and Administration" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html"><![CDATA[2021年11月に、IDCSの機能を取り込んで、大幅に機能強化されたIdentity Domains機能の概要、これまでのOCI IAMやIDCSからの変更点、新課金体系の説明]]></summary></entry></feed>
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Overall" /><category term="スライドあり" /><category term="動画あり" /><category term="レベル:入門(100)" /><summary type="html"><![CDATA[OCIの主にIaaS周りのサービスに特化した技術概要資料です。OCIのアーキテクチャーの説明と、主なサービスについてなるべく短く網羅的にご紹介しています。"]]></summary></entry></feed>
