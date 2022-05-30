@@ -4,7 +4,6 @@ excerpt: "Autonomous Database に関して、利用時のよくある質問に�
 layout: faq
 categories:
   - FAQ
-  - Services
   - Autonomous
 tags:
   - FAQ
