@@ -509,12 +509,6 @@ var store = [{
         "url": "/ocidocs/services/governance%20and%20administration/managing-oci-100/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/cd1d3c875f76482cae0862ea475cb562/slide_0.jpg"
       },{
-        "title": "Autonomous Database 技術FAQ",
-        "excerpt":"■ サービス概要編 Autonomous DatabaseではExadataのモデルを選択できますか？ (New. 2021/11) Share型とDedicated型で異なります。 Shared型ではモデルを選択することはできません。ExadataのSmartScanといったハードウェアのスペックに依存しないソフトウェアの機能による高速化がありますので、モデルを気にせずにお使いいただけます。それもメリットの一つです。 一方、筐体を専有してご利用いただくDedicated型の場合は、利用できるOCPU/ストレージの総量にも関係しますので、Exadata X7またはX8といったようにモデルをご選択いただくことが可能です。 Autonomous JSON Database(AJD) は ACID が保証されているのでしょうか？もしくは一般的なNo-SQL サービスと言う理解でしょうか？ (New. 2021/11) ACIDが保証されているサービスとなります。 良くMongoDBと比較されますが、Autonomous JSON DatabaseはOracle Databaseにドキュメントを格納するため、RDBMSの特徴をそのまま享受できる点がMongoDBと異なる最大の特徴となります。 詳細についてはこちらに記載がありますので、併せてご確認ください。 (APEX)ADB上のOracle REST Data Serviceで作成したAPIはどうやって認証するでしょうか? (New. 2021/11) OAuth2で認証する設定にしていただくことになります。こちらのドキュメントに認証に関する記載がありますので、ご一読くださいますようお願いいたします。 3.3 RESTfulサービスへのセキュアなアクセスの構成 3.3.5 チュートリアル: リソースの保護およびアクセス ページトップに戻る ■ 課金/ライセンス OCPU、ストレージの課金は時間単位でしょうか？(New. 2021/11) 価格表にはストレージはTB/月、CPUはOCPU数/時で記載されていますが、 実際はどちらも秒単位の請求となります。OCPU、ストレージ共に最低1分から秒単位での利用が可能です。 Auto Scaling 有効時の課金について教えてください (New. 2021/11) 分単位でCPU使用率を算出し、それを時間で平均したものが課金されます。少数点以下は切り上げとなります。例えば、ベースが4...","categories": ["FAQ","Services","Autonomous"],
-        "tags": ["FAQ"],
-        "url": "/ocidocs/faq/services/autonomous/autonomous-database-faq/",
-        "teaser": null
-      },{
         "title": "証明書サービス概要",
         "excerpt":"Oracle Cloud Infrastructure 証明書サービス（OCI Certificates Service）は、証明書の発行、保管、管理機能を提供するサービスで、証明書を必要とするOCIリソースにシームレスに関連付けが可能となっています。   スライド             ","categories": ["Services","Security"],
         "tags": ["スライドあり","レベル:入門(100)"],
@@ -604,12 +598,6 @@ var store = [{
         "tags": [],
         "url": "/ocidocs/updates/updates-blog/",
         "teaser": "https://cdn.app.compendium.com/uploads/user/e7c690e8-6ff9-102a-ac6d-e4aebca50425/36fb492f-3532-48e4-a057-f2b674a19de1/File/b5a9121425a0e376b622e07247bd054e/image_20201202094512173.png"
-      },{
-        "title": "Autonomous Database 技術FAQ",
-        "excerpt":"■ サービス概要編 Autonomous DatabaseではExadataのモデルを選択できますか？ Share型とDedicated型で異なります。 Shared型ではモデルを選択することはできません。ExadataのSmartScanといったハードウェアのスペックに依存しないソフトウェアの機能による高速化がありますので、モデルを気にせずにお使いいただけます。それもメリットの一つです。 一方、筐体を専有してご利用いただくDedicated型の場合は、利用できるOCPU/ストレージの総量にも関係しますので、Exadata X7またはX8といったようにモデルをご選択いただくことが可能です。 Autonomous JSON Database(AJD) は ACID が保証されているのでしょうか？もしくは一般的なNo-SQL サービスと言う理解でしょうか？ ACIDが保証されているサービスとなります。 良くMongoDBと比較されますが、Autonomous JSON DatabaseはOracle Databaseにドキュメントを格納するため、RDBMSの特徴をそのまま享受できる点がMongoDBと異なる最大の特徴となります。 詳細についてはこちらに記載がありますので、併せてご確認ください。 (APEX)ADB上のOracle REST Data Serviceで作成したAPIはどうやって認証するでしょうか? OAuth2で認証する設定にしていただくことになります。こちらのドキュメントに認証に関する記載がありますので、ご一読くださいますようお願いいたします。 3.3 RESTfulサービスへのセキュアなアクセスの構成 3.3.5 チュートリアル: リソースの保護およびアクセス Autonomous JSON Database(AJD)からAutonomous Transaction Processing(ATP)への変更はできますか？ (New. 2022/02) はい、できます。ATPからAJDへの変更は不可、またADWへの変更は不可です。 同様にAPEX Application Development(APEX)からATPへの変更は可能ですが、ATPからAPEXへの変更は不可、またADWへの変更も不可です。 ページトップに戻る ■ 課金/ライセンス OCPU、ストレージの課金は時間単位でしょうか？ 価格表にはストレージはTB/月、CPUはOCPU数/時で記載されていますが、 実際はどちらも秒単位の請求となります。OCPU、ストレージ共に最低1分から秒単位での利用が可能です。 Auto Scaling...","categories": ["FAQ","Services","Autonomous"],
-        "tags": ["FAQ"],
-        "url": "/ocidocs/faq/services/autonomous/autonomous-database-faq/",
-        "teaser": null
       },{
         "title": "自動スケーリング概要",
         "excerpt":"自動スケーリング機能 (Auto Scaling) の概要資料です。OCIの自動スケーリング機能と、それを支えるコンポーネント(インスタンス構成、インスタンス・プール、自動スケーリング構成)について解説しています。   スライド           ","categories": ["Services","Compute"],
