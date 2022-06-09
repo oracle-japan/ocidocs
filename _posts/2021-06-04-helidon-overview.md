@@ -8,7 +8,8 @@ tags:
   - スライドあり
   - レベル:入門(100)
 header:
-  teaser: https://image.slidesharecdn.com/helidonoverview-210528043903/95/helidon-1-1024.jpg?cb=1622178274
+  teaser: https://files.speakerdeck.com/presentations/5951ff01cd7f49ac85a7b23dca93c251/slide_0.jpg?21587148
+date: "2022-05-31"
 ---
 
 Oracleが提供するマイクロサービスフレームワークであるHelidonの概要資料です。
@@ -18,7 +19,7 @@ Oracleが提供するマイクロサービスフレームワークであるHelid
 <div style="max-width:768px">
 
 <!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/JjLQhj7TPOS9Hf" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/oracle4engineer/helidon" title="Helidon 概要" target="_blank"></a> </strong></div>
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/5951ff01cd7f49ac85a7b23dca93c251" title="Helidon 概要 / Helidon overview" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 <!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
 
 </div>

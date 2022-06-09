@@ -8,7 +8,8 @@ tags:
   - スライドあり
   - レベル:入門(100)
 header:
-  teaser: https://image.slidesharecdn.com/nosqloverview-210528044509/95/oracle-nosql-database-cloud-service-1-1024.jpg?cb=1622177148
+  teaser: https://files.speakerdeck.com/presentations/6c4683aec57244629f89150375991e20/slide_0.jpg?21587086
+date: "2022-05-31"
 ---
 
 OCIのマネージドNoSQLサービスであるOracle NoSQLサービスの概要資料です。

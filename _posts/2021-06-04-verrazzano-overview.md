@@ -8,7 +8,8 @@ tags:
   - スライドあり
   - レベル:入門(100)
 header:
-  teaser: https://image.slidesharecdn.com/verrazzanooverview-210528044558/95/verrazzano-1-1024.jpg?cb=1622177303
+  teaser: https://files.speakerdeck.com/presentations/299bc2819097435cbb2ed6947b9d59de/slide_0.jpg?21587176
+date: "2022-05-31"
 ---
 
 Oracleが提供するマルチ/ハイブリッド対応のマルチKubernetesクラスタ管理プラットフォームであるVerrazzanoの概要資料です。
@@ -18,7 +19,7 @@ Oracleが提供するマルチ/ハイブリッド対応のマルチKubernetesク
 <div style="max-width:768px">
 
 <!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/414KB2K1OzJsbd" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/oracle4engineer/verrazzano" title="Verrazzanoご紹介" target="_blank"></a> </strong></div>
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/299bc2819097435cbb2ed6947b9d59de" title="Verrazzano 概要 / Verrazzano overview" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 <!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
 
 </div>
