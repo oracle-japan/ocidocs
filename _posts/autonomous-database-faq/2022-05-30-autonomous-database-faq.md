@@ -224,7 +224,7 @@ TAG列の先頭の値でバックアップタイプが判断できます。
 
 ## 自動バックアップからのリストア時間はどれくらいでしょうか？
 
-データ量、更新量に依存するため目安となる値はございません。
+データ量、更新量に依存するため変動する可能性はありますが、サービスレベル目標については[こちら](https://docs.oracle.com/en-us/iaas/autonomous-database-shared/doc/availability-slo.html)を参照ください。
 
 <br/>
 
@@ -346,7 +346,7 @@ Autonomous Databaseではデータファイル（表領域）やバックアッ�
 
 ## Autonomous Databaseの表領域暗号化のアルゴリズムは何を利用していますか? 
 
-2022/02時点でAES-256で暗号化されております。
+2022/05時点でAES-256で暗号化されております。
 V$ENCRYPTED_TABLESPACESビューを参照いただくことで確認可能です。
 
 ```sql
@@ -492,7 +492,7 @@ Runaway Queryの管理で、SQLの実行時間やIO量の上限を設定する�
 <br />
 
 ## データファイルのサイズ変更（リサイズ）や最大サイズの変更を行うことはできますか？
-はい、できます。DBFS_DATA表領域以外の表領域のデータファイルに対してリサイズと最大サイズの変更が許可されています。
+はい、できます。DATA表領域のデータファイルに対してリサイズと最大サイズの変更が許可されています。
 
 ```sql
 --リサイズ
@@ -561,6 +561,14 @@ SQLを利用してアラートログ(V$DIAG_ALERT_EXT)やトレースファイ�
 + ADBインスタンス単位で指定する連絡先リストへの通知（オラクル社が実施する各種メンテナンス等に関して）
 + OCI Monitoringの監視メトリックやOCI Eventsにてサポートされるイベントについて通知（OCI Noritificationと連携）
 + Oracle Management CloudやEnterprise Managerを用いた監視・通知
+
+<br />
+
+## SYSDATEのタイムゾーンがUTCですが、JSTに変更は可能でしょうか？
+
+はい、SYSDATE_AT_DBTIMEZONEを使用することで可能です。
+以下の記事に手順が記載されていますのでご確認ください。
+[[OCI]Autonomous Database：SYSDATE_AT_DBTIMEZONEを使用してsysdateが日本時間を返すようにしてみた](https://qiita.com/500InternalServerError/items/d741a7144de7b35e04ed)
 
 <br />
 
@@ -834,7 +842,7 @@ OCICLIでの実施方法は[こちら](https://oracle-japan.github.io/ocitutoria
 # <span style="color: brown; ">■ その他 </span>
 <br />
 
-## Autonomous Database Sherad型(ADB-S)のタイムアウトの設定は？
+## Autonomous Database Shared型(ADB-S)のタイムアウトの設定は？
 
 [ドキュメント](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/adbsa/idle-tile-limits.html#GUID-241F4C85-24E5-4F8A-B9EE-E3FCEF566D36)に記載がありますとおり、5分以上のアイドルセッションはそれによって消費されるリソースが他のユーザに必要になると自動切断されます。またリソースが必要とされない場合でも最大で48時間にて切断されます。  
 なお、ネットワークレイヤー、クライアントツールにおいてもタイムアウトの設定が設けられているケースがありますので、予期せず切断されているような場合は、それらも併せてご確認ください。
