@@ -1,4 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2022-05-31T11:41:28+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">Autonomous Database 技術FAQ</title><link href="https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq/" rel="alternate" type="text/html" title="Autonomous Database 技術FAQ" /><published>2022-05-30T00:00:00+09:00</published><updated>2022-05-30T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq/"><![CDATA[<h1 id="-サービス概要編"><span style="color: brown; ">■ サービス概要編</span></h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2022-06-14T15:33:27+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html"></title><link href="https://oracle-japan.github.io/ocidocs/2022-03-07-update-FY22Q4/" rel="alternate" type="text/html" title="" /><published>2022-06-14T15:33:27+09:00</published><updated>2022-06-14T15:33:27+09:00</updated><id>https://oracle-japan.github.io/ocidocs/2022-03-07-update-FY22Q4</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/2022-03-07-update-FY22Q4/"><![CDATA[<p>Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介する資料です。<br />
+本資料は2022年3月～2022年5月の3ヶ月分の新機能について記載しています。</p>
+
+<h4 id="スライド">スライド</h4>
+
+<div style="max-width:768px">
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
+
+<script async="" class="speakerdeck-embed" data-id="038ed247e70447d6ad8173706de4d4ae" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+#### セミナー動画
+
+<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください -->
+
+<div style="max-width:768px"><div style="position:relative;padding-bottom:56.25%"><iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/2171811/sp/217181100/embedIframeJs/uiconf_id/35965902/partner_id/2171811?iframeembed=true&amp;playerId=kaltura_player&amp;entry_id=1_iacks90g&amp;flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[hotspots.plugin]=1&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&amp;wid=1_6epcl5qx" width="768" height="432" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="OCI IaaS 新機能アップデート 2022/3 - 2022/5" style="position:absolute;top:0;left:0;width:100%;height:100%"></iframe></div></div>
+
+<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) -->
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author></entry><entry><title type="html">Autonomous Database 技術FAQ</title><link href="https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq/" rel="alternate" type="text/html" title="Autonomous Database 技術FAQ" /><published>2022-06-14T00:00:00+09:00</published><updated>2022-06-14T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq/"><![CDATA[<h1 id="-サービス概要編"><span style="color: brown; ">■ サービス概要編</span></h1>
 <p><br /></p>
 
 <h2 id="autonomous-databaseではexadataのモデルを選択できますか">Autonomous DatabaseではExadataのモデルを選択できますか？</h2>
@@ -174,9 +191,9 @@ Autonomous Data Guard を構成いただいた場合は、データ破損など�
 
 <p><br /></p>
 
-<h2 id="自動バックアップのタイミングは指定できますか">自動バックアップのタイミングは指定できますか？</h2>
+<h2 id="autonomous-database-shared型の自動バックアップのタイミングは指定できますか">Autonomous Database Shared型の自動バックアップのタイミングは指定できますか？</h2>
 
-<p>現時点でタイミングを指定することはできません。各データセンターの現地時間のAM0:00 - AM6:00の間に自動取得されます。
+<p>現時点でタイミングを指定することはできません。
 なお、取得したバックアップの情報は下記SQLで確認いただくことが可能です。</p>
 
 <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">ALTER</span> <span class="k">SESSION</span> <span class="k">SET</span> <span class="n">NLS_DATE_FORMAT</span> <span class="o">=</span> <span class="s1">'RR/MM/DD HH24:MI:SS'</span><span class="p">;</span>
@@ -206,7 +223,7 @@ Autonomous Data Guard を構成いただいた場合は、データ破損など�
 
 <h2 id="自動バックアップからのリストア時間はどれくらいでしょうか">自動バックアップからのリストア時間はどれくらいでしょうか？</h2>
 
-<p>データ量、更新量に依存するため目安となる値はございません。</p>
+<p>データ量、更新量に依存するため変動する可能性はありますが、サービスレベル目標については<a href="https://docs.oracle.com/en-us/iaas/autonomous-database-shared/doc/availability-slo.html">こちら</a>を参照ください。</p>
 
 <p><br /></p>
 
@@ -328,7 +345,7 @@ Autonomous Databaseではデータファイル（表領域）やバックアッ�
 
 <h2 id="autonomous-databaseの表領域暗号化のアルゴリズムは何を利用していますか">Autonomous Databaseの表領域暗号化のアルゴリズムは何を利用していますか?</h2>
 
-<p>2022/02時点でAES-256で暗号化されております。
+<p>2022/05時点でAES-256で暗号化されております。
 V$ENCRYPTED_TABLESPACESビューを参照いただくことで確認可能です。</p>
 
 <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="n">NAME</span><span class="p">,</span><span class="n">ENCRYPTIONALG</span> <span class="k">FROM</span> <span class="n">V</span><span class="err">$</span><span class="n">ENCRYPTED_TABLESPACES</span> <span class="n">a</span><span class="p">,</span><span class="n">V</span><span class="err">$</span><span class="n">TABLESPACE</span> <span class="n">b</span>
@@ -479,7 +496,7 @@ OnP Exadata におけるHCCのデフォルト設定は、NO ROW LEVEL LOCKINGで
 <p><br /></p>
 
 <h2 id="データファイルのサイズ変更リサイズや最大サイズの変更を行うことはできますか">データファイルのサイズ変更（リサイズ）や最大サイズの変更を行うことはできますか？</h2>
-<p>はい、できます。DBFS_DATA表領域以外の表領域のデータファイルに対してリサイズと最大サイズの変更が許可されています。</p>
+<p>はい、できます。DATA表領域のデータファイルに対してリサイズと最大サイズの変更が許可されています。</p>
 
 <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">--リサイズ</span>
  <span class="k">ALTER</span> <span class="k">DATABASE</span> <span class="n">DATAFILE</span> <span class="o">&lt;</span><span class="n">FILE_ID</span><span class="o">&gt;</span> <span class="n">RESIZE</span> <span class="o">&lt;</span><span class="err">リサイズ後のサイズ</span><span class="o">&gt;</span><span class="p">;</span>
@@ -548,6 +565,14 @@ AWRの取得設定は通常のOracle Databaseと同様にDBMS_WORKLOAD_REPOSITOR
   <li>OCI Monitoringの監視メトリックやOCI Eventsにてサポートされるイベントについて通知（OCI Noritificationと連携）</li>
   <li>Oracle Management CloudやEnterprise Managerを用いた監視・通知</li>
 </ul>
+
+<p><br /></p>
+
+<h2 id="sysdateのタイムゾーンがutcですがjstに変更は可能でしょうか">SYSDATEのタイムゾーンがUTCですが、JSTに変更は可能でしょうか？</h2>
+
+<p>はい、SYSDATE_AT_DBTIMEZONEを使用することで可能です。
+以下の記事に手順が記載されていますのでご確認ください。
+<a href="https://qiita.com/500InternalServerError/items/d741a7144de7b35e04ed">[OCI]Autonomous Database：SYSDATE_AT_DBTIMEZONEを使用してsysdateが日本時間を返すようにしてみた</a></p>
 
 <p><br /></p>
 
@@ -853,7 +878,7 @@ OCICLIでの実施方法は<a href="https://oracle-japan.github.io/ocitutorials/
 <h1 id="-その他-"><span style="color: brown; ">■ その他 </span></h1>
 <p><br /></p>
 
-<h2 id="autonomous-database-sherad型adb-sのタイムアウトの設定は">Autonomous Database Sherad型(ADB-S)のタイムアウトの設定は？</h2>
+<h2 id="autonomous-database-shared型adb-sのタイムアウトの設定は">Autonomous Database Shared型(ADB-S)のタイムアウトの設定は？</h2>
 
 <p><a href="https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/adbsa/idle-tile-limits.html#GUID-241F4C85-24E5-4F8A-B9EE-E3FCEF566D36">ドキュメント</a>に記載がありますとおり、5分以上のアイドルセッションはそれによって消費されるリソースが他のユーザに必要になると自動切断されます。またリソースが必要とされない場合でも最大で48時間にて切断されます。<br />
 なお、ネットワークレイヤー、クライアントツールにおいてもタイムアウトの設定が設けられているケースがありますので、予期せず切断されているような場合は、それらも併せてご確認ください。
@@ -865,7 +890,7 @@ OCICLIでの実施方法は<a href="https://oracle-japan.github.io/ocitutorials/
 
 <p>Autonomous Databaseインスタンスを削除（利用終了, Terminate）するには、お客様にてインスタンスの終了（Terminate）を実施いただきます。終了の手順は<a href="https://docs.oracle.com/ja-jp/iaas/Content/Database/Tasks/adbmanaging.htm#console">こちら</a>に記載があります。</p>
 
-<p>なお、自動バックアップ（課金対象外）もインスタンスと一緒に削除されます。また手動バックアップ（課金対象）があれば、個別にオブジェクト・ストレージ上のバケットからデータを削除いただく必要がありますのでご注意ください。</p>
+<p>なお、自動バックアップもインスタンスと一緒に削除されます。また手動バックアップ（課金対象）があれば、個別にオブジェクト・ストレージ上のバケットからデータを削除いただく必要がありますのでご注意ください。</p>
 
 <p><br /></p>
 
@@ -873,112 +898,87 @@ OCICLIでの実施方法は<a href="https://oracle-japan.github.io/ocitutorials/
 
 <p><br /></p>
 
-<p>以上</p>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="FAQ" /><category term="services" /><category term="Autonomous" /><category term="FAQ" /><summary type="html"><![CDATA[Autonomous Database に関して、利用時のよくある質問に対する回答や、ノウハウ/Tipsについて記載しています。]]></summary></entry><entry><title type="html">動的ルーティング・ゲートウェイ (DRG) 概要</title><link href="https://oracle-japan.github.io/ocidocs/services/networking/dynamic-routing-gateway/" rel="alternate" type="text/html" title="動的ルーティング・ゲートウェイ (DRG) 概要" /><published>2022-05-23T00:00:00+09:00</published><updated>2022-05-23T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/networking/dynamic-routing-gateway</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/networking/dynamic-routing-gateway/"><![CDATA[<p>OCIの技術説明資料 動的ルーティング・ゲートウェイ (DRG) の概要資料です。
-Oracle Cloud Infrastructure リージョンにおいて、ネットワーク間の接続機能を提供するDRGについて解説しています。</p>
+<p>以上</p>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="FAQ" /><category term="services" /><category term="Autonomous" /><category term="FAQ" /><summary type="html"><![CDATA[Autonomous Database に関して、利用時のよくある質問に対する回答や、ノウハウ/Tipsについて記載しています。]]></summary></entry><entry><title type="html">WAFエッジポリシー設定手順</title><link href="https://oracle-japan.github.io/ocidocs/services/edge%20security/security/waf-edgepolicy/" rel="alternate" type="text/html" title="WAFエッジポリシー設定手順" /><published>2022-06-07T00:00:00+09:00</published><updated>2022-06-07T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/edge%20security/security/waf-edgepolicy</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/edge%20security/security/waf-edgepolicy/"><![CDATA[<p>OCI WAFでは世界中にあるデータセンターのリソースを同時に利用できるエッジポイントのWAFと、リージョン内のロードバランサにアタッチするWAFの2つのタイプを用意しています。
+本資料では、エッジポイントのWAF「エッジポリシー」の設定と動作確認の手順を紹介します。</p>
 
 <h4 id="スライド">スライド</h4>
 
 <div style="max-width:768px">
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-<script async="" class="speakerdeck-embed" data-id="bf0484aa9989433a8df32b2aa8d9ea32" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
+<script async="" class="speakerdeck-embed" data-id="a2bffe7becd74e788bf1b6c908004286" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 <!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
 
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Networking" /><category term="スライドあり" /><category term="レベル:入門(100)" /><category term="レベル:応用(200)" /><summary type="html"><![CDATA[OCIのリージョンにおいて、ネットワーク間の接続機能を提供するDRGについて解説しています。]]></summary></entry><entry><title type="html">組織管理(Organization Management)概要</title><link href="https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/organization/" rel="alternate" type="text/html" title="組織管理(Organization Management)概要" /><published>2022-04-19T00:00:00+09:00</published><updated>2022-04-19T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/organization</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/organization/"><![CDATA[<p>OCIの技術説明資料 組織管理 (Organization Management) の概要資料です。
-複数のテナンシの請求やコスト管理を一元化できる機能である「組織管理」に関して解説しています。</p>
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Edge Security" /><category term="Security" /><category term="スライドあり" /><category term="レベル:入門(200)" /><summary type="html"><![CDATA[本資料では、エッジポイントのWAF「エッジポリシー」の設定と動作確認の手順を紹介します。]]></summary></entry><entry><title type="html">OCI API Gateway の認証・認可詳細</title><link href="https://oracle-japan.github.io/ocidocs/services/developers/apigateway-authnz-details/" rel="alternate" type="text/html" title="OCI API Gateway の認証・認可詳細" /><published>2022-05-31T00:00:00+09:00</published><updated>2022-05-31T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/developers/apigateway-authnz-details</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/developers/apigateway-authnz-details/"><![CDATA[<p>OCI API Gateway の認証・認可に関する技術詳細資料です。</p>
 
 <h4 id="スライド">スライド</h4>
 
 <div style="max-width:768px">
+
 <!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-
-<script async="" class="speakerdeck-embed" data-id="a7d1e15509464d9daefa9609a01c6d6c" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/ac54fb92d1ec45589938d0b5739c2a7d" title="API Gateway 認証・認可詳説 / API Gateway authnz details" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 <!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
 
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Governance and Administration" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html"><![CDATA[複数のテナンシの請求やコスト管理を一元化できる機能である「組織管理」に関して解説しています。]]></summary></entry><entry><title type="html">自動スケーリング概要</title><link href="https://oracle-japan.github.io/ocidocs/services/compute/autoscaling/" rel="alternate" type="text/html" title="自動スケーリング概要" /><published>2022-04-01T00:00:00+09:00</published><updated>2022-04-01T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/compute/autoscaling</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/compute/autoscaling/"><![CDATA[<p>自動スケーリング機能 (Auto Scaling) の概要資料です。OCIの自動スケーリング機能と、それを支えるコンポーネント(インスタンス構成、インスタンス・プール、自動スケーリング構成)について解説しています。</p>
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Developers" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html"><![CDATA[OCI API Gateway の認証・認可に関する詳細資料です。]]></summary></entry><entry><title type="html">OCI API Gateway概要</title><link href="https://oracle-japan.github.io/ocidocs/services/developers/apigateway-overview/" rel="alternate" type="text/html" title="OCI API Gateway概要" /><published>2022-05-31T00:00:00+09:00</published><updated>2022-05-31T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/developers/apigateway-overview</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/developers/apigateway-overview/"><![CDATA[<p>OCIのマネージドAPI管理サービスであるOCI API Gatewayの概要資料です。</p>
 
 <h4 id="スライド">スライド</h4>
 
 <div style="max-width:768px">
+
 <!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-
-<script async="" class="speakerdeck-embed" data-id="4385d06e60e14edf8b5432b19bc08924" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/466d8c1018b64d13affaef7c12147ccc" title="API Gateway ご紹介 / api-gateway-overview" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 <!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
 
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Compute" /><category term="スライドあり" /><category term="レベル:入門(100)" /><category term="レベル:応用(200)" /><summary type="html"><![CDATA[OCIの自動スケーリング機能と、それを支えるコンポーネント(インスタンス構成、インスタンス・プール、自動スケーリング構成)について解説しています]]></summary></entry><entry><title type="html">Oracle Cloud Infrastructure IaaS 新機能アップデート 2021/12～2022/2</title><link href="https://oracle-japan.github.io/ocidocs/updates/update-FY22Q3/" rel="alternate" type="text/html" title="Oracle Cloud Infrastructure IaaS 新機能アップデート 2021/12～2022/2" /><published>2022-03-07T00:00:00+09:00</published><updated>2022-03-07T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/updates/update-FY22Q3</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/updates/update-FY22Q3/"><![CDATA[<p>Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介する資料です。<br />
-本資料は2021年12月～2022年2月の3ヶ月分の新機能について記載しています。</p>
-
-<h4 id="スライド">スライド</h4>
-
-<div style="max-width:768px">
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-
-<script async="" class="speakerdeck-embed" data-id="bb85353a96f047ca8fcecefc0cb47034" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-</div>
-
-<h4 id="セミナー動画">セミナー動画</h4>
-
-<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください -->
-<div style="max-width:768px"><div style="position:relative;padding-bottom:56.25%"><iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/2171811/sp/217181100/embedIframeJs/uiconf_id/35965902/partner_id/2171811?iframeembed=true&amp;playerId=kaltura_player&amp;entry_id=1_jt3jh8c7&amp;flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[hotspots.plugin]=1&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&amp;wid=1_6hg3hvz2" width="768" height="432" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player" style="position:absolute;top:0;left:0;width:100%;height:100%"></iframe></div></div>
-
-<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) -->]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Updates" /><category term="スライドあり" /><category term="動画あり" /><summary type="html"><![CDATA[2021年12月～2022年2月の3ヶ月分のOCI新機能についてのまとめ資料です]]></summary></entry><entry><title type="html">Blog : Oracle Cloud Infrastructure 新機能ハイライト</title><link href="https://oracle-japan.github.io/ocidocs/updates/updates-blog/" rel="alternate" type="text/html" title="Blog : Oracle Cloud Infrastructure 新機能ハイライト" /><published>2022-03-07T00:00:00+09:00</published><updated>2022-03-07T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/updates/updates-blog</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/updates/updates-blog/"><![CDATA[]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Updates" /><summary type="html"><![CDATA[OCIの新機能・新リリースについてのまとめ情報を隔週で掲載しているOracle Cloud 公式ブログへの外部リンクです]]></summary></entry><entry><title type="html">IDおよびアクセス管理 (IAM) 概要</title><link href="https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/iam-100/" rel="alternate" type="text/html" title="IDおよびアクセス管理 (IAM) 概要" /><published>2022-03-04T00:00:00+09:00</published><updated>2022-03-04T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/iam-100</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/iam-100/"><![CDATA[<p>OCIの認証、認可、ID管理などを司るコア・コンポーネントである OCI IAM (Identity and Access Management) についての解説資料です。<br />
-認証とID管理、認可およびポリシー、コンパートメントとその管理、IDフェデレーション(IDCSとの連携)、タグ付け(Tagging) のトピックをカバーしています。</p>
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Developers" /><category term="スライドあり" /><category term="レベル:入門(100)" /><summary type="html"><![CDATA[OCIのマネージドAPI管理サービスであるOCI API Gatewayの概要資料です。]]></summary></entry><entry><title type="html">Oracle Functions概要</title><link href="https://oracle-japan.github.io/ocidocs/services/developers/functions-overview/" rel="alternate" type="text/html" title="Oracle Functions概要" /><published>2022-05-31T00:00:00+09:00</published><updated>2022-05-31T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/developers/functions-overview</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/developers/functions-overview/"><![CDATA[<p>OracleのマネージドFaaS(Functions as a Service)サービスであるOracle Functionsについての概要資料です。</p>
 
 <h4 id="スライド">スライド</h4>
 
 <div style="max-width:768px">
 
 <!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-<script async="" class="speakerdeck-embed" data-id="de3056b3ba2b4f61b47e48f0fe15d480" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/4881ba4ef34b4ff6a6b9dea6d3d29c3f" title="Oracle Funtions ご紹介 / oracle-functions-overview" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 <!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
 
-</div>
-
-<h4 id="セミナー動画">セミナー動画</h4>
-
-<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください -->
-<div style="max-width:768px"><div style="position:relative;padding-bottom:56.25%"><iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/2171811/sp/217181100/embedIframeJs/uiconf_id/35965902/partner_id/2171811?iframeembed=true&amp;playerId=kaltura_player&amp;entry_id=0_6756xont&amp;flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[hotspots.plugin]=1&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&amp;wid=1_m5gc4r1z" width="768" height="432" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player" style="position:absolute;top:0;left:0;width:100%;height:100%"></iframe></div></div>
-<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) -->]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Governance and Administration" /><category term="スライドあり" /><category term="レベル:入門(100)" /><summary type="html"><![CDATA[OCIの認証、認可、ID管理などを司るコア・コンポーネントである OCI IAM (Identity and Access Management) についての概要資料です]]></summary></entry><entry><title type="html">IDおよびアクセス管理 (IAM) 詳細</title><link href="https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/iam-200/" rel="alternate" type="text/html" title="IDおよびアクセス管理 (IAM) 詳細" /><published>2022-03-04T00:00:00+09:00</published><updated>2022-03-04T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/iam-200</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/iam-200/"><![CDATA[<p>OCIの認証、認可、ID管理などを司るコア・コンポーネントである OCI IAM (Identity and Access Management) についての詳細解説資料です。<br />
-インスタンス・プリンシパルと動的グループ、多要素認証(MFA)、高度なポリシーの記述、フェデレーションの詳細、コンパートメント階層とポリシーの継承、コンパートメントの移動、IAMの設計リファレンスのトピックをカバーしています。</p>
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Developers" /><category term="スライドあり" /><category term="レベル:入門(100)" /><summary type="html"><![CDATA[OracleのマネージドFaaS(Functions as a Service)サービスであるOracle Functionsについての概要資料です。]]></summary></entry><entry><title type="html">Helidon概要</title><link href="https://oracle-japan.github.io/ocidocs/solutions/cloud%20native/helidon-overview/" rel="alternate" type="text/html" title="Helidon概要" /><published>2022-05-31T00:00:00+09:00</published><updated>2022-05-31T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/solutions/cloud%20native/helidon-overview</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/solutions/cloud%20native/helidon-overview/"><![CDATA[<p>Oracleが提供するマイクロサービスフレームワークであるHelidonの概要資料です。</p>
 
 <h4 id="スライド">スライド</h4>
 
 <div style="max-width:768px">
 
 <!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-<script async="" class="speakerdeck-embed" data-id="15a18e3567fb432ea74cd53e814dbfea" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/5951ff01cd7f49ac85a7b23dca93c251" title="Helidon 概要 / Helidon overview" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 <!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
 
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Governance and Administration" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html"><![CDATA[OCIの認証、認可、ID管理などを司るコア・コンポーネントである OCI IAM (Identity and Access Management) についての詳細資料です]]></summary></entry><entry><title type="html">ストレージの選び方 虎の巻</title><link href="https://oracle-japan.github.io/ocidocs/services/storage/storage-choice/" rel="alternate" type="text/html" title="ストレージの選び方 虎の巻" /><published>2022-02-22T00:00:00+09:00</published><updated>2022-02-22T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/storage/storage-choice</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/storage/storage-choice/"><![CDATA[<p>2022/02/22開催の、OCI スキルアップセミナー #16 「ストレージの選び方 虎の巻」の資料です。
-セミナー情報: <a href="https://oracle-code-tokyo-dev.connpass.com/event/236134/">https://oracle-code-tokyo-dev.connpass.com/event/236134/</a></p>
-
-<h4 id="スライド">スライド</h4>
-
-<div style="max-width:768px">
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-<script async="" class="speakerdeck-embed" data-id="37459f6fd37d46bd85c2a040c7f3882d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
-
-</div>
-
-<h4 id="セミナー動画">セミナー動画</h4>
-
-<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください -->
-
-<iframe width="768" height="432" src="https://www.youtube.com/embed/pp80939ppMk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-
-<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) -->]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Storage" /><category term="スライドあり" /><category term="動画あり" /><category term="レベル:入門(100)" /><summary type="html"><![CDATA[OCIで提供する様々な「ストレージ・サービス」について、サービスの概要や特徴的な機能はもちろん、どのストレージがどのようなユースケースで活用できるのかについて紹介していきます]]></summary></entry><entry><title type="html">Oracle Cloud Infrastructure 技術概要</title><link href="https://oracle-japan.github.io/ocidocs/services/overall/oracle-cloud-infrastructure-tech-overview/" rel="alternate" type="text/html" title="Oracle Cloud Infrastructure 技術概要" /><published>2022-02-08T00:00:00+09:00</published><updated>2022-02-08T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/overall/oracle-cloud-infrastructure-tech-overview</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/overall/oracle-cloud-infrastructure-tech-overview/"><![CDATA[<p>OCIの主にIaaS周りのサービスに特化した技術概要資料です。
-OCIのアーキテクチャーの説明と、各コンポーネントについてなるべく短く網羅的にご紹介しています。</p>
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Solutions" /><category term="Cloud Native" /><category term="スライドあり" /><category term="レベル:入門(100)" /><summary type="html"><![CDATA[Oracleが提供するマイクロサービスフレームワークであるHelidonの概要資料です。]]></summary></entry><entry><title type="html">Oracle NoSQL Database Cloud Service概要</title><link href="https://oracle-japan.github.io/ocidocs/services/database/nosql-overview/" rel="alternate" type="text/html" title="Oracle NoSQL Database Cloud Service概要" /><published>2022-05-31T00:00:00+09:00</published><updated>2022-05-31T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/database/nosql-overview</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/database/nosql-overview/"><![CDATA[<p>OCIのマネージドNoSQLサービスであるOracle NoSQLサービスの概要資料です。</p>
 
 <h4 id="スライド">スライド</h4>
 
 <div style="max-width:768px">
 
 <!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-<script async="" class="speakerdeck-embed" data-id="4e0d4cd1bfae4eeebb36faf522e5a279" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<script async="" class="speakerdeck-embed" data-id="6c4683aec57244629f89150375991e20" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 <!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
 
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Overall" /><category term="スライドあり" /><category term="動画あり" /><category term="レベル:入門(100)" /><summary type="html"><![CDATA[OCIの主にIaaS周りのサービスに特化した技術概要資料です。OCIのアーキテクチャーの説明と、主なサービスについてなるべく短く網羅的にご紹介しています。"]]></summary></entry></feed>
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Database" /><category term="スライドあり" /><category term="レベル:入門(100)" /><summary type="html"><![CDATA[OCIのマネージドNoSQLサービスであるOracle NoSQLサービスの概要資料です。]]></summary></entry><entry><title type="html">OCIコンテナ関連サービスの技術詳細</title><link href="https://oracle-japan.github.io/ocidocs/services/developers/oke-ocir-details/" rel="alternate" type="text/html" title="OCIコンテナ関連サービスの技術詳細" /><published>2022-05-31T00:00:00+09:00</published><updated>2022-05-31T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/developers/oke-ocir-details</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/developers/oke-ocir-details/"><![CDATA[<p>OracleのマネージドKubernetesサービスであるOracle Container Engine for Kubernetes(OKE)についての技術詳細資料です。<br />
+Kubernetesで取り上げられる各トピックに沿って、OKEの実装を解説しています。<br />
+後半では、OCI上でのサンプルユースケースをピックアップし、Manifest(YAML)ファイルのサンプルを解説しています。</p>
+
+<h4 id="スライド">スライド</h4>
+
+<div style="max-width:768px">
+
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/e8108c019e7042ebaf287bd76162906e" title="OCIコンテナサービス関連の技術詳細 /oke-ocir-details" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
+
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Developers" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html"><![CDATA[OCIのコンテナ関連サービスの技術詳細資料です。]]></summary></entry><entry><title type="html">OKE(Oracle Container Engine for Kubernetes)概要</title><link href="https://oracle-japan.github.io/ocidocs/services/developers/oke-overview/" rel="alternate" type="text/html" title="OKE(Oracle Container Engine for Kubernetes)概要" /><published>2022-05-31T00:00:00+09:00</published><updated>2022-05-31T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/developers/oke-overview</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/developers/oke-overview/"><![CDATA[<p>OracleのマネージドKubernetesサービスであるOracle Container Engine for Kubernetes(OKE)についての概要資料です。</p>
+
+<h4 id="スライド">スライド</h4>
+
+<div style="max-width:768px">
+
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/7669dab18a6844d680f92ed5e094fbaf" title="Oracle Container Engine for Kubernetes (OKE) ご紹介 / oke-overview" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
+
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Developers" /><category term="スライドあり" /><category term="レベル:入門(100)" /><summary type="html"><![CDATA[OracleのマネージドKubernetesサービスであるOracle Container Engine for Kubernetes(OKE)についての概要資料です。]]></summary></entry></feed>

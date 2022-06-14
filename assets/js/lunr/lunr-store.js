@@ -287,35 +287,11 @@ var store = [{
         "url": "/ocidocs/services/database/autonomous/machine%20learning/autonomous-automl-ui-startguide/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/afddfc662d3f4f5ebaa75306d7147b7e/slide_0.jpg"
       },{
-        "title": "OCI API Gatewayの技術詳細",
-        "excerpt":"OCI API Gatewayの技術詳細資料です。  主にヘッダー/クエリ変換、APIの認証、認可について解説しています。   スライド                ","categories": ["Services","Developers"],
-        "tags": ["スライドあり","レベル:応用(200)"],
-        "url": "/ocidocs/services/developers/apigateway-details/",
-        "teaser": "https://image.slidesharecdn.com/apigatewayheaderquerytransformauthnzdetail-210528044838/95/api-gateway-1-1024.jpg?cb=1622177409"
-      },{
-        "title": "OCI API Gateway概要",
-        "excerpt":"OCIのマネージドAPI管理サービスであるOCI API Gatewayの概要資料です。   スライド          API Gatewayご紹介     ","categories": ["Services","Developers"],
-        "tags": ["スライドあり","レベル:入門(100)"],
-        "url": "/ocidocs/services/developers/apigateway-overview/",
-        "teaser": "https://image.slidesharecdn.com/apigatewayoverview-210601072619/95/api-gateway-1-1024.jpg?cb=1622532807"
-      },{
         "title": "Oracle Cloudで実現するCloud Native",
         "excerpt":"Oracle CloudでCloud Nativeを実現するための考え方やソリューション群をご紹介します。   スライド                ","categories": ["Solutions","Cloud Native"],
         "tags": ["スライドあり","レベル:入門(100)"],
         "url": "/ocidocs/solutions/cloud%20native/cloud-native-strategy/",
         "teaser": "https://image.slidesharecdn.com/oraclecloudnativestrategyoverview-210528043421/95/oraclecloud-native-1-1024.jpg?cb=1622176680"
-      },{
-        "title": "Oracle Functions概要",
-        "excerpt":"OracleのマネージドFaaS(Functions as a Service)サービスであるOracle Functionsについての概要資料です。   スライド          Oracle Functions ご紹介      ","categories": ["Services","Developers"],
-        "tags": ["スライドあり","レベル:入門(100)"],
-        "url": "/ocidocs/services/developers/functions-overview/",
-        "teaser": "https://image.slidesharecdn.com/functionsoverview-210618042330/95/oracle-functions-1-638.jpg?cb=1623990526"
-      },{
-        "title": "Helidon概要",
-        "excerpt":"Oracleが提供するマイクロサービスフレームワークであるHelidonの概要資料です。   スライド               ","categories": ["Solutions","Cloud Native"],
-        "tags": ["スライドあり","レベル:入門(100)"],
-        "url": "/ocidocs/solutions/cloud%20native/helidon-overview/",
-        "teaser": "https://image.slidesharecdn.com/helidonoverview-210528043903/95/helidon-1-1024.jpg?cb=1622178274"
       },{
         "title": "OCI Logging概要",
         "excerpt":"OCIのロギングサービスであるOCI Loggingサービスの概要資料です。   スライド               ","categories": ["Services","Developers"],
@@ -323,41 +299,11 @@ var store = [{
         "url": "/ocidocs/services/developers/logging-overview/",
         "teaser": "https://image.slidesharecdn.com/loggingoverview-210528044044/95/oci-logging-1-1024.jpg?cb=1622176898"
       },{
-        "title": "Oracle NoSQL Database Cloud Service概要",
-        "excerpt":"OCIのマネージドNoSQLサービスであるOracle NoSQLサービスの概要資料です。   スライド          ","categories": ["Services","Database"],
-        "tags": ["スライドあり","レベル:入門(100)"],
-        "url": "/ocidocs/services/database/nosql-overview/",
-        "teaser": "https://image.slidesharecdn.com/nosqloverview-210528044509/95/oracle-nosql-database-cloud-service-1-1024.jpg?cb=1622177148"
-      },{
-        "title": "OCIコンテナ関連サービスの技術詳細",
-        "excerpt":"OracleのマネージドKubernetesサービスであるOracle Container Engine for Kubernetes(OKE)についての技術詳細資料です。  Kubernetesで取り上げられる各トピックに沿って、OKEの実装を解説しています。  後半では、OCI上でのサンプルユースケースをピックアップし、Manifest(YAML)ファイルのサンプルを解説しています。   スライド                ","categories": ["Services","Developers"],
-        "tags": ["スライドあり","レベル:応用(200)"],
-        "url": "/ocidocs/services/developers/oke-ocir-details/",
-        "teaser": "https://image.slidesharecdn.com/okeocirdetails-210528045123/95/oci-1-1024.jpg?cb=1622177577"
-      },{
-        "title": "OKE(Oracle Container Engine for Kubernetes)概要",
-        "excerpt":"OracleのマネージドKubernetesサービスであるOracle Container Engine for Kubernetes(OKE)についての概要資料です。   スライド               ","categories": ["Services","Developers"],
-        "tags": ["スライドあり","レベル:入門(100)"],
-        "url": "/ocidocs/services/developers/oke-overview/",
-        "teaser": "https://image.slidesharecdn.com/okeoverview-210528052755/95/oracle-container-engine-for-kubernetes-oke-20215-1-1024.jpg?cb=1622179779"
-      },{
         "title": "OCI Streamingの技術詳細",
         "excerpt":"OCIのKafka互換メッセージングサービスであるOCI Streamingの技術詳細資料です。  実際にOCI Streamingを利用する際に必要となる知識を詳細に解説しています。   スライド               ","categories": ["Services","Developers"],
         "tags": ["スライドあり","レベル:応用(200)"],
         "url": "/ocidocs/services/developers/streaming-details/",
         "teaser": "https://image.slidesharecdn.com/streamingdetail-210528045307/95/oracle-cloud-infrastructure-streaming-service-1-1024.jpg?cb=1622177672"
-      },{
-        "title": "OCI Streaming概要",
-        "excerpt":"OCIのKafka互換メッセージングサービスであるOCI Streamingの概要資料です。   スライド          Streamingご紹介     ","categories": ["Services","Developers"],
-        "tags": ["スライドあり","レベル:入門(100)"],
-        "url": "/ocidocs/services/developers/streaming-overview/",
-        "teaser": "https://image.slidesharecdn.com/streamingoverview-210601072720/95/streaming-1-1024.jpg?cb=1622532809"
-      },{
-        "title": "Verrazzano概要",
-        "excerpt":"Oracleが提供するマルチ/ハイブリッド対応のマルチKubernetesクラスタ管理プラットフォームであるVerrazzanoの概要資料です。   スライド               ","categories": ["Solutions","Cloud Native"],
-        "tags": ["スライドあり","レベル:入門(100)"],
-        "url": "/ocidocs/solutions/cloud%20native/verrazzano-overview/",
-        "teaser": "https://image.slidesharecdn.com/verrazzanooverview-210528044558/95/verrazzano-1-1024.jpg?cb=1622177303"
       },{
         "title": "Oracle Blockchain Table概要",
         "excerpt":"Oracle Databaseの機能のOracle Blockchain Tableについて、概要から想定ユースケースや実装での応用パターン、セキュリティ向上への効果などをご説明しています。   スライド          ","categories": ["Solutions","Blockchain"],
@@ -454,12 +400,6 @@ var store = [{
         "tags": ["FAQ"],
         "url": "/ocidocs/faq/storage/object-storage-faq/",
         "teaser": null
-      },{
-        "title": "Service Connector Hub概要",
-        "excerpt":"OCI のメッセージ・バス・プラットフォームである Service Connector Hub の概要資料です。   スライド          Service Connector Hub ご紹介     ","categories": ["Services","Developers"],
-        "tags": ["スライドあり","レベル:入門(100)"],
-        "url": "/ocidocs/services/developers/service-connector-hub-overview/",
-        "teaser": "https://image.slidesharecdn.com/serviceconnectorhuboverview-210831121152/95/service-connector-hub-1-638.jpg?cb=1630412244"
       },{
         "title": "OCI外部接続大全",
         "excerpt":"2021/08/24開催の、OCI スキルアップセミナー #11 「OCI外部接続大全」の資料です。   セミナー情報 https://oracle-code-tokyo-dev.connpass.com/event/219223/   FastConnect, IPSec VPN, Multi-Cloud接続など、さまざまな接続パターンがある外部接続をすべて自宅からルーターを使用してOCIへ接続して検証していました。物理ルーター、ソフトウェア・ルーターや クラウド・ルーターを使用して接続したりした検証内容総まとめを語りたいと思います。      使用機器            物理ルーター: Cisco, NEC, Yamaha       ソフトウェア・ルーター: Cisco, Fortigate, Juniper, Palo Alto, Yamaha       クラウド・ルーター: Equinix Network Edge, Megaport           スライド          セミナー動画      ","categories": ["Services","Networking"],
@@ -617,9 +557,105 @@ var store = [{
         "url": "/ocidocs/services/networking/dynamic-routing-gateway/",
         "teaser": "https://files.speakerdeck.com/presentations/bf0484aa9989433a8df32b2aa8d9ea32/slide_0.jpg"
       },{
+        "title": "OCI API Gateway の認証・認可詳細",
+        "excerpt":"OCI API Gateway の認証・認可に関する技術詳細資料です。   スライド          ","categories": ["Services","Developers"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "/ocidocs/services/developers/apigateway-authnz-details/",
+        "teaser": "https://files.speakerdeck.com/presentations/ac54fb92d1ec45589938d0b5739c2a7d/slide_0.jpg?21587845"
+      },{
+        "title": "OCI API Gateway概要",
+        "excerpt":"OCIのマネージドAPI管理サービスであるOCI API Gatewayの概要資料です。   スライド          ","categories": ["Services","Developers"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/services/developers/apigateway-overview/",
+        "teaser": "https://files.speakerdeck.com/presentations/466d8c1018b64d13affaef7c12147ccc/slide_0.jpg?21587064"
+      },{
+        "title": "Oracle Functions概要",
+        "excerpt":"OracleのマネージドFaaS(Functions as a Service)サービスであるOracle Functionsについての概要資料です。   スライド          ","categories": ["Services","Developers"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/services/developers/functions-overview/",
+        "teaser": "https://files.speakerdeck.com/presentations/4881ba4ef34b4ff6a6b9dea6d3d29c3f/slide_0.jpg?21586991"
+      },{
+        "title": "Helidon概要",
+        "excerpt":"Oracleが提供するマイクロサービスフレームワークであるHelidonの概要資料です。   スライド          ","categories": ["Solutions","Cloud Native"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/solutions/cloud%20native/helidon-overview/",
+        "teaser": "https://files.speakerdeck.com/presentations/5951ff01cd7f49ac85a7b23dca93c251/slide_0.jpg?21587148"
+      },{
+        "title": "Oracle NoSQL Database Cloud Service概要",
+        "excerpt":"OCIのマネージドNoSQLサービスであるOracle NoSQLサービスの概要資料です。   スライド          ","categories": ["Services","Database"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/services/database/nosql-overview/",
+        "teaser": "https://files.speakerdeck.com/presentations/6c4683aec57244629f89150375991e20/slide_0.jpg?21587086"
+      },{
+        "title": "OCIコンテナ関連サービスの技術詳細",
+        "excerpt":"OracleのマネージドKubernetesサービスであるOracle Container Engine for Kubernetes(OKE)についての技術詳細資料です。  Kubernetesで取り上げられる各トピックに沿って、OKEの実装を解説しています。  後半では、OCI上でのサンプルユースケースをピックアップし、Manifest(YAML)ファイルのサンプルを解説しています。   スライド          ","categories": ["Services","Developers"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "/ocidocs/services/developers/oke-ocir-details/",
+        "teaser": "https://files.speakerdeck.com/presentations/e8108c019e7042ebaf287bd76162906e/slide_0.jpg?21587736"
+      },{
+        "title": "OKE(Oracle Container Engine for Kubernetes)概要",
+        "excerpt":"OracleのマネージドKubernetesサービスであるOracle Container Engine for Kubernetes(OKE)についての概要資料です。   スライド          ","categories": ["Services","Developers"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/services/developers/oke-overview/",
+        "teaser": "https://files.speakerdeck.com/presentations/7669dab18a6844d680f92ed5e094fbaf/slide_0.jpg?21586702"
+      },{
+        "title": "OCI Streaming概要",
+        "excerpt":"OCIのKafka互換メッセージングサービスであるOCI Streamingの概要資料です。   スライド          ","categories": ["Services","Developers"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/services/developers/streaming-overview/",
+        "teaser": "https://files.speakerdeck.com/presentations/a1f3ec98aa9142a095bbd7dff664437e/slide_0.jpg?21587043"
+      },{
+        "title": "Verrazzano概要",
+        "excerpt":"Oracleが提供するマルチ/ハイブリッド対応のマルチKubernetesクラスタ管理プラットフォームであるVerrazzanoの概要資料です。   スライド          ","categories": ["Solutions","Cloud Native"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/solutions/cloud%20native/verrazzano-overview/",
+        "teaser": "https://files.speakerdeck.com/presentations/299bc2819097435cbb2ed6947b9d59de/slide_0.jpg?21587176"
+      },{
+        "title": "Service Connector Hub概要",
+        "excerpt":"OCI のメッセージ・バス・プラットフォームである Service Connector Hub の概要資料です。   スライド          ","categories": ["Services","Developers"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/services/developers/service-connector-hub-overview/",
+        "teaser": "https://files.speakerdeck.com/presentations/71fa8ca3349f46a89bd1ba2ccdcf7633/slide_0.jpg?2158707"
+      },{
+        "title": "API Gateway 機能概要集",
+        "excerpt":"API Gateway の機能に関する概要資料集です。   スライド          ","categories": ["Services","Developers"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/services/developers/apigateway-functional-overview/",
+        "teaser": "https://files.speakerdeck.com/presentations/ac1a968b5d73450d810f45c647daff13/slide_0.jpg?21587870"
+      },{
+        "title": "Coherence 概要",
+        "excerpt":"Oracle の提供するインメモリ・データ・グリッド製品である Oracle Coherence の概要紹介資料です。   スライド          ","categories": ["Solutions","Cloud Native"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/solutions/cloud%20native/coherence-overview/",
+        "teaser": "https://files.speakerdeck.com/presentations/74bd95cbca5946f1b2b118e8aef6327b/slide_0.jpg?21594407"
+      },{
+        "title": "Oracle Functions のオブザーバビリティ",
+        "excerpt":"Oracle Functions の Observability に関する資料です。   スライド          ","categories": ["Services","Developers"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/services/developers/functions-observability/",
+        "teaser": "https://files.speakerdeck.com/presentations/30cbc37313954b4f8127b8f1a5e62085/slide_0.jpg?21587913"
+      },{
+        "title": "OCI DevOps 概要",
+        "excerpt":"OCI Native に CI/CD を実現するためのツールファミリーである OCI DevOps の概要資料です。   スライド          ","categories": ["Services","Developers"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/services/developers/oci-dev-ops-overview/",
+        "teaser": "https://files.speakerdeck.com/presentations/1accedf5208b455aab625521a5e9376b/slide_0.jpg?21587270"
+      },{
+        "title": "WAFエッジポリシー設定手順",
+        "excerpt":"OCI WAFでは世界中にあるデータセンターのリソースを同時に利用できるエッジポイントのWAFと、リージョン内のロードバランサにアタッチするWAFの2つのタイプを用意しています。 本資料では、エッジポイントのWAF「エッジポリシー」の設定と動作確認の手順を紹介します。   スライド          ","categories": ["Services","Edge Security","Security"],
+        "tags": ["スライドあり","レベル:入門(200)"],
+        "url": "/ocidocs/services/edge%20security/security/waf-edgepolicy/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/a2bffe7becd74e788bf1b6c908004286/slide_0.jpg"
+      },{
         "title": "Autonomous Database 技術FAQ",
         "excerpt":"■ サービス概要編 Autonomous DatabaseではExadataのモデルを選択できますか？ Share型とDedicated型で異なります。 Shared型ではモデルを選択することはできません。ExadataのSmartScanといったハードウェアのスペックに依存しないソフトウェアの機能による高速化がありますので、モデルを気にせずにお使いいただけます。それもメリットの一つです。 一方、筐体を専有してご利用いただくDedicated型の場合は、利用できるOCPU/ストレージの総量にも関係しますので、Exadata X7またはX8といったようにモデルをご選択いただくことが可能です。 Autonomous JSON Database(AJD) は ACID が保証されているのでしょうか？もしくは一般的なNo-SQL サービスと言う理解でしょうか？ ACIDが保証されているサービスとなります。 良くMongoDBと比較されますが、Autonomous JSON DatabaseはOracle Databaseにドキュメントを格納するため、RDBMSの特徴をそのまま享受できる点がMongoDBと異なる最大の特徴となります。 詳細についてはこちらに記載がありますので、併せてご確認ください。 (APEX)ADB上のOracle REST Data Serviceで作成したAPIはどうやって認証するでしょうか? OAuth2で認証する設定にしていただくことになります。こちらのドキュメントに認証に関する記載がありますので、ご一読くださいますようお願いいたします。 3.3 RESTfulサービスへのセキュアなアクセスの構成 3.3.5 チュートリアル: リソースの保護およびアクセス Autonomous JSON Database(AJD)からAutonomous Transaction Processing(ATP)への変更はできますか？ はい、できます。ATPからAJDへの変更は不可、またADWへの変更は不可です。 同様にAPEX Application Development(APEX)からATPへの変更は可能ですが、ATPからAPEXへの変更は不可、またADWへの変更も不可です。 ページトップに戻る ■ 課金/ライセンス OCPU、ストレージの課金は時間単位でしょうか？ 価格表にはストレージはTB/月、CPUはOCPU数/時で記載されていますが、 実際はどちらも秒単位の請求となります。OCPU、ストレージ共に最低1分から秒単位での利用が可能です。 Auto Scaling 有効時の課金について教えてください 分単位でCPU使用率を算出し、それを時間で平均したものが課金されます。少数点以下は切り上げとなります。例えば、ベースが4...","categories": ["FAQ","services","Autonomous"],
         "tags": ["FAQ"],
         "url": "/ocidocs/faq/services/autonomous/autonomous-database-faq/",
+        "teaser": null
+      },{
+        "title": null,
+        "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介する資料です。  本資料は2022年3月～2022年5月の3ヶ月分の新機能について記載しています。   スライド        #### セミナー動画        ","categories": [],
+        "tags": null,
+        "url": "/ocidocs/2022-03-07-update-FY22Q4/",
         "teaser": null
       }]
