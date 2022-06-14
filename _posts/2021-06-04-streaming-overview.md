@@ -8,7 +8,8 @@ tags:
   - スライドあり
   - レベル:入門(100)
 header:
-  teaser: https://image.slidesharecdn.com/streamingoverview-210601072720/95/streaming-1-1024.jpg?cb=1622532809
+  teaser: https://files.speakerdeck.com/presentations/a1f3ec98aa9142a095bbd7dff664437e/slide_0.jpg?21587043
+date: "2022-05-31"
 ---
 
 OCIのKafka互換メッセージングサービスであるOCI Streamingの概要資料です。
@@ -18,7 +19,7 @@ OCIのKafka互換メッセージングサービスであるOCI Streamingの概�
 <div style="max-width:768px">
 
 <!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/tSrRptLn9cuEol" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/oracle4engineer/streaming-248818105" title="Streamingご紹介" target="_blank">Streamingご紹介</a> </strong></div>
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/a1f3ec98aa9142a095bbd7dff664437e" title="OCI Streaming ご紹介" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 <!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
 
 </div>

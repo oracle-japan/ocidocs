@@ -8,7 +8,8 @@ tags:
   - スライドあり
   - レベル:応用(200)
 header:
-  teaser: https://image.slidesharecdn.com/okeocirdetails-210528045123/95/oci-1-1024.jpg?cb=1622177577
+  teaser: https://files.speakerdeck.com/presentations/e8108c019e7042ebaf287bd76162906e/slide_0.jpg?21587736
+date: "2022-05-31"
 ---
 
 OracleのマネージドKubernetesサービスであるOracle Container Engine for Kubernetes(OKE)についての技術詳細資料です。  
@@ -20,7 +21,7 @@ Kubernetesで取り上げられる各トピックに沿って、OKEの実装を�
 <div style="max-width:768px">
 
 <!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/glzD0N9QAdkNND" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/oracle4engineer/oci-248654749" title="OCIコンテナサービス関連の技術詳細" target="_blank"></a> </strong> </div>
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/e8108c019e7042ebaf287bd76162906e" title="OCIコンテナサービス関連の技術詳細 /oke-ocir-details" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 <!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
 
 </div>
