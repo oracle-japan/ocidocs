@@ -658,4 +658,10 @@ var store = [{
         "tags": ["FAQ"],
         "url": "/ocidocs/faq/services/autonomous/autonomous-database-faq/",
         "teaser": null
+      },{
+        "title": "OCI Service Mesh 概要",
+        "excerpt":"OCI が提供するマネージドな Service Mesh サービスである OCI Service Mesh の概要資料です。   スライド          ","categories": ["Services","Developers"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/services/developers/oci-service-mesh-overview/",
+        "teaser": "https://files.speakerdeck.com/presentations/da92fb1d01894f6f86c56b2b8a39933c/slide_0.jpg?21830052\""
       }]
