@@ -1,4 +1,36 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2022-06-22T14:17:18+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">OCI Service Mesh 概要</title><link href="https://oracle-japan.github.io/ocidocs/services/developers/oci-service-mesh-overview/" rel="alternate" type="text/html" title="OCI Service Mesh 概要" /><published>2022-06-22T00:00:00+09:00</published><updated>2022-06-22T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/developers/oci-service-mesh-overview</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/developers/oci-service-mesh-overview/"><![CDATA[<p>OCI が提供するマネージドな Service Mesh サービスである OCI Service Mesh の概要資料です。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2022-07-11T13:21:41+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">OCI IAM Identity Domains機能概要</title><link href="https://oracle-japan.github.io/ocidocs/solutions/iam/identity-domains-overview/" rel="alternate" type="text/html" title="OCI IAM Identity Domains機能概要" /><published>2022-07-06T00:00:00+09:00</published><updated>2022-07-06T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/solutions/iam/identity-domains-overview</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/solutions/iam/identity-domains-overview/"><![CDATA[<p>2021年に提供を開始したOCIの新認証基盤「Identity Domains」についてご紹介します。OCIの旧認証・認可機能の「IAM」と、オラクルクラウドのPaaSサービスとして提供していた「Identity Cloud Service」が統合し、「Identity Domains」として登場しました。</p>
+
+<h4 id="スライド">スライド</h4>
+
+<div style="max-width:768px">
+
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
+<script async="" class="speakerdeck-embed" data-id="114e3c0df97948ce97ff21b2ced1aa9a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
+
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Solutions" /><category term="IAM" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html"><![CDATA[OCIの新認証基盤Identity Domainsの機能概要資料です。]]></summary></entry><entry><title type="html">WAF保護ルールの考え方</title><link href="https://oracle-japan.github.io/ocidocs/services/edge%20security/security/waf-protection-rules/" rel="alternate" type="text/html" title="WAF保護ルールの考え方" /><published>2022-06-28T00:00:00+09:00</published><updated>2022-06-28T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/edge%20security/security/waf-protection-rules</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/edge%20security/security/waf-protection-rules/"><![CDATA[<p>OCI WAFでは、Webアプリケーションを攻撃から保護するために600以上の保護ルールが提供されています。本資料では、OCI WAFが提供する保護ルールの設定例や、選択方法について紹介します</p>
+
+<h4 id="スライド">スライド</h4>
+
+<div style="max-width:768px">
+
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
+<script async="" class="speakerdeck-embed" data-id="6cda805a91594839b9e9e3b98fd31bd8" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
+
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Edge Security" /><category term="Security" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html"><![CDATA[本資料では、OCI WAFが提供する保護ルールの考え方と設定例について紹介します]]></summary></entry><entry><title type="html">FastConnect 冗長性のベスト・プラクティス</title><link href="https://oracle-japan.github.io/ocidocs/services/networking/connectivity_redundancy/" rel="alternate" type="text/html" title="FastConnect 冗長性のベスト・プラクティス" /><published>2022-06-23T00:00:00+09:00</published><updated>2022-06-23T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/networking/connectivity_redundancy</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/networking/connectivity_redundancy/"><![CDATA[<p>OCIの技術説明資料：FastConnect 冗長性のベスト・プラクティス です。
+お客様ネットワークとOracle Cloud Infrastructure(OCI)間をプライベート回線で接続するサービス「FastConnect」に関する復習と、冗長化におけるベストプラクティスについて解説しています。</p>
+
+<h4 id="スライド">スライド</h4>
+
+<div style="max-width:768px">
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
+<script async="" class="speakerdeck-embed" data-id="1461985b53674d799e36988a2f20f886" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
+
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Networking" /><category term="スライドあり" /><category term="レベル:入門(100)" /><category term="レベル:応用(200)" /><summary type="html"><![CDATA[お客様ネットワークとOracle Cloud Infrastructure(OCI)間をプライベート回線で接続するサービス「FastConnect」の冗長化におけるベストプラクティスについて解説しています。]]></summary></entry><entry><title type="html">OCI Service Mesh 概要</title><link href="https://oracle-japan.github.io/ocidocs/services/developers/oci-service-mesh-overview/" rel="alternate" type="text/html" title="OCI Service Mesh 概要" /><published>2022-06-22T00:00:00+09:00</published><updated>2022-06-22T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/developers/oci-service-mesh-overview</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/developers/oci-service-mesh-overview/"><![CDATA[<p>OCI が提供するマネージドな Service Mesh サービスである OCI Service Mesh の概要資料です。</p>
 
 <h4 id="スライド">スライド</h4>
 
@@ -949,36 +981,4 @@ OCICLIでの実施方法は<a href="https://oracle-japan.github.io/ocitutorials/
 <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/4881ba4ef34b4ff6a6b9dea6d3d29c3f" title="Oracle Funtions ご紹介 / oracle-functions-overview" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 <!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
 
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Developers" /><category term="スライドあり" /><category term="レベル:入門(100)" /><summary type="html"><![CDATA[OracleのマネージドFaaS(Functions as a Service)サービスであるOracle Functionsについての概要資料です。]]></summary></entry><entry><title type="html">Helidon概要</title><link href="https://oracle-japan.github.io/ocidocs/solutions/cloud%20native/helidon-overview/" rel="alternate" type="text/html" title="Helidon概要" /><published>2022-05-31T00:00:00+09:00</published><updated>2022-05-31T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/solutions/cloud%20native/helidon-overview</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/solutions/cloud%20native/helidon-overview/"><![CDATA[<p>Oracleが提供するマイクロサービスフレームワークであるHelidonの概要資料です。</p>
-
-<h4 id="スライド">スライド</h4>
-
-<div style="max-width:768px">
-
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/5951ff01cd7f49ac85a7b23dca93c251" title="Helidon 概要 / Helidon overview" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
-
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Solutions" /><category term="Cloud Native" /><category term="スライドあり" /><category term="レベル:入門(100)" /><summary type="html"><![CDATA[Oracleが提供するマイクロサービスフレームワークであるHelidonの概要資料です。]]></summary></entry><entry><title type="html">Oracle NoSQL Database Cloud Service概要</title><link href="https://oracle-japan.github.io/ocidocs/services/database/nosql-overview/" rel="alternate" type="text/html" title="Oracle NoSQL Database Cloud Service概要" /><published>2022-05-31T00:00:00+09:00</published><updated>2022-05-31T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/database/nosql-overview</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/database/nosql-overview/"><![CDATA[<p>OCIのマネージドNoSQLサービスであるOracle NoSQLサービスの概要資料です。</p>
-
-<h4 id="スライド">スライド</h4>
-
-<div style="max-width:768px">
-
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-<script async="" class="speakerdeck-embed" data-id="6c4683aec57244629f89150375991e20" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
-
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Database" /><category term="スライドあり" /><category term="レベル:入門(100)" /><summary type="html"><![CDATA[OCIのマネージドNoSQLサービスであるOracle NoSQLサービスの概要資料です。]]></summary></entry><entry><title type="html">OCIコンテナ関連サービスの技術詳細</title><link href="https://oracle-japan.github.io/ocidocs/services/developers/oke-ocir-details/" rel="alternate" type="text/html" title="OCIコンテナ関連サービスの技術詳細" /><published>2022-05-31T00:00:00+09:00</published><updated>2022-05-31T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/developers/oke-ocir-details</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/developers/oke-ocir-details/"><![CDATA[<p>OracleのマネージドKubernetesサービスであるOracle Container Engine for Kubernetes(OKE)についての技術詳細資料です。<br />
-Kubernetesで取り上げられる各トピックに沿って、OKEの実装を解説しています。<br />
-後半では、OCI上でのサンプルユースケースをピックアップし、Manifest(YAML)ファイルのサンプルを解説しています。</p>
-
-<h4 id="スライド">スライド</h4>
-
-<div style="max-width:768px">
-
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/e8108c019e7042ebaf287bd76162906e" title="OCIコンテナサービス関連の技術詳細 /oke-ocir-details" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
-
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Developers" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html"><![CDATA[OCIのコンテナ関連サービスの技術詳細資料です。]]></summary></entry></feed>
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Developers" /><category term="スライドあり" /><category term="レベル:入門(100)" /><summary type="html"><![CDATA[OracleのマネージドFaaS(Functions as a Service)サービスであるOracle Functionsについての概要資料です。]]></summary></entry></feed>

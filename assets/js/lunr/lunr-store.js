@@ -664,4 +664,22 @@ var store = [{
         "tags": ["スライドあり","レベル:入門(100)"],
         "url": "/ocidocs/services/developers/oci-service-mesh-overview/",
         "teaser": "https://files.speakerdeck.com/presentations/da92fb1d01894f6f86c56b2b8a39933c/slide_0.jpg?21830052\""
+      },{
+        "title": "FastConnect 冗長性のベスト・プラクティス",
+        "excerpt":"OCIの技術説明資料：FastConnect 冗長性のベスト・プラクティス です。 お客様ネットワークとOracle Cloud Infrastructure(OCI)間をプライベート回線で接続するサービス「FastConnect」に関する復習と、冗長化におけるベストプラクティスについて解説しています。   スライド           ","categories": ["Services","Networking"],
+        "tags": ["スライドあり","レベル:入門(100)","レベル:応用(200)"],
+        "url": "/ocidocs/services/networking/connectivity_redundancy/",
+        "teaser": "https://files.speakerdeck.com/presentations/1461985b53674d799e36988a2f20f886/slide_0.jpg"
+      },{
+        "title": "WAF保護ルールの考え方",
+        "excerpt":"OCI WAFでは、Webアプリケーションを攻撃から保護するために600以上の保護ルールが提供されています。本資料では、OCI WAFが提供する保護ルールの設定例や、選択方法について紹介します   スライド          ","categories": ["Services","Edge Security","Security"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "/ocidocs/services/edge%20security/security/waf-protection-rules/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/6cda805a91594839b9e9e3b98fd31bd8/slide_0.jpg"
+      },{
+        "title": "OCI IAM Identity Domains機能概要",
+        "excerpt":"2021年に提供を開始したOCIの新認証基盤「Identity Domains」についてご紹介します。OCIの旧認証・認可機能の「IAM」と、オラクルクラウドのPaaSサービスとして提供していた「Identity Cloud Service」が統合し、「Identity Domains」として登場しました。   スライド          ","categories": ["Solutions","IAM"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "/ocidocs/solutions/iam/identity-domains-overview/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/114e3c0df97948ce97ff21b2ced1aa9a/slide_0.jpg"
       }]
