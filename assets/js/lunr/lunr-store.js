@@ -167,12 +167,6 @@ var store = [{
         "url": "/ocidocs/services/storage/data-transfer-and-storage-gateway/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/157e4694c8d04b11922b5f15cc88fcb4/slide_0.jpg"
       },{
-        "title": "仮想クラウド・ネットワーク (VCN) 概要",
-        "excerpt":"仮想クラウド・ネットワークと、その構成コンポーネント (サブネット、仮想NIC、ゲートウェイ、ルート表、セキュリティ・リスト) と、ネットワークの結合(ピアリング)に関して解説しています。2021/1/14 動画を更新しました。   スライド           セミナー動画      ","categories": ["Services","Networking"],
-        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
-        "url": "/ocidocs/services/networking/virtual-cloud-network-100/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/a3f5c9eb4fbb4fd49a20eaf26117024a/slide_0.jpg"
-      },{
         "title": "OCI Cloud Guardの概要",
         "excerpt":"Cloud Guardは、Oracle Cloud Infrastructure内の様々なサービスの設定やアクティビティを継続的に監視し、即座に通知・是正するサービスです   スライド          ","categories": ["Services","Security"],
         "tags": ["スライドあり","レベル:入門(100)"],
@@ -682,4 +676,16 @@ var store = [{
         "tags": ["スライドあり","レベル:応用(200)"],
         "url": "/ocidocs/solutions/iam/identity-domains-overview/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/114e3c0df97948ce97ff21b2ced1aa9a/slide_0.jpg"
+      },{
+        "title": "仮想クラウド・ネットワーク (VCN) 概要",
+        "excerpt":"仮想クラウド・ネットワークと、その構成コンポーネント (サブネット、仮想NIC、ゲートウェイ、ルート表、セキュリティ・リスト) と、ネットワークの結合(ピアリング)に関して解説しています。2022/7/20 スライドを更新しました。   スライド           セミナー動画      ","categories": ["Services","Networking"],
+        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
+        "url": "/ocidocs/services/networking/virtual-cloud-network-100/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/a3f5c9eb4fbb4fd49a20eaf26117024a/slide_0.jpg"
+      },{
+        "title": "仮想テスト・アクセス・ポイント(VTAP)概要",
+        "excerpt":"OCIの技術説明資料：OCI VCN 仮想テスト・アクセス・ポイント Virtual Test Access Point (VTAP) 概要 VCNのトラブルシューティングやセキュリティ監視などに活用できるパケット・キャプチャ機能である仮想テスト・アクセス・ポイント（VTAP）の概要資料です。   スライド           ","categories": ["Services","Networking"],
+        "tags": ["スライドあり","レベル:入門(100)","レベル:応用(200)"],
+        "url": "/ocidocs/services/networking/vtap-overview/",
+        "teaser": "https://files.speakerdeck.com/presentations/59425234a68044a1ae37b882f496f944/slide_0.jpg"
       }]

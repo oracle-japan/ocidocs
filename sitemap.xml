@@ -113,10 +113,6 @@
 <lastmod>2021-02-02T00:00:00+09:00</lastmod>
 </url>
 <url>
-<loc>https://oracle-japan.github.io/ocidocs/services/networking/virtual-cloud-network-100/</loc>
-<lastmod>2021-02-02T00:00:00+09:00</lastmod>
-</url>
-<url>
 <loc>https://oracle-japan.github.io/ocidocs/services/security/cloud-guard/</loc>
 <lastmod>2021-02-15T00:00:00+09:00</lastmod>
 </url>
@@ -455,6 +451,14 @@
 <url>
 <loc>https://oracle-japan.github.io/ocidocs/solutions/iam/identity-domains-overview/</loc>
 <lastmod>2022-07-06T00:00:00+09:00</lastmod>
+</url>
+<url>
+<loc>https://oracle-japan.github.io/ocidocs/services/networking/virtual-cloud-network-100/</loc>
+<lastmod>2022-07-20T00:00:00+09:00</lastmod>
+</url>
+<url>
+<loc>https://oracle-japan.github.io/ocidocs/services/networking/vtap-overview/</loc>
+<lastmod>2022-07-20T00:00:00+09:00</lastmod>
 </url>
 <url>
 <loc>https://oracle-japan.github.io/ocidocs/about/</loc>

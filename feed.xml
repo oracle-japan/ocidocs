@@ -1,4 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2022-07-11T13:21:41+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">OCI IAM Identity Domains機能概要</title><link href="https://oracle-japan.github.io/ocidocs/solutions/iam/identity-domains-overview/" rel="alternate" type="text/html" title="OCI IAM Identity Domains機能概要" /><published>2022-07-06T00:00:00+09:00</published><updated>2022-07-06T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/solutions/iam/identity-domains-overview</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/solutions/iam/identity-domains-overview/"><![CDATA[<p>2021年に提供を開始したOCIの新認証基盤「Identity Domains」についてご紹介します。OCIの旧認証・認可機能の「IAM」と、オラクルクラウドのPaaSサービスとして提供していた「Identity Cloud Service」が統合し、「Identity Domains」として登場しました。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2022-07-21T17:55:13+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">仮想クラウド・ネットワーク (VCN) 概要</title><link href="https://oracle-japan.github.io/ocidocs/services/networking/virtual-cloud-network-100/" rel="alternate" type="text/html" title="仮想クラウド・ネットワーク (VCN) 概要" /><published>2022-07-20T00:00:00+09:00</published><updated>2022-07-20T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/networking/virtual-cloud-network-100</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/networking/virtual-cloud-network-100/"><![CDATA[<p>仮想クラウド・ネットワークと、その構成コンポーネント (サブネット、仮想NIC、ゲートウェイ、ルート表、セキュリティ・リスト) と、ネットワークの結合(ピアリング)に関して解説しています。2022/7/20 スライドを更新しました。</p>
+
+<h4 id="スライド">スライド</h4>
+
+<div style="max-width:768px">
+
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
+<script async="" class="speakerdeck-embed" data-id="a3f5c9eb4fbb4fd49a20eaf26117024a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
+
+</div>
+
+<h4 id="セミナー動画">セミナー動画</h4>
+
+<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください -->
+<div style="max-width:768px"><div style="position:relative;padding-bottom:56.25%"><iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/2171811/sp/217181100/embedIframeJs/uiconf_id/35965902/partner_id/2171811?iframeembed=true&amp;playerId=kaltura_player&amp;entry_id=0_5ti7elke&amp;flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[hotspots.plugin]=1&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&amp;wid=1_jn33rh9r" width="768" height="432" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player" style="position:absolute;top:0;left:0;width:100%;height:100%"></iframe></div></div>
+<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) -->]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Networking" /><category term="スライドあり" /><category term="動画あり" /><category term="レベル:入門(100)" /><summary type="html"><![CDATA[仮想クラウド・ネットワークと、その構成コンポーネント、ネットワークの結合(ピアリング)に関して解説しています]]></summary></entry><entry><title type="html">仮想テスト・アクセス・ポイント(VTAP)概要</title><link href="https://oracle-japan.github.io/ocidocs/services/networking/vtap-overview/" rel="alternate" type="text/html" title="仮想テスト・アクセス・ポイント(VTAP)概要" /><published>2022-07-20T00:00:00+09:00</published><updated>2022-07-20T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/networking/vtap-overview</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/networking/vtap-overview/"><![CDATA[<p>OCIの技術説明資料：OCI VCN 仮想テスト・アクセス・ポイント Virtual Test Access Point (VTAP) 概要
+VCNのトラブルシューティングやセキュリティ監視などに活用できるパケット・キャプチャ機能である仮想テスト・アクセス・ポイント（VTAP）の概要資料です。</p>
+
+<h4 id="スライド">スライド</h4>
+
+<div style="max-width:768px">
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
+
+<script async="" class="speakerdeck-embed" data-id="59425234a68044a1ae37b882f496f944" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
+
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Networking" /><category term="スライドあり" /><category term="レベル:入門(100)" /><category term="レベル:応用(200)" /><summary type="html"><![CDATA[VCNのトラブルシューティングやセキュリティ監視などに活用できるパケット・キャプチャ機能である仮想テスト・アクセス・ポイント（VTAP）の概要資料です。]]></summary></entry><entry><title type="html">OCI IAM Identity Domains機能概要</title><link href="https://oracle-japan.github.io/ocidocs/solutions/iam/identity-domains-overview/" rel="alternate" type="text/html" title="OCI IAM Identity Domains機能概要" /><published>2022-07-06T00:00:00+09:00</published><updated>2022-07-06T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/solutions/iam/identity-domains-overview</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/solutions/iam/identity-domains-overview/"><![CDATA[<p>2021年に提供を開始したOCIの新認証基盤「Identity Domains」についてご紹介します。OCIの旧認証・認可機能の「IAM」と、オラクルクラウドのPaaSサービスとして提供していた「Identity Cloud Service」が統合し、「Identity Domains」として登場しました。</p>
 
 <h4 id="スライド">スライド</h4>
 
@@ -961,24 +989,4 @@ OCICLIでの実施方法は<a href="https://oracle-japan.github.io/ocitutorials/
 <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/ac54fb92d1ec45589938d0b5739c2a7d" title="API Gateway 認証・認可詳説 / API Gateway authnz details" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 <!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
 
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Developers" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html"><![CDATA[OCI API Gateway の認証・認可に関する詳細資料です。]]></summary></entry><entry><title type="html">OCI API Gateway概要</title><link href="https://oracle-japan.github.io/ocidocs/services/developers/apigateway-overview/" rel="alternate" type="text/html" title="OCI API Gateway概要" /><published>2022-05-31T00:00:00+09:00</published><updated>2022-05-31T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/developers/apigateway-overview</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/developers/apigateway-overview/"><![CDATA[<p>OCIのマネージドAPI管理サービスであるOCI API Gatewayの概要資料です。</p>
-
-<h4 id="スライド">スライド</h4>
-
-<div style="max-width:768px">
-
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/466d8c1018b64d13affaef7c12147ccc" title="API Gateway ご紹介 / api-gateway-overview" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
-
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Developers" /><category term="スライドあり" /><category term="レベル:入門(100)" /><summary type="html"><![CDATA[OCIのマネージドAPI管理サービスであるOCI API Gatewayの概要資料です。]]></summary></entry><entry><title type="html">Oracle Functions概要</title><link href="https://oracle-japan.github.io/ocidocs/services/developers/functions-overview/" rel="alternate" type="text/html" title="Oracle Functions概要" /><published>2022-05-31T00:00:00+09:00</published><updated>2022-05-31T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/developers/functions-overview</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/developers/functions-overview/"><![CDATA[<p>OracleのマネージドFaaS(Functions as a Service)サービスであるOracle Functionsについての概要資料です。</p>
-
-<h4 id="スライド">スライド</h4>
-
-<div style="max-width:768px">
-
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/4881ba4ef34b4ff6a6b9dea6d3d29c3f" title="Oracle Funtions ご紹介 / oracle-functions-overview" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
-
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Developers" /><category term="スライドあり" /><category term="レベル:入門(100)" /><summary type="html"><![CDATA[OracleのマネージドFaaS(Functions as a Service)サービスであるOracle Functionsについての概要資料です。]]></summary></entry></feed>
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Developers" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html"><![CDATA[OCI API Gateway の認証・認可に関する詳細資料です。]]></summary></entry></feed>
