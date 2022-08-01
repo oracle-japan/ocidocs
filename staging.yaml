@@ -37,4 +37,3 @@ spec:
           containerPort: 4001
       imagePullSecrets:
       - name: paasdocs-preview-image-pull-secret
-
