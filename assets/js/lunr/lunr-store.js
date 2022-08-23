@@ -688,4 +688,16 @@ var store = [{
         "tags": ["スライドあり","レベル:入門(100)","レベル:応用(200)"],
         "url": "/ocidocs/services/networking/vtap-overview/",
         "teaser": "https://files.speakerdeck.com/presentations/59425234a68044a1ae37b882f496f944/slide_0.jpg"
+      },{
+        "title": "OCI IAM Identity Domains - MFAやIPアドレス制御を利用するサインオンポリシー設定手順",
+        "excerpt":"OCI IAM Identity Domainsでは、ユーザ認証を強化するための機能を複数提供しています。本資料ではIdentity Domainsでユーザの多要素認証を実現するための設定手順と、ユーザのクライアント端末のIPアドレスによるアクセス制御を実現するための設定手順をご紹介します。   スライド          ","categories": ["Solutions","IAM"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "/ocidocs/solutions/iam/identitydomains-mfa-networkperimeter/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/e882d850d2d945cea82ca3ecfb3b8b09/slide_0.jpg"
+      },{
+        "title": "OCI IAM Identity Domains - テナント管理者・一般ユーザーの作成方法",
+        "excerpt":"本資料ではOCI IAM Identity Domainsの管理者ユーザーと一般ユーザーの作成手順を紹介します。Identity Domainsの運用管理にお役立てください。   スライド          ","categories": ["Solutions","IAM"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/solutions/iam/identitydomains-admin-user/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/d9d0d78f8c7445a2abc09a983950e698/slide_0.jpg"
       }]

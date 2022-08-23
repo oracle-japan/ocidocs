@@ -461,6 +461,14 @@
 <lastmod>2022-07-20T00:00:00+09:00</lastmod>
 </url>
 <url>
+<loc>https://oracle-japan.github.io/ocidocs/solutions/iam/identitydomains-mfa-networkperimeter/</loc>
+<lastmod>2022-08-03T00:00:00+09:00</lastmod>
+</url>
+<url>
+<loc>https://oracle-japan.github.io/ocidocs/solutions/iam/identitydomains-admin-user/</loc>
+<lastmod>2022-08-04T00:00:00+09:00</lastmod>
+</url>
+<url>
 <loc>https://oracle-japan.github.io/ocidocs/about/</loc>
 </url>
 <url>
@@ -612,5 +620,8 @@
 </url>
 <url>
 <loc>https://oracle-japan.github.io/ocidocs/page23/</loc>
+</url>
+<url>
+<loc>https://oracle-japan.github.io/ocidocs/page24/</loc>
 </url>
 </urlset>
