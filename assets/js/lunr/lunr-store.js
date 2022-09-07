@@ -700,4 +700,10 @@ var store = [{
         "tags": ["スライドあり","レベル:入門(100)"],
         "url": "/ocidocs/solutions/iam/identitydomains-admin-user/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/d9d0d78f8c7445a2abc09a983950e698/slide_0.jpg"
+      },{
+        "title": "OCI Search Service with OpenSearch 概要",
+        "excerpt":"OCI が提供するマネージドな OpenSearch サービスの概要紹介資料です。   スライド          ","categories": ["Services","Developers"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/services/developers/oci-search-service-overview/",
+        "teaser": "https://files.speakerdeck.com/presentations/a25a0c4c928c453ca9a3cec0ade594d9/slide_0.jpg?22425781\""
       }]
