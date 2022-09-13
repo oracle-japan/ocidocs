@@ -706,4 +706,10 @@ var store = [{
         "tags": ["スライドあり","レベル:入門(100)"],
         "url": "/ocidocs/services/developers/oci-search-service-overview/",
         "teaser": "https://files.speakerdeck.com/presentations/a25a0c4c928c453ca9a3cec0ade594d9/slide_0.jpg?22425781\""
+      },{
+        "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2022/6～2022/8",
+        "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介する資料です。  本資料は2022年6月～2022年8月の3ヶ月分の新機能について記載しています。   スライド         #### セミナー動画      ","categories": ["Updates"],
+        "tags": ["スライドあり","動画あり"],
+        "url": "/ocidocs/updates/update-FY23Q1/",
+        "teaser": "https://files.speakerdeck.com/presentations/ff2ded79d397495f8e2dc25b0ac27523/slide_0.jpg"
       }]
