@@ -6,4 +6,4 @@ RUN chown jekyll:jekyll -R /pages
 
 COPY . /pages/
 
-ENTRYPOINT ["jekyll", "serve", "--host", "0.0.0.0"]
+ENTRYPOINT ["jekyll", "serve", "--host", "0.0.0.0", "--port", "4001"]
