@@ -107,6 +107,12 @@ var store = [{
         "url": "/ocidocs/solutions/manageability/managing-oci-cost/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/d7bb02f732134b059e7568b1c6caecfc/slide_0.jpg"
       },{
+        "title": "OCI IAM Identity Domains - IdPポリシー設定手順",
+        "excerpt":"OCI IAM Identity DomainsのIdPポリシーの設定手順を紹介します。IdPポリシーは、Identity Domainsと認証連携したアプリケーションごとに認証先のアイデンティティプロバイダーを指定したり、ユーザーが属するグループごとに使用するアイデンティティプロバイダーの制御にご利用いただくことが可能です。   スライド          ","categories": ["Solutions","IAM"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/solutions/iam/identitydomains-idp-policy/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/e8672c964d3343728f43d58f1087acb8/slide_0.jpg"
+      },{
         "title": "Oracle Cloud Infrastructure サービス基本情報",
         "excerpt":"ログインに始まり、言語の変更、サービス制限、OCID、検索など、主にOCIコンソールの基本的情報について解説しています。   スライド           関連動画       ","categories": ["Services","Overall"],
         "tags": ["スライドあり","動画あり","レベル:入門(100)"],
