@@ -3,26 +3,17 @@ reviewers:
   - tniita
   - mmarukaw
   - shukawam
-  - cyberblack28
-  - nonkyon
 
 files:
   '_templates/**':
     - tniita
-    - cyberblack28
     - mmarukaw
     - oraryoyas
-    - kenkensonson
-    - YoshiakiYamasaki
-    - kumasan368
     - gakumura
-    - yoinakag
     # - eminamin
     - TomokoKonishi
-    - nonkyon
     - shukawam
     - kyyamada
-    - SNAKANE
     - yuarashi
     - s-nori
     - ntajima-jp
@@ -30,10 +21,8 @@ files:
     - yuuur
     - jennylia3
     - sesecho
-    - sshatari
     - yobaya
     - fwiw6430
-    - knagasue
     - kofukush
     - mai112233
     - r-deguchi
@@ -43,20 +32,13 @@ files:
     - ora-takahnak
   '_posts/**':
     - tniita
-    - cyberblack28
     - mmarukaw
     - oraryoyas
-    - kenkensonson
-    - YoshiakiYamasaki
-    - kumasan368
     - gakumura
-    - yoinakag
     # - eminamin
     - TomokoKonishi
-    - nonkyon
     - shukawam
     - kyyamada
-    - SNAKANE
     - yuarashi
     - s-nori
     - ntajima-jp
@@ -64,10 +46,8 @@ files:
     - yuuur
     - jennylia3
     - sesecho
-    - sshatari
     - yobaya
     - fwiw6430
-    - knagasue
     - kofukush
     - mai112233
     - r-deguchi
@@ -77,20 +57,13 @@ files:
     - ora-takahnak
   '_pages/**':
     - tniita
-    - cyberblack28
     - mmarukaw
     - oraryoyas
-    - kenkensonson
-    - YoshiakiYamasaki
-    - kumasan368
     - gakumura
-    - yoinakag
     # - eminamin
     - TomokoKonishi
-    - nonkyon
     - shukawam
     - kyyamada
-    - SNAKANE
     - yuarashi
     - s-nori
     - ntajima-jp
@@ -98,10 +71,8 @@ files:
     - yuuur
     - jennylia3
     - sesecho
-    - sshatari
     - yobaya
     - fwiw6430
-    - knagasue
     - kofukush
     - mai112233
     - r-deguchi
@@ -113,8 +84,6 @@ files:
     - tniita
     - mmarukaw
     - shukawam
-    - cyberblack28
-    - nonkyon
 
 options:
   ignore_draft: true
