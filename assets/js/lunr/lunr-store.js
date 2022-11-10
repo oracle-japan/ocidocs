@@ -718,4 +718,10 @@ var store = [{
         "tags": ["スライドあり","レベル:応用(200)"],
         "url": "/ocidocs/services/networking/load-balancer-200/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/9ca991733d2a4670bdd4e5ed5b5770c4/slide_0.jpg"
+      },{
+        "title": "Oracle Cloud Migrations Service概要",
+        "excerpt":"Oracle Cloud Migrationsサービスの概要資料です。Oracle Cloud Migrations は、OCIに移行を行うためのOCIネイティブなサービスです。初期リリースではVMwareからOCIコンピュート・インスタンスへの移行をサポートしています。   スライド              ","categories": ["Services","Compute"],
+        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
+        "url": "/ocidocs/services/compute/oracle-cloud-migrations/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/6b9035fa68974f6ca15dfd25774fecef/slide_0.jpg"
       }]

@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2022-10-11T17:40:29+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">ロード・バランサー 概要</title><link href="https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-100/" rel="alternate" type="text/html" title="ロード・バランサー 概要" /><published>2022-09-26T00:00:00+09:00</published><updated>2022-09-26T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-100</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-100/"><![CDATA[<p>バックエンドに配置した様々なサービスの冗長性やスケーリングをサポートする OCI ロード・バランサー・サービスについて、その機能概要、構成コンポーネントの内容、OCIコンソールを利用した構成方法などについて解説しています。<br />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2022-11-10T21:06:50+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">Oracle Cloud Migrations Service概要</title><link href="https://oracle-japan.github.io/ocidocs/services/compute/oracle-cloud-migrations/" rel="alternate" type="text/html" title="Oracle Cloud Migrations Service概要" /><published>2022-11-09T00:00:00+09:00</published><updated>2022-11-09T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/compute/oracle-cloud-migrations</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/compute/oracle-cloud-migrations/"><![CDATA[<p>Oracle Cloud Migrationsサービスの概要資料です。Oracle Cloud Migrations は、OCIに移行を行うためのOCIネイティブなサービスです。初期リリースではVMwareからOCIコンピュート・インスタンスへの移行をサポートしています。</p>
+
+<h4 id="スライド-">スライド <!-- 更新日を最新に変更 --></h4>
+
+<div style="max-width:768px">
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
+
+<script async="" class="speakerdeck-embed" data-id="6b9035fa68974f6ca15dfd25774fecef" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
+
+
+
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Compute" /><category term="スライドあり" /><category term="動画あり" /><category term="レベル:入門(100)" /><summary type="html"><![CDATA[Oracle Cloud Migrationsサービスの概要資料です。Oracle Cloud Migrationsは、OCIに移行を行うためのOCIネイティブなサービスです。]]></summary></entry><entry><title type="html">ロード・バランサー 概要</title><link href="https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-100/" rel="alternate" type="text/html" title="ロード・バランサー 概要" /><published>2022-09-26T00:00:00+09:00</published><updated>2022-09-26T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-100</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-100/"><![CDATA[<p>バックエンドに配置した様々なサービスの冗長性やスケーリングをサポートする OCI ロード・バランサー・サービスについて、その機能概要、構成コンポーネントの内容、OCIコンソールを利用した構成方法などについて解説しています。<br />
 2022/9/26 更新 : サービスのアップデートに合わせて、全般的に記述を見直しました。</p>
 
 <h4 id="スライド">スライド</h4>
@@ -111,14 +124,4 @@ VCNのトラブルシューティングやセキュリティ監視などに活�
 <script async="" class="speakerdeck-embed" data-id="114e3c0df97948ce97ff21b2ced1aa9a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 <!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
 
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Solutions" /><category term="IAM" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html"><![CDATA[OCIの新認証基盤Identity Domainsの機能概要資料です。]]></summary></entry><entry><title type="html">WAF保護ルールの考え方</title><link href="https://oracle-japan.github.io/ocidocs/services/edge%20security/security/waf-protection-rules/" rel="alternate" type="text/html" title="WAF保護ルールの考え方" /><published>2022-06-28T00:00:00+09:00</published><updated>2022-06-28T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/edge%20security/security/waf-protection-rules</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/edge%20security/security/waf-protection-rules/"><![CDATA[<p>OCI WAFでは、Webアプリケーションを攻撃から保護するために600以上の保護ルールが提供されています。本資料では、OCI WAFが提供する保護ルールの設定例や、選択方法について紹介します</p>
-
-<h4 id="スライド">スライド</h4>
-
-<div style="max-width:768px">
-
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-<script async="" class="speakerdeck-embed" data-id="6cda805a91594839b9e9e3b98fd31bd8" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
-
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Edge Security" /><category term="Security" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html"><![CDATA[本資料では、OCI WAFが提供する保護ルールの考え方と設定例について紹介します]]></summary></entry></feed>
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Solutions" /><category term="IAM" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html"><![CDATA[OCIの新認証基盤Identity Domainsの機能概要資料です。]]></summary></entry></feed>
