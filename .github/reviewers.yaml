@@ -20,7 +20,6 @@ files:
     - hsakurag
     - yuuur
     - jennylia3
-    - sesecho
     - yobaya
     - fwiw6430
     - kofukush
@@ -30,6 +29,8 @@ files:
     - takumiya0824
     - k-yamakawa
     - ora-takahnak
+    - ntakei1
+    - watarunS
   '_posts/**':
     - tniita
     - mmarukaw
@@ -45,7 +46,6 @@ files:
     - hsakurag
     - yuuur
     - jennylia3
-    - sesecho
     - yobaya
     - fwiw6430
     - kofukush
@@ -55,6 +55,8 @@ files:
     - takumiya0824
     - k-yamakawa
     - ora-takahnak
+    - ntakei1
+    - watarunS
   '_pages/**':
     - tniita
     - mmarukaw
@@ -70,7 +72,6 @@ files:
     - hsakurag
     - yuuur
     - jennylia3
-    - sesecho
     - yobaya
     - fwiw6430
     - kofukush
@@ -80,6 +81,8 @@ files:
     - takumiya0824
     - k-yamakawa
     - ora-takahnak
+    - ntakei1
+    - watarunS
   '.github/**':
     - tniita
     - mmarukaw
