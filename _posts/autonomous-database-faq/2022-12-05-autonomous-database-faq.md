@@ -40,7 +40,7 @@ ACIDが保証されているサービスとなります。
 
 ## (APEX)ADB上のOracle REST Data Serviceで作成したAPIはどうやって認証するでしょうか?
 
-OAuth2で認証する設定にしていただくことになります。[こちら](https://docs.oracle.com/cd/F25233_01/aelig/developing-REST-applications.html)のドキュメントに認証に関する記載がありますので、ご一読くださいますようお願いいたします。
+[こちら](https://docs.oracle.com/cd/F25233_01/aelig/developing-REST-applications.html)のドキュメントに認証に関する記載がありますので、ご一読くださいますようお願いいたします。
 * 3.3 RESTfulサービスへのセキュアなアクセスの構成
 * 3.3.5 チュートリアル: リソースの保護およびアクセス
 
@@ -78,9 +78,9 @@ OAuth2で認証する設定にしていただくことになります。[こち�
 
 ## SE BYOLで既存ライセンスを持ち込む場合、1インスタンスあたり8OCPUの上限があります。Auto Scalingを有効にした場合、OCPUはいくつが上限になりますか?
 
-SE BYOLでAuto Scalingを有効にする場合は、1インスタンスにつき 2 OCPUまでが上限となります。  
-3 OCPU以上に設定することもコンソールからの操作上は可能ですが、Auto Scalingで3倍になった場合、結果的にOCPUが9以上になり、ライセンス違反となります。そのため、SE BYOLで1インスタンスの最大である8 OCPUまで利用したい場合は、一旦Auto Scalingを無効に変更した上で、手動でOCPUを変更ください。これらの操作はオンラインで実施できます。  
-9 OCPU以上の環境にしたい場合は、SE BYOLは利用できません。ライセンス・タイプをBYOLから「ライセンス込み」に変更してご利用ください。こちらの操作もオンラインで実施できます。ただし、この場合は全OCPUがライセンス込みの価格になりますので、ご注意ください。
+ライセンスタイプは「ライセンス持込み (BYOL)」エディションを「Oracle Database Standard Edition(SE)」を選択してください。その場合、設定できるOCPU数は8まで、またAuto Scalingが利用された場合もBYOLの1インスタンスの最大である8 OCPUで頭打ちとなります。
+9OCPU以上の環境にしたい場合は、SE BYOLは利用できません。ライセンス・タイプをBYOLから「ライセンス込み」に変更してご利用ください。
+こちらの操作もオンラインで実施できます。ただし、この場合は全OCPUがライセンス込みの価格になりますので、ご注意ください。
 
 <br/>
 
@@ -163,7 +163,7 @@ SQL> select max_size from v$pdbs;
 ## 障害が発生した場合の復旧時間について教えてください。
 
 ハードウェア障害やデータ破損発生時の障害復旧時間は[こちら](https://docs.oracle.com/en/database/oracle/oracle-database/19/haovw/oracle-maximum-availability-architecture-and-autonomous-database-cloud.html#GUID-92064893-D689-4450-B491-3042A5AFCE2B)をご確認ください。サービスとしては可用性SLA99.95%で提供されます。  
-Autonomous Data Guard を構成いただいた場合は、データ破損などの障害からの復旧時間が短くなります。RTO/RPOについては[マニュアル](https://docs.oracle.com/ja-jp/iaas/adbdataguard/autonomous-data-guard-about.html#GUID-AF736587-4F6D-45C3-9886-7211B0A33745)をご確認ください。
+Autonomous Data Guard を構成いただいた場合は、SLA99.995%となり、データ破損などの障害からの復旧時間が短くなります。RTO/RPOについては[マニュアル](https://docs.oracle.com/ja-jp/iaas/adbdataguard/autonomous-data-guard-about.html#GUID-AF736587-4F6D-45C3-9886-7211B0A33745)をご確認ください。
 
 <br/>
 
@@ -180,7 +180,7 @@ Autnomous Data Guardを利用した構成をご検討いただけます。RTO/RP
 
 Autonomous Database は、ストレージ装置のスナップショット機能によるバックアップは採用しておらず、RMANを利用して60日ごとにフルバックアップ、週次で累積バックアップ、日次で増分バックアップを取得しております。増分バックアップの間の更新についてはアーカイブ・ログが取得されております。 これらのバックアップとアーカイブ・ログを利用することで、バックアップ保持期間の60日の間であれば任意のタイミングに戻すことが可能です（Point-In-Timeリカバリ）。
 従いまして、バックアップの断面を気にしていただく必要はありません。 ただし、Autonomous Database のリカバリは秒指定で行うため、断面でのリカバリが必要な場合は、アプリケーション側で静止点を確保し、その時間を指定してリカバリを行ってください。
-また、Autonomous Database には自動バックアップと合わせて手動バックアップという機能もあります。こちらをご利用いただくと指定したタイミングでフルバックアップを取得いただくことが可能です。自動バックアップはリストアする際に任意のタイミングに変更ログ（アーカイブ・ログ）を適用しリカバリする必要がありますが、手動バックアップは特定の時点のリストアのみで、リカバリする必要がありませんので、比較的高速に復旧いただくことが可能です。
+また、Autonomous Database には自動バックアップと合わせて手動バックアップという機能もあります。こちらをご利用いただくと指定したタイミングでフルバックアップを取得いただくことが可能です。自動バックアップはリストアする際に任意のタイミングに変更ログ（アーカイブ・ログ）を適用しリカバリする必要がありますが、手動バックアップは特定の時点のリストアのみで、リカバリする必要がありませんので、比較的高速に復旧いただくことが可能です。手動バックアップはAPI経由でのみ実行可能です。(※2022/12現在)
 
 [参考マニュアル Autonomous Databaseのバックアップおよびリストア](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/adbsa/backup-restore.html#GUID-9035DFB8-4702-4CEB-8281-C2A303820809)
 
@@ -228,10 +228,10 @@ TAG列の先頭の値でバックアップタイプが判断できます。
 
 <br/>
 
-## バックアップを任意の場所にリストアすることや、DBCSなど別のサービスに展開することは可能ですか？
+## バックアップを任意の場所にリストアすることや、BaseDBなど別のサービスに展開することは可能ですか？
 
 できません。Autonomous Database のバックアップは、同じデータベースにリストアしてデータを復元する目的にのみ使用できます。
-バックアップからではなく、Data Pump でオブジェクト・ストレージにエクスポートし、別のサービスへインポートを行うことや、クローン機能でクローンやリフレッシュ可能なクローンを同じリージョンの別のコンパートメントに作成することをご検討ください。
+バックアップからではなく、Data Pump でオブジェクト・ストレージにエクスポートし、別のサービスへインポートを行うことや、クローン機能でクローンやリフレッシュ可能なクローンを別のコンパートメントに作成することをご検討ください。
 
 <br/>
 
@@ -299,7 +299,7 @@ OCI GoldenGateの利用をご検討ください。またDatabase Linkをご利�
 
 <br/>
 
-## IoTデータ等の大規模ファイルを扱う場合、外部表を利用してオブジェクト・ストレージに配置して都度アクセスするか、一旦Autonomous DatabaseB内にロードしてから利用するのとではどちらが良いでしょうか？ 
+## IoTデータ等の大規模ファイルを扱う場合、外部表を利用してオブジェクト・ストレージに配置して都度アクセスするか、一旦Autonomous Database内にロードしてから利用するのとではどちらが良いでしょうか？ 
 
 ケース・バイ・ケースですが、参照頻度によって決めることをおすすめします。  
 SQLでの参照頻度が低いようであれば、オブジェクト・ストレージの方がAutonomous DatabaseのExadata Storageよりも安価ですので、外部表を利用してアクセスするほうがコストを抑えることができます。
@@ -312,9 +312,9 @@ SQLでの参照頻度が低いようであれば、オブジェクト・スト�
 
 ## Autonomous Database とOracle Database 以外のデータベースの連携は可能ですか？ 
 
-Oracle Database Gatewayを経由することでDB Linkで連携可能です。参照するリモートDBにはいくつか要件がございます。詳しくはこちらのマニュアルをご参照ください。
+Oracle Database Gatewayを経由することでDB Linkで連携可能です。Redshift、MySQL EE、PostgreSQL、SnowflakeなどいくつかのデータベースへのDB Linkでは、Oracle Database Gatewayを用意しなくとも利用可能です。参照するリモートDBにはいくつか要件がございます。詳しくはこちらのマニュアルをご参照ください。
 
-[参考：Oracle以外のデータベースにアクセスするためのOracleDatabaseGatewayへのデータベースリンクの作成](https://docs.oracle.com/en/cloud/paas/autonomous-database/adbsa/database-links-other-databases.html#GUID-E4F35EEE-3147-4822-A9EB-A341D87E4ECF)
+[参考：非Oracle Databaseへのデータベースリンクの作成](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/adbsa/autonomous-database-links-non-oracle-db.html#GUID-6C925566-2067-4D3B-A3FF-CA73C60506C9)
 
 <br/>
 
@@ -346,7 +346,7 @@ Autonomous Databaseではデータファイル（表領域）やバックアッ�
 
 ## Autonomous Databaseの表領域暗号化のアルゴリズムは何を利用していますか? 
 
-2022/05時点でAES-256で暗号化されております。
+2022/12時点でAES-256で暗号化されております。
 V$ENCRYPTED_TABLESPACESビューを参照いただくことで確認可能です。
 
 ```sql
@@ -433,8 +433,7 @@ Autonomous Databaseでは自動SQLチューニング（自動タスクによるS
 ## Autonomous Database でReal Application Testing(RAT)は利用できますか？ 
 
 はい、Real Application Testing(RAT)のSQL Performance Analyzer(SPA)を利用できます。  
-Autonomous Databaseへの移行を検討される際やAutonomous Databaseのバージョンアップの際に、個々のSQLの性能調査に有効です。手順は以下のチュートリアルを参照ください。  
-なお、Database Replayは利用できませんのでご注意ください。
+Autonomous Databaseへの移行を検討される際やAutonomous Databaseのバージョンアップの際に、個々のSQLの性能調査に有効です。手順は以下のチュートリアルを参照ください。なお、RATのDatabase Replayも利用可能です。
 
 [参考：SQL Performance Analyzer(SPA)チュートリアル](https://oracle-japan.github.io/ocitutorials/database/adb216-patch-spa/)
 
@@ -524,7 +523,7 @@ SELECT * FROM V$LOCKDOWN_RULES WHERE STATUS LIKE 'DISABLE%' ORDER BY RULE_TYPE ;
 ## AWRは取得できますか？AWRの保持期限、スナップショット間隔は変更で可能でしょうか？
 
 可能です。パフォーマンスハブからのダウンロードまたはSQLで取得できます。取得方法は[OCIチュートリアル](https://oracle-japan.github.io/ocitutorials/database/adb203-bulk-query/#anchor3-2)に記載していますのでご確認ください。
-AWRの取得設定は通常のOracle Databaseと同様にDBMS_WORKLOAD_REPOSITORY.MODIFY_SNAPSHOT_SETTINGSにて変更可能です。
+AWRの取得設定は通常のOracle Databaseと同様にDBMS_WORKLOAD_REPOSITORY.MODIFY_SNAPSHOT_SETTINGSにて変更可能ですが、再起動すると保持期間はデフォルトの30日に戻ります。
 
 <br />
 
@@ -559,7 +558,7 @@ SQLを利用してアラートログ(V$DIAG_ALERT_EXT)やトレースファイ�
 以下を必要に応じて組み合わせてご利用ください。詳細については[Autonomous Database Cloud 技術詳細](https://speakerdeck.com/oracle4engineer/autonomous-database-cloud-ji-shu-xiang-xi)を参照ください。 
 + OCIにおけるテナント管理者への各種通知（オラクル社が実施する各種メンテナンス等に関して）
 + ADBインスタンス単位で指定する連絡先リストへの通知（オラクル社が実施する各種メンテナンス等に関して）
-+ OCI Monitoringの監視メトリックやOCI Eventsにてサポートされるイベントについて通知（OCI Noritificationと連携）
++ OCI Monitoringの監視メトリックやOCI Eventsにてサポートされるイベントについて通知（OCI Notificationsと連携）
 + Oracle Management CloudやEnterprise Managerを用いた監視・通知
 
 <br />
