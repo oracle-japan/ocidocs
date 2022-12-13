@@ -1,5 +1,5 @@
 ---
-title: "OCI IAM Identity Domains - APEXアプリケーションとの認証連携・認可"
+title: "OCI IAM Identity Domain - APEXアプリケーションとの認証連携・認可"
 excerpt: "OCI IAM Identity DomainとAPEXアプリケーションの認証連携および認可制御を行うための設定手順をまとめた資料になります。"
 categories:
   - Solutions
@@ -10,7 +10,7 @@ tags:
 header:
   teaser: https://speakerd.s3.amazonaws.com/presentations/6c9055d46f574bb0bc32216f37dcd653/slide_0.jpg
 ---
-OCI IAM Identity Domainsでは、ユーザ認証を強化するための機能を複数提供しています。本資料ではIdentity Domainsでユーザの多要素認証を実現するための設定手順と、ユーザのクライアント端末のIPアドレスによるアクセス制御を実現するための設定手順をご紹介します。
+OCI IAM Identity DomainとAPEXアプリケーションの認証連携および認可制御を行うための設定手順をまとめた資料になります。
 
 
 
