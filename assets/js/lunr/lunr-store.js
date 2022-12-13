@@ -724,4 +724,10 @@ var store = [{
         "tags": ["FAQ"],
         "url": "/ocidocs/faq/services/autonomous/autonomous-database-faq/",
         "teaser": null
+      },{
+        "title": "Oracle Content Management サービス概要",
+        "excerpt":"OCI が提供するインテリジェントなコンテンツ管理プラットフォーム Oracle Content Management のサービスの概要紹介資料です。ファイル共有、アセット管理、Webサイト管理など、組織内のコンテンツ管理に関するさまざまな課題に対応する機能を1つのクラウドサービスとして提供します   2022年12月12日 新規公開しました   スライド           ","categories": ["Services","Developers"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/services/developers/oracle-content-management-overview/",
+        "teaser": "https://files.speakerdeck.com/presentations/2d6202da31254fd990954f06710e4c7b/slide_0.jpg?23620704\""
       }]
