@@ -719,6 +719,12 @@ var store = [{
         "url": "/ocidocs/services/compute/oracle-cloud-migrations/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/705d4256bd6d4d7b8cee3f346d213f8d/slide_0.jpg"
       },{
+        "title": "Oracle Cloud Infrastructure ご利用ガイド / Onboading Session",
+        "excerpt":" Onboarding Sessionとは、Oracle PaaS &amp; IaaSのサービスの開始＆サインイン方法や基本的なユーザ管理及びサポートサービスについてご紹介します。サービスの利用を開始するお客様に最適な内容となっております。    スライド - その1 ご利用ガイド (2020/11/15更新)             スライド - その2 サポートサービスご案内 (2020/11/15更新)             セミナー動画 (2020/11/15収録)        ","categories": ["Services","Overall"],
+        "tags": ["スライド","動画","レベル:入門(100)"],
+        "url": "/ocidocs/services/overall/oci-onboading/",
+        "teaser": null
+      },{
         "title": "Autonomous Database 技術FAQ",
         "excerpt":"■ サービス概要編 Autonomous DatabaseではExadataのモデルを選択できますか？ Share型とDedicated型で異なります。 Shared型ではモデルを選択することはできません。ExadataのSmartScanといったハードウェアのスペックに依存しないソフトウェアの機能による高速化がありますので、モデルを気にせずにお使いいただけます。それもメリットの一つです。 一方、筐体を専有してご利用いただくDedicated型の場合は、利用できるOCPU/ストレージの総量にも関係しますので、Exadata X7またはX8といったようにモデルをご選択いただくことが可能です。 Autonomous JSON Database(AJD) は ACID が保証されているのでしょうか？もしくは一般的なNo-SQL サービスと言う理解でしょうか？ ACIDが保証されているサービスとなります。 良くMongoDBと比較されますが、Autonomous JSON DatabaseはOracle Databaseにドキュメントを格納するため、RDBMSの特徴をそのまま享受できる点がMongoDBと異なる最大の特徴となります。 詳細についてはこちらに記載がありますので、併せてご確認ください。 (APEX)ADB上のOracle REST Data Serviceで作成したAPIはどうやって認証するでしょうか? こちらのドキュメントに認証に関する記載がありますので、ご一読くださいますようお願いいたします。 3.3 RESTfulサービスへのセキュアなアクセスの構成 3.3.5 チュートリアル: リソースの保護およびアクセス Autonomous JSON Database(AJD)からAutonomous Transaction Processing(ATP)への変更はできますか？ はい、できます。ATPからAJDへの変更は不可、またADWへの変更は不可です。 同様にAPEX Application Development(APEX)からATPへの変更は可能ですが、ATPからAPEXへの変更は不可、またADWへの変更も不可です。 ページトップに戻る ■ 課金/ライセンス OCPU、ストレージの課金は時間単位でしょうか？ 価格表にはストレージはTB/月、CPUはOCPU数/時で記載されていますが、 実際はどちらも秒単位の請求となります。OCPU、ストレージ共に最低1分から秒単位での利用が可能です。 Auto Scaling 有効時の課金について教えてください 分単位でCPU使用率を算出し、それを時間で平均したものが課金されます。少数点以下は切り上げとなります。例えば、ベースが4...","categories": ["FAQ","services","Autonomous"],
         "tags": ["FAQ"],
@@ -730,4 +736,34 @@ var store = [{
         "tags": ["スライドあり","レベル:入門(100)"],
         "url": "/ocidocs/services/developers/oracle-content-management-overview/",
         "teaser": "https://files.speakerdeck.com/presentations/2d6202da31254fd990954f06710e4c7b/slide_0.jpg?23620704\""
+      },{
+        "title": "OCI IAM Identity Domain - APEXアプリケーションとの認証連携・認可",
+        "excerpt":"OCI IAM Identity DomainとAPEXアプリケーションの認証連携および認可制御を行うための設定手順をまとめた資料になります。   スライド          ","categories": ["Solutions","IAM"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "/ocidocs/solutions/iam/identitydomains-apex/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/6c9055d46f574bb0bc32216f37dcd653/slide_0.jpg"
+      },{
+        "title": "OCI Database Management技術詳細",
+        "excerpt":"オンプレミス、クラウドのOracle Databaseのリソース・性能を監視するクラウドサービスについての紹介資料になります。   スライド          ","categories": ["Solutions","Manageability"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "/ocidocs/solutions/manageability/DBManagement/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/288ac83b507b4e4bbd6a8916c07785cc/slide_0.jpg"
+      },{
+        "title": "OCI Network Firewall概要",
+        "excerpt":"2022年に提供が開始されたOCI Network Firewallの紹介資料です。   スライド          ","categories": ["Solutions","Security"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "/ocidocs/solutions/security/NetworkFirewall/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/69c6d8709c684fcbb2b488fc0b9002c5/slide_0.jpg"
+      },{
+        "title": "OCI Securityサービス技術概要",
+        "excerpt":"2022年12月時点の、OCIで提供している各Securityサービスの特徴をまとめた資料になります。   スライド          ","categories": ["Solutions","Security"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "/ocidocs/solutions/security/OCISecurity/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/052c7b6821624e8bb362168913a8f6b2/slide_0.jpg"
+      },{
+        "title": "CSPモデルにおけるOCI設計ガイドライン",
+        "excerpt":"Cloud Solutions Provider (CSP) モデルでOracle Cloud Infrastructureを利用するにあたって、設計上の考慮事項をまとめた資料です。   スライド          ","categories": ["Solutions","Others"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "/ocidocs/solutions/others/design-guide-for-csps/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/6c98468ba01145949e75ccfc25242d27/slide_0.jpg"
       }]
