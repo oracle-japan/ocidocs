@@ -17,7 +17,71 @@ header:
       url: "https://docs.oracle.com/ja-jp/iaas/Content/knownissues.htm"
 ---
 
+# <span style="color: brown; ">■ お知らせ※2023年1月更新</span>
+<br/>
 
+現在Autonomous Database – Sharedへクライアント資格証明(ウォレット)を使用してDB接続を行っているユーザーは、2023/3/6までに新しいウォレットを再ダウンロードする必要があります。
+既存のウォレットでは、アプリケーション、ツール、サービスが、2023/3/6以降Autonomous Database インスタンスに接続できなくなります。
+
+2023年1月5日頃、Autonomous Database - Sharedをお使いのテナント管理者に以下のようなメールが送信されています。
+
+![wallet_announcement](wallet_announcement.png)
+
+## DB接続でウォレットを利用しているユーザーが必要な対応
+1. Oracle Clientを以下のバージョン以降であることを確認：新しいウォレットでの接続形式のサポートのため
+    + アップデートが必要な場合にはご対応ください。
+    + Oracle Instant Client/Oracle Database Client: 11.2.0.4.220719 (またはそれ以降), 18.19 (またはそれ以降), 19.2 (またはそれ以降), 21 (ベースリリースまたはそれ以降)
+    + ODP.NET: 12.1（2022年4月以降WINDBBP、Managed ODP.NETのみ）、18（ベースリリース以降）、19.4（以降、19.10を除く）、21（ベースリリース以降）
+    + JDBC Thin: 11.2.0.4 (またはBug 28492769 に対する単発パッチ適用後)、12.2 (またはBug 28492769 に対する単発パッチ適用後)、18 (ベースリリースまたはBug 28492769 に対する単発パッチ適用後)、19 (ベースリリース後)、21 (ベースリリースまたはそれ以降)
+
+1. 2023年1月10日から2023年3月6日までの間にクライアントで使用するウォレットを差し替え
+※ウォレットのローテーションは不要です。OCIコンソールよりウォレットを新たにダウンロードし、各クライアントに再配布してください。
+設定方法は[こちら](https://oracle-japan.github.io/ocitutorials/database/adb104-connect-using-wallet/)をご参照ください。
+
++ 上記の対応が難しい場合、設定によってはウォレットを使用しないTLS接続に変更することも可能です
+
+こちらの資料もご確認ください。
+
+<div style="max-width:768px">
+
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
+<script async class="speakerdeck-embed" data-id="270b8fb99c8a4acd9fd98a7a04748826" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
+
+</div>
+
+## 本件はウォレットを使うその他のOracle Cloud InfrastructureのOracle DB PaaSサービスも対象ですか？
+
+いいえ、Autonomous Database on Shared Infrastructureのみが対象です。
+
+<br/>
+
+## ウォレットのローテーションが必要ですか？
+
+いいえ、ローテーションは必要ありません。
+ウォレットの再ダウンロードを行い、クライアントに設定してください。
+
+<br/>
+
+## ウォレットの差し替えを行わないとどんな影響がありますか？
+
+2023/3/6以降Autonomous Databaseに接続できなくなります。
+
+<br/>
+
+## 本件についてのMOS Noteはありますか？
+
+[こちら](https://support.oracle.com/epmos/faces/DocumentDisplay?id=2911553.1)をご確認ください。
+
+<br/>
+
+## なぜ使用可能なクライアントのバージョンの制限があるのでしょうか？
+
+Autonomous Databaseは、mTLS接続文字列のssl_server_cert_dnプロパティに基づいてサーバーのDNマッチングを行っていましたが、このプロパティにはOrganization Unit(OU)フィールドが含まれています。今回、業界水準に準拠し、OUフィールドが使用不可になったため、サーバー側証明書からOUフィールドを削除しました。
+
+Autonomous Databaseは、今後は接続文字列のhostプロパティに基づいてDNマッチングを行うことをサポートします。このアプローチをサポートしているクライアントのバージョンにアップデートする必要があります。
+
+<br/>
 
 # <span style="color: brown; ">■ サービス概要編</span>
 <br/>
