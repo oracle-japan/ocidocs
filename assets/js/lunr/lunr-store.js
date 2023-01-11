@@ -725,12 +725,6 @@ var store = [{
         "url": "/ocidocs/services/overall/oci-onboading/",
         "teaser": null
       },{
-        "title": "Autonomous Database 技術FAQ",
-        "excerpt":"■ サービス概要編 Autonomous DatabaseではExadataのモデルを選択できますか？ Share型とDedicated型で異なります。 Shared型ではモデルを選択することはできません。ExadataのSmartScanといったハードウェアのスペックに依存しないソフトウェアの機能による高速化がありますので、モデルを気にせずにお使いいただけます。それもメリットの一つです。 一方、筐体を専有してご利用いただくDedicated型の場合は、利用できるOCPU/ストレージの総量にも関係しますので、Exadata X7またはX8といったようにモデルをご選択いただくことが可能です。 Autonomous JSON Database(AJD) は ACID が保証されているのでしょうか？もしくは一般的なNo-SQL サービスと言う理解でしょうか？ ACIDが保証されているサービスとなります。 良くMongoDBと比較されますが、Autonomous JSON DatabaseはOracle Databaseにドキュメントを格納するため、RDBMSの特徴をそのまま享受できる点がMongoDBと異なる最大の特徴となります。 詳細についてはこちらに記載がありますので、併せてご確認ください。 (APEX)ADB上のOracle REST Data Serviceで作成したAPIはどうやって認証するでしょうか? こちらのドキュメントに認証に関する記載がありますので、ご一読くださいますようお願いいたします。 3.3 RESTfulサービスへのセキュアなアクセスの構成 3.3.5 チュートリアル: リソースの保護およびアクセス Autonomous JSON Database(AJD)からAutonomous Transaction Processing(ATP)への変更はできますか？ はい、できます。ATPからAJDへの変更は不可、またADWへの変更は不可です。 同様にAPEX Application Development(APEX)からATPへの変更は可能ですが、ATPからAPEXへの変更は不可、またADWへの変更も不可です。 ページトップに戻る ■ 課金/ライセンス OCPU、ストレージの課金は時間単位でしょうか？ 価格表にはストレージはTB/月、CPUはOCPU数/時で記載されていますが、 実際はどちらも秒単位の請求となります。OCPU、ストレージ共に最低1分から秒単位での利用が可能です。 Auto Scaling 有効時の課金について教えてください 分単位でCPU使用率を算出し、それを時間で平均したものが課金されます。少数点以下は切り上げとなります。例えば、ベースが4...","categories": ["FAQ","services","Autonomous"],
-        "tags": ["FAQ"],
-        "url": "/ocidocs/faq/services/autonomous/autonomous-database-faq/",
-        "teaser": null
-      },{
         "title": "Oracle Content Management サービス概要",
         "excerpt":"OCI が提供するインテリジェントなコンテンツ管理プラットフォーム Oracle Content Management のサービスの概要紹介資料です。ファイル共有、アセット管理、Webサイト管理など、組織内のコンテンツ管理に関するさまざまな課題に対応する機能を1つのクラウドサービスとして提供します   2022年12月12日 新規公開しました   スライド           ","categories": ["Services","Developers"],
         "tags": ["スライドあり","レベル:入門(100)"],
@@ -766,4 +760,10 @@ var store = [{
         "tags": ["スライドあり","レベル:応用(200)"],
         "url": "/ocidocs/solutions/others/design-guide-for-csps/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/6c98468ba01145949e75ccfc25242d27/slide_0.jpg"
+      },{
+        "title": "Autonomous Database 技術FAQ",
+        "excerpt":"■ お知らせ※2023年1月更新 現在Autonomous Database – Sharedへクライアント資格証明(ウォレット)を使用してDB接続を行っているユーザーは、2023/3/6までに新しいウォレットを再ダウンロードする必要があります。 既存のウォレットでは、アプリケーション、ツール、サービスが、2023/3/6以降Autonomous Database インスタンスに接続できなくなります。 2023年1月5日頃、Autonomous Database - Sharedをお使いのテナント管理者に以下のようなメールが送信されています。 DB接続でウォレットを利用しているユーザーが必要な対応 Oracle Clientを以下のバージョン以降であることを確認：新しいウォレットでの接続形式のサポートのため アップデートが必要な場合にはご対応ください。 Oracle Instant Client/Oracle Database Client: 11.2.0.4.220719 (またはそれ以降), 18.19 (またはそれ以降), 19.2 (またはそれ以降), 21 (ベースリリースまたはそれ以降) ODP.NET: 12.1（2022年4月以降WINDBBP、Managed ODP.NETのみ）、18（ベースリリース以降）、19.4（以降、19.10を除く）、21（ベースリリース以降） JDBC Thin: 11.2.0.4 (またはBug 28492769 に対する単発パッチ適用後)、12.2 (またはBug 28492769 に対する単発パッチ適用後)、18 (ベースリリースまたはBug 28492769 に対する単発パッチ適用後)、19 (ベースリリース後)、21 (ベースリリースまたはそれ以降) 2023年1月10日から2023年3月6日までの間にクライアントで使用するウォレットを差し替え ※ウォレットのローテーションは不要です。OCIコンソールよりウォレットを新たにダウンロードし、各クライアントに再配布してください。 設定方法はこちらをご参照ください。...","categories": ["FAQ","services","Autonomous"],
+        "tags": ["FAQ"],
+        "url": "/ocidocs/faq/services/autonomous/autonomous-database-faq/",
+        "teaser": null
       }]

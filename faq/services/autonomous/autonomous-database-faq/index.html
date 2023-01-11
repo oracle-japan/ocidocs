@@ -36,7 +36,7 @@
 
 
 
-  <meta property="article:published_time" content="2022-12-05T00:00:00+09:00">
+  <meta property="article:published_time" content="2023-01-11T00:00:00+09:00">
 
 
 
@@ -187,7 +187,7 @@
       <span class="page__meta-date">
         <i class="far fa-calendar-alt" aria-hidden="true"></i>
         
-        <time datetime="2022-12-05T00:00:00+09:00">December 5, 2022</time>
+        <time datetime="2023-01-11T00:00:00+09:00">January 11, 2023</time>
       </span>
     
 
@@ -338,7 +338,7 @@
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Autonomous Database 技術FAQ">
     <meta itemprop="description" content="Autonomous Database に関して、利用時のよくある質問に対する回答や、ノウハウ/Tipsについて記載しています。">
-    <meta itemprop="datePublished" content="2022-12-05T00:00:00+09:00">
+    <meta itemprop="datePublished" content="2023-01-11T00:00:00+09:00">
     
 
     <div class="page__inner-wrap">
@@ -349,12 +349,84 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 目次</h4></header>
-              <ul class="toc__menu"><li><a href="#-サービス概要編">■ サービス概要編</a></li><li><a href="#-課金ライセンス">■ 課金/ライセンス</a></li><li><a href="#-構成関連">■ 構成関連</a></li><li><a href="#-可用性関連">■ 可用性関連</a></li><li><a href="#-接続データロード連携関連">■ 接続・データロード/連携関連</a></li><li><a href="#-セキュリティ関連">■ セキュリティ関連</a></li><li><a href="#-オプション機能関連">■ オプション・機能関連</a></li><li><a href="#-運用管理監視関連">■ 運用管理・監視関連</a></li><li><a href="#-パッチメンテナンス関連">■ パッチ・メンテナンス関連</a></li><li><a href="#-性能検証編環境作成">■ 性能検証編(環境作成)</a></li><li><a href="#-性能検証編クエリ実行">■ 性能検証編(クエリ実行)</a></li><li><a href="#-その他-">■ その他 </a></li></ul>
+              <ul class="toc__menu"><li><a href="#-お知らせ2023年1月更新">■ お知らせ※2023年1月更新</a></li><li><a href="#-サービス概要編">■ サービス概要編</a></li><li><a href="#-課金ライセンス">■ 課金/ライセンス</a></li><li><a href="#-構成関連">■ 構成関連</a></li><li><a href="#-可用性関連">■ 可用性関連</a></li><li><a href="#-接続データロード連携関連">■ 接続・データロード/連携関連</a></li><li><a href="#-セキュリティ関連">■ セキュリティ関連</a></li><li><a href="#-オプション機能関連">■ オプション・機能関連</a></li><li><a href="#-運用管理監視関連">■ 運用管理・監視関連</a></li><li><a href="#-パッチメンテナンス関連">■ パッチ・メンテナンス関連</a></li><li><a href="#-性能検証編環境作成">■ 性能検証編(環境作成)</a></li><li><a href="#-性能検証編クエリ実行">■ 性能検証編(クエリ実行)</a></li><li><a href="#-その他-">■ その他 </a></li></ul>
 
             </nav>
           </aside>
         
-        <h1 id="-サービス概要編"><span style="color: brown; ">■ サービス概要編</span></h1>
+        <h1 id="-お知らせ2023年1月更新"><span style="color: brown; ">■ お知らせ※2023年1月更新</span></h1>
+<p><br /></p>
+
+<p>現在Autonomous Database – Sharedへクライアント資格証明(ウォレット)を使用してDB接続を行っているユーザーは、2023/3/6までに新しいウォレットを再ダウンロードする必要があります。
+既存のウォレットでは、アプリケーション、ツール、サービスが、2023/3/6以降Autonomous Database インスタンスに接続できなくなります。</p>
+
+<p>2023年1月5日頃、Autonomous Database - Sharedをお使いのテナント管理者に以下のようなメールが送信されています。</p>
+
+<p><img src="wallet_announcement.png" alt="wallet_announcement" /></p>
+
+<h2 id="db接続でウォレットを利用しているユーザーが必要な対応">DB接続でウォレットを利用しているユーザーが必要な対応</h2>
+<ol>
+  <li>Oracle Clientを以下のバージョン以降であることを確認：新しいウォレットでの接続形式のサポートのため
+    <ul>
+      <li>アップデートが必要な場合にはご対応ください。</li>
+      <li>Oracle Instant Client/Oracle Database Client: 11.2.0.4.220719 (またはそれ以降), 18.19 (またはそれ以降), 19.2 (またはそれ以降), 21 (ベースリリースまたはそれ以降)</li>
+      <li>ODP.NET: 12.1（2022年4月以降WINDBBP、Managed ODP.NETのみ）、18（ベースリリース以降）、19.4（以降、19.10を除く）、21（ベースリリース以降）</li>
+      <li>JDBC Thin: 11.2.0.4 (またはBug 28492769 に対する単発パッチ適用後)、12.2 (またはBug 28492769 に対する単発パッチ適用後)、18 (ベースリリースまたはBug 28492769 に対する単発パッチ適用後)、19 (ベースリリース後)、21 (ベースリリースまたはそれ以降)</li>
+    </ul>
+  </li>
+  <li>2023年1月10日から2023年3月6日までの間にクライアントで使用するウォレットを差し替え
+※ウォレットのローテーションは不要です。OCIコンソールよりウォレットを新たにダウンロードし、各クライアントに再配布してください。
+設定方法は<a href="https://oracle-japan.github.io/ocitutorials/database/adb104-connect-using-wallet/">こちら</a>をご参照ください。</li>
+</ol>
+
+<ul>
+  <li>上記の対応が難しい場合、設定によってはウォレットを使用しないTLS接続に変更することも可能です</li>
+</ul>
+
+<p>こちらの資料もご確認ください。</p>
+
+<div style="max-width:768px">
+
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
+<script async="" class="speakerdeck-embed" data-id="270b8fb99c8a4acd9fd98a7a04748826" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
+
+</div>
+
+<h2 id="本件はウォレットを使うその他のoracle-cloud-infrastructureのoracle-db-paasサービスも対象ですか">本件はウォレットを使うその他のOracle Cloud InfrastructureのOracle DB PaaSサービスも対象ですか？</h2>
+
+<p>いいえ、Autonomous Database on Shared Infrastructureのみが対象です。</p>
+
+<p><br /></p>
+
+<h2 id="ウォレットのローテーションが必要ですか">ウォレットのローテーションが必要ですか？</h2>
+
+<p>いいえ、ローテーションは必要ありません。
+ウォレットの再ダウンロードを行い、クライアントに設定してください。</p>
+
+<p><br /></p>
+
+<h2 id="ウォレットの差し替えを行わないとどんな影響がありますか">ウォレットの差し替えを行わないとどんな影響がありますか？</h2>
+
+<p>2023/3/6以降Autonomous Databaseに接続できなくなります。</p>
+
+<p><br /></p>
+
+<h2 id="本件についてのmos-noteはありますか">本件についてのMOS Noteはありますか？</h2>
+
+<p><a href="https://support.oracle.com/epmos/faces/DocumentDisplay?id=2911553.1">こちら</a>をご確認ください。</p>
+
+<p><br /></p>
+
+<h2 id="なぜ使用可能なクライアントのバージョンの制限があるのでしょうか">なぜ使用可能なクライアントのバージョンの制限があるのでしょうか？</h2>
+
+<p>Autonomous Databaseは、mTLS接続文字列のssl_server_cert_dnプロパティに基づいてサーバーのDNマッチングを行っていましたが、このプロパティにはOrganization Unit(OU)フィールドが含まれています。今回、業界水準に準拠し、OUフィールドが使用不可になったため、サーバー側証明書からOUフィールドを削除しました。</p>
+
+<p>Autonomous Databaseは、今後は接続文字列のhostプロパティに基づいてDNマッチングを行うことをサポートします。このアプローチをサポートしているクライアントのバージョンにアップデートする必要があります。</p>
+
+<p><br /></p>
+
+<h1 id="-サービス概要編"><span style="color: brown; ">■ サービス概要編</span></h1>
 <p><br /></p>
 
 <h2 id="autonomous-databaseではexadataのモデルを選択できますか">Autonomous DatabaseではExadataのモデルを選択できますか？</h2>
@@ -1282,7 +1354,7 @@ OCICLIでの実施方法は<a href="https://oracle-japan.github.io/ocitutorials/
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 更新日時:</strong> <time datetime="2022-12-05T00:00:00+09:00">December 5, 2022</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 更新日時:</strong> <time datetime="2023-01-11T00:00:00+09:00">January 11, 2023</time></p>
 
 
       </footer>
@@ -1303,12 +1375,11 @@ OCICLIでの実施方法は<a href="https://oracle-japan.github.io/ocitutorials/
       
   <nav class="pagination">
     
-      <a href="/ocidocs/services/overall/oci-onboading/" class="pagination--pager" title="Oracle Cloud Infrastructure ご利用ガイド / Onboading Session
+      <a href="/ocidocs/solutions/others/design-guide-for-csps/" class="pagination--pager" title="CSPモデルにおけるOCI設計ガイドライン
 ">前へ</a>
     
     
-      <a href="/ocidocs/services/developers/oracle-content-management-overview/" class="pagination--pager" title="Oracle Content Management サービス概要
-">次へ</a>
+      <a href="#" class="pagination--pager disabled">次へ</a>
     
   </nav>
 
@@ -1536,7 +1607,7 @@ OCICLIでの実施方法は<a href="https://oracle-japan.github.io/ocitutorials/
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2022 Oracle Cloud Infrastructure 活用資料集. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2023 Oracle Cloud Infrastructure 活用資料集. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>

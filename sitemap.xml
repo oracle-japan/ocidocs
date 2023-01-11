@@ -485,10 +485,6 @@
 <lastmod>2022-11-19T06:00:00+09:00</lastmod>
 </url>
 <url>
-<loc>https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq/</loc>
-<lastmod>2022-12-05T00:00:00+09:00</lastmod>
-</url>
-<url>
 <loc>https://oracle-japan.github.io/ocidocs/services/developers/oracle-content-management-overview/</loc>
 <lastmod>2022-12-12T00:00:00+09:00</lastmod>
 </url>
@@ -511,6 +507,10 @@
 <url>
 <loc>https://oracle-japan.github.io/ocidocs/solutions/others/design-guide-for-csps/</loc>
 <lastmod>2022-12-28T00:00:00+09:00</lastmod>
+</url>
+<url>
+<loc>https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq/</loc>
+<lastmod>2023-01-11T00:00:00+09:00</lastmod>
 </url>
 <url>
 <loc>https://oracle-japan.github.io/ocidocs/about/</loc>
