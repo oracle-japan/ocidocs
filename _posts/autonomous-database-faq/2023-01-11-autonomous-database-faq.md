@@ -75,6 +75,14 @@ header:
 
 <br/>
 
+## OCIのコンソール画面に**必須アクション：**Changes to Databases that use mTLS Authentication (MOS Doc ID 2911553.1) と表示されていますが、これは本件と関係ありますか？
+
+はい、本件はOCIの**お知らせ**でもアナウンスされています。
+
+![oci_announcement](oci_announcement.png)
+
+<br/>
+
 ## なぜ使用可能なクライアントのバージョンの制限があるのでしょうか？
 
 Autonomous Databaseは、mTLS接続文字列のssl_server_cert_dnプロパティに基づいてサーバーのDNマッチングを行っていましたが、このプロパティにはOrganization Unit(OU)フィールドが含まれています。今回、業界水準に準拠し、OUフィールドが使用不可になったため、サーバー側証明書からOUフィールドを削除しました。
