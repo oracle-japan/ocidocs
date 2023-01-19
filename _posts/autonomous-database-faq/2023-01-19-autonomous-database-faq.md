@@ -31,8 +31,10 @@ header:
 1. Oracle Clientを以下のバージョン以降であることを確認：新しいウォレットでの接続形式のサポートのため
     + アップデートが必要な場合にはご対応ください。
     + Oracle Instant Client/Oracle Database Client: 11.2.0.4.220719 (またはそれ以降), 18.19 (またはそれ以降), 19.2 (またはそれ以降), 21 (ベースリリースまたはそれ以降)
+    cx_Oracle, node-oracledb, godror, PHP OCI8, PHP PDO_OCI, ruby-oci8, ROracle, rust-oracleなどのOracle Database ドライバについては、上記のOracle Instant Client/Oracle Database Client バージョンで使用してください
     + ODP.NET: 12.1（2022年4月以降WINDBBP、Managed ODP.NETのみ）、18（ベースリリース以降）、19.4（以降、19.10を除く）、21（ベースリリース以降）
     + JDBC Thin: 11.2.0.4 (またはBug 28492769 に対する単発パッチ適用後)、12.2 (またはBug 28492769 に対する単発パッチ適用後)、18 (ベースリリースまたはBug 28492769 に対する単発パッチ適用後)、19 (ベースリリース後)、21 (ベースリリースまたはそれ以降)
+    + Python: python-oracledb 1.0 (またはそれ以降)
 
 1. 2023年1月10日から2023年3月6日までの間にクライアントで使用するウォレットを差し替え
 ※ウォレットのローテーションは不要です。OCIコンソールよりウォレットを新たにダウンロードし、各クライアントに再配布してください。
@@ -88,6 +90,24 @@ header:
 Autonomous Databaseは、mTLS接続文字列のssl_server_cert_dnプロパティに基づいてサーバーのDNマッチングを行っていましたが、このプロパティにはOrganization Unit(OU)フィールドが含まれています。今回、業界水準に準拠し、OUフィールドが使用不可になったため、サーバー側証明書からOUフィールドを削除しました。
 
 Autonomous Databaseは、今後は接続文字列のhostプロパティに基づいてDNマッチングを行うことをサポートします。このアプローチをサポートしているクライアントのバージョンにアップデートする必要があります。
+
+<br/>
+
+## サポートされるODP.NETは12.1のみ記載されていますが、12.2を使用している場合は、バージョンアップが必要ということですか？
+
+はい、12.1限定となりますので、12.2をお使いの場合は19.4以降のバージョンへのバージョンアップが必要になります。
+
+<br/>
+
+## プライベート・エンドポイント・アクセスのみのネットワーク構成のAutonomous Databaseを運用しています。ウォレットの差し替え後、DBに接続できなくなり`ORA-29003：SSL transport detected mismatched server certificate.`というエラーが出ます。
+
+ウォレットにはAutonomous Databaseへの接続情報を記載するファイルであるtnsnames.oraが含まれます。tnsnames.oraでは、接続先のhost名はデフォルトではFQDN(例：xxxx.adb.ap-tokyo-1.oraclecloud.com)で記載されていますが、プライベートIPアドレスに書き換えて運用されている場合、新しいウォレットでは接続時ORA-29003エラーになります。以前はプライベートIPアドレスでも接続可能でしたが、今回のウォレット差し替えのタイミングで仕様変更となりました。
+
+<br/>
+
+## プライベート・エンドポイント・アクセスのみのADBから、プライベート・エンドポイント・アクセスのみのADBへのデータベース・リンクを構成しています。ウォレットの差し替え後、`ORA-29002：SSL transport detected invalid or obsolete server certificate.`というエラーが出ます。
+
+今回のウォレットの差し替えに際して、ご指摘の構成のデータベース・リンクではウォレットを使った接続がサポートされなくなりました。その構成でデータベース・リンクを使用する場合、ウォレットを使わない接続の利用を検討してください。詳細は[こちら](https://docs.oracle.com/en/cloud/paas/autonomous-database/adbsa/database-links-oracledb-private.html#GUID-67B611A2-2866-49F2-A580-0D6A6EE83A04)をご参照ください。
 
 <br/>
 
