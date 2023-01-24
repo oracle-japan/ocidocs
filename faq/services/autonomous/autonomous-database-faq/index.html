@@ -360,6 +360,28 @@
 <p>現在Autonomous Database – Sharedへクライアント資格証明(ウォレット)を使用してDB接続を行っているユーザーは、2023/3/6までに新しいウォレットを再ダウンロードする必要があります。
 既存のウォレットでは、アプリケーション、ツール、サービスが、2023/3/6以降Autonomous Database インスタンスに接続できなくなります。</p>
 
+<p>ウォレットを使わないTLS接続でDB接続を行っているユーザーは、接続文字列の更新が必要な場合がありますのでご確認ください。</p>
+<ul>
+  <li>以下のようなOUフィールドの含まれていない接続文字列(新形式)を使用している場合、対応不要です</li>
+  <li>2022年8月以降OCIコンソールもしくはAPI経由で取得可能な接続文字列は下記の新形式です</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">(description=(retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1521)(host=adb.region.oraclecloud.com))
+(connect_data=(service_name=u9adutfb2ba8x4d_database_medium.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))</code></p>
+
+<ul>
+  <li>以下のようなOUフィールドの含まれている文字列(旧形式)では、3月6日以降接続ができなくなります</li>
+  <li>2022年8月以前に取得した接続文字列は下記の旧形式です</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">(description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1521)(host=adb.region.oraclecloud.com))
+(connect_data=(service_name=u9adutfb2ba8x4d_database_medium.adb.oraclecloud.com))
+(security=(ssl_server_cert_dn="CN=adwc-preprod.uscom-east-1.oraclecloud.com, OU=Oracle BMCS US,O=Oracle Corporation, L=Redwood City, ST=California, C=US")))</code></p>
+
+<ul>
+  <li>OUフィールドの含まれている接続文字列を使用している場合、OCIコンソールもしくはAPI経由でOUフィールドの含まれていない新しい接続文字列を取得し、そちらに変更が必要です。</li>
+</ul>
+
 <p>2023年1月5日頃、Autonomous Database - Sharedをお使いのテナント管理者に以下のようなメールが送信されています。</p>
 
 <p><img src="wallet_announcement.png" alt="wallet_announcement" /></p>
