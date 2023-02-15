@@ -117,7 +117,7 @@ Autonomous Databaseは、今後は接続文字列のhostプロパティに基づ
 
 ## プライベート・エンドポイント・アクセスのみのネットワーク構成のAutonomous Databaseを運用しています。ウォレットの差し替え後、DBに接続できなくなり`ORA-29003：SSL transport detected mismatched server certificate.`というエラーが出ます。
 
-ウォレットにはAutonomous Databaseへの接続情報を記載するファイルであるtnsnames.oraが含まれます。tnsnames.oraでは、接続先のhost名はデフォルトではFQDN(例：xxxx.adb.ap-tokyo-1.oraclecloud.com)で記載されていますが、プライベートIPアドレスに書き換えて運用されている場合、新しいウォレットでは接続時ORA-29003エラーになります。以前はプライベートIPアドレスでも接続可能でしたが、今回のウォレット差し替えのタイミングで仕様変更となりました。
+ウォレットにはAutonomous Databaseへの接続情報を記載するファイルであるtnsnames.oraが含まれます。tnsnames.oraでは、接続先のhost名はデフォルトではFQDN(例：xxxx.adb.ap-tokyo-1.oraclecloud.com)で記載されていますが、プライベートIPアドレスに書き換えて運用されている場合、新しいウォレットでは接続時ORA-29003エラーになります。以前はプライベートIPアドレスでも接続可能でしたが、今回のウォレット差し替えのタイミングで仕様変更となりました。なお、ウォレットを使わない接続の場合は、プライベートIPでの接続はサポートされています。
 
 <br/>
 
