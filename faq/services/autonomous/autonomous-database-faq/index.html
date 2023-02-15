@@ -36,7 +36,7 @@
 
 
 
-  <meta property="article:published_time" content="2023-01-19T00:00:00+09:00">
+  <meta property="article:published_time" content="2023-02-15T00:00:00+09:00">
 
 
 
@@ -187,7 +187,7 @@
       <span class="page__meta-date">
         <i class="far fa-calendar-alt" aria-hidden="true"></i>
         
-        <time datetime="2023-01-19T00:00:00+09:00">January 19, 2023</time>
+        <time datetime="2023-02-15T00:00:00+09:00">February 15, 2023</time>
       </span>
     
 
@@ -338,7 +338,7 @@
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Autonomous Database 技術FAQ">
     <meta itemprop="description" content="Autonomous Database に関して、利用時のよくある質問に対する回答や、ノウハウ/Tipsについて記載しています。">
-    <meta itemprop="datePublished" content="2023-01-19T00:00:00+09:00">
+    <meta itemprop="datePublished" content="2023-02-15T00:00:00+09:00">
     
 
     <div class="page__inner-wrap">
@@ -466,7 +466,7 @@
 
 <h2 id="プライベートエンドポイントアクセスのみのネットワーク構成のautonomous-databaseを運用していますウォレットの差し替え後dbに接続できなくなりora-29003ssl-transport-detected-mismatched-server-certificateというエラーが出ます">プライベート・エンドポイント・アクセスのみのネットワーク構成のAutonomous Databaseを運用しています。ウォレットの差し替え後、DBに接続できなくなり<code class="language-plaintext highlighter-rouge">ORA-29003：SSL transport detected mismatched server certificate.</code>というエラーが出ます。</h2>
 
-<p>ウォレットにはAutonomous Databaseへの接続情報を記載するファイルであるtnsnames.oraが含まれます。tnsnames.oraでは、接続先のhost名はデフォルトではFQDN(例：xxxx.adb.ap-tokyo-1.oraclecloud.com)で記載されていますが、プライベートIPアドレスに書き換えて運用されている場合、新しいウォレットでは接続時ORA-29003エラーになります。以前はプライベートIPアドレスでも接続可能でしたが、今回のウォレット差し替えのタイミングで仕様変更となりました。</p>
+<p>ウォレットにはAutonomous Databaseへの接続情報を記載するファイルであるtnsnames.oraが含まれます。tnsnames.oraでは、接続先のhost名はデフォルトではFQDN(例：xxxx.adb.ap-tokyo-1.oraclecloud.com)で記載されていますが、プライベートIPアドレスに書き換えて運用されている場合、新しいウォレットでは接続時ORA-29003エラーになります。以前はプライベートIPアドレスでも接続可能でしたが、今回のウォレット差し替えのタイミングで仕様変更となりました。なお、ウォレットを使わない接続の場合は、プライベートIPでの接続はサポートされています。</p>
 
 <p><br /></p>
 
@@ -1404,7 +1404,7 @@ OCICLIでの実施方法は<a href="https://oracle-japan.github.io/ocitutorials/
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 更新日時:</strong> <time datetime="2023-01-19T00:00:00+09:00">January 19, 2023</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 更新日時:</strong> <time datetime="2023-02-15T00:00:00+09:00">February 15, 2023</time></p>
 
 
       </footer>
