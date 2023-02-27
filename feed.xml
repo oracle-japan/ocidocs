@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2023-02-15T17:20:41+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">Autonomous Database 技術FAQ</title><link href="https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq/" rel="alternate" type="text/html" title="Autonomous Database 技術FAQ" /><published>2023-02-15T00:00:00+09:00</published><updated>2023-02-15T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq/"><![CDATA[<h1 id="-お知らせ2023年1月更新"><span style="color: brown; ">■ お知らせ※2023年1月更新</span></h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2023-02-27T15:24:29+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">Autonomous Database 技術FAQ</title><link href="https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq/" rel="alternate" type="text/html" title="Autonomous Database 技術FAQ" /><published>2023-02-27T00:00:00+09:00</published><updated>2023-02-27T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq/"><![CDATA[<h1 id="-お知らせ2023年1月更新"><span style="color: brown; ">■ お知らせ※2023年1月更新</span></h1>
 <p><br /></p>
 
 <p>現在Autonomous Database – Sharedへクライアント資格証明(ウォレット)を使用してDB接続を行っているユーザーは、2023/3/6までに新しいウォレットを再ダウンロードする必要があります。
@@ -108,11 +108,42 @@
 
 <p><br /></p>
 
-<h2 id="プライベートエンドポイントアクセスのみのネットワーク構成のautonomous-databaseを運用していますウォレットの差し替え後dbに接続できなくなりora-29003ssl-transport-detected-mismatched-server-certificateというエラーが出ます">プライベート・エンドポイント・アクセスのみのネットワーク構成のAutonomous Databaseを運用しています。ウォレットの差し替え後、DBに接続できなくなり<code class="language-plaintext highlighter-rouge">ORA-29003：SSL transport detected mismatched server certificate.</code>というエラーが出ます。</h2>
+<h2 id="今すぐにはクライアントのバージョンアップが難しいですリストにないバージョンのクライアントでも接続はできますか">今すぐにはクライアントのバージョンアップが難しいです。リストにないバージョンのクライアントでも接続はできますか？</h2>
 
-<p>ウォレットにはAutonomous Databaseへの接続情報を記載するファイルであるtnsnames.oraが含まれます。tnsnames.oraでは、接続先のhost名はデフォルトではFQDN(例：xxxx.adb.ap-tokyo-1.oraclecloud.com)で記載されていますが、プライベートIPアドレスに書き換えて運用されている場合、新しいウォレットでは接続時ORA-29003エラーになります。以前はプライベートIPアドレスでも接続可能でしたが、今回のウォレット差し替えのタイミングで仕様変更となりました。なお、ウォレットを使わない接続の場合は、プライベートIPでの接続はサポートされています。</p>
+<p>基本的にはリストにあるバージョンのクライアントをお使いいただくことを推奨しております。しかし、リストにない11gや12cのクライアントでもバージョンによっては、接続可能なケースがございます。</p>
+
+<p>今すぐのバージョンアップが難しい場合は、後のFAQで示している対応によってそれらのバージョンでお使いいただくことも可能ですが、運用上何か不具合が起きた際にSR等でお問合せいただいても、解決策としてクライアントのバージョンアップをまずはお願いする可能性があります。</p>
 
 <p><br /></p>
+
+<h2 id="ウォレット差し替え後リストにないバージョンのクライアントから接続しようとするとエラーが出て接続ができなくなりました">ウォレット差し替え後、リストにないバージョンのクライアントから接続しようとすると、エラーが出て、接続ができなくなりました。</h2>
+
+<p>先のFAQにもある通り、基本的にクライアントのバージョンアップにてご対応をお願いいたします。対応が難しければ、以下の回避策がございます。</p>
+
+<ul>
+  <li>
+    <p>ADBのネットワーク・アクセスが<code class="language-plaintext highlighter-rouge">すべての場所からのセキュア・アクセス</code>もしくは<code class="language-plaintext highlighter-rouge">許可されたIPおよびVCN限定のセキュア・アクセス</code>の場合</p>
+
+    <p>以下の手順をお試しください。それでもなおエラーが出る場合は、クライアントのバージョンアップのご対応をお願いいたします。</p>
+  </li>
+</ul>
+
+<ol>
+  <li>
+    <p>ADBインスタンスをTLSとmTLS認証の両方を許可する設定に変更します。ドキュメントは<a href="https://docs.oracle.com/cd//E83857_01/paas/autonomous-database/adbsa/support-tls-mtls-authentication.html">こちら</a></p>
+  </li>
+  <li>
+    <p>sqlnet.oraとtnsnames.ora内のssl_server_dn_matchをyesからnoに変更</p>
+  </li>
+</ol>
+
+<ul>
+  <li>
+    <p>ADBのネットワーク・アクセスが<code class="language-plaintext highlighter-rouge">プライベート・エンドポイント・アクセスのみ</code>の場合</p>
+
+    <p>sqlnet.oraとtnsnames.ora内のssl_server_dn_matchがnoになっていることを確認します。それでもなおエラーが出る場合は、クライアントのバージョンアップのご対応をお願いいたします。</p>
+  </li>
+</ul>
 
 <h2 id="プライベートエンドポイントアクセスのみのadbからプライベートエンドポイントアクセスのみのadbへのデータベースリンクを構成していますウォレットの差し替え後ora-29002ssl-transport-detected-invalid-or-obsolete-server-certificateというエラーが出ます">プライベート・エンドポイント・アクセスのみのADBから、プライベート・エンドポイント・アクセスのみのADBへのデータベース・リンクを構成しています。ウォレットの差し替え後、<code class="language-plaintext highlighter-rouge">ORA-29002：SSL transport detected invalid or obsolete server certificate.</code>というエラーが出ます。</h2>
 
