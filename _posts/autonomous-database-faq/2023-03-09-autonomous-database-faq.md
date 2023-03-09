@@ -46,10 +46,10 @@ header:
 ## DB接続でウォレットを利用しているユーザーが必要な対応
 1. Oracle Clientを以下のバージョン以降であることを確認：新しいウォレットでの接続形式のサポートのため
     + アップデートが必要な場合にはご対応ください。
-    + Oracle Instant Client/Oracle Database Client: 11.2.0.4.220719 (またはそれ以降), 18.19 (またはそれ以降), 19.2 (またはそれ以降), 21 (ベースリリースまたはそれ以降)
+    + Oracle Instant Client/Oracle Database Client: 18.19 またはそれ以降, 19.2 またはそれ以降, 21.0 またはそれ以降
     cx_Oracle, node-oracledb, godror, PHP OCI8, PHP PDO_OCI, ruby-oci8, ROracle, rust-oracleなどのOracle Database ドライバについては、上記のOracle Instant Client/Oracle Database Client バージョンで使用してください
     + ODP.NET: 12.1（2022年4月以降WINDBBP、Managed ODP.NETのみ）、18（ベースリリース以降）、19.4（以降、19.10を除く）、21（ベースリリース以降）
-    + JDBC Thin: 11.2.0.4 (またはBug 28492769 に対する単発パッチ適用後)、12.2 (またはBug 28492769 に対する単発パッチ適用後)、18 (ベースリリースまたはBug 28492769 に対する単発パッチ適用後)、19 (ベースリリース後)、21 (ベースリリースまたはそれ以降)
+    + JDBC Thin: 11.2.0.4 またはそれ以降(Bug 28492769に対する単発パッチ適用が必要)、12.2 またはそれ以降(Bug 28492769に対する単発パッチ適用が必要) 、18.0 またはそれ以降(Bug 28492769 に対する単発パッチ適用が必要)、19.0 またはそれ以降、21.0 またはそれ以降
     + Python: python-oracledb 1.0 (またはそれ以降)
 
 1. 2023年1月10日から2023年3月6日までの間にクライアントで使用するウォレットを差し替え
