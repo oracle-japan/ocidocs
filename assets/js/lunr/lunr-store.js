@@ -731,6 +731,12 @@ var store = [{
         "url": "/ocidocs/services/developers/oracle-content-management-overview/",
         "teaser": "https://files.speakerdeck.com/presentations/2d6202da31254fd990954f06710e4c7b/slide_0.jpg?23620704\""
       },{
+        "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2022/9～2022/11",
+        "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介しています。 2022年9月～2022年11月の3ヶ月分の新機能について説明しています。   スライド       #### セミナー動画      ","categories": ["Updates"],
+        "tags": ["スライドあり","動画あり"],
+        "url": "/ocidocs/updates/update-FY23Q2/",
+        "teaser": "https://files.speakerdeck.com/presentations/1fb18297bfb94bba9c14ad2a87c8e516/slide_0.jpg"
+      },{
         "title": "OCI IAM Identity Domain - APEXアプリケーションとの認証連携・認可",
         "excerpt":"OCI IAM Identity DomainとAPEXアプリケーションの認証連携および認可制御を行うための設定手順をまとめた資料になります。   スライド          ","categories": ["Solutions","IAM"],
         "tags": ["スライドあり","レベル:応用(200)"],
@@ -766,4 +772,10 @@ var store = [{
         "tags": ["FAQ"],
         "url": "/ocidocs/faq/services/autonomous/autonomous-database-faq/",
         "teaser": null
+      },{
+        "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2023/12～2023/2",
+        "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介しています。 2022年12月～2023年2月の3ヶ月分の新機能について説明しています。   スライド               ","categories": ["Updates"],
+        "tags": ["スライドあり","動画あり"],
+        "url": "/ocidocs/updates/update-FY23Q3/",
+        "teaser": "https://files.speakerdeck.com/presentations/72cbe0de33d74c10a5891514158567d1/slide_0.jpg"
       }]
