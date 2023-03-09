@@ -1,20 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2023-03-09T11:40:06+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">Oracle Cloud Infrastructure IaaS 新機能アップデート 2023/12～2023/2</title><link href="https://oracle-japan.github.io/ocidocs/updates/update-FY23Q3/" rel="alternate" type="text/html" title="Oracle Cloud Infrastructure IaaS 新機能アップデート 2023/12～2023/2" /><published>2023-03-07T00:00:00+09:00</published><updated>2023-03-07T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/updates/update-FY23Q3</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/updates/update-FY23Q3/"><![CDATA[<p>Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介しています。
-2022年12月～2023年2月の3ヶ月分の新機能について説明しています。</p>
-
-<h4 id="スライド">スライド</h4>
-<div style="max-width:768px">
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-
-<script defer="" class="speakerdeck-embed" data-id="72cbe0de33d74c10a5891514158567d1" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
-
-<!-- #### セミナー動画 -->
-
-<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください -->
-
-<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) -->
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Updates" /><category term="スライドあり" /><category term="動画あり" /><summary type="html"><![CDATA[2022年12月～2023年2月の3ヶ月分のOCI新機能についてのまとめ資料です]]></summary></entry><entry><title type="html">Autonomous Database 技術FAQ</title><link href="https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq/" rel="alternate" type="text/html" title="Autonomous Database 技術FAQ" /><published>2023-02-27T00:00:00+09:00</published><updated>2023-02-27T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq/"><![CDATA[<h1 id="-お知らせ2023年1月更新"><span style="color: brown; ">■ お知らせ※2023年1月更新</span></h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2023-03-09T11:56:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">Autonomous Database 技術FAQ</title><link href="https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq/" rel="alternate" type="text/html" title="Autonomous Database 技術FAQ" /><published>2023-03-09T00:00:00+09:00</published><updated>2023-03-09T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq/"><![CDATA[<h1 id="-お知らせ2023年1月更新"><span style="color: brown; ">■ お知らせ※2023年1月更新</span></h1>
 <p><br /></p>
 
 <p>現在Autonomous Database – Sharedへクライアント資格証明(ウォレット)を使用してDB接続を行っているユーザーは、2023/3/6までに新しいウォレットを再ダウンロードする必要があります。
@@ -51,10 +35,10 @@
   <li>Oracle Clientを以下のバージョン以降であることを確認：新しいウォレットでの接続形式のサポートのため
     <ul>
       <li>アップデートが必要な場合にはご対応ください。</li>
-      <li>Oracle Instant Client/Oracle Database Client: 11.2.0.4.220719 (またはそれ以降), 18.19 (またはそれ以降), 19.2 (またはそれ以降), 21 (ベースリリースまたはそれ以降)
+      <li>Oracle Instant Client/Oracle Database Client: 18.19 またはそれ以降, 19.2 またはそれ以降, 21.0 またはそれ以降
  cx_Oracle, node-oracledb, godror, PHP OCI8, PHP PDO_OCI, ruby-oci8, ROracle, rust-oracleなどのOracle Database ドライバについては、上記のOracle Instant Client/Oracle Database Client バージョンで使用してください</li>
       <li>ODP.NET: 12.1（2022年4月以降WINDBBP、Managed ODP.NETのみ）、18（ベースリリース以降）、19.4（以降、19.10を除く）、21（ベースリリース以降）</li>
-      <li>JDBC Thin: 11.2.0.4 (またはBug 28492769 に対する単発パッチ適用後)、12.2 (またはBug 28492769 に対する単発パッチ適用後)、18 (ベースリリースまたはBug 28492769 に対する単発パッチ適用後)、19 (ベースリリース後)、21 (ベースリリースまたはそれ以降)</li>
+      <li>JDBC Thin: 11.2.0.4 またはそれ以降(Bug 28492769に対する単発パッチ適用が必要)、12.2 またはそれ以降(Bug 28492769に対する単発パッチ適用が必要) 、18.0 またはそれ以降(Bug 28492769 に対する単発パッチ適用が必要)、19.0 またはそれ以降、21.0 またはそれ以降</li>
       <li>Python: python-oracledb 1.0 (またはそれ以降)</li>
     </ul>
   </li>
@@ -1049,7 +1033,23 @@ OCICLIでの実施方法は<a href="https://oracle-japan.github.io/ocitutorials/
 
 <p><br /></p>
 
-<p>以上</p>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="FAQ" /><category term="services" /><category term="Autonomous" /><category term="FAQ" /><summary type="html"><![CDATA[Autonomous Database に関して、利用時のよくある質問に対する回答や、ノウハウ/Tipsについて記載しています。]]></summary></entry><entry><title type="html">CSPモデルにおけるOCI設計ガイドライン</title><link href="https://oracle-japan.github.io/ocidocs/solutions/others/design-guide-for-csps/" rel="alternate" type="text/html" title="CSPモデルにおけるOCI設計ガイドライン" /><published>2022-12-28T00:00:00+09:00</published><updated>2022-12-28T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/solutions/others/design-guide-for-csps</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/solutions/others/design-guide-for-csps/"><![CDATA[<p>Cloud Solutions Provider (CSP) モデルでOracle Cloud Infrastructureを利用するにあたって、設計上の考慮事項をまとめた資料です。</p>
+<p>以上</p>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="FAQ" /><category term="services" /><category term="Autonomous" /><category term="FAQ" /><summary type="html"><![CDATA[Autonomous Database に関して、利用時のよくある質問に対する回答や、ノウハウ/Tipsについて記載しています。]]></summary></entry><entry><title type="html">Oracle Cloud Infrastructure IaaS 新機能アップデート 2023/12～2023/2</title><link href="https://oracle-japan.github.io/ocidocs/updates/update-FY23Q3/" rel="alternate" type="text/html" title="Oracle Cloud Infrastructure IaaS 新機能アップデート 2023/12～2023/2" /><published>2023-03-07T00:00:00+09:00</published><updated>2023-03-07T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/updates/update-FY23Q3</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/updates/update-FY23Q3/"><![CDATA[<p>Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介しています。
+2022年12月～2023年2月の3ヶ月分の新機能について説明しています。</p>
+
+<h4 id="スライド">スライド</h4>
+<div style="max-width:768px">
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
+
+<script defer="" class="speakerdeck-embed" data-id="72cbe0de33d74c10a5891514158567d1" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
+
+<!-- #### セミナー動画 -->
+
+<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください -->
+
+<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) -->
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Updates" /><category term="スライドあり" /><category term="動画あり" /><summary type="html"><![CDATA[2022年12月～2023年2月の3ヶ月分のOCI新機能についてのまとめ資料です]]></summary></entry><entry><title type="html">CSPモデルにおけるOCI設計ガイドライン</title><link href="https://oracle-japan.github.io/ocidocs/solutions/others/design-guide-for-csps/" rel="alternate" type="text/html" title="CSPモデルにおけるOCI設計ガイドライン" /><published>2022-12-28T00:00:00+09:00</published><updated>2022-12-28T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/solutions/others/design-guide-for-csps</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/solutions/others/design-guide-for-csps/"><![CDATA[<p>Cloud Solutions Provider (CSP) モデルでOracle Cloud Infrastructureを利用するにあたって、設計上の考慮事項をまとめた資料です。</p>
 
 <h4 id="スライド">スライド</h4>
 
