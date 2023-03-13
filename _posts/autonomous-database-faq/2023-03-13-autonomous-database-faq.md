@@ -148,11 +148,39 @@ Autonomous Databaseは、今後は接続文字列のhostプロパティに基づ
 # <span style="color: brown; ">■ サービス概要編</span>
 <br/>
 
+## Autonomous DatabaseはOracle Databaseとどう違うのでしょうか？
+
+内部的にはOracle Database 19cを使用しています。(2023/3時点)
+
+それに加えてAutonomous Databaseでは、データベース管理者(DBA)のタスクを減らすため、様々な自動化・自律化機能が備わっていることや、Exadataを基盤としているため高速化されていること、Enterprise Edition(EE)とRACなどの各種EEオプションがデフォルトで利用できることが特徴として挙げられます。
+
+<br/>
+
 ## Autonomous DatabaseではExadataのモデルを選択できますか？
 
 Share型とDedicated型で異なります。  
 Shared型ではモデルを選択することはできません。ExadataのSmartScanといったハードウェアのスペックに依存しないソフトウェアの機能による高速化がありますので、モデルを気にせずにお使いいただけます。それもメリットの一つです。  
-一方、筐体を専有してご利用いただくDedicated型の場合は、利用できるOCPU/ストレージの総量にも関係しますので、Exadata X7またはX8といったようにモデルをご選択いただくことが可能です。
+一方、筐体を専有してご利用いただくDedicated型の場合は、利用できるOCPU/ストレージの総量にも関係しますので、Exadata X8MまたはX9Mといったようにモデルをご選択いただくことが可能です。
+
+<br/>
+
+## Autonomous Database にはタイプがいくつかありますが、どれを選択すれば良いでしょうか？
+
+ワークロードの特性に応じてご選択いただければと思います。分析目的の利用であれば、Autonomous Data Warehouse(ADW)、JSON中心のアプリケーション開発であればAutonomous JSON Database(AJD)、APEXアプリケーション開発であればAPEX Application Development、トランザクション処理やそれ以外のワークロードであればAutonomous Transaction Processing1(ATP)をご選択いただければと思います。
+
+<br/>
+
+## デプロイメント・タイプとしてSharedとDedicated、Cloud@Customerがありますが、どういった違いがありますか？
+
+Sharedは運用を極力シンプルにしたい場合や、コストを最優先に考えた場合に選択されることが多く、一方で、より大規模なシステムや、他のお客様との同居が許されないようなシステムではDedicatedを選択いただくことが可能です。
+
+データを外に持ち出すことができないケースや、どうしてもアプリケーションサーバはオンプレミスに配置する必要があってネットワークレイテンシが問題となるようなケースではお客様のデータセンターに配置するCloud@Customerをご選択いただければと思います。
+
+<br/>
+
+## SharedとDedicatedに機能差はありますか？
+
+[こちら](https://docs.oracle.com/en/cloud/paas/autonomous-database/dedicated/gjgms/index.html#articletitle)をご参照ください。
 
 <br/>
 
@@ -190,6 +218,14 @@ ACIDが保証されているサービスとなります。
 
 <br/>
 
+## ADBインスタンスを停止した場合、課金はどうなりますか？
+
+停止した場合、OCPUの課金は止まります。しかし格納されているデータはそのまま削除されずに残るので、ストレージへの課金は発生します。
+
+なお、インスタンスを終了(Terminate)した場合、OCPU、ストレージの課金も止まります。
+
+<br/>
+
 ## Auto Scaling 有効時の課金について教えてください
 
 分単位でCPU使用率を算出し、それを時間で平均したものが課金されます。少数点以下は切り上げとなります。例えば、ベースが4 OCPUでAuto ScalingをONにすると最大12 OCPUとなり、1時間あたりの平均消費OCPUが60%であれば8OCPU分が課金されます。
@@ -202,7 +238,23 @@ ACIDが保証されているサービスとなります。
 
 <br/>
 
-## SE BYOLで既存ライセンスを持ち込む場合、1インスタンスあたり8OCPUの上限があります。Auto Scalingを有効にした場合、OCPUはいくつが上限になりますか?
+## SE BYOLで既存ライセンスを持ち込む場合のルールはありますか？
+
+1Processorあたり4OCPU、10NUPあたり1OCPUになります。また、SE BYOLでは1ADBインスタンスあたり8OCPUの上限があります。
+
+Autonomous Data Guardを利用する場合でも、Active Data Guardオプションは不要です。
+
+<br/>
+
+## EE BYOLで既存ライセンスを持ち込む場合のルールはありますか？
+
+1Processorあたり2OCPU、25NUPあたり2OCPUになります。また、17OCPU以上EE BYOLで使いたい場合、17OCPU以降2OCPUにつき1Processorまたは25NUPのRACオプションが必要になります。
+
+Autonomous Data Guardを利用する場合、1Processorまたは25NUPのActive Data Guardオプションが必要です。
+
+<br/>
+
+## SE BYOLで既存ライセンスを持ち込む場合、1インスタンスあたり8OCPUの上限があります。Auto Scalingを有効にした場合、OCPUはいくつが上限になりますか？
 
 ライセンスタイプは「ライセンス持込み (BYOL)」エディションを「Oracle Database Standard Edition(SE)」を選択してください。その場合、設定できるOCPU数は8まで、またAuto Scalingが利用された場合もBYOLの1インスタンスの最大である8 OCPUで頭打ちとなります。
 9OCPU以上の環境にしたい場合は、SE BYOLは利用できません。ライセンス・タイプをBYOLから「ライセンス込み」に変更してご利用ください。
@@ -216,6 +268,16 @@ Autonomous Databaseをデータソースとしてご利用いただく限り無�
 "Your use of Oracle Autonomous Data Warehouse Cloud Service entitles You to any number of users of Oracle Data Visualization Desktop"  
 なお、インストールする各PCにはクレデンシャル(暗号キー)の配布・設定が必要です。
 
+<br/>
+
+## Autonomous Data Guardを利用する場合の課金はどうなりますか？
+
+プライマリと同じリージョンにスタンバイを構成するローカルAutonomous Data Guardの場合、スタンバイ側のOCPUとストレージ費用は、プライマリと同じ分発生します。そのため全体としては、プライマリの2倍課金されます。
+
+プライマリと異なるリージョンにスタンバイを構成するクロスリージョンAutonomous Data Guardの場合、スタンバイ側のOCPUはプライマリのOCPUと同様になりますが、ストレージ費用はプライマリの2倍発生します。これはプライマリの変更をスタンバイに適用するために転送したログをスタンバイ側で保管するストレージが必要となるためです。アウトバウンド通信の通信料はこちらに含まれる形になります。
+そのため全体としては、OCPUがプライマリの2倍、ストレージがプライマリの3倍課金されます。
+
+なお、同様の理由により、クロスリージョンでのリフレッシュ可能クローン構成の場合も、リフレッシュ可能クローン側のストレージはクローン元となるADBの2倍の課金となります。
 
 <br/>
 
@@ -230,7 +292,8 @@ Autonomous Databaseをデータソースとしてご利用いただく限り無�
 
 詳細なアーキテクチャ、スペックは公開しておりません。それらの管理・運用の手間からユーザを開放することがAutonomous Databaseのコンセプトです。  
 I/OスループットはCPUの数に合わせてスケーリングします（Disk、FlashのI/O帯域がcpu_countの値に比例するよう制御されています）。
-またメモリもOCPUに比例する形で割り当てられます。
+
+またメモリもOCPUに比例する形で割り当てられます。自動スケーリングを有効にすると、I/O帯域はベースの3倍確保されますが、メモリはベースと変わりません。
 
 <br/>
 
@@ -273,6 +336,12 @@ SQL> select max_size from v$pdbs;
 
 <br/>
 
+## 一時表領域のサイズは決められますか？
+
+ストレージサイズの30%が最大サイズで自動拡張され、ユーザーは変更不可です。
+
+<br/>
+
 [ページトップに戻る](#)
 
 <br/>
@@ -306,7 +375,6 @@ Autnomous Data Guardを利用した構成をご検討いただけます。RTO/RP
 
 Autonomous Database は、ストレージ装置のスナップショット機能によるバックアップは採用しておらず、RMANを利用して60日ごとにフルバックアップ、週次で累積バックアップ、日次で増分バックアップを取得しております。増分バックアップの間の更新についてはアーカイブ・ログが取得されております。 これらのバックアップとアーカイブ・ログを利用することで、バックアップ保持期間の60日の間であれば任意のタイミングに戻すことが可能です（Point-In-Timeリカバリ）。
 従いまして、バックアップの断面を気にしていただく必要はありません。 ただし、Autonomous Database のリカバリは秒指定で行うため、断面でのリカバリが必要な場合は、アプリケーション側で静止点を確保し、その時間を指定してリカバリを行ってください。
-また、Autonomous Database には自動バックアップと合わせて手動バックアップという機能もあります。こちらをご利用いただくと指定したタイミングでフルバックアップを取得いただくことが可能です。自動バックアップはリストアする際に任意のタイミングに変更ログ（アーカイブ・ログ）を適用しリカバリする必要がありますが、手動バックアップは特定の時点のリストアのみで、リカバリする必要がありませんので、比較的高速に復旧いただくことが可能です。手動バックアップはAPI経由でのみ実行可能です。(※2022/12現在)
 
 [参考マニュアル Autonomous Databaseのバックアップおよびリストア](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/adbsa/backup-restore.html#GUID-9035DFB8-4702-4CEB-8281-C2A303820809)
 
@@ -335,14 +403,13 @@ SELECT
     SUM(BYTES)/1024/1024/1024 "Size(GB)"
 FROM V$BACKUP_PIECE
 WHERE DEVICE_TYPE='SBT_TAPE' AND STATUS='A'
-AND (TAG LIKE 'TAG_C1%' OR TAG LIKE 'TAG_L1%' OR TAG LIKE 'TAG_AL%' OR TAG LIKE 'PDB_%')
+AND (TAG LIKE 'TAG_C1%' OR TAG LIKE 'TAG_L1%' OR TAG LIKE 'TAG_AL%')
 AND START_TIME >= TO_DATE('2021-04-05 00:00:00', 'yyyy-mm-dd hh24:mi:ss')
 GROUP BY TAG
-ORDER BY MIN(START_TIME)
-;
+ORDER BY MIN(START_TIME);
 ```
 TAG列の先頭の値でバックアップタイプが判断できます。
-* TAG_C1 : フルバックアップ（週次）
+* TAG_C1 : 累積バックアップ（週次）
 * TAB_L1 : 増分バックアップ（日次）
 * TAB_AL : アーカイブログ（毎時）
 
@@ -377,6 +444,33 @@ TAG列の先頭の値でバックアップタイプが判断できます。
 詳しい手順はこちらのマニュアルをご参照ください。
 
 [参考：Data Pumpを使用したAutonomous Databaseでのダンプ・ファイル・セットの作成](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/adbsa/export-data-create-dump-file.html#GUID-8D734C1A-FAF3-446C-B777-16DF62FB049E)
+
+<br/>
+
+## 60日以上バックアップを保存する方法はありますか？
+
+長期バックアップを利用すれば、最低3カ月最長10年間バックアップを保存可能です。
+
+ただし、長期バックアップはリストア不可、そのバックアップをソースとしたクローン作成のみ可能となっている点、保存先はExadataストレージになるのでExadataストレージ分の課金が発生する点にご注意ください。(2023/3時点）詳しくは[こちら](https://docs.oracle.com/en/cloud/paas/autonomous-database/adbsa/backup-long-term.html#GUID-BD76E02E-AEB0-4450-A6AB-5C9EB1F4EAD0)をご参照ください。
+
+もしくは先述のData Pumpを利用した論理バックアップを取っておくことで、60日以上のバックアップを保存することが可能です。
+
+<br/>
+
+## ソースADBがあるリージョンと異なるリージョンのバックアップ（リモート・バックアップ）を取ることは可能ですか？
+
+ADBの自動バックアップ機能では遠隔地(別リージョン)へバックアップすることはできません。ADBにおけるDR対応は下記の方法がございます。
+  ・Autonomous Data Guardを使用し、スタンバイDBを構成する
+  ・別リージョンにクローンを作成する（平時はインスタンスを停止することでOCPUの課金は抑えることが可能です）
+  ・Data Pumpで Object Storageに論理バックアップを取得し、Object Storageのリージョン・コピー機能で別リージョンに複製する
+
+<br/>
+
+## flashback databaseは使えますか？
+
+ADBではflashback databaseはユーザーは明示的に使用できません。ユーザー指定のタイムスタンプにリストアすることが可能であり、内部的に使用されています。
+
+なお、flashback tableやflashback queryは可能です。[ドキュメント](https://docs.oracle.com/cd//E83857_01/paas/autonomous-database/adbsa/autonomous-oracle-flashback.html#GUID-CEE36DC8-E878-481C-8366-9507D0911C25)
 
 <br/>
 
@@ -438,7 +532,9 @@ SQLでの参照頻度が低いようであれば、オブジェクト・スト�
 
 ## Autonomous Database とOracle Database 以外のデータベースの連携は可能ですか？ 
 
-Oracle Database Gatewayを経由することでDB Linkで連携可能です。Redshift、MySQL EE、PostgreSQL、SnowflakeなどいくつかのデータベースへのDB Linkでは、Oracle Database Gatewayを用意しなくとも利用可能です。参照するリモートDBにはいくつか要件がございます。詳しくはこちらのマニュアルをご参照ください。
+Oracle Database Gatewayを経由することでDB Linkで連携可能です。Redshift、MySQL EE、PostgreSQL、SnowflakeなどいくつかのデータベースへのDB Linkでは、Oracle Database Gatewayを用意しなくとも利用可能です。※経路はインターネット経由になります。
+
+参照するリモートDBにはいくつか要件がございます。詳しくはこちらのマニュアルをご参照ください。
 
 [参考：非Oracle Databaseへのデータベースリンクの作成](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/adbsa/autonomous-database-links-non-oracle-db.html#GUID-6C925566-2067-4D3B-A3FF-CA73C60506C9)
 
@@ -472,7 +568,7 @@ Autonomous Databaseではデータファイル（表領域）やバックアッ�
 
 ## Autonomous Databaseの表領域暗号化のアルゴリズムは何を利用していますか? 
 
-2022/12時点でAES-256で暗号化されております。
+2023/3時点でAES-256で暗号化されております。
 V$ENCRYPTED_TABLESPACESビューを参照いただくことで確認可能です。
 
 ```sql
@@ -493,6 +589,12 @@ WHERE a.TS# = b.TS#
 はい、Oracle Databaseの統合監査機能ですので、UNIFIED_AUDIT_TRAILビューでご確認いただくことが可能です。なお、GUIで参照するには、Data Safeをご利用ください。  
 
 [参考：Oracle Data Safeチュートリアル](https://oracle-japan.github.io/ocitutorials/intermediates/data-safe-tutorials/)
+
+<br/>
+
+## ADBの停止、終了などのインスタンス操作の監査ログを取ることはできますか？
+
+OCI Audit機能で可能です。詳しくは[こちら](https://docs.oracle.com/ja-jp/iaas/Content/Audit/home.htm)をご参照ください。
 
 <br/>
 
@@ -558,8 +660,10 @@ Autonomous Databaseでは自動SQLチューニング（自動タスクによるS
 
 ## Autonomous Database でReal Application Testing(RAT)は利用できますか？ 
 
-はい、Real Application Testing(RAT)のSQL Performance Analyzer(SPA)を利用できます。  
-Autonomous Databaseへの移行を検討される際やAutonomous Databaseのバージョンアップの際に、個々のSQLの性能調査に有効です。手順は以下のチュートリアルを参照ください。なお、RATのDatabase Replayも利用可能です。
+はい、SharedではReal Application Testing(RAT)のSQL Performance Analyzer(SPA)、DB Replayを利用できます。  
+Autonomous Databaseへの移行を検討される際やAutonomous Databaseのバージョンアップの際に、個々のSQLの性能調査に有効です。手順は以下のチュートリアルを参照ください。
+
+なお、DedicatedではSPAのみ利用可能です。
 
 [参考：SQL Performance Analyzer(SPA)チュートリアル](https://oracle-japan.github.io/ocitutorials/database/adb216-patch-spa/)
 
@@ -569,13 +673,6 @@ Autonomous Databaseへの移行を検討される際やAutonomous Databaseのバ
 
 はい、利用できます。  
 ワークロードの違いに合わせてデフォルト設定がされています。Autonomous Data Warehouse(ADW)は有効、Autonmous Transaction Processing(ATP)は無効です。
-
-<br />
-
-## Autonomous Database でFlashback機能は利用できますか？
-
-Flashback databaseはリストアの際に内部的に利用されていますが、ユーザーが明示的に利用することはできません。
-その他のFlashback query, table, drop機能は通常のOracle Databaseと同様に利用可能です。
 
 <br />
 
@@ -593,13 +690,13 @@ ADWで更新が発生するような表の場合は、明示的に非圧縮に�
 >HCCは1CU につき1ロックを使用しますが、Oracle Database 12cから行レベル・ロックの有効化が可能となりました。
 >OnP Exadata におけるHCCのデフォルト設定は、NO ROW LEVEL LOCKINGです。
 
-<br />
+<br/>
 
 ## Autonomous Database でDatabase In-Memory(DBIM）を利用できますか？
 
-Autonomous Databaseは内部的にExadataのフラッシュ・キャッシュでDataase In-Memory機能を自動的に利用して性能を最適化します。お客様が意図してDatabase In-Memoryの機能を使用することはできません。
+Autonomous Databaseは内部的にExadataのフラッシュ・キャッシュでDatabase In-Memory機能を利用して性能を最適化します。お客様が明示的にDatabase In-Memoryの機能を使用することはできません。
 
-<br />
+<br/>
 
 ## 一部の重たいクエリによるリソースの大量消費を防ぐ仕組みはありますか？ 
 
@@ -611,7 +708,7 @@ Runaway Queryの管理で、SQLの実行時間やIO量の上限を設定する�
 
 [ページトップに戻る](#)
 
-<br />
+<br/>
 
 # <span style="color: brown; ">■ 運用管理・監視関連</span>
 <br />
@@ -659,7 +756,13 @@ AWRの取得設定は通常のOracle Databaseと同様にDBMS_WORKLOAD_REPOSITOR
 
 <br />
 
-## 統計情報の固定・リストアは出来ますか。  
+## 統計情報を手動で取ることはできますか？
+
+はい、可能です。DBMS_STATS.GATHER_TABLE_STATS等で取得できます。
+
+<br/>
+
+## 統計情報の固定・リストアは出来ますか？  
 
 統計情報のリストア（DBMS_STATS.RESTORE_TABLE_STATS）、固定化（dbms_stats.lock_table_stats）は可能です。
 ただし、Autonomous Database では自動統計収集が有効化されていますので、基本的に全てAutonomous Databaseに任せることが可能です。
@@ -716,6 +819,12 @@ SQLを利用してアラートログ(V$DIAG_ALERT_EXT)やトレースファイ�
 
 <br />
 
+## Autonomous Databaseのパッチ適用には、OSなどのインフラのパッチも含まれますか？
+
+はい、含まれます。Databaseのパッチだけでなく、Exadata Infrastructureや、セキュリティパッチも含まれます。
+
+<br/>
+
 ## 過去のメンテナンスの情報は確認可能でしょうか？
 
 各Autonomous Databaseのメンテナンスについては、コンソールのメンテナンス履歴で確認いただけます。
@@ -729,7 +838,7 @@ SELECT * FROM DBA_CLOUD_PATCH_INFO;
 
 <br />
 
-## ハードウェア更改時の対応はオラクルが行うのでしょうか。
+## ハードウェア更改時の対応はオラクルが行うのでしょうか？
 
 はい。オラクル社の責任範囲ですので、オラクル社でH/W更改を含むメンテナンスを実施します。  
 メンテナンスに伴いインスタンスの稼働に影響が及ぶ場合は、事前にOCIのテナント管理者、およびAutonomous Databaseインスタンスの連絡先リストに記載のメールアドレス宛に通知されます。
