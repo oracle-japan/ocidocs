@@ -581,12 +581,6 @@ var store = [{
         "url": "/ocidocs/services/developers/oke-ocir-details/",
         "teaser": "https://files.speakerdeck.com/presentations/e8108c019e7042ebaf287bd76162906e/slide_0.jpg?21587736"
       },{
-        "title": "OKE(Oracle Container Engine for Kubernetes)概要",
-        "excerpt":"OracleのマネージドKubernetesサービスであるOracle Container Engine for Kubernetes(OKE)についての概要資料です。   スライド          ","categories": ["Services","Developers"],
-        "tags": ["スライドあり","レベル:入門(100)"],
-        "url": "/ocidocs/services/developers/oke-overview/",
-        "teaser": "https://files.speakerdeck.com/presentations/7669dab18a6844d680f92ed5e094fbaf/slide_0.jpg?21586702"
-      },{
         "title": "OCI Streaming概要",
         "excerpt":"OCIのKafka互換メッセージングサービスであるOCI Streamingの概要資料です。   スライド          ","categories": ["Services","Developers"],
         "tags": ["スライドあり","レベル:入門(100)"],
@@ -778,4 +772,10 @@ var store = [{
         "tags": ["FAQ"],
         "url": "/ocidocs/faq/services/autonomous/autonomous-database-faq/",
         "teaser": null
+      },{
+        "title": "OKE(Oracle Container Engine for Kubernetes)概要",
+        "excerpt":"OracleのマネージドKubernetesサービスであるOracle Container Engine for Kubernetes(OKE)についての概要資料です。   スライド          ","categories": ["Services","Developers"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/services/developers/oke-overview/",
+        "teaser": "https://files.speakerdeck.com/presentations/7669dab18a6844d680f92ed5e094fbaf/slide_0.jpg?24988457"
       }]
