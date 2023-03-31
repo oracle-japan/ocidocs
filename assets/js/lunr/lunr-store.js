@@ -767,15 +767,15 @@ var store = [{
         "url": "/ocidocs/updates/update-FY23Q3/",
         "teaser": "https://files.speakerdeck.com/presentations/72cbe0de33d74c10a5891514158567d1/slide_0.jpg"
       },{
-        "title": "Autonomous Database 技術FAQ",
-        "excerpt":"■ お知らせ※2023年1月更新 現在Autonomous Database – Sharedへクライアント資格証明(ウォレット)を使用してDB接続を行っているユーザーは、2023/3/6までに新しいウォレットを再ダウンロードする必要があります。 既存のウォレットでは、アプリケーション、ツール、サービスが、2023/3/6以降Autonomous Database インスタンスに接続できなくなります。 ウォレットを使わないTLS接続でDB接続を行っているユーザーは、接続文字列の更新が必要な場合がありますのでご確認ください。 以下のようなOUフィールドの含まれていない接続文字列(新形式)を使用している場合、対応不要です 2022年8月以降OCIコンソールもしくはAPI経由で取得可能な接続文字列は下記の新形式です (description=(retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1521)(host=adb.region.oraclecloud.com)) (connect_data=(service_name=u9adutfb2ba8x4d_database_medium.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes))) 以下のようなOUフィールドの含まれている文字列(旧形式)では、3月6日以降接続ができなくなります 2022年8月以前に取得した接続文字列は下記の旧形式です (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1521)(host=adb.region.oraclecloud.com)) (connect_data=(service_name=u9adutfb2ba8x4d_database_medium.adb.oraclecloud.com)) (security=(ssl_server_cert_dn=\"CN=adwc-preprod.uscom-east-1.oraclecloud.com, OU=Oracle BMCS US,O=Oracle Corporation, L=Redwood City, ST=California, C=US\"))) OUフィールドの含まれている接続文字列を使用している場合、OCIコンソールもしくはAPI経由でOUフィールドの含まれていない新しい接続文字列を取得し、そちらに変更が必要です。 2023年1月5日頃、Autonomous Database - Sharedをお使いのテナント管理者に以下のようなメールが送信されています。 DB接続でウォレットを利用しているユーザーが必要な対応 Oracle Clientを以下のバージョン以降であることを確認：新しいウォレットでの接続形式のサポートのため アップデートが必要な場合にはご対応ください。 Oracle Instant Client/Oracle Database Client: 18.19 またはそれ以降, 19.2 またはそれ以降, 21.0 またはそれ以降 cx_Oracle, node-oracledb,...","categories": ["FAQ","services","Autonomous"],
-        "tags": ["FAQ"],
-        "url": "/ocidocs/faq/services/autonomous/autonomous-database-faq/",
-        "teaser": null
-      },{
         "title": "OKE(Oracle Container Engine for Kubernetes)概要",
         "excerpt":"OracleのマネージドKubernetesサービスであるOracle Container Engine for Kubernetes(OKE)についての概要資料です。   スライド          ","categories": ["Services","Developers"],
         "tags": ["スライドあり","レベル:入門(100)"],
         "url": "/ocidocs/services/developers/oke-overview/",
         "teaser": "https://files.speakerdeck.com/presentations/7669dab18a6844d680f92ed5e094fbaf/slide_0.jpg?24988457"
+      },{
+        "title": "Autonomous Database 技術FAQ",
+        "excerpt":"■ お知らせ※2023年1月更新 現在Autonomous Database – Sharedへクライアント資格証明(ウォレット)を使用してDB接続を行っているユーザーは、リージョンごとに指定された期日までに新しいウォレットを再ダウンロードする必要があります。 既存のウォレットでは、アプリケーション、ツール、サービスが、リージョンごとに指定された以下の期日以降Autonomous Database インスタンスに接続できなくなります。 Japan East(NRT)リージョン：2023年5月18日 Japan Central(KIX)リージョン：2023年5月11日 上記以外のリージョンの期日については、MOS Noteをご参照ください ウォレットを使わないTLS接続でDB接続を行っているユーザーは、接続文字列の更新が必要な場合がありますのでご確認ください。 以下のようなOUフィールドの含まれていない接続文字列(新形式)を使用している場合、対応不要です 2022年8月以降OCIコンソールもしくはAPI経由で取得可能な接続文字列は下記の新形式です (description=(retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1521)(host=adb.region.oraclecloud.com)) (connect_data=(service_name=u9adutfb2ba8x4d_database_medium.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes))) 以下のようなOUフィールドの含まれている文字列(旧形式)では、リージョンごとに指定された期日以降接続ができなくなります 2022年8月以前に取得した接続文字列は下記の旧形式です (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1521)(host=adb.region.oraclecloud.com)) (connect_data=(service_name=u9adutfb2ba8x4d_database_medium.adb.oraclecloud.com)) (security=(ssl_server_cert_dn=\"CN=adwc-preprod.uscom-east-1.oraclecloud.com, OU=Oracle BMCS US,O=Oracle Corporation, L=Redwood City, ST=California, C=US\"))) OUフィールドの含まれている接続文字列を使用している場合、OCIコンソールもしくはAPI経由でOUフィールドの含まれていない新しい接続文字列を取得し、そちらに変更が必要です。 DB接続でウォレットを利用しているユーザーが必要な対応 Oracle Clientを以下のバージョン以降であることを確認：新しいウォレットでの接続形式のサポートのため アップデートが必要な場合にはご対応ください。 Oracle Instant Client/Oracle Database Client: 18.19 またはそれ以降, 19.2 またはそれ以降, 21.0 またはそれ以降...","categories": ["FAQ","services","Autonomous"],
+        "tags": ["FAQ"],
+        "url": "/ocidocs/faq/services/autonomous/autonomous-database-faq/",
+        "teaser": null
       }]

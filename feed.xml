@@ -1,18 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2023-03-27T13:07:41+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">OKE(Oracle Container Engine for Kubernetes)概要</title><link href="https://oracle-japan.github.io/ocidocs/services/developers/oke-overview/" rel="alternate" type="text/html" title="OKE(Oracle Container Engine for Kubernetes)概要" /><published>2023-03-23T00:00:00+09:00</published><updated>2023-03-23T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/developers/oke-overview</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/developers/oke-overview/"><![CDATA[<p>OracleのマネージドKubernetesサービスであるOracle Container Engine for Kubernetes(OKE)についての概要資料です。</p>
-
-<h4 id="スライド">スライド</h4>
-
-<div style="max-width:768px">
-
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/7669dab18a6844d680f92ed5e094fbaf" title="Oracle Container Engine for Kubernetes (OKE) ご紹介 / oke-overview" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 314;" data-ratio="1.78343949044586"></iframe>
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
-
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Developers" /><category term="スライドあり" /><category term="レベル:入門(100)" /><summary type="html"><![CDATA[OracleのマネージドKubernetesサービスであるOracle Container Engine for Kubernetes(OKE)についての概要資料です。]]></summary></entry><entry><title type="html">Autonomous Database 技術FAQ</title><link href="https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq/" rel="alternate" type="text/html" title="Autonomous Database 技術FAQ" /><published>2023-03-13T00:00:00+09:00</published><updated>2023-03-13T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq/"><![CDATA[<h1 id="-お知らせ2023年1月更新"><span style="color: brown; ">■ お知らせ※2023年1月更新</span></h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2023-03-31T13:08:37+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">Autonomous Database 技術FAQ</title><link href="https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq/" rel="alternate" type="text/html" title="Autonomous Database 技術FAQ" /><published>2023-03-31T00:00:00+09:00</published><updated>2023-03-31T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq/"><![CDATA[<h1 id="-お知らせ2023年1月更新"><span style="color: brown; ">■ お知らせ※2023年1月更新</span></h1>
 <p><br /></p>
 
-<p>現在Autonomous Database – Sharedへクライアント資格証明(ウォレット)を使用してDB接続を行っているユーザーは、2023/3/6までに新しいウォレットを再ダウンロードする必要があります。
-既存のウォレットでは、アプリケーション、ツール、サービスが、2023/3/6以降Autonomous Database インスタンスに接続できなくなります。</p>
+<p>現在Autonomous Database – Sharedへクライアント資格証明(ウォレット)を使用してDB接続を行っているユーザーは、リージョンごとに指定された期日までに新しいウォレットを再ダウンロードする必要があります。
+既存のウォレットでは、アプリケーション、ツール、サービスが、リージョンごとに指定された以下の期日以降Autonomous Database インスタンスに接続できなくなります。</p>
+<ul>
+  <li>Japan East(NRT)リージョン：2023年5月18日</li>
+  <li>Japan Central(KIX)リージョン：2023年5月11日</li>
+  <li>上記以外のリージョンの期日については、MOS Noteをご参照ください</li>
+</ul>
 
 <p>ウォレットを使わないTLS接続でDB接続を行っているユーザーは、接続文字列の更新が必要な場合がありますのでご確認ください。</p>
 <ul>
@@ -24,7 +19,7 @@
 (connect_data=(service_name=u9adutfb2ba8x4d_database_medium.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))</code></p>
 
 <ul>
-  <li>以下のようなOUフィールドの含まれている文字列(旧形式)では、3月6日以降接続ができなくなります</li>
+  <li>以下のようなOUフィールドの含まれている文字列(旧形式)では、リージョンごとに指定された期日以降接続ができなくなります</li>
   <li>2022年8月以前に取得した接続文字列は下記の旧形式です</li>
 </ul>
 
@@ -35,10 +30,6 @@
 <ul>
   <li>OUフィールドの含まれている接続文字列を使用している場合、OCIコンソールもしくはAPI経由でOUフィールドの含まれていない新しい接続文字列を取得し、そちらに変更が必要です。</li>
 </ul>
-
-<p>2023年1月5日頃、Autonomous Database - Sharedをお使いのテナント管理者に以下のようなメールが送信されています。</p>
-
-<p><img src="wallet_announcement.png" alt="wallet_announcement" /></p>
 
 <h2 id="db接続でウォレットを利用しているユーザーが必要な対応">DB接続でウォレットを利用しているユーザーが必要な対応</h2>
 <ol>
@@ -52,10 +43,17 @@
       <li>Python: python-oracledb 1.0 (またはそれ以降)</li>
     </ul>
   </li>
-  <li>2023年1月10日から2023年3月6日までの間にクライアントで使用するウォレットを差し替え
-※ウォレットのローテーションは不要です。OCIコンソールよりウォレットを新たにダウンロードし、各クライアントに再配布してください。
-設定方法は<a href="https://oracle-japan.github.io/ocitutorials/database/adb104-connect-using-wallet/">こちら</a>をご参照ください。</li>
+  <li>2023年1月10日からリージョンごとに指定された期日までの間にクライアントで使用するウォレットを差し替え
+    <ul>
+      <li>Japan East(NRT)リージョン：2023年5月18日</li>
+      <li>Japan Central(KIX)リージョン：2023年5月11日</li>
+      <li>上記以外のリージョンの期日については、MOS Noteをご参照ください</li>
+    </ul>
+  </li>
 </ol>
+
+<p>※ウォレットのローテーションは不要です。OCIコンソールよりウォレットを新たにダウンロードし、各クライアントに再配布してください。
+設定方法は<a href="https://oracle-japan.github.io/ocitutorials/database/adb104-connect-using-wallet/">こちら</a>をご参照ください。</p>
 
 <ul>
   <li>上記の対応が難しい場合、設定によってはウォレットを使用しないTLS接続に変更することも可能です</li>
@@ -86,21 +84,13 @@
 
 <h2 id="ウォレットの差し替えを行わないとどんな影響がありますか">ウォレットの差し替えを行わないとどんな影響がありますか？</h2>
 
-<p>2023/3/6以降Autonomous Databaseに接続できなくなります。</p>
+<p>リージョンごとに指定された期日以降Autonomous Databaseに接続できなくなります。</p>
 
 <p><br /></p>
 
 <h2 id="本件についてのmos-noteはありますか">本件についてのMOS Noteはありますか？</h2>
 
 <p><a href="https://support.oracle.com/epmos/faces/DocumentDisplay?id=2911553.1">こちら</a>をご確認ください。</p>
-
-<p><br /></p>
-
-<h2 id="ociのコンソール画面に必須アクションchanges-to-databases-that-use-mtls-authentication-mos-doc-id-29115531-と表示されていますがこれは本件と関係ありますか">OCIのコンソール画面に<strong>必須アクション：</strong>Changes to Databases that use mTLS Authentication (MOS Doc ID 2911553.1) と表示されていますが、これは本件と関係ありますか？</h2>
-
-<p>はい、本件はOCIの<strong>お知らせ</strong>でもアナウンスされています。</p>
-
-<p><img src="oci_announcement.png" alt="oci_announcement" /></p>
 
 <p><br /></p>
 
@@ -1153,7 +1143,17 @@ OCICLIでの実施方法は<a href="https://oracle-japan.github.io/ocitutorials/
 
 <p><br /></p>
 
-<p>以上</p>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="FAQ" /><category term="services" /><category term="Autonomous" /><category term="FAQ" /><summary type="html"><![CDATA[Autonomous Database に関して、利用時のよくある質問に対する回答や、ノウハウ/Tipsについて記載しています。]]></summary></entry><entry><title type="html">Oracle Cloud Infrastructure IaaS 新機能アップデート 2023/12～2023/2</title><link href="https://oracle-japan.github.io/ocidocs/updates/update-FY23Q3/" rel="alternate" type="text/html" title="Oracle Cloud Infrastructure IaaS 新機能アップデート 2023/12～2023/2" /><published>2023-03-07T00:00:00+09:00</published><updated>2023-03-07T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/updates/update-FY23Q3</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/updates/update-FY23Q3/"><![CDATA[<p>Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介しています。
+<p>以上</p>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="FAQ" /><category term="services" /><category term="Autonomous" /><category term="FAQ" /><summary type="html"><![CDATA[Autonomous Database に関して、利用時のよくある質問に対する回答や、ノウハウ/Tipsについて記載しています。]]></summary></entry><entry><title type="html">OKE(Oracle Container Engine for Kubernetes)概要</title><link href="https://oracle-japan.github.io/ocidocs/services/developers/oke-overview/" rel="alternate" type="text/html" title="OKE(Oracle Container Engine for Kubernetes)概要" /><published>2023-03-23T00:00:00+09:00</published><updated>2023-03-23T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/developers/oke-overview</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/developers/oke-overview/"><![CDATA[<p>OracleのマネージドKubernetesサービスであるOracle Container Engine for Kubernetes(OKE)についての概要資料です。</p>
+
+<h4 id="スライド">スライド</h4>
+
+<div style="max-width:768px">
+
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/7669dab18a6844d680f92ed5e094fbaf" title="Oracle Container Engine for Kubernetes (OKE) ご紹介 / oke-overview" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 314;" data-ratio="1.78343949044586"></iframe>
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
+
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Developers" /><category term="スライドあり" /><category term="レベル:入門(100)" /><summary type="html"><![CDATA[OracleのマネージドKubernetesサービスであるOracle Container Engine for Kubernetes(OKE)についての概要資料です。]]></summary></entry><entry><title type="html">Oracle Cloud Infrastructure IaaS 新機能アップデート 2023/12～2023/2</title><link href="https://oracle-japan.github.io/ocidocs/updates/update-FY23Q3/" rel="alternate" type="text/html" title="Oracle Cloud Infrastructure IaaS 新機能アップデート 2023/12～2023/2" /><published>2023-03-07T00:00:00+09:00</published><updated>2023-03-07T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/updates/update-FY23Q3</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/updates/update-FY23Q3/"><![CDATA[<p>Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介しています。
 2022年12月～2023年2月の3ヶ月分の新機能について説明しています。</p>
 
 <h4 id="スライド">スライド</h4>

@@ -36,7 +36,7 @@
 
 
 
-  <meta property="article:published_time" content="2023-03-13T00:00:00+09:00">
+  <meta property="article:published_time" content="2023-03-31T00:00:00+09:00">
 
 
 
@@ -187,7 +187,7 @@
       <span class="page__meta-date">
         <i class="far fa-calendar-alt" aria-hidden="true"></i>
         
-        <time datetime="2023-03-13T00:00:00+09:00">March 13, 2023</time>
+        <time datetime="2023-03-31T00:00:00+09:00">March 31, 2023</time>
       </span>
     
 
@@ -338,7 +338,7 @@
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Autonomous Database 技術FAQ">
     <meta itemprop="description" content="Autonomous Database に関して、利用時のよくある質問に対する回答や、ノウハウ/Tipsについて記載しています。">
-    <meta itemprop="datePublished" content="2023-03-13T00:00:00+09:00">
+    <meta itemprop="datePublished" content="2023-03-31T00:00:00+09:00">
     
 
     <div class="page__inner-wrap">
@@ -357,8 +357,13 @@
         <h1 id="-お知らせ2023年1月更新"><span style="color: brown; ">■ お知らせ※2023年1月更新</span></h1>
 <p><br /></p>
 
-<p>現在Autonomous Database – Sharedへクライアント資格証明(ウォレット)を使用してDB接続を行っているユーザーは、2023/3/6までに新しいウォレットを再ダウンロードする必要があります。
-既存のウォレットでは、アプリケーション、ツール、サービスが、2023/3/6以降Autonomous Database インスタンスに接続できなくなります。</p>
+<p>現在Autonomous Database – Sharedへクライアント資格証明(ウォレット)を使用してDB接続を行っているユーザーは、リージョンごとに指定された期日までに新しいウォレットを再ダウンロードする必要があります。
+既存のウォレットでは、アプリケーション、ツール、サービスが、リージョンごとに指定された以下の期日以降Autonomous Database インスタンスに接続できなくなります。</p>
+<ul>
+  <li>Japan East(NRT)リージョン：2023年5月18日</li>
+  <li>Japan Central(KIX)リージョン：2023年5月11日</li>
+  <li>上記以外のリージョンの期日については、MOS Noteをご参照ください</li>
+</ul>
 
 <p>ウォレットを使わないTLS接続でDB接続を行っているユーザーは、接続文字列の更新が必要な場合がありますのでご確認ください。</p>
 <ul>
@@ -370,7 +375,7 @@
 (connect_data=(service_name=u9adutfb2ba8x4d_database_medium.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))</code></p>
 
 <ul>
-  <li>以下のようなOUフィールドの含まれている文字列(旧形式)では、3月6日以降接続ができなくなります</li>
+  <li>以下のようなOUフィールドの含まれている文字列(旧形式)では、リージョンごとに指定された期日以降接続ができなくなります</li>
   <li>2022年8月以前に取得した接続文字列は下記の旧形式です</li>
 </ul>
 
@@ -381,10 +386,6 @@
 <ul>
   <li>OUフィールドの含まれている接続文字列を使用している場合、OCIコンソールもしくはAPI経由でOUフィールドの含まれていない新しい接続文字列を取得し、そちらに変更が必要です。</li>
 </ul>
-
-<p>2023年1月5日頃、Autonomous Database - Sharedをお使いのテナント管理者に以下のようなメールが送信されています。</p>
-
-<p><img src="wallet_announcement.png" alt="wallet_announcement" /></p>
 
 <h2 id="db接続でウォレットを利用しているユーザーが必要な対応">DB接続でウォレットを利用しているユーザーが必要な対応</h2>
 <ol>
@@ -398,10 +399,17 @@
       <li>Python: python-oracledb 1.0 (またはそれ以降)</li>
     </ul>
   </li>
-  <li>2023年1月10日から2023年3月6日までの間にクライアントで使用するウォレットを差し替え
-※ウォレットのローテーションは不要です。OCIコンソールよりウォレットを新たにダウンロードし、各クライアントに再配布してください。
-設定方法は<a href="https://oracle-japan.github.io/ocitutorials/database/adb104-connect-using-wallet/">こちら</a>をご参照ください。</li>
+  <li>2023年1月10日からリージョンごとに指定された期日までの間にクライアントで使用するウォレットを差し替え
+    <ul>
+      <li>Japan East(NRT)リージョン：2023年5月18日</li>
+      <li>Japan Central(KIX)リージョン：2023年5月11日</li>
+      <li>上記以外のリージョンの期日については、MOS Noteをご参照ください</li>
+    </ul>
+  </li>
 </ol>
+
+<p>※ウォレットのローテーションは不要です。OCIコンソールよりウォレットを新たにダウンロードし、各クライアントに再配布してください。
+設定方法は<a href="https://oracle-japan.github.io/ocitutorials/database/adb104-connect-using-wallet/">こちら</a>をご参照ください。</p>
 
 <ul>
   <li>上記の対応が難しい場合、設定によってはウォレットを使用しないTLS接続に変更することも可能です</li>
@@ -432,21 +440,13 @@
 
 <h2 id="ウォレットの差し替えを行わないとどんな影響がありますか">ウォレットの差し替えを行わないとどんな影響がありますか？</h2>
 
-<p>2023/3/6以降Autonomous Databaseに接続できなくなります。</p>
+<p>リージョンごとに指定された期日以降Autonomous Databaseに接続できなくなります。</p>
 
 <p><br /></p>
 
 <h2 id="本件についてのmos-noteはありますか">本件についてのMOS Noteはありますか？</h2>
 
 <p><a href="https://support.oracle.com/epmos/faces/DocumentDisplay?id=2911553.1">こちら</a>をご確認ください。</p>
-
-<p><br /></p>
-
-<h2 id="ociのコンソール画面に必須アクションchanges-to-databases-that-use-mtls-authentication-mos-doc-id-29115531-と表示されていますがこれは本件と関係ありますか">OCIのコンソール画面に<strong>必須アクション：</strong>Changes to Databases that use mTLS Authentication (MOS Doc ID 2911553.1) と表示されていますが、これは本件と関係ありますか？</h2>
-
-<p>はい、本件はOCIの<strong>お知らせ</strong>でもアナウンスされています。</p>
-
-<p><img src="oci_announcement.png" alt="oci_announcement" /></p>
 
 <p><br /></p>
 
@@ -1545,7 +1545,7 @@ OCICLIでの実施方法は<a href="https://oracle-japan.github.io/ocitutorials/
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 更新日時:</strong> <time datetime="2023-03-13T00:00:00+09:00">March 13, 2023</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 更新日時:</strong> <time datetime="2023-03-31T00:00:00+09:00">March 31, 2023</time></p>
 
 
       </footer>
@@ -1566,12 +1566,11 @@ OCICLIでの実施方法は<a href="https://oracle-japan.github.io/ocitutorials/
       
   <nav class="pagination">
     
-      <a href="/ocidocs/updates/update-FY23Q3/" class="pagination--pager" title="Oracle Cloud Infrastructure IaaS 新機能アップデート 2023/12～2023/2
+      <a href="/ocidocs/services/developers/oke-overview/" class="pagination--pager" title="OKE(Oracle Container Engine for Kubernetes)概要
 ">前へ</a>
     
     
-      <a href="/ocidocs/services/developers/oke-overview/" class="pagination--pager" title="OKE(Oracle Container Engine for Kubernetes)概要
-">次へ</a>
+      <a href="#" class="pagination--pager disabled">次へ</a>
     
   </nav>
 
