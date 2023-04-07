@@ -778,4 +778,10 @@ var store = [{
         "tags": ["FAQ"],
         "url": "/ocidocs/faq/services/autonomous/autonomous-database-faq/",
         "teaser": null
+      },{
+        "title": "リソース・マネージャ概要",
+        "excerpt":"OCIの技術説明資料：OCI リソース・マネージャ概要  OCIリソースのデプロイメントと操作を自動化できるリソース・マネージャ（Resource Manager）の概要資料です。   スライド               ","categories": ["Services","Developers"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/services/developers/resourcemanager-overview/",
+        "teaser": "https://files.speakerdeck.com/presentations/4c372757929c4c3c81e5fb649486d70b/slide_0.jpg"
       }]

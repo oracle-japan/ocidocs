@@ -1,4 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2023-03-31T13:08:37+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">Autonomous Database 技術FAQ</title><link href="https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq/" rel="alternate" type="text/html" title="Autonomous Database 技術FAQ" /><published>2023-03-31T00:00:00+09:00</published><updated>2023-03-31T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq/"><![CDATA[<h1 id="-お知らせ2023年1月更新"><span style="color: brown; ">■ お知らせ※2023年1月更新</span></h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2023-04-07T15:02:27+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">リソース・マネージャ概要</title><link href="https://oracle-japan.github.io/ocidocs/services/developers/resourcemanager-overview/" rel="alternate" type="text/html" title="リソース・マネージャ概要" /><published>2023-04-01T00:00:00+09:00</published><updated>2023-04-01T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/developers/resourcemanager-overview</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/developers/resourcemanager-overview/"><![CDATA[<p>OCIの技術説明資料：OCI リソース・マネージャ概要<br />
+OCIリソースのデプロイメントと操作を自動化できるリソース・マネージャ（Resource Manager）の概要資料です。</p>
+
+<h4 id="スライド">スライド</h4>
+<div style="max-width:768px">
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
+
+<script defer="" class="speakerdeck-embed" data-id="4c372757929c4c3c81e5fb649486d70b" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
+
+<!-- #### セミナー動画 -->
+
+<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください -->
+
+<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) -->
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Developers" /><category term="スライドあり" /><category term="レベル:入門(100)" /><summary type="html"><![CDATA[OCIリソースのデプロイメントと操作を自動化できるリソース・マネージャ（Resource Manager）の概要資料です。]]></summary></entry><entry><title type="html">Autonomous Database 技術FAQ</title><link href="https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq/" rel="alternate" type="text/html" title="Autonomous Database 技術FAQ" /><published>2023-03-31T00:00:00+09:00</published><updated>2023-03-31T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq/"><![CDATA[<h1 id="-お知らせ2023年1月更新"><span style="color: brown; ">■ お知らせ※2023年1月更新</span></h1>
 <p><br /></p>
 
 <p>現在Autonomous Database – Sharedへクライアント資格証明(ウォレット)を使用してDB接続を行っているユーザーは、リージョンごとに指定された期日までに新しいウォレットを再ダウンロードする必要があります。
@@ -1232,18 +1248,4 @@ OCICLIでの実施方法は<a href="https://oracle-japan.github.io/ocitutorials/
 <script async="" class="speakerdeck-embed" data-id="2d6202da31254fd990954f06710e4c7b" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 <!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
 
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Developers" /><category term="スライドあり" /><category term="レベル:入門(100)" /><summary type="html"><![CDATA[OCI が提供するインテリジェントなコンテンツ管理プラットフォーム Oracle Content Management のサービスの概要紹介資料です]]></summary></entry><entry><title type="html">Oracle Cloud Infrastructure IaaS 新機能アップデート 2022/9～2022/11</title><link href="https://oracle-japan.github.io/ocidocs/updates/update-FY23Q2/" rel="alternate" type="text/html" title="Oracle Cloud Infrastructure IaaS 新機能アップデート 2022/9～2022/11" /><published>2022-12-12T00:00:00+09:00</published><updated>2022-12-12T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/updates/update-FY23Q2</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/updates/update-FY23Q2/"><![CDATA[<p>Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介しています。
-2022年9月～2022年11月の3ヶ月分の新機能について説明しています。</p>
-
-<h4 id="スライド">スライド</h4>
-<div style="max-width:768px">
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-<script async="" class="speakerdeck-embed" data-id="1fb18297bfb94bba9c14ad2a87c8e516" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
-
-#### セミナー動画
-
-<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください -->
-
-<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) -->
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Updates" /><category term="スライドあり" /><category term="動画あり" /><summary type="html"><![CDATA[2022年9月～2022年11月の3ヶ月分のOCI新機能についてのまとめ資料です]]></summary></entry></feed>
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Developers" /><category term="スライドあり" /><category term="レベル:入門(100)" /><summary type="html"><![CDATA[OCI が提供するインテリジェントなコンテンツ管理プラットフォーム Oracle Content Management のサービスの概要紹介資料です]]></summary></entry></feed>
