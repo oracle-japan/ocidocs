@@ -1,20 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2023-04-07T15:02:27+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">リソース・マネージャ概要</title><link href="https://oracle-japan.github.io/ocidocs/services/developers/resourcemanager-overview/" rel="alternate" type="text/html" title="リソース・マネージャ概要" /><published>2023-04-01T00:00:00+09:00</published><updated>2023-04-01T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/developers/resourcemanager-overview</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/developers/resourcemanager-overview/"><![CDATA[<p>OCIの技術説明資料：OCI リソース・マネージャ概要<br />
-OCIリソースのデプロイメントと操作を自動化できるリソース・マネージャ（Resource Manager）の概要資料です。</p>
-
-<h4 id="スライド">スライド</h4>
-<div style="max-width:768px">
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-
-<script defer="" class="speakerdeck-embed" data-id="4c372757929c4c3c81e5fb649486d70b" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
-
-<!-- #### セミナー動画 -->
-
-<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください -->
-
-<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) -->
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Developers" /><category term="スライドあり" /><category term="レベル:入門(100)" /><summary type="html"><![CDATA[OCIリソースのデプロイメントと操作を自動化できるリソース・マネージャ（Resource Manager）の概要資料です。]]></summary></entry><entry><title type="html">Autonomous Database 技術FAQ</title><link href="https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq/" rel="alternate" type="text/html" title="Autonomous Database 技術FAQ" /><published>2023-03-31T00:00:00+09:00</published><updated>2023-03-31T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq/"><![CDATA[<h1 id="-お知らせ2023年1月更新"><span style="color: brown; ">■ お知らせ※2023年1月更新</span></h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2023-05-11T15:07:54+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">Autonomous Database 技術FAQ</title><link href="https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq/" rel="alternate" type="text/html" title="Autonomous Database 技術FAQ" /><published>2023-05-11T00:00:00+09:00</published><updated>2023-05-11T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq/"><![CDATA[<h1 id="-お知らせ2023年1月更新"><span style="color: brown; ">■ お知らせ※2023年1月更新</span></h1>
 <p><br /></p>
 
 <p>現在Autonomous Database – Sharedへクライアント資格証明(ウォレット)を使用してDB接続を行っているユーザーは、リージョンごとに指定された期日までに新しいウォレットを再ダウンロードする必要があります。
@@ -347,9 +331,8 @@ I/OスループットはCPUの数に合わせてスケーリングします（Di
 
 <h2 id="ストレージ容量以上のデータを格納しようとした場合はどうなりますか">ストレージ容量以上のデータを格納しようとした場合はどうなりますか？</h2>
 
-<p>ストレージ容量が不足した場合は、Insert処理がエラーとなります（ORA-65114: コンテナ内の領域の使用量が高すぎます）<br />
-ただし、サービスコンソールの使用率表示は余裕を持たせてあり、100%ではなく、110%でエラーが発生するようになります。
-この場合、ストレージ容量を手動でスケールアップする、もしくはストレージの自動拡張機能を有効にすることでエラーを解消できます。ストレージの自動拡張を有効にすると、ストレージ量が100GB以下になると1TBずつ設定値の3倍まで自動で拡張します。</p>
+<p>ストレージ容量が不足した場合は、Insert処理がエラーとなります（ORA-65114: コンテナ内の領域の使用量が高すぎます）
+ただし、Database Actionsのデータベース・ダッシュボードの使用率表示は余裕を持たせてあり、100%ではなく、110%でエラーが発生するようになります。 この場合、ストレージ容量を手動でスケールアップする、もしくはストレージの自動拡張機能を有効にすることでエラーを解消できます。ストレージの自動拡張を有効にすると、設定値の3倍まで予約され、割り当て可能になります。課金は割り当て済みのストレージをTB単位に切り上げた値にかかります。これにより、想定外のデータ量の増加に対応できます。</p>
 
 <p><br /></p>
 
@@ -407,8 +390,7 @@ Autonomous Data Guard を構成いただいた場合は、SLA99.995%となり、
 
 <h2 id="自動バックアップはどこに取得されるのでしょうか任意のオブジェクトストレージに取得することはできますか">自動バックアップはどこに取得されるのでしょうか。任意のオブジェクト・ストレージに取得することはできますか？</h2>
 
-<p>オラクル社が管理するオブジェクト・ストレージに取得されます。取得先に任意のオブジェクト・ストレージを指定することはできません。自動バックアップが取得されるオブジェクト・ストレージはユーザがアクセスすることはできず、課金対象外（ユーザーが指定するストレージ容量には含まれません）になります。<br />
-なお、手動バックアップの場合は任意のオブジェクトストレージの指定が可能です。</p>
+<p>オラクル社が管理するオブジェクト・ストレージに取得されます。取得先に任意のオブジェクト・ストレージを指定することはできません。自動バックアップが取得されるオブジェクト・ストレージはユーザがアクセスすることはできず、課金対象外（ユーザーが指定するストレージ容量には含まれません）になります。</p>
 
 <p><br /></p>
 
@@ -487,6 +469,7 @@ Autonomous Data Guard を構成いただいた場合は、SLA99.995%となり、
 
 <p>ADBの自動バックアップ機能では遠隔地(別リージョン)へバックアップすることはできません。ADBにおけるDR対応は下記の方法がございます。
   ・Autonomous Data Guardを使用し、スタンバイDBを構成する
+  ・クロスリージョン・バックアップ・コピーを構成する
   ・別リージョンにクローンを作成する（平時はインスタンスを停止することでOCPUの課金は抑えることが可能です）
   ・Data Pumpで Object Storageに論理バックアップを取得し、Object Storageのリージョン・コピー機能で別リージョンに複製する</p>
 
@@ -594,7 +577,7 @@ Autonomous Databaseではデータファイル（表領域）やバックアッ�
 
 <h2 id="autonomous-databaseの表領域暗号化のアルゴリズムは何を利用していますか">Autonomous Databaseの表領域暗号化のアルゴリズムは何を利用していますか?</h2>
 
-<p>2023/3時点でAES-256で暗号化されております。
+<p>2023/5時点でAES-256で暗号化されております。
 V$ENCRYPTED_TABLESPACESビューを参照いただくことで確認可能です。</p>
 
 <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="n">NAME</span><span class="p">,</span><span class="n">ENCRYPTIONALG</span> <span class="k">FROM</span> <span class="n">V</span><span class="err">$</span><span class="n">ENCRYPTED_TABLESPACES</span> <span class="n">a</span><span class="p">,</span><span class="n">V</span><span class="err">$</span><span class="n">TABLESPACE</span> <span class="n">b</span>
@@ -640,6 +623,12 @@ V$ENCRYPTED_TABLESPACESビューを参照いただくことで確認可能です
 <p>また、特権ユーザーに対しても情報にアクセスさせないようにするDatabase Vaultも設定可能です。詳しくはこちらのチュートリアルをご参照ください。</p>
 
 <p><a href="https://oracle-japan.github.io/ocitutorials/database/adb209-DV/">参考：Database Vaultチュートリアル</a></p>
+
+<p><br /></p>
+
+<h2 id="adminユーザーのパスワードを期限切れにならないように変更できますか">ADMINユーザーのパスワードを期限切れにならないように変更できますか？</h2>
+
+<p>ADMINユーザーのプロファイルは、セキュリティ観点からデフォルトの360日から変更できないようになっております。代替案として、必要な権限を持つユーザーを追加で作成し、このユーザーをパスワードの有効期限を360日以上に設定したプロファイルに割り当てることを検討してください。</p>
 
 <p><a href="#">ページトップに戻る</a></p>
 
@@ -1159,7 +1148,23 @@ OCICLIでの実施方法は<a href="https://oracle-japan.github.io/ocitutorials/
 
 <p><br /></p>
 
-<p>以上</p>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="FAQ" /><category term="services" /><category term="Autonomous" /><category term="FAQ" /><summary type="html"><![CDATA[Autonomous Database に関して、利用時のよくある質問に対する回答や、ノウハウ/Tipsについて記載しています。]]></summary></entry><entry><title type="html">OKE(Oracle Container Engine for Kubernetes)概要</title><link href="https://oracle-japan.github.io/ocidocs/services/developers/oke-overview/" rel="alternate" type="text/html" title="OKE(Oracle Container Engine for Kubernetes)概要" /><published>2023-03-23T00:00:00+09:00</published><updated>2023-03-23T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/developers/oke-overview</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/developers/oke-overview/"><![CDATA[<p>OracleのマネージドKubernetesサービスであるOracle Container Engine for Kubernetes(OKE)についての概要資料です。</p>
+<p>以上</p>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="FAQ" /><category term="services" /><category term="Autonomous" /><category term="FAQ" /><summary type="html"><![CDATA[Autonomous Database に関して、利用時のよくある質問に対する回答や、ノウハウ/Tipsについて記載しています。]]></summary></entry><entry><title type="html">リソース・マネージャ概要</title><link href="https://oracle-japan.github.io/ocidocs/services/developers/resourcemanager-overview/" rel="alternate" type="text/html" title="リソース・マネージャ概要" /><published>2023-04-01T00:00:00+09:00</published><updated>2023-04-01T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/developers/resourcemanager-overview</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/developers/resourcemanager-overview/"><![CDATA[<p>OCIの技術説明資料：OCI リソース・マネージャ概要<br />
+OCIリソースのデプロイメントと操作を自動化できるリソース・マネージャ（Resource Manager）の概要資料です。</p>
+
+<h4 id="スライド">スライド</h4>
+<div style="max-width:768px">
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
+
+<script defer="" class="speakerdeck-embed" data-id="4c372757929c4c3c81e5fb649486d70b" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
+
+<!-- #### セミナー動画 -->
+
+<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください -->
+
+<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) -->
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Developers" /><category term="スライドあり" /><category term="レベル:入門(100)" /><summary type="html"><![CDATA[OCIリソースのデプロイメントと操作を自動化できるリソース・マネージャ（Resource Manager）の概要資料です。]]></summary></entry><entry><title type="html">OKE(Oracle Container Engine for Kubernetes)概要</title><link href="https://oracle-japan.github.io/ocidocs/services/developers/oke-overview/" rel="alternate" type="text/html" title="OKE(Oracle Container Engine for Kubernetes)概要" /><published>2023-03-23T00:00:00+09:00</published><updated>2023-03-23T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/developers/oke-overview</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/developers/oke-overview/"><![CDATA[<p>OracleのマネージドKubernetesサービスであるOracle Container Engine for Kubernetes(OKE)についての概要資料です。</p>
 
 <h4 id="スライド">スライド</h4>
 
