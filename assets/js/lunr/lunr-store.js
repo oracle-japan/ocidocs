@@ -784,4 +784,22 @@ var store = [{
         "tags": ["FAQ"],
         "url": "/ocidocs/faq/services/autonomous/autonomous-database-faq/",
         "teaser": null
+      },{
+        "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2023/3～2023/5",
+        "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介しています。 2023年3月～2023年5月の3ヶ月分の新機能について説明しています。   スライド               ","categories": ["Updates"],
+        "tags": ["スライドあり","動画あり"],
+        "url": "/ocidocs/updates/update-FY23Q4/",
+        "teaser": "https://files.speakerdeck.com/presentations/578ec0bebb9e491182190af865fdc00c/slide_0.jpg"
+      },{
+        "title": "外部接続 FastConnect詳細",
+        "excerpt":"OCIの技術説明資料：外部接続 FastConnect 詳細  FastConnectについての詳細資料です。 FastConnectの接続モデルやルーティング要件、接続方式などを解説しています。   スライド               ","categories": ["Services","Networking"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "/ocidocs/services/networking/FastConnect-200/",
+        "teaser": "https://files.speakerdeck.com/presentations/ef2254139aef47e0b48a38222edfb203/slide_0.jpg"
+      },{
+        "title": "外部接続VPN接続(IPSec) 詳細",
+        "excerpt":"OCIの技術説明資料：外部接続 VPN接続(IPSec) 詳細  外部接続 VPN接続(IPSec) 詳細資料です。 VPN接続のルーティング要件や接続ステップ、冗長化について解説しています。   スライド               ","categories": ["Services","Networking"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "/ocidocs/services/networking/IPSecVPN-200/",
+        "teaser": "https://files.speakerdeck.com/presentations/e3a0f9ce639c46b285e4c52f2767f8b7/slide_0.jpg"
       }]

@@ -1,4 +1,54 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2023-05-11T15:07:54+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">Autonomous Database 技術FAQ</title><link href="https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq/" rel="alternate" type="text/html" title="Autonomous Database 技術FAQ" /><published>2023-05-11T00:00:00+09:00</published><updated>2023-05-11T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq/"><![CDATA[<h1 id="-お知らせ2023年1月更新"><span style="color: brown; ">■ お知らせ※2023年1月更新</span></h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2023-07-25T09:38:09+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">外部接続 FastConnect詳細</title><link href="https://oracle-japan.github.io/ocidocs/services/networking/FastConnect-200/" rel="alternate" type="text/html" title="外部接続 FastConnect詳細" /><published>2023-07-21T00:00:00+09:00</published><updated>2023-07-21T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/networking/FastConnect-200</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/networking/FastConnect-200/"><![CDATA[<p>OCIの技術説明資料：外部接続 FastConnect 詳細<br />
+FastConnectについての詳細資料です。
+FastConnectの接続モデルやルーティング要件、接続方式などを解説しています。</p>
+
+<h4 id="スライド">スライド</h4>
+<div style="max-width:768px">
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
+
+<script defer="" class="speakerdeck-embed" data-id="ef2254139aef47e0b48a38222edfb203" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
+
+<!-- #### セミナー動画 -->
+
+<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください -->
+
+<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) -->
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Networking" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html"><![CDATA[FastConnectの接続モデルやルーティング要件、接続方式などを解説しています。]]></summary></entry><entry><title type="html">外部接続VPN接続(IPSec) 詳細</title><link href="https://oracle-japan.github.io/ocidocs/services/networking/IPSecVPN-200/" rel="alternate" type="text/html" title="外部接続VPN接続(IPSec) 詳細" /><published>2023-07-21T00:00:00+09:00</published><updated>2023-07-21T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/networking/IPSecVPN-200</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/networking/IPSecVPN-200/"><![CDATA[<p>OCIの技術説明資料：外部接続 VPN接続(IPSec) 詳細<br />
+外部接続 VPN接続(IPSec) 詳細資料です。
+VPN接続のルーティング要件や接続ステップ、冗長化について解説しています。</p>
+
+<h4 id="スライド">スライド</h4>
+<div style="max-width:768px">
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
+
+<script defer="" class="speakerdeck-embed" data-id="e3a0f9ce639c46b285e4c52f2767f8b7" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
+
+<!-- #### セミナー動画 -->
+
+<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください -->
+
+<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) -->
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Networking" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html"><![CDATA[VPN接続のルーティング要件や接続ステップ、冗長化について解説しています。]]></summary></entry><entry><title type="html">Oracle Cloud Infrastructure IaaS 新機能アップデート 2023/3～2023/5</title><link href="https://oracle-japan.github.io/ocidocs/updates/update-FY23Q4/" rel="alternate" type="text/html" title="Oracle Cloud Infrastructure IaaS 新機能アップデート 2023/3～2023/5" /><published>2023-06-07T00:00:00+09:00</published><updated>2023-06-07T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/updates/update-FY23Q4</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/updates/update-FY23Q4/"><![CDATA[<p>Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介しています。
+2023年3月～2023年5月の3ヶ月分の新機能について説明しています。</p>
+
+<h4 id="スライド">スライド</h4>
+<div style="max-width:768px">
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
+
+<script defer="" class="speakerdeck-embed" data-id="578ec0bebb9e491182190af865fdc00c" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
+
+<!-- #### セミナー動画 -->
+
+<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください -->
+
+<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) -->
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Updates" /><category term="スライドあり" /><category term="動画あり" /><summary type="html"><![CDATA[2023年3月～2023年5月の3ヶ月分のOCI新機能についてのまとめ資料です]]></summary></entry><entry><title type="html">Autonomous Database 技術FAQ</title><link href="https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq/" rel="alternate" type="text/html" title="Autonomous Database 技術FAQ" /><published>2023-05-11T00:00:00+09:00</published><updated>2023-05-11T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq/"><![CDATA[<h1 id="-お知らせ2023年1月更新"><span style="color: brown; ">■ お知らせ※2023年1月更新</span></h1>
 <p><br /></p>
 
 <p>現在Autonomous Database – Sharedへクライアント資格証明(ウォレット)を使用してDB接続を行っているユーザーは、リージョンごとに指定された期日までに新しいウォレットを再ダウンロードする必要があります。
@@ -1220,37 +1270,4 @@ OCIリソースのデプロイメントと操作を自動化できるリソー�
 <script async="" class="speakerdeck-embed" data-id="69c6d8709c684fcbb2b488fc0b9002c5" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 <!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
 
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Solutions" /><category term="Security" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html"><![CDATA[OCI Network Firewallのテクニカルな概要資料です]]></summary></entry><entry><title type="html">OCI Securityサービス技術概要</title><link href="https://oracle-japan.github.io/ocidocs/solutions/security/OCISecurity/" rel="alternate" type="text/html" title="OCI Securityサービス技術概要" /><published>2022-12-20T00:00:00+09:00</published><updated>2022-12-20T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/solutions/security/OCISecurity</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/solutions/security/OCISecurity/"><![CDATA[<p>2022年12月時点の、OCIで提供している各Securityサービスの特徴をまとめた資料になります。</p>
-
-<h4 id="スライド">スライド</h4>
-
-<div style="max-width:768px">
-
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-<script async="" class="speakerdeck-embed" data-id="052c7b6821624e8bb362168913a8f6b2" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
-
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Solutions" /><category term="Security" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html"><![CDATA[2022年12月時点での、OCI Security の各サービスの特徴を網羅的に紹介する資料です]]></summary></entry><entry><title type="html">OCI IAM Identity Domain - APEXアプリケーションとの認証連携・認可</title><link href="https://oracle-japan.github.io/ocidocs/solutions/iam/identitydomains-apex/" rel="alternate" type="text/html" title="OCI IAM Identity Domain - APEXアプリケーションとの認証連携・認可" /><published>2022-12-13T00:00:00+09:00</published><updated>2022-12-13T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/solutions/iam/identitydomains-apex</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/solutions/iam/identitydomains-apex/"><![CDATA[<p>OCI IAM Identity DomainとAPEXアプリケーションの認証連携および認可制御を行うための設定手順をまとめた資料になります。</p>
-
-<h4 id="スライド">スライド</h4>
-
-<div style="max-width:768px">
-
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-<script async="" class="speakerdeck-embed" data-id="6c9055d46f574bb0bc32216f37dcd653" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
-
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Solutions" /><category term="IAM" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html"><![CDATA[OCI IAM Identity DomainとAPEXアプリケーションの認証連携および認可制御を行うための設定手順をまとめた資料になります。]]></summary></entry><entry><title type="html">Oracle Content Management サービス概要</title><link href="https://oracle-japan.github.io/ocidocs/services/developers/oracle-content-management-overview/" rel="alternate" type="text/html" title="Oracle Content Management サービス概要" /><published>2022-12-12T00:00:00+09:00</published><updated>2022-12-12T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/developers/oracle-content-management-overview</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/developers/oracle-content-management-overview/"><![CDATA[<p>OCI が提供するインテリジェントなコンテンツ管理プラットフォーム Oracle Content Management のサービスの概要紹介資料です。ファイル共有、アセット管理、Webサイト管理など、組織内のコンテンツ管理に関するさまざまな課題に対応する機能を1つのクラウドサービスとして提供します</p>
-
-<p>2022年12月12日 新規公開しました</p>
-
-<h4 id="スライド">スライド</h4>
-
-<div style="max-width:768px">
-
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-
-<script async="" class="speakerdeck-embed" data-id="2d6202da31254fd990954f06710e4c7b" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
-
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Developers" /><category term="スライドあり" /><category term="レベル:入門(100)" /><summary type="html"><![CDATA[OCI が提供するインテリジェントなコンテンツ管理プラットフォーム Oracle Content Management のサービスの概要紹介資料です]]></summary></entry></feed>
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Solutions" /><category term="Security" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html"><![CDATA[OCI Network Firewallのテクニカルな概要資料です]]></summary></entry></feed>
