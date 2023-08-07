@@ -36,7 +36,7 @@
 
 
 
-  <meta property="article:published_time" content="2023-05-11T00:00:00+09:00">
+  <meta property="article:published_time" content="2023-08-07T00:00:00+09:00">
 
 
 
@@ -187,7 +187,7 @@
       <span class="page__meta-date">
         <i class="far fa-calendar-alt" aria-hidden="true"></i>
         
-        <time datetime="2023-05-11T00:00:00+09:00">May 11, 2023</time>
+        <time datetime="2023-08-07T00:00:00+09:00">August 7, 2023</time>
       </span>
     
 
@@ -338,7 +338,7 @@
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Autonomous Database 技術FAQ">
     <meta itemprop="description" content="Autonomous Database に関して、利用時のよくある質問に対する回答や、ノウハウ/Tipsについて記載しています。">
-    <meta itemprop="datePublished" content="2023-05-11T00:00:00+09:00">
+    <meta itemprop="datePublished" content="2023-08-07T00:00:00+09:00">
     
 
     <div class="page__inner-wrap">
@@ -349,170 +349,17 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 目次</h4></header>
-              <ul class="toc__menu"><li><a href="#-お知らせ2023年1月更新">■ お知らせ※2023年1月更新</a></li><li><a href="#-サービス概要編">■ サービス概要編</a></li><li><a href="#-課金ライセンス">■ 課金/ライセンス</a></li><li><a href="#-構成関連">■ 構成関連</a></li><li><a href="#-可用性関連">■ 可用性関連</a></li><li><a href="#-接続データロード連携関連">■ 接続・データロード/連携関連</a></li><li><a href="#-セキュリティ関連">■ セキュリティ関連</a></li><li><a href="#-オプション機能関連">■ オプション・機能関連</a></li><li><a href="#-運用管理監視関連">■ 運用管理・監視関連</a></li><li><a href="#-パッチメンテナンス関連">■ パッチ・メンテナンス関連</a></li><li><a href="#-性能検証編環境作成">■ 性能検証編(環境作成)</a></li><li><a href="#-性能検証編クエリ実行">■ 性能検証編(クエリ実行)</a></li><li><a href="#-その他-">■ その他 </a></li></ul>
+              <ul class="toc__menu"><li><a href="#-サービス概要編">■ サービス概要編</a></li><li><a href="#-課金ライセンス">■ 課金/ライセンス</a></li><li><a href="#-構成関連">■ 構成関連</a></li><li><a href="#-可用性関連">■ 可用性関連</a></li><li><a href="#-接続データロード連携関連">■ 接続・データロード/連携関連</a></li><li><a href="#-セキュリティ関連">■ セキュリティ関連</a></li><li><a href="#-オプション機能関連">■ オプション・機能関連</a></li><li><a href="#-運用管理監視関連">■ 運用管理・監視関連</a></li><li><a href="#-パッチメンテナンス関連">■ パッチ・メンテナンス関連</a></li><li><a href="#-性能検証編環境作成">■ 性能検証編(環境作成)</a></li><li><a href="#-性能検証編クエリ実行">■ 性能検証編(クエリ実行)</a></li><li><a href="#-その他-">■ その他 </a></li></ul>
 
             </nav>
           </aside>
         
-        <h1 id="-お知らせ2023年1月更新"><span style="color: brown; ">■ お知らせ※2023年1月更新</span></h1>
-<p><br /></p>
-
-<p>現在Autonomous Database – Sharedへクライアント資格証明(ウォレット)を使用してDB接続を行っているユーザーは、リージョンごとに指定された期日までに新しいウォレットを再ダウンロードする必要があります。
-既存のウォレットでは、アプリケーション、ツール、サービスが、リージョンごとに指定された以下の期日以降Autonomous Database インスタンスに接続できなくなります。</p>
-<ul>
-  <li>Japan East(NRT)リージョン：2023年5月18日</li>
-  <li>Japan Central(KIX)リージョン：2023年5月11日</li>
-  <li>上記以外のリージョンの期日については、MOS Noteをご参照ください</li>
-</ul>
-
-<p>ウォレットを使わないTLS接続でDB接続を行っているユーザーは、接続文字列の更新が必要な場合がありますのでご確認ください。</p>
-<ul>
-  <li>以下のようなOUフィールドの含まれていない接続文字列(新形式)を使用している場合、対応不要です</li>
-  <li>2022年8月以降OCIコンソールもしくはAPI経由で取得可能な接続文字列は下記の新形式です</li>
-</ul>
-
-<p><code class="language-plaintext highlighter-rouge">(description=(retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1521)(host=adb.region.oraclecloud.com))
-(connect_data=(service_name=u9adutfb2ba8x4d_database_medium.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))</code></p>
-
-<ul>
-  <li>以下のようなOUフィールドの含まれている文字列(旧形式)では、リージョンごとに指定された期日以降接続ができなくなります</li>
-  <li>2022年8月以前に取得した接続文字列は下記の旧形式です</li>
-</ul>
-
-<p><code class="language-plaintext highlighter-rouge">(description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1521)(host=adb.region.oraclecloud.com))
-(connect_data=(service_name=u9adutfb2ba8x4d_database_medium.adb.oraclecloud.com))
-(security=(ssl_server_cert_dn="CN=adwc-preprod.uscom-east-1.oraclecloud.com, OU=Oracle BMCS US,O=Oracle Corporation, L=Redwood City, ST=California, C=US")))</code></p>
-
-<ul>
-  <li>OUフィールドの含まれている接続文字列を使用している場合、OCIコンソールもしくはAPI経由でOUフィールドの含まれていない新しい接続文字列を取得し、そちらに変更が必要です。</li>
-</ul>
-
-<h2 id="db接続でウォレットを利用しているユーザーが必要な対応">DB接続でウォレットを利用しているユーザーが必要な対応</h2>
-<ol>
-  <li>Oracle Clientを以下のバージョン以降であることを確認：新しいウォレットでの接続形式のサポートのため
-    <ul>
-      <li>アップデートが必要な場合にはご対応ください。</li>
-      <li>Oracle Instant Client/Oracle Database Client: 18.19 またはそれ以降, 19.2 またはそれ以降, 21.0 またはそれ以降
- cx_Oracle, node-oracledb, godror, PHP OCI8, PHP PDO_OCI, ruby-oci8, ROracle, rust-oracleなどのOracle Database ドライバについては、上記のOracle Instant Client/Oracle Database Client バージョンで使用してください</li>
-      <li>ODP.NET: 12.1（2022年4月以降WINDBBP、Managed ODP.NETのみ）、18（ベースリリース以降）、19.4（以降、19.10を除く）、21（ベースリリース以降）</li>
-      <li>JDBC Thin: 11.2.0.4 またはそれ以降(Bug 28492769に対する単発パッチ適用が必要)、12.2 またはそれ以降(Bug 28492769に対する単発パッチ適用が必要) 、18.0 またはそれ以降(Bug 28492769 に対する単発パッチ適用が必要)、19.0 またはそれ以降、21.0 またはそれ以降</li>
-      <li>Python: python-oracledb 1.0 (またはそれ以降)</li>
-    </ul>
-  </li>
-  <li>2023年1月10日からリージョンごとに指定された期日までの間にクライアントで使用するウォレットを差し替え
-    <ul>
-      <li>Japan East(NRT)リージョン：2023年5月18日</li>
-      <li>Japan Central(KIX)リージョン：2023年5月11日</li>
-      <li>上記以外のリージョンの期日については、MOS Noteをご参照ください</li>
-    </ul>
-  </li>
-</ol>
-
-<p>※ウォレットのローテーションは不要です。OCIコンソールよりウォレットを新たにダウンロードし、各クライアントに再配布してください。
-設定方法は<a href="https://oracle-japan.github.io/ocitutorials/database/adb104-connect-using-wallet/">こちら</a>をご参照ください。</p>
-
-<ul>
-  <li>上記の対応が難しい場合、設定によってはウォレットを使用しないTLS接続に変更することも可能です</li>
-</ul>
-
-<p>こちらの資料もご確認ください。</p>
-
-<div style="max-width:768px">
-
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-<script async="" class="speakerdeck-embed" data-id="270b8fb99c8a4acd9fd98a7a04748826" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
-
-</div>
-
-<h2 id="本件はウォレットを使うその他のoracle-cloud-infrastructureのoracle-db-paasサービスも対象ですか">本件はウォレットを使うその他のOracle Cloud InfrastructureのOracle DB PaaSサービスも対象ですか？</h2>
-
-<p>いいえ、Autonomous Database on Shared Infrastructureのみが対象です。</p>
-
-<p><br /></p>
-
-<h2 id="ウォレットのローテーションが必要ですか">ウォレットのローテーションが必要ですか？</h2>
-
-<p>いいえ、ローテーションは必要ありません。
-ウォレットの再ダウンロードを行い、クライアントに設定してください。</p>
-
-<p><br /></p>
-
-<h2 id="ウォレットの差し替えを行わないとどんな影響がありますか">ウォレットの差し替えを行わないとどんな影響がありますか？</h2>
-
-<p>リージョンごとに指定された期日以降Autonomous Databaseに接続できなくなります。</p>
-
-<p><br /></p>
-
-<h2 id="本件についてのmos-noteはありますか">本件についてのMOS Noteはありますか？</h2>
-
-<p><a href="https://support.oracle.com/epmos/faces/DocumentDisplay?id=2911553.1">こちら</a>をご確認ください。</p>
-
-<p><br /></p>
-
-<h2 id="なぜ使用可能なクライアントのバージョンの制限があるのでしょうか">なぜ使用可能なクライアントのバージョンの制限があるのでしょうか？</h2>
-
-<p>Autonomous Databaseは、mTLS接続文字列のssl_server_cert_dnプロパティに基づいてサーバーのDNマッチングを行っていましたが、このプロパティにはOrganization Unit(OU)フィールドが含まれています。今回、業界水準に準拠し、OUフィールドが使用不可になったため、サーバー側証明書からOUフィールドを削除しました。</p>
-
-<p>Autonomous Databaseは、今後は接続文字列のhostプロパティに基づいてDNマッチングを行うことをサポートします。このアプローチをサポートしているクライアントのバージョンにアップデートする必要があります。</p>
-
-<p><br /></p>
-
-<h2 id="サポートされるodpnetは121のみ記載されていますが122を使用している場合はバージョンアップが必要ということですか">サポートされるODP.NETは12.1のみ記載されていますが、12.2を使用している場合は、バージョンアップが必要ということですか？</h2>
-
-<p>はい、12.1限定となりますので、12.2をお使いの場合は19.4以降のバージョンへのバージョンアップが必要になります。</p>
-
-<p><br /></p>
-
-<h2 id="今すぐにはクライアントのバージョンアップが難しいですリストにないバージョンのクライアントでも接続はできますか">今すぐにはクライアントのバージョンアップが難しいです。リストにないバージョンのクライアントでも接続はできますか？</h2>
-
-<p>基本的にはリストにあるバージョンのクライアントをお使いいただくことを推奨しております。しかし、リストにない11gや12cのクライアントでもバージョンによっては、接続可能なケースがございます。</p>
-
-<p>今すぐのバージョンアップが難しい場合は、後のFAQで示している対応によってそれらのバージョンでお使いいただくことも可能ですが、運用上何か不具合が起きた際にSR等でお問合せいただいても、解決策としてクライアントのバージョンアップをまずはお願いする可能性があります。</p>
-
-<p><br /></p>
-
-<h2 id="ウォレット差し替え後リストにないバージョンのクライアントから接続しようとするとエラーが出て接続ができなくなりました">ウォレット差し替え後、リストにないバージョンのクライアントから接続しようとすると、エラーが出て、接続ができなくなりました。</h2>
-
-<p>先のFAQにもある通り、基本的にクライアントのバージョンアップにてご対応をお願いいたします。対応が難しければ、以下の回避策がございます。</p>
-
-<ul>
-  <li>
-    <p>ADBのネットワーク・アクセスが<code class="language-plaintext highlighter-rouge">すべての場所からのセキュア・アクセス</code>もしくは<code class="language-plaintext highlighter-rouge">許可されたIPおよびVCN限定のセキュア・アクセス</code>の場合</p>
-
-    <p>以下の手順をお試しください。それでもなおエラーが出る場合は、クライアントのバージョンアップのご対応をお願いいたします。</p>
-  </li>
-</ul>
-
-<ol>
-  <li>
-    <p>ADBインスタンスをTLSとmTLS認証の両方を許可する設定に変更します。ドキュメントは<a href="https://docs.oracle.com/cd//E83857_01/paas/autonomous-database/adbsa/support-tls-mtls-authentication.html">こちら</a></p>
-  </li>
-  <li>
-    <p>sqlnet.oraとtnsnames.ora内のssl_server_dn_matchをyesからnoに変更</p>
-  </li>
-</ol>
-
-<ul>
-  <li>
-    <p>ADBのネットワーク・アクセスが<code class="language-plaintext highlighter-rouge">プライベート・エンドポイント・アクセスのみ</code>の場合</p>
-
-    <p>sqlnet.oraとtnsnames.ora内のssl_server_dn_matchがnoになっていることを確認します。それでもなおエラーが出る場合は、クライアントのバージョンアップのご対応をお願いいたします。</p>
-  </li>
-</ul>
-
-<h2 id="プライベートエンドポイントアクセスのみのadbからプライベートエンドポイントアクセスのみのadbへのデータベースリンクを構成していますウォレットの差し替え後ora-29002ssl-transport-detected-invalid-or-obsolete-server-certificateというエラーが出ます">プライベート・エンドポイント・アクセスのみのADBから、プライベート・エンドポイント・アクセスのみのADBへのデータベース・リンクを構成しています。ウォレットの差し替え後、<code class="language-plaintext highlighter-rouge">ORA-29002：SSL transport detected invalid or obsolete server certificate.</code>というエラーが出ます。</h2>
-
-<p>今回のウォレットの差し替えに際して、ご指摘の構成のデータベース・リンクではウォレットを使った接続がサポートされなくなりました。その構成でデータベース・リンクを使用する場合、ウォレットを使わない接続の利用を検討してください。詳細は<a href="https://docs.oracle.com/en/cloud/paas/autonomous-database/adbsa/database-links-oracledb-private.html#GUID-67B611A2-2866-49F2-A580-0D6A6EE83A04">こちら</a>をご参照ください。</p>
-
-<p><br /></p>
-
-<h1 id="-サービス概要編"><span style="color: brown; ">■ サービス概要編</span></h1>
+        <h1 id="-サービス概要編"><span style="color: brown; ">■ サービス概要編</span></h1>
 <p><br /></p>
 
 <h2 id="autonomous-databaseはoracle-databaseとどう違うのでしょうか">Autonomous DatabaseはOracle Databaseとどう違うのでしょうか？</h2>
 
-<p>内部的にはOracle Database 19cを使用しています。(2023/3時点)</p>
+<p>内部的にはOracle Database 19cを使用しています。(2023/8時点)</p>
 
 <p>それに加えてAutonomous Databaseでは、データベース管理者(DBA)のタスクを減らすため、様々な自動化・自律化機能が備わっていることや、Exadataを基盤としているため高速化されていること、Enterprise Edition(EE)とRACなどの各種EEオプションがデフォルトで利用できることが特徴として挙げられます。</p>
 
@@ -528,7 +375,7 @@ Shared型ではモデルを選択することはできません。ExadataのSmar
 
 <h2 id="autonomous-database-にはタイプがいくつかありますがどれを選択すれば良いでしょうか">Autonomous Database にはタイプがいくつかありますが、どれを選択すれば良いでしょうか？</h2>
 
-<p>ワークロードの特性に応じてご選択いただければと思います。分析目的の利用であれば、Autonomous Data Warehouse(ADW)、JSON中心のアプリケーション開発であればAutonomous JSON Database(AJD)、APEXアプリケーション開発であればAPEX Application Development、トランザクション処理やそれ以外のワークロードであればAutonomous Transaction Processing1(ATP)をご選択いただければと思います。</p>
+<p>ワークロードの特性に応じてご選択いただければと思います。分析目的の利用であれば、Autonomous Data Warehouse(ADW)、JSON中心のアプリケーション開発であればAutonomous JSON Database(AJD)、APEXアプリケーション開発であればAPEX Application Development、トランザクション処理やそれ以外のワークロードであればAutonomous Transaction Processing(ATP)をご選択いただければと思います。</p>
 
 <p><br /></p>
 
@@ -546,7 +393,7 @@ Shared型ではモデルを選択することはできません。ExadataのSmar
 
 <p><br /></p>
 
-<h2 id="autonomous-json-databaseajd-は-acid-が保証されているのでしょうかもしくは一般的なno-sql-サービスと言う理解でしょうか">Autonomous JSON Database(AJD) は ACID が保証されているのでしょうか？もしくは一般的なNo-SQL サービスと言う理解でしょうか？</h2>
+<h2 id="autonomous-json-databaseajd-は-acid-が保証されているのでしょうかもしくは一般的なnosqlサービスと言う理解でしょうか">Autonomous JSON Database(AJD) は ACID が保証されているのでしょうか？もしくは一般的なNoSQLサービスと言う理解でしょうか？</h2>
 
 <p>ACIDが保証されているサービスとなります。
 良くMongoDBと比較されますが、Autonomous JSON DatabaseはOracle Databaseにドキュメントを格納するため、RDBMSの特徴をそのまま享受できる点がMongoDBと異なる最大の特徴となります。
@@ -628,9 +475,8 @@ Shared型ではモデルを選択することはできません。ExadataのSmar
 
 <h2 id="oracle-analytics-desktop-旧data-visualization-desktop--dvdは無償でしょうか">Oracle Analytics Desktop （旧Data Visualization Desktop : DVD）は無償でしょうか？</h2>
 
-<p>Autonomous Databaseをデータソースとしてご利用いただく限り無償です。<a href="http://www.oracle.com/us/corporate/contracts/paas-iaas-universal-credits-3940775.pdf">PaaS and IaaS Universal Credits Service Descriptions</a>に以下の記載があります。<br />
-“Your use of Oracle Autonomous Data Warehouse Cloud Service entitles You to any number of users of Oracle Data Visualization Desktop”<br />
-なお、インストールする各PCにはクレデンシャル(暗号キー)の配布・設定が必要です。</p>
+<p>Autonomous Databaseをデータソースとしてご利用いただく限り無償です。<a href="https://www.oracle.com/a/ocom/docs/paas-iaas-universal-credits-3940775.pdf">PaaS and IaaS Universal Credits Service Descriptions</a>に記載があります。
+なお、Oracle Analytics Desktopは検証用の扱いのため、本番環境で利用する際にはOracle Analytics Cloudの利用をご検討ください。</p>
 
 <p><br /></p>
 
@@ -713,14 +559,17 @@ I/OスループットはCPUの数に合わせてスケーリングします（Di
 
 <h2 id="ディザスタリカバリdrdisaster-recoveryは可能でしょうか">ディザスタリカバリ（DR/Disaster Recovery）は可能でしょうか？</h2>
 
-<p>可能です。Autonomous Data Guardをリージョン内（ローカル）、クロス・リージョンで構成することができます。</p>
+<p>可能です。Autonomous Data Guardをリージョン内（ローカル）、クロス・リージョンで構成することができます。
+また、バックアップベースのディザスタ・リカバリというオプションもございます。
+リモート・リージョンにバックアップのコピーを保持しておくことが可能です。</p>
 
 <p><br /></p>
 
 <h2 id="障害が発生した場合の復旧時間について教えてください">障害が発生した場合の復旧時間について教えてください。</h2>
 
-<p>ハードウェア障害やデータ破損発生時の障害復旧時間は<a href="https://docs.oracle.com/en/database/oracle/oracle-database/19/haovw/oracle-maximum-availability-architecture-and-autonomous-database-cloud.html#GUID-92064893-D689-4450-B491-3042A5AFCE2B">こちら</a>をご確認ください。サービスとしては可用性SLA99.95%で提供されます。<br />
-Autonomous Data Guard を構成いただいた場合は、SLA99.995%となり、データ破損などの障害からの復旧時間が短くなります。RTO/RPOについては<a href="https://docs.oracle.com/ja-jp/iaas/adbdataguard/autonomous-data-guard-about.html#GUID-AF736587-4F6D-45C3-9886-7211B0A33745">マニュアル</a>をご確認ください。</p>
+<p>ハードウェア障害やデータ破損発生時の障害復旧時間目標は<a href="https://docs.oracle.com/en/cloud/paas/autonomous-database/adbsa/availability-slo.html#GUID-D7F065C4-68C5-4F1F-B8D4-4A43538E7384">こちら</a>をご確認ください。</p>
+
+<p>Autonomous Data Guard を構成いただいた場合は、SLA99.995%となり、データ破損などの障害からの復旧時間が短くなります。RTO/RPOについては<a href="https://docs.oracle.com/ja-jp/iaas/adbdataguard/autonomous-data-guard-about.html#GUID-AF736587-4F6D-45C3-9886-7211B0A33745">マニュアル</a>をご確認ください。</p>
 
 <p><br /></p>
 
@@ -825,7 +674,7 @@ Autonomous Data Guard を構成いただいた場合は、SLA99.995%となり、
 
 <p>ADBの自動バックアップ機能では遠隔地(別リージョン)へバックアップすることはできません。ADBにおけるDR対応は下記の方法がございます。
   ・Autonomous Data Guardを使用し、スタンバイDBを構成する
-  ・クロスリージョン・バックアップ・コピーを構成する
+  ・バックアップベースのディザスタ・リカバリのクロスリージョン・バックアップ・コピーを構成する
   ・別リージョンにクローンを作成する（平時はインスタンスを停止することでOCPUの課金は抑えることが可能です）
   ・Data Pumpで Object Storageに論理バックアップを取得し、Object Storageのリージョン・コピー機能で別リージョンに複製する</p>
 
@@ -836,6 +685,8 @@ Autonomous Data Guard を構成いただいた場合は、SLA99.995%となり、
 <p>ADBではflashback databaseはユーザーは明示的に使用できません。ユーザー指定のタイムスタンプにリストアすることが可能であり、内部的に使用されています。</p>
 
 <p>なお、flashback tableやflashback queryは可能です。<a href="https://docs.oracle.com/cd//E83857_01/paas/autonomous-database/adbsa/autonomous-oracle-flashback.html#GUID-CEE36DC8-E878-481C-8366-9507D0911C25">ドキュメント</a></p>
+
+<p>また、データベース・オブジェクトの過去の状態を表示できるFlashback Time Travelも使用できます。<a href="https://docs.oracle.com/en/cloud/paas/autonomous-database/adbsa/flashback-time-travel-autononomous.html#GUID-A98E1F8B-FAE4-4FFF-955D-3A0E5F8EBC4A">ドキュメント</a></p>
 
 <p><br /></p>
 
@@ -933,7 +784,7 @@ Autonomous Databaseではデータファイル（表領域）やバックアッ�
 
 <h2 id="autonomous-databaseの表領域暗号化のアルゴリズムは何を利用していますか">Autonomous Databaseの表領域暗号化のアルゴリズムは何を利用していますか?</h2>
 
-<p>2023/5時点でAES-256で暗号化されております。
+<p>現時点でAES-256で暗号化されております。
 V$ENCRYPTED_TABLESPACESビューを参照いただくことで確認可能です。</p>
 
 <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="n">NAME</span><span class="p">,</span><span class="n">ENCRYPTIONALG</span> <span class="k">FROM</span> <span class="n">V</span><span class="err">$</span><span class="n">ENCRYPTED_TABLESPACES</span> <span class="n">a</span><span class="p">,</span><span class="n">V</span><span class="err">$</span><span class="n">TABLESPACE</span> <span class="n">b</span>
@@ -1465,7 +1316,7 @@ OCICLIでの実施方法は<a href="https://oracle-japan.github.io/ocitutorials/
 </code></pre></div>        </div>
 
         <blockquote>
-          <p>この場合ダイレクト・ロードにならないため、イレクト・ロードによる高速化を指定したい場合は、従来通り明示的にAPPENDヒントを指定してください。<br />
+          <p>この場合ダイレクト・ロードにならないため、ダイレクト・ロードによる高速化を指定したい場合は、従来通り明示的にAPPENDヒントを指定してください。<br />
   APPENDヒントについては、alter session set optimizer_ignore_hints = false ;は不要です<br />
   なお、CTAS（Create table as select xxxx）については、デフォルトでダイレクト・ロードになり高速処理されます。<br />
   ただし、HIGH/MEDIUMを選択するか、TPURGENTについては一般的なOracle Databaseと同様でパラレルDDLの設定を事前に行う必要があります。</p>
@@ -1496,9 +1347,8 @@ OCICLIでの実施方法は<a href="https://oracle-japan.github.io/ocitutorials/
 
 <p>Autonomous Databaseインスタンスを削除（利用終了, Terminate）するには、お客様にてインスタンスの終了（Terminate）を実施いただきます。終了の手順は<a href="https://docs.oracle.com/ja-jp/iaas/Content/Database/Tasks/adbmanaging.htm#console">こちら</a>に記載があります。</p>
 
-<p>なお、自動バックアップもインスタンスと一緒に削除されます。また手動バックアップ（課金対象）があれば、個別にオブジェクト・ストレージ上のバケットからデータを削除いただく必要がありますのでご注意ください。</p>
-
-<p><br /></p>
+<p>なお、自動バックアップもインスタンスと一緒に削除されます。
+<br /></p>
 
 <p><a href="#">ページトップに戻る</a></p>
 
@@ -1550,7 +1400,7 @@ OCICLIでの実施方法は<a href="https://oracle-japan.github.io/ocitutorials/
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 更新日時:</strong> <time datetime="2023-05-11T00:00:00+09:00">May 11, 2023</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 更新日時:</strong> <time datetime="2023-08-07T00:00:00+09:00">August 7, 2023</time></p>
 
 
       </footer>
@@ -1571,12 +1421,11 @@ OCICLIでの実施方法は<a href="https://oracle-japan.github.io/ocitutorials/
       
   <nav class="pagination">
     
-      <a href="/ocidocs/services/developers/resourcemanager-overview/" class="pagination--pager" title="リソース・マネージャ概要
+      <a href="/ocidocs/services/compute/SecureDesktop/" class="pagination--pager" title="OCI セキュア・デスクトップ 概要
 ">前へ</a>
     
     
-      <a href="/ocidocs/updates/update-FY23Q4/" class="pagination--pager" title="Oracle Cloud Infrastructure IaaS 新機能アップデート 2023/3～2023/5
-">次へ</a>
+      <a href="#" class="pagination--pager disabled">次へ</a>
     
   </nav>
 
@@ -1590,6 +1439,47 @@ OCICLIでの実施方法は<a href="https://oracle-japan.github.io/ocitutorials/
     <div class="page__related">
       <h4 class="page__related-title">関連記事</h4>
       <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://files.speakerdeck.com/presentations/c2048e5e9c15469ca304b55f39429794/slide_0.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ocidocs/services/compute/SecureDesktop/" rel="permalink">OCI セキュア・デスクトップ 概要
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2023-07-28T00:00:00+09:00">July 28, 2023</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">OCI セキュア・デスクトップの概要資料です
+</p>
+  </article>
+</div>
+
         
           
 
@@ -1709,47 +1599,6 @@ OCICLIでの実施方法は<a href="https://oracle-japan.github.io/ocitutorials/
 
 
     <p class="archive__item-excerpt" itemprop="description">2023年3月～2023年5月の3ヶ月分のOCI新機能についてのまとめ資料です
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src="https://files.speakerdeck.com/presentations/4c372757929c4c3c81e5fb649486d70b/slide_0.jpg" alt="">
-      </div>
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/ocidocs/services/developers/resourcemanager-overview/" rel="permalink">リソース・マネージャ概要
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-calendar-alt" aria-hidden="true"></i>
-        
-        <time datetime="2023-04-01T00:00:00+09:00">April 1, 2023</time>
-      </span>
-    
-
-    
-
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">OCIリソースのデプロイメントと操作を自動化できるリソース・マネージャ（Resource Manager）の概要資料です。
 </p>
   </article>
 </div>

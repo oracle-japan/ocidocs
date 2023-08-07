@@ -537,6 +537,14 @@
 <lastmod>2023-07-21T00:00:00+09:00</lastmod>
 </url>
 <url>
+<loc>https://oracle-japan.github.io/ocidocs/services/compute/SecureDesktop/</loc>
+<lastmod>2023-07-28T00:00:00+09:00</lastmod>
+</url>
+<url>
+<loc>https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq/</loc>
+<lastmod>2023-08-07T00:00:00+09:00</lastmod>
+</url>
+<url>
 <loc>https://oracle-japan.github.io/ocidocs/about/</loc>
 </url>
 <url>
@@ -700,5 +708,8 @@
 </url>
 <url>
 <loc>https://oracle-japan.github.io/ocidocs/page27/</loc>
+</url>
+<url>
+<loc>https://oracle-japan.github.io/ocidocs/page28/</loc>
 </url>
 </urlset>
