@@ -814,4 +814,10 @@ var store = [{
         "tags": ["FAQ"],
         "url": "/ocidocs/faq/services/autonomous/autonomous-database-faq/",
         "teaser": null
+      },{
+        "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2023/6～2023/8",
+        "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介しています。 2023年6月～2023年8月の3ヶ月分の新機能について説明しています。   スライド               ","categories": ["Updates"],
+        "tags": ["スライドあり","動画あり"],
+        "url": "/ocidocs/updates/update-FY24Q1/",
+        "teaser": "https://files.speakerdeck.com/presentations/5e322108d2c44276ab845fbec5ddfce1/slide_0.jpg"
       }]
