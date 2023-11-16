@@ -161,12 +161,6 @@ var store = [{
         "url": "/ocidocs/updates/update-FY21Q2/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/80ce572018ad44db8222cec074ee5ac2/slide_0.jpg"
       },{
-        "title": "Oracle Cloud Infrastructure サービスラインナップ",
-        "excerpt":"OCIのリリース済のサービスに関して、1サービス毎に1スライドのスタイルで解説しています。   スライド           動画      ","categories": ["Services","Overall"],
-        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
-        "url": "/ocidocs/services/overall/service-lineup/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/df57e649bf8b4cf3a6035b324cc71ae4/slide_0.jpg"
-      },{
         "title": "データ移行(データ転送サービスとストレージ・ゲートウェイ)",
         "excerpt":"オンプレミスからのデータ移行等で利用可能な、データ転送サービス、ストレージ・ゲートウェイなどについて解説しています。   スライド          ","categories": ["Services","Storage"],
         "tags": ["スライドあり","レベル:入門(100)"],
@@ -491,12 +485,6 @@ var store = [{
         "url": "/ocidocs/services/edge%20service/security/waf-100/",
         "teaser": "https://files.speakerdeck.com/presentations/7288ee26528b4ebe89eeae40493ae4e1/slide_0.jpg"
       },{
-        "title": "Oracle Cloud Infrastructure 技術概要",
-        "excerpt":"OCIの主にIaaS周りのサービスに特化した技術概要資料です。 OCIのアーキテクチャーの説明と、各コンポーネントについてなるべく短く網羅的にご紹介しています。   スライド           ","categories": ["Services","Overall"],
-        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
-        "url": "/ocidocs/services/overall/oracle-cloud-infrastructure-tech-overview/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/4e0d4cd1bfae4eeebb36faf522e5a279/slide_0.jpg"
-      },{
         "title": "ストレージの選び方 虎の巻",
         "excerpt":"2022/02/22開催の、OCI スキルアップセミナー #16 「ストレージの選び方 虎の巻」の資料です。 セミナー情報: https://oracle-code-tokyo-dev.connpass.com/event/236134/   スライド           セミナー動画        ","categories": ["Services","Storage"],
         "tags": ["スライドあり","動画あり","レベル:入門(100)"],
@@ -820,4 +808,10 @@ var store = [{
         "tags": ["スライドあり","動画あり"],
         "url": "/ocidocs/updates/update-FY24Q1/",
         "teaser": "https://files.speakerdeck.com/presentations/5e322108d2c44276ab845fbec5ddfce1/slide_0.jpg"
+      },{
+        "title": "Oracle Cloud Infrastructure 技術概要",
+        "excerpt":"OCIの主にIaaS周りのサービスに特化した技術概要資料です。 OCIのアーキテクチャーの説明と、各コンポーネントについてなるべく短く網羅的にご紹介しています。   スライド           ","categories": ["Services","Overall"],
+        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
+        "url": "/ocidocs/services/overall/oracle-cloud-infrastructure-tech-overview/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/4e0d4cd1bfae4eeebb36faf522e5a279/slide_0.jpg"
       }]
