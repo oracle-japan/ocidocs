@@ -814,4 +814,10 @@ var store = [{
         "tags": ["スライドあり","動画あり","レベル:入門(100)"],
         "url": "/ocidocs/services/overall/oracle-cloud-infrastructure-tech-overview/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/4e0d4cd1bfae4eeebb36faf522e5a279/slide_0.jpg"
+      },{
+        "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2023/9 - 2023/11",
+        "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介しています。 2023年9月～2023年11月の3ヶ月分の新機能について説明しています。   スライド               ","categories": ["Updates"],
+        "tags": ["スライドあり","動画あり"],
+        "url": "/ocidocs/updates/update-FY24Q2/",
+        "teaser": "https://files.speakerdeck.com/presentations/ffce27937b4e4d08aa247a767906656a/slide_0.jpg"
       }]
