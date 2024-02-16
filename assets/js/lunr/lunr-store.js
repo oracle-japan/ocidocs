@@ -767,12 +767,6 @@ var store = [{
         "url": "/ocidocs/services/developers/resourcemanager-overview/",
         "teaser": "https://files.speakerdeck.com/presentations/4c372757929c4c3c81e5fb649486d70b/slide_0.jpg"
       },{
-        "title": "Autonomous Database 技術FAQ",
-        "excerpt":"■ サービス概要編 Autonomous DatabaseはOracle Databaseとどう違うのでしょうか？ 内部的にはOracle Database 19cを使用しています。(2023/8時点) それに加えてAutonomous Databaseでは、データベース管理者(DBA)のタスクを減らすため、様々な自動化・自律化機能が備わっていることや、Exadataを基盤としているため高速化されていること、Enterprise Edition(EE)とRACなどの各種EEオプションがデフォルトで利用できることが特徴として挙げられます。 Autonomous DatabaseではExadataのモデルを選択できますか？ Share型とDedicated型で異なります。 Shared型ではモデルを選択することはできません。ExadataのSmartScanといったハードウェアのスペックに依存しないソフトウェアの機能による高速化がありますので、モデルを気にせずにお使いいただけます。それもメリットの一つです。 一方、筐体を専有してご利用いただくDedicated型の場合は、利用できるOCPU/ストレージの総量にも関係しますので、Exadata X8MまたはX9Mといったようにモデルをご選択いただくことが可能です。 Autonomous Database にはタイプがいくつかありますが、どれを選択すれば良いでしょうか？ ワークロードの特性に応じてご選択いただければと思います。分析目的の利用であれば、Autonomous Data Warehouse(ADW)、JSON中心のアプリケーション開発であればAutonomous JSON Database(AJD)、APEXアプリケーション開発であればAPEX Application Development、トランザクション処理やそれ以外のワークロードであればAutonomous Transaction Processing(ATP)をご選択いただければと思います。 デプロイメント・タイプとしてSharedとDedicated、Cloud@Customerがありますが、どういった違いがありますか？ Sharedは運用を極力シンプルにしたい場合や、コストを最優先に考えた場合に選択されることが多く、一方で、より大規模なシステムや、他のお客様との同居が許されないようなシステムではDedicatedを選択いただくことが可能です。 データを外に持ち出すことができないケースや、どうしてもアプリケーションサーバはオンプレミスに配置する必要があってネットワークレイテンシが問題となるようなケースではお客様のデータセンターに配置するCloud@Customerをご選択いただければと思います。 SharedとDedicatedに機能差はありますか？ こちらをご参照ください。 Autonomous JSON Database(AJD) は ACID が保証されているのでしょうか？もしくは一般的なNoSQLサービスと言う理解でしょうか？ ACIDが保証されているサービスとなります。 良くMongoDBと比較されますが、Autonomous JSON DatabaseはOracle Databaseにドキュメントを格納するため、RDBMSの特徴をそのまま享受できる点がMongoDBと異なる最大の特徴となります。 詳細についてはこちらに記載がありますので、併せてご確認ください。 (APEX)ADB上のOracle REST Data Serviceで作成したAPIはどうやって認証するでしょうか?...","categories": ["FAQ","services","Autonomous"],
-        "tags": ["FAQ"],
-        "url": "/ocidocs/faq/services/autonomous/autonomous-database-faq/",
-        "teaser": null
-      },{
         "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2023/3～2023/5",
         "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介しています。 2023年3月～2023年5月の3ヶ月分の新機能について説明しています。   スライド               ","categories": ["Updates"],
         "tags": ["スライドあり","動画あり"],
@@ -797,12 +791,6 @@ var store = [{
         "url": "/ocidocs/services/compute/SecureDesktop/",
         "teaser": "https://files.speakerdeck.com/presentations/c2048e5e9c15469ca304b55f39429794/slide_0.jpg"
       },{
-        "title": "Autonomous Database 技術FAQ",
-        "excerpt":"■ サービス概要編 Autonomous DatabaseはOracle Databaseとどう違うのでしょうか？ 内部的にはOracle Database 19cを使用しています。(2023/8時点) それに加えてAutonomous Databaseでは、データベース管理者(DBA)のタスクを減らすため、様々な自動化・自律化機能が備わっていることや、Exadataを基盤としているため高速化されていること、Enterprise Edition(EE)とRACなどの各種EEオプションがデフォルトで利用できることが特徴として挙げられます。 Autonomous DatabaseではExadataのモデルを選択できますか？ Share型とDedicated型で異なります。 Shared型ではモデルを選択することはできません。ExadataのSmartScanといったハードウェアのスペックに依存しないソフトウェアの機能による高速化がありますので、モデルを気にせずにお使いいただけます。それもメリットの一つです。 一方、筐体を専有してご利用いただくDedicated型の場合は、利用できるOCPU/ストレージの総量にも関係しますので、Exadata X8MまたはX9Mといったようにモデルをご選択いただくことが可能です。 Autonomous Database にはタイプがいくつかありますが、どれを選択すれば良いでしょうか？ ワークロードの特性に応じてご選択いただければと思います。分析目的の利用であれば、Autonomous Data Warehouse(ADW)、JSON中心のアプリケーション開発であればAutonomous JSON Database(AJD)、APEXアプリケーション開発であればAPEX Application Development、トランザクション処理やそれ以外のワークロードであればAutonomous Transaction Processing(ATP)をご選択いただければと思います。 デプロイメント・タイプとしてSharedとDedicated、Cloud@Customerがありますが、どういった違いがありますか？ Sharedは運用を極力シンプルにしたい場合や、コストを最優先に考えた場合に選択されることが多く、一方で、より大規模なシステムや、他のお客様との同居が許されないようなシステムではDedicatedを選択いただくことが可能です。 データを外に持ち出すことができないケースや、どうしてもアプリケーションサーバはオンプレミスに配置する必要があってネットワークレイテンシが問題となるようなケースではお客様のデータセンターに配置するCloud@Customerをご選択いただければと思います。 SharedとDedicatedに機能差はありますか？ こちらをご参照ください。 Autonomous JSON Database(AJD) は ACID が保証されているのでしょうか？もしくは一般的なNoSQLサービスと言う理解でしょうか？ ACIDが保証されているサービスとなります。 良くMongoDBと比較されますが、Autonomous JSON DatabaseはOracle Databaseにドキュメントを格納するため、RDBMSの特徴をそのまま享受できる点がMongoDBと異なる最大の特徴となります。 詳細についてはこちらに記載がありますので、併せてご確認ください。 (APEX)ADB上のOracle REST Data Serviceで作成したAPIはどうやって認証するでしょうか?...","categories": ["FAQ","services","Autonomous"],
-        "tags": ["FAQ"],
-        "url": "/ocidocs/faq/services/autonomous/autonomous-database-faq/",
-        "teaser": null
-      },{
         "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2023/6～2023/8",
         "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介しています。 2023年6月～2023年8月の3ヶ月分の新機能について説明しています。   スライド               ","categories": ["Updates"],
         "tags": ["スライドあり","動画あり"],
@@ -820,4 +808,10 @@ var store = [{
         "tags": ["スライドあり","動画あり"],
         "url": "/ocidocs/updates/update-FY24Q2/",
         "teaser": "https://files.speakerdeck.com/presentations/ffce27937b4e4d08aa247a767906656a/slide_0.jpg"
+      },{
+        "title": "Autonomous Database 技術FAQ",
+        "excerpt":"■ サービス概要編 Autonomous DatabaseはOracle Databaseとどう違うのでしょうか？ 内部的にはOracle Database 19cを使用しています。(2024/2時点) それに加えてAutonomous Databaseでは、データベース管理者(DBA)のタスクを減らすため、様々な自動化・自律化機能が備わっていることや、Exadataを基盤としているため高速化されていること、Enterprise Edition(EE)とRACなどの各種EEオプションがデフォルトで利用できることが特徴として挙げられます。 Autonomous DatabaseではExadataのモデルを選択できますか？ Serverless型とDedicated型で異なります。 Serverless型ではモデルを選択することはできません。ExadataのSmartScanといったハードウェアのスペックに依存しないソフトウェアの機能による高速化がありますので、モデルを気にせずにお使いいただけます。それもメリットの一つです。 一方、筐体を専有してご利用いただくDedicated型の場合は、利用できるECPU/ストレージの総量にも関係しますので、Exadata X8MまたはX9Mといったようにモデルをご選択いただくことが可能です。 Autonomous Database にはタイプがいくつかありますが、どれを選択すれば良いでしょうか？ ワークロードの特性に応じてご選択いただければと思います。分析目的の利用であれば、Autonomous Data Warehouse(ADW)、JSON中心のアプリケーション開発であればAutonomous JSON Database(AJD)、APEXアプリケーション開発であればAPEX Application Development、トランザクション処理やそれ以外のワークロードであればAutonomous Transaction Processing(ATP)をご選択いただければと思います。 デプロイメント・タイプとしてServerlessとDedicated、Cloud@Customerがありますが、どういった違いがありますか？ Serverlessは運用を極力シンプルにしたい場合や、コストを最優先に考えた場合に選択されることが多く、一方で、より大規模なシステムや、他のお客様との同居が許されないようなシステムではDedicatedを選択いただくことが可能です。 データを外に持ち出すことができないケースや、どうしてもアプリケーションサーバはオンプレミスに配置する必要があってネットワークレイテンシが問題となるようなケースではお客様のデータセンターに配置するCloud@Customerをご選択いただければと思います。 ServerlessとDedicatedに機能差はありますか？ こちらをご参照ください。 Autonomous JSON Database(AJD) は ACID が保証されているのでしょうか？もしくは一般的なNoSQLサービスと言う理解でしょうか？ ACIDが保証されているサービスとなります。 良くMongoDBと比較されますが、Autonomous JSON DatabaseはOracle Databaseにドキュメントを格納するため、RDBMSの特徴をそのまま享受できる点がMongoDBと異なる最大の特徴となります。 詳細についてはこちらに記載がありますので、併せてご確認ください。 (APEX)ADB上のOracle REST Data Serviceで作成したAPIはどうやって認証するでしょうか?...","categories": ["FAQ","services","Autonomous"],
+        "tags": ["FAQ"],
+        "url": "/ocidocs/faq/services/autonomous/autonomous-database-faq/",
+        "teaser": null
       }]
