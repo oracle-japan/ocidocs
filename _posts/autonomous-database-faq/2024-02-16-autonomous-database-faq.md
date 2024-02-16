@@ -22,7 +22,7 @@ header:
 
 ## Autonomous DatabaseはOracle Databaseとどう違うのでしょうか？
 
-内部的にはOracle Database 19cを使用しています。(2023/8時点)
+内部的にはOracle Database 19cを使用しています。(2024/2時点)
 
 それに加えてAutonomous Databaseでは、データベース管理者(DBA)のタスクを減らすため、様々な自動化・自律化機能が備わっていることや、Exadataを基盤としているため高速化されていること、Enterprise Edition(EE)とRACなどの各種EEオプションがデフォルトで利用できることが特徴として挙げられます。
 
@@ -30,9 +30,9 @@ header:
 
 ## Autonomous DatabaseではExadataのモデルを選択できますか？
 
-Share型とDedicated型で異なります。  
-Shared型ではモデルを選択することはできません。ExadataのSmartScanといったハードウェアのスペックに依存しないソフトウェアの機能による高速化がありますので、モデルを気にせずにお使いいただけます。それもメリットの一つです。  
-一方、筐体を専有してご利用いただくDedicated型の場合は、利用できるOCPU/ストレージの総量にも関係しますので、Exadata X8MまたはX9Mといったようにモデルをご選択いただくことが可能です。
+Serverless型とDedicated型で異なります。  
+Serverless型ではモデルを選択することはできません。ExadataのSmartScanといったハードウェアのスペックに依存しないソフトウェアの機能による高速化がありますので、モデルを気にせずにお使いいただけます。それもメリットの一つです。  
+一方、筐体を専有してご利用いただくDedicated型の場合は、利用できるECPU/ストレージの総量にも関係しますので、Exadata X8MまたはX9Mといったようにモデルをご選択いただくことが可能です。
 
 <br/>
 
@@ -42,15 +42,15 @@ Shared型ではモデルを選択することはできません。ExadataのSmar
 
 <br/>
 
-## デプロイメント・タイプとしてSharedとDedicated、Cloud@Customerがありますが、どういった違いがありますか？
+## デプロイメント・タイプとしてServerlessとDedicated、Cloud@Customerがありますが、どういった違いがありますか？
 
-Sharedは運用を極力シンプルにしたい場合や、コストを最優先に考えた場合に選択されることが多く、一方で、より大規模なシステムや、他のお客様との同居が許されないようなシステムではDedicatedを選択いただくことが可能です。
+Serverlessは運用を極力シンプルにしたい場合や、コストを最優先に考えた場合に選択されることが多く、一方で、より大規模なシステムや、他のお客様との同居が許されないようなシステムではDedicatedを選択いただくことが可能です。
 
 データを外に持ち出すことができないケースや、どうしてもアプリケーションサーバはオンプレミスに配置する必要があってネットワークレイテンシが問題となるようなケースではお客様のデータセンターに配置するCloud@Customerをご選択いただければと思います。
 
 <br/>
 
-## SharedとDedicatedに機能差はありますか？
+## ServerlessとDedicatedに機能差はありますか？
 
 [こちら](https://docs.oracle.com/en/cloud/paas/autonomous-database/dedicated/gjgms/index.html#articletitle)をご参照ください。
 
@@ -84,23 +84,23 @@ ACIDが保証されているサービスとなります。
 # <span style="color: brown; ">■ 課金/ライセンス</span>
 <br/>
 
-## OCPU、ストレージの課金は時間単位でしょうか？
+## ECPU、ストレージの課金は時間単位でしょうか？
 
-[価格表](https://www.oracle.com/jp/cloud/price-list.html#adw)にはストレージはTB/月、CPUはOCPU数/時で記載されていますが、 実際はどちらも秒単位の請求となります。OCPU、ストレージ共に最低1分から秒単位での利用が可能です。  
+[価格表](https://www.oracle.com/jp/cloud/price-list.html#adw)にはストレージはTB/月(ADW)・GB/月(ATP)、CPUはECPU数/時で記載されていますが、 実際はどちらも秒単位の請求となります。ECPU、ストレージ共に最低1分から秒単位での利用が可能です。  
 
 <br/>
 
 ## ADBインスタンスを停止した場合、課金はどうなりますか？
 
-停止した場合、OCPUの課金は止まります。しかし格納されているデータはそのまま削除されずに残るので、ストレージへの課金は発生します。
+停止した場合、ECPUの課金は止まります。しかし格納されているデータはそのまま削除されずに残るので、ストレージへの課金は発生します。
 
-なお、インスタンスを終了(Terminate)した場合、OCPU、ストレージの課金も止まります。
+なお、インスタンスを終了(Terminate)した場合、ECPU、ストレージの課金も止まります。
 
 <br/>
 
 ## Auto Scaling 有効時の課金について教えてください
 
-分単位でCPU使用率を算出し、それを時間で平均したものが課金されます。少数点以下は切り上げとなります。例えば、ベースが4 OCPUでAuto ScalingをONにすると最大12 OCPUとなり、1時間あたりの平均消費OCPUが60%であれば8OCPU分が課金されます。
+分単位でCPU使用率を算出し、それを時間で平均したものが課金されます。少数点以下は切り上げとなります。例えば、ベースが4 ECPUでAuto ScalingをONにすると最大12 ECPUとなり、1時間あたりの平均消費ECPUが60%であれば8ECPU分が課金されます。
 
 <br/>
 
@@ -112,7 +112,7 @@ ACIDが保証されているサービスとなります。
 
 ## SE BYOLで既存ライセンスを持ち込む場合のルールはありますか？
 
-1Processorあたり4OCPU、10NUPあたり1OCPUになります。また、SE BYOLでは1ADBインスタンスあたり8OCPUの上限があります。
+1Processorあたり16ECPU、10NUPあたり4ECPUになります。また、SE BYOLでは1ADBインスタンスあたり32ECPUの上限があります。
 
 Autonomous Data Guardを利用する場合でも、Active Data Guardオプションは不要です。
 
@@ -120,17 +120,17 @@ Autonomous Data Guardを利用する場合でも、Active Data Guardオプショ
 
 ## EE BYOLで既存ライセンスを持ち込む場合のルールはありますか？
 
-1Processorあたり2OCPU、25NUPあたり2OCPUになります。また、17OCPU以上EE BYOLで使いたい場合、17OCPU以降2OCPUにつき1Processorまたは25NUPのRACオプションが必要になります。
+1Processorあたり8ECPU、25NUPあたり8ECPUになります。また、65ECPU以上EE BYOLで使いたい場合、65ECPU以降8ECPUにつき1Processorまたは25NUPのRACオプションが必要になります。
 
-Autonomous Data Guardを利用する場合、1Processorまたは25NUPのActive Data Guardオプションが必要です。
+Autonomous Data Guardを利用する場合、8ECPUにつき1Processorまたは25NUPのActive Data Guardオプションが必要です。
 
 <br/>
 
-## SE BYOLで既存ライセンスを持ち込む場合、1インスタンスあたり8OCPUの上限があります。Auto Scalingを有効にした場合、OCPUはいくつが上限になりますか？
+## SE BYOLで既存ライセンスを持ち込む場合、1インスタンスあたり32ECPUの上限があります。Auto Scalingを有効にした場合、OCPUはいくつが上限になりますか？
 
-ライセンスタイプは「ライセンス持込み (BYOL)」エディションを「Oracle Database Standard Edition(SE)」を選択してください。その場合、設定できるOCPU数は8まで、またAuto Scalingが利用された場合もBYOLの1インスタンスの最大である8 OCPUで頭打ちとなります。
-9OCPU以上の環境にしたい場合は、SE BYOLは利用できません。ライセンス・タイプをBYOLから「ライセンス込み」に変更してご利用ください。
-こちらの操作もオンラインで実施できます。ただし、この場合は全OCPUがライセンス込みの価格になりますので、ご注意ください。
+ライセンスタイプは「ライセンス持込み (BYOL)」エディションを「Oracle Database Standard Edition(SE)」を選択してください。その場合、設定できるECPU数は32まで、またAuto Scalingが利用された場合もBYOLの1インスタンスの最大である32 ECPUで頭打ちとなります。
+32ECPU以上の環境にしたい場合は、SE BYOLは利用できません。ライセンス・タイプをBYOLから「ライセンス込み」に変更してご利用ください。
+こちらの操作もオンラインで実施できます。ただし、この場合は全ECPUがライセンス込みの価格になりますので、ご注意ください。
 
 <br/>
 
@@ -143,10 +143,10 @@ Autonomous Databaseをデータソースとしてご利用いただく限り無�
 
 ## Autonomous Data Guardを利用する場合の課金はどうなりますか？
 
-プライマリと同じリージョンにスタンバイを構成するローカルAutonomous Data Guardの場合、スタンバイ側のOCPUとストレージ費用は、プライマリと同じ分発生します。そのため全体としては、プライマリの2倍課金されます。
+プライマリと同じリージョンにスタンバイを構成するローカルAutonomous Data Guardの場合、スタンバイ側のECPUとストレージ費用は、プライマリと同じ分発生します。そのため全体としては、プライマリの2倍課金されます。
 
-プライマリと異なるリージョンにスタンバイを構成するクロスリージョンAutonomous Data Guardの場合、スタンバイ側のOCPUはプライマリのOCPUと同様になりますが、ストレージ費用はプライマリの2倍発生します。これはプライマリの変更をスタンバイに適用するために転送したログをスタンバイ側で保管するストレージが必要となるためです。アウトバウンド通信の通信料はこちらに含まれる形になります。
-そのため全体としては、OCPUがプライマリの2倍、ストレージがプライマリの3倍課金されます。
+プライマリと異なるリージョンにスタンバイを構成するクロスリージョンAutonomous Data Guardの場合、スタンバイ側のECPUはプライマリのECPUと同様になりますが、ストレージ費用はプライマリの2倍発生します。これはプライマリの変更をスタンバイに適用するために転送したログをスタンバイ側で保管するストレージが必要となるためです。アウトバウンド通信の通信料はこちらに含まれる形になります。
+そのため全体としては、ECPUがプライマリの2倍、ストレージがプライマリの3倍課金されます。
 
 なお、同様の理由により、クロスリージョンでのリフレッシュ可能クローン構成の場合も、リフレッシュ可能クローン側のストレージはクローン元となるADBの2倍の課金となります。
 
@@ -164,7 +164,7 @@ Autonomous Databaseをデータソースとしてご利用いただく限り無�
 詳細なアーキテクチャ、スペックは公開しておりません。それらの管理・運用の手間からユーザを開放することがAutonomous Databaseのコンセプトです。  
 I/OスループットはCPUの数に合わせてスケーリングします（Disk、FlashのI/O帯域がcpu_countの値に比例するよう制御されています）。
 
-またメモリもOCPUに比例する形で割り当てられます。自動スケーリングを有効にすると、I/O帯域はベースの3倍確保されますが、メモリはベースと変わりません。
+またメモリもECPUに比例する形で割り当てられます。自動スケーリングを有効にすると、I/O帯域はベースの3倍確保されますが、メモリはベースと変わりません。
 
 <br/>
 
@@ -182,7 +182,7 @@ I/OスループットはCPUの数に合わせてスケーリングします（Di
 SQL> select PROPERTY_VALUE FROM database_properties WHERE property_name = 'MAX_PDB_STORAGE';
 SQL> select max_size from v$pdbs;  
 ```
-指定できる最大容量は128TBです。それ以上のサイズが必要な場合は別途お問い合わせください。
+指定できる最大容量は384TBです。それ以上のサイズが必要な場合は別途お問い合わせください。
 
 <br/>
 
@@ -200,9 +200,9 @@ SQL> select max_size from v$pdbs;
 
 <br/>
 
-## OCPUのAuto Scalingと手動スケーリングは同時に利用できますか？
+## ECPUのAuto Scalingと手動スケーリングは同時に利用できますか？
 
-同時に利用することができます。Auto Scalingを有効にした状態で、OCPU数を手動で調整することが可能です。
+同時に利用することができます。Auto Scalingを有効にした状態で、ECPU数を手動で調整することが可能です。
 
 <br/>
 
@@ -239,51 +239,14 @@ Autonomous Data Guard を構成いただいた場合は、SLA99.995%となり、
 
 Autnomous Data Guardを利用した構成をご検討いただけます。RTO/RPOについては[マニュアル](https://docs.oracle.com/ja-jp/iaas/adbdataguard/autonomous-data-guard-about.html#GUID-AF736587-4F6D-45C3-9886-7211B0A33745)に記載があります。他の方法として、GoldenGateを利用した論理レプリケーションがあります。それぞれについてチュートリアルを公開しておりますのでご利用ください。
 
-* [Autonomous Data Guardチュートリアル](https://oracle-japan.github.io/ocitutorials/database/adb212-audg/)
-* [OCI GoldenGateチュートリアル](https://oracle-japan.github.io/ocitutorials/database/adb401-oci-goldengate/)
-
-<br/>
-
-## バックアップは開始時点でスナップショットが取得されるのでしょうか？その場合、バックアップの完了を待たずともDDL/DML/起動停止等の操作は可能ですか。  
-
-Autonomous Database は、ストレージ装置のスナップショット機能によるバックアップは採用しておらず、RMANを利用して60日ごとにフルバックアップ、週次で累積バックアップ、日次で増分バックアップを取得しております。増分バックアップの間の更新についてはアーカイブ・ログが取得されております。 これらのバックアップとアーカイブ・ログを利用することで、バックアップ保持期間の60日の間であれば任意のタイミングに戻すことが可能です（Point-In-Timeリカバリ）。
-従いまして、バックアップの断面を気にしていただく必要はありません。 ただし、Autonomous Database のリカバリは秒指定で行うため、断面でのリカバリが必要な場合は、アプリケーション側で静止点を確保し、その時間を指定してリカバリを行ってください。
-
-[参考マニュアル Autonomous Databaseのバックアップおよびリストア](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/adbsa/backup-restore.html#GUID-9035DFB8-4702-4CEB-8281-C2A303820809)
+* [Autonomous Data Guardチュートリアル](https://oracle-japan.github.io/ocitutorials/adb/adb212-audg/)
+* [OCI GoldenGateチュートリアル](https://oracle-japan.github.io/ocitutorials/adb/adb401-oci-goldengate/)
 
 <br/>
 
 ## 自動バックアップはどこに取得されるのでしょうか。任意のオブジェクト・ストレージに取得することはできますか？ 
 
 オラクル社が管理するオブジェクト・ストレージに取得されます。取得先に任意のオブジェクト・ストレージを指定することはできません。自動バックアップが取得されるオブジェクト・ストレージはユーザがアクセスすることはできず、課金対象外（ユーザーが指定するストレージ容量には含まれません）になります。
-
-<br/>
-
-## Autonomous Database Shared型の自動バックアップのタイミングは指定できますか？
-
-現時点でタイミングを指定することはできません。
-なお、取得したバックアップの情報は下記SQLで確認いただくことが可能です。
-
-```sql
-ALTER SESSION SET NLS_DATE_FORMAT = 'RR/MM/DD HH24:MI:SS';
-
-SELECT 
-    TAG, 
-    MIN(START_TIME), 
-    MAX(COMPLETION_TIME), 
-    (MAX(COMPLETION_TIME)- MIN(START_TIME))*24*60 as Minutes, 
-    SUM(BYTES)/1024/1024/1024 "Size(GB)"
-FROM V$BACKUP_PIECE
-WHERE DEVICE_TYPE='SBT_TAPE' AND STATUS='A'
-AND (TAG LIKE 'TAG_C1%' OR TAG LIKE 'TAG_L1%' OR TAG LIKE 'TAG_AL%')
-AND START_TIME >= TO_DATE('2021-04-05 00:00:00', 'yyyy-mm-dd hh24:mi:ss')
-GROUP BY TAG
-ORDER BY MIN(START_TIME);
-```
-TAG列の先頭の値でバックアップタイプが判断できます。
-* TAG_C1 : 累積バックアップ（週次）
-* TAB_L1 : 増分バックアップ（日次）
-* TAB_AL : アーカイブログ（毎時）
 
 <br/>
 
@@ -300,13 +263,13 @@ TAG列の先頭の値でバックアップタイプが判断できます。
 
 <br/>
 
-## Autonomous Database Shared型はソースDBを止めずにクローンできると思いますが、どの断面で作成されるのですか？作成をクリックしたタイミングですか？ 
+## Autonomous Database Serverless型はソースDBを止めずにクローンできると思いますが、どの断面で作成されるのですか？作成をクリックしたタイミングですか？ 
 
 クローン実行中のどこかのタイミングが断面となります。クリック直後といった明確な基準は定義されておりません。  
 明確に断面を確保したい場合はアプリケーション側で読み取り専用（Readonly)として更新が入らないように制御する、またはインスタンスを停止してのクローン、バックアップを利用して時間指定でのクローンをご利用ください。  
 なお、バックアップから作成する場合はオブジェクトストレージからのインスタンス作成になるため、クローン作成は比較的時間がかかることにご注意ください（データ量、圧縮率に依存）
 
-[参考：クローンに関するチュートリアル](https://oracle-japan.github.io/ocitutorials/database/adb211-clone/)
+[参考：クローンに関するチュートリアル](https://oracle-japan.github.io/ocitutorials/adb/adb211-clone/)
 
 <br/>
 
@@ -315,7 +278,7 @@ TAG列の先頭の値でバックアップタイプが判断できます。
 はい、できます。スキーマ単位、表単位でバックアップを取っておきたい場合に利用します。
 詳しい手順はこちらのマニュアルをご参照ください。
 
-[参考：Data Pumpを使用したAutonomous Databaseでのダンプ・ファイル・セットの作成](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/adbsa/export-data-create-dump-file.html#GUID-8D734C1A-FAF3-446C-B777-16DF62FB049E)
+[参Autonomous DatabaseでのOracle Data Pumpを使用したデータのインポート考：](https://docs.oracle.com/cd//E83857_01/paas/autonomous-database/serverless/adbsb/load-data-data-pump.html#GUID-30DB1EEA-DB45-49EA-9E97-DF49A9968E24)
 
 <br/>
 
@@ -323,7 +286,7 @@ TAG列の先頭の値でバックアップタイプが判断できます。
 
 長期バックアップを利用すれば、最低3カ月最長10年間バックアップを保存可能です。
 
-ただし、長期バックアップはリストア不可、そのバックアップをソースとしたクローン作成のみ可能となっている点、保存先はExadataストレージになるのでExadataストレージ分の課金が発生する点にご注意ください。(2023/3時点）詳しくは[こちら](https://docs.oracle.com/en/cloud/paas/autonomous-database/adbsa/backup-long-term.html#GUID-BD76E02E-AEB0-4450-A6AB-5C9EB1F4EAD0)をご参照ください。
+ただし、長期バックアップはリストア不可、そのバックアップをソースとしたクローン作成のみ可能となっている点、保存先はExadataストレージになるのでExadataストレージ分の課金が発生する点にご注意ください。(2024/2時点）詳しくは[こちら](https://docs.oracle.com/en/cloud/paas/autonomous-database/adbsa/backup-long-term.html#GUID-BD76E02E-AEB0-4450-A6AB-5C9EB1F4EAD0)をご参照ください。
 
 もしくは先述のData Pumpを利用した論理バックアップを取っておくことで、60日以上のバックアップを保存することが可能です。
 
@@ -334,7 +297,7 @@ TAG列の先頭の値でバックアップタイプが判断できます。
 ADBの自動バックアップ機能では遠隔地(別リージョン)へバックアップすることはできません。ADBにおけるDR対応は下記の方法がございます。
   ・Autonomous Data Guardを使用し、スタンバイDBを構成する
   ・バックアップベースのディザスタ・リカバリのクロスリージョン・バックアップ・コピーを構成する
-  ・別リージョンにクローンを作成する（平時はインスタンスを停止することでOCPUの課金は抑えることが可能です）
+  ・別リージョンにクローンを作成する（平時はインスタンスを停止することでECPUの課金は抑えることが可能です）
   ・Data Pumpで Object Storageに論理バックアップを取得し、Object Storageのリージョン・コピー機能で別リージョンに複製する
 
 <br/>
@@ -345,7 +308,7 @@ ADBではflashback databaseはユーザーは明示的に使用できません�
 
 なお、flashback tableやflashback queryは可能です。[ドキュメント](https://docs.oracle.com/cd//E83857_01/paas/autonomous-database/adbsa/autonomous-oracle-flashback.html#GUID-CEE36DC8-E878-481C-8366-9507D0911C25)
 
-また、データベース・オブジェクトの過去の状態を表示できるFlashback Time Travelも使用できます。[ドキュメント](https://docs.oracle.com/en/cloud/paas/autonomous-database/adbsa/flashback-time-travel-autononomous.html#GUID-A98E1F8B-FAE4-4FFF-955D-3A0E5F8EBC4A)
+また、データベース・オブジェクトの過去の状態を表示できるFlashback Time Travelも使用できます。[ドキュメント](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/serverless/adbsb/flashback-time-travel-autononomous.html#GUID-A98E1F8B-FAE4-4FFF-955D-3A0E5F8EBC4A)
 
 <br/>
 
@@ -353,7 +316,7 @@ ADBではflashback databaseはユーザーは明示的に使用できません�
 
 Application Continuityを有効化することで、セッション瞬断の影響を受ける処理を自動回復させることができます。接続サービスごとに有効化するだけでアプリからは透過的に利用することができます。詳しい手順はこちらのチュートリアルをご参照ください。
 
-[参考：Application Continuityを設定しよう](https://oracle-japan.github.io/ocitutorials/database/adb213-tac/)
+[参考：Application Continuityを設定しよう](https://oracle-japan.github.io/ocitutorials/adb/adb213-tac/)
 
 <br/>
 
@@ -380,8 +343,8 @@ Private IPは固定ですが、Public IPは変更される可能性がありま�
 
 ## Autonomous Databaseの同時接続セッション数はいくつでしょうか。また同時接続セッション数を超えて接続しようとした場合はエラーになりますか？
 
-同時接続セッション数は1OCPUあたり300セッションです。  
-Autonomous Databaseの初期化パラメータSESSIONSとして設定されます。この値は接続サービスをまたいで有効であり、例えば、OCPU=1のAutonomous Transaction Processingにおいて、TPURGENTで100、TPで200セッションが接続している場合、新たにセッションを作成することはできません。セッション数を超えた場合は 「ORA-00018: 最大セッション数を超えました」というエラーとなり、セッションの作成に失敗します。  
+同時接続セッション数は1ECPUあたり75セッションです。  
+Autonomous Databaseの初期化パラメータSESSIONSとして設定されます。この値は接続サービスをまたいで有効であり、例えば、ECPU=4のAutonomous Transaction Processingにおいて、TPURGENTで100、TPで200セッションが接続している場合、新たにセッションを作成することはできません。セッション数を超えた場合は 「ORA-00018: 最大セッション数を超えました」というエラーとなり、セッションの作成に失敗します。  
 なお、Autonomous DatabaseはOracle MultitenantのPluggable Databaseであるため、バックグランドプロセスや再帰セッション分のセッション数を考慮する必要はありません。
 
 <br/>
@@ -411,7 +374,7 @@ Oracle Database Gatewayを経由することでDB Linkで連携可能です。Re
 
 参照するリモートDBにはいくつか要件がございます。詳しくはこちらのマニュアルをご参照ください。
 
-[参考：非Oracle Databaseへのデータベースリンクの作成](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/adbsa/autonomous-database-links-non-oracle-db.html#GUID-6C925566-2067-4D3B-A3FF-CA73C60506C9)
+[参考：非Oracle Databaseへのデータベースリンクの作成](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/serverless/adbsb/autonomous-database-links-non-oracle-db.html#GUID-6C925566-2067-4D3B-A3FF-CA73C60506C9)
 
 <br/>
 
@@ -463,7 +426,7 @@ WHERE a.TS# = b.TS#
 
 はい、Oracle Databaseの統合監査機能ですので、UNIFIED_AUDIT_TRAILビューでご確認いただくことが可能です。なお、GUIで参照するには、Data Safeをご利用ください。  
 
-[参考：Oracle Data Safeチュートリアル](https://oracle-japan.github.io/ocitutorials/intermediates/data-safe-tutorials/)
+[参考：Oracle Data Safeチュートリアル](https://oracle-japan.github.io/ocitutorials/id-security/data-safe-tutorials/)
 
 <br/>
 
@@ -477,7 +440,7 @@ OCI Audit機能で可能です。詳しくは[こちら](https://docs.oracle.com
 
 現時点で、Autonomous DatabaseでOracle Data Masking and Subsetting Packは利用できません。マスキングの機能を利用するには、Data Safeをご利用ください。 
 
-[参考：Oracle Data Safeチュートリアル](https://oracle-japan.github.io/ocitutorials/intermediates/data-safe-tutorials/)
+[参考：Oracle Data Safeチュートリアル](https://oracle-japan.github.io/ocitutorials/id-security/data-safe-tutorials/)
 
 <br/>
 
@@ -485,11 +448,11 @@ OCI Audit機能で可能です。詳しくは[こちら](https://docs.oracle.com
 
 はい、仮想プライベートデータベース(VPD)というソリューションで可能です。詳しくはこちらのチュートリアルをご参照ください。
 
-[参考：Virtual Private Database(VPD)チュートリアル](https://oracle-japan.github.io/ocitutorials/database/adb210-VPD/)
+[参考：Virtual Private Database(VPD)チュートリアル](https://oracle-japan.github.io/ocitutorials/adb/adb210-VPD/)
 
 また、特権ユーザーに対しても情報にアクセスさせないようにするDatabase Vaultも設定可能です。詳しくはこちらのチュートリアルをご参照ください。
 
-[参考：Database Vaultチュートリアル](https://oracle-japan.github.io/ocitutorials/database/adb209-DV/)
+[参考：Database Vaultチュートリアル](https://oracle-japan.github.io/ocitutorials/adb/adb209-DV/)
 
 <br/>
 
@@ -541,12 +504,10 @@ Autonomous Databaseでは自動SQLチューニング（自動タスクによるS
 
 ## Autonomous Database でReal Application Testing(RAT)は利用できますか？ 
 
-はい、SharedではReal Application Testing(RAT)のSQL Performance Analyzer(SPA)、DB Replayを利用できます。  
+はい、Real Application Testing(RAT)のSQL Performance Analyzer(SPA)、DB Replayを利用できます。  
 Autonomous Databaseへの移行を検討される際やAutonomous Databaseのバージョンアップの際に、個々のSQLの性能調査に有効です。手順は以下のチュートリアルを参照ください。
 
-なお、DedicatedではSPAのみ利用可能です。
-
-[参考：SQL Performance Analyzer(SPA)チュートリアル](https://oracle-japan.github.io/ocitutorials/database/adb216-patch-spa/)
+[参考：SQL Performance Analyzer(SPA)チュートリアル](https://oracle-japan.github.io/ocitutorials/adb/adb216-patch-spa/)
 
 <br/>
 
@@ -575,7 +536,8 @@ ADWで更新が発生するような表の場合は、明示的に非圧縮に�
 
 ## Autonomous Database でDatabase In-Memory(DBIM）を利用できますか？
 
-Autonomous Databaseは内部的にExadataのフラッシュ・キャッシュでDatabase In-Memory機能を利用して性能を最適化します。お客様が明示的にDatabase In-Memoryの機能を使用することはできません。
+Dedicatedでは可能です。
+ただし、Autonomous Databaseは内部的にExadataのフラッシュ・キャッシュでDatabase In-Memory機能を利用して性能を最適化します。
 
 <br/>
 
@@ -738,15 +700,15 @@ SELECT * FROM DBA_CLOUD_PATCH_INFO;
 
 <br />
 
-## OCPUはいくつからスタートすれば良いですか？ 
+## ECPUはいくつからスタートすれば良いですか？ 
 
-Autonomous Databaseにおいて性能試験をされる場合、最低でもOCPU=2からスタートしてください。より高い性能を得るためのパラレル処理が利用可能になります。
+Autonomous Databaseにおいて性能試験をされる場合、最低でもECPU=4からスタートしてください。より高い性能を得るためのパラレル処理が利用可能になります。
 
 <br />
 
 ## データロードについて、DBMS_CLOUD.COPY_DATAによるデータロードを高速化するには？ 
 
-OCIチュートリアルの[コマンドラインから大量データをロードしてみよう](https://oracle-japan.github.io/ocitutorials/database/adb202-dataload-dbms-cloud/)の「よくある質問」に記載していますのでご参照ください
+OCIチュートリアルの[コマンドラインから大量データをロードしてみよう](https://oracle-japan.github.io/ocitutorials/adb/adb202-dataload-dbms-cloud/)の「よくある質問」に記載していますのでご参照ください
 
 <br />
 
@@ -761,7 +723,7 @@ OCIチュートリアルの[コマンドラインから大量データをロー�
 それでも期待した性能が出ない場合は、以下のようにコマンドで取得することも可能です。
 
 ```sql
-exec dbms_stats.gather_table_stats( ownname => ‘YYY’, tabname => ‘XXX’) ;
+exec dbms_stats.gather_table_stats( ownname => 'YYY', tabname => 'XXX') ;
 ```
 
 <br />
@@ -775,8 +737,8 @@ exec dbms_stats.gather_table_stats( ownname => ‘YYY’, tabname => ‘XXX’) 
 
 ## IOがボトルネックになっている処理の性能向上を図るには？ 
 
-Autonomous Database はOCPU数を増やすことでコア数だけでなくIO帯域も増えるため、IOバウンドな処理に対してもOCPUを増やすことで高速化できます。  
-OCPU増はコストに跳ね返ってきますが、OCPUはオンラインでスケールアップ・ダウンが可能なので、週末・夜間など使わないタイミングはコア数を減らすことでコストを削減できます。  
+Autonomous Database はECPU数を増やすことでコア数だけでなくIO帯域も増えるため、IOバウンドな処理に対してもECPUを増やすことで高速化できます。  
+ECPU増はコストに跳ね返ってきますが、ECPUはオンラインでスケールアップ・ダウンが可能なので、週末・夜間など使わないタイミングはコア数を減らすことでコストを削減できます。  
 
 その他、Autonomous Databaseでは高速化のためのオプション機能であるパーティションが追加費用なく利用できます。またマテリアライズド・ビュー機能やAutonomous Transaction Processing(ATP)の場合はHCCによる圧縮も利用できるため（Autonomous Data Warehouse(ADW)はデフォルトで圧縮され格納される）、これらの機能を活用することもご検討ください。
 
@@ -880,13 +842,13 @@ SQLの結果件数が多い場合、例えばCSVファイルに結果セット�
 
 
 なお、再起動に際してはGUIだけでなくOCICLIをはじめ、APIを利用して自動化することも可能です。
-OCICLIでの実施方法は[こちら](https://oracle-japan.github.io/ocitutorials/database/adb501-ocicli/)を参照ください。
+OCICLIでの実施方法は[こちら](https://oracle-japan.github.io/ocitutorials/adb/adb501-ocicli/)を参照ください。
 
 <br />
 
 ## パラレルクエリを利用して高速化したいのだが、どう設定すれば良い？？ 
 
-接続サービスを選択いただきます。接続サービスに関しては[こちら](https://oracle-japan.github.io/ocitutorials/database/adb201-service-names/)を参照ください。  
+接続サービスを選択いただきます。接続サービスに関しては[こちら](https://oracle-japan.github.io/ocitutorials/adb/adb201-service-names/)を参照ください。  
 
 
 * HIGH / MEDIUMの接続の場合
@@ -918,7 +880,7 @@ OCICLIでの実施方法は[こちら](https://oracle-japan.github.io/ocitutoria
 
 ## INSERT処理を高速化するにはどうしたら良いですか？
 
-接続サービスを選択いただきます。接続サービスの説明に関しては[こちら](https://oracle-japan.github.io/ocitutorials/database/adb201-service-names/)を参照ください。 
+接続サービスを選択いただきます。接続サービスの説明に関しては[こちら](https://oracle-japan.github.io/ocitutorials/adb/adb201-service-names/)を参照ください。 
 
 
 * MEDIUM、HIGH接続の場合
@@ -957,9 +919,9 @@ OCICLIでの実施方法は[こちら](https://oracle-japan.github.io/ocitutoria
 # <span style="color: brown; ">■ その他 </span>
 <br />
 
-## Autonomous Database Shared型(ADB-S)のタイムアウトの設定は？
+## Autonomous Database Serverless型(ADB-S)のタイムアウトの設定は？
 
-[ドキュメント](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/adbsa/idle-tile-limits.html#GUID-241F4C85-24E5-4F8A-B9EE-E3FCEF566D36)に記載がありますとおり、5分以上のアイドルセッションはそれによって消費されるリソースが他のユーザに必要になると自動切断されます。またリソースが必要とされない場合でも最大で48時間にて切断されます。  
+[ドキュメント](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/serverless/adbsb/idle-tile-limits.html#GUID-241F4C85-24E5-4F8A-B9EE-E3FCEF566D36)に記載がありますとおり、5分以上のアイドルセッションはそれによって消費されるリソースが他のユーザに必要になると自動切断されます。またリソースが必要とされない場合でも最大で48時間にて切断されます。  
 なお、ネットワークレイヤー、クライアントツールにおいてもタイムアウトの設定が設けられているケースがありますので、予期せず切断されているような場合は、それらも併せてご確認ください。
 またそのような場合の一般的な回避策としてはクライアントツールにおけるKeepAliveパラメータの設定があります。
 
