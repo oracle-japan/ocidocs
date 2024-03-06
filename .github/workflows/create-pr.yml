@@ -16,7 +16,7 @@ jobs:
           app_id: ${{ secrets.APP_ID }}
           private_key: ${{ secrets.APP_PRIVATE_KEY }}
       - name: Create pull request
-        uses: actions/github-script@v7
+        uses: actions/github-script@v2
         with:
           github-token: ${{ steps.generate-token.outputs.token }}
           script: |
