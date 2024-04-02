@@ -161,12 +161,6 @@ var store = [{
         "url": "/ocidocs/updates/update-FY21Q2/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/80ce572018ad44db8222cec074ee5ac2/slide_0.jpg"
       },{
-        "title": "データ移行(データ転送サービスとストレージ・ゲートウェイ)",
-        "excerpt":"オンプレミスからのデータ移行等で利用可能な、データ転送サービス、ストレージ・ゲートウェイなどについて解説しています。   スライド          ","categories": ["Services","Storage"],
-        "tags": ["スライドあり","レベル:入門(100)"],
-        "url": "/ocidocs/services/storage/data-transfer-and-storage-gateway/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/157e4694c8d04b11922b5f15cc88fcb4/slide_0.jpg"
-      },{
         "title": "OCI Cloud Guardの概要",
         "excerpt":"Cloud Guardは、Oracle Cloud Infrastructure内の様々なサービスの設定やアクティビティを継続的に監視し、即座に通知・是正するサービスです   スライド          ","categories": ["Services","Security"],
         "tags": ["スライドあり","レベル:入門(100)"],
@@ -826,4 +820,10 @@ var store = [{
         "tags": ["FAQ"],
         "url": "/ocidocs/faq/services/autonomous/autonomous-database-faq/",
         "teaser": null
+      },{
+        "title": "OCIへのデータ移行",
+        "excerpt":"オンプレミスからOCIのストレージへのデータ移行等で利用可能なツール（OCI CLI, RCLONE, OCIFSなど）、およびデータ転送サービスについて解説しています。   2024/4：改定版に更新   スライド          ","categories": ["Services","Storage"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/services/storage/data-transfer/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/157e4694c8d04b11922b5f15cc88fcb4/slide_0.jpg"
       }]

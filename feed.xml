@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2024-03-08T14:36:51+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">Autonomous Database 技術FAQ</title><link href="https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq/" rel="alternate" type="text/html" title="Autonomous Database 技術FAQ" /><published>2024-03-08T00:00:00+09:00</published><updated>2024-03-08T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq/"><![CDATA[<h1 id="-サービス概要編"><span style="color: brown; ">■ サービス概要編</span></h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2024-04-02T16:18:35+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">OCIへのデータ移行</title><link href="https://oracle-japan.github.io/ocidocs/services/storage/data-transfer/" rel="alternate" type="text/html" title="OCIへのデータ移行" /><published>2024-04-02T00:00:00+09:00</published><updated>2024-04-02T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/storage/data-transfer</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/storage/data-transfer/"><![CDATA[<p>オンプレミスからOCIのストレージへのデータ移行等で利用可能なツール（OCI CLI, RCLONE, OCIFSなど）、およびデータ転送サービスについて解説しています。</p>
+
+<p>2024/4：改定版に更新</p>
+
+<h4 id="スライド">スライド</h4>
+
+<div style="max-width:768px">
+
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
+<script async="" class="speakerdeck-embed" data-id="157e4694c8d04b11922b5f15cc88fcb4" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
+
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Storage" /><category term="スライドあり" /><category term="レベル:入門(100)" /><summary type="html"><![CDATA[オンプレミスからのOCIストレージへのデータ移行等で利用可能なツールおよびデータ転送サービスについて解説しています。]]></summary></entry><entry><title type="html">Autonomous Database 技術FAQ</title><link href="https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq/" rel="alternate" type="text/html" title="Autonomous Database 技術FAQ" /><published>2024-03-08T00:00:00+09:00</published><updated>2024-03-08T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq/"><![CDATA[<h1 id="-サービス概要編"><span style="color: brown; ">■ サービス概要編</span></h1>
 <p><br /></p>
 
 <h2 id="autonomous-databaseはoracle-databaseとどう違うのでしょうか">Autonomous DatabaseはOracle Databaseとどう違うのでしょうか？</h2>
@@ -2029,20 +2041,4 @@ VPN接続のルーティング要件や接続ステップ、冗長化につい�
 <!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください -->
 
 <!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) -->
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Networking" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html"><![CDATA[VPN接続のルーティング要件や接続ステップ、冗長化について解説しています。]]></summary></entry><entry><title type="html">Oracle Cloud Infrastructure IaaS 新機能アップデート 2023/3～2023/5</title><link href="https://oracle-japan.github.io/ocidocs/updates/update-FY23Q4/" rel="alternate" type="text/html" title="Oracle Cloud Infrastructure IaaS 新機能アップデート 2023/3～2023/5" /><published>2023-06-07T00:00:00+09:00</published><updated>2023-06-07T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/updates/update-FY23Q4</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/updates/update-FY23Q4/"><![CDATA[<p>Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介しています。
-2023年3月～2023年5月の3ヶ月分の新機能について説明しています。</p>
-
-<h4 id="スライド">スライド</h4>
-<div style="max-width:768px">
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-
-<script defer="" class="speakerdeck-embed" data-id="578ec0bebb9e491182190af865fdc00c" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
-
-<!-- #### セミナー動画 -->
-
-<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください -->
-
-<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) -->
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Updates" /><category term="スライドあり" /><category term="動画あり" /><summary type="html"><![CDATA[2023年3月～2023年5月の3ヶ月分のOCI新機能についてのまとめ資料です]]></summary></entry></feed>
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Networking" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html"><![CDATA[VPN接続のルーティング要件や接続ステップ、冗長化について解説しています。]]></summary></entry></feed>
