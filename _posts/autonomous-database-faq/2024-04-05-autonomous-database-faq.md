@@ -595,7 +595,7 @@ AWRの取得設定は通常のOracle Databaseと同様にDBMS_WORKLOAD_REPOSITOR
 
 ## オプティマイザ関連の設定は変更できますか。  
 
-基本的に不可です。全てオプティマイザに任せるのがコンセプトです。Autonomous Databaseの初期化パラメータなどの制限事項ついては[ドキュメント](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/serverless/adbsb/experienced-database-users.html#GUID-58EE6599-6DB4-4F8E-816D-0422377857E5)をご確認ください。
+基本的に不可です。全てオプティマイザに任せるのがコンセプトです。Autonomous Databaseの初期化パラメータなどの制限事項ついては[ドキュメント](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/serverless/adbsb/autonomous-initialization-parameters.html#GUID-7CF648C[…]6F5719D6779E)をご確認ください。
 
 <br />
 
