@@ -278,7 +278,7 @@ Autnomous Data Guardを利用した構成をご検討いただけます。RTO/RP
 はい、できます。スキーマ単位、表単位でバックアップを取っておきたい場合に利用します。
 詳しい手順はこちらのマニュアルをご参照ください。
 
-[参Autonomous DatabaseでのOracle Data Pumpを使用したデータのインポート考：](https://docs.oracle.com/cd//E83857_01/paas/autonomous-database/serverless/adbsb/load-data-data-pump.html#GUID-30DB1EEA-DB45-49EA-9E97-DF49A9968E24)
+[参考：Autonomous DatabaseでのOracle Data Pumpを使用したデータのインポート](https://docs.oracle.com/cd//E83857_01/paas/autonomous-database/serverless/adbsb/load-data-data-pump.html#GUID-30DB1EEA-DB45-49EA-9E97-DF49A9968E24)
 
 <br/>
 
@@ -306,7 +306,7 @@ ADBの自動バックアップ機能では遠隔地(別リージョン)へバッ
 
 ADBではflashback databaseはユーザーは明示的に使用できません。ユーザー指定のタイムスタンプにリストアすることが可能であり、内部的に使用されています。
 
-なお、flashback tableやflashback queryは可能です。[ドキュメント](https://docs.oracle.com/cd//E83857_01/paas/autonomous-database/adbsa/autonomous-oracle-flashback.html#GUID-CEE36DC8-E878-481C-8366-9507D0911C25)
+なお、flashback tableやflashback queryは可能です。[ドキュメント](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/serverless/adbsb/autonomous-oracle-flashback.html#GUID-CEE36DC8-E878-481C-8366-9507D0911C25)
 
 また、データベース・オブジェクトの過去の状態を表示できるFlashback Time Travelも使用できます。[ドキュメント](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/serverless/adbsb/flashback-time-travel-autononomous.html#GUID-A98E1F8B-FAE4-4FFF-955D-3A0E5F8EBC4A)
 
@@ -353,7 +353,7 @@ Autonomous Databaseの初期化パラメータSESSIONSとして設定されま�
 
 OCI GoldenGateの利用をご検討ください。またDatabase Linkをご利用いただくことも可能です。  
 
-[参考：OCI GoldenGateチュートリアル](https://oracle-japan.github.io/ocitutorials/database/adb401-oci-goldengate/)
+[参考：OCI GoldenGateチュートリアル](https://oracle-japan.github.io/ocitutorials/adb/adb401-oci-goldengate/)
 
 <br/>
 
@@ -364,7 +364,7 @@ SQLでの参照頻度が低いようであれば、オブジェクト・スト�
 また頻繁にアクセスするようでしたらAutonomous Database内にロードした方が、SmartScan機能による高速化を有効に利用できます。  
 なお、外部表を利用して参照する場合も、Autonomous Databaseにロードする場合も、オブジェクト・ストレージ上のファイルは分割しておくことをおすすめします。ファイルを分割することで複数のコアを利用した高速な並列処理が可能になります。
 
-[参考：Autonomous Databaseを使用した外部データの問合せ](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/adbsa/query-external.html#GUID-ABF95242-3E04-42FF-9361-52707D14E833)
+[参考：Autonomous Databaseを使用した外部データの問合せ](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/serverless/adbsb/query-external-data.html#GUID-72DC8BB6-5245-4262-A100-C35A2E553F70)
 
 <br/>
 
@@ -588,14 +588,14 @@ SELECT * FROM V$LOCKDOWN_RULES WHERE STATUS LIKE 'DISABLE%' ORDER BY RULE_TYPE ;
 
 ## AWRは取得できますか？AWRの保持期限、スナップショット間隔は変更で可能でしょうか？
 
-可能です。パフォーマンスハブからのダウンロードまたはSQLで取得できます。取得方法は[OCIチュートリアル](https://oracle-japan.github.io/ocitutorials/database/adb203-bulk-query/#anchor3-2)に記載していますのでご確認ください。
+可能です。パフォーマンスハブからのダウンロードまたはSQLで取得できます。取得方法は[OCIチュートリアル](https://oracle-japan.github.io/ocitutorials/adb/adb203-bulk-query/#anchor3-2)に記載していますのでご確認ください。
 AWRの取得設定は通常のOracle Databaseと同様にDBMS_WORKLOAD_REPOSITORY.MODIFY_SNAPSHOT_SETTINGSにて変更可能ですが、再起動すると保持期間はデフォルトの30日に戻ります。
 
 <br />
 
 ## オプティマイザ関連の設定は変更できますか。  
 
-基本的に不可です。全てオプティマイザに任せるのがコンセプトです。Autonomous Databaseの初期化パラメータなどの制限事項ついては[ドキュメント](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/adbsa/experienced-database-users.html#GUID-58EE6599-6DB4-4F8E-816D-0422377857E5)をご確認ください。
+基本的に不可です。全てオプティマイザに任せるのがコンセプトです。Autonomous Databaseの初期化パラメータなどの制限事項ついては[ドキュメント](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/serverless/adbsb/experienced-database-users.html#GUID-58EE6599-6DB4-4F8E-816D-0422377857E5)をご確認ください。
 
 <br />
 
@@ -620,7 +620,7 @@ Cloud Ops、もしくはスケジューラプロセスが利用するグルー�
 
 ## アラートログ、トレースファイルの確認はできますか。  
 
-SQLを利用してアラートログ(V$DIAG_ALERT_EXT)やトレースファイル(V$DIAG_TRACE_FILE_CONTENTS)を確認することは可能です。[OCIチュートリアル](https://oracle-japan.github.io/ocitutorials/database/adb502-report/)に記載しておりますのでご確認ください。
+SQLを利用してアラートログ(V$DIAG_ALERT_EXT)やトレースファイル(V$DIAG_TRACE_FILE_CONTENTS)を確認することは可能です。[OCIチュートリアル](https://oracle-japan.github.io/ocitutorials/adb/adb502-report/)に記載しておりますのでご確認ください。
 
 <br />
 
