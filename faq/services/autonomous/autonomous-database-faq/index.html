@@ -36,7 +36,7 @@
 
 
 
-  <meta property="article:published_time" content="2024-03-08T00:00:00+09:00">
+  <meta property="article:published_time" content="2024-04-05T00:00:00+09:00">
 
 
 
@@ -187,7 +187,7 @@
       <span class="page__meta-date">
         <i class="far fa-calendar-alt" aria-hidden="true"></i>
         
-        <time datetime="2024-03-08T00:00:00+09:00">March 8, 2024</time>
+        <time datetime="2024-04-05T00:00:00+09:00">April 5, 2024</time>
       </span>
     
 
@@ -338,7 +338,7 @@
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Autonomous Database 技術FAQ">
     <meta itemprop="description" content="Autonomous Database に関して、利用時のよくある質問に対する回答や、ノウハウ/Tipsについて記載しています。">
-    <meta itemprop="datePublished" content="2024-03-08T00:00:00+09:00">
+    <meta itemprop="datePublished" content="2024-04-05T00:00:00+09:00">
     
 
     <div class="page__inner-wrap">
@@ -618,7 +618,7 @@ I/OスループットはCPUの数に合わせてスケーリングします（Di
 <p>はい、できます。スキーマ単位、表単位でバックアップを取っておきたい場合に利用します。
 詳しい手順はこちらのマニュアルをご参照ください。</p>
 
-<p><a href="https://docs.oracle.com/cd//E83857_01/paas/autonomous-database/serverless/adbsb/load-data-data-pump.html#GUID-30DB1EEA-DB45-49EA-9E97-DF49A9968E24">参Autonomous DatabaseでのOracle Data Pumpを使用したデータのインポート考：</a></p>
+<p><a href="https://docs.oracle.com/cd//E83857_01/paas/autonomous-database/serverless/adbsb/load-data-data-pump.html#GUID-30DB1EEA-DB45-49EA-9E97-DF49A9968E24">参考：Autonomous DatabaseでのOracle Data Pumpを使用したデータのインポート</a></p>
 
 <p><br /></p>
 
@@ -646,7 +646,7 @@ I/OスループットはCPUの数に合わせてスケーリングします（Di
 
 <p>ADBではflashback databaseはユーザーは明示的に使用できません。ユーザー指定のタイムスタンプにリストアすることが可能であり、内部的に使用されています。</p>
 
-<p>なお、flashback tableやflashback queryは可能です。<a href="https://docs.oracle.com/cd//E83857_01/paas/autonomous-database/adbsa/autonomous-oracle-flashback.html#GUID-CEE36DC8-E878-481C-8366-9507D0911C25">ドキュメント</a></p>
+<p>なお、flashback tableやflashback queryは可能です。<a href="https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/serverless/adbsb/autonomous-oracle-flashback.html#GUID-CEE36DC8-E878-481C-8366-9507D0911C25">ドキュメント</a></p>
 
 <p>また、データベース・オブジェクトの過去の状態を表示できるFlashback Time Travelも使用できます。<a href="https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/serverless/adbsb/flashback-time-travel-autononomous.html#GUID-A98E1F8B-FAE4-4FFF-955D-3A0E5F8EBC4A">ドキュメント</a></p>
 
@@ -693,7 +693,7 @@ Autonomous Databaseの初期化パラメータSESSIONSとして設定されま�
 
 <p>OCI GoldenGateの利用をご検討ください。またDatabase Linkをご利用いただくことも可能です。</p>
 
-<p><a href="https://oracle-japan.github.io/ocitutorials/database/adb401-oci-goldengate/">参考：OCI GoldenGateチュートリアル</a></p>
+<p><a href="https://oracle-japan.github.io/ocitutorials/adb/adb401-oci-goldengate/">参考：OCI GoldenGateチュートリアル</a></p>
 
 <p><br /></p>
 
@@ -704,7 +704,7 @@ SQLでの参照頻度が低いようであれば、オブジェクト・スト�
 また頻繁にアクセスするようでしたらAutonomous Database内にロードした方が、SmartScan機能による高速化を有効に利用できます。<br />
 なお、外部表を利用して参照する場合も、Autonomous Databaseにロードする場合も、オブジェクト・ストレージ上のファイルは分割しておくことをおすすめします。ファイルを分割することで複数のコアを利用した高速な並列処理が可能になります。</p>
 
-<p><a href="https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/adbsa/query-external.html#GUID-ABF95242-3E04-42FF-9361-52707D14E833">参考：Autonomous Databaseを使用した外部データの問合せ</a></p>
+<p><a href="https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/serverless/adbsb/query-external-data.html#GUID-72DC8BB6-5245-4262-A100-C35A2E553F70">参考：Autonomous Databaseを使用した外部データの問合せ</a></p>
 
 <p><br /></p>
 
@@ -931,14 +931,14 @@ Autonomous Database では、PDBロックダウン・プロファイルの設定
 
 <h2 id="awrは取得できますかawrの保持期限スナップショット間隔は変更で可能でしょうか">AWRは取得できますか？AWRの保持期限、スナップショット間隔は変更で可能でしょうか？</h2>
 
-<p>可能です。パフォーマンスハブからのダウンロードまたはSQLで取得できます。取得方法は<a href="https://oracle-japan.github.io/ocitutorials/database/adb203-bulk-query/#anchor3-2">OCIチュートリアル</a>に記載していますのでご確認ください。
+<p>可能です。パフォーマンスハブからのダウンロードまたはSQLで取得できます。取得方法は<a href="https://oracle-japan.github.io/ocitutorials/adb/adb203-bulk-query/#anchor3-2">OCIチュートリアル</a>に記載していますのでご確認ください。
 AWRの取得設定は通常のOracle Databaseと同様にDBMS_WORKLOAD_REPOSITORY.MODIFY_SNAPSHOT_SETTINGSにて変更可能ですが、再起動すると保持期間はデフォルトの30日に戻ります。</p>
 
 <p><br /></p>
 
 <h2 id="オプティマイザ関連の設定は変更できますか">オプティマイザ関連の設定は変更できますか。</h2>
 
-<p>基本的に不可です。全てオプティマイザに任せるのがコンセプトです。Autonomous Databaseの初期化パラメータなどの制限事項ついては<a href="https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/adbsa/experienced-database-users.html#GUID-58EE6599-6DB4-4F8E-816D-0422377857E5">ドキュメント</a>をご確認ください。</p>
+<p>基本的に不可です。全てオプティマイザに任せるのがコンセプトです。Autonomous Databaseの初期化パラメータなどの制限事項ついては<a href="https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/serverless/adbsb/autonomous-initialization-parameters.html#GUID-7CF648C[…]6F5719D6779E">ドキュメント</a>をご確認ください。</p>
 
 <p><br /></p>
 
@@ -963,7 +963,7 @@ AWRの取得設定は通常のOracle Databaseと同様にDBMS_WORKLOAD_REPOSITOR
 
 <h2 id="アラートログトレースファイルの確認はできますか">アラートログ、トレースファイルの確認はできますか。</h2>
 
-<p>SQLを利用してアラートログ(V$DIAG_ALERT_EXT)やトレースファイル(V$DIAG_TRACE_FILE_CONTENTS)を確認することは可能です。<a href="https://oracle-japan.github.io/ocitutorials/database/adb502-report/">OCIチュートリアル</a>に記載しておりますのでご確認ください。</p>
+<p>SQLを利用してアラートログ(V$DIAG_ALERT_EXT)やトレースファイル(V$DIAG_TRACE_FILE_CONTENTS)を確認することは可能です。<a href="https://oracle-japan.github.io/ocitutorials/adb/adb502-report/">OCIチュートリアル</a>に記載しておりますのでご確認ください。</p>
 
 <p><br /></p>
 
@@ -1361,7 +1361,7 @@ OCICLIでの実施方法は<a href="https://oracle-japan.github.io/ocitutorials/
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 更新日時:</strong> <time datetime="2024-03-08T00:00:00+09:00">March 8, 2024</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 更新日時:</strong> <time datetime="2024-04-05T00:00:00+09:00">April 5, 2024</time></p>
 
 
       </footer>
@@ -1382,12 +1382,11 @@ OCICLIでの実施方法は<a href="https://oracle-japan.github.io/ocitutorials/
       
   <nav class="pagination">
     
-      <a href="/ocidocs/updates/update-FY24Q3/" class="pagination--pager" title="Oracle Cloud Infrastructure IaaS 新機能アップデート 2023/12 - 2024/2
+      <a href="/ocidocs/services/storage/data-transfer/" class="pagination--pager" title="OCIへのデータ移行
 ">前へ</a>
     
     
-      <a href="/ocidocs/services/storage/data-transfer/" class="pagination--pager" title="OCIへのデータ移行
-">次へ</a>
+      <a href="#" class="pagination--pager disabled">次へ</a>
     
   </nav>
 
@@ -1491,43 +1490,6 @@ OCICLIでの実施方法は<a href="https://oracle-japan.github.io/ocitutorials/
 <div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/ocidocs/faq/services/autonomous/autonomous-database-faq/" rel="permalink">Autonomous Database 技術FAQ
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-calendar-alt" aria-hidden="true"></i>
-        
-        <time datetime="2024-02-16T00:00:00+09:00">February 16, 2024</time>
-      </span>
-    
-
-    
-
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">Autonomous Database に関して、利用時のよくある質問に対する回答や、ノウハウ/Tipsについて記載しています。
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
       <div class="archive__item-teaser">
         <img src="https://files.speakerdeck.com/presentations/ffce27937b4e4d08aa247a767906656a/slide_0.jpg" alt="">
       </div>
@@ -1557,6 +1519,47 @@ OCICLIでの実施方法は<a href="https://oracle-japan.github.io/ocitutorials/
 
 
     <p class="archive__item-excerpt" itemprop="description">2023年9月～2023年11月の3ヶ月分のOCI新機能についてのまとめ資料です
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://speakerd.s3.amazonaws.com/presentations/4e0d4cd1bfae4eeebb36faf522e5a279/slide_0.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ocidocs/services/overall/oracle-cloud-infrastructure-tech-overview/" rel="permalink">Oracle Cloud Infrastructure 技術概要
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2023-11-16T00:00:00+09:00">November 16, 2023</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">OCIの主にIaaS周りのサービスに特化した技術概要資料です。OCIのアーキテクチャーの説明と、主なサービスについてなるべく短く網羅的にご紹介しています。”
 </p>
   </article>
 </div>
