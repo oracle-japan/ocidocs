@@ -1,89 +1,83 @@
 reviewers:
   defaults:
-  - tniita
-  - mmarukaw
-  - shukawam
+    - tniita
+    - mmarukaw
+    - shukawam
 
 files:
-  '_templates/**':
+  "_templates/**":
     - tniita
     - mmarukaw
-    - oraryoyas
     - gakumura
-    # - eminamin
+    - eminamin
     - TomokoKonishi
     - shukawam
     - kyyamada
     - yuarashi
     - s-nori
-    - ntajima-jp
     - hsakurag
     - yuuur
-    - jennylia3
-    - yobaya
     - fwiw6430
     - kofukush
-    - mai112233
     - r-deguchi
     - yohono
     - takumiya0824
     - k-yamakawa
-    - ora-takahnak
     - ntakei1
     - watarunS
-  '_posts/**':
+    - unyako
+    - t-utsunom
+    - sogawa-yk
+    - alkuma-san
+  "_posts/**":
     - tniita
     - mmarukaw
-    - oraryoyas
     - gakumura
-    # - eminamin
+    - eminamin
     - TomokoKonishi
     - shukawam
     - kyyamada
     - yuarashi
     - s-nori
-    - ntajima-jp
     - hsakurag
     - yuuur
-    - jennylia3
-    - yobaya
     - fwiw6430
     - kofukush
-    - mai112233
     - r-deguchi
     - yohono
     - takumiya0824
     - k-yamakawa
-    - ora-takahnak
     - ntakei1
     - watarunS
-  '_pages/**':
+    - unyako
+    - t-utsunom
+    - sogawa-yk
+    - alkuma-san
+  "_pages/**":
     - tniita
     - mmarukaw
-    - oraryoyas
     - gakumura
-    # - eminamin
+    - eminamin
     - TomokoKonishi
     - shukawam
     - kyyamada
     - yuarashi
     - s-nori
-    - ntajima-jp
     - hsakurag
     - yuuur
-    - jennylia3
-    - yobaya
     - fwiw6430
     - kofukush
-    - mai112233
     - r-deguchi
     - yohono
     - takumiya0824
     - k-yamakawa
-    - ora-takahnak
     - ntakei1
     - watarunS
-  '.github/**':
+    - unyako
+    - t-utsunom
+    - sogawa-yk
+    - alkuma-san
+  ".github/**":
     - tniita
     - mmarukaw
     - shukawam
