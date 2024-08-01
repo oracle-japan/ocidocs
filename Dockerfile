@@ -1,4 +1,4 @@
-FROM jekyll/jekyll:4.1.0
+FROM jvconseil/jekyll-docker:4.3.3
 
 WORKDIR /pages
 
