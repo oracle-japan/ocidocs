@@ -623,12 +623,6 @@ var store = [{
         "url": "/ocidocs/services/developers/oci-service-mesh-overview/",
         "teaser": "https://files.speakerdeck.com/presentations/da92fb1d01894f6f86c56b2b8a39933c/slide_0.jpg?21830052\""
       },{
-        "title": "FastConnect 冗長性のベスト・プラクティス",
-        "excerpt":"OCIの技術説明資料：FastConnect 冗長性のベスト・プラクティス です。 お客様ネットワークとOracle Cloud Infrastructure(OCI)間をプライベート回線で接続するサービス「FastConnect」に関する復習と、冗長化におけるベストプラクティスについて解説しています。   スライド           ","categories": ["Services","Networking"],
-        "tags": ["スライドあり","レベル:入門(100)","レベル:応用(200)"],
-        "url": "/ocidocs/services/networking/connectivity_redundancy/",
-        "teaser": "https://files.speakerdeck.com/presentations/1461985b53674d799e36988a2f20f886/slide_0.jpg"
-      },{
         "title": "WAF保護ルールの考え方",
         "excerpt":"OCI WAFでは、Webアプリケーションを攻撃から保護するために600以上の保護ルールが提供されています。本資料では、OCI WAFが提供する保護ルールの設定例や、選択方法について紹介します   スライド          ","categories": ["Services","Edge Security","Security"],
         "tags": ["スライドあり","レベル:応用(200)"],
@@ -820,4 +814,16 @@ var store = [{
         "tags": ["FAQ"],
         "url": "/ocidocs/faq/services/autonomous/autonomous-database-faq/",
         "teaser": null
+      },{
+        "title": "OCI コスト管理",
+        "excerpt":"OCIのコスト管理に関連した機能の説明資料です。 各リソースがどのくらいコストを消費しているのかの分析や、予算オーバーしないために役立つ機能などをご紹介しています。      テナンシ、コンパートメント、タグ 　- コスト分析、コストおよび使用状況レポート 　- 割当て制限（Quota）、予算（Budget）   クラウド・アドバイザ（Cloud Advisor）、Cost Estimator   2024/8：初版アップロード   スライド         ","categories": ["Services","Governance and Administration"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/services/governance%20and%20administration/cost-management/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/4541d035c9b4444bb7b1c2ea5ed032d8/slide_0.jpg"
+      },{
+        "title": "外部接続 詳細 - FastConnectの冗長性",
+        "excerpt":"OCIの技術説明資料：外部接続 詳細 - FastConnectの冗長性 です。 お客様ネットワークとOracle Cloud Infrastructure(OCI)間をプライベート回線で接続するサービス「FastConnect」の冗長化を構成する際の考慮点について解説しています。   スライド           ","categories": ["Services","Networking"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "/ocidocs/services/networking/connectivity_redundancy/",
+        "teaser": "https://files.speakerdeck.com/presentations/1461985b53674d799e36988a2f20f886/slide_0.jpg"
       }]
