@@ -826,4 +826,16 @@ var store = [{
         "tags": ["スライドあり","レベル:応用(200)"],
         "url": "/ocidocs/services/networking/connectivity_redundancy/",
         "teaser": "https://files.speakerdeck.com/presentations/1461985b53674d799e36988a2f20f886/slide_0.jpg"
+      },{
+        "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2024/3 - 2024/5",
+        "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介しています。 2024年3月～2024年5月の3ヶ月分の新機能について説明しています。   スライド                ","categories": ["Updates"],
+        "tags": ["スライドあり","動画あり"],
+        "url": "/ocidocs/updates/update-FY24Q4/",
+        "teaser": "https://files.speakerdeck.com/presentations/07fc975104944594b35319c8db53292c/slide_0.jpg"
+      },{
+        "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2024/6 - 2024/8",
+        "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介しています。 2024年6月～2024年8月の3ヶ月分の新機能について説明しています。   スライド              ","categories": ["Updates"],
+        "tags": ["スライドあり","動画あり"],
+        "url": "/ocidocs/updates/update-FY25Q1/",
+        "teaser": "https://files.speakerdeck.com/presentations/9eb55f63453244a7b45ca85ad369b55e/slide_0.jpg"
       }]
