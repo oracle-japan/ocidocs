@@ -773,23 +773,11 @@ var store = [{
         "url": "/ocidocs/services/networking/IPSecVPN-200/",
         "teaser": "https://files.speakerdeck.com/presentations/e3a0f9ce639c46b285e4c52f2767f8b7/slide_0.jpg"
       },{
-        "title": "OCI セキュア・デスクトップ 概要",
-        "excerpt":"2023年6月にリリースされたOracle Cloud Infrastructureのセキュア・デスクトップ（OCI Secure Desktops）の概要資料です。 OCIセキュア・デスクトップは、OCIネイティブな仮想デスクトップのサービスです。   スライド               ","categories": ["Services","Compute"],
-        "tags": ["スライドあり"],
-        "url": "/ocidocs/services/compute/SecureDesktop/",
-        "teaser": "https://files.speakerdeck.com/presentations/c2048e5e9c15469ca304b55f39429794/slide_0.jpg"
-      },{
         "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2023/6～2023/8",
         "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介しています。 2023年6月～2023年8月の3ヶ月分の新機能について説明しています。   スライド               ","categories": ["Updates"],
         "tags": ["スライドあり","動画あり"],
         "url": "/ocidocs/updates/update-FY24Q1/",
         "teaser": "https://files.speakerdeck.com/presentations/5e322108d2c44276ab845fbec5ddfce1/slide_0.jpg"
-      },{
-        "title": "Oracle Cloud Infrastructure 技術概要",
-        "excerpt":"OCIの主にIaaS周りのサービスに特化した技術概要資料です。 OCIのアーキテクチャーの説明と、各コンポーネントについてなるべく短く網羅的にご紹介しています。   スライド           ","categories": ["Services","Overall"],
-        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
-        "url": "/ocidocs/services/overall/oracle-cloud-infrastructure-tech-overview/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/4e0d4cd1bfae4eeebb36faf522e5a279/slide_0.jpg"
       },{
         "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2023/9 - 2023/11",
         "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介しています。 2023年9月～2023年11月の3ヶ月分の新機能について説明しています。   スライド               ","categories": ["Updates"],
@@ -838,4 +826,16 @@ var store = [{
         "tags": ["スライドあり","動画あり"],
         "url": "/ocidocs/updates/update-FY25Q1/",
         "teaser": "https://files.speakerdeck.com/presentations/9eb55f63453244a7b45ca85ad369b55e/slide_0.jpg"
+      },{
+        "title": "Oracle Cloud Infrastructure 技術概要",
+        "excerpt":"OCIの主にIaaS周りのサービスに特化した技術概要資料です。 OCIのアーキテクチャーの説明と、各コンポーネントについてなるべく短く網羅的にご紹介しています。   スライド           ","categories": ["Services","Overall"],
+        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
+        "url": "/ocidocs/services/overall/oracle-cloud-infrastructure-tech-overview/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/4e0d4cd1bfae4eeebb36faf522e5a279/slide_0.jpg"
+      },{
+        "title": "OCI セキュア・デスクトップ 概要",
+        "excerpt":"2023年6月にリリースされたOracle Cloud Infrastructureのセキュア・デスクトップ（OCI Secure Desktops）の概要資料です。 OCIセキュア・デスクトップは、OCIネイティブなVDIのサービスです。   2024/9/13: 最新情報を反映して更新   スライド               ","categories": ["Services","Compute"],
+        "tags": ["スライドあり"],
+        "url": "/ocidocs/services/compute/SecureDesktop/",
+        "teaser": "https://files.speakerdeck.com/presentations/c2048e5e9c15469ca304b55f39429794/slide_0.jpg"
       }]
