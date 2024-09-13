@@ -11,7 +11,9 @@ header:
 ---
 
 2023年6月にリリースされたOracle Cloud Infrastructureのセキュア・デスクトップ（OCI Secure Desktops）の概要資料です。
-OCIセキュア・デスクトップは、OCIネイティブな仮想デスクトップのサービスです。
+OCIセキュア・デスクトップは、OCIネイティブなVDIのサービスです。
+
+2024/9/13: 最新情報を反映して更新
 
 #### スライド
 <div style="max-width:768px">
