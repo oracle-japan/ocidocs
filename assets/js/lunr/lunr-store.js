@@ -779,17 +779,35 @@ var store = [{
         "url": "/ocidocs/updates/update-FY24Q1/",
         "teaser": "https://files.speakerdeck.com/presentations/5e322108d2c44276ab845fbec5ddfce1/slide_0.jpg"
       },{
+        "title": "OCI Oracle Database Services新機能アップデート 2023/6 - 2023/8",
+        "excerpt":"Oracle Cloud Infrastructureの新機能の中から、OCI Oracle Database Servicesに関するアップデート情報をまとめてご紹介しています。  2023年6月～2023年8月の3ヶ月分の新機能について説明しています。   スライド              ","categories": ["Updates"],
+        "tags": ["スライドあり"],
+        "url": "/ocidocs/updates/db-update-FY24Q1/",
+        "teaser": "https://files.speakerdeck.com/presentations/3975e79d28b7489a81d4e1f747336b18/slide_0.jpg"
+      },{
         "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2023/9 - 2023/11",
         "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介しています。 2023年9月～2023年11月の3ヶ月分の新機能について説明しています。   スライド               ","categories": ["Updates"],
         "tags": ["スライドあり","動画あり"],
         "url": "/ocidocs/updates/update-FY24Q2/",
         "teaser": "https://files.speakerdeck.com/presentations/ffce27937b4e4d08aa247a767906656a/slide_0.jpg"
       },{
+        "title": "OCI Oracle Database Services新機能アップデート 2023/9 - 2023/11",
+        "excerpt":"Oracle Cloud Infrastructureの新機能の中から、OCI Oracle Database Servicesに関するアップデート情報をまとめてご紹介しています。  2023年9月～2023年11月の3ヶ月分の新機能について説明しています。   スライド              ","categories": ["Updates"],
+        "tags": ["スライドあり"],
+        "url": "/ocidocs/updates/db-update-FY24Q2/",
+        "teaser": "https://files.speakerdeck.com/presentations/1699ab73aee64c988125a89d8c15898d/slide_0.jpg"
+      },{
         "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2023/12 - 2024/2",
         "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介しています。 2023年12月～2024年2月の3ヶ月分の新機能について説明しています。   スライド               ","categories": ["Updates"],
         "tags": ["スライドあり","動画あり"],
         "url": "/ocidocs/updates/update-FY24Q3/",
         "teaser": "https://files.speakerdeck.com/presentations/2fa4e1f3a608415190f075450cf109f3/slide_0.jpg"
+      },{
+        "title": "OCI Oracle Database Services新機能アップデート 2023/12 - 2024/2",
+        "excerpt":"Oracle Cloud Infrastructureの新機能の中から、OCI Oracle Database Servicesに関するアップデート情報をまとめてご紹介しています。  2023年12月～2024年2月の3ヶ月分の新機能について説明しています。   スライド              ","categories": ["Updates"],
+        "tags": ["スライドあり"],
+        "url": "/ocidocs/updates/db-update-FY24Q3/",
+        "teaser": "https://files.speakerdeck.com/presentations/3141cf14d9e3402381a4cb08fdd5c437/slide_0.jpg"
       },{
         "title": "OCIへのデータ移行",
         "excerpt":"オンプレミスからOCIのストレージへのデータ移行等で利用可能なツール（OCI CLI, RCLONE, OCIFSなど）、およびデータ転送サービスについて解説しています。   2024/4：改定版に更新   スライド          ","categories": ["Services","Storage"],
@@ -802,6 +820,12 @@ var store = [{
         "tags": ["FAQ"],
         "url": "/ocidocs/faq/services/autonomous/autonomous-database-faq/",
         "teaser": null
+      },{
+        "title": "OCI Oracle Database Services新機能アップデート 2024/3 - 2024/5",
+        "excerpt":"Oracle Cloud Infrastructureの新機能の中から、OCI Oracle Database Servicesに関するアップデート情報をまとめてご紹介しています。  2024年3月～2024年5月の3ヶ月分の新機能について説明しています。   スライド              ","categories": ["Updates"],
+        "tags": ["スライドあり"],
+        "url": "/ocidocs/updates/db-update-FY24Q4/",
+        "teaser": "https://files.speakerdeck.com/presentations/902a6281175c47d4918c8c28651f5e80/slide_0.jpg"
       },{
         "title": "OCI コスト管理",
         "excerpt":"OCIのコスト管理に関連した機能の説明資料です。 各リソースがどのくらいコストを消費しているのかの分析や、予算オーバーしないために役立つ機能などをご紹介しています。      テナンシ、コンパートメント、タグ 　- コスト分析、コストおよび使用状況レポート 　- 割当て制限（Quota）、予算（Budget）   クラウド・アドバイザ（Cloud Advisor）、Cost Estimator   2024/8：初版アップロード   スライド         ","categories": ["Services","Governance and Administration"],
@@ -826,6 +850,12 @@ var store = [{
         "tags": ["スライドあり","動画あり"],
         "url": "/ocidocs/updates/update-FY25Q1/",
         "teaser": "https://files.speakerdeck.com/presentations/9eb55f63453244a7b45ca85ad369b55e/slide_0.jpg"
+      },{
+        "title": "OCI Oracle Database Services新機能アップデート 2024/6 - 2024/8",
+        "excerpt":"Oracle Cloud Infrastructureの新機能の中から、OCI Oracle Database Servicesに関するアップデート情報をまとめてご紹介しています。  2024年6月～2024年8月の3ヶ月分の新機能について説明しています。   スライド              ","categories": ["Updates"],
+        "tags": ["スライドあり"],
+        "url": "/ocidocs/updates/db-update-FY25Q1/",
+        "teaser": "https://files.speakerdeck.com/presentations/b998c53798bb45b3bbe042aa0d563964/slide_0.jpg"
       },{
         "title": "Oracle Cloud Infrastructure 技術概要",
         "excerpt":"OCIの主にIaaS周りのサービスに特化した技術概要資料です。 OCIのアーキテクチャーの説明と、各コンポーネントについてなるべく短く網羅的にご紹介しています。   スライド           ","categories": ["Services","Overall"],
