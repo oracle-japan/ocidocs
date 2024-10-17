@@ -868,4 +868,10 @@ var store = [{
         "tags": ["スライドあり"],
         "url": "/ocidocs/services/compute/SecureDesktop/",
         "teaser": "https://files.speakerdeck.com/presentations/c2048e5e9c15469ca304b55f39429794/slide_0.jpg"
+      },{
+        "title": "OS管理ハブ概要",
+        "excerpt":"OCI、オンプレミス、サードパーティ・クラウド上のインスタンスのパッチ適用、パッケージ管理の一元化と自動化を可能にするOCI提供のサービス「OS管理ハブ」の概要を解説しています。   スライド           ","categories": ["Services","Compute"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/services/compute/osmh/",
+        "teaser": "https://files.speakerdeck.com/presentations/430dcf8539b746ea94a010c17780a663/slide_0.jpg"
       }]
