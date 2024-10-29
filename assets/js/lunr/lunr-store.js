@@ -83,18 +83,6 @@ var store = [{
         "url": "/ocidocs/services/database/exadata-200/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/93563fd1a83240e082d52b9b3c5b81f2/slide_0.jpg"
       },{
-        "title": "DNS 概要",
-        "excerpt":"インターネット上の名前解決を提供する権威DNSサービスであるOCI DNSサービスについて、サービスの概要、特長、利用方法、ユースケースなどについて解説しています。   スライド           セミナー動画 (12分53秒まで)      ","categories": ["Services","Edge Service"],
-        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
-        "url": "/ocidocs/services/edge%20service/dns-100/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/64935bd8917b4707aaa7a1f0614864fa/slide_0.jpg"
-      },{
-        "title": "ヘルスチェック & トラフィック管理",
-        "excerpt":"OCIのエッジ・サービスを構成するサービスで、インターネットに面したアプリケーションを外部からアクティブに監視したり(ヘルスチェック)、バックエンドのサービスの稼動状態やクライアントのプロファイルに応じてグローバルにトラフィックの振り分けを行うGTM機能を提供(トラフィック管理)します。   スライド           セミナー動画 (12分53秒まで)      ","categories": ["Services","Edge Service"],
-        "tags": ["スライドあり","レベル:応用(200)"],
-        "url": "/ocidocs/services/edge%20service/health-check-and-traffic-management/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/ad44958c474941c0a69dd6be27eda8dd/slide_0.jpg"
-      },{
         "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2020/6～2020/8",
         "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介する資料です。2020年6月～2020年8月の3ヶ月分の新機能について記載しています。   スライド          ","categories": ["Updates"],
         "tags": ["スライドあり"],
@@ -413,12 +401,6 @@ var store = [{
         "url": "/ocidocs/updates/updates-blog/",
         "teaser": "https://cdn.app.compendium.com/uploads/user/e7c690e8-6ff9-102a-ac6d-e4aebca50425/36fb492f-3532-48e4-a057-f2b674a19de1/File/b5a9121425a0e376b622e07247bd054e/image_20201202094512173.png"
       },{
-        "title": "イベント・サービス概要",
-        "excerpt":"クラウド上のリソースの変化を捉え、サービスが自動的に連動する仕組みを実現する、イベント・サービスの概要資料です。   スライド          ","categories": ["Services","Developers"],
-        "tags": ["スライドあり","レベル:入門(100)"],
-        "url": "/ocidocs/services/developers/events-service/",
-        "teaser": "https://files.speakerdeck.com/presentations/7f8bb60e28a5437ab6c40dd664de8b49/slide_0.jpg"
-      },{
         "title": "OCI運用監視入門",
         "excerpt":"2021/10/26に実施したOCIスキルアップセミナー「OCI運用監視入門」にて投影した資料です。 OCIも提供開始から3年が経ち、システムの運用監視に関する様々なサービス群が充実してきました。特に、Observability &amp; Management Platform というサービス群は機能がどんどん拡張され、今では、システム監視、ログ監視、アプリケーションパフォーマンス監視、データベース監視など、OCI内外の様々なシステムを統合的に監視することができる便利なサービスへと成長しています。 資料中では、今年提供を開始した Application Performance Monitoring や Database Management のデモの他、OCIのMonitoring、Loggingといったサービスと連携する方法、エージェントを経由してOCI内外のシステムを監視する方法などについて解説します。   「OCIの運用監視って、サービスでどこまでできるの？」「使ってみたいけど、どのように使うの？」など、OCIの運用監視に関する知識を得たい方、ご興味がある方に向けた資料です。   スライド           セミナー動画      ","categories": ["Services","Governance and Administration"],
         "tags": ["スライドあり","レベル:入門(100)"],
@@ -683,12 +665,6 @@ var store = [{
         "url": "/ocidocs/services/networking/load-balancer-200/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/9ca991733d2a4670bdd4e5ed5b5770c4/slide_0.jpg"
       },{
-        "title": "Oracle Cloud Migrations Service概要",
-        "excerpt":"Oracle Cloud Migrationsサービスの概要資料です。Oracle Cloud Migrations は、OCIに移行を行うためのOCIネイティブなサービスです。初期リリースではVMwareからOCIコンピュート・インスタンスへの移行をサポートしています。   スライド             ","categories": ["Services","Compute"],
-        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
-        "url": "/ocidocs/services/compute/oracle-cloud-migrations/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/705d4256bd6d4d7b8cee3f346d213f8d/slide_0.jpg"
-      },{
         "title": "Oracle Cloud Infrastructure ご利用ガイド / Onboading Session",
         "excerpt":" Onboarding Sessionとは、Oracle PaaS &amp; IaaSのサービスの開始＆サインイン方法や基本的なユーザ管理及びサポートサービスについてご紹介します。サービスの利用を開始するお客様に最適な内容となっております。    スライド - その1 ご利用ガイド (2020/11/15更新)             スライド - その2 サポートサービスご案内 (2020/11/15更新)             セミナー動画 (2020/11/15収録)        ","categories": ["Services","Overall"],
         "tags": ["スライド","動画","レベル:入門(100)"],
@@ -874,4 +850,28 @@ var store = [{
         "tags": ["スライドあり","レベル:入門(100)"],
         "url": "/ocidocs/services/compute/osmh/",
         "teaser": "https://files.speakerdeck.com/presentations/430dcf8539b746ea94a010c17780a663/slide_0.jpg"
+      },{
+        "title": "DNS 概要",
+        "excerpt":"インターネット上の名前解決を提供する権威DNSサービスであるOCI DNSサービスについて、サービスの概要、特長、利用方法、ユースケースなどについて解説しています。   スライド           セミナー動画 (12分53秒まで)      ","categories": ["Services","Edge Service"],
+        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
+        "url": "/ocidocs/services/edge%20service/dns-100/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/64935bd8917b4707aaa7a1f0614864fa/slide_0.jpg"
+      },{
+        "title": "イベント・サービス概要",
+        "excerpt":"クラウド上のリソースの変化を捉え、サービスが自動的に連動する仕組みを実現する、イベント・サービスの概要資料です。   スライド          ","categories": ["Services","Developers"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/services/developers/events-service/",
+        "teaser": "https://files.speakerdeck.com/presentations/7f8bb60e28a5437ab6c40dd664de8b49/slide_0.jpg"
+      },{
+        "title": "ヘルスチェック & トラフィック管理",
+        "excerpt":"OCIのエッジ・サービスを構成するサービスで、インターネットに面したアプリケーションを外部からアクティブに監視したり(ヘルスチェック)、バックエンドのサービスの稼動状態やクライアントのプロファイルに応じてグローバルにトラフィックの振り分けを行うGTM機能を提供(トラフィック管理)します。   スライド           セミナー動画 (12分53秒まで)      ","categories": ["Services","Edge Service"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "/ocidocs/services/edge%20service/health-check-and-traffic-management/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/ad44958c474941c0a69dd6be27eda8dd/slide_0.jpg"
+      },{
+        "title": "Oracle Cloud Migrations Service概要",
+        "excerpt":"Oracle Cloud Migrationsサービスの概要資料です。Oracle Cloud Migrations は、OCIに移行を行うためのOCIネイティブなサービスです。VMwareとAWS EC2からOCIコンピュート・インスタンスへの移行をサポートしています。   スライド             ","categories": ["Services","Compute"],
+        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
+        "url": "/ocidocs/services/compute/oracle-cloud-migrations/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/705d4256bd6d4d7b8cee3f346d213f8d/slide_0.jpg"
       }]
