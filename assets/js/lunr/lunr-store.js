@@ -852,7 +852,7 @@ var store = [{
         "teaser": "https://files.speakerdeck.com/presentations/430dcf8539b746ea94a010c17780a663/slide_0.jpg"
       },{
         "title": "DNS 概要",
-        "excerpt":"インターネット上の名前解決を提供する権威DNSサービスであるOCI DNSサービスについて、サービスの概要、特長、利用方法、ユースケースなどについて解説しています。   スライド           セミナー動画 (12分53秒まで)      ","categories": ["Services","Edge Service"],
+        "excerpt":"インターネット上の名前解決を提供する権威DNSサービスであるOCI DNSサービスについて、サービスの概要、特長、利用方法、ユースケースなどについて解説しています。   スライド           ","categories": ["Services","Edge Service"],
         "tags": ["スライドあり","動画あり","レベル:入門(100)"],
         "url": "/ocidocs/services/edge%20service/dns-100/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/64935bd8917b4707aaa7a1f0614864fa/slide_0.jpg"
@@ -864,7 +864,7 @@ var store = [{
         "teaser": "https://files.speakerdeck.com/presentations/7f8bb60e28a5437ab6c40dd664de8b49/slide_0.jpg"
       },{
         "title": "ヘルスチェック & トラフィック管理",
-        "excerpt":"OCIのエッジ・サービスを構成するサービスで、インターネットに面したアプリケーションを外部からアクティブに監視したり(ヘルスチェック)、バックエンドのサービスの稼動状態やクライアントのプロファイルに応じてグローバルにトラフィックの振り分けを行うGTM機能を提供(トラフィック管理)します。   スライド           セミナー動画 (12分53秒まで)      ","categories": ["Services","Edge Service"],
+        "excerpt":"OCIのエッジ・サービスを構成するサービスで、インターネットに面したアプリケーションを外部からアクティブに監視したり(ヘルスチェック)、バックエンドのサービスの稼動状態やクライアントのプロファイルに応じてグローバルにトラフィックの振り分けを行うGTM機能を提供(トラフィック管理)します。   スライド           ","categories": ["Services","Edge Service"],
         "tags": ["スライドあり","レベル:応用(200)"],
         "url": "/ocidocs/services/edge%20service/health-check-and-traffic-management/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/ad44958c474941c0a69dd6be27eda8dd/slide_0.jpg"
