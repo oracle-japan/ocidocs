@@ -1,10 +1,4 @@
 var store = [{
-        "title": "自動スケーリング機能をさわってみよう",
-        "excerpt":"自動スケーリング機能 (Auto Scaling) の解説資料です。2019年8月27日のOCIスキルアップセミナーで使用しました。  OCIの自動スケーリング機能と、それを支えるコンポーネント(インスタンス構成、インスタンス・プール、自動スケーリング構成)を実際に触って動作を理解します。   スライド          ","categories": ["Services","Compute"],
-        "tags": ["スライドあり","レベル:応用(200)"],
-        "url": "/ocidocs/services/compute/autoscaling/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/3277a22d639b4857b185569a6181278c/slide_0.jpg"
-      },{
         "title": "OCI CLI を使い倒す",
         "excerpt":"Oracle Cloud Infrastructure (OCI) の CLI (Command Line Interface) の解説資料です。2019年9月27日のOCIスキルアップセミナーで使用しました。  CLIのセットアップから始まり、よくあるコンポーネント(VCN関連、インスタンス、ブロック・ボリュームなど)の作成、シェルスクリプトからの呼び出し、OCI CLIのクセとTipsなどについて解説しています。   スライド          ","categories": ["Services","Devtool"],
         "tags": ["スライドあり","レベル:入門(100)"],
@@ -101,35 +95,11 @@ var store = [{
         "url": "/ocidocs/solutions/iam/identitydomains-idp-policy/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/e8672c964d3343728f43d58f1087acb8/slide_0.jpg"
       },{
-        "title": "Oracle Cloud Infrastructure サービス基本情報",
-        "excerpt":"ログインに始まり、言語の変更、サービス制限、OCID、検索など、主にOCIコンソールの基本的情報について解説しています。   スライド           関連動画       ","categories": ["Services","Overall"],
-        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
-        "url": "/ocidocs/services/overall/service-essentials/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/dadec91d58b24202a8af17f075301fba/slide_0.jpg"
-      },{
-        "title": "Oracle Cloud Infrastructure 概要",
-        "excerpt":"OCIに初めて触れる人のために、OCI全般の特長や、アーキテクチャについて解説しています。   スライド           関連動画        ","categories": ["Services","Overall"],
-        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
-        "url": "/ocidocs/services/overall/oracle-cloud-infrastructure-overview/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/63c6514d88204918bc3e572bd3183589/slide_0.jpg"
-      },{
-        "title": "コンピュート概要",
-        "excerpt":"OCI上で仮想マシンやベアメタル・サーバーを利用することができるコンピュート・サービスについての概要資料です。  インスタンスの種類、イメージの操作、ブート・ボリューム、インスタンス・プールを利用した自動スケーリング、インスタンス・メタデータについて解説しています。   スライド (2020/10/20更新)             動画その1 (2020/4/21収録)         動画その2 : 28分32秒~ (2020/4/21収録)        ","categories": ["Services","Compute"],
-        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
-        "url": "/ocidocs/services/compute/compute-100/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/cf71c90194e445c4812a671235389dff/slide_0.jpg"
-      },{
         "title": "OCI ユーザー作成・権限管理手順",
         "excerpt":"OCIの認証、認可、ID管理などを司るコア・コンポーネントである OCI IAM (Identity and Access Management) についての解説資料です。  管理者が、新しくユーザーを作成し、グループ、ポリシーなどを設定して、適切に権限を設定する方法について、画面ショットを交えながら解説しています。   スライド          ","categories": ["Services","Governance and Administration"],
         "tags": ["スライドあり","レベル:入門(100)"],
         "url": "/ocidocs/services/governance%20and%20administration/managing-users/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/85242fdec3af4bc6b355d3580701a55f/slide_0.jpg"
-      },{
-        "title": "コンピュート詳細",
-        "excerpt":"OCI上で仮想マシンやベアメタル・サーバーを利用することができるコンピュート・サービスについての詳細資料です。  カスタム・イメージの応用、仮想マシンイメージの持ち込み(BYOI)、ハイパーバイザーの利用、メトリックと自動スケーリング、コンソール接続、などのコンピュート・サービスの応用的な使い方について解説しています。   スライド          ","categories": ["Services","Compute"],
-        "tags": ["スライドあり","レベル:応用(200)"],
-        "url": "/ocidocs/services/compute/compute-200/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/90e8e852d1c8443787f6f33e7e721177/slide_0.jpg"
       },{
         "title": "ブロックボリューム概要",
         "excerpt":"インスタンスにアタッチしてブロック・デバイスとして利用することができる、OCIブロック・ボリューム・サービスの基本的な内容について解説しています。また、DenseIO シェイプに内蔵される高速なローカルNVMeディスクについても説明しています。   スライド           動画 ~28分15秒      ","categories": ["Services","Storage"],
@@ -184,12 +154,6 @@ var store = [{
         "tags": ["スライドあり","動画あり"],
         "url": "/ocidocs/updates/update-FY21Q3/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/3be3b9c1707a47ad933a8ed906468a0d/slide_0.jpg"
-      },{
-        "title": "Email Deliveryサービス 概要",
-        "excerpt":"OCI Email Deliveryサービスは、OCI内外に配置されたサービスやアプリケーションから、確実にEmailを配信したい場合に利用することができるマネージドサービスです。  この資料では、OCI Email Deliveryサービスについて、サービスの概観、特徴、利用方法などの基礎的な内容について解説しています。   スライド         ","categories": ["Services","Edge Service"],
-        "tags": ["スライドあり","レベル:入門(100)"],
-        "url": "/ocidocs/services/edge%20service/email-delivery-100/",
-        "teaser": "https://files.speakerdeck.com/presentations/ee67829f073544f2a04c016a114501ac/slide_0.jpg"
       },{
         "title": "[コア技術]Oracle Database 機能概要",
         "excerpt":"紹介機能 ・Parallel Query ・Oracle Partitioning ・Advanced Compression ・Database In-Memory ・Diagnostic Pack &amp; Oracle Tuning Pack ・Recovery Manager ・Database Lifecycle Management Pack ・Multitenant ・Real Application Clusters ・Automatic Storage Management ・Data Guard &amp; Oracle Active Data Guard ・GoldenGate ・Advanced Security ・Database Vault ・Audit Vault and Database Firewall ・Real Application Testing ・Data Masking...","categories": ["Database"],
@@ -497,12 +461,6 @@ var store = [{
         "url": "/ocidocs/services/compute/autoscaling/",
         "teaser": "https://files.speakerdeck.com/presentations/4385d06e60e14edf8b5432b19bc08924/slide_0.jpg"
       },{
-        "title": "組織管理(Organization Management)概要",
-        "excerpt":"OCIの技術説明資料 組織管理 (Organization Management) の概要資料です。 複数のテナンシの請求やコスト管理を一元化できる機能である「組織管理」に関して解説しています。   スライド           ","categories": ["Services","Governance and Administration"],
-        "tags": ["スライドあり","レベル:応用(200)"],
-        "url": "/ocidocs/services/governance%20and%20administration/organization/",
-        "teaser": "https://files.speakerdeck.com/presentations/a7d1e15509464d9daefa9609a01c6d6c/slide_0.jpg"
-      },{
         "title": "動的ルーティング・ゲートウェイ (DRG) 概要",
         "excerpt":"OCIの技術説明資料 動的ルーティング・ゲートウェイ (DRG) の概要資料です。 Oracle Cloud Infrastructure リージョンにおいて、ネットワーク間の接続機能を提供するDRGについて解説しています。   スライド          ","categories": ["Services","Networking"],
         "tags": ["スライドあり","レベル:入門(100)","レベル:応用(200)"],
@@ -797,11 +755,23 @@ var store = [{
         "url": "/ocidocs/faq/services/autonomous/autonomous-database-faq/",
         "teaser": null
       },{
+        "title": "Oracle Cloud Infrastructure サービス基本情報",
+        "excerpt":"ログインに始まり、言語の変更、サービス制限、OCID、検索など、主にOCIコンソールの基本的情報について解説しています。   スライド           関連動画       ","categories": ["Services","Overall"],
+        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
+        "url": "/ocidocs/services/overall/service-essentials/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/dadec91d58b24202a8af17f075301fba/slide_0.jpg"
+      },{
         "title": "OCI Oracle Database Services新機能アップデート 2024/3 - 2024/5",
         "excerpt":"Oracle Cloud Infrastructureの新機能の中から、OCI Oracle Database Servicesに関するアップデート情報をまとめてご紹介しています。  2024年3月～2024年5月の3ヶ月分の新機能について説明しています。   スライド              ","categories": ["Updates"],
         "tags": ["スライドあり"],
         "url": "/ocidocs/updates/db-update-FY24Q4/",
         "teaser": "https://files.speakerdeck.com/presentations/902a6281175c47d4918c8c28651f5e80/slide_0.jpg"
+      },{
+        "title": "組織管理(Organization Management)概要",
+        "excerpt":"OCIの技術説明資料 組織管理 (Organization Management) の概要資料です。 複数のテナンシの請求やコスト管理を一元化できる機能である「組織管理」に関して解説しています。   スライド           ","categories": ["Services","Governance and Administration"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "/ocidocs/services/governance%20and%20administration/organization/",
+        "teaser": "https://files.speakerdeck.com/presentations/a7d1e15509464d9daefa9609a01c6d6c/slide_0.jpg"
       },{
         "title": "OCI コスト管理",
         "excerpt":"OCIのコスト管理に関連した機能の説明資料です。 各リソースがどのくらいコストを消費しているのかの分析や、予算オーバーしないために役立つ機能などをご紹介しています。      テナンシ、コンパートメント、タグ 　- コスト分析、コストおよび使用状況レポート 　- 割当て制限（Quota）、予算（Budget）   クラウド・アドバイザ（Cloud Advisor）、Cost Estimator   2024/8：初版アップロード   スライド         ","categories": ["Services","Governance and Administration"],
@@ -820,6 +790,12 @@ var store = [{
         "tags": ["スライドあり","動画あり"],
         "url": "/ocidocs/updates/update-FY24Q4/",
         "teaser": "https://files.speakerdeck.com/presentations/07fc975104944594b35319c8db53292c/slide_0.jpg"
+      },{
+        "title": "Email Deliveryサービス 概要",
+        "excerpt":"OCI Email Deliveryサービスは、OCI内外に配置されたサービスやアプリケーションから、確実にEmailを配信したい場合に利用することができるマネージドサービスです。  この資料では、OCI Email Deliveryサービスについて、サービスの概観、特徴、利用方法などの基礎的な内容について解説しています。   スライド         ","categories": ["Services","Edge Service"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/services/edge%20service/email-delivery-100/",
+        "teaser": "https://files.speakerdeck.com/presentations/ee67829f073544f2a04c016a114501ac/slide_0.jpg"
       },{
         "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2024/6 - 2024/8",
         "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介しています。 2024年6月～2024年8月の3ヶ月分の新機能について説明しています。   スライド              ","categories": ["Updates"],
@@ -845,6 +821,24 @@ var store = [{
         "url": "/ocidocs/services/compute/SecureDesktop/",
         "teaser": "https://files.speakerdeck.com/presentations/c2048e5e9c15469ca304b55f39429794/slide_0.jpg"
       },{
+        "title": "コンピュート概要",
+        "excerpt":"OCI上で仮想マシンやベアメタル・サーバーを利用することができるコンピュート・サービスについての概要資料です。  インスタンスの種類、イメージの操作、ブート・ボリューム、インスタンス・プールを利用した自動スケーリング、インスタンス・メタデータについて解説しています。   スライド (2020/10/20更新)             動画その1 (2020/4/21収録)         動画その2 : 28分32秒~ (2020/4/21収録)        ","categories": ["Services","Compute"],
+        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
+        "url": "/ocidocs/services/compute/compute-100/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/cf71c90194e445c4812a671235389dff/slide_0.jpg"
+      },{
+        "title": "Oracle Cloud Infrastructure 概要",
+        "excerpt":"OCIに初めて触れる人のために、OCI全般の特長や、アーキテクチャについて解説しています。   スライド           関連動画        ","categories": ["Services","Overall"],
+        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
+        "url": "/ocidocs/services/overall/oracle-cloud-infrastructure-overview/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/63c6514d88204918bc3e572bd3183589/slide_0.jpg"
+      },{
+        "title": "自動スケーリング機能をさわってみよう",
+        "excerpt":"自動スケーリング機能 (Auto Scaling) の解説資料です。2019年8月27日のOCIスキルアップセミナーで使用しました。  OCIの自動スケーリング機能と、それを支えるコンポーネント(インスタンス構成、インスタンス・プール、自動スケーリング構成)を実際に触って動作を理解します。   スライド          ","categories": ["Services","Compute"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "/ocidocs/services/compute/autoscaling/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/3277a22d639b4857b185569a6181278c/slide_0.jpg"
+      },{
         "title": "OS管理ハブ概要",
         "excerpt":"OCI、オンプレミス、サードパーティ・クラウド上のインスタンスのパッチ適用、パッケージ管理の一元化と自動化を可能にするOCI提供のサービス「OS管理ハブ」の概要を解説しています。   スライド           ","categories": ["Services","Compute"],
         "tags": ["スライドあり","レベル:入門(100)"],
@@ -868,6 +862,12 @@ var store = [{
         "tags": ["スライドあり","レベル:応用(200)"],
         "url": "/ocidocs/services/edge%20service/health-check-and-traffic-management/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/ad44958c474941c0a69dd6be27eda8dd/slide_0.jpg"
+      },{
+        "title": "コンピュート詳細",
+        "excerpt":"OCI上で仮想マシンやベアメタル・サーバーを利用することができるコンピュート・サービスについての詳細資料です。  カスタム・イメージの応用、仮想マシンイメージの持ち込み(BYOI)、ハイパーバイザーの利用、メトリックと自動スケーリング、コンソール接続、などのコンピュート・サービスの応用的な使い方について解説しています。   スライド          ","categories": ["Services","Compute"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "/ocidocs/services/compute/compute-200/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/90e8e852d1c8443787f6f33e7e721177/slide_0.jpg"
       },{
         "title": "Oracle Cloud Migrations Service概要",
         "excerpt":"Oracle Cloud Migrationsサービスの概要資料です。Oracle Cloud Migrations は、OCIに移行を行うためのOCIネイティブなサービスです。VMwareとAWS EC2からOCIコンピュート・インスタンスへの移行をサポートしています。   スライド             ","categories": ["Services","Compute"],
