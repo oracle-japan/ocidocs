@@ -874,4 +874,10 @@ var store = [{
         "tags": ["スライドあり","動画あり","レベル:入門(100)"],
         "url": "/ocidocs/services/compute/oracle-cloud-migrations/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/705d4256bd6d4d7b8cee3f346d213f8d/slide_0.jpg"
+      },{
+        "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2024/9 - 2024/11",
+        "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介しています。 2024年9月～2024年11月の3ヶ月分の新機能について説明しています。   スライド               ","categories": ["Updates"],
+        "tags": ["スライドあり","動画あり"],
+        "url": "/ocidocs/updates/update-FY25Q2/",
+        "teaser": "https://files.speakerdeck.com/presentations/365e62a7d2464aa7b2598d5587f1479d/slide_0.jpg"
       }]
