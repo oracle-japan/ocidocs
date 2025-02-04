@@ -347,12 +347,6 @@ var store = [{
         "url": "/ocidocs/services/security/security-and-compliance/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/6f43aa858b3e41b79582df43f7ce2829/slide_0.jpg"
       },{
-        "title": "ファイル・ストレージ概要",
-        "excerpt":"VCN内にエンド・ポイントを持つマネージドNFSサービスである、OCIファイル・ストレージ・サービスについて解説しています。  ファイル・ストレージ・サービスのユースケースの他、サービスを構成する基本的なコンポーネントと役割、インスタンスからのアクセス、セキュリティ、スナップショット機能についてカバーしています。   スライド           動画      ","categories": ["Services","Storage"],
-        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
-        "url": "/ocidocs/services/storage/file-storage-100/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/f74062dcf2a84dbdba4a49bb4964ef67/slide_0.jpg"
-      },{
         "title": "モニタリング機能概要",
         "excerpt":"モニタリング・サービスの概要資料です   スライド           動画      ","categories": ["Services","Governance and Administration"],
         "tags": ["スライドあり","レベル:入門(100)"],
@@ -886,4 +880,10 @@ var store = [{
         "tags": ["スライドあり"],
         "url": "/ocidocs/updates/db-update-FY25Q2/",
         "teaser": "https://files.speakerdeck.com/presentations/06e0ecb97d2d4aef80912b826c8fc311/slide_0.jpg"
+      },{
+        "title": "ファイル・ストレージ概要",
+        "excerpt":"VCN内にエンド・ポイントを持つマネージドNFSサービスである、OCIファイル・ストレージ・サービスについて解説しています。  ファイル・ストレージ・サービスのユースケースの他、サービスを構成する基本的なコンポーネントと役割、インスタンスからのアクセス、セキュリティ、スナップショット機能についてカバーしています。   スライド           動画      ","categories": ["Services","Storage"],
+        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
+        "url": "/ocidocs/services/storage/file-storage-100/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/f74062dcf2a84dbdba4a49bb4964ef67/slide_0.jpg"
       }]

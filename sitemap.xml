@@ -233,10 +233,6 @@
 <lastmod>2021-09-28T00:00:00+09:00</lastmod>
 </url>
 <url>
-<loc>https://oracle-japan.github.io/ocidocs/services/storage/file-storage-100/</loc>
-<lastmod>2021-09-29T00:00:00+09:00</lastmod>
-</url>
-<url>
 <loc>https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/monitoring/</loc>
 <lastmod>2021-10-07T00:00:00+09:00</lastmod>
 </url>
@@ -591,6 +587,10 @@
 <url>
 <loc>https://oracle-japan.github.io/ocidocs/updates/db-update-FY25Q2/</loc>
 <lastmod>2024-12-13T00:00:00+09:00</lastmod>
+</url>
+<url>
+<loc>https://oracle-japan.github.io/ocidocs/services/storage/file-storage-100/</loc>
+<lastmod>2024-12-25T00:00:00+09:00</lastmod>
 </url>
 <url>
 <loc>https://oracle-japan.github.io/ocidocs/about/</loc>
