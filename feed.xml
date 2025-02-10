@@ -1,4 +1,53 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2025-02-04T14:15:52+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">ファイル・ストレージ概要</title><link href="https://oracle-japan.github.io/ocidocs/services/storage/file-storage-100/" rel="alternate" type="text/html" title="ファイル・ストレージ概要" /><published>2024-12-25T00:00:00+09:00</published><updated>2024-12-25T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/storage/file-storage-100</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/storage/file-storage-100/"><![CDATA[<p>VCN内にエンド・ポイントを持つマネージドNFSサービスである、OCIファイル・ストレージ・サービスについて解説しています。<br />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2025-02-10T12:01:58+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">外部接続 詳細 - FastConnectの冗長性</title><link href="https://oracle-japan.github.io/ocidocs/services/networking/connectivity_redundancy/" rel="alternate" type="text/html" title="外部接続 詳細 - FastConnectの冗長性" /><published>2025-02-06T00:00:00+09:00</published><updated>2025-02-06T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/networking/connectivity_redundancy</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/networking/connectivity_redundancy/"><![CDATA[<p>OCIの技術説明資料：外部接続 詳細 - FastConnectの冗長性 です。
+お客様ネットワークとOracle Cloud Infrastructure(OCI)間をプライベート回線で接続するサービス「FastConnect」の冗長化を構成する際の考慮点について解説しています。</p>
+
+<h4 id="スライド">スライド</h4>
+
+<div style="max-width:768px">
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
+<script async="" class="speakerdeck-embed" data-id="1461985b53674d799e36988a2f20f886" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
+
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Networking" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html"><![CDATA[お客様ネットワークとOracle Cloud Infrastructure(OCI)間をプライベート回線で接続するサービス「FastConnect」の冗長化を構成する際の考慮点について解説しています。]]></summary></entry><entry><title type="html">ロード・バランサー 概要 FLB・NLB共通</title><link href="https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-100/" rel="alternate" type="text/html" title="ロード・バランサー 概要 FLB・NLB共通" /><published>2025-01-31T00:00:00+09:00</published><updated>2025-01-31T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-100</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-100/"><![CDATA[<p>バックエンドに配置した様々なサービスの冗長性やスケーリングをサポートする OCI ロード・バランサー・サービスについて、その機能概要、FLBとNLBの種類、構成コンポーネントの内容、OCIコンソールを利用した構成方法などについて解説しています。</p>
+
+<h4 id="スライド">スライド</h4>
+
+<div style="max-width:768px">
+
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
+<script async="" class="speakerdeck-embed" data-id="78914498b3c14b97a112f59283b754b7" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
+
+</div>
+
+<h4 id="セミナー動画">セミナー動画</h4>
+
+<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください -->
+<div style="max-width:768px"><div style="position:relative;padding-bottom:56.25%"><iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/2171811/sp/217181100/embedIframeJs/uiconf_id/35965902/partner_id/2171811?iframeembed=true&amp;playerId=kaltura_player&amp;entry_id=0_pgchkk4i&amp;flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[hotspots.plugin]=1&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&amp;wid=1_c428rwns" width="768" height="432" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player" style="position:absolute;top:0;left:0;width:100%;height:100%"></iframe></div></div>
+<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) -->]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Networking" /><category term="スライドあり" /><category term="動画あり" /><category term="レベル:入門(100)" /><summary type="html"><![CDATA[OCIロード・バランサー・サービスについて、その機能概要、FLBとNLBの種類、構成コンポーネントの内容、OCIコンソールを利用した構成方法などについて解説しています]]></summary></entry><entry><title type="html">ロード・バランサー FLB 詳細</title><link href="https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-FLB-200/" rel="alternate" type="text/html" title="ロード・バランサー FLB 詳細" /><published>2025-01-31T00:00:00+09:00</published><updated>2025-01-31T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-FLB-200</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-FLB-200/"><![CDATA[<p>様々なサービスの冗長性やスケーリングをサポートする OCI ロード・バランサー・サービス（FLB）について、応用的な利用方法について解説したドキュメントです。<br />
+セッション永続性、仮想ホストによるルーティング、URIパス・ベース・ルーティング、SSL通信方式とロード・バランサーでのSSLターミネーションの設定、ロード・バランサーが収集するメトリック、トラブル時の対応ガイドラインについて解説しています。</p>
+
+<h4 id="スライド">スライド</h4>
+
+<div style="max-width:768px">
+
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
+<script async="" class="speakerdeck-embed" data-id="9ca991733d2a4670bdd4e5ed5b5770c4" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
+
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Networking" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html"><![CDATA[OCI ロード・バランサー・サービス（FLB）について、レイヤー7でのルーティング、SSLターミネーション、ロード・バランサーが収集するメトリック、トラブル時の対応ガイドラインなどの応用的な利用方法について解説しています]]></summary></entry><entry><title type="html">ロード・バランサー NLB 詳細</title><link href="https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-NLB-200/" rel="alternate" type="text/html" title="ロード・バランサー NLB 詳細" /><published>2025-01-31T00:00:00+09:00</published><updated>2025-01-31T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-NLB-200</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-NLB-200/"><![CDATA[<p>OCI ネットワーク・ロード・バランサー・サービス（NLB）について、全体的な構成要素、それぞれの要素や利用方法について解説しています。</p>
+
+<h4 id="スライド">スライド</h4>
+
+<div style="max-width:768px">
+
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
+<script async="" class="speakerdeck-embed" data-id="1e8f6d5abba64ea1b92c1112b392f6fc" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
+
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Networking" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html"><![CDATA[OCI ネットワーク・ロード・バランサー・サービス（NLB）について、全体的な構成要素の解説や利用方法について解説しています]]></summary></entry><entry><title type="html">ファイル・ストレージ概要</title><link href="https://oracle-japan.github.io/ocidocs/services/storage/file-storage-100/" rel="alternate" type="text/html" title="ファイル・ストレージ概要" /><published>2024-12-25T00:00:00+09:00</published><updated>2024-12-25T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/storage/file-storage-100</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/storage/file-storage-100/"><![CDATA[<p>VCN内にエンド・ポイントを持つマネージドNFSサービスである、OCIファイル・ストレージ・サービスについて解説しています。<br />
 ファイル・ストレージ・サービスのユースケースの他、サービスを構成する基本的なコンポーネントと役割、インスタンスからのアクセス、セキュリティ、スナップショット機能についてカバーしています。</p>
 
 <h4 id="スライド">スライド</h4>
@@ -79,46 +128,4 @@
 <script async="" class="speakerdeck-embed" data-id="64935bd8917b4707aaa7a1f0614864fa" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 <!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
 
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Edge Service" /><category term="スライドあり" /><category term="動画あり" /><category term="レベル:入門(100)" /><summary type="html"><![CDATA[インターネット上の名前解決を提供する権威DNSサービスであるOCI DNSサービスについて、サービスの概要、特長、利用方法、ユースケースなどについて解説していま]]></summary></entry><entry><title type="html">イベント・サービス概要</title><link href="https://oracle-japan.github.io/ocidocs/services/developers/events-service/" rel="alternate" type="text/html" title="イベント・サービス概要" /><published>2024-10-24T00:00:00+09:00</published><updated>2024-10-24T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/developers/events-service</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/developers/events-service/"><![CDATA[<p>クラウド上のリソースの変化を捉え、サービスが自動的に連動する仕組みを実現する、イベント・サービスの概要資料です。</p>
-
-<h4 id="スライド">スライド</h4>
-
-<div style="max-width:768px">
-
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-<script async="" class="speakerdeck-embed" data-id="7f8bb60e28a5437ab6c40dd664de8b49" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
-
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Developers" /><category term="スライドあり" /><category term="レベル:入門(100)" /><summary type="html"><![CDATA[イベント・サービスの概要資料です]]></summary></entry><entry><title type="html">ヘルスチェック &amp;amp; トラフィック管理</title><link href="https://oracle-japan.github.io/ocidocs/services/edge%20service/health-check-and-traffic-management/" rel="alternate" type="text/html" title="ヘルスチェック &amp;amp; トラフィック管理" /><published>2024-10-24T00:00:00+09:00</published><updated>2024-10-24T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/edge%20service/health-check-and-traffic-management</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/edge%20service/health-check-and-traffic-management/"><![CDATA[<p>OCIのエッジ・サービスを構成するサービスで、インターネットに面したアプリケーションを外部からアクティブに監視したり(ヘルスチェック)、バックエンドのサービスの稼動状態やクライアントのプロファイルに応じてグローバルにトラフィックの振り分けを行うGTM機能を提供(トラフィック管理)します。</p>
-
-<h4 id="スライド">スライド</h4>
-
-<div style="max-width:768px">
-
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-<script async="" class="speakerdeck-embed" data-id="ad44958c474941c0a69dd6be27eda8dd" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
-
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Edge Service" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html"><![CDATA[インターネットに面したアプリケーションを外部からアクティブに監視したり(ヘルスチェック)、バックエンドのサービスの稼動状態やクライアントのプロファイルに応じてグローバルにトラフィックの振り分けを行うGTM機能を提供(トラフィック管理)します]]></summary></entry><entry><title type="html">自動スケーリング機能をさわってみよう</title><link href="https://oracle-japan.github.io/ocidocs/services/compute/autoscaling/" rel="alternate" type="text/html" title="自動スケーリング機能をさわってみよう" /><published>2024-10-16T00:00:00+09:00</published><updated>2024-10-16T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/compute/autoscaling</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/compute/autoscaling/"><![CDATA[<p>自動スケーリング機能 (Auto Scaling) の解説資料です。2019年8月27日のOCIスキルアップセミナーで使用しました。<br />
-OCIの自動スケーリング機能と、それを支えるコンポーネント(インスタンス構成、インスタンス・プール、自動スケーリング構成)を実際に触って動作を理解します。</p>
-
-<h4 id="スライド">スライド</h4>
-
-<div style="max-width:768px">
-
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-<script async="" class="speakerdeck-embed" data-id="3277a22d639b4857b185569a6181278c" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
-
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Compute" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html"><![CDATA[OCIの自動スケーリング機能と、それを支えるコンポーネント(インスタンス構成、インスタンス・プール、自動スケーリング構成)を実際に触って動作を理解します]]></summary></entry><entry><title type="html">OS管理ハブ概要</title><link href="https://oracle-japan.github.io/ocidocs/services/compute/osmh/" rel="alternate" type="text/html" title="OS管理ハブ概要" /><published>2024-10-16T00:00:00+09:00</published><updated>2024-10-16T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/compute/osmh</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/compute/osmh/"><![CDATA[<p>OCI、オンプレミス、サードパーティ・クラウド上のインスタンスのパッチ適用、パッケージ管理の一元化と自動化を可能にするOCI提供のサービス「OS管理ハブ」の概要を解説しています。</p>
-
-<h4 id="スライド">スライド</h4>
-
-<div style="max-width:768px">
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-
-<script defer="" class="speakerdeck-embed" data-id="430dcf8539b746ea94a010c17780a663" data-ratio="1.7777777777777777" src="//speakerdeck.com/assets/embed.js"></script>
-
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
-
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Compute" /><category term="スライドあり" /><category term="レベル:入門(100)" /><summary type="html"><![CDATA[OS管理ハブの概要資料です。]]></summary></entry></feed>
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Edge Service" /><category term="スライドあり" /><category term="動画あり" /><category term="レベル:入門(100)" /><summary type="html"><![CDATA[インターネット上の名前解決を提供する権威DNSサービスであるOCI DNSサービスについて、サービスの概要、特長、利用方法、ユースケースなどについて解説していま]]></summary></entry></feed>

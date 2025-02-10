@@ -605,18 +605,6 @@ var store = [{
         "url": "/ocidocs/updates/update-FY23Q1/",
         "teaser": "https://files.speakerdeck.com/presentations/ff2ded79d397495f8e2dc25b0ac27523/slide_0.jpg"
       },{
-        "title": "ロード・バランサー 概要",
-        "excerpt":"バックエンドに配置した様々なサービスの冗長性やスケーリングをサポートする OCI ロード・バランサー・サービスについて、その機能概要、構成コンポーネントの内容、OCIコンソールを利用した構成方法などについて解説しています。  2022/9/26 更新 : サービスのアップデートに合わせて、全般的に記述を見直しました。   スライド           セミナー動画      ","categories": ["Services","Networking"],
-        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
-        "url": "/ocidocs/services/networking/load-balancer-100/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/78914498b3c14b97a112f59283b754b7/slide_0.jpg"
-      },{
-        "title": "ロード・バランサー 詳細",
-        "excerpt":"様々なサービスの冗長性やスケーリングをサポートする OCI ロード・バランサー・サービスについて、応用的な利用方法について解説したドキュメントです。  セッション永続性、仮想ホストによるルーティング、URIパス・ベース・ルーティング、SSL通信方式とロード・バランサーでのSSLターミネーションの設定、ロード・バランサーが収集するメトリック、トラブル時の対応ガイドラインについて解説しています。  2022/9/26更新 : サービスのアップデートに合わせて全般的に記述を見直しました。   スライド          ","categories": ["Services","Networking"],
-        "tags": ["スライドあり","レベル:応用(200)"],
-        "url": "/ocidocs/services/networking/load-balancer-200/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/9ca991733d2a4670bdd4e5ed5b5770c4/slide_0.jpg"
-      },{
         "title": "Oracle Cloud Infrastructure ご利用ガイド / Onboading Session",
         "excerpt":" Onboarding Sessionとは、Oracle PaaS &amp; IaaSのサービスの開始＆サインイン方法や基本的なユーザ管理及びサポートサービスについてご紹介します。サービスの利用を開始するお客様に最適な内容となっております。    スライド - その1 ご利用ガイド (2020/11/15更新)             スライド - その2 サポートサービスご案内 (2020/11/15更新)             セミナー動画 (2020/11/15収録)        ","categories": ["Services","Overall"],
         "tags": ["スライド","動画","レベル:入門(100)"],
@@ -773,12 +761,6 @@ var store = [{
         "url": "/ocidocs/services/governance%20and%20administration/cost-management/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/4541d035c9b4444bb7b1c2ea5ed032d8/slide_0.jpg"
       },{
-        "title": "外部接続 詳細 - FastConnectの冗長性",
-        "excerpt":"OCIの技術説明資料：外部接続 詳細 - FastConnectの冗長性 です。 お客様ネットワークとOracle Cloud Infrastructure(OCI)間をプライベート回線で接続するサービス「FastConnect」の冗長化を構成する際の考慮点について解説しています。   スライド           ","categories": ["Services","Networking"],
-        "tags": ["スライドあり","レベル:応用(200)"],
-        "url": "/ocidocs/services/networking/connectivity_redundancy/",
-        "teaser": "https://files.speakerdeck.com/presentations/1461985b53674d799e36988a2f20f886/slide_0.jpg"
-      },{
         "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2024/3 - 2024/5",
         "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介しています。 2024年3月～2024年5月の3ヶ月分の新機能について説明しています。   スライド                ","categories": ["Updates"],
         "tags": ["スライドあり","動画あり"],
@@ -886,4 +868,28 @@ var store = [{
         "tags": ["スライドあり","動画あり","レベル:入門(100)"],
         "url": "/ocidocs/services/storage/file-storage-100/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/f74062dcf2a84dbdba4a49bb4964ef67/slide_0.jpg"
+      },{
+        "title": "ロード・バランサー 概要 FLB・NLB共通",
+        "excerpt":"バックエンドに配置した様々なサービスの冗長性やスケーリングをサポートする OCI ロード・バランサー・サービスについて、その機能概要、FLBとNLBの種類、構成コンポーネントの内容、OCIコンソールを利用した構成方法などについて解説しています。   スライド           セミナー動画      ","categories": ["Services","Networking"],
+        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
+        "url": "/ocidocs/services/networking/load-balancer-100/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/78914498b3c14b97a112f59283b754b7/slide_0.jpg"
+      },{
+        "title": "ロード・バランサー FLB 詳細",
+        "excerpt":"様々なサービスの冗長性やスケーリングをサポートする OCI ロード・バランサー・サービス（FLB）について、応用的な利用方法について解説したドキュメントです。  セッション永続性、仮想ホストによるルーティング、URIパス・ベース・ルーティング、SSL通信方式とロード・バランサーでのSSLターミネーションの設定、ロード・バランサーが収集するメトリック、トラブル時の対応ガイドラインについて解説しています。   スライド          ","categories": ["Services","Networking"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "/ocidocs/services/networking/load-balancer-FLB-200/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/9ca991733d2a4670bdd4e5ed5b5770c4/slide_0.jpg"
+      },{
+        "title": "ロード・バランサー NLB 詳細",
+        "excerpt":"OCI ネットワーク・ロード・バランサー・サービス（NLB）について、全体的な構成要素、それぞれの要素や利用方法について解説しています。   スライド          ","categories": ["Services","Networking"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "/ocidocs/services/networking/load-balancer-NLB-200/",
+        "teaser": "https://files.speakerdeck.com/presentations/1e8f6d5abba64ea1b92c1112b392f6fc/slide_0.jpg"
+      },{
+        "title": "外部接続 詳細 - FastConnectの冗長性",
+        "excerpt":"OCIの技術説明資料：外部接続 詳細 - FastConnectの冗長性 です。 お客様ネットワークとOracle Cloud Infrastructure(OCI)間をプライベート回線で接続するサービス「FastConnect」の冗長化を構成する際の考慮点について解説しています。   スライド           ","categories": ["Services","Networking"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "/ocidocs/services/networking/connectivity_redundancy/",
+        "teaser": "https://files.speakerdeck.com/presentations/1461985b53674d799e36988a2f20f886/slide_0.jpg"
       }]
