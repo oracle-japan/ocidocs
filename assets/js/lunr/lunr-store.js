@@ -449,12 +449,6 @@ var store = [{
         "url": "/ocidocs/updates/updates-blog/",
         "teaser": "https://cdn.app.compendium.com/uploads/user/e7c690e8-6ff9-102a-ac6d-e4aebca50425/36fb492f-3532-48e4-a057-f2b674a19de1/File/b5a9121425a0e376b622e07247bd054e/image_20201202094512173.png"
       },{
-        "title": "自動スケーリング概要",
-        "excerpt":"自動スケーリング機能 (Auto Scaling) の概要資料です。OCIの自動スケーリング機能と、それを支えるコンポーネント(インスタンス構成、インスタンス・プール、自動スケーリング構成)について解説しています。   スライド           ","categories": ["Services","Compute"],
-        "tags": ["スライドあり","レベル:入門(100)","レベル:応用(200)"],
-        "url": "/ocidocs/services/compute/autoscaling/",
-        "teaser": "https://files.speakerdeck.com/presentations/4385d06e60e14edf8b5432b19bc08924/slide_0.jpg"
-      },{
         "title": "動的ルーティング・ゲートウェイ (DRG) 概要",
         "excerpt":"OCIの技術説明資料 動的ルーティング・ゲートウェイ (DRG) の概要資料です。 Oracle Cloud Infrastructure リージョンにおいて、ネットワーク間の接続機能を提供するDRGについて解説しています。   スライド          ","categories": ["Services","Networking"],
         "tags": ["スライドあり","レベル:入門(100)","レベル:応用(200)"],
@@ -797,29 +791,17 @@ var store = [{
         "url": "/ocidocs/services/compute/SecureDesktop/",
         "teaser": "https://files.speakerdeck.com/presentations/c2048e5e9c15469ca304b55f39429794/slide_0.jpg"
       },{
-        "title": "コンピュート概要",
-        "excerpt":"OCI上で仮想マシンやベアメタル・サーバーを利用することができるコンピュート・サービスについての概要資料です。  インスタンスの種類、イメージの操作、ブート・ボリューム、インスタンス・プールを利用した自動スケーリング、インスタンス・メタデータについて解説しています。   スライド (2020/10/20更新)             動画その1 (2020/4/21収録)         動画その2 : 28分32秒~ (2020/4/21収録)        ","categories": ["Services","Compute"],
-        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
-        "url": "/ocidocs/services/compute/compute-100/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/cf71c90194e445c4812a671235389dff/slide_0.jpg"
-      },{
         "title": "Oracle Cloud Infrastructure 概要",
         "excerpt":"OCIに初めて触れる人のために、OCI全般の特長や、アーキテクチャについて解説しています。   スライド           関連動画        ","categories": ["Services","Overall"],
         "tags": ["スライドあり","動画あり","レベル:入門(100)"],
         "url": "/ocidocs/services/overall/oracle-cloud-infrastructure-overview/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/63c6514d88204918bc3e572bd3183589/slide_0.jpg"
       },{
-        "title": "自動スケーリング機能をさわってみよう",
-        "excerpt":"自動スケーリング機能 (Auto Scaling) の解説資料です。2019年8月27日のOCIスキルアップセミナーで使用しました。  OCIの自動スケーリング機能と、それを支えるコンポーネント(インスタンス構成、インスタンス・プール、自動スケーリング構成)を実際に触って動作を理解します。   スライド          ","categories": ["Services","Compute"],
-        "tags": ["スライドあり","レベル:応用(200)"],
+        "title": "自動スケーリング概要",
+        "excerpt":"自動スケーリング機能 (Auto Scaling) の概要資料です。OCIの自動スケーリング機能と、それを支えるコンポーネント(インスタンス構成、インスタンス・プール、自動スケーリング構成)について解説しています。   スライド           ","categories": ["Services","Compute"],
+        "tags": ["スライドあり","レベル:入門(100)","レベル:応用(200)"],
         "url": "/ocidocs/services/compute/autoscaling/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/3277a22d639b4857b185569a6181278c/slide_0.jpg"
-      },{
-        "title": "OS管理ハブ概要",
-        "excerpt":"OCI、オンプレミス、サードパーティ・クラウド上のインスタンスのパッチ適用、パッケージ管理の一元化と自動化を可能にするOCI提供のサービス「OS管理ハブ」の概要を解説しています。   スライド           ","categories": ["Services","Compute"],
-        "tags": ["スライドあり","レベル:入門(100)"],
-        "url": "/ocidocs/services/compute/osmh/",
-        "teaser": "https://files.speakerdeck.com/presentations/430dcf8539b746ea94a010c17780a663/slide_0.jpg"
+        "teaser": "https://files.speakerdeck.com/presentations/4385d06e60e14edf8b5432b19bc08924/slide_0.jpg"
       },{
         "title": "DNS 概要",
         "excerpt":"インターネット上の名前解決を提供する権威DNSサービスであるOCI DNSサービスについて、サービスの概要、特長、利用方法、ユースケースなどについて解説しています。   スライド           ","categories": ["Services","Edge Service"],
@@ -869,6 +851,12 @@ var store = [{
         "url": "/ocidocs/services/storage/file-storage-100/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/f74062dcf2a84dbdba4a49bb4964ef67/slide_0.jpg"
       },{
+        "title": "OS管理ハブ概要",
+        "excerpt":"OCI、オンプレミス、サードパーティ・クラウド上のインスタンスのパッチ適用、パッケージ管理の一元化と自動化を可能にするOCI提供のサービス「OS管理ハブ」の概要を解説しています。   スライド           ","categories": ["Services","Compute"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/services/compute/osmh/",
+        "teaser": "https://files.speakerdeck.com/presentations/430dcf8539b746ea94a010c17780a663/slide_0.jpg"
+      },{
         "title": "ロード・バランサー 概要 FLB・NLB共通",
         "excerpt":"バックエンドに配置した様々なサービスの冗長性やスケーリングをサポートする OCI ロード・バランサー・サービスについて、その機能概要、FLBとNLBの種類、構成コンポーネントの内容、OCIコンソールを利用した構成方法などについて解説しています。   スライド           セミナー動画      ","categories": ["Services","Networking"],
         "tags": ["スライドあり","動画あり","レベル:入門(100)"],
@@ -892,4 +880,10 @@ var store = [{
         "tags": ["スライドあり","レベル:応用(200)"],
         "url": "/ocidocs/services/networking/connectivity_redundancy/",
         "teaser": "https://files.speakerdeck.com/presentations/1461985b53674d799e36988a2f20f886/slide_0.jpg"
+      },{
+        "title": "コンピュート概要",
+        "excerpt":"OCI上で仮想マシンやベアメタル・サーバーを利用することができるコンピュート・サービスについての概要資料です。  インスタンスの種類、イメージの操作、ブート・ボリューム、インスタンス・プールを利用した自動スケーリング、インスタンス・メタデータについて解説しています。   スライド (2020/10/20更新)             動画その1 (2020/4/21収録)         動画その2 : 28分32秒~ (2020/4/21収録)        ","categories": ["Services","Compute"],
+        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
+        "url": "/ocidocs/services/compute/compute-100/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/cf71c90194e445c4812a671235389dff/slide_0.jpg"
       }]
