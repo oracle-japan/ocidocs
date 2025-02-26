@@ -731,12 +731,6 @@ var store = [{
         "url": "/ocidocs/faq/services/autonomous/autonomous-database-faq/",
         "teaser": null
       },{
-        "title": "Oracle Cloud Infrastructure サービス基本情報",
-        "excerpt":"ログインに始まり、言語の変更、サービス制限、OCID、検索など、主にOCIコンソールの基本的情報について解説しています。   スライド           関連動画       ","categories": ["Services","Overall"],
-        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
-        "url": "/ocidocs/services/overall/service-essentials/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/dadec91d58b24202a8af17f075301fba/slide_0.jpg"
-      },{
         "title": "OCI Oracle Database Services新機能アップデート 2024/3 - 2024/5",
         "excerpt":"Oracle Cloud Infrastructureの新機能の中から、OCI Oracle Database Servicesに関するアップデート情報をまとめてご紹介しています。  2024年3月～2024年5月の3ヶ月分の新機能について説明しています。   スライド              ","categories": ["Updates"],
         "tags": ["スライドあり"],
@@ -886,4 +880,10 @@ var store = [{
         "tags": ["スライドあり","動画あり","レベル:入門(100)"],
         "url": "/ocidocs/services/compute/compute-100/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/cf71c90194e445c4812a671235389dff/slide_0.jpg"
+      },{
+        "title": "Oracle Cloud Infrastructure サービス基本情報",
+        "excerpt":"ログインに始まり、言語の変更、サービス制限、OCID、検索など、主にOCIコンソールの基本的情報について解説しています。   スライド           関連動画       ","categories": ["Services","Overall"],
+        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
+        "url": "/ocidocs/services/overall/service-essentials/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/dadec91d58b24202a8af17f075301fba/slide_0.jpg"
       }]
