@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2025-02-26T16:29:24+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">Oracle Cloud Infrastructure サービス基本情報</title><link href="https://oracle-japan.github.io/ocidocs/services/overall/service-essentials/" rel="alternate" type="text/html" title="Oracle Cloud Infrastructure サービス基本情報" /><published>2025-02-26T00:00:00+09:00</published><updated>2025-02-26T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/overall/service-essentials</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/overall/service-essentials/"><![CDATA[<p>ログインに始まり、言語の変更、サービス制限、OCID、検索など、主にOCIコンソールの基本的情報について解説しています。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2025-02-27T13:39:06+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">組織管理(Organization Management)概要</title><link href="https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/organization/" rel="alternate" type="text/html" title="組織管理(Organization Management)概要" /><published>2025-02-27T00:00:00+09:00</published><updated>2025-02-27T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/organization</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/organization/"><![CDATA[<p>OCIの技術説明資料 組織管理 (Organization Management) の概要資料です。
+複数のテナンシの請求やコスト管理を一元化できる機能である「組織管理」に関して解説しています。</p>
+
+<h4 id="スライド">スライド</h4>
+
+<div style="max-width:768px">
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
+
+<script async="" class="speakerdeck-embed" data-id="a7d1e15509464d9daefa9609a01c6d6c" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
+
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Governance and Administration" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html"><![CDATA[複数のテナンシの請求やコスト管理を一元化できる機能である「組織管理」に関して解説しています。]]></summary></entry><entry><title type="html">Oracle Cloud Infrastructure サービス基本情報</title><link href="https://oracle-japan.github.io/ocidocs/services/overall/service-essentials/" rel="alternate" type="text/html" title="Oracle Cloud Infrastructure サービス基本情報" /><published>2025-02-26T00:00:00+09:00</published><updated>2025-02-26T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/overall/service-essentials</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/overall/service-essentials/"><![CDATA[<p>ログインに始まり、言語の変更、サービス制限、OCID、検索など、主にOCIコンソールの基本的情報について解説しています。</p>
 
 <h4 id="スライド">スライド</h4>
 
@@ -130,20 +142,4 @@
 <!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください -->
 
 <!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) -->
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Updates" /><category term="スライドあり" /><summary type="html"><![CDATA[2024年9月～2024年11月の3ヶ月分のOCI Oracle Database Services新機能についてのまとめ資料です]]></summary></entry><entry><title type="html">Oracle Cloud Infrastructure IaaS 新機能アップデート 2024/9 - 2024/11</title><link href="https://oracle-japan.github.io/ocidocs/updates/update-FY25Q2/" rel="alternate" type="text/html" title="Oracle Cloud Infrastructure IaaS 新機能アップデート 2024/9 - 2024/11" /><published>2024-12-11T00:00:00+09:00</published><updated>2024-12-11T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/updates/update-FY25Q2</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/updates/update-FY25Q2/"><![CDATA[<p>Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介しています。
-2024年9月～2024年11月の3ヶ月分の新機能について説明しています。</p>
-
-<h4 id="スライド">スライド</h4>
-<div style="max-width:768px">
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-
-<script defer="" class="speakerdeck-embed" data-id="365e62a7d2464aa7b2598d5587f1479d" data-ratio="1.7777777777777777" src="//speakerdeck.com/assets/embed.js"></script>
-
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
-
-<!-- #### セミナー動画 -->
-
-<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください -->
-
-<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) -->
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Updates" /><category term="スライドあり" /><category term="動画あり" /><summary type="html"><![CDATA[2024年9月～2024年11月の3ヶ月分のOCI新機能についてのまとめ資料です]]></summary></entry></feed>
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Updates" /><category term="スライドあり" /><summary type="html"><![CDATA[2024年9月～2024年11月の3ヶ月分のOCI Oracle Database Services新機能についてのまとめ資料です]]></summary></entry></feed>

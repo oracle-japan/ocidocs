@@ -737,12 +737,6 @@ var store = [{
         "url": "/ocidocs/updates/db-update-FY24Q4/",
         "teaser": "https://files.speakerdeck.com/presentations/902a6281175c47d4918c8c28651f5e80/slide_0.jpg"
       },{
-        "title": "組織管理(Organization Management)概要",
-        "excerpt":"OCIの技術説明資料 組織管理 (Organization Management) の概要資料です。 複数のテナンシの請求やコスト管理を一元化できる機能である「組織管理」に関して解説しています。   スライド           ","categories": ["Services","Governance and Administration"],
-        "tags": ["スライドあり","レベル:応用(200)"],
-        "url": "/ocidocs/services/governance%20and%20administration/organization/",
-        "teaser": "https://files.speakerdeck.com/presentations/a7d1e15509464d9daefa9609a01c6d6c/slide_0.jpg"
-      },{
         "title": "OCI コスト管理",
         "excerpt":"OCIのコスト管理に関連した機能の説明資料です。 各リソースがどのくらいコストを消費しているのかの分析や、予算オーバーしないために役立つ機能などをご紹介しています。      テナンシ、コンパートメント、タグ 　- コスト分析、コストおよび使用状況レポート 　- 割当て制限（Quota）、予算（Budget）   クラウド・アドバイザ（Cloud Advisor）、Cost Estimator   2024/8：初版アップロード   スライド         ","categories": ["Services","Governance and Administration"],
         "tags": ["スライドあり","レベル:入門(100)"],
@@ -886,4 +880,10 @@ var store = [{
         "tags": ["スライドあり","動画あり","レベル:入門(100)"],
         "url": "/ocidocs/services/overall/service-essentials/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/dadec91d58b24202a8af17f075301fba/slide_0.jpg"
+      },{
+        "title": "組織管理(Organization Management)概要",
+        "excerpt":"OCIの技術説明資料 組織管理 (Organization Management) の概要資料です。 複数のテナンシの請求やコスト管理を一元化できる機能である「組織管理」に関して解説しています。   スライド           ","categories": ["Services","Governance and Administration"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "/ocidocs/services/governance%20and%20administration/organization/",
+        "teaser": "https://files.speakerdeck.com/presentations/a7d1e15509464d9daefa9609a01c6d6c/slide_0.jpg"
       }]

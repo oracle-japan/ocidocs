@@ -493,10 +493,6 @@
 <lastmod>2024-06-12T00:00:00+09:00</lastmod>
 </url>
 <url>
-<loc>https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/organization/</loc>
-<lastmod>2024-08-09T00:00:00+09:00</lastmod>
-</url>
-<url>
 <loc>https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/cost-management/</loc>
 <lastmod>2024-08-30T00:00:00+09:00</lastmod>
 </url>
@@ -591,6 +587,10 @@
 <url>
 <loc>https://oracle-japan.github.io/ocidocs/services/overall/service-essentials/</loc>
 <lastmod>2025-02-26T00:00:00+09:00</lastmod>
+</url>
+<url>
+<loc>https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/organization/</loc>
+<lastmod>2025-02-27T00:00:00+09:00</lastmod>
 </url>
 <url>
 <loc>https://oracle-japan.github.io/ocidocs/about/</loc>
