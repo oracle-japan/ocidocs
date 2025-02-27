@@ -69,10 +69,6 @@
 <lastmod>2020-11-13T00:00:00+09:00</lastmod>
 </url>
 <url>
-<loc>https://oracle-japan.github.io/ocidocs/services/storage/block-volume-100/</loc>
-<lastmod>2020-12-08T00:00:00+09:00</lastmod>
-</url>
-<url>
 <loc>https://oracle-japan.github.io/ocidocs/services/storage/storage-200/</loc>
 <lastmod>2020-12-08T00:00:00+09:00</lastmod>
 </url>
@@ -555,6 +551,10 @@
 <url>
 <loc>https://oracle-japan.github.io/ocidocs/updates/db-update-FY25Q2/</loc>
 <lastmod>2024-12-13T00:00:00+09:00</lastmod>
+</url>
+<url>
+<loc>https://oracle-japan.github.io/ocidocs/services/storage/block-volume-100/</loc>
+<lastmod>2024-12-23T00:00:00+09:00</lastmod>
 </url>
 <url>
 <loc>https://oracle-japan.github.io/ocidocs/services/storage/file-storage-100/</loc>

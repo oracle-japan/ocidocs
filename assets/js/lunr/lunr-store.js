@@ -101,12 +101,6 @@ var store = [{
         "url": "/ocidocs/services/governance%20and%20administration/managing-users/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/85242fdec3af4bc6b355d3580701a55f/slide_0.jpg"
       },{
-        "title": "ブロックボリューム概要",
-        "excerpt":"インスタンスにアタッチしてブロック・デバイスとして利用することができる、OCIブロック・ボリューム・サービスの基本的な内容について解説しています。また、DenseIO シェイプに内蔵される高速なローカルNVMeディスクについても説明しています。   スライド           動画 ~28分15秒      ","categories": ["Services","Storage"],
-        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
-        "url": "/ocidocs/services/storage/block-volume-100/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/b80073aa58a141638ad5ba432009ba59/slide_0.jpg"
-      },{
         "title": "ストレージ詳細",
         "excerpt":"OCIのストレージサービス全般について応用的なトピックを扱った資料です。DenseIOインスタンスに内蔵されるローカルNVMe、ブロック・ボリューム、ファイル・ストレージそれぞれの性能、ボリューム・グループなどについて解説しています。   スライド          ","categories": ["Services","Storage"],
         "tags": ["スライドあり","レベル:応用(200)"],
@@ -832,6 +826,12 @@ var store = [{
         "tags": ["スライドあり"],
         "url": "/ocidocs/updates/db-update-FY25Q2/",
         "teaser": "https://files.speakerdeck.com/presentations/06e0ecb97d2d4aef80912b826c8fc311/slide_0.jpg"
+      },{
+        "title": "ブロックボリューム概要",
+        "excerpt":"インスタンスにアタッチしてブロック・デバイスとして利用することができる、OCIブロック・ボリューム・サービスの基本的な内容について解説しています。また、DenseIO シェイプに内蔵される高速なローカルNVMeディスクについても説明しています。   スライド           動画 ~28分15秒      ","categories": ["Services","Storage"],
+        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
+        "url": "/ocidocs/services/storage/block-volume-100/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/b80073aa58a141638ad5ba432009ba59/slide_0.jpg"
       },{
         "title": "ファイル・ストレージ概要",
         "excerpt":"VCN内にエンド・ポイントを持つマネージドNFSサービスである、OCIファイル・ストレージ・サービスについて解説しています。  ファイル・ストレージ・サービスのユースケースの他、サービスを構成する基本的なコンポーネントと役割、インスタンスからのアクセス、セキュリティ、スナップショット機能についてカバーしています。   スライド           動画      ","categories": ["Services","Storage"],
