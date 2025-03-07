@@ -886,4 +886,10 @@ var store = [{
         "tags": ["スライドあり","レベル:応用(200)"],
         "url": "/ocidocs/services/governance%20and%20administration/organization/",
         "teaser": "https://files.speakerdeck.com/presentations/a7d1e15509464d9daefa9609a01c6d6c/slide_0.jpg"
+      },{
+        "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2024/12 - 2025/2",
+        "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介しています。 2024年12月～2025年2月の3ヶ月分の新機能について説明しています。   スライド               ","categories": ["Updates"],
+        "tags": ["スライドあり","動画あり"],
+        "url": "/ocidocs/updates/update-FY25Q3/",
+        "teaser": "https://files.speakerdeck.com/presentations/07c385f63207451583555b2c225b1a40/slide_0.jpg"
       }]
