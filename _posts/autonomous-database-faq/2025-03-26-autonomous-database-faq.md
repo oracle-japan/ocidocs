@@ -22,7 +22,7 @@ header:
 
 ## Autonomous DatabaseはOracle Databaseとどう違うのでしょうか？
 
-内部的にはOracle Database 19cを使用しています。(2024/2時点)
+内部的にはOracle Database 19c or 23aiを使用しています。
 
 それに加えてAutonomous Databaseでは、データベース管理者(DBA)のタスクを減らすため、様々な自動化・自律化機能が備わっていることや、Exadataを基盤としているため高速化されていること、Enterprise Edition(EE)とRACなどの各種EEオプションがデフォルトで利用できることが特徴として挙げられます。
 
@@ -60,7 +60,7 @@ Serverlessは運用を極力シンプルにしたい場合や、コストを最�
 
 ACIDが保証されているサービスとなります。
 良くMongoDBと比較されますが、Autonomous JSON DatabaseはOracle Databaseにドキュメントを格納するため、RDBMSの特徴をそのまま享受できる点がMongoDBと異なる最大の特徴となります。
-詳細については[こちら](https://speakerdeck.com/oracle4engineer/autonomous-json-database-ji-shu-gai-yao?slide=6)に記載がありますので、併せてご確認ください。
+詳細については[こちら](https://speakerdeck.com/oracle4engineer/ajd-technical-detail-jp?slide=6)に記載がありますので、併せてご確認ください。
 
 <br/>
 
@@ -75,7 +75,7 @@ ACIDが保証されているサービスとなります。
 ## Autonomous JSON Database(AJD)からAutonomous Transaction Processing(ATP)への変更はできますか？ 
 
 はい、できます。ATPからAJDへの変更は不可、またADWへの変更は不可です。
-同様にAPEX Application Development(APEX)からATPへの変更は可能ですが、ATPからAPEXへの変更は不可、またADWへの変更も不可です。
+同様にAPEX Application Development(APEX)からATPへの変更は可能ですが、ATPからAPEXへの変更は不可、またADWへの変更も不可です。なお異なるワークロード・タイプでクローンを作成することによるワークロード・タイプの変更は可能です。
 
 [ページトップに戻る](#)
 
@@ -189,7 +189,7 @@ SQL> select max_size from v$pdbs;
 ## ストレージ容量として指定したサイズはデータベース全体のサイズでしょうか、それとも格納するデータ量に対してでしょうか？
 
 データベース全体のサイズです。ユーザーデータを格納する表領域以外のデータベースを稼働させるために必要な表領域も含まれます。
-含まれる表領域については[Autonomous Database Cloud 技術詳細](https://speakerdeck.com/oracle4engineer/autonomous-database-cloud-ji-shu-xiang-xi)の"ストレージ領域の管理"の章をご確認ください。
+含まれる表領域については[Autonomous Database Cloud 技術詳細](https://speakerdeck.com/oracle4engineer/adb-s-technical-detail-jp)の"ストレージ領域の管理"の章をご確認ください。
 
 <br/>
 
@@ -231,13 +231,13 @@ SQL> select max_size from v$pdbs;
 
 ハードウェア障害やデータ破損発生時の障害復旧時間目標は[こちら](https://docs.oracle.com/en/cloud/paas/autonomous-database/adbsa/availability-slo.html#GUID-D7F065C4-68C5-4F1F-B8D4-4A43538E7384)をご確認ください。
 
-Autonomous Data Guard を構成いただいた場合は、SLA99.995%となり、データ破損などの障害からの復旧時間が短くなります。RTO/RPOについては[マニュアル](https://docs.oracle.com/ja-jp/iaas/adbdataguard/autonomous-data-guard-about.html#GUID-AF736587-4F6D-45C3-9886-7211B0A33745)をご確認ください。
+Autonomous Data Guard を構成いただいた場合は、SLA99.995%となり、データ破損などの障害からの復旧時間が短くなります。RTO/RPOについては[マニュアル](https://docs.oracle.com/en/cloud/paas/autonomous-database/serverless/adbsb/autonomous-data-guard-about.html#GUID-AF736587-4F6D-45C3-9886-7211B0A33745)をご確認ください。
 
 <br/>
 
 ## 東日本-西日本などリージョン間を跨いだ冗長化を検討する場合、もっともRTO/RPOを短くすることができる構成はどのようになりますでしょうか？ 
 
-Autnomous Data Guardを利用した構成をご検討いただけます。RTO/RPOについては[マニュアル](https://docs.oracle.com/ja-jp/iaas/adbdataguard/autonomous-data-guard-about.html#GUID-AF736587-4F6D-45C3-9886-7211B0A33745)に記載があります。他の方法として、GoldenGateを利用した論理レプリケーションがあります。それぞれについてチュートリアルを公開しておりますのでご利用ください。
+Autnomous Data Guardを利用した構成をご検討いただけます。RTO/RPOについては[マニュアル](https://docs.oracle.com/en/cloud/paas/autonomous-database/serverless/adbsb/autonomous-data-guard-about.html#GUID-AF736587-4F6D-45C3-9886-7211B0A33745)に記載があります。他の方法として、GoldenGateを利用した論理レプリケーションがあります。それぞれについてチュートリアルを公開しておりますのでご利用ください。
 
 * [Autonomous Data Guardチュートリアル](https://oracle-japan.github.io/ocitutorials/adb/adb212-audg/)
 * [OCI GoldenGateチュートリアル](https://oracle-japan.github.io/ocitutorials/adb/adb401-oci-goldengate/)
@@ -246,7 +246,7 @@ Autnomous Data Guardを利用した構成をご検討いただけます。RTO/RP
 
 ## 自動バックアップはどこに取得されるのでしょうか。任意のオブジェクト・ストレージに取得することはできますか？ 
 
-オラクル社が管理するオブジェクト・ストレージに取得されます。取得先に任意のオブジェクト・ストレージを指定することはできません。自動バックアップが取得されるオブジェクト・ストレージはユーザがアクセスすることはできず、課金対象になります。(ECPUモデル)
+オラクル社が管理するオブジェクト・ストレージに取得されます。取得先に任意のオブジェクト・ストレージを指定することはできません。自動バックアップが取得されるオブジェクト・ストレージはユーザがアクセスすることはできず、課金対象になります。
 
 <br/>
 
@@ -304,7 +304,7 @@ ADBの自動バックアップ機能では遠隔地(別リージョン)へバッ
 
 ## flashback databaseは使えますか？
 
-ADBではflashback databaseはユーザーは明示的に使用できません。ユーザー指定のタイムスタンプにリストアすることが可能であり、内部的に使用されています。
+ADBではflashback databaseはユーザーは明示的に使用できません。ただしGUIもしくはCLIから、ユーザー指定のタイムスタンプにリストアすることが可能です。
 
 なお、flashback tableやflashback queryは可能です。[ドキュメント](https://docs.oracle.com/cd/E83857_01/paas/autonomous-database/serverless/adbsb/autonomous-oracle-flashback.html#GUID-CEE36DC8-E878-481C-8366-9507D0911C25)
 
@@ -360,7 +360,7 @@ OCI GoldenGateの利用をご検討ください。またDatabase Linkをご利�
 ## IoTデータ等の大規模ファイルを扱う場合、外部表を利用してオブジェクト・ストレージに配置して都度アクセスするか、一旦Autonomous Database内にロードしてから利用するのとではどちらが良いでしょうか？ 
 
 ケース・バイ・ケースですが、参照頻度によって決めることをおすすめします。  
-SQLでの参照頻度が低いようであれば、オブジェクト・ストレージの方がAutonomous DatabaseのExadata Storageよりも安価ですので、外部表を利用してアクセスするほうがコストを抑えることができます。
+SQLでの参照頻度が低いようであれば、オブジェクト・ストレージの方がAutonomous DatabaseのExadata Storageよりも安価(※ATPのみ)ですので、外部表を利用してアクセスするほうがコストを抑えることができます。
 また頻繁にアクセスするようでしたらAutonomous Database内にロードした方が、SmartScan機能による高速化を有効に利用できます。  
 なお、外部表を利用して参照する場合も、Autonomous Databaseにロードする場合も、オブジェクト・ストレージ上のファイルは分割しておくことをおすすめします。ファイルを分割することで複数のコアを利用した高速な並列処理が可能になります。
 
@@ -514,7 +514,7 @@ Autonomous Databaseへの移行を検討される際やAutonomous Databaseのバ
 ## Autonomous Database でResult Cacheは利用できますか？
 
 はい、利用できます。  
-ワークロードの違いに合わせてデフォルト設定がされています。Autonomous Data Warehouse(ADW)は有効、Autonmous Transaction Processing(ATP)は無効です。
+ワークロードの違いに合わせてデフォルト設定がされています。デフォルト設定は、Autonomous Data Warehouse(ADW)は有効、Autonomous Transaction Processing(ATP)は無効ですが、それぞれ無効化/有効化できます。
 
 <br />
 
@@ -536,8 +536,7 @@ ADWで更新が発生するような表の場合は、明示的に非圧縮に�
 
 ## Autonomous Database でDatabase In-Memory(DBIM）を利用できますか？
 
-Dedicatedでは可能です。
-ただし、Autonomous Databaseは内部的にExadataのフラッシュ・キャッシュでDatabase In-Memory機能を利用して性能を最適化します。
+はい、16ECPU以上のインスタンスでのみ有効化可能です。
 
 <br/>
 
@@ -554,20 +553,6 @@ Runaway Queryの管理で、SQLの実行時間やIO量の上限を設定する�
 <br/>
 
 # <span style="color: brown; ">■ 運用管理・監視関連</span>
-<br />
-
-## データファイルのサイズ変更（リサイズ）や最大サイズの変更を行うことはできますか？
-はい、できます。DATA表領域のデータファイルに対してリサイズと最大サイズの変更が許可されています。
-
-```sql
---リサイズ
- ALTER DATABASE DATAFILE <FILE_ID> RESIZE <リサイズ後のサイズ>;
--- 自動拡張の最大サイズの変更
- ALTER DATABASE DATAFILE <FILE_ID> AUTOEXTEND ON MAX SIZE <Maxサイズ> ;
-```
-なお、表領域の作成、削除、表領域の設定値の変更および、デフォルト表領域の変更は許可されていません。
-デフォルトで自動拡張が有効化されており、ユーザが指定したストレージ容量の範囲内で自動的に拡張されます。  
-
 <br />
 
 ## 権限やリソースの制御はどのようにおこなっているのでしょうか、変更可能でしょうか？
@@ -589,7 +574,6 @@ SELECT * FROM V$LOCKDOWN_RULES WHERE STATUS LIKE 'DISABLE%' ORDER BY RULE_TYPE ;
 ## AWRは取得できますか？AWRの保持期限、スナップショット間隔は変更で可能でしょうか？
 
 可能です。パフォーマンスハブからのダウンロードまたはSQLで取得できます。取得方法は[OCIチュートリアル](https://oracle-japan.github.io/ocitutorials/adb/adb203-bulk-query/#anchor3-2)に記載していますのでご確認ください。
-AWRの取得設定は通常のOracle Databaseと同様にDBMS_WORKLOAD_REPOSITORY.MODIFY_SNAPSHOT_SETTINGSにて変更可能ですが、再起動すると保持期間はデフォルトの30日に戻ります。
 
 <br />
 
@@ -664,7 +648,7 @@ SQLを利用してアラートログ(V$DIAG_ALERT_EXT)やトレースファイ�
 
 ## Autonomous Databaseのパッチ適用には、OSなどのインフラのパッチも含まれますか？
 
-はい、含まれます。Databaseのパッチだけでなく、Exadata Infrastructureや、セキュリティパッチも含まれます。
+はい、含まれます。Databaseのパッチだけでなく、Exadata Infrastructureのパッチや、セキュリティパッチも含まれます。
 
 <br/>
 
@@ -740,7 +724,7 @@ exec dbms_stats.gather_table_stats( ownname => 'YYY', tabname => 'XXX') ;
 Autonomous Database はECPU数を増やすことでコア数だけでなくIO帯域も増えるため、IOバウンドな処理に対してもECPUを増やすことで高速化できます。  
 ECPU増はコストに跳ね返ってきますが、ECPUはオンラインでスケールアップ・ダウンが可能なので、週末・夜間など使わないタイミングはコア数を減らすことでコストを削減できます。  
 
-その他、Autonomous Databaseでは高速化のためのオプション機能であるパーティションが追加費用なく利用できます。またマテリアライズド・ビュー機能やAutonomous Transaction Processing(ATP)の場合はHCCによる圧縮も利用できるため（Autonomous Data Warehouse(ADW)はデフォルトで圧縮され格納される）、これらの機能を活用することもご検討ください。
+その他、Autonomous Databaseでは高速化のためのオプション機能であるパーティションが追加費用なく利用できます。またマテリアライズド・ビュー機能やHCCによる圧縮も利用できるため、これらの機能を活用することもご検討ください。
 
 <br />
 
