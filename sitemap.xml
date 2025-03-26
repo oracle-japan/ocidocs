@@ -481,10 +481,6 @@
 <lastmod>2024-04-02T00:00:00+09:00</lastmod>
 </url>
 <url>
-<loc>https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq/</loc>
-<lastmod>2024-05-07T00:00:00+09:00</lastmod>
-</url>
-<url>
 <loc>https://oracle-japan.github.io/ocidocs/updates/db-update-FY24Q4/</loc>
 <lastmod>2024-06-12T00:00:00+09:00</lastmod>
 </url>
@@ -599,6 +595,10 @@
 <url>
 <loc>https://oracle-japan.github.io/ocidocs/updates/db-update-FY25Q3/</loc>
 <lastmod>2025-03-17T00:00:00+09:00</lastmod>
+</url>
+<url>
+<loc>https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq/</loc>
+<lastmod>2025-03-26T00:00:00+09:00</lastmod>
 </url>
 <url>
 <loc>https://oracle-japan.github.io/ocidocs/about/</loc>
