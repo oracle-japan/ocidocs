@@ -1,6 +1,6 @@
 ---
 title: "Exadata Database Machine/Exadata Cloud比較"
-excerpt: "Exadata Database Service on Dedicated Infrastructure X9M/ Exadata Database Service on Cloud@Customer X10M / Exadata Database Machine X10Mの比較資料です。 "
+excerpt: "Exadata Database Service on Dedicated Infrastructure/Exadata Database Service on Cloud@Customer/ Exadata Database Machineの比較資料です。 "
 categories:
   - Database
 tags:
@@ -11,7 +11,7 @@ header:
 
 
 
-Exadata Database Service on Dedicated Infrastructure X9M/ Exadata Database Service on Cloud@Customer X10M / Exadata Database Machine X10M 比較比較資料です。
+Exadata Database Service on Dedicated Infrastructure/Exadata Database Service on Cloud@Customer/Exadata Database Machine比較比較資料です。
 
 #### スライド
 
