@@ -179,12 +179,6 @@ var store = [{
         "url": "/ocidocs/database/oracle%20database%20technology%20night/automatic-workload-repository/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/d32dcf24e9584b68a043ec15e020bd5f/slide_0.jpg"
       },{
-        "title": "Exadata Cloud Service セットアップガイド",
-        "excerpt":"ExaCSは、Oracle Databaseを最速に稼働させるExadataをクラウド上でも利用できるサービスです。 本資料ではExaCSを導入するに際して、実際に利用する際の構築イメージを習得するためにご利用いただけます。   スライド          ","categories": ["Services","Database"],
-        "tags": ["スライドあり"],
-        "url": "/ocidocs/services/database/exadata-config-guide/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/b3b2069f83034851b729be6f2dd3ff3f/slide_0.jpg"
-      },{
         "title": "Autonomous Database -Dedicated 技術詳細",
         "excerpt":"Autonomous Database -Dedicatedは、Oracle Databaseのフルマネージド・サービスであるAutonomous Databaseは、簡単すぐにご利用いただける共有型（Shared）サービスと、HWをお客様に専有してご利用いただける専有型（Dedicated）のサービスがあります。セキュリティの観点から他のお客様とHWレベルで分けて管理しなくてはならないシステムや、アプリケーション・サーバーとのネットワーク・レイテンシの観点でデータベースは自社DCに配置しておきたいといった要件があるシステムに最適です。 本資料はこの専有型サービスであるAutonomous Database - Dedicated について解説しています。   スライド          ","categories": ["Services","Database","Autonomous"],
         "tags": ["スライドあり"],
@@ -898,4 +892,34 @@ var store = [{
         "tags": ["FAQ"],
         "url": "/ocidocs/faq/services/autonomous/autonomous-database-faq/",
         "teaser": null
+      },{
+        "title": "Oracle Databaseが利用可能なOCIデータベース・サービス比較",
+        "excerpt":"Oracle Cloud Infrastructure 上で利用可能なOracle Databaseのサービスの比較資料です。 Oracle Database / OCI / BaseDB / Base Database Service/ Exadata Database Service / ExaDB-D / ExaDB-XS /ExaDB-C@C / Cloud@Customer / Autonomous Database / ADB / ADW / ATP 最新情報は、マニュアル等をご確認の上ご利用ください。 以下のイベントにて使用した内容をアップデートしています 2024/10/29 Oracle Cloud Infrastructure Technical Deep Dive Oracle Databaseが利用可能なOCI データベース・サービス比較 2019/3/29(金)「Oracle Technology Night 日本データセンター開設前に知っておくべきこと...","categories": ["Database"],
+        "tags": ["スライドあり"],
+        "url": "/ocidocs/database/database-services-comparison/",
+        "teaser": "https://files.speakerdeck.com/presentations/b678078520d246aabfe33d6808b58d04/slide_0.jpg"
+      },{
+        "title": "Exadata Database Service資料集",
+        "excerpt":"Exadata Database Serviceの資料をまとめてご覧いただけます。   Exadata Database Service資料集はこちら   https://speakerdeck.com/oracle4engineer/collections/exadata-database-service   ","categories": ["Database"],
+        "tags": ["スライドあり"],
+        "url": "/ocidocs/database/exadata-database-service-resources/",
+        "teaser": "https://files.speakerdeck.com/presentations/65550812eaec452081dcd4cd58ee6709/slide_0.jpg"
+      },{
+        "title": "Exadata Database Machine/Exadata Cloud比較",
+        "excerpt":"Exadata Database Service on Dedicated Infrastructure/Exadata Database Service on Cloud@Customer/Exadata Database Machine比較比較資料です。   スライド          ","categories": ["Database"],
+        "tags": ["スライドあり"],
+        "url": "/ocidocs/database/exadata-machine-cloud-comparison/",
+        "teaser": "https://files.speakerdeck.com/presentations/b35001812a1343cc95494d2cfa863a1e/slide_0.jpg"
+      },{
+        "title": "ExaDB-XSサービス技術詳細",
+        "excerpt":"2025/02/27に実施したOracle Database Technology Night #87の前半パート資料です。 セミナー資料として公開していますが、最新情報は下記リンク先資料に更新していきますので、こちらをご参照ください。   https://speakerdeck.com/oracle4engineer/exadb-xs-technical-detail   スライド          ","categories": ["Database"],
+        "tags": ["スライドあり"],
+        "url": "/ocidocs/database/exadb-xs-technical-details/",
+        "teaser": "https://files.speakerdeck.com/presentations/65550812eaec452081dcd4cd58ee6709/slide_0.jpg"
+      },{
+        "title": "[コア技術] Oracle Database入門資料集",
+        "excerpt":"オラクルの若手エンジニアがお届けする Oracle Databaseに関する基本的な知識とスキルを身につけることができる初学者向け勉強会シリーズOracle DBaseCampの資料集です。   Oracle DBaseCamp資料集  https://speakerdeck.com/oracle4engineer/collections/oracle-dbasecamp   Oracle DBaseCamp って？   入社3年未満のオラクル若手エンジニアがお届けするOracle Databaseに関する基本的な知識とスキルを身につけることができる初学者向け勉強会シリーズ！ 「Base Camp」は山登りで根拠地とされる場所。「初学者および初級のエンジニア（デベロッパー）の皆さんがスキルを身につける出発点となる場所になってほしい」という気持ちを込めて・・・ 「Database」にかけて「Oracle DBaseCamp」 と名付けました！   ","categories": ["Database"],
+        "tags": ["スライドあり"],
+        "url": "/ocidocs/database/oracle-database-for-begineers/",
+        "teaser": "https://files.speakerdeck.com/presentations/b80679208cd7478ca07e3158f138dc29/slide_0.jpg"
       }]

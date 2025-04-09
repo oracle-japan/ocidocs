@@ -1,4 +1,59 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2025-03-26T15:40:46+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">Autonomous Database 技術FAQ</title><link href="https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq/" rel="alternate" type="text/html" title="Autonomous Database 技術FAQ" /><published>2025-03-26T00:00:00+09:00</published><updated>2025-03-26T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq/"><![CDATA[<h1 id="-サービス概要編"><span style="color: brown; ">■ サービス概要編</span></h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2025-04-09T20:45:49+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">Oracle Databaseが利用可能なOCIデータベース・サービス比較</title><link href="https://oracle-japan.github.io/ocidocs/database/database-services-comparison/" rel="alternate" type="text/html" title="Oracle Databaseが利用可能なOCIデータベース・サービス比較" /><published>2025-04-08T00:00:00+09:00</published><updated>2025-04-08T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/database/database-services-comparison</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/database/database-services-comparison/"><![CDATA[<p>Oracle Cloud Infrastructure 上で利用可能なOracle Databaseのサービスの比較資料です。</p>
+
+<p>Oracle Database / OCI / BaseDB / Base Database Service/ Exadata Database Service / ExaDB-D / ExaDB-XS /ExaDB-C@C / Cloud@Customer / Autonomous Database / ADB / ADW / ATP
+最新情報は、マニュアル等をご確認の上ご利用ください。</p>
+
+<p>以下のイベントにて使用した内容をアップデートしています</p>
+<ul>
+  <li>2024/10/29 Oracle Cloud Infrastructure Technical Deep Dive Oracle Databaseが利用可能なOCI データベース・サービス比較</li>
+  <li>2019/3/29(金)「Oracle Technology Night 日本データセンター開設前に知っておくべきこと ～ Oracle Databaseのサービス比較編 ～」</li>
+</ul>
+
+<h4 id="スライド">スライド</h4>
+
+<div style="max-width:768px">
+
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
+<script defer="" class="speakerdeck-embed" data-id="b678078520d246aabfe33d6808b58d04" data-ratio="1.7777777777777777" src="//speakerdeck.com/assets/embed.js"></script>
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
+
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Database" /><category term="スライドあり" /><summary type="html"><![CDATA[Oracle Cloud Infrastructure 上で利用可能なOracle Databaseのサービスを比較する資料です。]]></summary></entry><entry><title type="html">Exadata Database Service資料集</title><link href="https://oracle-japan.github.io/ocidocs/database/exadata-database-service-resources/" rel="alternate" type="text/html" title="Exadata Database Service資料集" /><published>2025-04-08T00:00:00+09:00</published><updated>2025-04-08T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/database/exadata-database-service-resources</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/database/exadata-database-service-resources/"><![CDATA[<p>Exadata Database Serviceの資料をまとめてご覧いただけます。</p>
+
+<h3 id="exadata-database-service資料集はこちら">Exadata Database Service資料集はこちら</h3>
+
+<p><a href="https://speakerdeck.com/oracle4engineer/collections/exadata-database-service" target="_blank">https://speakerdeck.com/oracle4engineer/collections/exadata-database-service</a></p>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Database" /><category term="スライドあり" /><summary type="html"><![CDATA[Exadata Database Serviceの資料を集めました。]]></summary></entry><entry><title type="html">Exadata Database Machine/Exadata Cloud比較</title><link href="https://oracle-japan.github.io/ocidocs/database/exadata-machine-cloud-comparison/" rel="alternate" type="text/html" title="Exadata Database Machine/Exadata Cloud比較" /><published>2025-04-08T00:00:00+09:00</published><updated>2025-04-08T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/database/exadata-machine-cloud-comparison</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/database/exadata-machine-cloud-comparison/"><![CDATA[<p>Exadata Database Service on Dedicated Infrastructure/Exadata Database Service on Cloud@Customer/Exadata Database Machine比較比較資料です。</p>
+
+<h4 id="スライド">スライド</h4>
+
+<div style="max-width:768px">
+
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
+<script defer="" class="speakerdeck-embed" data-id="b35001812a1343cc95494d2cfa863a1e" data-ratio="1.7777777777777777" src="//speakerdeck.com/assets/embed.js"></script>
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
+
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Database" /><category term="スライドあり" /><summary type="html"><![CDATA[Exadata Database Service on Dedicated Infrastructure/Exadata Database Service on Cloud@Customer/ Exadata Database Machineの比較資料です。]]></summary></entry><entry><title type="html">ExaDB-XSサービス技術詳細</title><link href="https://oracle-japan.github.io/ocidocs/database/exadb-xs-technical-details/" rel="alternate" type="text/html" title="ExaDB-XSサービス技術詳細" /><published>2025-04-08T00:00:00+09:00</published><updated>2025-04-08T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/database/exadb-xs-technical-details</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/database/exadb-xs-technical-details/"><![CDATA[<p>2025/02/27に実施したOracle Database Technology Night #87の前半パート資料です。
+セミナー資料として公開していますが、最新情報は下記リンク先資料に更新していきますので、こちらをご参照ください。</p>
+
+<p><a href="https://speakerdeck.com/oracle4engineer/exadb-xs-technical-detail" target="_blank">https://speakerdeck.com/oracle4engineer/exadb-xs-technical-detail</a></p>
+
+<h4 id="スライド">スライド</h4>
+
+<div style="max-width:768px">
+
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
+<script defer="" class="speakerdeck-embed" data-id="65550812eaec452081dcd4cd58ee6709" data-ratio="1.7777777777777777" src="//speakerdeck.com/assets/embed.js"></script>
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
+
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Database" /><category term="スライドあり" /><summary type="html"><![CDATA[Exadata Database Service on Exascale Infrastructure(ExaDB-XS)サービス技術詳細資料です。]]></summary></entry><entry><title type="html">[コア技術] Oracle Database入門資料集</title><link href="https://oracle-japan.github.io/ocidocs/database/oracle-database-for-begineers/" rel="alternate" type="text/html" title="[コア技術] Oracle Database入門資料集" /><published>2025-04-08T00:00:00+09:00</published><updated>2025-04-08T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/database/oracle-database-for-begineers</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/database/oracle-database-for-begineers/"><![CDATA[<p>オラクルの若手エンジニアがお届けする Oracle Databaseに関する基本的な知識とスキルを身につけることができる初学者向け勉強会シリーズOracle DBaseCampの資料集です。</p>
+
+<h3 id="oracle-dbasecamp資料集">Oracle DBaseCamp資料集</h3>
+<p><a href="https://speakerdeck.com/oracle4engineer/collections/oracle-dbasecamp" target="_blank">https://speakerdeck.com/oracle4engineer/collections/oracle-dbasecamp</a></p>
+
+<h3 id="oracle-dbasecamp-って">Oracle DBaseCamp って？</h3>
+
+<p>入社3年未満のオラクル若手エンジニアがお届けするOracle Databaseに関する基本的な知識とスキルを身につけることができる初学者向け勉強会シリーズ！
+「Base Camp」は山登りで根拠地とされる場所。「初学者および初級のエンジニア（デベロッパー）の皆さんがスキルを身につける出発点となる場所になってほしい」という気持ちを込めて・・・
+「Database」にかけて「Oracle DBaseCamp」 と名付けました！</p>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Database" /><category term="スライドあり" /><summary type="html"><![CDATA[オラクルの若手エンジニアがお届けする Oracle Databaseに関する基本的な知識とスキルを身につけることができる初学者向け勉強会シリーズ]]></summary></entry><entry><title type="html">Autonomous Database 技術FAQ</title><link href="https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq/" rel="alternate" type="text/html" title="Autonomous Database 技術FAQ" /><published>2025-03-26T00:00:00+09:00</published><updated>2025-03-26T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/faq/services/autonomous/autonomous-database-faq/"><![CDATA[<h1 id="-サービス概要編"><span style="color: brown; ">■ サービス概要編</span></h1>
 <p><br /></p>
 
 <h2 id="autonomous-databaseはoracle-databaseとどう違うのでしょうか">Autonomous DatabaseはOracle Databaseとどう違うのでしょうか？</h2>
@@ -1004,76 +1059,4 @@ OCICLIでの実施方法は<a href="https://oracle-japan.github.io/ocitutorials/
 <!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください -->
 <div style="max-width:768px"><div style="position:relative;padding-bottom:56.25%"><iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/2171811/sp/217181100/embedIframeJs/uiconf_id/35965902/partner_id/2171811?iframeembed=true&amp;playerId=kaltura_player&amp;entry_id=1_hrq9dapg&amp;flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[hotspots.plugin]=1&amp;flashvars[mediaProxy.mediaPlayFrom]=1320&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&amp;wid=1_wyz14biu" width="768" height="432" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player" style="position:absolute;top:0;left:0;width:100%;height:100%"></iframe></div></div>
 
-<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) -->]]></content><author><name>丸川 祐考 (Masataka Marukawa)</name></author><category term="Services" /><category term="Overall" /><category term="スライドあり" /><category term="動画あり" /><category term="レベル:入門(100)" /><summary type="html"><![CDATA[ログインに始まり、言語の変更、サービス制限、OCID、検索など、主にOCIコンソールの基本的情報について解説しています]]></summary></entry><entry><title type="html">コンピュート概要</title><link href="https://oracle-japan.github.io/ocidocs/services/compute/compute-100/" rel="alternate" type="text/html" title="コンピュート概要" /><published>2025-02-07T00:00:00+09:00</published><updated>2025-02-07T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/compute/compute-100</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/compute/compute-100/"><![CDATA[<p>OCI上で仮想マシンやベアメタル・サーバーを利用することができるコンピュート・サービスについての概要資料です。<br />
-インスタンスの種類、イメージの操作、ブート・ボリューム、インスタンス・プールを利用した自動スケーリング、インスタンス・メタデータについて解説しています。</p>
-
-<h4 id="スライド-20201020更新--">スライド (2020/10/20更新)  <!-- 更新日を最新に変更 --></h4>
-
-<div style="max-width:768px">
-
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-<script async="" class="speakerdeck-embed" data-id="cf71c90194e445c4812a671235389dff" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
-
-</div>
-
-<h4 id="動画その1-2020421収録--">動画その1 (2020/4/21収録)  <!-- 収録日を最新に変更 --></h4>
-
-<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください -->
-<div style="max-width:768px"><div style="position:relative;padding-bottom:56.25%"><iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/2171811/sp/217181100/embedIframeJs/uiconf_id/35965902/partner_id/2171811?iframeembed=true&amp;playerId=kaltura_player&amp;entry_id=0_hjvuhmyy&amp;flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[hotspots.plugin]=1&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&amp;wid=1_0p0hdlr8" width="768" height="432" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player" style="position:absolute;top:0;left:0;width:100%;height:100%"></iframe></div></div>
-<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) -->
-
-<h4 id="動画その2--28分32秒-2020421収録--">動画その2 : 28分32秒~ (2020/4/21収録)  <!-- 収録日を最新に変更 --></h4>
-
-<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください -->
-<div style="max-width:768px"><div style="position:relative;padding-bottom:56.25%"><iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/2171811/sp/217181100/embedIframeJs/uiconf_id/35965902/partner_id/2171811?iframeembed=true&amp;playerId=kaltura_player&amp;entry_id=0_jw29se6u&amp;flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[hotspots.plugin]=1&amp;flashvars[mediaProxy.mediaPlayFrom]=1712&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&amp;wid=1_sp62b2ma" width="768" height="432" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player" style="position:absolute;top:0;left:0;width:100%;height:100%"></iframe></div></div>
-<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) -->]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Compute" /><category term="スライドあり" /><category term="動画あり" /><category term="レベル:入門(100)" /><summary type="html"><![CDATA[インスタンスの種類、イメージの操作、ブート・ボリューム、インスタンス・プールを利用した自動スケーリング、インスタンス・メタデータについて解説しています]]></summary></entry><entry><title type="html">外部接続 詳細 - FastConnectの冗長性</title><link href="https://oracle-japan.github.io/ocidocs/services/networking/connectivity_redundancy/" rel="alternate" type="text/html" title="外部接続 詳細 - FastConnectの冗長性" /><published>2025-02-06T00:00:00+09:00</published><updated>2025-02-06T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/networking/connectivity_redundancy</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/networking/connectivity_redundancy/"><![CDATA[<p>OCIの技術説明資料：外部接続 詳細 - FastConnectの冗長性 です。
-お客様ネットワークとOracle Cloud Infrastructure(OCI)間をプライベート回線で接続するサービス「FastConnect」の冗長化を構成する際の考慮点について解説しています。</p>
-
-<h4 id="スライド">スライド</h4>
-
-<div style="max-width:768px">
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-<script async="" class="speakerdeck-embed" data-id="1461985b53674d799e36988a2f20f886" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
-
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
-
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Networking" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html"><![CDATA[お客様ネットワークとOracle Cloud Infrastructure(OCI)間をプライベート回線で接続するサービス「FastConnect」の冗長化を構成する際の考慮点について解説しています。]]></summary></entry><entry><title type="html">ロード・バランサー 概要 FLB・NLB共通</title><link href="https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-100/" rel="alternate" type="text/html" title="ロード・バランサー 概要 FLB・NLB共通" /><published>2025-01-31T00:00:00+09:00</published><updated>2025-01-31T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-100</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-100/"><![CDATA[<p>バックエンドに配置した様々なサービスの冗長性やスケーリングをサポートする OCI ロード・バランサー・サービスについて、その機能概要、FLBとNLBの種類、構成コンポーネントの内容、OCIコンソールを利用した構成方法などについて解説しています。</p>
-
-<h4 id="スライド">スライド</h4>
-
-<div style="max-width:768px">
-
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-<script async="" class="speakerdeck-embed" data-id="78914498b3c14b97a112f59283b754b7" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
-
-</div>
-
-<h4 id="セミナー動画">セミナー動画</h4>
-
-<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください -->
-<div style="max-width:768px"><div style="position:relative;padding-bottom:56.25%"><iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/2171811/sp/217181100/embedIframeJs/uiconf_id/35965902/partner_id/2171811?iframeembed=true&amp;playerId=kaltura_player&amp;entry_id=0_pgchkk4i&amp;flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[hotspots.plugin]=1&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&amp;wid=1_c428rwns" width="768" height="432" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player" style="position:absolute;top:0;left:0;width:100%;height:100%"></iframe></div></div>
-<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) -->]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Networking" /><category term="スライドあり" /><category term="動画あり" /><category term="レベル:入門(100)" /><summary type="html"><![CDATA[OCIロード・バランサー・サービスについて、その機能概要、FLBとNLBの種類、構成コンポーネントの内容、OCIコンソールを利用した構成方法などについて解説しています]]></summary></entry><entry><title type="html">ロード・バランサー FLB 詳細</title><link href="https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-FLB-200/" rel="alternate" type="text/html" title="ロード・バランサー FLB 詳細" /><published>2025-01-31T00:00:00+09:00</published><updated>2025-01-31T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-FLB-200</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-FLB-200/"><![CDATA[<p>様々なサービスの冗長性やスケーリングをサポートする OCI ロード・バランサー・サービス（FLB）について、応用的な利用方法について解説したドキュメントです。<br />
-セッション永続性、仮想ホストによるルーティング、URIパス・ベース・ルーティング、SSL通信方式とロード・バランサーでのSSLターミネーションの設定、ロード・バランサーが収集するメトリック、トラブル時の対応ガイドラインについて解説しています。</p>
-
-<h4 id="スライド">スライド</h4>
-
-<div style="max-width:768px">
-
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-<script async="" class="speakerdeck-embed" data-id="9ca991733d2a4670bdd4e5ed5b5770c4" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
-
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Networking" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html"><![CDATA[OCI ロード・バランサー・サービス（FLB）について、レイヤー7でのルーティング、SSLターミネーション、ロード・バランサーが収集するメトリック、トラブル時の対応ガイドラインなどの応用的な利用方法について解説しています]]></summary></entry><entry><title type="html">ロード・バランサー NLB 詳細</title><link href="https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-NLB-200/" rel="alternate" type="text/html" title="ロード・バランサー NLB 詳細" /><published>2025-01-31T00:00:00+09:00</published><updated>2025-01-31T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-NLB-200</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/networking/load-balancer-NLB-200/"><![CDATA[<p>OCI ネットワーク・ロード・バランサー・サービス（NLB）について、全体的な構成要素、それぞれの要素や利用方法について解説しています。</p>
-
-<h4 id="スライド">スライド</h4>
-
-<div style="max-width:768px">
-
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-<script async="" class="speakerdeck-embed" data-id="1e8f6d5abba64ea1b92c1112b392f6fc" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
-
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Networking" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html"><![CDATA[OCI ネットワーク・ロード・バランサー・サービス（NLB）について、全体的な構成要素の解説や利用方法について解説しています]]></summary></entry></feed>
+<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) -->]]></content><author><name>丸川 祐考 (Masataka Marukawa)</name></author><category term="Services" /><category term="Overall" /><category term="スライドあり" /><category term="動画あり" /><category term="レベル:入門(100)" /><summary type="html"><![CDATA[ログインに始まり、言語の変更、サービス制限、OCID、検索など、主にOCIコンソールの基本的情報について解説しています]]></summary></entry></feed>

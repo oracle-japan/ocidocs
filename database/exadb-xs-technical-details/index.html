@@ -1,0 +1,739 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.26.2 by Michael Rose
+  Copyright 2013-2024 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="ja-JP" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>ExaDB-XSサービス技術詳細 | Oracle Cloud Infrastructure 活用資料集</title>
+<meta name="description" content="Exadata Database Service on Exascale Infrastructure(ExaDB-XS)サービス技術詳細資料です。">
+
+
+  <meta name="author" content="Oracle Japan Solution Engineers">
+  
+  <meta property="article:author" content="Oracle Japan Solution Engineers">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="Oracle Cloud Infrastructure 活用資料集">
+<meta property="og:title" content="ExaDB-XSサービス技術詳細">
+<meta property="og:url" content="https://oracle-japan.github.io/ocidocs/database/exadb-xs-technical-details/">
+
+
+  <meta property="og:description" content="Exadata Database Service on Exascale Infrastructure(ExaDB-XS)サービス技術詳細資料です。">
+
+
+
+  <meta property="og:image" content="https://oracle-japan.github.io/ocidocs/assets/images/rh01-cloud-home-pine-background.jpg">
+
+
+
+
+
+  <meta property="article:published_time" content="2025-04-08T00:00:00+09:00">
+
+
+
+
+
+
+<link rel="canonical" href="https://oracle-japan.github.io/ocidocs/database/exadb-xs-technical-details/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/ocidocs/feed.xml" type="application/atom+xml" rel="alternate" title="Oracle Cloud Infrastructure 活用資料集 Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script type="text/javascript">
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/ocidocs/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<link rel="icon" href="https://www.oracle.com/asset/web/favicons/favicon-32.png" sizes="32x32">
+<link rel="icon" href="https://www.oracle.com/asset/web/favicons/favicon-128.png" sizes="128x128">
+<link rel="icon" href="https://www.oracle.com/asset/web/favicons/favicon-192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://www.oracle.com/asset/web/favicons/favicon-120.png" sizes="120x120">
+<link rel="apple-touch-icon" href="https://www.oracle.com/asset/web/favicons/favicon-152.png" sizes="152x152">
+<link rel="apple-touch-icon" href="https://www.oracle.com/asset/web/favicons/favicon-180.png" sizes="180x180">
+<link rel="shortcut icon" type="image/x-icon" href="/ocidocs/assets/favicon/favicon.ico">
+<link rel="manifest" href="/ocidocs/assets/favicon/site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/ocidocs/"><img src="/ocidocs/assets/images/social-og-oracle-badge.jpg" alt="OCI活用資料集"></a>
+        
+        <a class="site-title" href="/ocidocs/">
+          OCI活用資料集
+          <span class="site-subtitle">Oracle Cloud Infrastructure を使い倒すための資料集</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/ocidocs/updates/"
+                
+                
+              >新機能</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/ocidocs/services/"
+                
+                
+              >サービス別資料</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/ocidocs/solutions/"
+                
+                
+              >ソリューション別資料</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/ocidocs/faqs/"
+                
+                
+              >技術FAQ</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/ocidocs/misc/"
+                
+                
+              >その他</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/ocidocs/links/"
+                
+                
+              >外部リンク</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/ocidocs/tags/"
+                
+                
+              >タグ</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/ocidocs/about/"
+                
+                
+              >このサイトについて</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">メニュー</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: url('/ocidocs/assets/images/rh01-cloud-home-pine-background.jpg');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          ExaDB-XSサービス技術詳細
+
+        
+      </h1>
+      
+        <p class="page__lead">Exadata Database Service on Exascale Infrastructure(ExaDB-XS)サービス技術詳細資料です。
+</p>
+      
+      
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2025-04-08T00:00:00+09:00">April 8, 2025</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+      
+    </div>
+  
+  
+    <span class="page__hero-caption"><a href="https://design.oracle.com/">Oracle Redwood</a>
+</span>
+  
+</div>
+
+
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      <nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">メニュー</label>
+  <ul class="nav__items">
+    
+      
+      
+        <li>
+          
+            <a href="/ocidocs/updates/"><span class="nav__sub-title">新機能</span></a>
+          
+
+          
+        </li>
+      
+        <li>
+          
+            <a href="/ocidocs/services/"><span class="nav__sub-title">サービス別資料</span></a>
+          
+
+          
+          <ul>
+            
+              <li><a href="/ocidocs/services/overall/">サービス全般</a></li>
+            
+              <li><a href="/ocidocs/services/compute/">コンピュート</a></li>
+            
+              <li><a href="/ocidocs/services/storage/">ストレージ</a></li>
+            
+              <li><a href="/ocidocs/services/networking/">ネットワーク</a></li>
+            
+              <li><a href="/ocidocs/services/database/">データベース</a></li>
+            
+              <li><a href="/ocidocs/services/developers/">開発者サービス</a></li>
+            
+              <li><a href="/ocidocs/services/edge/">エッジ・サービス</a></li>
+            
+              <li><a href="/ocidocs/services/security/">セキュリティ</a></li>
+            
+              <li><a href="/ocidocs/services/governance-and-administration/">ガバナンスと管理</a></li>
+            
+              <li><a href="/ocidocs/services/devtools/">開発ツール</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <a href="/ocidocs/solutions/"><span class="nav__sub-title">ソリューション別資料</span></a>
+          
+
+          
+          <ul>
+            
+              <li><a href="/ocidocs/solutions/ha/">HA・DR・高可用性システム</a></li>
+            
+              <li><a href="/ocidocs/solutions/iam/">認証・認可・セキュリティ</a></li>
+            
+              <li><a href="/ocidocs/solutions/manageability/">運用・管理</a></li>
+            
+              <li><a href="/ocidocs/solutions/cloudnative/">Cloud Native</a></li>
+            
+              <li><a href="/ocidocs/solutions/blockchain/">Blockchain</a></li>
+            
+              <li><a href="/ocidocs/solutions/others/">その他</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <a href="/ocidocs/faqs/"><span class="nav__sub-title">技術FAQ</span></a>
+          
+
+          
+        </li>
+      
+        <li>
+          
+            <a href="/ocidocs/misc/"><span class="nav__sub-title">その他</span></a>
+          
+
+          
+        </li>
+      
+        <li>
+          
+            <a href="/ocidocs/links/"><span class="nav__sub-title">外部リンク</span></a>
+          
+
+          
+        </li>
+      
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="ExaDB-XSサービス技術詳細">
+    <meta itemprop="description" content="Exadata Database Service on Exascale Infrastructure(ExaDB-XS)サービス技術詳細資料です。">
+    <meta itemprop="datePublished" content="2025-04-08T00:00:00+09:00">
+    
+
+    <div class="page__inner-wrap">
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 目次</h4></header>
+              <ul class="toc__menu"><li><a href="#スライド">スライド</a></li></ul>
+            </nav>
+          </aside>
+        
+        <p>2025/02/27に実施したOracle Database Technology Night #87の前半パート資料です。
+セミナー資料として公開していますが、最新情報は下記リンク先資料に更新していきますので、こちらをご参照ください。</p>
+
+<p><a href="https://speakerdeck.com/oracle4engineer/exadb-xs-technical-detail" target="_blank">https://speakerdeck.com/oracle4engineer/exadb-xs-technical-detail</a></p>
+
+<h4 id="スライド">スライド</h4>
+
+<div style="max-width:768px">
+
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
+<script defer="" class="speakerdeck-embed" data-id="65550812eaec452081dcd4cd58ee6709" data-ratio="1.7777777777777777" src="//speakerdeck.com/assets/embed.js"></script>
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
+
+</div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> タグ: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/ocidocs/tags/#%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%89%E3%81%82%E3%82%8A" class="page__taxonomy-item p-category" rel="tag">スライドあり</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> カテゴリー: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/ocidocs/categories/#database" class="page__taxonomy-item p-category" rel="tag">Database</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 更新日時:</strong> <time class="dt-published" datetime="2025-04-08T00:00:00+09:00">April 8, 2025</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">共有</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=ExaDB-XS%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E6%8A%80%E8%A1%93%E8%A9%B3%E7%B4%B0%20https%3A%2F%2Foracle-japan.github.io%2Focidocs%2Fdatabase%2Fexadb-xs-technical-details%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="共有 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Foracle-japan.github.io%2Focidocs%2Fdatabase%2Fexadb-xs-technical-details%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="共有 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://oracle-japan.github.io/ocidocs/database/exadb-xs-technical-details/" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="共有 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/ocidocs/database/exadata-machine-cloud-comparison/" class="pagination--pager" title="Exadata Database Machine/Exadata Cloud比較
+">前へ</a>
+    
+    
+      <a href="/ocidocs/database/oracle-database-for-begineers/" class="pagination--pager" title="[コア技術] Oracle Database入門資料集
+">次へ</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    
+<div class="page__related">
+  
+  <h2 class="page__related-title">関連記事</h2>
+  <div class="grid__wrapper">
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://files.speakerdeck.com/presentations/b80679208cd7478ca07e3158f138dc29/slide_0.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ocidocs/database/oracle-database-for-begineers/" rel="permalink">[コア技術] Oracle Database入門資料集
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2025-04-08T00:00:00+09:00">April 8, 2025</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">オラクルの若手エンジニアがお届けする Oracle Databaseに関する基本的な知識とスキルを身につけることができる初学者向け勉強会シリーズ
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://files.speakerdeck.com/presentations/b35001812a1343cc95494d2cfa863a1e/slide_0.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ocidocs/database/exadata-machine-cloud-comparison/" rel="permalink">Exadata Database Machine/Exadata Cloud比較
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2025-04-08T00:00:00+09:00">April 8, 2025</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Exadata Database Service on Dedicated Infrastructure/Exadata Database Service on Cloud@Customer/ Exadata Database Machineの比較資料です。
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://files.speakerdeck.com/presentations/65550812eaec452081dcd4cd58ee6709/slide_0.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ocidocs/database/exadata-database-service-resources/" rel="permalink">Exadata Database Service資料集
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2025-04-08T00:00:00+09:00">April 8, 2025</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Exadata Database Serviceの資料を集めました。
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://files.speakerdeck.com/presentations/b678078520d246aabfe33d6808b58d04/slide_0.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ocidocs/database/database-services-comparison/" rel="permalink">Oracle Databaseが利用可能なOCIデータベース・サービス比較
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2025-04-08T00:00:00+09:00">April 8, 2025</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Oracle Cloud Infrastructure 上で利用可能なOracle Databaseのサービスを比較する資料です。
+</p>
+  </article>
+</div>
+
+    
+  </div>
+</div>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="検索キーワードを入力してください..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>フォロー</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/#ocijp" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/oracle-japan" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+    
+
+    
+      <li><a href="/ocidocs/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2025 <a href="https://oracle-japan.github.io">Oracle Cloud Infrastructure 活用資料集</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/ocidocs/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/ocidocs/assets/js/lunr/lunr.min.js"></script>
+<script src="/ocidocs/assets/js/lunr/lunr-store.js"></script>
+<script src="/ocidocs/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VWKLFQKQEL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VWKLFQKQEL', { 'anonymize_ip': false});
+</script>
+
+
+
+
+
+
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+  
+    <script src="/ocidocs/assets/js/clipboardrouge.js"></script>
+  
+
+
+  </body>
+</html>
