@@ -27,3 +27,6 @@ Onboarding Sessionとは、Oracle PaaS & IaaSのサービスの開始＆サイ�
 
 </div>
 
+#### Oracle Cloud Support ご利用ガイド 全般_2024年12月12日版(PDF)  <!-- 更新日を最新に変更 -->
+
+[Oracle Cloud Support ご利用ガイド 全般_2024年12月12日版(PDF)](https://www.oracle.com/jp/a/ocom/docs/oracle-cloud-support-userguide-jp.pdf)
