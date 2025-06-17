@@ -197,12 +197,6 @@ var store = [{
         "url": "/ocidocs/database/autonomous/updates/autonomous-service-update/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/321763889e40491f9616346e568e1980/slide_0.jpg"
       },{
-        "title": "Oracle Cloudで考える高可用性アーキテクチャー",
-        "excerpt":"高可用性システムの構築をサポートするOracle Cloudの様々な機能のご紹介から、障害に強いアーキテクチャ設計の考え方などを説明する資料です。  ミッションクリティカルなシステムをどう堅牢に稼働させるかについての、オラクル社の知見をまとめたベスト・プラクティスである MAA(Maximum Availability Architecture) のリファレンス・モデルに触れながら、Oracle Cloud Infrastructure の機能やサービスを活用して、より安価に堅牢なシステムを作り上げることを目標にしています。   スライド          ","categories": ["Solutions","High Availability"],
-        "tags": ["スライドあり","レベル:応用(200)"],
-        "url": "/ocidocs/solutions/high%20availability/high-availability/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/b707ab1f81c742cc87bf2e145ba2bd82/slide_0.jpg"
-      },{
         "title": "OCI IAMとIDCSの違いとIDCSを利用するメリット",
         "excerpt":"OCIの認証、認可、ID管理などを司るOCI IAM (Identity and Access Management) と Identity Cloud Service (IDCS) について、違いやIDCS利用のメリットについて解説した資料です   スライド          ","categories": ["Services","Governance and Administration"],
         "tags": ["スライドあり","レベル:応用(200)"],
@@ -587,12 +581,6 @@ var store = [{
         "url": "/ocidocs/updates/update-FY23Q1/",
         "teaser": "https://files.speakerdeck.com/presentations/ff2ded79d397495f8e2dc25b0ac27523/slide_0.jpg"
       },{
-        "title": "Oracle Cloud Infrastructure ご利用ガイド / Onboading Session",
-        "excerpt":" Onboarding Sessionとは、Oracle PaaS &amp; IaaSのサービスの開始＆サインイン方法や基本的なユーザ管理及びサポートサービスについてご紹介します。サービスの利用を開始するお客様に最適な内容となっております。    スライド - その1 ご利用ガイド (2020/11/15更新)             スライド - その2 サポートサービスご案内 (2020/11/15更新)             セミナー動画 (2020/11/15収録)        ","categories": ["Services","Overall"],
-        "tags": ["スライド","動画","レベル:入門(100)"],
-        "url": "/ocidocs/services/overall/oci-onboading/",
-        "teaser": null
-      },{
         "title": "Oracle Content Management サービス概要",
         "excerpt":"OCI が提供するインテリジェントなコンテンツ管理プラットフォーム Oracle Content Management のサービスの概要紹介資料です。ファイル共有、アセット管理、Webサイト管理など、組織内のコンテンツ管理に関するさまざまな課題に対応する機能を1つのクラウドサービスとして提供します   2022年12月12日 新規公開しました   スライド           ","categories": ["Services","Developers"],
         "tags": ["スライドあり","レベル:入門(100)"],
@@ -833,22 +821,22 @@ var store = [{
         "url": "/ocidocs/services/compute/osmh/",
         "teaser": "https://files.speakerdeck.com/presentations/430dcf8539b746ea94a010c17780a663/slide_0.jpg"
       },{
+        "title": "ロード・バランサー FLB 詳細",
+        "excerpt":"様々なサービスの冗長性やスケーリングをサポートする OCI ロード・バランサー・サービス（FLB）について、応用的な利用方法について解説したドキュメントです。  セッション永続性、仮想ホストによるルーティング、URIパス・ベース・ルーティング、SSL通信方式とロード・バランサーでのSSLターミネーションの設定、ロード・バランサーが収集するメトリック、トラブル時の対応ガイドラインについて解説しています。   スライド          ","categories": ["Services","Networking"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "/ocidocs/services/networking/flexible-load-balancer-200/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/9ca991733d2a4670bdd4e5ed5b5770c4/slide_0.jpg"
+      },{
         "title": "ロード・バランサー 概要 FLB・NLB共通",
         "excerpt":"バックエンドに配置した様々なサービスの冗長性やスケーリングをサポートする OCI ロード・バランサー・サービスについて、その機能概要、FLBとNLBの種類、構成コンポーネントの内容、OCIコンソールを利用した構成方法などについて解説しています。   スライド           セミナー動画      ","categories": ["Services","Networking"],
         "tags": ["スライドあり","動画あり","レベル:入門(100)"],
         "url": "/ocidocs/services/networking/load-balancer-100/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/78914498b3c14b97a112f59283b754b7/slide_0.jpg"
       },{
-        "title": "ロード・バランサー FLB 詳細",
-        "excerpt":"様々なサービスの冗長性やスケーリングをサポートする OCI ロード・バランサー・サービス（FLB）について、応用的な利用方法について解説したドキュメントです。  セッション永続性、仮想ホストによるルーティング、URIパス・ベース・ルーティング、SSL通信方式とロード・バランサーでのSSLターミネーションの設定、ロード・バランサーが収集するメトリック、トラブル時の対応ガイドラインについて解説しています。   スライド          ","categories": ["Services","Networking"],
-        "tags": ["スライドあり","レベル:応用(200)"],
-        "url": "/ocidocs/services/networking/load-balancer-FLB-200/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/9ca991733d2a4670bdd4e5ed5b5770c4/slide_0.jpg"
-      },{
         "title": "ロード・バランサー NLB 詳細",
         "excerpt":"OCI ネットワーク・ロード・バランサー・サービス（NLB）について、全体的な構成要素、それぞれの要素や利用方法について解説しています。   スライド          ","categories": ["Services","Networking"],
         "tags": ["スライドあり","レベル:応用(200)"],
-        "url": "/ocidocs/services/networking/load-balancer-NLB-200/",
+        "url": "/ocidocs/services/networking/network-load-balancer-200/",
         "teaser": "https://files.speakerdeck.com/presentations/1e8f6d5abba64ea1b92c1112b392f6fc/slide_0.jpg"
       },{
         "title": "外部接続 詳細 - FastConnectの冗長性",
@@ -922,4 +910,16 @@ var store = [{
         "tags": ["スライドあり"],
         "url": "/ocidocs/database/oracle-database-for-begineers/",
         "teaser": "https://files.speakerdeck.com/presentations/b80679208cd7478ca07e3158f138dc29/slide_0.jpg"
+      },{
+        "title": "Oracle Cloud Infrastructure ご利用ガイド / Onboading Session",
+        "excerpt":" Onboarding Sessionとは、Oracle PaaS &amp; IaaSのサービスの開始＆サインイン方法や基本的なユーザ管理及びサポートサービスについてご紹介します。サービスの利用を開始するお客様に最適な内容となっております。    スライド - ご利用ガイド (2025/05/29更新)             Oracle Cloud Support ご利用ガイド 全般_2024年12月12日版(PDF)     Oracle Cloud Support ご利用ガイド 全般_2024年12月12日版(PDF)  ","categories": ["Services","Overall"],
+        "tags": ["スライド","動画","レベル:入門(100)"],
+        "url": "/ocidocs/services/overall/oci-onboading/",
+        "teaser": null
+      },{
+        "title": "Oracle Cloudで考える高可用性アーキテクチャー",
+        "excerpt":"高可用性システムの構築をサポートするOracle Cloudの様々な機能のご紹介から、障害に強いアーキテクチャ設計の考え方などを説明する資料です。  ミッションクリティカルなシステムをどう堅牢に稼働させるかについての、オラクル社の知見をまとめたベスト・プラクティスである MAA(Maximum Availability Architecture) のリファレンス・モデルに触れながら、Oracle Cloud Infrastructure の機能やサービスを活用して、より安価に堅牢なシステムを作り上げることを目標にしています。   スライド          ","categories": ["Solutions","High Availability"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "/ocidocs/solutions/high%20availability/high-availability/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/ae2dc5ea42df45ea8d0b9125b92d3808/slide_0.jpg"
       }]
