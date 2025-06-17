@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2025-06-17T11:16:25+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">Oracle Cloudで考える高可用性アーキテクチャー</title><link href="https://oracle-japan.github.io/ocidocs/solutions/high%20availability/high-availability/" rel="alternate" type="text/html" title="Oracle Cloudで考える高可用性アーキテクチャー" /><published>2025-06-17T00:00:00+09:00</published><updated>2025-06-17T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/solutions/high%20availability/high-availability</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/solutions/high%20availability/high-availability/"><![CDATA[<p>高可用性システムの構築をサポートするOracle Cloudの様々な機能のご紹介から、障害に強いアーキテクチャ設計の考え方などを説明する資料です。<br />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2025-06-17T14:06:25+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">Oracle Cloudで考える高可用性アーキテクチャー</title><link href="https://oracle-japan.github.io/ocidocs/solutions/high%20availability/high-availability/" rel="alternate" type="text/html" title="Oracle Cloudで考える高可用性アーキテクチャー" /><published>2025-06-17T00:00:00+09:00</published><updated>2025-06-17T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/solutions/high%20availability/high-availability</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/solutions/high%20availability/high-availability/"><![CDATA[<p>高可用性システムの構築をサポートするOracle Cloudの様々な機能のご紹介から、障害に強いアーキテクチャ設計の考え方などを説明する資料です。<br />
 ミッションクリティカルなシステムをどう堅牢に稼働させるかについての、オラクル社の知見をまとめたベスト・プラクティスである MAA(Maximum Availability Architecture) のリファレンス・モデルに触れながら、Oracle Cloud Infrastructure の機能やサービスを活用して、より安価に堅牢なシステムを作り上げることを目標にしています。</p>
 
 <h4 id="スライド">スライド</h4>
@@ -9,7 +9,23 @@
 <script async="" class="speakerdeck-embed" data-id="ae2dc5ea42df45ea8d0b9125b92d3808" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 <!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
 
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Solutions" /><category term="High Availability" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html"><![CDATA[高可用性システムの構築をサポートするOracle Cloudの様々な機能や、障害に強いアーキテクチャ設計の考え方などを紹介します]]></summary></entry><entry><title type="html">Oracle Cloud Infrastructure ご利用ガイド / Onboading Session</title><link href="https://oracle-japan.github.io/ocidocs/services/overall/oci-onboading/" rel="alternate" type="text/html" title="Oracle Cloud Infrastructure ご利用ガイド / Onboading Session" /><published>2025-05-29T00:00:00+09:00</published><updated>2024-05-30T06:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/overall/oci-onboading</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/overall/oci-onboading/"><![CDATA[<!-- 資料の説明を記載 (ここから) -->
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Solutions" /><category term="High Availability" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html"><![CDATA[高可用性システムの構築をサポートするOracle Cloudの様々な機能や、障害に強いアーキテクチャ設計の考え方などを紹介します]]></summary></entry><entry><title type="html">Oracle Cloud Infrastructure IaaS 新機能アップデート 2025/3 - 2025/5</title><link href="https://oracle-japan.github.io/ocidocs/updates/update-FY25Q4/" rel="alternate" type="text/html" title="Oracle Cloud Infrastructure IaaS 新機能アップデート 2025/3 - 2025/5" /><published>2025-06-17T00:00:00+09:00</published><updated>2025-06-17T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/updates/update-FY25Q4</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/updates/update-FY25Q4/"><![CDATA[<p>Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介しています。
+2025年3月～2025年5月の3ヶ月分の新機能について説明しています。</p>
+
+<h4 id="スライド">スライド</h4>
+<div style="max-width:768px">
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
+
+<script defer="" class="speakerdeck-embed" data-id="fd933310a28a45579f97c22c3ae7785f" data-ratio="1.7777777777777777" src="//speakerdeck.com/assets/embed.js"></script>
+
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
+
+<!-- #### セミナー動画 -->
+
+<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください -->
+
+<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) -->
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Updates" /><category term="スライドあり" /><category term="動画あり" /><summary type="html"><![CDATA[2025年3月～2025年5月の3ヶ月分のOCI IaaS新機能についてのまとめ資料です]]></summary></entry><entry><title type="html">Oracle Cloud Infrastructure ご利用ガイド / Onboading Session</title><link href="https://oracle-japan.github.io/ocidocs/services/overall/oci-onboading/" rel="alternate" type="text/html" title="Oracle Cloud Infrastructure ご利用ガイド / Onboading Session" /><published>2025-05-29T00:00:00+09:00</published><updated>2024-05-30T06:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/overall/oci-onboading</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/overall/oci-onboading/"><![CDATA[<!-- 資料の説明を記載 (ここから) -->
 <p>Onboarding Sessionとは、Oracle PaaS &amp; IaaSのサービスの開始＆サインイン方法や基本的なユーザ管理及びサポートサービスについてご紹介します。サービスの利用を開始するお客様に最適な内容となっております。
 <!-- 資料の説明を記載 (ここから) --></p>
 
@@ -1041,20 +1057,4 @@ OCICLIでの実施方法は<a href="https://oracle-japan.github.io/ocitutorials/
 <!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください -->
 
 <!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) -->
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Updates" /><category term="スライドあり" /><summary type="html"><![CDATA[2024年12月～2025年02月の3ヶ月分のOCI Oracle Database Services新機能についてのまとめ資料です]]></summary></entry><entry><title type="html">Oracle Cloud Infrastructure IaaS 新機能アップデート 2024/12 - 2025/2</title><link href="https://oracle-japan.github.io/ocidocs/updates/update-FY25Q3/" rel="alternate" type="text/html" title="Oracle Cloud Infrastructure IaaS 新機能アップデート 2024/12 - 2025/2" /><published>2025-03-07T00:00:00+09:00</published><updated>2025-03-07T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/updates/update-FY25Q3</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/updates/update-FY25Q3/"><![CDATA[<p>Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介しています。
-2024年12月～2025年2月の3ヶ月分の新機能について説明しています。</p>
-
-<h4 id="スライド">スライド</h4>
-<div style="max-width:768px">
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-
-<script defer="" class="speakerdeck-embed" data-id="07c385f63207451583555b2c225b1a40" data-ratio="1.7777777777777777" src="//speakerdeck.com/assets/embed.js"></script>
-
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
-
-<!-- #### セミナー動画 -->
-
-<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください -->
-
-<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) -->
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Updates" /><category term="スライドあり" /><category term="動画あり" /><summary type="html"><![CDATA[2024年12月～2025年2月の3ヶ月分のOCI IaaS新機能についてのまとめ資料です]]></summary></entry></feed>
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Updates" /><category term="スライドあり" /><summary type="html"><![CDATA[2024年12月～2025年02月の3ヶ月分のOCI Oracle Database Services新機能についてのまとめ資料です]]></summary></entry></feed>

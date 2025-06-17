@@ -922,4 +922,10 @@ var store = [{
         "tags": ["スライドあり","レベル:応用(200)"],
         "url": "/ocidocs/solutions/high%20availability/high-availability/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/ae2dc5ea42df45ea8d0b9125b92d3808/slide_0.jpg"
+      },{
+        "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2025/3 - 2025/5",
+        "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介しています。 2025年3月～2025年5月の3ヶ月分の新機能について説明しています。   スライド               ","categories": ["Updates"],
+        "tags": ["スライドあり","動画あり"],
+        "url": "/ocidocs/updates/update-FY25Q4/",
+        "teaser": "https://files.speakerdeck.com/presentations/fd933310a28a45579f97c22c3ae7785f/slide_0.jpg"
       }]
