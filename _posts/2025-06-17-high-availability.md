@@ -8,7 +8,7 @@ tags:
   - スライドあり
   - レベル:応用(200)
 header:
-  teaser: https://speakerd.s3.amazonaws.com/presentations/b707ab1f81c742cc87bf2e145ba2bd82/slide_0.jpg
+  teaser: https://speakerd.s3.amazonaws.com/presentations/ae2dc5ea42df45ea8d0b9125b92d3808/slide_0.jpg
 ---
 
 高可用性システムの構築をサポートするOracle Cloudの様々な機能のご紹介から、障害に強いアーキテクチャ設計の考え方などを説明する資料です。  
@@ -19,7 +19,7 @@ header:
 <div style="max-width:768px">
 
 <!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-<script async class="speakerdeck-embed" data-id="b707ab1f81c742cc87bf2e145ba2bd82" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-id="ae2dc5ea42df45ea8d0b9125b92d3808" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 <!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
 
 </div>
