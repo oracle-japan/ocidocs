@@ -24,7 +24,7 @@
 
 /* Copyright comment */
 /*!
- * Minimal Mistakes Jekyll Theme 4.27.1 by Michael Rose
+ * Minimal Mistakes Jekyll Theme 4.27.3 by Michael Rose
  * Copyright 2013-2025 Michael Rose - mademistakes.com | @mmistakes
  * Free for personal and commercial use under the MIT license
  * https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
@@ -1547,6 +1547,18 @@ th {
   background-color: rgb(47.2, 124.8, 148.8);
   color: #fff;
 }
+.btn--bluesky {
+  background-color: #1083fe;
+  color: #fff;
+}
+.btn--bluesky:visited {
+  background-color: #1083fe;
+  color: #fff;
+}
+.btn--bluesky:hover {
+  background-color: rgb(12.8, 104.8, 203.2);
+  color: #fff;
+}
 .btn--facebook {
   background-color: #3b5998;
   color: #fff;
@@ -1557,18 +1569,6 @@ th {
 }
 .btn--facebook:hover {
   background-color: rgb(47.2, 71.2, 121.6);
-  color: #fff;
-}
-.btn--twitter {
-  background-color: #55acee;
-  color: #fff;
-}
-.btn--twitter:visited {
-  background-color: #55acee;
-  color: #fff;
-}
-.btn--twitter:hover {
-  background-color: rgb(68, 137.6, 190.4);
   color: #fff;
 }
 .btn--linkedin {
@@ -1595,16 +1595,28 @@ th {
   background-color: rgb(34.4, 115.2, 173.6);
   color: #fff;
 }
-.btn--bluesky {
-  background-color: #1083fe;
+.btn--twitter {
+  background-color: #55acee;
   color: #fff;
 }
-.btn--bluesky:visited {
-  background-color: #1083fe;
+.btn--twitter:visited {
+  background-color: #55acee;
   color: #fff;
 }
-.btn--bluesky:hover {
-  background-color: rgb(12.8, 104.8, 203.2);
+.btn--twitter:hover {
+  background-color: rgb(68, 137.6, 190.4);
+  color: #fff;
+}
+.btn--x {
+  background-color: #0f1419;
+  color: #fff;
+}
+.btn--x:visited {
+  background-color: #0f1419;
+  color: #fff;
+}
+.btn--x:hover {
+  background-color: #0c1014;
   color: #fff;
 }
 .btn--block {
@@ -3104,13 +3116,18 @@ figure.highlight pre.highlight {
 .visually-hidden,
 .screen-reader-text,
 .screen-reader-text span,
-.screen-reader-shortcut {
+.screen-reader-shortcut,
+.sr-only,
+.sr-only-focusable:not(:focus) {
   position: absolute !important;
-  clip: rect(1px, 1px, 1px, 1px);
+  clip: rect(0, 0, 0, 0);
   height: 1px !important;
   width: 1px !important;
+  padding: 0 !important;
   border: 0 !important;
+  margin: -1px;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 body:hover .visually-hidden a,
@@ -3332,8 +3349,11 @@ body:hover .visually-hidden button {
 .social-icons .fa-tumblr, .social-icons .fa-tumblr-square {
   color: #32506d;
 }
-.social-icons .fa-twitter, .social-icons .fa-twitter-square, .social-icons .fa-x-twitter {
+.social-icons .fa-twitter, .social-icons .fa-twitter-square {
   color: #55acee;
+}
+.social-icons .fa-x-twitter, .social-icons .fa-square-x-twitter {
+  color: #0f1419;
 }
 .social-icons .fa-vimeo, .social-icons .fa-vimeo-square, .social-icons .fa-vimeo-v {
   color: #1ab7ea;

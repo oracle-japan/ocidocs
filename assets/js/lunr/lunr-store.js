@@ -47,18 +47,6 @@ var store = [{
         "url": "/ocidocs/services/database/database-100/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/51374bb7212c4564a2d18bbc26ad17b6/slide_0.jpg"
       },{
-        "title": "外部接続 概要",
-        "excerpt":"OCIのリージョンまでのネットワーク接続の形態や、IPsecを利用したVPN接続、専用線や閉域網を経由する FastConnect 接続について、概要を解説しています。   スライド           セミナー動画        ","categories": ["Services","Networking"],
-        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
-        "url": "/ocidocs/services/networking/connectivity-100/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/78fd892617f74e83b9c40ca0a2dd5537/slide_0.jpg"
-      },{
-        "title": "オブジェクト・ストレージ",
-        "excerpt":"安価で耐久性の高いストレージ・サービスであるOCIオブジェクト・ストレージ・サービスについて解説しています。  オブジェクト・ストレージ・サービスのユースケースや、機能、VCN内からのプライベート・アクセスの方法などについてカバーしています。   スライド             ","categories": ["Services","Storage"],
-        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
-        "url": "/ocidocs/services/storage/object-storage-100/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/e01e15341d2e43adbf149afaf86f0719/slide_0.jpg"
-      },{
         "title": "Autonomous Database 技術詳細",
         "excerpt":"Oracle Databaseを利用したフルマネージド・データベース・サービスである、Autonomous Databaseについての概要解説資料です。  高度な自動化技術が搭載された、世界初の自律型データベースの特徴や、利用方法などについてカバーしています。   スライド           セミナー動画      ","categories": ["Services","Database","Autonomous"],
         "tags": ["スライドあり","動画あり","レベル:応用(200)"],
@@ -647,12 +635,6 @@ var store = [{
         "url": "/ocidocs/updates/update-FY23Q4/",
         "teaser": "https://files.speakerdeck.com/presentations/578ec0bebb9e491182190af865fdc00c/slide_0.jpg"
       },{
-        "title": "外部接続 FastConnect詳細",
-        "excerpt":"OCIの技術説明資料：外部接続 FastConnect 詳細  FastConnectについての詳細資料です。 FastConnectの接続モデルやルーティング要件、接続方式などを解説しています。   スライド               ","categories": ["Services","Networking"],
-        "tags": ["スライドあり","レベル:応用(200)"],
-        "url": "/ocidocs/services/networking/FastConnect-200/",
-        "teaser": "https://files.speakerdeck.com/presentations/ef2254139aef47e0b48a38222edfb203/slide_0.jpg"
-      },{
         "title": "外部接続VPN接続(IPSec) 詳細",
         "excerpt":"OCIの技術説明資料：外部接続 VPN接続(IPSec) 詳細  外部接続 VPN接続(IPSec) 詳細資料です。 VPN接続のルーティング要件や接続ステップ、冗長化について解説しています。   スライド               ","categories": ["Services","Networking"],
         "tags": ["スライドあり","レベル:応用(200)"],
@@ -934,4 +916,22 @@ var store = [{
         "tags": ["スライドあり"],
         "url": "/ocidocs/updates/db-update-FY25Q4/",
         "teaser": "https://files.speakerdeck.com/presentations/588a7b57ec0d47ae88cbed8352017cd8/slide_0.jpg"
+      },{
+        "title": "外部接続 FastConnect詳細",
+        "excerpt":"OCIの技術説明資料：外部接続 FastConnect 詳細  FastConnectについての詳細資料です。 FastConnectの接続モデルやルーティング要件、接続方式などを解説しています。   スライド               ","categories": ["Services","Networking"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "/ocidocs/services/networking/FastConnect-200/",
+        "teaser": "https://files.speakerdeck.com/presentations/ef2254139aef47e0b48a38222edfb203/slide_0.jpg"
+      },{
+        "title": "外部接続 概要",
+        "excerpt":"OCIのリージョンまでのネットワーク接続の形態や、IPsecを利用したVPN接続、専用線や閉域網を経由する FastConnect 接続について、概要を解説しています。   スライド           セミナー動画        ","categories": ["Services","Networking"],
+        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
+        "url": "/ocidocs/services/networking/connectivity-100/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/78fd892617f74e83b9c40ca0a2dd5537/slide_0.jpg"
+      },{
+        "title": "オブジェクト・ストレージ",
+        "excerpt":"安価で耐久性の高いストレージ・サービスであるOCIオブジェクト・ストレージ・サービスについて解説しています。  オブジェクト・ストレージ・サービスのユースケースや、機能、VCN内からのプライベート・アクセスの方法などについてカバーしています。   スライド             ","categories": ["Services","Storage"],
+        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
+        "url": "/ocidocs/services/storage/object-storage-100/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/e01e15341d2e43adbf149afaf86f0719/slide_0.jpg"
       }]
