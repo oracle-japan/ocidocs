@@ -936,8 +936,8 @@ var store = [{
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/e01e15341d2e43adbf149afaf86f0719/slide_0.jpg"
       },{
         "title": "OCI Bastion（要塞）",
-        "excerpt":"パブリック・エンドポイントを持たないリソースに踏み台サーバなしでアクセスできる無償サービスであるOCI Bastionの概要説明資料です。   スライド          ","categories": ["Services","Bastion"],
+        "excerpt":"パブリック・エンドポイントを持たないリソースに踏み台サーバなしでアクセスできる無償サービスであるOCI Bastionの概要説明資料です。   スライド          ","categories": ["Services","Security"],
         "tags": ["スライドあり","レベル:入門(100)"],
-        "url": "/ocidocs/services/bastion/bastion/",
+        "url": "/ocidocs/services/security/bastion/",
         "teaser": "https://files.speakerdeck.com/presentations/13a3e26b2c8b4a71b6c95feef54c2b72/slide_0.jpg"
       }]
