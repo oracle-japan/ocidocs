@@ -10,7 +10,7 @@ tags:
   - 動画あり
   - レベル:入門(100)
 header:
-  teaser: https://speakerd.s3.amazonaws.com/presentations/dadec91d58b24202a8af17f075301fba/slide_0.jpg
+  teaser: https://files.speakerdeck.com/presentations/dadec91d58b24202a8af17f075301fba/slide_0.jpg
 ---
 
 ログインに始まり、言語の変更、サービス制限、OCID、検索など、主にOCIコンソールの基本的情報について解説しています。
@@ -20,12 +20,13 @@ header:
 
 <div style="max-width:768px">
 
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-<script async class="speakerdeck-embed" data-id="dadec91d58b24202a8af17f075301fba" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
+<!-- Speakerdeckから Embeded リンク (iFrame) を取得して貼り付け (ここから) -->
+
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/dadec91d58b24202a8af17f075301fba" title="OCI サービス基本情報" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
+
+<!-- Speakerdeckから Embeded リンク (iFrame) を取得して貼り付け (ここまで) -->
 
 </div>
-
 
 #### 関連動画
 
