@@ -23,12 +23,6 @@ var store = [{
         "url": "/ocidocs/solutions/manageability/managing-oci/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/8e5c50c20a3d45dabb5c41c3d46a2fb0/slide_0.jpg"
       },{
-        "title": "仮想クラウド・ネットワーク (VCN) 詳細",
-        "excerpt":"VCNピアリングの詳細、トランジット・ルーティング、ハイブリッドDNS構成、Oracle Services Networkへの接続、アプライアンス型仮想ファイアウォールの利用など、VCNを利用するにあたり少し複雑なケースについて解説しています。   更新履歴 2021/2/2 トランジット・ルーティングのユースケース3を追加しました   スライド          ","categories": ["Services","Networking"],
-        "tags": ["スライドあり","レベル:応用(200)"],
-        "url": "/ocidocs/services/networking/virtual-cloud-network-200/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/40dbaf0f88cf4f148e0d7ca0694a8030/slide_0.jpg"
-      },{
         "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2019/9～2020/11",
         "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介する資料です。  2019年9月～2020年11月の3ヶ月分の新機能について記載しています。   スライド          ","categories": ["Updates"],
         "tags": ["スライドあり"],
@@ -89,12 +83,6 @@ var store = [{
         "url": "/ocidocs/services/governance%20and%20administration/managing-users/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/85242fdec3af4bc6b355d3580701a55f/slide_0.jpg"
       },{
-        "title": "ストレージ詳細",
-        "excerpt":"OCIのストレージサービス全般について応用的なトピックを扱った資料です。DenseIOインスタンスに内蔵されるローカルNVMe、ブロック・ボリューム、ファイル・ストレージそれぞれの性能、ボリューム・グループなどについて解説しています。   スライド          ","categories": ["Services","Storage"],
-        "tags": ["スライドあり","レベル:応用(200)"],
-        "url": "/ocidocs/services/storage/storage-200/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/e1bcc74f03584d94af62da8983f3c8d5/slide_0.jpg"
-      },{
         "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2020/9～2020/11",
         "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介する資料です。  本資料は2020年9月～2020年11月の3ヶ月分の新機能について記載しています。   2021/1/18 動画を更新しました。   スライド            #### セミナー動画        ","categories": ["Updates"],
         "tags": ["スライドあり","動画あり"],
@@ -118,12 +106,6 @@ var store = [{
         "tags": ["スライドあり","レベル:入門(100)"],
         "url": "/ocidocs/services/governance%20and%20administration/idcs/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/7e9aa719ea294cba989be5ecf15b0955/slide_0.jpg"
-      },{
-        "title": "OCI Vault 機能概要と特徴",
-        "excerpt":"ユーザーの暗号鍵・シークレットをセキュアに集中管理することができるOCI Vaultの機能概要と特徴について   スライド          ","categories": ["Services","Security"],
-        "tags": ["スライドあり","レベル:入門(100)"],
-        "url": "/ocidocs/services/security/vault/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/042cc35ec9a34e5ab222bcd5c8f81f0c/slide_0.jpg"
       },{
         "title": "ユースケースから学ぶマルチクラウドの本当のところ",
         "excerpt":"2021/2/25 に実施した、Oracle Cloud ウェビナーシリーズの同名のセミナーの資料です。   世の中にはマルチクラウドという言葉がバズって(?)いますが、本当のところどの程度浸透しているのだろう? という個人的な疑問がありました。そこでOCIのマルチクラウドのケースを、実際に稼働しているものから提案中のものなど含めて、日本オラクル社内でヒアリングして作ったのがこのセミナー資料です。   取り上げたユースケースはどれも実在のものですが、事例化されていないため、かなりデフォルメや省略、数値の丸めなどを行っています。雰囲気を掴む程度に見ていただければと思います。   スライド          ","categories": ["Solution","Others"],
@@ -204,16 +186,16 @@ var store = [{
         "teaser": "https://image.slidesharecdn.com/oraclecloudnativestrategyoverview-210528043421/95/oraclecloud-native-1-1024.jpg?cb=1622176680"
       },{
         "title": "OCI Logging概要",
-        "excerpt":"OCIのロギングサービスであるOCI Loggingサービスの概要資料です。   スライド               ","categories": ["Services","Developers"],
+        "excerpt":"OCIのロギングサービスであるOCI Loggingサービスの概要資料です。   スライド          ","categories": ["Services","Developers"],
         "tags": ["スライドあり","レベル:入門(100)"],
         "url": "/ocidocs/services/developers/logging-overview/",
-        "teaser": "https://image.slidesharecdn.com/loggingoverview-210528044044/95/oci-logging-1-1024.jpg?cb=1622176898"
+        "teaser": "https://files.speakerdeck.com/presentations/e4a98f87cb8a4eb7a9335c5b4e773b73/slide_0.jpg"
       },{
         "title": "OCI Streamingの技術詳細",
-        "excerpt":"OCIのKafka互換メッセージングサービスであるOCI Streamingの技術詳細資料です。  実際にOCI Streamingを利用する際に必要となる知識を詳細に解説しています。   スライド               ","categories": ["Services","Developers"],
+        "excerpt":"OCIのKafka互換メッセージングサービスであるOCI Streamingの技術詳細資料です。  実際にOCI Streamingを利用する際に必要となる知識を詳細に解説しています。   スライド          ","categories": ["Services","Developers"],
         "tags": ["スライドあり","レベル:応用(200)"],
         "url": "/ocidocs/services/developers/streaming-details/",
-        "teaser": "https://image.slidesharecdn.com/streamingdetail-210528045307/95/oracle-cloud-infrastructure-streaming-service-1-1024.jpg?cb=1622177672"
+        "teaser": "https://files.speakerdeck.com/presentations/d542d99e067a4fc284f69322a5f9bbe9/slide_0.jpg"
       },{
         "title": "Oracle Blockchain Table概要",
         "excerpt":"Oracle Databaseの機能のOracle Blockchain Tableについて、概要から想定ユースケースや実装での応用パターン、セキュリティ向上への効果などをご説明しています。   スライド          ","categories": ["Solutions","Blockchain"],
@@ -335,12 +317,6 @@ var store = [{
         "url": "/ocidocs/services/governance%20and%20administration/managing-oci-100/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/cd1d3c875f76482cae0862ea475cb562/slide_0.jpg"
       },{
-        "title": "証明書サービス概要",
-        "excerpt":"Oracle Cloud Infrastructure 証明書サービス（OCI Certificates Service）は、証明書の発行、保管、管理機能を提供するサービスで、証明書を必要とするOCIリソースにシームレスに関連付けが可能となっています。   スライド             ","categories": ["Services","Security"],
-        "tags": ["スライドあり","レベル:入門(100)"],
-        "url": "/ocidocs/services/security/certificates/",
-        "teaser": "https://files.speakerdeck.com/presentations/38d1a11d7de04d6c9c57d5e838c29dae/slide_0.jpg"
-      },{
         "title": "OCI WAFのログ分析",
         "excerpt":"OCI WAFのログを分析するための環境構築手順についての説明資料です   スライド          ","categories": ["Services","Security","Edge Service"],
         "tags": ["スライドあり","レベル:入門(100)"],
@@ -383,12 +359,6 @@ var store = [{
         "url": "/ocidocs/services/governance%20and%20administration/identity-domains-overview/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/4288c22c8f1d411382695e4a7a0201ab/slide_0.jpg"
       },{
-        "title": "Web Application Firewall (WAF)",
-        "excerpt":"Web Application Firewall (WAF) サービスは、OCI内外に配置されたWebアプリケーションを悪意のある攻撃から保護することができるマネージドサービスです。  OCI WAFを利用すると、既存のアプリケーションには手を入れることなく、プロキシとして利用する形でOWASP Top10やCRS3に準拠した保護ルールや、攻撃に応じてアダプティブな保護を行うBot管理機能を利用し、Webアプリケーションを高度に保護することができるようになります。  この資料では、OCI Web Application Firewallサービスについて、サービスの概観、特徴、利用方法などの基礎的な内容について解説しています。   スライド        ","categories": ["Services","Edge Service","Security"],
-        "tags": ["スライドあり","レベル:入門(100)"],
-        "url": "/ocidocs/services/edge%20service/security/waf-100/",
-        "teaser": "https://files.speakerdeck.com/presentations/7288ee26528b4ebe89eeae40493ae4e1/slide_0.jpg"
-      },{
         "title": "ストレージの選び方 虎の巻",
         "excerpt":"2022/02/22開催の、OCI スキルアップセミナー #16 「ストレージの選び方 虎の巻」の資料です。 セミナー情報: https://oracle-code-tokyo-dev.connpass.com/event/236134/   スライド           セミナー動画        ","categories": ["Services","Storage"],
         "tags": ["スライドあり","動画あり","レベル:入門(100)"],
@@ -419,30 +389,6 @@ var store = [{
         "url": "/ocidocs/updates/updates-blog/",
         "teaser": "https://cdn.app.compendium.com/uploads/user/e7c690e8-6ff9-102a-ac6d-e4aebca50425/36fb492f-3532-48e4-a057-f2b674a19de1/File/b5a9121425a0e376b622e07247bd054e/image_20201202094512173.png"
       },{
-        "title": "動的ルーティング・ゲートウェイ (DRG) 概要",
-        "excerpt":"OCIの技術説明資料 動的ルーティング・ゲートウェイ (DRG) の概要資料です。 Oracle Cloud Infrastructure リージョンにおいて、ネットワーク間の接続機能を提供するDRGについて解説しています。   スライド          ","categories": ["Services","Networking"],
-        "tags": ["スライドあり","レベル:入門(100)","レベル:応用(200)"],
-        "url": "/ocidocs/services/networking/dynamic-routing-gateway/",
-        "teaser": "https://files.speakerdeck.com/presentations/bf0484aa9989433a8df32b2aa8d9ea32/slide_0.jpg"
-      },{
-        "title": "OCI API Gateway の認証・認可詳細",
-        "excerpt":"OCI API Gateway の認証・認可に関する技術詳細資料です。   スライド          ","categories": ["Services","Developers"],
-        "tags": ["スライドあり","レベル:応用(200)"],
-        "url": "/ocidocs/services/developers/apigateway-authnz-details/",
-        "teaser": "https://files.speakerdeck.com/presentations/ac54fb92d1ec45589938d0b5739c2a7d/slide_0.jpg?21587845"
-      },{
-        "title": "OCI API Gateway概要",
-        "excerpt":"OCIのマネージドAPI管理サービスであるOCI API Gatewayの概要資料です。   スライド          ","categories": ["Services","Developers"],
-        "tags": ["スライドあり","レベル:入門(100)"],
-        "url": "/ocidocs/services/developers/apigateway-overview/",
-        "teaser": "https://files.speakerdeck.com/presentations/466d8c1018b64d13affaef7c12147ccc/slide_0.jpg?21587064"
-      },{
-        "title": "Oracle Functions概要",
-        "excerpt":"OracleのマネージドFaaS(Functions as a Service)サービスであるOracle Functionsについての概要資料です。   スライド          ","categories": ["Services","Developers"],
-        "tags": ["スライドあり","レベル:入門(100)"],
-        "url": "/ocidocs/services/developers/functions-overview/",
-        "teaser": "https://files.speakerdeck.com/presentations/4881ba4ef34b4ff6a6b9dea6d3d29c3f/slide_0.jpg?21586991"
-      },{
         "title": "Helidon概要",
         "excerpt":"Oracleが提供するマイクロサービスフレームワークであるHelidonの概要資料です。   スライド          ","categories": ["Solutions","Cloud Native"],
         "tags": ["スライドあり","レベル:入門(100)"],
@@ -461,26 +407,20 @@ var store = [{
         "url": "/ocidocs/services/developers/oke-ocir-details/",
         "teaser": "https://files.speakerdeck.com/presentations/e8108c019e7042ebaf287bd76162906e/slide_0.jpg?21587736"
       },{
-        "title": "OCI Streaming概要",
-        "excerpt":"OCIのKafka互換メッセージングサービスであるOCI Streamingの概要資料です。   スライド          ","categories": ["Services","Developers"],
-        "tags": ["スライドあり","レベル:入門(100)"],
-        "url": "/ocidocs/services/developers/streaming-overview/",
-        "teaser": "https://files.speakerdeck.com/presentations/a1f3ec98aa9142a095bbd7dff664437e/slide_0.jpg?21587043"
-      },{
         "title": "Verrazzano概要",
         "excerpt":"Oracleが提供するマルチ/ハイブリッド対応のマルチKubernetesクラスタ管理プラットフォームであるVerrazzanoの概要資料です。   スライド          ","categories": ["Solutions","Cloud Native"],
         "tags": ["スライドあり","レベル:入門(100)"],
         "url": "/ocidocs/solutions/cloud%20native/verrazzano-overview/",
         "teaser": "https://files.speakerdeck.com/presentations/299bc2819097435cbb2ed6947b9d59de/slide_0.jpg?21587176"
       },{
-        "title": "Service Connector Hub概要",
-        "excerpt":"OCI のメッセージ・バス・プラットフォームである Service Connector Hub の概要資料です。   スライド          ","categories": ["Services","Developers"],
-        "tags": ["スライドあり","レベル:入門(100)"],
-        "url": "/ocidocs/services/developers/service-connector-hub-overview/",
-        "teaser": "https://files.speakerdeck.com/presentations/71fa8ca3349f46a89bd1ba2ccdcf7633/slide_0.jpg?2158707"
+        "title": "OCI API Gateway の認証・認可詳細",
+        "excerpt":"OCI API Gateway の認証・認可に関する技術詳細資料です。   スライド          ","categories": ["Services","Developers"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "/ocidocs/services/developers/apigateway-authnz-details/",
+        "teaser": "https://files.speakerdeck.com/presentations/ac54fb92d1ec45589938d0b5739c2a7d/slide_0.jpg?21587845"
       },{
         "title": "API Gateway 機能概要集",
-        "excerpt":"API Gateway の機能に関する概要資料集です。   スライド          ","categories": ["Services","Developers"],
+        "excerpt":"API Gateway の機能に関する概要資料集です。   スライド         ","categories": ["Services","Developers"],
         "tags": ["スライドあり","レベル:入門(100)"],
         "url": "/ocidocs/services/developers/apigateway-functional-overview/",
         "teaser": "https://files.speakerdeck.com/presentations/ac1a968b5d73450d810f45c647daff13/slide_0.jpg?21587870"
@@ -496,12 +436,6 @@ var store = [{
         "tags": ["スライドあり","レベル:入門(100)"],
         "url": "/ocidocs/services/developers/functions-observability/",
         "teaser": "https://files.speakerdeck.com/presentations/30cbc37313954b4f8127b8f1a5e62085/slide_0.jpg?21587913"
-      },{
-        "title": "OCI DevOps 概要",
-        "excerpt":"OCI Native に CI/CD を実現するためのツールファミリーである OCI DevOps の概要資料です。   スライド          ","categories": ["Services","Developers"],
-        "tags": ["スライドあり","レベル:入門(100)"],
-        "url": "/ocidocs/services/developers/oci-dev-ops-overview/",
-        "teaser": "https://files.speakerdeck.com/presentations/1accedf5208b455aab625521a5e9376b/slide_0.jpg?21587270"
       },{
         "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2022/3～2022/5",
         "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介する資料です。  本資料は2022年3月～2022年5月の3ヶ月分の新機能について記載しています。   スライド        #### セミナー動画        ","categories": ["Updates"],
@@ -526,18 +460,6 @@ var store = [{
         "tags": ["スライドあり","レベル:応用(200)"],
         "url": "/ocidocs/services/edge%20security/security/waf-protection-rules/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/6cda805a91594839b9e9e3b98fd31bd8/slide_0.jpg"
-      },{
-        "title": "OCI IAM Identity Domains機能概要",
-        "excerpt":"2021年に提供を開始したOCIの新認証基盤「Identity Domains」についてご紹介します。OCIの旧認証・認可機能の「IAM」と、オラクルクラウドのPaaSサービスとして提供していた「Identity Cloud Service」が統合し、「Identity Domains」として登場しました。   スライド          ","categories": ["Solutions","IAM"],
-        "tags": ["スライドあり","レベル:応用(200)"],
-        "url": "/ocidocs/solutions/iam/identity-domains-overview/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/114e3c0df97948ce97ff21b2ced1aa9a/slide_0.jpg"
-      },{
-        "title": "仮想クラウド・ネットワーク (VCN) 概要",
-        "excerpt":"仮想クラウド・ネットワークと、その構成コンポーネント (サブネット、仮想NIC、ゲートウェイ、ルート表、セキュリティ・リスト) と、ネットワークの結合(ピアリング)に関して解説しています。2022/7/20 スライドを更新しました。   スライド           セミナー動画      ","categories": ["Services","Networking"],
-        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
-        "url": "/ocidocs/services/networking/virtual-cloud-network-100/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/a3f5c9eb4fbb4fd49a20eaf26117024a/slide_0.jpg"
       },{
         "title": "仮想テスト・アクセス・ポイント(VTAP)概要",
         "excerpt":"OCIの技術説明資料：OCI VCN 仮想テスト・アクセス・ポイント Virtual Test Access Point (VTAP) 概要 VCNのトラブルシューティングやセキュリティ監視などに活用できるパケット・キャプチャ機能である仮想テスト・アクセス・ポイント（VTAP）の概要資料です。   スライド           ","categories": ["Services","Networking"],
@@ -593,12 +515,6 @@ var store = [{
         "url": "/ocidocs/solutions/manageability/DBManagement/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/288ac83b507b4e4bbd6a8916c07785cc/slide_0.jpg"
       },{
-        "title": "OCI Network Firewall概要",
-        "excerpt":"2022年に提供が開始されたOCI Network Firewallの紹介資料です。   スライド          ","categories": ["Solutions","Security"],
-        "tags": ["スライドあり","レベル:応用(200)"],
-        "url": "/ocidocs/solutions/security/NetworkFirewall/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/69c6d8709c684fcbb2b488fc0b9002c5/slide_0.jpg"
-      },{
         "title": "OCI Securityサービス技術概要",
         "excerpt":"2022年12月時点の、OCIで提供している各Securityサービスの特徴をまとめた資料になります。   スライド          ","categories": ["Solutions","Security"],
         "tags": ["スライドあり","レベル:応用(200)"],
@@ -629,17 +545,29 @@ var store = [{
         "url": "/ocidocs/services/developers/resourcemanager-overview/",
         "teaser": "https://files.speakerdeck.com/presentations/4c372757929c4c3c81e5fb649486d70b/slide_0.jpg"
       },{
+        "title": "OCI Streaming概要",
+        "excerpt":"OCIのKafka互換メッセージングサービスであるOCI Streamingの概要資料です。   スライド          ","categories": ["Services","Developers"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/services/developers/streaming-overview/",
+        "teaser": "https://files.speakerdeck.com/presentations/a1f3ec98aa9142a095bbd7dff664437e/slide_0.jpg?21587043"
+      },{
+        "title": "Service Connector Hub概要",
+        "excerpt":"OCI のメッセージ・バス・プラットフォームである Service Connector Hub の概要資料です。   スライド          ","categories": ["Services","Developers"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/services/developers/service-connector-hub-overview/",
+        "teaser": "https://files.speakerdeck.com/presentations/71fa8ca3349f46a89bd1ba2ccdcf7633/slide_0.jpg?2158707"
+      },{
+        "title": "Web Application Firewall (WAF)",
+        "excerpt":"Web Application Firewall (WAF) サービスは、OCI内外に配置されたWebアプリケーションを悪意のある攻撃から保護することができるマネージドサービスです。  OCI WAFを利用すると、既存のアプリケーションには手を入れることなく、プロキシとして利用する形でOWASP Top10やCRS3に準拠した保護ルールや、攻撃に応じてアダプティブな保護を行うBot管理機能を利用し、Webアプリケーションを高度に保護することができるようになります。  この資料では、OCI Web Application Firewallサービスについて、サービスの概観、特徴、利用方法などの基礎的な内容について解説しています。   スライド        ","categories": ["Services","Edge Service","Security"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/services/edge%20service/security/waf-100/",
+        "teaser": "https://files.speakerdeck.com/presentations/7288ee26528b4ebe89eeae40493ae4e1/slide_0.jpg"
+      },{
         "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2023/3～2023/5",
         "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介しています。 2023年3月～2023年5月の3ヶ月分の新機能について説明しています。   スライド               ","categories": ["Updates"],
         "tags": ["スライドあり","動画あり"],
         "url": "/ocidocs/updates/update-FY23Q4/",
         "teaser": "https://files.speakerdeck.com/presentations/578ec0bebb9e491182190af865fdc00c/slide_0.jpg"
-      },{
-        "title": "外部接続VPN接続(IPSec) 詳細",
-        "excerpt":"OCIの技術説明資料：外部接続 VPN接続(IPSec) 詳細  外部接続 VPN接続(IPSec) 詳細資料です。 VPN接続のルーティング要件や接続ステップ、冗長化について解説しています。   スライド               ","categories": ["Services","Networking"],
-        "tags": ["スライドあり","レベル:応用(200)"],
-        "url": "/ocidocs/services/networking/IPSecVPN-200/",
-        "teaser": "https://files.speakerdeck.com/presentations/e3a0f9ce639c46b285e4c52f2767f8b7/slide_0.jpg"
       },{
         "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2023/6～2023/8",
         "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介しています。 2023年6月～2023年8月の3ヶ月分の新機能について説明しています。   スライド               ","categories": ["Updates"],
@@ -665,6 +593,12 @@ var store = [{
         "url": "/ocidocs/updates/db-update-FY24Q2/",
         "teaser": "https://files.speakerdeck.com/presentations/1699ab73aee64c988125a89d8c15898d/slide_0.jpg"
       },{
+        "title": "OCI DevOps 概要",
+        "excerpt":"OCI Native に CI/CD を実現するためのツールファミリーである OCI DevOps の概要資料です。   スライド          ","categories": ["Services","Developers"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/services/developers/oci-dev-ops-overview/",
+        "teaser": "https://files.speakerdeck.com/presentations/1accedf5208b455aab625521a5e9376b/slide_0.jpg?21587270"
+      },{
         "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2023/12 - 2024/2",
         "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介しています。 2023年12月～2024年2月の3ヶ月分の新機能について説明しています。   スライド               ","categories": ["Updates"],
         "tags": ["スライドあり","動画あり"],
@@ -677,23 +611,35 @@ var store = [{
         "url": "/ocidocs/updates/db-update-FY24Q3/",
         "teaser": "https://files.speakerdeck.com/presentations/3141cf14d9e3402381a4cb08fdd5c437/slide_0.jpg"
       },{
-        "title": "OCIへのデータ移行",
-        "excerpt":"オンプレミスからOCIのストレージへのデータ移行等で利用可能なツール（OCI CLI, RCLONE, OCIFSなど）、およびデータ転送サービスについて解説しています。   2024/4：改定版に更新   スライド          ","categories": ["Services","Storage"],
-        "tags": ["スライドあり","レベル:入門(100)"],
-        "url": "/ocidocs/services/storage/data-transfer/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/157e4694c8d04b11922b5f15cc88fcb4/slide_0.jpg"
-      },{
         "title": "OCI Oracle Database Services新機能アップデート 2024/3 - 2024/5",
         "excerpt":"Oracle Cloud Infrastructureの新機能の中から、OCI Oracle Database Servicesに関するアップデート情報をまとめてご紹介しています。  2024年3月～2024年5月の3ヶ月分の新機能について説明しています。   スライド              ","categories": ["Updates"],
         "tags": ["スライドあり"],
         "url": "/ocidocs/updates/db-update-FY24Q4/",
         "teaser": "https://files.speakerdeck.com/presentations/902a6281175c47d4918c8c28651f5e80/slide_0.jpg"
       },{
-        "title": "OCI コスト管理",
-        "excerpt":"OCIのコスト管理に関連した機能の説明資料です。 各リソースがどのくらいコストを消費しているのかの分析や、予算オーバーしないために役立つ機能などをご紹介しています。      テナンシ、コンパートメント、タグ 　- コスト分析、コストおよび使用状況レポート 　- 割当て制限（Quota）、予算（Budget）   クラウド・アドバイザ（Cloud Advisor）、Cost Estimator   2024/8：初版アップロード   スライド         ","categories": ["Services","Governance and Administration"],
-        "tags": ["スライドあり","レベル:入門(100)"],
-        "url": "/ocidocs/services/governance%20and%20administration/cost-management/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/4541d035c9b4444bb7b1c2ea5ed032d8/slide_0.jpg"
+        "title": "仮想クラウド・ネットワーク (VCN) 概要",
+        "excerpt":"仮想クラウド・ネットワークと、その構成コンポーネント (サブネット、仮想NIC、ゲートウェイ、ルート表、セキュリティ・リスト) と、ネットワークの結合(ピアリング)に関して解説しています。   スライド           セミナー動画      ","categories": ["Services","Networking"],
+        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
+        "url": "/ocidocs/services/networking/virtual-cloud-network-100/",
+        "teaser": "https://files.speakerdeck.com/presentations/a3f5c9eb4fbb4fd49a20eaf26117024a/slide_0.jpg"
+      },{
+        "title": "外部接続VPN接続(IPSec) 詳細",
+        "excerpt":"外部接続 VPN接続(IPSec) 詳細資料です。  VPN接続のルーティング要件や接続ステップ、冗長化について解説しています。   スライド               ","categories": ["Services","Networking"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "/ocidocs/services/networking/IPSecVPN-200/",
+        "teaser": "https://files.speakerdeck.com/presentations/e3a0f9ce639c46b285e4c52f2767f8b7/slide_0.jpg"
+      },{
+        "title": "動的ルーティング・ゲートウェイ (DRG) 概要",
+        "excerpt":"OCIの技術説明資料 動的ルーティング・ゲートウェイ (DRG) の概要資料です。 Oracle Cloud Infrastructure リージョンにおいて、ネットワーク間の接続機能を提供するDRGについて解説しています。   スライド          ","categories": ["Services","Networking"],
+        "tags": ["スライドあり","レベル:入門(100)","レベル:応用(200)"],
+        "url": "/ocidocs/services/networking/dynamic-routing-gateway/",
+        "teaser": "https://files.speakerdeck.com/presentations/bf0484aa9989433a8df32b2aa8d9ea32/slide_0.jpg"
+      },{
+        "title": "OCI IAM Identity Domains機能概要",
+        "excerpt":"2021年に提供を開始したOCIの新認証基盤「Identity Domains」についてご紹介します。OCIの旧認証・認可機能の「IAM」と、オラクルクラウドのPaaSサービスとして提供していた「Identity Cloud Service」が統合し、「Identity Domains」として登場しました。   スライド          ","categories": ["Solutions","IAM"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "/ocidocs/solutions/iam/identity-domains-overview/",
+        "teaser": "https://files.speakerdeck.com/presentations/e5b90a84ed1b4d9597ad53a5c7696922/slide_0.jpg"
       },{
         "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2024/3 - 2024/5",
         "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介しています。 2024年3月～2024年5月の3ヶ月分の新機能について説明しています。   スライド                ","categories": ["Updates"],
@@ -725,17 +671,17 @@ var store = [{
         "url": "/ocidocs/services/overall/oracle-cloud-infrastructure-tech-overview/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/4e0d4cd1bfae4eeebb36faf522e5a279/slide_0.jpg"
       },{
-        "title": "OCI セキュア・デスクトップ 概要",
-        "excerpt":"2023年6月にリリースされたOracle Cloud Infrastructureのセキュア・デスクトップ（OCI Secure Desktops）の概要資料です。 OCIセキュア・デスクトップは、OCIネイティブなVDIのサービスです。   2024/9/13: 最新情報を反映して更新   スライド               ","categories": ["Services","Compute"],
-        "tags": ["スライドあり"],
-        "url": "/ocidocs/services/compute/SecureDesktop/",
-        "teaser": "https://files.speakerdeck.com/presentations/c2048e5e9c15469ca304b55f39429794/slide_0.jpg"
-      },{
         "title": "Oracle Cloud Infrastructure 概要",
         "excerpt":"OCIに初めて触れる人のために、OCI全般の特長や、アーキテクチャについて解説しています。   スライド           関連動画        ","categories": ["Services","Overall"],
         "tags": ["スライドあり","動画あり","レベル:入門(100)"],
         "url": "/ocidocs/services/overall/oracle-cloud-infrastructure-overview/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/63c6514d88204918bc3e572bd3183589/slide_0.jpg"
+      },{
+        "title": "証明書サービス概要",
+        "excerpt":"Oracle Cloud Infrastructure 証明書サービス（OCI Certificates Service）は、証明書の発行、保管、管理機能を提供するサービスで、証明書を必要とするOCIリソースにシームレスに関連付けが可能となっています。   スライド             ","categories": ["Services","Security"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/services/security/certificates/",
+        "teaser": "https://files.speakerdeck.com/presentations/38d1a11d7de04d6c9c57d5e838c29dae/slide_0.jpg"
       },{
         "title": "自動スケーリング概要",
         "excerpt":"自動スケーリング機能 (Auto Scaling) の概要資料です。OCIの自動スケーリング機能と、それを支えるコンポーネント(インスタンス構成、インスタンス・プール、自動スケーリング構成)について解説しています。   スライド           ","categories": ["Services","Compute"],
@@ -755,23 +701,17 @@ var store = [{
         "url": "/ocidocs/services/developers/events-service/",
         "teaser": "https://files.speakerdeck.com/presentations/7f8bb60e28a5437ab6c40dd664de8b49/slide_0.jpg"
       },{
-        "title": "ヘルスチェック & トラフィック管理",
-        "excerpt":"OCIのエッジ・サービスを構成するサービスで、インターネットに面したアプリケーションを外部からアクティブに監視したり(ヘルスチェック)、バックエンドのサービスの稼動状態やクライアントのプロファイルに応じてグローバルにトラフィックの振り分けを行うGTM機能を提供(トラフィック管理)します。   スライド           ","categories": ["Services","Edge Service"],
+        "title": "OCI Network Firewall概要",
+        "excerpt":"2022年に提供が開始されたOCI Network Firewallの紹介資料です。   スライド          ","categories": ["Solutions","Security"],
         "tags": ["スライドあり","レベル:応用(200)"],
-        "url": "/ocidocs/services/edge%20service/health-check-and-traffic-management/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/ad44958c474941c0a69dd6be27eda8dd/slide_0.jpg"
+        "url": "/ocidocs/solutions/security/NetworkFirewall/",
+        "teaser": "https://files.speakerdeck.com/presentations/69c6d8709c684fcbb2b488fc0b9002c5/slide_0.jpg"
       },{
-        "title": "コンピュート詳細",
-        "excerpt":"OCI上で仮想マシンやベアメタル・サーバーを利用することができるコンピュート・サービスについての詳細資料です。  カスタム・イメージの応用、仮想マシンイメージの持ち込み(BYOI)、ハイパーバイザーの利用、メトリックと自動スケーリング、コンソール接続、などのコンピュート・サービスの応用的な使い方について解説しています。   スライド          ","categories": ["Services","Compute"],
-        "tags": ["スライドあり","レベル:応用(200)"],
-        "url": "/ocidocs/services/compute/compute-200/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/90e8e852d1c8443787f6f33e7e721177/slide_0.jpg"
-      },{
-        "title": "Oracle Cloud Migrations Service概要",
-        "excerpt":"Oracle Cloud Migrationsサービスの概要資料です。Oracle Cloud Migrations は、OCIに移行を行うためのOCIネイティブなサービスです。VMwareとAWS EC2からOCIコンピュート・インスタンスへの移行をサポートしています。   スライド             ","categories": ["Services","Compute"],
-        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
-        "url": "/ocidocs/services/compute/oracle-cloud-migrations/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/705d4256bd6d4d7b8cee3f346d213f8d/slide_0.jpg"
+        "title": "OCI Vault 機能概要と特徴",
+        "excerpt":"ユーザーの暗号鍵・シークレットをセキュアに集中管理することができるOCI Vaultの機能概要と特徴について   スライド          ","categories": ["Services","Security"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/services/security/vault/",
+        "teaser": "https://speakerd.s3.amazonaws.com/presentations/042cc35ec9a34e5ab222bcd5c8f81f0c/slide_0.jpg"
       },{
         "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2024/9 - 2024/11",
         "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介しています。 2024年9月～2024年11月の3ヶ月分の新機能について説明しています。   スライド               ","categories": ["Updates"],
@@ -789,73 +729,91 @@ var store = [{
         "excerpt":"インスタンスにアタッチしてブロック・デバイスとして利用することができる、OCIブロック・ボリューム・サービスの基本的な内容について解説しています。また、DenseIO シェイプに内蔵される高速なローカルNVMeディスクについても説明しています。   スライド           動画 ~28分15秒      ","categories": ["Services","Storage"],
         "tags": ["スライドあり","動画あり","レベル:入門(100)"],
         "url": "/ocidocs/services/storage/block-volume-100/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/b80073aa58a141638ad5ba432009ba59/slide_0.jpg"
+        "teaser": "https://files.speakerdeck.com/presentations/b80073aa58a141638ad5ba432009ba59/slide_2.jpg"
       },{
         "title": "ファイル・ストレージ概要",
         "excerpt":"VCN内にエンド・ポイントを持つマネージドNFSサービスである、OCIファイル・ストレージ・サービスについて解説しています。  ファイル・ストレージ・サービスのユースケースの他、サービスを構成する基本的なコンポーネントと役割、インスタンスからのアクセス、セキュリティ、スナップショット機能についてカバーしています。   スライド           動画      ","categories": ["Services","Storage"],
         "tags": ["スライドあり","動画あり","レベル:入門(100)"],
         "url": "/ocidocs/services/storage/file-storage-100/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/f74062dcf2a84dbdba4a49bb4964ef67/slide_0.jpg"
+        "teaser": "https://files.speakerdeck.com/presentations/f74062dcf2a84dbdba4a49bb4964ef67/slide_0.jpg"
       },{
-        "title": "OS管理ハブ概要",
-        "excerpt":"OCI、オンプレミス、サードパーティ・クラウド上のインスタンスのパッチ適用、パッケージ管理の一元化と自動化を可能にするOCI提供のサービス「OS管理ハブ」の概要を解説しています。   スライド           ","categories": ["Services","Compute"],
+        "title": "OCI コスト管理",
+        "excerpt":"OCIのコスト管理に関連した機能の説明資料です。 各リソースがどのくらいコストを消費しているのかの分析や、予算オーバーしないために役立つ機能などをご紹介しています。      テナンシ、コンパートメント、タグ 　- コスト分析、コストおよび使用状況レポート 　- 割当て制限（Quota）、予算（Budget）   クラウド・アドバイザ（Cloud Advisor）、Cost Estimator   2024/8：初版アップロード   スライド         ","categories": ["Services","Governance and Administration"],
         "tags": ["スライドあり","レベル:入門(100)"],
-        "url": "/ocidocs/services/compute/osmh/",
-        "teaser": "https://files.speakerdeck.com/presentations/430dcf8539b746ea94a010c17780a663/slide_0.jpg"
+        "url": "/ocidocs/services/governance%20and%20administration/cost-management/",
+        "teaser": "https://files.speakerdeck.com/presentations/4541d035c9b4444bb7b1c2ea5ed032d8/slide_0.jpg"
       },{
-        "title": "ロード・バランサー FLB 詳細",
-        "excerpt":"様々なサービスの冗長性やスケーリングをサポートする OCI ロード・バランサー・サービス（FLB）について、応用的な利用方法について解説したドキュメントです。  セッション永続性、仮想ホストによるルーティング、URIパス・ベース・ルーティング、SSL通信方式とロード・バランサーでのSSLターミネーションの設定、ロード・バランサーが収集するメトリック、トラブル時の対応ガイドラインについて解説しています。   スライド          ","categories": ["Services","Networking"],
+        "title": "コンピュート詳細",
+        "excerpt":"OCI上で仮想マシンやベアメタル・サーバーを利用することができるコンピュート・サービスについての詳細資料です。  カスタム・イメージの応用、仮想マシンイメージの持ち込み(BYOI)、ハイパーバイザーの利用、メトリックと自動スケーリング、コンソール接続、などのコンピュート・サービスの応用的な使い方について解説しています。   スライド          ","categories": ["Services","Compute"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "/ocidocs/services/compute/compute-200/",
+        "teaser": "https://files.speakerdeck.com/presentations/90e8e852d1c8443787f6f33e7e721177/slide_0.jpg"
+      },{
+        "title": "ロード・バランサ 詳細 - フレキシブル・ロード・バランサ(FLB)",
+        "excerpt":"様々なサービスの冗長性やスケーリングをサポートする OCI ロード・バランサー・サービス（FLB）について、応用的な利用方法について解説したドキュメントです。  セッション永続性、仮想ホストによるルーティング、URIパス・ベース・ルーティング、SSL通信方式とロード・バランサーでのSSLターミネーションの設定、ロード・バランサーが収集するメトリック、トラブル時の対応ガイドラインについて解説しています。   スライド            ","categories": ["Services","Networking"],
         "tags": ["スライドあり","レベル:応用(200)"],
         "url": "/ocidocs/services/networking/flexible-load-balancer-200/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/9ca991733d2a4670bdd4e5ed5b5770c4/slide_0.jpg"
+        "teaser": "https://files.speakerdeck.com/presentations/9ca991733d2a4670bdd4e5ed5b5770c4/slide_0.jpg"
       },{
-        "title": "ロード・バランサー 概要 FLB・NLB共通",
-        "excerpt":"バックエンドに配置した様々なサービスの冗長性やスケーリングをサポートする OCI ロード・バランサー・サービスについて、その機能概要、FLBとNLBの種類、構成コンポーネントの内容、OCIコンソールを利用した構成方法などについて解説しています。   スライド           セミナー動画      ","categories": ["Services","Networking"],
+        "title": "ロード・バランサ 概要 - FLB・NLB共通",
+        "excerpt":"Oracle Cloud Infrastructure (OCI) の技術説明資料、ロード・バランサ 概要 FLB/NLB共通編 (Level 100) です。  OCI ロード・バランサ・サービスについて、機能概要、FLB(Flexible Load Balancer) と NLB(Network Load Balancer) の違い、構成コンポーネント、OCIコンソールを利用した構成方法などについて解説しています。   スライド           セミナー動画        ","categories": ["Services","Networking"],
         "tags": ["スライドあり","動画あり","レベル:入門(100)"],
         "url": "/ocidocs/services/networking/load-balancer-100/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/78914498b3c14b97a112f59283b754b7/slide_0.jpg"
+        "teaser": "https://files.speakerdeck.com/presentations/78914498b3c14b97a112f59283b754b7/slide_0.jpg"
       },{
-        "title": "ロード・バランサー NLB 詳細",
-        "excerpt":"OCI ネットワーク・ロード・バランサー・サービス（NLB）について、全体的な構成要素、それぞれの要素や利用方法について解説しています。   スライド          ","categories": ["Services","Networking"],
+        "title": "ロード・バランサ 詳細 - ネットワーク・ロード・バランサ(NLB)",
+        "excerpt":"OCI ネットワーク・ロード・バランサー・サービス(NLB)について、全体的な構成要素、それぞれの要素や利用方法について解説しています。   スライド            ","categories": ["Services","Networking"],
         "tags": ["スライドあり","レベル:応用(200)"],
         "url": "/ocidocs/services/networking/network-load-balancer-200/",
         "teaser": "https://files.speakerdeck.com/presentations/1e8f6d5abba64ea1b92c1112b392f6fc/slide_0.jpg"
       },{
-        "title": "外部接続 詳細 - FastConnectの冗長性",
-        "excerpt":"OCIの技術説明資料：外部接続 詳細 - FastConnectの冗長性 です。 お客様ネットワークとOracle Cloud Infrastructure(OCI)間をプライベート回線で接続するサービス「FastConnect」の冗長化を構成する際の考慮点について解説しています。   スライド           ","categories": ["Services","Networking"],
-        "tags": ["スライドあり","レベル:応用(200)"],
-        "url": "/ocidocs/services/networking/connectivity_redundancy/",
-        "teaser": "https://files.speakerdeck.com/presentations/1461985b53674d799e36988a2f20f886/slide_0.jpg"
+        "title": "OCI API Gateway概要",
+        "excerpt":"OCIのマネージドAPI管理サービスであるOCI API Gatewayの概要資料です。   スライド          ","categories": ["Services","Developers"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/services/developers/apigateway-overview/",
+        "teaser": "https://files.speakerdeck.com/presentations/466d8c1018b64d13affaef7c12147ccc/slide_0.jpg?21587064"
       },{
-        "title": "コンピュート概要",
-        "excerpt":"OCI上で仮想マシンやベアメタル・サーバーを利用することができるコンピュート・サービスについての概要資料です。  インスタンスの種類、イメージの操作、ブート・ボリューム、インスタンス・プールを利用した自動スケーリング、インスタンス・メタデータについて解説しています。   スライド (2020/10/20更新)             動画その1 (2020/4/21収録)         動画その2 : 28分32秒~ (2020/4/21収録)        ","categories": ["Services","Compute"],
-        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
-        "url": "/ocidocs/services/compute/compute-100/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/cf71c90194e445c4812a671235389dff/slide_0.jpg"
+        "title": "OCIへのデータ移行",
+        "excerpt":"オンプレミスからOCIのストレージへのデータ移行等で利用可能なツール（OCI CLI, RCLONE, OCIFSなど）、およびデータ転送サービスについて解説しています。   スライド          ","categories": ["Services","Storage"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/services/storage/data-transfer/",
+        "teaser": "https://files.speakerdeck.com/presentations/157e4694c8d04b11922b5f15cc88fcb4/slide_0.jpg"
+      },{
+        "title": "Oracle Functions概要",
+        "excerpt":"OracleのマネージドFaaS(Functions as a Service)サービスであるOracle Functionsについての概要資料です。   スライド          ","categories": ["Services","Developers"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/services/developers/functions-overview/",
+        "teaser": "https://files.speakerdeck.com/presentations/4881ba4ef34b4ff6a6b9dea6d3d29c3f/slide_0.jpg?21586991"
       },{
         "title": "Oracle Cloud Infrastructure サービス基本情報",
-        "excerpt":"ログインに始まり、言語の変更、サービス制限、OCID、検索など、主にOCIコンソールの基本的情報について解説しています。   スライド           関連動画       ","categories": ["Services","Overall"],
+        "excerpt":"ログインに始まり、言語の変更、サービス制限、OCID、検索など、主にOCIコンソールの基本的情報について解説しています。   スライド             関連動画       ","categories": ["Services","Overall"],
         "tags": ["スライドあり","動画あり","レベル:入門(100)"],
         "url": "/ocidocs/services/overall/service-essentials/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/dadec91d58b24202a8af17f075301fba/slide_0.jpg"
+        "teaser": "https://files.speakerdeck.com/presentations/dadec91d58b24202a8af17f075301fba/slide_0.jpg"
       },{
         "title": "組織管理(Organization Management)概要",
-        "excerpt":"OCIの技術説明資料 組織管理 (Organization Management) の概要資料です。 複数のテナンシの請求やコスト管理を一元化できる機能である「組織管理」に関して解説しています。   スライド           ","categories": ["Services","Governance and Administration"],
+        "excerpt":"OCIの技術説明資料 組織管理 (Organization Management) の概要資料です。 複数のテナンシの請求やコスト管理を一元化できる機能である「組織管理」に関して解説しています。   スライド            ","categories": ["Services","Governance and Administration"],
         "tags": ["スライドあり","レベル:応用(200)"],
         "url": "/ocidocs/services/governance%20and%20administration/organization/",
         "teaser": "https://files.speakerdeck.com/presentations/a7d1e15509464d9daefa9609a01c6d6c/slide_0.jpg"
       },{
         "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2024/12 - 2025/2",
-        "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介しています。 2024年12月～2025年2月の3ヶ月分の新機能について説明しています。   スライド               ","categories": ["Updates"],
+        "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介しています。 2024年12月～2025年2月の3ヶ月分の新機能について説明しています。   スライド                  ","categories": ["Updates"],
         "tags": ["スライドあり","動画あり"],
         "url": "/ocidocs/updates/update-FY25Q3/",
         "teaser": "https://files.speakerdeck.com/presentations/07c385f63207451583555b2c225b1a40/slide_0.jpg"
       },{
         "title": "OCI Oracle Database Services新機能アップデート 2024/12 - 2025/02",
-        "excerpt":"Oracle Cloud Infrastructureの新機能の中から、OCI Oracle Database Servicesに関するアップデート情報をまとめてご紹介しています。  2024年12月～2025年02月の3ヶ月分の新機能について説明しています。   スライド              ","categories": ["Updates"],
+        "excerpt":"Oracle Cloud Infrastructureの新機能の中から、OCI Oracle Database Servicesに関するアップデート情報をまとめてご紹介しています。  2024年12月～2025年02月の3ヶ月分の新機能について説明しています。   スライド                  ","categories": ["Updates"],
         "tags": ["スライドあり"],
         "url": "/ocidocs/updates/db-update-FY25Q3/",
         "teaser": "https://files.speakerdeck.com/presentations/1988f149aa044f31981d5f233667a884/slide_0.jpg"
+      },{
+        "title": " コンピュート・サービス 概要",
+        "excerpt":"OCI上で仮想マシンやベアメタル・サーバーを利用することができるコンピュート・サービスについての概要資料です。  インスタンスの種類、イメージの操作、ブート・ボリューム、インスタンス・プールを利用した自動スケーリング、インスタンス・メタデータについて解説しています。   スライド (2025/3/26更新)              ","categories": ["Services","Compute"],
+        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
+        "url": "/ocidocs/services/compute/compute-100/",
+        "teaser": "https://files.speakerdeck.com/presentations/cf71c90194e445c4812a671235389dff/slide_0.jpg"
       },{
         "title": "Autonomous Database 技術FAQ",
         "excerpt":"■ サービス概要編 Autonomous DatabaseはOracle Databaseとどう違うのでしょうか？ 内部的にはOracle Database 19c or 23aiを使用しています。 それに加えてAutonomous Databaseでは、データベース管理者(DBA)のタスクを減らすため、様々な自動化・自律化機能が備わっていることや、Exadataを基盤としているため高速化されていること、Enterprise Edition(EE)とRACなどの各種EEオプションがデフォルトで利用できることが特徴として挙げられます。 Autonomous DatabaseではExadataのモデルを選択できますか？ Serverless型とDedicated型で異なります。 Serverless型ではモデルを選択することはできません。ExadataのSmartScanといったハードウェアのスペックに依存しないソフトウェアの機能による高速化がありますので、モデルを気にせずにお使いいただけます。それもメリットの一つです。 一方、筐体を専有してご利用いただくDedicated型の場合は、利用できるECPU/ストレージの総量にも関係しますので、Exadata X8MまたはX9Mといったようにモデルをご選択いただくことが可能です。 Autonomous Database にはタイプがいくつかありますが、どれを選択すれば良いでしょうか？ ワークロードの特性に応じてご選択いただければと思います。分析目的の利用であれば、Autonomous Data Warehouse(ADW)、JSON中心のアプリケーション開発であればAutonomous JSON Database(AJD)、APEXアプリケーション開発であればAPEX Application Development、トランザクション処理やそれ以外のワークロードであればAutonomous Transaction Processing(ATP)をご選択いただければと思います。 デプロイメント・タイプとしてServerlessとDedicated、Cloud@Customerがありますが、どういった違いがありますか？ Serverlessは運用を極力シンプルにしたい場合や、コストを最優先に考えた場合に選択されることが多く、一方で、より大規模なシステムや、他のお客様との同居が許されないようなシステムではDedicatedを選択いただくことが可能です。 データを外に持ち出すことができないケースや、どうしてもアプリケーションサーバはオンプレミスに配置する必要があってネットワークレイテンシが問題となるようなケースではお客様のデータセンターに配置するCloud@Customerをご選択いただければと思います。 ServerlessとDedicatedに機能差はありますか？ こちらをご参照ください。 Autonomous JSON Database(AJD) は ACID が保証されているのでしょうか？もしくは一般的なNoSQLサービスと言う理解でしょうか？ ACIDが保証されているサービスとなります。 良くMongoDBと比較されますが、Autonomous JSON DatabaseはOracle Databaseにドキュメントを格納するため、RDBMSの特徴をそのまま享受できる点がMongoDBと異なる最大の特徴となります。 詳細についてはこちらに記載がありますので、併せてご確認ください。 (APEX)ADB上のOracle REST...","categories": ["FAQ","services","Autonomous"],
@@ -876,16 +834,16 @@ var store = [{
         "teaser": "https://files.speakerdeck.com/presentations/65550812eaec452081dcd4cd58ee6709/slide_0.jpg"
       },{
         "title": "Exadata Database Machine/Exadata Cloud比較",
-        "excerpt":"Exadata Database Service on Dedicated Infrastructure/Exadata Database Service on Cloud@Customer/Exadata Database Machine比較比較資料です。   スライド          ","categories": ["Database"],
+        "excerpt":"Exadata Database Service on Dedicated Infrastructure/Exadata Database Service on Cloud@Customer/Exadata Database Machine比較比較資料です。   スライド            ","categories": ["Database"],
         "tags": ["スライドあり"],
         "url": "/ocidocs/database/exadata-machine-cloud-comparison/",
         "teaser": "https://files.speakerdeck.com/presentations/b35001812a1343cc95494d2cfa863a1e/slide_0.jpg"
       },{
         "title": "ExaDB-XSサービス技術詳細",
-        "excerpt":"2025/02/27に実施したOracle Database Technology Night #87の前半パート資料です。 セミナー資料として公開していますが、最新情報は下記リンク先資料に更新していきますので、こちらをご参照ください。   https://speakerdeck.com/oracle4engineer/exadb-xs-technical-detail   スライド          ","categories": ["Database"],
+        "excerpt":"2025/02/27に実施したOracle Database Technology Night #87の前半パート資料です。 セミナー資料として公開していますが、最新情報は下記リンク先資料に更新していきますので、こちらをご参照ください。   https://speakerdeck.com/oracle4engineer/exadb-xs-technical-detail   スライド            ","categories": ["Database"],
         "tags": ["スライドあり"],
         "url": "/ocidocs/database/exadb-xs-technical-details/",
-        "teaser": "https://files.speakerdeck.com/presentations/65550812eaec452081dcd4cd58ee6709/slide_0.jpg"
+        "teaser": "https://files.speakerdeck.com/presentations/6f60b906f55b49bf88701f43f754cc52/slide_0.jpg"
       },{
         "title": "[コア技術] Oracle Database入門資料集",
         "excerpt":"オラクルの若手エンジニアがお届けする Oracle Databaseに関する基本的な知識とスキルを身につけることができる初学者向け勉強会シリーズOracle DBaseCampの資料集です。   Oracle DBaseCamp資料集  https://speakerdeck.com/oracle4engineer/collections/oracle-dbasecamp   Oracle DBaseCamp って？   入社3年未満のオラクル若手エンジニアがお届けするOracle Databaseに関する基本的な知識とスキルを身につけることができる初学者向け勉強会シリーズ！ 「Base Camp」は山登りで根拠地とされる場所。「初学者および初級のエンジニア（デベロッパー）の皆さんがスキルを身につける出発点となる場所になってほしい」という気持ちを込めて・・・ 「Database」にかけて「Oracle DBaseCamp」 と名付けました！   ","categories": ["Database"],
@@ -893,50 +851,92 @@ var store = [{
         "url": "/ocidocs/database/oracle-database-for-begineers/",
         "teaser": "https://files.speakerdeck.com/presentations/b80679208cd7478ca07e3158f138dc29/slide_0.jpg"
       },{
+        "title": "Oracle Cloud Migrations Service概要",
+        "excerpt":"Oracle Cloud Migrationsサービスの概要資料です。Oracle Cloud Migrations は、OCIに移行を行うためのOCIネイティブなサービスです。VMwareとAWS EC2からOCIコンピュート・インスタンスへの移行をサポートしています。   スライド             ","categories": ["Services","Compute"],
+        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
+        "url": "/ocidocs/services/compute/oracle-cloud-migrations/",
+        "teaser": "https://files.speakerdeck.com/presentations/705d4256bd6d4d7b8cee3f346d213f8d/slide_0.jpg"
+      },{
+        "title": "ストレージ詳細",
+        "excerpt":"OCIのストレージサービス全般について応用的なトピックを扱った資料です。DenseIOインスタンスに内蔵されるローカルNVMe、ブロック・ボリューム、ファイル・ストレージそれぞれの性能、ボリューム・グループなどについて解説しています。   スライド          ","categories": ["Services","Storage"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "/ocidocs/services/storage/storage-200/",
+        "teaser": "https://files.speakerdeck.com/presentations/e1bcc74f03584d94af62da8983f3c8d5/slide_0.jpg"
+      },{
+        "title": "仮想クラウド・ネットワーク (VCN) 詳細",
+        "excerpt":"VCNピアリングの詳細、トランジット・ルーティング、ハイブリッドDNS構成、Oracle Services Networkへの接続、アプライアンス型仮想ファイアウォールの利用など、VCNを利用するにあたり少し複雑なケースについて解説しています。   スライド          ","categories": ["Services","Networking"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "/ocidocs/services/networking/virtual-cloud-network-200/",
+        "teaser": "https://files.speakerdeck.com/presentations/40dbaf0f88cf4f148e0d7ca0694a8030/slide_0.jpg"
+      },{
+        "title": "OS管理ハブ概要",
+        "excerpt":"OCI、オンプレミス、サードパーティ・クラウド上のインスタンスのパッチ適用、パッケージ管理の一元化と自動化を可能にするOCI提供のサービス「OS管理ハブ」の概要を解説しています。   スライド           ","categories": ["Services","Compute"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/services/compute/osmh/",
+        "teaser": "https://files.speakerdeck.com/presentations/430dcf8539b746ea94a010c17780a663/slide_0.jpg"
+      },{
         "title": "Oracle Cloud Infrastructure ご利用ガイド / Onboading Session",
-        "excerpt":" Onboarding Sessionとは、Oracle PaaS &amp; IaaSのサービスの開始＆サインイン方法や基本的なユーザ管理及びサポートサービスについてご紹介します。サービスの利用を開始するお客様に最適な内容となっております。    スライド - ご利用ガイド (2025/05/29更新)             Oracle Cloud Support ご利用ガイド 全般_2024年12月12日版(PDF)     Oracle Cloud Support ご利用ガイド 全般_2024年12月12日版(PDF)  ","categories": ["Services","Overall"],
+        "excerpt":" Onboarding Sessionとは、Oracle PaaS &amp; IaaSのサービスの開始＆サインイン方法や基本的なユーザ管理及びサポートサービスについてご紹介します。サービスの利用を開始するお客様に最適な内容となっております。    スライド - ご利用ガイド (2025/05/29更新)               Oracle Cloud Support ご利用ガイド 全般_2024年12月12日版(PDF)     Oracle Cloud Support ご利用ガイド 全般_2024年12月12日版(PDF)  ","categories": ["Services","Overall"],
         "tags": ["スライド","動画","レベル:入門(100)"],
         "url": "/ocidocs/services/overall/oci-onboading/",
-        "teaser": null
+        "teaser": "https://files.speakerdeck.com/presentations/f2821cf202414dcba2b84035c15758e2/slide_0.jpg"
       },{
-        "title": "Oracle Cloudで考える高可用性アーキテクチャー",
-        "excerpt":"高可用性システムの構築をサポートするOracle Cloudの様々な機能のご紹介から、障害に強いアーキテクチャ設計の考え方などを説明する資料です。  ミッションクリティカルなシステムをどう堅牢に稼働させるかについての、オラクル社の知見をまとめたベスト・プラクティスである MAA(Maximum Availability Architecture) のリファレンス・モデルに触れながら、Oracle Cloud Infrastructure の機能やサービスを活用して、より安価に堅牢なシステムを作り上げることを目標にしています。   スライド          ","categories": ["Solutions","High Availability"],
+        "title": "外部接続 詳細 - FastConnectの冗長性",
+        "excerpt":"OCIの技術説明資料：外部接続 詳細 - FastConnectの冗長性 です。 お客様ネットワークとOracle Cloud Infrastructure(OCI)間をプライベート回線で接続するサービス「FastConnect」の冗長化を構成する際の考慮点について解説しています。   スライド           ","categories": ["Services","Networking"],
         "tags": ["スライドあり","レベル:応用(200)"],
-        "url": "/ocidocs/solutions/high%20availability/high-availability/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/ae2dc5ea42df45ea8d0b9125b92d3808/slide_0.jpg"
+        "url": "/ocidocs/services/networking/connectivity-redundancy/",
+        "teaser": "https://files.speakerdeck.com/presentations/1461985b53674d799e36988a2f20f886/slide_0.jpg"
       },{
         "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2025/3 - 2025/5",
-        "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介しています。 2025年3月～2025年5月の3ヶ月分の新機能について説明しています。   スライド               ","categories": ["Updates"],
+        "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介しています。 2025年3月～2025年5月の3ヶ月分の新機能について説明しています。   スライド                  ","categories": ["Updates"],
         "tags": ["スライドあり","動画あり"],
         "url": "/ocidocs/updates/update-FY25Q4/",
         "teaser": "https://files.speakerdeck.com/presentations/fd933310a28a45579f97c22c3ae7785f/slide_0.jpg"
       },{
+        "title": "Oracle Cloudで考える高可用性アーキテクチャー",
+        "excerpt":"高可用性システムの構築をサポートするOracle Cloudの様々な機能のご紹介から、障害に強いアーキテクチャ設計の考え方などを説明する資料です。  ミッションクリティカルなシステムをどう堅牢に稼働させるかについての、オラクル社の知見をまとめたベスト・プラクティスである MAA(Maximum Availability Architecture) のリファレンス・モデルに触れながら、Oracle Cloud Infrastructure の機能やサービスを活用して、より安価に堅牢なシステムを作り上げることを目標にしています。   スライド            ","categories": ["Solutions","High Availability"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "/ocidocs/solutions/high%20availability/high-availability/",
+        "teaser": "https://files.speakerdeck.com/presentations/ae2dc5ea42df45ea8d0b9125b92d3808/slide_0.jpg"
+      },{
         "title": "OCI Oracle Database Services新機能アップデート 2025/03 - 2025/06",
-        "excerpt":"Oracle Cloud Infrastructureの新機能の中から、OCI Oracle Database Servicesに関するアップデート情報をまとめてご紹介しています。  2025年03月～2025年06月の3ヶ月分の新機能について説明しています。   スライド             ","categories": ["Updates"],
+        "excerpt":"Oracle Cloud Infrastructureの新機能の中から、OCI Oracle Database Servicesに関するアップデート情報をまとめてご紹介しています。  2025年03月～2025年06月の3ヶ月分の新機能について説明しています。   スライド                  ","categories": ["Updates"],
         "tags": ["スライドあり"],
         "url": "/ocidocs/updates/db-update-FY25Q4/",
         "teaser": "https://files.speakerdeck.com/presentations/588a7b57ec0d47ae88cbed8352017cd8/slide_0.jpg"
       },{
-        "title": "外部接続 FastConnect詳細",
-        "excerpt":"OCIの技術説明資料：外部接続 FastConnect 詳細  FastConnectについての詳細資料です。 FastConnectの接続モデルやルーティング要件、接続方式などを解説しています。   スライド               ","categories": ["Services","Networking"],
+        "title": "ヘルスチェック & トラフィック管理",
+        "excerpt":"OCIのエッジ・サービスを構成するサービスで、インターネットに面したアプリケーションを外部からアクティブに監視したり(ヘルスチェック)、バックエンドのサービスの稼動状態やクライアントのプロファイルに応じてグローバルにトラフィックの振り分けを行うGTM機能を提供(トラフィック管理)します。   スライド           ","categories": ["Services","Edge Service"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "/ocidocs/services/edge%20service/health-check-and-traffic-management/",
+        "teaser": "https://files.speakerdeck.com/presentations/ad44958c474941c0a69dd6be27eda8dd/slide_0.jpg"
+      },{
+        "title": "外部接続 詳細 - FastConnect",
+        "excerpt":"OCIの技術説明資料：外部接続 詳細 - FastConnect  FastConnectについての詳細資料です。 FastConnectの接続モデルやルーティング要件、接続方式などを解説しています。   スライド               ","categories": ["Services","Networking"],
         "tags": ["スライドあり","レベル:応用(200)"],
         "url": "/ocidocs/services/networking/FastConnect-200/",
         "teaser": "https://files.speakerdeck.com/presentations/ef2254139aef47e0b48a38222edfb203/slide_0.jpg"
       },{
         "title": "外部接続 概要",
-        "excerpt":"OCIのリージョンまでのネットワーク接続の形態や、IPsecを利用したVPN接続、専用線や閉域網を経由する FastConnect 接続について、概要を解説しています。   スライド           セミナー動画        ","categories": ["Services","Networking"],
+        "excerpt":"OCIのリージョンまでのネットワーク接続の形態や、IPsecを利用したVPN接続、専用線や閉域網を経由する FastConnect 接続について、概要を解説しています。   スライド            セミナー動画        ","categories": ["Services","Networking"],
         "tags": ["スライドあり","動画あり","レベル:入門(100)"],
         "url": "/ocidocs/services/networking/connectivity-100/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/78fd892617f74e83b9c40ca0a2dd5537/slide_0.jpg"
+        "teaser": "https://files.speakerdeck.com/presentations/78fd892617f74e83b9c40ca0a2dd5537/slide_0.jpg"
+      },{
+        "title": "OCI セキュア・デスクトップ 概要",
+        "excerpt":"2023年6月にリリースされたOracle Cloud Infrastructureのセキュア・デスクトップ（OCI Secure Desktops）の概要資料です。 OCIセキュア・デスクトップは、OCIネイティブなVDIのサービスです。   スライド               ","categories": ["Services","Compute"],
+        "tags": ["スライドあり"],
+        "url": "/ocidocs/services/compute/SecureDesktop/",
+        "teaser": "https://files.speakerdeck.com/presentations/c2048e5e9c15469ca304b55f39429794/slide_0.jpg"
       },{
         "title": "オブジェクト・ストレージ",
-        "excerpt":"安価で耐久性の高いストレージ・サービスであるOCIオブジェクト・ストレージ・サービスについて解説しています。  オブジェクト・ストレージ・サービスのユースケースや、機能、VCN内からのプライベート・アクセスの方法などについてカバーしています。   スライド             ","categories": ["Services","Storage"],
+        "excerpt":"安価で耐久性の高いストレージ・サービスであるOCIオブジェクト・ストレージ・サービスについて解説しています。  オブジェクト・ストレージ・サービスのユースケースや、機能、VCN内からのプライベート・アクセスの方法などについてカバーしています。   スライド               ","categories": ["Services","Storage"],
         "tags": ["スライドあり","動画あり","レベル:入門(100)"],
         "url": "/ocidocs/services/storage/object-storage-100/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/e01e15341d2e43adbf149afaf86f0719/slide_0.jpg"
+        "teaser": "https://files.speakerdeck.com/presentations/e01e15341d2e43adbf149afaf86f0719/slide_0.jpg"
       },{
         "title": "OCI Bastion（要塞）",
-        "excerpt":"パブリック・エンドポイントを持たないリソースに踏み台サーバなしでアクセスできる無償サービスであるOCI Bastionの概要説明資料です。   スライド          ","categories": ["Services","Security"],
+        "excerpt":"パブリック・エンドポイントを持たないリソースに踏み台サーバなしでアクセスできる無償サービスであるOCI Bastionの概要説明資料です。   スライド           ","categories": ["Services","Security"],
         "tags": ["スライドあり","レベル:入門(100)"],
         "url": "/ocidocs/services/security/bastion/",
         "teaser": "https://files.speakerdeck.com/presentations/13a3e26b2c8b4a71b6c95feef54c2b72/slide_0.jpg"
