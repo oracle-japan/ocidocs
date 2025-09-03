@@ -8,7 +8,7 @@ tags:
   - スライドあり
   - レベル:応用(200)
 header:
-  teaser: https://image.slidesharecdn.com/streamingdetail-210528045307/95/oracle-cloud-infrastructure-streaming-service-1-1024.jpg?cb=1622177672
+  teaser: https://files.speakerdeck.com/presentations/d542d99e067a4fc284f69322a5f9bbe9/slide_0.jpg
 ---
 
 OCIのKafka互換メッセージングサービスであるOCI Streamingの技術詳細資料です。  
@@ -19,7 +19,7 @@ OCIのKafka互換メッセージングサービスであるOCI Streamingの技�
 <div style="max-width:768px">
 
 <!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/77FGeyjRQEwOMt" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/oracle4engineer/oracle-cloud-infrastructure-streaming-service" title="Oracle Cloud Infrastructure Streaming Service 技術詳説" target="_blank"></a> </strong></div>
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/d542d99e067a4fc284f69322a5f9bbe9" title="OCI Streaming 技術詳細 " allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
 <!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
 
 </div>
