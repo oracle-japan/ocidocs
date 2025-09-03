@@ -8,7 +8,7 @@ tags:
   - スライドあり
   - レベル:応用(200)
 header:
-  teaser: https://speakerd.s3.amazonaws.com/presentations/ad44958c474941c0a69dd6be27eda8dd/slide_0.jpg
+  teaser: https://files.speakerdeck.com/presentations/ad44958c474941c0a69dd6be27eda8dd/slide_0.jpg
 ---
 
 OCIのエッジ・サービスを構成するサービスで、インターネットに面したアプリケーションを外部からアクティブに監視したり(ヘルスチェック)、バックエンドのサービスの稼動状態やクライアントのプロファイルに応じてグローバルにトラフィックの振り分けを行うGTM機能を提供(トラフィック管理)します。

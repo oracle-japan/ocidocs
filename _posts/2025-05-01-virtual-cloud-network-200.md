@@ -8,13 +8,11 @@ tags:
   - スライドあり
   - レベル:応用(200)
 header:
-  teaser: https://speakerd.s3.amazonaws.com/presentations/40dbaf0f88cf4f148e0d7ca0694a8030/slide_0.jpg
+  teaser: https://files.speakerdeck.com/presentations/40dbaf0f88cf4f148e0d7ca0694a8030/slide_0.jpg
 ---
 
 VCNピアリングの詳細、トランジット・ルーティング、ハイブリッドDNS構成、Oracle Services Networkへの接続、アプライアンス型仮想ファイアウォールの利用など、VCNを利用するにあたり少し複雑なケースについて解説しています。
 
-更新履歴
-2021/2/2 トランジット・ルーティングのユースケース3を追加しました
 
 #### スライド
 

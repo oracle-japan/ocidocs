@@ -8,7 +8,7 @@ tags:
   - スライドあり
   - レベル:入門(100)
 header:
-  teaser: https://speakerd.s3.amazonaws.com/presentations/4541d035c9b4444bb7b1c2ea5ed032d8/slide_0.jpg
+  teaser: https://files.speakerdeck.com/presentations/4541d035c9b4444bb7b1c2ea5ed032d8/slide_0.jpg
 ---
 
 OCIのコスト管理に関連した機能の説明資料です。

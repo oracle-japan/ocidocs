@@ -9,11 +9,10 @@ tags:
   - 動画あり
   - レベル:入門(100)
 header:
-  teaser: https://speakerd.s3.amazonaws.com/presentations/a3f5c9eb4fbb4fd49a20eaf26117024a/slide_0.jpg
+  teaser: https://files.speakerdeck.com/presentations/a3f5c9eb4fbb4fd49a20eaf26117024a/slide_0.jpg
 ---
 
-仮想クラウド・ネットワークと、その構成コンポーネント (サブネット、仮想NIC、ゲートウェイ、ルート表、セキュリティ・リスト) と、ネットワークの結合(ピアリング)に関して解説しています。2022/7/20 スライドを更新しました。
-
+仮想クラウド・ネットワークと、その構成コンポーネント (サブネット、仮想NIC、ゲートウェイ、ルート表、セキュリティ・リスト) と、ネットワークの結合(ピアリング)に関して解説しています。
 
 #### スライド
 
