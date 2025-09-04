@@ -719,12 +719,6 @@ var store = [{
         "url": "/ocidocs/updates/db-update-FY25Q2/",
         "teaser": "https://files.speakerdeck.com/presentations/06e0ecb97d2d4aef80912b826c8fc311/slide_0.jpg"
       },{
-        "title": "ブロックボリューム概要",
-        "excerpt":"インスタンスにアタッチしてブロック・デバイスとして利用することができる、OCIブロック・ボリューム・サービスの基本的な内容について解説しています。また、DenseIO シェイプに内蔵される高速なローカルNVMeディスクについても説明しています。   スライド           動画 ~28分15秒      ","categories": ["Services","Storage"],
-        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
-        "url": "/ocidocs/services/storage/block-volume-100/",
-        "teaser": "https://files.speakerdeck.com/presentations/b80073aa58a141638ad5ba432009ba59/slide_0.jpg"
-      },{
         "title": "ファイル・ストレージ概要",
         "excerpt":"VCN内にエンド・ポイントを持つマネージドNFSサービスである、OCIファイル・ストレージ・サービスについて解説しています。  ファイル・ストレージ・サービスのユースケースの他、サービスを構成する基本的なコンポーネントと役割、インスタンスからのアクセス、セキュリティ、スナップショット機能についてカバーしています。   スライド           動画      ","categories": ["Services","Storage"],
         "tags": ["スライドあり","動画あり","レベル:入門(100)"],
@@ -929,15 +923,21 @@ var store = [{
         "url": "/ocidocs/services/security/cloud-guard/",
         "teaser": "https://files.speakerdeck.com/presentations/9b6739fe516e4b8aba50228bebe59163/slide_0.jpg"
       },{
-        "title": "オブジェクト・ストレージ",
-        "excerpt":"安価で耐久性の高いストレージ・サービスであるOCIオブジェクト・ストレージ・サービスについて解説しています。  オブジェクト・ストレージ・サービスのユースケースや、機能、VCN内からのプライベート・アクセスの方法などについてカバーしています。   スライド               ","categories": ["Services","Storage"],
-        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
-        "url": "/ocidocs/services/storage/object-storage-100/",
-        "teaser": "https://files.speakerdeck.com/presentations/e01e15341d2e43adbf149afaf86f0719/slide_0.jpg"
-      },{
         "title": "OCI Bastion（要塞）",
         "excerpt":"パブリック・エンドポイントを持たないリソースに踏み台サーバなしでアクセスできる無償サービスであるOCI Bastionの概要説明資料です。   スライド           ","categories": ["Services","Security"],
         "tags": ["スライドあり","レベル:入門(100)"],
         "url": "/ocidocs/services/security/bastion/",
         "teaser": "https://files.speakerdeck.com/presentations/13a3e26b2c8b4a71b6c95feef54c2b72/slide_0.jpg"
+      },{
+        "title": "ブロックボリューム概要",
+        "excerpt":"インスタンスにアタッチしてブロック・デバイスとして利用することができる、OCIブロック・ボリューム・サービスの基本的な内容について解説しています。また、DenseIO シェイプに内蔵される高速なローカルNVMeディスクについても説明しています。   スライド           動画 ~28分15秒      ","categories": ["Services","Storage"],
+        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
+        "url": "/ocidocs/services/storage/block-volume-100/",
+        "teaser": "https://files.speakerdeck.com/presentations/b80073aa58a141638ad5ba432009ba59/slide_0.jpg"
+      },{
+        "title": "オブジェクト・ストレージ",
+        "excerpt":"安価で耐久性の高いストレージ・サービスであるOCIオブジェクト・ストレージ・サービスについて解説しています。  オブジェクト・ストレージ・サービスのユースケースや、機能、VCN内からのプライベート・アクセスの方法などについてカバーしています。   スライド               ","categories": ["Services","Storage"],
+        "tags": ["スライドあり","動画あり","レベル:入門(100)"],
+        "url": "/ocidocs/services/storage/object-storage-100/",
+        "teaser": "https://files.speakerdeck.com/presentations/e01e15341d2e43adbf149afaf86f0719/slide_0.jpg"
       }]
