@@ -89,12 +89,6 @@ var store = [{
         "url": "/ocidocs/updates/update-FY21Q2/",
         "teaser": "https://speakerd.s3.amazonaws.com/presentations/80ce572018ad44db8222cec074ee5ac2/slide_0.jpg"
       },{
-        "title": "OCI Cloud Guardの概要",
-        "excerpt":"Cloud Guardは、Oracle Cloud Infrastructure内の様々なサービスの設定やアクティビティを継続的に監視し、即座に通知・是正するサービスです   スライド          ","categories": ["Services","Security"],
-        "tags": ["スライドあり","レベル:入門(100)"],
-        "url": "/ocidocs/services/security/cloud-guard/",
-        "teaser": "https://speakerd.s3.amazonaws.com/presentations/9b6739fe516e4b8aba50228bebe59163/slide_0.jpg"
-      },{
         "title": "Oracle Data Safeの機能概要と特徴",
         "excerpt":"Oracle Databaseをよりセキュアにするクラウドサービス。Oracle Database Cloud だけでなくオンプレミスのデータベースも同様にセキュアに。   スライド          ","categories": ["Services","Security"],
         "tags": ["スライドあり","レベル:入門(100)"],
@@ -729,7 +723,7 @@ var store = [{
         "excerpt":"インスタンスにアタッチしてブロック・デバイスとして利用することができる、OCIブロック・ボリューム・サービスの基本的な内容について解説しています。また、DenseIO シェイプに内蔵される高速なローカルNVMeディスクについても説明しています。   スライド           動画 ~28分15秒      ","categories": ["Services","Storage"],
         "tags": ["スライドあり","動画あり","レベル:入門(100)"],
         "url": "/ocidocs/services/storage/block-volume-100/",
-        "teaser": "https://files.speakerdeck.com/presentations/b80073aa58a141638ad5ba432009ba59/slide_2.jpg"
+        "teaser": "https://files.speakerdeck.com/presentations/b80073aa58a141638ad5ba432009ba59/slide_0.jpg"
       },{
         "title": "ファイル・ストレージ概要",
         "excerpt":"VCN内にエンド・ポイントを持つマネージドNFSサービスである、OCIファイル・ストレージ・サービスについて解説しています。  ファイル・ストレージ・サービスのユースケースの他、サービスを構成する基本的なコンポーネントと役割、インスタンスからのアクセス、セキュリティ、スナップショット機能についてカバーしています。   スライド           動画      ","categories": ["Services","Storage"],
@@ -928,6 +922,12 @@ var store = [{
         "tags": ["スライドあり"],
         "url": "/ocidocs/services/compute/SecureDesktop/",
         "teaser": "https://files.speakerdeck.com/presentations/c2048e5e9c15469ca304b55f39429794/slide_0.jpg"
+      },{
+        "title": "OCI Cloud Guardの概要",
+        "excerpt":"Cloud Guardは、Oracle Cloud Infrastructure内の様々なサービスの設定やアクティビティを継続的に監視し、即座に通知・是正するサービスです   スライド          ","categories": ["Services","Security"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/services/security/cloud-guard/",
+        "teaser": "https://files.speakerdeck.com/presentations/9b6739fe516e4b8aba50228bebe59163/slide_0.jpg"
       },{
         "title": "オブジェクト・ストレージ",
         "excerpt":"安価で耐久性の高いストレージ・サービスであるOCIオブジェクト・ストレージ・サービスについて解説しています。  オブジェクト・ストレージ・サービスのユースケースや、機能、VCN内からのプライベート・アクセスの方法などについてカバーしています。   スライド               ","categories": ["Services","Storage"],
