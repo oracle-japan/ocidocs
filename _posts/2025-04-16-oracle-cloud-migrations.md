@@ -9,7 +9,7 @@ tags:
   - 動画あり
   - レベル:入門(100)
 header:
-  teaser: https://speakerd.s3.amazonaws.com/presentations/705d4256bd6d4d7b8cee3f346d213f8d/slide_0.jpg
+  teaser: https://files.speakerdeck.com/presentations/705d4256bd6d4d7b8cee3f346d213f8d/slide_0.jpg
 ---
 
 Oracle Cloud Migrationsサービスの概要資料です。Oracle Cloud Migrations は、OCIに移行を行うためのOCIネイティブなサービスです。VMwareとAWS EC2からOCIコンピュート・インスタンスへの移行をサポートしています。

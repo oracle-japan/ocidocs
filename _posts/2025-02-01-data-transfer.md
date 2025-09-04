@@ -8,12 +8,11 @@ tags:
   - スライドあり
   - レベル:入門(100)
 header:
-  teaser: https://speakerd.s3.amazonaws.com/presentations/157e4694c8d04b11922b5f15cc88fcb4/slide_0.jpg
+  teaser: https://files.speakerdeck.com/presentations/157e4694c8d04b11922b5f15cc88fcb4/slide_0.jpg
 ---
 
 オンプレミスからOCIのストレージへのデータ移行等で利用可能なツール（OCI CLI, RCLONE, OCIFSなど）、およびデータ転送サービスについて解説しています。
 
-2024/4：改定版に更新
 
 
 #### スライド

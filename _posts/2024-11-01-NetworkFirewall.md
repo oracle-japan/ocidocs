@@ -8,7 +8,7 @@ tags:
   - スライドあり
   - レベル:応用(200)
 header:
-  teaser: https://speakerd.s3.amazonaws.com/presentations/69c6d8709c684fcbb2b488fc0b9002c5/slide_0.jpg
+  teaser: https://files.speakerdeck.com/presentations/69c6d8709c684fcbb2b488fc0b9002c5/slide_0.jpg
 ---
 2022年に提供が開始されたOCI Network Firewallの紹介資料です。
 

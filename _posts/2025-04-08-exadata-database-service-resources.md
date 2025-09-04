@@ -9,7 +9,6 @@ header:
   teaser: https://files.speakerdeck.com/presentations/65550812eaec452081dcd4cd58ee6709/slide_0.jpg
 ---
 
-
 Exadata Database Serviceの資料をまとめてご覧いただけます。
 
 ### Exadata Database Service資料集はこちら
