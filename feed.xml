@@ -1,4 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2025-09-04T23:12:07+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">ブロックボリューム概要</title><link href="https://oracle-japan.github.io/ocidocs/services/storage/block-volume-100/" rel="alternate" type="text/html" title="ブロックボリューム概要" /><published>2025-09-04T00:00:00+09:00</published><updated>2025-09-04T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/storage/block-volume-100</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/storage/block-volume-100/"><![CDATA[<p>インスタンスにアタッチしてブロック・デバイスとして利用することができる、OCIブロック・ボリューム・サービスの基本的な内容について解説しています。また、DenseIO シェイプに内蔵される高速なローカルNVMeディスクについても説明しています。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2025-09-11T10:18:36+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">Oracle Cloud Infrastructure IaaS 新機能アップデート 2025/6 - 2025/8</title><link href="https://oracle-japan.github.io/ocidocs/updates/update-FY26Q1/" rel="alternate" type="text/html" title="Oracle Cloud Infrastructure IaaS 新機能アップデート 2025/6 - 2025/8" /><published>2025-09-10T00:00:00+09:00</published><updated>2025-09-10T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/updates/update-FY26Q1</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/updates/update-FY26Q1/"><![CDATA[<p>Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介しています。
+2025年6月～2025年8月の3ヶ月分の新機能について説明しています。</p>
+
+<h4 id="スライド">スライド</h4>
+
+<div style="max-width:768px">
+
+<!-- Speakerdeckから Embeded リンク (iFrame) を取得して貼り付け (ここから) -->
+
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/7a14a26fdd4c400badb48f8d7125f99a" title="Oracle Cloud Infrastructure IaaS 新機能アップデート 2025/06 - 2025/08" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
+
+<!-- Speakerdeckから Embeded リンク (iFrame) を取得して貼り付け (ここまで) -->
+
+</div>
+
+<!-- #### セミナー動画 -->
+
+<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください -->
+
+<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) -->]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Updates" /><category term="スライドあり" /><category term="動画あり" /><summary type="html"><![CDATA[2025年6月～2025年8月の3ヶ月分のOCI IaaS新機能についてのまとめ資料です]]></summary></entry><entry><title type="html">ブロックボリューム概要</title><link href="https://oracle-japan.github.io/ocidocs/services/storage/block-volume-100/" rel="alternate" type="text/html" title="ブロックボリューム概要" /><published>2025-09-04T00:00:00+09:00</published><updated>2025-09-04T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/storage/block-volume-100</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/storage/block-volume-100/"><![CDATA[<p>インスタンスにアタッチしてブロック・デバイスとして利用することができる、OCIブロック・ボリューム・サービスの基本的な内容について解説しています。また、DenseIO シェイプに内蔵される高速なローカルNVMeディスクについても説明しています。</p>
 
 <h4 id="スライド">スライド</h4>
 
@@ -131,17 +150,4 @@ FastConnectの接続モデルやルーティング要件、接続方式などを
 
 <!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください -->
 
-<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) -->]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Updates" /><category term="スライドあり" /><summary type="html"><![CDATA[2025年03月～2025年06月の3ヶ月分のOCI Oracle Database Services新機能についてのまとめ資料です]]></summary></entry><entry><title type="html">Oracle Cloudで考える高可用性アーキテクチャー</title><link href="https://oracle-japan.github.io/ocidocs/solutions/high%20availability/high-availability/" rel="alternate" type="text/html" title="Oracle Cloudで考える高可用性アーキテクチャー" /><published>2025-06-17T00:00:00+09:00</published><updated>2025-06-17T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/solutions/high%20availability/high-availability</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/solutions/high%20availability/high-availability/"><![CDATA[<p>高可用性システムの構築をサポートするOracle Cloudの様々な機能のご紹介から、障害に強いアーキテクチャ設計の考え方などを説明する資料です。<br />
-ミッションクリティカルなシステムをどう堅牢に稼働させるかについての、オラクル社の知見をまとめたベスト・プラクティスである MAA(Maximum Availability Architecture) のリファレンス・モデルに触れながら、Oracle Cloud Infrastructure の機能やサービスを活用して、より安価に堅牢なシステムを作り上げることを目標にしています。</p>
-
-<h4 id="スライド">スライド</h4>
-
-<div style="max-width:768px">
-
-<!-- Speakerdeckから Embeded リンク (iFrame) を取得して貼り付け (ここから) -->
-
-<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/ae2dc5ea42df45ea8d0b9125b92d3808" title="Oracle Cloudで考える高可用性アーキテクチャ" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
-
-<!-- Speakerdeckから Embeded リンク (iFrame) を取得して貼り付け (ここまで) -->
-
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Solutions" /><category term="High Availability" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html"><![CDATA[高可用性システムの構築をサポートするOracle Cloudの様々な機能や、障害に強いアーキテクチャ設計の考え方などを紹介します]]></summary></entry></feed>
+<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) -->]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Updates" /><category term="スライドあり" /><summary type="html"><![CDATA[2025年03月～2025年06月の3ヶ月分のOCI Oracle Database Services新機能についてのまとめ資料です]]></summary></entry></feed>

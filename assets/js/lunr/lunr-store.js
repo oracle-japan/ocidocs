@@ -940,4 +940,10 @@ var store = [{
         "tags": ["スライドあり","動画あり","レベル:入門(100)"],
         "url": "/ocidocs/services/storage/object-storage-100/",
         "teaser": "https://files.speakerdeck.com/presentations/e01e15341d2e43adbf149afaf86f0719/slide_0.jpg"
+      },{
+        "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2025/6 - 2025/8",
+        "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介しています。 2025年6月～2025年8月の3ヶ月分の新機能について説明しています。   スライド                  ","categories": ["Updates"],
+        "tags": ["スライドあり","動画あり"],
+        "url": "/ocidocs/updates/update-FY26Q1/",
+        "teaser": "https://files.speakerdeck.com/presentations/7a14a26fdd4c400badb48f8d7125f99a/slide_0.jpg"
       }]
