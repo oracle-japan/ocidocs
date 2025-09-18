@@ -489,10 +489,6 @@
 <lastmod>2024-12-30T00:00:00+09:00</lastmod>
 </url>
 <url>
-<loc>https://oracle-japan.github.io/ocidocs/services/compute/compute-200/</loc>
-<lastmod>2025-01-11T00:00:00+09:00</lastmod>
-</url>
-<url>
 <loc>https://oracle-japan.github.io/ocidocs/services/networking/flexible-load-balancer-200/</loc>
 <lastmod>2025-01-31T00:00:00+09:00</lastmod>
 </url>
@@ -631,6 +627,10 @@
 <url>
 <loc>https://oracle-japan.github.io/ocidocs/updates/update-FY26Q1/</loc>
 <lastmod>2025-09-10T00:00:00+09:00</lastmod>
+</url>
+<url>
+<loc>https://oracle-japan.github.io/ocidocs/services/compute/compute-200/</loc>
+<lastmod>2025-09-18T00:00:00+09:00</lastmod>
 </url>
 <url>
 <loc>https://oracle-japan.github.io/ocidocs/about/</loc>
