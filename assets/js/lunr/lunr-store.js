@@ -946,4 +946,10 @@ var store = [{
         "tags": ["スライドあり","レベル:応用(200)"],
         "url": "/ocidocs/services/compute/compute-200/",
         "teaser": "https://files.speakerdeck.com/presentations/90e8e852d1c8443787f6f33e7e721177/slide_0.jpg"
+      },{
+        "title": "OCI Oracle Database Services新機能アップデート 2025/06 - 2025/08",
+        "excerpt":"Oracle Cloud Infrastructureの新機能の中から、OCI Oracle Database Servicesに関するアップデート情報をまとめてご紹介しています。  2025年03月～2025年06月の3ヶ月分の新機能について説明しています。   スライド                  ","categories": ["Updates"],
+        "tags": ["スライドあり"],
+        "url": "/ocidocs/updates/db-updateFY26Q1/",
+        "teaser": "https://files.speakerdeck.com/presentations/0e617687bfc34c5fa88df74d7a02e0aa/slide_0.jpg"
       }]
