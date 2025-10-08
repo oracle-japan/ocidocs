@@ -725,12 +725,6 @@ var store = [{
         "url": "/ocidocs/services/storage/file-storage-100/",
         "teaser": "https://files.speakerdeck.com/presentations/f74062dcf2a84dbdba4a49bb4964ef67/slide_0.jpg"
       },{
-        "title": "OCI コスト管理",
-        "excerpt":"OCIのコスト管理に関連した機能の説明資料です。 各リソースがどのくらいコストを消費しているのかの分析や、予算オーバーしないために役立つ機能などをご紹介しています。      テナンシ、コンパートメント、タグ 　- コスト分析、コストおよび使用状況レポート 　- 割当て制限（Quota）、予算（Budget）   クラウド・アドバイザ（Cloud Advisor）、Cost Estimator   2024/8：初版アップロード   スライド         ","categories": ["Services","Governance and Administration"],
-        "tags": ["スライドあり","レベル:入門(100)"],
-        "url": "/ocidocs/services/governance%20and%20administration/cost-management/",
-        "teaser": "https://files.speakerdeck.com/presentations/4541d035c9b4444bb7b1c2ea5ed032d8/slide_0.jpg"
-      },{
         "title": "ロード・バランサ 詳細 - フレキシブル・ロード・バランサ(FLB)",
         "excerpt":"様々なサービスの冗長性やスケーリングをサポートする OCI ロード・バランサー・サービス（FLB）について、応用的な利用方法について解説したドキュメントです。  セッション永続性、仮想ホストによるルーティング、URIパス・ベース・ルーティング、SSL通信方式とロード・バランサーでのSSLターミネーションの設定、ロード・バランサーが収集するメトリック、トラブル時の対応ガイドラインについて解説しています。   スライド            ","categories": ["Services","Networking"],
         "tags": ["スライドあり","レベル:応用(200)"],
@@ -952,4 +946,10 @@ var store = [{
         "tags": ["スライドあり"],
         "url": "/ocidocs/updates/db-updateFY26Q1/",
         "teaser": "https://files.speakerdeck.com/presentations/0e617687bfc34c5fa88df74d7a02e0aa/slide_0.jpg"
+      },{
+        "title": "OCI コスト管理",
+        "excerpt":"OCIのコスト管理に関連した機能の説明資料です。 各リソースがどのくらいコストを消費しているのかの分析や、予算オーバーしないために役立つ機能などをご紹介しています。      テナンシ、コンパートメント、タグ 　- コスト分析、コストおよび使用状況レポート 　- 割当て制限（Quota）、予算（Budget）   クラウド・アドバイザ（Cloud Advisor）、Cost Estimator   2024/8：初版アップロード   2025/10：改定   スライド         ","categories": ["Services","Governance and Administration"],
+        "tags": ["スライドあり","レベル:入門(100)"],
+        "url": "/ocidocs/services/governance%20and%20administration/cost-management/",
+        "teaser": "https://files.speakerdeck.com/presentations/4541d035c9b4444bb7b1c2ea5ed032d8/slide_0.jpg"
       }]

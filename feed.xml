@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2025-10-02T14:12:02+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">OCI Oracle Database Services新機能アップデート 2025/06 - 2025/08</title><link href="https://oracle-japan.github.io/ocidocs/updates/db-updateFY26Q1/" rel="alternate" type="text/html" title="OCI Oracle Database Services新機能アップデート 2025/06 - 2025/08" /><published>2025-10-02T00:00:00+09:00</published><updated>2025-10-02T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/updates/db-updateFY26Q1</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/updates/db-updateFY26Q1/"><![CDATA[<p>Oracle Cloud Infrastructureの新機能の中から、OCI Oracle Database Servicesに関するアップデート情報をまとめてご紹介しています。<br />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2025-10-08T12:37:59+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">OCI コスト管理</title><link href="https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/cost-management/" rel="alternate" type="text/html" title="OCI コスト管理" /><published>2025-10-08T00:00:00+09:00</published><updated>2025-10-08T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/cost-management</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/cost-management/"><![CDATA[<p>OCIのコスト管理に関連した機能の説明資料です。
+各リソースがどのくらいコストを消費しているのかの分析や、予算オーバーしないために役立つ機能などをご紹介しています。</p>
+
+<ul>
+  <li>テナンシ、コンパートメント、タグ
+　- コスト分析、コストおよび使用状況レポート
+　- 割当て制限（Quota）、予算（Budget）</li>
+  <li>クラウド・アドバイザ（Cloud Advisor）、Cost Estimator</li>
+</ul>
+
+<p>2024/8：初版アップロード</p>
+
+<p>2025/10：改定</p>
+
+<h4 id="スライド">スライド</h4>
+
+<div style="max-width:768px">
+
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
+<script defer="" class="speakerdeck-embed" data-id="4541d035c9b4444bb7b1c2ea5ed032d8" data-ratio="1.7777777777777777" src="//speakerdeck.com/assets/embed.js"></script>
+
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Governance and Administration" /><category term="スライドあり" /><category term="レベル:入門(100)" /><summary type="html"><![CDATA[OCIのコスト管理に関連した機能の説明資料です。]]></summary></entry><entry><title type="html">OCI Oracle Database Services新機能アップデート 2025/06 - 2025/08</title><link href="https://oracle-japan.github.io/ocidocs/updates/db-updateFY26Q1/" rel="alternate" type="text/html" title="OCI Oracle Database Services新機能アップデート 2025/06 - 2025/08" /><published>2025-10-02T00:00:00+09:00</published><updated>2025-10-02T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/updates/db-updateFY26Q1</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/updates/db-updateFY26Q1/"><![CDATA[<p>Oracle Cloud Infrastructureの新機能の中から、OCI Oracle Database Servicesに関するアップデート情報をまとめてご紹介しています。<br />
 2025年03月～2025年06月の3ヶ月分の新機能について説明しています。</p>
 
 <h4 id="スライド">スライド</h4>
@@ -152,23 +173,4 @@ FastConnectの接続モデルやルーティング要件、接続方式などを
 <!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください -->
 
 <!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) -->
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Networking" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html"><![CDATA[FastConnectの接続モデルやルーティング要件、接続方式などを解説しています。]]></summary></entry><entry><title type="html">外部接続 概要</title><link href="https://oracle-japan.github.io/ocidocs/services/networking/connectivity-100/" rel="alternate" type="text/html" title="外部接続 概要" /><published>2025-07-07T00:00:00+09:00</published><updated>2025-07-07T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/networking/connectivity-100</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/networking/connectivity-100/"><![CDATA[<p>OCIのリージョンまでのネットワーク接続の形態や、IPsecを利用したVPN接続、専用線や閉域網を経由する FastConnect 接続について、概要を解説しています。</p>
-
-<h4 id="スライド">スライド</h4>
-
-<div style="max-width:768px">
-
-<!-- Speakerdeckから Embeded リンク (iFrame) を取得して貼り付け (ここから) -->
-<script async="" class="speakerdeck-embed" data-id="78fd892617f74e83b9c40ca0a2dd5537" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
-<!-- Speakerdeckから Embeded リンク (iFrame) を取得して貼り付け (ここまで) -->
-
-</div>
-
-<h4 id="セミナー動画">セミナー動画</h4>
-
-<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください -->
-
-<div style="max-width:768px"><div style="position:relative;padding-bottom:56.25%"><iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/2171811/sp/217181100/embedIframeJs/uiconf_id/35965902/partner_id/2171811?iframeembed=true&amp;playerId=kaltura_player&amp;entry_id=1_3rn2jq0i&amp;flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[hotspots.plugin]=1&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&amp;wid=1_tl2qwapb" width="768" height="432" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player" style="position:absolute;top:0;left:0;width:100%;height:100%"></iframe></div></div>
-
-<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) -->]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Networking" /><category term="スライドあり" /><category term="動画あり" /><category term="レベル:入門(100)" /><summary type="html"><![CDATA[OCIのリージョンまでのネットワーク接続の形態や、IPsecを利用したVPN接続、専用線や閉域網を経由する FastConnect 接続について、概要を解説しています]]></summary></entry></feed>
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Networking" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html"><![CDATA[FastConnectの接続モデルやルーティング要件、接続方式などを解説しています。]]></summary></entry></feed>
