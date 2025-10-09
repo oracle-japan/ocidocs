@@ -767,12 +767,6 @@ var store = [{
         "url": "/ocidocs/services/overall/service-essentials/",
         "teaser": "https://files.speakerdeck.com/presentations/dadec91d58b24202a8af17f075301fba/slide_0.jpg"
       },{
-        "title": "組織管理(Organization Management)概要",
-        "excerpt":"OCIの技術説明資料 組織管理 (Organization Management) の概要資料です。 複数のテナンシの請求やコスト管理を一元化できる機能である「組織管理」に関して解説しています。   スライド            ","categories": ["Services","Governance and Administration"],
-        "tags": ["スライドあり","レベル:応用(200)"],
-        "url": "/ocidocs/services/governance%20and%20administration/organization/",
-        "teaser": "https://files.speakerdeck.com/presentations/a7d1e15509464d9daefa9609a01c6d6c/slide_0.jpg"
-      },{
         "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2024/12 - 2025/2",
         "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介しています。 2024年12月～2025年2月の3ヶ月分の新機能について説明しています。   スライド                  ","categories": ["Updates"],
         "tags": ["スライドあり","動画あり"],
@@ -952,4 +946,10 @@ var store = [{
         "tags": ["スライドあり","レベル:入門(100)"],
         "url": "/ocidocs/services/governance%20and%20administration/cost-management/",
         "teaser": "https://files.speakerdeck.com/presentations/4541d035c9b4444bb7b1c2ea5ed032d8/slide_0.jpg"
+      },{
+        "title": "組織管理(Organization Management)概要",
+        "excerpt":"OCIの技術説明資料 組織管理 (Organization Management) の概要資料です。 複数のテナンシの請求やコスト管理を一元化できる機能である「組織管理」に関して解説しています。   スライド            ","categories": ["Services","Governance and Administration"],
+        "tags": ["スライドあり","レベル:応用(200)"],
+        "url": "/ocidocs/services/governance%20and%20administration/organization/",
+        "teaser": "https://files.speakerdeck.com/presentations/a7d1e15509464d9daefa9609a01c6d6c/slide_0.jpg"
       }]

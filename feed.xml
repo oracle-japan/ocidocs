@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2025-10-08T12:37:59+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">OCI コスト管理</title><link href="https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/cost-management/" rel="alternate" type="text/html" title="OCI コスト管理" /><published>2025-10-08T00:00:00+09:00</published><updated>2025-10-08T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/cost-management</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/cost-management/"><![CDATA[<p>OCIのコスト管理に関連した機能の説明資料です。
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2025-10-09T11:39:08+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">組織管理(Organization Management)概要</title><link href="https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/organization/" rel="alternate" type="text/html" title="組織管理(Organization Management)概要" /><published>2025-10-09T00:00:00+09:00</published><updated>2025-10-09T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/organization</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/organization/"><![CDATA[<p>OCIの技術説明資料 組織管理 (Organization Management) の概要資料です。
+複数のテナンシの請求やコスト管理を一元化できる機能である「組織管理」に関して解説しています。</p>
+
+<h4 id="スライド">スライド</h4>
+
+<div style="max-width:768px">
+
+<!-- Speakerdeckから Embeded リンク (iFrame) を取得して貼り付け (ここから) -->
+
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/a7d1e15509464d9daefa9609a01c6d6c" title="OCI技術資料 : 組織管理 (Organization Management)" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
+
+<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
+
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Governance and Administration" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html"><![CDATA[複数のテナンシの請求やコスト管理を一元化できる機能である「組織管理」に関して解説しています。]]></summary></entry><entry><title type="html">OCI コスト管理</title><link href="https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/cost-management/" rel="alternate" type="text/html" title="OCI コスト管理" /><published>2025-10-08T00:00:00+09:00</published><updated>2025-10-08T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/cost-management</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/governance%20and%20administration/cost-management/"><![CDATA[<p>OCIのコスト管理に関連した機能の説明資料です。
 各リソースがどのくらいコストを消費しているのかの分析や、予算オーバーしないために役立つ機能などをご紹介しています。</p>
 
 <ul>
@@ -156,21 +169,4 @@ OCIセキュア・デスクトップは、OCIネイティブなVDIのサービ�
 <!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください -->
 
 <!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) -->
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Compute" /><category term="スライドあり" /><summary type="html"><![CDATA[OCI セキュア・デスクトップの概要資料です]]></summary></entry><entry><title type="html">外部接続 詳細 - FastConnect</title><link href="https://oracle-japan.github.io/ocidocs/services/networking/FastConnect-200/" rel="alternate" type="text/html" title="外部接続 詳細 - FastConnect" /><published>2025-07-07T00:00:00+09:00</published><updated>2025-07-07T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/networking/FastConnect-200</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/networking/FastConnect-200/"><![CDATA[<p>OCIの技術説明資料：外部接続 詳細 - FastConnect<br />
-FastConnectについての詳細資料です。
-FastConnectの接続モデルやルーティング要件、接続方式などを解説しています。</p>
-
-<h4 id="スライド">スライド</h4>
-<div style="max-width:768px">
-<!-- Speakerdeckから Embeded リンク (iFrame) を取得して貼り付け (ここから) -->
-
-<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/ef2254139aef47e0b48a38222edfb203" title="OCI技術資料 : 外部接続 FastConnect 詳細" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
-
-<!-- Speakerdeckから Embeded リンク (iFrame) を取得して貼り付け (ここまで) -->
-
-<!-- #### セミナー動画 -->
-
-<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください -->
-
-<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) -->
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Networking" /><category term="スライドあり" /><category term="レベル:応用(200)" /><summary type="html"><![CDATA[FastConnectの接続モデルやルーティング要件、接続方式などを解説しています。]]></summary></entry></feed>
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Compute" /><category term="スライドあり" /><summary type="html"><![CDATA[OCI セキュア・デスクトップの概要資料です]]></summary></entry></feed>
