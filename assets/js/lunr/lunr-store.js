@@ -924,7 +924,7 @@ var store = [{
         "teaser": "https://files.speakerdeck.com/presentations/e01e15341d2e43adbf149afaf86f0719/slide_0.jpg"
       },{
         "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2025/6 - 2025/8",
-        "excerpt":"Oracle Cloud Infrastructureの新機能の中から、主にIaaSに関する主要なアップデート情報を1機能1スライド程度でまとめてご紹介しています。 2025年6月～2025年8月の3ヶ月分の新機能について説明しています。   スライド                  ","categories": ["Updates"],
+        "excerpt":"Oracle Cloud Infrastructure の新機能の中から、主に IaaS に関する主要なアップデート情報を 1 機能 1 スライド程度でまとめてご紹介しています。 2025 年 6 月～ 2025 年 8 月の 3 ヶ月分の新機能について説明しています。   スライド                  ","categories": ["Updates"],
         "tags": ["スライドあり","動画あり"],
         "url": "/ocidocs/updates/update-FY26Q1/",
         "teaser": "https://files.speakerdeck.com/presentations/7a14a26fdd4c400badb48f8d7125f99a/slide_0.jpg"
@@ -936,7 +936,7 @@ var store = [{
         "teaser": "https://files.speakerdeck.com/presentations/90e8e852d1c8443787f6f33e7e721177/slide_0.jpg"
       },{
         "title": "OCI Oracle Database Services新機能アップデート 2025/06 - 2025/08",
-        "excerpt":"Oracle Cloud Infrastructureの新機能の中から、OCI Oracle Database Servicesに関するアップデート情報をまとめてご紹介しています。  2025年03月～2025年06月の3ヶ月分の新機能について説明しています。   スライド                  ","categories": ["Updates"],
+        "excerpt":"Oracle Cloud Infrastructure の新機能の中から、OCI Oracle Database Services に関するアップデート情報をまとめてご紹介しています。  2025 年 06 月～ 2025 年 08 月の 3 ヶ月分の新機能について説明しています。   スライド                  ","categories": ["Updates"],
         "tags": ["スライドあり"],
         "url": "/ocidocs/updates/db-updateFY26Q1/",
         "teaser": "https://files.speakerdeck.com/presentations/0e617687bfc34c5fa88df74d7a02e0aa/slide_0.jpg"
@@ -953,8 +953,8 @@ var store = [{
         "url": "/ocidocs/services/governance%20and%20administration/organization/",
         "teaser": "https://files.speakerdeck.com/presentations/a7d1e15509464d9daefa9609a01c6d6c/slide_0.jpg"
       },{
-        "title": "OCI Oracle Database Services新機能アップデート 2025/06 - 2025/08",
-        "excerpt":"Oracle Cloud Infrastructure の新機能の中から、OCI Oracle Database Services に関するアップデート情報をまとめてご紹介しています。  2025 年 03 月～ 2025 年 06 月の 3 ヶ月分の新機能について説明しています。   スライド                  ","categories": ["Updates"],
+        "title": "OCI Oracle Database Services新機能アップデート 2025/09 - 2025/11",
+        "excerpt":"Oracle Cloud Infrastructure の新機能の中から、OCI Oracle Database Services に関するアップデート情報をまとめてご紹介しています。  2025 年 09 月～ 2025 年 11 月の 3 ヶ月分の新機能について説明しています。   スライド                  ","categories": ["Updates"],
         "tags": ["スライドあり"],
         "url": "/ocidocs/updates/db-update-FY26Q2/",
         "teaser": "https://files.speakerdeck.com/presentations/ee4172bacb5c478394ca09dd288e3021/slide_0.jpg"
