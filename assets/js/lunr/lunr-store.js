@@ -958,4 +958,10 @@ var store = [{
         "tags": ["スライドあり"],
         "url": "/ocidocs/updates/db-update-FY26Q2/",
         "teaser": "https://files.speakerdeck.com/presentations/ee4172bacb5c478394ca09dd288e3021/slide_0.jpg"
+      },{
+        "title": "Oracle Cloud Infrastructure IaaS 新機能アップデート 2025/9 - 2025/12",
+        "excerpt":"Oracle Cloud Infrastructure の新機能の中から、主に IaaS に関する主要なアップデート情報を 1 機能 1 スライド程度でまとめてご紹介しています。 2025 年 9 月～ 2025 年 12 月の 3 ヶ月分の新機能について説明しています。   スライド                   ","categories": ["Updates"],
+        "tags": ["スライドあり"],
+        "url": "/ocidocs/updates/update-FY26Q2/",
+        "teaser": "https://files.speakerdeck.com/presentations/cf70c9f8e90c49fe9aa0d2c89f67c80b/slide_0.jpg"
       }]

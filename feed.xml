@@ -1,4 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2025-12-12T12:25:39+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">OCI Oracle Database Services新機能アップデート 2025/09 - 2025/11</title><link href="https://oracle-japan.github.io/ocidocs/updates/db-update-FY26Q2/" rel="alternate" type="text/html" title="OCI Oracle Database Services新機能アップデート 2025/09 - 2025/11" /><published>2025-12-12T00:00:00+09:00</published><updated>2025-12-12T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/updates/db-update-FY26Q2</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/updates/db-update-FY26Q2/"><![CDATA[<p>Oracle Cloud Infrastructure の新機能の中から、OCI Oracle Database Services に関するアップデート情報をまとめてご紹介しています。<br />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://oracle-japan.github.io/ocidocs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oracle-japan.github.io/ocidocs/" rel="alternate" type="text/html" /><updated>2025-12-15T09:58:01+09:00</updated><id>https://oracle-japan.github.io/ocidocs/feed.xml</id><title type="html">Oracle Cloud Infrastructure 活用資料集</title><subtitle>Oracle Cloud Infrastructure (OCI) を使っていこう! という人のためのドキュメント集です。 新機能・新サービスの情報、サービス別の資料、ソリューション別資料のほかに、外部サイトへのリンクも掲載しています。 サービス別の技術資料については定期的にアップデートしていますので、最新のものをご利用ください。</subtitle><author><name>Oracle Japan Solution Engineers</name></author><entry><title type="html">Oracle Cloud Infrastructure IaaS 新機能アップデート 2025/9 - 2025/12</title><link href="https://oracle-japan.github.io/ocidocs/updates/update-FY26Q2/" rel="alternate" type="text/html" title="Oracle Cloud Infrastructure IaaS 新機能アップデート 2025/9 - 2025/12" /><published>2025-12-15T00:00:00+09:00</published><updated>2025-12-15T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/updates/update-FY26Q2</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/updates/update-FY26Q2/"><![CDATA[<p>Oracle Cloud Infrastructure の新機能の中から、主に IaaS に関する主要なアップデート情報を 1 機能 1 スライド程度でまとめてご紹介しています。
+2025 年 9 月～ 2025 年 12 月の 3 ヶ月分の新機能について説明しています。</p>
+
+<h4 id="スライド">スライド</h4>
+
+<div style="max-width:768px">
+<!-- Speakerdeckから Embeded リンク (iFrame) を取得して貼り付け (ここから) -->
+
+
+
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/cf70c9f8e90c49fe9aa0d2c89f67c80b" title="Oracle Cloud Infrastructure IaaS 新機能アップデート 2025/09 - 2025/11" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
+
+
+
+</div>
+
+<!-- #### セミナー動画 -->
+
+<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここから) リンク取得時には Player Size を 768x432 に、Responsive Sizing を有効にして取得してください -->
+
+<!-- Oracle Vide Hub から Embed リンクを取得して貼り付け (ここまで) -->]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Updates" /><category term="スライドあり" /><summary type="html"><![CDATA[2025年9月～2025年12月の3ヶ月分のOCI IaaS新機能についてのまとめ資料です]]></summary></entry><entry><title type="html">OCI Oracle Database Services新機能アップデート 2025/09 - 2025/11</title><link href="https://oracle-japan.github.io/ocidocs/updates/db-update-FY26Q2/" rel="alternate" type="text/html" title="OCI Oracle Database Services新機能アップデート 2025/09 - 2025/11" /><published>2025-12-12T00:00:00+09:00</published><updated>2025-12-12T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/updates/db-update-FY26Q2</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/updates/db-update-FY26Q2/"><![CDATA[<p>Oracle Cloud Infrastructure の新機能の中から、OCI Oracle Database Services に関するアップデート情報をまとめてご紹介しています。<br />
 2025 年 09 月～ 2025 年 11 月の 3 ヶ月分の新機能について説明しています。</p>
 
 <h4 id="スライド">スライド</h4>
@@ -162,14 +182,4 @@
 <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/13a3e26b2c8b4a71b6c95feef54c2b72" title="OCI Bastionサービス" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
 <!-- Speakerdeckから Embeded リンク (iFrame) を取得して貼り付け (ここまで) -->
 
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Security" /><category term="スライドあり" /><category term="レベル:入門(100)" /><summary type="html"><![CDATA[OCI Bastionは、パブリック・エンドポイントを持たないリソースに踏み台サーバなしでアクセスできる無償サービスです。OCI Bastionの概要説明資料です。]]></summary></entry><entry><title type="html">OCI Cloud Guardの概要</title><link href="https://oracle-japan.github.io/ocidocs/services/security/cloud-guard/" rel="alternate" type="text/html" title="OCI Cloud Guardの概要" /><published>2025-08-01T00:00:00+09:00</published><updated>2025-08-01T00:00:00+09:00</updated><id>https://oracle-japan.github.io/ocidocs/services/security/cloud-guard</id><content type="html" xml:base="https://oracle-japan.github.io/ocidocs/services/security/cloud-guard/"><![CDATA[<p>Cloud Guardは、Oracle Cloud Infrastructure内の様々なサービスの設定やアクティビティを継続的に監視し、即座に通知・是正するサービスです</p>
-
-<h4 id="スライド">スライド</h4>
-
-<div style="max-width:768px">
-
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここから) -->
-<script async="" class="speakerdeck-embed" data-id="9b6739fe516e4b8aba50228bebe59163" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-<!-- Speakerdeckから Embeded リンクを取得して貼り付け (ここまで) -->
-
-</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Security" /><category term="スライドあり" /><category term="レベル:入門(100)" /><summary type="html"><![CDATA[Cloud Guardは、Oracle Cloud Infrastructure内の様々なサービスの設定やアクティビティを継続的に監視し、即座に通知・是正するサービスです]]></summary></entry></feed>
+</div>]]></content><author><name>Oracle Japan Solution Engineers</name></author><category term="Services" /><category term="Security" /><category term="スライドあり" /><category term="レベル:入門(100)" /><summary type="html"><![CDATA[OCI Bastionは、パブリック・エンドポイントを持たないリソースに踏み台サーバなしでアクセスできる無償サービスです。OCI Bastionの概要説明資料です。]]></summary></entry></feed>
