@@ -22,7 +22,7 @@ header:
 
 ## Autonomous DatabaseはOracle Databaseとどう違うのでしょうか？
 
-内部的にはOracle Database 19c or 23aiを使用しています。
+内部的にはOracle Database 19c or 26aiを使用しています。
 
 それに加えてAutonomous Databaseでは、データベース管理者(DBA)のタスクを減らすため、様々な自動化・自律化機能が備わっていることや、Exadataを基盤としているため高速化されていること、Enterprise Edition(EE)とRACなどの各種EEオプションがデフォルトで利用できることが特徴として挙げられます。
 
@@ -571,7 +571,7 @@ SELECT * FROM V$LOCKDOWN_RULES WHERE STATUS LIKE 'DISABLE%' ORDER BY RULE_TYPE ;
 
 <br />
 
-## AWRは取得できますか？AWRの保持期限、スナップショット間隔は変更で可能でしょうか？
+## AWRは取得できますか？
 
 可能です。パフォーマンスハブからのダウンロードまたはSQLで取得できます。取得方法は[OCIチュートリアル](https://oracle-japan.github.io/ocitutorials/adb/adb203-bulk-query/#anchor3-2)に記載していますのでご確認ください。
 
@@ -596,7 +596,7 @@ SELECT * FROM V$LOCKDOWN_RULES WHERE STATUS LIKE 'DISABLE%' ORDER BY RULE_TYPE ;
 
 <br />
 
-## パフォーマンスハブで確認すると、Consumer Groupに接続サービスのグループ（HIGH/MIDDLE/LOW)のほかにOTHER_GROUPSとInternalがあります。これは何でしょうか。 
+## パフォーマンスハブで確認すると、Consumer Groupに接続サービスのグループ（TP/TPURGENT/HIGH/MIDDLE/LOW)のほかにOTHER_GROUPSとInternalがあります。これは何でしょうか。 
 
 Cloud Ops、もしくはスケジューラプロセスが利用するグループです。お客様は利用できません。
 
@@ -604,7 +604,8 @@ Cloud Ops、もしくはスケジューラプロセスが利用するグルー�
 
 ## アラートログ、トレースファイルの確認はできますか。  
 
-SQLを利用してアラートログ(V$DIAG_ALERT_EXT)やトレースファイル(V$DIAG_TRACE_FILE_CONTENTS)を確認することは可能です。[OCIチュートリアル](https://oracle-japan.github.io/ocitutorials/adb/adb502-report/)に記載しておりますのでご確認ください。
+これらのファイルはOracleが管理するため、お客様が確認する必要はございません。そのためお客様側での確認はできません。
+クライアント・エラーはV$CLIENT_ERRORSビューでご確認いただけます。詳細については[ドキュメント](https://docs.oracle.com/en/cloud/paas/autonomous-database/serverless/adbsb/autonomous-query-alert-log.html#GUID-CB3BBB88-B5F6-4ED3-BD7C-66B41959B981)をご確認ください。
 
 <br />
 
