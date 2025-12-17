@@ -388,7 +388,7 @@
 
 <h2 id="autonomous-databaseはoracle-databaseとどう違うのでしょうか">Autonomous DatabaseはOracle Databaseとどう違うのでしょうか？</h2>
 
-<p>内部的にはOracle Database 19c or 23aiを使用しています。</p>
+<p>内部的にはOracle Database 19c or 26aiを使用しています。</p>
 
 <p>それに加えてAutonomous Databaseでは、データベース管理者(DBA)のタスクを減らすため、様々な自動化・自律化機能が備わっていることや、Exadataを基盤としているため高速化されていること、Enterprise Edition(EE)とRACなどの各種EEオプションがデフォルトで利用できることが特徴として挙げられます。</p>
 
@@ -944,7 +944,7 @@ Autonomous Database では、PDBロックダウン・プロファイルの設定
 
 <p><br /></p>
 
-<h2 id="awrは取得できますかawrの保持期限スナップショット間隔は変更で可能でしょうか">AWRは取得できますか？AWRの保持期限、スナップショット間隔は変更で可能でしょうか？</h2>
+<h2 id="awrは取得できますか">AWRは取得できますか？</h2>
 
 <p>可能です。パフォーマンスハブからのダウンロードまたはSQLで取得できます。取得方法は<a href="https://oracle-japan.github.io/ocitutorials/adb/adb203-bulk-query/#anchor3-2">OCIチュートリアル</a>に記載していますのでご確認ください。</p>
 
@@ -969,7 +969,7 @@ Autonomous Database では、PDBロックダウン・プロファイルの設定
 
 <p><br /></p>
 
-<h2 id="パフォーマンスハブで確認するとconsumer-groupに接続サービスのグループhighmiddlelowのほかにother_groupsとinternalがありますこれは何でしょうか">パフォーマンスハブで確認すると、Consumer Groupに接続サービスのグループ（HIGH/MIDDLE/LOW)のほかにOTHER_GROUPSとInternalがあります。これは何でしょうか。</h2>
+<h2 id="パフォーマンスハブで確認するとconsumer-groupに接続サービスのグループtptpurgenthighmiddlelowのほかにother_groupsとinternalがありますこれは何でしょうか">パフォーマンスハブで確認すると、Consumer Groupに接続サービスのグループ（TP/TPURGENT/HIGH/MIDDLE/LOW)のほかにOTHER_GROUPSとInternalがあります。これは何でしょうか。</h2>
 
 <p>Cloud Ops、もしくはスケジューラプロセスが利用するグループです。お客様は利用できません。</p>
 
@@ -977,7 +977,8 @@ Autonomous Database では、PDBロックダウン・プロファイルの設定
 
 <h2 id="アラートログトレースファイルの確認はできますか">アラートログ、トレースファイルの確認はできますか。</h2>
 
-<p>SQLを利用してアラートログ(V$DIAG_ALERT_EXT)やトレースファイル(V$DIAG_TRACE_FILE_CONTENTS)を確認することは可能です。<a href="https://oracle-japan.github.io/ocitutorials/adb/adb502-report/">OCIチュートリアル</a>に記載しておりますのでご確認ください。</p>
+<p>これらのファイルはOracleが管理するため、お客様が確認する必要はございません。そのためお客様側での確認はできません。
+クライアント・エラーはV$CLIENT_ERRORSビューでご確認いただけます。詳細については<a href="https://docs.oracle.com/en/cloud/paas/autonomous-database/serverless/adbsb/autonomous-query-alert-log.html#GUID-CB3BBB88-B5F6-4ED3-BD7C-66B41959B981">ドキュメント</a>をご確認ください。</p>
 
 <p><br /></p>
 
