@@ -1,0 +1,20 @@
+{{ define "main" }}
+{{ partial "page-header" . }}
+<h1>{{ partial "utils/title" . }}</h1>
+<div class="cards-grid">
+  {{ if eq .Type "tags" }}
+  {{ range where .Site.RegularPages "Params.tags" "ne" nil }}
+  {{ partial "card" . }}
+  {{ end }}
+  {{ else }}
+  {{ range .RegularPages }}
+  {{ partial "card.html" . }}
+  {{ end }}
+  {{ range .Sections }}
+  {{ range .RegularPages }}
+  {{ partial "card.html" . }}
+  {{ end }}
+  {{ end }}
+  {{ end }}
+</div>
+{{ end }}

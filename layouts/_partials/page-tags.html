@@ -1,0 +1,10 @@
+{{ with .Params.tags }}
+<div class="page-tags" style="margin-top: 1rem; font-size: 0.9rem;">
+    <b>タグ：</b>
+    {{ range . }}
+        <a href="{{ absURL (printf "tag-search/?tags=%s" .) }}" class="page-tag">
+            &#35;{{ . }}
+        </a>
+    {{ end }}
+</div>
+{{ end }}

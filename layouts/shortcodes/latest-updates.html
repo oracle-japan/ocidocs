@@ -1,0 +1,7 @@
+{{ $updates := where .Site.RegularPages "Section" "updates" }}
+{{ $last_updates := $updates.ByDate.Reverse }}
+<div class="cards-grid">
+    {{ range first 9 $last_updates }}
+    {{ partial "card.html" . }}
+    {{ end }}
+</div>
