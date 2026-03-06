@@ -1,5 +1,5 @@
 ---
-title: "管理"
+title: "運用監視"
 layout: "cardlist"
 geekdocNav: true
 ---
