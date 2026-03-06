@@ -2,11 +2,6 @@
 lastmod: 2022-06-07
 title: "WAFエッジポリシー 設定手順"
 description: "本資料では、エッジポイントのWAF「エッジポリシー」の設定と動作確認の手順を紹介します。"
-categories:
-  - Services
-  - Edge Security
-  - Security
-aliases: "/services/edge%20security/security/waf-edgepolicy/"
 tags:
   - スライドあり
   - レベル:入門(100)
@@ -17,7 +12,7 @@ images:
 OCI WAFでは世界中にあるデータセンターのリソースを同時に利用できるエッジポイントのWAFと、リージョン内のロードバランサにアタッチするWAFの2つのタイプを用意しています。
 本資料では、エッジポイントのWAF「エッジポリシー」の設定と動作確認の手順を紹介します。
 
-#### スライド
+## スライド
 
 <div style="max-width:768px">
 
