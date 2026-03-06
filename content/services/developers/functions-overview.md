@@ -1,7 +1,7 @@
 ---
 lastmod: 2025-02-01
-title: "Oracle Functions概要"
-description: "OracleのマネージドFaaS(Functions as a Service)サービスであるOracle Functionsについての概要資料です。"
+title: "OCI Functions概要"
+description: "OracleのマネージドFaaS(Functions as a Service)サービスであるOCI Functionsについての概要資料です。"
 categories:
   - Services
   - Developers
@@ -12,7 +12,7 @@ images:
   - https://files.speakerdeck.com/presentations/4881ba4ef34b4ff6a6b9dea6d3d29c3f/slide_0.jpg?21586991
 ---
 
-OracleのマネージドFaaS(Functions as a Service)サービスであるOracle Functionsについての概要資料です。
+OracleのマネージドFaaS(Functions as a Service)サービスであるOCI Functionsについての概要資料です。
 
 #### スライド
 
