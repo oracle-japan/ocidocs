@@ -1,6 +1,6 @@
 ---
 lastmod: 2025-08-25
-title: "OCI Bastion（要塞）"
+title: "OCI Bastion (要塞) 概要"
 description: "OCI Bastionは、パブリック・エンドポイントを持たないリソースに踏み台サーバなしでアクセスできる無償サービスです。OCI Bastionの概要説明資料です。"
 categories:
   - Services

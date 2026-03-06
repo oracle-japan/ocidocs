@@ -7,7 +7,6 @@ categories:
   - Security
 tags:
   - スライドあり
-  - レベル:応用(200)
 images:
   - https://speakerd.s3.amazonaws.com/presentations/052c7b6821624e8bb362168913a8f6b2/slide_0.jpg
 ---
