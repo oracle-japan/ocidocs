@@ -2,9 +2,6 @@
 lastmod: 2025-08-01
 title: "OCI Cloud Guardの概要"
 description: "Cloud Guardは、Oracle Cloud Infrastructure内の様々なサービスの設定やアクティビティを継続的に監視し、即座に通知・是正するサービスです"
-categories:
-  - Services
-  - Security
 tags:
   - スライドあり
   - レベル:入門(100)
@@ -14,7 +11,9 @@ images:
 
 Cloud Guardは、Oracle Cloud Infrastructure内の様々なサービスの設定やアクティビティを継続的に監視し、即座に通知・是正するサービスです 
 
-#### スライド
+## スライド
+
+<br>
 
 <div style="max-width:768px">
 
