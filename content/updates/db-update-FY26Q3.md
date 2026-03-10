@@ -6,7 +6,6 @@ images:
   - https://files.speakerdeck.com/presentations/4026761d4c564b7a922b4817572c254d/slide_0.jpg
 tags:
   - スライドあり
-params: author:omomoki
 ---
 
 Oracle Cloud Infrastructure の新機能の中から、OCI Oracle Database Services に関するアップデート情報をまとめてご紹介しています。  
