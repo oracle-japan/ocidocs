@@ -10,6 +10,7 @@ tags:
   - レベル:入門(100)
 images:
   - https://files.speakerdeck.com/presentations/13a3e26b2c8b4a71b6c95feef54c2b72/slide_0.jpg
+aliases: "/services/security/bastion/"
 ---
 
 パブリック・エンドポイントを持たないリソースに踏み台サーバなしでアクセスできる無償サービスであるOCI Bastionの概要説明資料です。
