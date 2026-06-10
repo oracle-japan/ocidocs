@@ -1,7 +1,7 @@
 ---
 lastmod: 2020-04-06
-title: "Database Cloud Service VM/BM 技術詳細"  # タイトル
-description: "Oracle Database を簡単に作成し利用することができる、Database Cloud Service (DBCS) についての解説資料です。"
+title: "Oracle Base Database Service (BaseDB) 技術詳細"  # タイトル
+description: "Oracle Database を簡単に作成し利用することができる、Oracle Base Database Service (BaseDB) についての解説資料です。"
 categories:
   - Services
   - Database
@@ -15,8 +15,7 @@ images:
 aliases: "/services/database/database-100/"
 ---
  
-DBCSはOSのRoot権限を持ち、オンプレミスのデータベース環境をスムーズにクラウドに移行することができるサービスです。
-仮想マシン型（VM）だけでなく、より高い性能を求められるシステムに向けたベアメタル型（BM）も選択可能であり、Oracle Databaseを従量制サブスクリプションまたはBYOL(ライセンス持ち込み)で利用できます。
+BaseDBはOSのRoot権限を持ち、オンプレミスのデータベース環境をスムーズにクラウドに移行することができるサービスです。
 
 
 #### スライド
