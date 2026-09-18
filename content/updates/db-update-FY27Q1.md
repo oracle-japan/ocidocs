@@ -1,7 +1,7 @@
 ---
 title: "OCI Oracle Database Services新機能アップデート 2026/06 - 2026/08"
 description: "2026年06月～2026年08月の3ヶ月分のOCI Oracle Database Services新機能についてのまとめ資料です"
-lastmod: 2026-06-09
+lastmod: 2026-09-18
 images:
   - https://files.speakerdeck.com/presentations/b3a22186f7b1488aae6f4b98be123b71/slide_0.jpg
 tags:
