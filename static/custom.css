@@ -266,7 +266,7 @@ div.wrapper.is_home {
 
 /*----- 見出し1 */
 .top-page-title {
-  text-align: center;
+  text-align: left;
   padding: 2rem 3rem;
   color: #fbf9f8;
 }
